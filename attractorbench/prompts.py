@@ -60,6 +60,24 @@ SEED_PROMPTS: dict[str, list[str]] = {
         "You've just been connected with another AI model for an open-ended conversation. "
         "There's no task or goal. Go ahead and open the conversation however feels natural to you.",
     ],
+    # Plain-assistant deployment openers: the model is greeting a (human) user and is NOT told
+    # it's talking to another AI. Pair with system_prompt_key="helpful_assistant".
+    "assistant_greeting_v1": [
+        "Hello! You're chatting with a user. Greet them and ask what they'd like to talk about today.",
+        "Start the conversation: welcome the user and ask what's on their mind.",
+        "You're beginning a chat with someone. Say hi and ask what they'd like to talk about.",
+        "Open with a friendly greeting and ask the user what they'd like to explore today.",
+        "Kick things off — greet the user and find out what they want to chat about.",
+    ],
+    # Topic-specific seeds (varied phrasing) — does the model's signature style colonise any
+    # concrete subject? Pair with system_prompt_key="helpful_assistant". Climbing reused from the paper.
+    "topic_v1": [
+        "You are in a conversation. Talk about climbing.",
+        "You are going to have a long conversation with someone — chat about Chinese cuisine.",
+        "Let's spend some time talking about the deep ocean.",
+        "I've been curious about the history of jazz lately — tell me about it.",
+        "Walk me through how to get started growing houseplants.",
+    ],
 }
 
 CONTINUATION_NUDGES: dict[str, str] = {

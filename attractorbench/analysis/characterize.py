@@ -27,7 +27,11 @@ from ..prompts import TRANSCRIPT_FORMAT, serialize_run_for_judge
 # --- tunable constants (named, not buried) ----------------------------------
 JUDGE_CONTEXT_TOKEN_BUDGET = 120_000   # token ceiling the sampler fills with WHOLE transcripts
 SAMPLING_SEED = 1234                    # fixed so re-running stage 2 picks the same transcripts
-JUDGE_MAX_TOKENS = 4000                 # room for scratchpad + characterization + json
+# The judge (gpt-5.4) is a reasoning model: max_tokens covers hidden reasoning + the visible
+# write-up, so it needs generous room or it truncates its own JSON. low effort keeps most of the
+# budget for output (reasoning_effort is auto-dropped for non-reasoning judges like gpt-4o).
+JUDGE_MAX_TOKENS = 8000
+JUDGE_REASONING_EFFORT = "low"
 JUDGE_TEMPERATURE = 1.0
 
 
@@ -102,7 +106,9 @@ def characterize_condition(condition: dict, judge_model: str = JUDGE_MODEL) -> d
         transcripts=transcripts,
     )
     messages = [{"role": "system", "content": prompt.system}, {"role": "user", "content": user}]
-    raw = providers.chat(judge_model, messages, JUDGE_TEMPERATURE, 1.0, JUDGE_MAX_TOKENS)
+    raw = providers.chat(
+        judge_model, messages, JUDGE_TEMPERATURE, 1.0, JUDGE_MAX_TOKENS, JUDGE_REASONING_EFFORT
+    )
 
     characterization = _extract_tag(raw, "characterization")
     attractors_block = _extract_tag(raw, "attractors_json")

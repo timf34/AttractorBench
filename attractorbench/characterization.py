@@ -10,7 +10,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 CHARACTERIZATION_PROMPT_VERSION = "v1"
-JUDGE_MODEL = "openai/gpt-5.2"   # OpenAI-only for now; swap to a different judge once OpenRouter is enabled
+JUDGE_MODEL = "openai/gpt-5.4"   # strongest available; minimises self-judging overlap with subjects.
+# (OpenAI-only for now; the ideal cross-family judge — e.g. Claude — needs OpenRouter, which is stubbed.)
 
 
 @dataclass(frozen=True)

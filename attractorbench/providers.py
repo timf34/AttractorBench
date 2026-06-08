@@ -25,6 +25,12 @@ _EMPTY_RETRY_CEILING = 8192
 
 _client: openai.OpenAI | None = None
 
+# Remember per-model API quirks so we don't re-incur a 400 + retry on EVERY call:
+# models that reject `reasoning_effort` (non-reasoning, e.g. gpt-4o/4.1/5.3-chat) and models
+# that need the legacy `max_tokens` instead of `max_completion_tokens`. Populated on first hit.
+_NO_REASONING_EFFORT: set[str] = set()
+_NEEDS_MAX_TOKENS: set[str] = set()
+
 
 def _get_client() -> openai.OpenAI:
     """Lazily build the OpenAI client so importing this module never requires a key."""
@@ -73,9 +79,9 @@ def _create(client, model_id, messages, temperature, top_p, max_tokens, reasonin
     only dropped if the model rejects the requested value (won't trigger at the default 1.0).
     """
     kwargs = dict(model=model_id, messages=messages, temperature=temperature, top_p=top_p)
-    if reasoning_effort is not None:
+    if reasoning_effort is not None and model_id not in _NO_REASONING_EFFORT:
         kwargs["reasoning_effort"] = reasoning_effort
-    token_param = "max_completion_tokens"
+    token_param = "max_tokens" if model_id in _NEEDS_MAX_TOKENS else "max_completion_tokens"
     for _ in range(5):  # at most a few parameter adjustments
         try:
             return client.chat.completions.create(**kwargs, **{token_param: max_tokens})
@@ -83,10 +89,12 @@ def _create(client, model_id, messages, temperature, top_p, max_tokens, reasonin
             msg = str(e).lower()
             if token_param == "max_completion_tokens" and "max_tokens" in msg:
                 token_param = "max_tokens"
+                _NEEDS_MAX_TOKENS.add(model_id)  # remember: don't re-try the wrong param next call
                 continue
             if "reasoning_effort" in msg and "reasoning_effort" in kwargs:
                 kwargs.pop("reasoning_effort")
-                print(f"    [param] {model_id} rejects reasoning_effort — dropping it (model default)")
+                _NO_REASONING_EFFORT.add(model_id)  # remember: stop sending it for this model
+                print(f"    [param] {model_id} rejects reasoning_effort — dropping it (cached, model default)")
                 continue
             if "temperature" in msg and "temperature" in kwargs:
                 kwargs.pop("temperature")

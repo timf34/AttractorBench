@@ -97,30 +97,54 @@ def render_stage1_md(s1: dict) -> str:
     return "\n".join(out)
 
 
-def render_stage2_md(s2: dict) -> str:
-    out = [f"# Stage 2 (LLM judge) — {s2.get('experiment_name')}", ""]
-    out += _meta_lines(s2)
-    out += [
-        f"- **judge_model**: {s2.get('judge_model')}",
-        f"- **sampled**: {s2.get('n_runs_sampled')}/{s2.get('n_runs_total')} "
-        f"(run_indices {s2.get('sampled_run_indices')})",
-        f"- **parse_ok**: {s2.get('parse_ok')}",
-        "",
-        "## Attractors", "",
-    ]
-    attractors = s2.get("attractors")
-    if attractors:
-        out += _table(
-            ["label", "fraction_of_runs", "one_line"],
-            [[a.get("label"), a.get("fraction_of_runs"), a.get("one_line")] for a in attractors],
-        )
-    elif s2.get("parse_ok"):
-        out += ["_No shared attractor (judge returned [])._"]
-    else:
-        out += ["_Attractor JSON failed to parse — raw block below._", "",
-                "```", s2.get("raw_attractors_block") or "", "```"]
+def _frac(a):
+    if a.get("fraction_count") is not None and a.get("fraction_denom"):
+        return f"{a['fraction_count']}/{a['fraction_denom']}"
+    return a.get("fraction_raw") or (a.get("fraction_of_runs") if a.get("fraction_of_runs") is not None else "—")
 
-    out += ["", "## Characterization", "", (s2.get("characterization") or "_none_").strip()]
+
+def _attractor_lines(a: dict, heading: str) -> list[str]:
+    out = [f"### {heading}: {a.get('label')}  ({_frac(a)})", ""]
+    if a.get("trajectory"):
+        out.append(f"- **trajectory**: {a['trajectory']}")
+    if a.get("one_line"):
+        out.append(f"- **one-line**: {a['one_line']}")
+    if a.get("terminal_form"):
+        out.append("- **terminal form**:")
+        out += [f"    - {q}" for q in a["terminal_form"]]
+    out.append("")
+    return out
+
+
+def render_stage2_md(s2: dict) -> str:
+    scope = s2.get("scope", "condition")
+    title = s2.get("scope_description") if scope == "overall" else s2.get("experiment_name")
+    out = [f"# Stage 2 judge ({scope}) — {title}", ""]
+    out += _meta_lines(s2)
+    out += [f"- **judge_model**: {s2.get('judge_model')}"]
+    if scope == "overall":
+        out.append(f"- **sampled**: {s2.get('n_convos_sampled')}/{s2.get('n_convos_total')} "
+                   f"conversation tails (last {s2.get('last_n_turns')} turns each)")
+    else:
+        out.append(f"- **sampled**: {s2.get('n_runs_sampled')}/{s2.get('n_runs_total')} "
+                   f"(run_indices {s2.get('sampled_run_indices')})")
+    out += [f"- **parse_ok**: {s2.get('parse_ok')}", ""]
+
+    primary = s2.get("primary_attractor")
+    secondary = [a for a in (s2.get("attractors") or []) if not a.get("is_primary")]
+    if primary:
+        out += ["## Primary attractor", ""]
+        out += _attractor_lines(primary, "PRIMARY")
+    elif s2.get("parse_ok"):
+        out += ["## Primary attractor", "", "_No dominant shared attractor — runs are diverse._", ""]
+    else:
+        out += ["_Judge output failed to parse — raw response below._", ""]
+    if secondary:
+        out += ["## Secondary attractors", ""]
+        for a in secondary:
+            out += _attractor_lines(a, "secondary")
+
+    out += ["## Characterization", "", (s2.get("characterization") or "_none_").strip()]
     if not s2.get("parse_ok") and s2.get("raw"):
         out += ["", "## Raw judge response", "", "```", s2["raw"], "```"]
     return "\n".join(out)

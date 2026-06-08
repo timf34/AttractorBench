@@ -94,9 +94,13 @@ def _parse_attractors(raw_block: str | None) -> tuple[list | None, bool]:
         return None, False
 
 
-def characterize_condition(condition: dict, judge_model: str = JUDGE_MODEL) -> dict:
+def characterize_condition(
+    condition: dict,
+    judge_model: str = JUDGE_MODEL,
+    token_budget: int = JUDGE_CONTEXT_TOKEN_BUDGET,
+) -> dict:
     runs = condition.get("runs", [])
-    sampled, blocks = select_transcripts(runs)
+    sampled, blocks = select_transcripts(runs, token_budget=token_budget)
     transcripts = TRANSCRIPT_FORMAT.run_separator.join(blocks)
 
     prompt = CharacterizationPrompt()

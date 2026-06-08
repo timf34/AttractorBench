@@ -143,8 +143,11 @@ def run_task(task) -> None:
     log(f"  [ok] {cond.name}: {done} runs (last {len(run['turns'])} turns)")
 
 
-def analyse(cond: Condition, judge_model: str) -> dict:
-    """Transcript .md + stage 1 + stage 2 (judge) for one finished condition."""
+def analyse(cond: Condition, judge_model: str | None) -> dict:
+    """Transcript .md + stage 1 (free) + optional stage 2 (judge) for one finished condition.
+
+    judge_model=None skips the (expensive) judge — run it later with run_judge.py.
+    """
     summary = {"name": cond.name, "attractors": None}
     if not cond.runs:
         return summary
@@ -155,6 +158,9 @@ def analyse(cond: Condition, judge_model: str) -> dict:
         s1p = deterministic._output_path(cond.path)
         json.dump(s1, open(s1p, "w"), indent=2, ensure_ascii=False)
         write_markdown(s1, s1p)
+        if judge_model is None:
+            log(f"  [stage1 only] {cond.name} (judge skipped)")
+            return summary
         s2 = characterize.characterize_condition(data, judge_model=judge_model)
         s2p = characterize._output_path(cond.path)
         json.dump(s2, open(s2p, "w"), indent=2, ensure_ascii=False)
@@ -177,6 +183,9 @@ def main() -> None:
     p.add_argument("--judge", default=characterize.JUDGE_MODEL,
                    help="fixed judge model for stage-2 characterization across ALL conditions "
                         f"(default {characterize.JUDGE_MODEL}; e.g. openai/gpt-5.4)")
+    p.add_argument("--no-judge", action="store_true",
+                   help="skip stage-2 (the expensive judge); generate + stage-1 + transcript .md only. "
+                        "Run the judge later with run_judge.py.")
     p.add_argument("--output-dir", default="results")
     args = p.parse_args()
 
@@ -201,10 +210,11 @@ def main() -> None:
         for fut in cf.as_completed([ex.submit(run_task, t) for t in tasks]):
             fut.result()  # exceptions handled inside run_task
 
-    log(f"=== analysing {len(conditions)} conditions ===")
+    judge = None if args.no_judge else args.judge
+    log(f"=== analysing {len(conditions)} conditions === (judge={'SKIPPED' if judge is None else judge})")
     summaries = []
     with cf.ThreadPoolExecutor(max_workers=args.analysis_concurrency) as ex:
-        for fut in cf.as_completed([ex.submit(analyse, c, args.judge) for c in conditions]):
+        for fut in cf.as_completed([ex.submit(analyse, c, judge) for c in conditions]):
             summaries.append(fut.result())
 
     log("==== SUMMARY (attractors per condition) ====")

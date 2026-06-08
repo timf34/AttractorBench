@@ -1,0 +1,3 @@
+openai>=1.40.0
+python-dotenv>=1.0.0
+# Stage-1 analysis is pure-stdlib on purpose (no embedding/NLP deps).

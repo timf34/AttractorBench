@@ -17,11 +17,12 @@ load_dotenv()  # read OPENAI_API_KEY from .env at repo root
 
 _DEFAULT_RETRIES = 3
 _REQUEST_TIMEOUT = 120  # seconds, matches the clone
-# Reasoning models share max_completion_tokens between hidden reasoning and the visible reply.
-# On a rich turn, reasoning can consume the WHOLE budget -> an empty turn (finish_reason=length).
-# When that happens we escalate the budget (x3) up to this ceiling and retry, so a degenerate
-# empty turn is rescued. Truncated-but-non-empty turns are kept as-is (not escalated).
-_EMPTY_RETRY_CEILING = 8192
+# A turn cut off by the token cap (finish_reason=length) is bad data — either EMPTY (reasoning
+# ate the whole max_completion_tokens budget) or TRUNCATED mid-reply. Both corrupt the transcript
+# and the next turn's context, so we escalate the budget (x3) up to this ceiling and retry until
+# the turn completes (finish_reason=stop). max_completion_tokens is only a CAP (you're billed for
+# tokens actually generated), so a high ceiling costs nothing for normal turns.
+_LENGTH_RETRY_CEILING = 24576
 
 _client: openai.OpenAI | None = None
 
@@ -50,12 +51,16 @@ def chat(
     top_p: float,
     max_tokens: int,
     reasoning_effort: str | None = None,
-) -> str:
+) -> tuple[str, str | None]:
     """Dispatch a chat completion to the backend named by the ``provider/...`` prefix.
 
     ``model`` is provider-prefixed, e.g. ``"openai/gpt-5.2"`` or ``"openrouter/x-ai/grok-4.1"``.
     ``reasoning_effort`` (None | minimal | low | medium | high) controls hidden reasoning on
-    reasoning models; it is ignored by models that don't support it. Returns the assistant text.
+    reasoning models; it is ignored by models that don't support it.
+
+    Returns ``(content, finish_reason)``. ``finish_reason`` is "stop" for a complete turn; it is
+    "length" only if the turn was cut off even after escalating to the ceiling (lets callers audit
+    that no turn in a run was truncated).
     """
     provider, _, model_id = model.partition("/")
     if not model_id:
@@ -115,29 +120,28 @@ def _openai_chat(
     max_tokens: int,
     reasoning_effort: str | None = None,
     retries: int = _DEFAULT_RETRIES,
-) -> str:
-    """OpenAI Chat Completions with retry/backoff, 402/429 handling, and empty-turn rescue.
+) -> tuple[str, str | None]:
+    """OpenAI Chat Completions with retry/backoff, 402/429 handling, and no-truncation escalation.
 
-    On reasoning models a turn can come back EMPTY because hidden reasoning ate the whole
-    max_completion_tokens budget (finish_reason=length). We escalate the budget (x3, up to
-    _EMPTY_RETRY_CEILING) and retry so the visible reply gets room. Truncated-but-non-empty
-    turns are accepted as-is.
+    A turn cut off by the token cap (finish_reason=length) — whether EMPTY (reasoning ate the
+    budget) or TRUNCATED mid-reply — is bad data, so we escalate the budget (x3, up to
+    _LENGTH_RETRY_CEILING) and retry until the turn completes (finish_reason=stop). Returns
+    (content, finish_reason); finish_reason is "length" only if it still didn't fit at the ceiling.
     """
     budget = max_tokens
-    ceiling = max(max_tokens, _EMPTY_RETRY_CEILING)
+    ceiling = max(max_tokens, _LENGTH_RETRY_CEILING)
     while True:
         content, finish = _openai_call_once(
             model_id, messages, temperature, top_p, budget, reasoning_effort, retries
         )
-        if content or finish != "length" or budget >= ceiling:
-            if not content and finish == "length":
-                print(
-                    f"    [empty output] {model_id} filled {budget} tokens with reasoning and still "
-                    f"returned nothing — lower reasoning_effort or raise max_new_tokens."
-                )
-            return content
+        if finish != "length" or budget >= ceiling:
+            if finish == "length":
+                kind = "empty (reasoning ate budget)" if not content else "TRUNCATED reply"
+                print(f"    [length cap] {model_id} {kind} even at ceiling {budget} — accepting as-is")
+            return content, finish
         new_budget = min(budget * 3, ceiling)
-        print(f"    [empty output] {model_id} reasoning filled {budget} tokens; retrying with {new_budget}")
+        kind = "empty (reasoning ate budget)" if not content else "truncated reply"
+        print(f"    [length cap] {model_id} {kind} at {budget} tokens; retrying with {new_budget}")
         budget = new_budget
 
 

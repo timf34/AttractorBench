@@ -61,7 +61,10 @@ MODES = ["self_append", "two_instance"]
 
 TEMPERATURE = 1.0
 REASONING_EFFORT = "low"   # auto-dropped for non-reasoning models (gpt-4o/4.1/5.3-chat)
-MAX_NEW_TOKENS = 2048
+# Per-turn token budget (a CAP — billed only for tokens actually generated). Set high so turns
+# complete first-try; the provider escalates to its ceiling (24576) on any finish_reason=length,
+# so replies are never left truncated (truncation would corrupt the transcript + downstream turns).
+MAX_NEW_TOKENS = 8192
 
 _log_lock = threading.Lock()
 

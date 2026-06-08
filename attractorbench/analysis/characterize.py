@@ -110,7 +110,7 @@ def characterize_condition(
         transcripts=transcripts,
     )
     messages = [{"role": "system", "content": prompt.system}, {"role": "user", "content": user}]
-    raw = providers.chat(
+    raw, _ = providers.chat(
         judge_model, messages, JUDGE_TEMPERATURE, 1.0, JUDGE_MAX_TOKENS, JUDGE_REASONING_EFFORT
     )
 

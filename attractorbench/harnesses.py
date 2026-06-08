@@ -54,12 +54,15 @@ def _new_run(run_index: int, seed_prompt: str) -> dict:
     }
 
 
-def _record_turn(run: dict, turn: int, speaker: str, model: str, content: str) -> str:
+def _record_turn(
+    run: dict, turn: int, speaker: str, model: str, content: str, finish_reason: str | None = None
+) -> str:
     content_clean = strip_thinking(content)
-    if not content_clean:
-        # Reasoning models can spend the whole token budget on hidden reasoning and return
-        # nothing — surface it rather than silently recording an empty turn.
-        print(f"    [run {run['run_index']} turn {turn}] WARNING: empty reply from {model} (raise max_new_tokens?)")
+    if finish_reason == "length":
+        # Should be rare: the turn was still cut off at the provider's ceiling. Recorded in the
+        # turn dict (finish_reason) so a run can be audited for any truncation.
+        print(f"    [run {run['run_index']} turn {turn}] WARNING: {model} finish_reason=length "
+              f"(turn truncated even at ceiling — content_len={len(content_clean)})")
     run["turns"].append(
         {
             "turn": turn,
@@ -67,6 +70,7 @@ def _record_turn(run: dict, turn: int, speaker: str, model: str, content: str) -
             "model": model,
             "content": content,
             "content_clean": content_clean,
+            "finish_reason": finish_reason,
         }
     )
     return content_clean
@@ -130,10 +134,10 @@ def run_self_append(
         else:
             raise ValueError(f"Unknown SELF_APPEND_TRANSPORT {SELF_APPEND_TRANSPORT!r}")
 
-        reply = providers.chat(
+        reply, finish = providers.chat(
             cfg.model_a, call_messages, temperature, cfg.top_p, cfg.max_new_tokens, cfg.reasoning_effort
         )
-        content_clean = _record_turn(run, turn, "A", cfg.model_a, reply)
+        content_clean = _record_turn(run, turn, "A", cfg.model_a, reply, finish)
         contents.append(content_clean)
         if SELF_APPEND_TRANSPORT == "message_list":
             messages.append({"role": "assistant", "content": reply})
@@ -166,10 +170,10 @@ def _run_two_history(
         history = a_history if is_a else b_history
         other = b_history if is_a else a_history
 
-        reply = providers.chat(model, history, temperature, cfg.top_p, cfg.max_new_tokens, cfg.reasoning_effort)
+        reply, finish = providers.chat(model, history, temperature, cfg.top_p, cfg.max_new_tokens, cfg.reasoning_effort)
         history.append({"role": "assistant", "content": reply})
         other.append({"role": "user", "content": reply})  # the other instance hears it as user
-        content_clean = _record_turn(run, turn, speaker, model, reply)
+        content_clean = _record_turn(run, turn, speaker, model, reply, finish)
 
         if _hit_early_end(run, turn, content_clean, cfg.allow_early_end):
             break

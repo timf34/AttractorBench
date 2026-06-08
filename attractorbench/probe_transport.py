@@ -35,7 +35,7 @@ _LIST_MESSAGES = [
 def probe_message_list(model: str) -> None:
     print(f"\n[message_list] {model} — assistant_x ends with '...; second,'")
     try:
-        reply = providers.chat(model, _LIST_MESSAGES, temperature=1.0, top_p=1.0, max_tokens=200)
+        reply, _ = providers.chat(model, _LIST_MESSAGES, temperature=1.0, top_p=1.0, max_tokens=200)
     except Exception as e:  # noqa: BLE001
         print(f"  ERROR -> {type(e).__name__}: {e}")
         return
@@ -57,7 +57,7 @@ def probe_serialized(model: str, seed: str, n_turns: int = 3, max_tokens: int = 
             user_content = seed + "\n\n" + serialize_self_append(contents)
         messages = [{"role": "system", "content": system}, {"role": "user", "content": user_content}]
         try:
-            reply = providers.chat(model, messages, temperature=1.0, top_p=1.0, max_tokens=max_tokens)
+            reply, _ = providers.chat(model, messages, temperature=1.0, top_p=1.0, max_tokens=max_tokens)
         except Exception as e:  # noqa: BLE001
             print(f"  turn {turn}: ERROR -> {type(e).__name__}: {e}")
             return

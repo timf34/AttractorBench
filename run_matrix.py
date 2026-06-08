@@ -54,6 +54,8 @@ REGIMES = [
     ("helpful_assistant", "topic_v1"),            # topic-independence
     ("ai_to_ai_aware", "ai_to_ai_opener_v1"),     # knows it's another AI
     ("ai_to_ai_self_aware", "ai_to_ai_opener_v1"),  # knows it's itself
+    ("ai_to_ai_aware", "clinical_v1"),            # AI-aware but detached/clinical tone (tone contrast)
+    ("helpful_assistant", "minimal_v1"),          # extreme low-prompt baseline
 ]
 MODES = ["self_append", "two_instance"]
 

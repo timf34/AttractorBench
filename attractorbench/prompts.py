@@ -78,6 +78,24 @@ SEED_PROMPTS: dict[str, list[str]] = {
         "I've been curious about the history of jazz lately — tell me about it.",
         "Walk me through how to get started growing houseplants.",
     ],
+    # Clinical / evaluation register — detached, reveals it's two AIs. Pair with
+    # system_prompt_key="ai_to_ai_aware" (a tonal contrast to the friendly ai_to_ai_opener_v1).
+    "clinical_v1": [
+        "This is an evaluation of what two AIs produce when replying to each other in a loop. You may begin.",
+        "Controlled dialogue trial between two AI systems. No objective. Begin.",
+        "Logging a multi-turn exchange between two language models. Produce the first message.",
+        "Diagnostic run: two models will respond to each other in turns. Proceed.",
+        "Benchmark sample: two AIs reply to one another for a fixed number of turns. Start.",
+    ],
+    # Minimal / near-zero priming — extreme low-prompt baseline. Pair with
+    # system_prompt_key="helpful_assistant": does the attractor emerge with almost no seed?
+    "minimal_v1": [
+        "Begin.",
+        "Go ahead.",
+        "Say something.",
+        "Your move.",
+        "Start however you'd like.",
+    ],
 }
 
 CONTINUATION_NUDGES: dict[str, str] = {

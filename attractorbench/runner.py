@@ -43,8 +43,17 @@ def validate(cfg: RunConfig) -> None:
         raise NotImplementedError(
             "memory_mode='compressed' is a stub seam — not implemented in v1 (full only)."
         )
+    if cfg.memory_mode == "last_message_only" and cfg.mode != "self_append":
+        raise ValueError("memory_mode='last_message_only' only applies to mode='self_append'")
     if cfg.mode not in _HARNESSES:
         raise ValueError(f"Unknown mode {cfg.mode!r}")
+    if cfg.mode == "self_append" and cfg.system_prompt_key.startswith("ai_to_ai"):
+        # A lone model fed an "another AI" framing ventriloquizes both sides of an imagined
+        # dialogue — neither clean self-talk nor clean dialogue (found empirically; see notes.md).
+        raise ValueError(
+            "self_append must not use an ai_to_ai_* system prompt (the model role-plays both "
+            "sides). Use 'self_monologue' or 'helpful_assistant'."
+        )
     if cfg.mode == "cross_model":
         if not cfg.model_b:
             raise ValueError("cross_model requires model_b")
@@ -67,7 +76,9 @@ def _condition_basename(cfg: RunConfig, temperature: float) -> str:
     models = _model_slug(cfg.model_a)
     if cfg.model_b and cfg.model_b != cfg.model_a:
         models += f"_x_{_model_slug(cfg.model_b)}"
-    return f"{cfg.mode}__{models}__{cfg.system_prompt_key}__{cfg.seed_prompt_set}__temp{temperature}"
+    # Non-default memory modes are part of the condition identity (e.g. self_append_lastmsg).
+    mem_tag = {"last_message_only": "_lastmsg", "compressed": "_compact"}.get(cfg.memory_mode, "")
+    return f"{cfg.mode}{mem_tag}__{models}__{cfg.system_prompt_key}__{cfg.seed_prompt_set}__temp{temperature}"
 
 
 def _condition_path(cfg: RunConfig, temperature: float) -> str:
@@ -94,6 +105,7 @@ def _save_condition(
         "model_b": cfg.model_b,
         "system_prompt_key": cfg.system_prompt_key,
         "system_prompt": system_prompt,   # resolved text actually sent (incl. early-end clause)
+        "memory_mode": cfg.memory_mode,
         "continuation_style": cfg.continuation_style,
         "allow_early_end": cfg.allow_early_end,
         "seed_prompt_set": cfg.seed_prompt_set,

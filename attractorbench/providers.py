@@ -1,8 +1,13 @@
 """Provider layer: one ``chat()`` interface, backend selected by the ``provider/...`` prefix.
 
-v1 is OpenAI-only (Tim has OpenAI credits, no OpenRouter credits). The ``openrouter/`` prefix is
-recognised by the dispatcher but its backend is a deliberate stub — adding OpenRouter later is a
-one-function change (implement ``_openrouter_chat``).
+- ``openai/...``   -> the real OpenAI API (Tim has credits). Used by the conversation models AND
+                      the stage-2 judge.
+- ``local/...``    -> a self-hosted, OpenAI-compatible endpoint (vLLM / Openweights deploy) named
+                      by ``LOCAL_BASE_URL`` + ``LOCAL_API_KEY``. Used to serve open-weight models
+                      and LoRA adapters on a rented GPU. Shares the exact same Chat Completions code
+                      path (retry/backoff, length escalation) as ``openai/`` — only the client
+                      differs — so the ``openai/`` judge keeps hitting real OpenAI in the same run.
+- ``openrouter/...`` -> a deliberate stub; adding it later is a one-function change.
 """
 
 from __future__ import annotations
@@ -25,6 +30,7 @@ _REQUEST_TIMEOUT = 120  # seconds, matches the clone
 _LENGTH_RETRY_CEILING = 24576
 
 _client: openai.OpenAI | None = None
+_local_client: openai.OpenAI | None = None
 
 # Remember per-model API quirks so we don't re-incur a 400 + retry on EVERY call:
 # models that reject `reasoning_effort` (non-reasoning, e.g. gpt-4o/4.1/5.3-chat) and models
@@ -42,6 +48,26 @@ def _get_client() -> openai.OpenAI:
             raise RuntimeError("OPENAI_API_KEY not set (put it in .env at the repo root)")
         _client = openai.OpenAI(api_key=api_key, timeout=_REQUEST_TIMEOUT)
     return _client
+
+
+def _get_local_client() -> openai.OpenAI:
+    """Client for a self-hosted OpenAI-compatible endpoint (vLLM / Openweights deploy).
+
+    ``LOCAL_BASE_URL`` is the endpoint (e.g. ``https://.../v1``). ``LOCAL_API_KEY`` is the key — a
+    raw vLLM server ignores it (any non-empty string works), while an Openweights deploy needs the
+    real one. Kept separate from the OpenAI client so ``openai/`` (incl. the judge) still routes to
+    real OpenAI in the same run.
+    """
+    global _local_client
+    if _local_client is None:
+        base_url = os.environ.get("LOCAL_BASE_URL")
+        if not base_url:
+            raise RuntimeError(
+                "LOCAL_BASE_URL not set (the vLLM/Openweights OpenAI-compatible /v1 endpoint)"
+            )
+        api_key = os.environ.get("LOCAL_API_KEY", "EMPTY")
+        _local_client = openai.OpenAI(api_key=api_key, base_url=base_url, timeout=_REQUEST_TIMEOUT)
+    return _local_client
 
 
 def chat(
@@ -67,7 +93,14 @@ def chat(
         raise ValueError(f"model must be provider-prefixed, e.g. 'openai/gpt-5.2' (got {model!r})")
 
     if provider == "openai":
-        return _openai_chat(model_id, messages, temperature, top_p, max_tokens, reasoning_effort)
+        return _chat_completions(
+            _get_client(), model_id, messages, temperature, top_p, max_tokens, reasoning_effort
+        )
+    if provider == "local":
+        # Open-weight / LoRA endpoints aren't reasoning models — never send reasoning_effort.
+        return _chat_completions(
+            _get_local_client(), model_id, messages, temperature, top_p, max_tokens, None
+        )
     if provider == "openrouter":
         return _openrouter_chat(model_id, messages, temperature, top_p, max_tokens)
     raise ValueError(f"Unknown provider prefix {provider!r} in model {model!r}")
@@ -98,8 +131,9 @@ def _create(client, model_id, messages, temperature, top_p, max_tokens, reasonin
                 continue
             if "reasoning_effort" in msg and "reasoning_effort" in kwargs:
                 kwargs.pop("reasoning_effort")
-                _NO_REASONING_EFFORT.add(model_id)  # remember: stop sending it for this model
-                print(f"    [param] {model_id} rejects reasoning_effort — dropping it (cached, model default)")
+                if model_id not in _NO_REASONING_EFFORT:  # log once, not per in-flight thread
+                    _NO_REASONING_EFFORT.add(model_id)  # remember: stop sending it for this model
+                    print(f"    [param] {model_id} rejects reasoning_effort — dropping it (cached, model default)")
                 continue
             if "temperature" in msg and "temperature" in kwargs:
                 kwargs.pop("temperature")
@@ -112,7 +146,8 @@ def _create(client, model_id, messages, temperature, top_p, max_tokens, reasonin
             raise
 
 
-def _openai_chat(
+def _chat_completions(
+    client: openai.OpenAI,
     model_id: str,
     messages: list[dict],
     temperature: float,
@@ -121,7 +156,8 @@ def _openai_chat(
     reasoning_effort: str | None = None,
     retries: int = _DEFAULT_RETRIES,
 ) -> tuple[str, str | None]:
-    """OpenAI Chat Completions with retry/backoff, 402/429 handling, and no-truncation escalation.
+    """Chat Completions (any OpenAI-compatible ``client``) with retry/backoff, 402/429 handling,
+    and no-truncation escalation.
 
     A turn cut off by the token cap (finish_reason=length) — whether EMPTY (reasoning ate the
     budget) or TRUNCATED mid-reply — is bad data, so we escalate the budget (x3, up to
@@ -131,8 +167,8 @@ def _openai_chat(
     budget = max_tokens
     ceiling = max(max_tokens, _LENGTH_RETRY_CEILING)
     while True:
-        content, finish = _openai_call_once(
-            model_id, messages, temperature, top_p, budget, reasoning_effort, retries
+        content, finish = _chat_call_once(
+            client, model_id, messages, temperature, top_p, budget, reasoning_effort, retries
         )
         if finish != "length" or budget >= ceiling:
             if finish == "length":
@@ -145,7 +181,8 @@ def _openai_chat(
         budget = new_budget
 
 
-def _openai_call_once(
+def _chat_call_once(
+    client: openai.OpenAI,
     model_id: str,
     messages: list[dict],
     temperature: float,
@@ -163,7 +200,6 @@ def _openai_call_once(
     NOTE: temperature/top_p are passed through unchanged — they're load-bearing experimental
     variables, so an unsupported value surfaces as an error rather than being silently dropped.
     """
-    client = _get_client()
     last_error: str | None = None
     for attempt in range(retries):
         try:
@@ -202,7 +238,7 @@ def _openrouter_chat(
 ) -> str:
     """STUB — the seam for OpenRouter (Grok, Gemini, open-weight) once credits exist.
 
-    Implementing this single function (mirroring _openai_chat's retry/backoff against the
+    Implementing this single function (mirroring _chat_completions's retry/backoff against the
     OpenRouter REST endpoint, reading OPENROUTER_API_KEY) is all that's needed to enable it.
     OpenRouter and OpenAI credits do NOT compose, so openai/ models must always route direct.
     """

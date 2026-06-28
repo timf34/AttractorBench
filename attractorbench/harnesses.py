@@ -114,10 +114,13 @@ def run_self_append(
         if SELF_APPEND_TRANSPORT == "serialized_string":
             # Single growing context fed back as ONE user message (no role-swap). Turn 1 is the
             # bare seed; later turns are seed + the model's own accumulated output.
+            # memory_mode="last_message_only" is the no-memory baseline: identical except the
+            # model sees only its OWN LAST turn (seed kept, so history depth is the only delta).
             if not contents:
                 user_content = seed_prompt
             else:
-                user_content = seed_prompt + "\n\n" + serialize_self_append(contents)
+                visible = contents[-1:] if cfg.memory_mode == "last_message_only" else contents
+                user_content = seed_prompt + "\n\n" + serialize_self_append(visible)
                 if cfg.continuation_style == "nudge":
                     user_content += "\n\n" + nudge
             call_messages = [
@@ -126,6 +129,11 @@ def run_self_append(
             ]
         elif SELF_APPEND_TRANSPORT == "message_list":
             # Seam (probe-disfavoured): grow one messages list ending on an assistant turn.
+            if cfg.memory_mode == "last_message_only":
+                raise NotImplementedError(
+                    "memory_mode='last_message_only' is only implemented for the "
+                    "serialized_string transport"
+                )
             if turn == 1:
                 messages.append({"role": "user", "content": seed_prompt})
             elif cfg.continuation_style == "nudge":

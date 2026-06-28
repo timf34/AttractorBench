@@ -70,9 +70,15 @@ def main() -> None:
     p.add_argument("--context-budget", type=int, default=characterize.JUDGE_CONTEXT_TOKEN_BUDGET,
                    help="token ceiling for whole-transcript sampling (lower = cheaper, fewer runs read)")
     p.add_argument("--concurrency", type=int, default=6)
+    p.add_argument("--match", default=None,
+                   help="only judge condition files whose filename contains ANY of these "
+                        "comma-separated substrings (e.g. 'self_monologue,self_append_lastmsg')")
     args = p.parse_args()
 
     files = find_condition_files(args.root)
+    if args.match:
+        subs = [s.strip() for s in args.match.split(",")]
+        files = [f for f in files if any(s in os.path.basename(f) for s in subs)]
     log(f"PLAN: judge {len(files)} conditions with {args.judge} "
         f"(context_budget={args.context_budget}, concurrency={args.concurrency})")
     if not files:
@@ -89,8 +95,10 @@ def main() -> None:
     ok = sum(1 for r in results if r["ok"])
     log(f"==== DONE: {ok}/{len(results)} parsed cleanly ====")
     for r in sorted(results, key=lambda x: x["path"]):
-        labels = ", ".join(f"{a.get('label')} ({a.get('fraction_of_runs')})"
-                           for a in (r["attractors"] or [])) or "—"
+        # PRIMARY marked with '*'; unmarked = secondary clusters. No '*' anywhere means the
+        # judge found no dominant shared attractor (the honest-null outcome).
+        labels = ", ".join(f"{'*' if a.get('is_primary') else ''}{a.get('label')} ({a.get('fraction_of_runs')})"
+                           for a in (r["attractors"] or [])) or "— (no shared attractor)"
         log(f"  {os.path.basename(r['path'])}: {labels}")
 
 

@@ -20,8 +20,15 @@ MODELS = [
     "gpt-5.4", "gpt-5.4-mini", "gpt-5.4-nano", "gpt-5.3-chat-latest",
     "gpt-5.2", "gpt-5.1", "gpt-5", "gpt-4.1", "gpt-4o",
 ]
-SYSTEM_PROMPTS = ["helpful_assistant", "ai_to_ai_aware", "ai_to_ai_self_aware"]
+SYSTEM_PROMPTS = ["helpful_assistant", "ai_to_ai_aware", "ai_to_ai_self_aware", "self_monologue"]
 ROOT = "results/family_sweep"
+
+
+def is_confounded(cond) -> bool:
+    """self_append × ai_to_ai_* = one model ventriloquizing both sides (see notes.md). Excluded
+    from all judge pools so the signatures only reflect clean conditions."""
+    return (cond.get("mode") == "self_append"
+            and str(cond.get("system_prompt_key") or "").startswith("ai_to_ai"))
 
 
 def load_conditions(slug):
@@ -30,7 +37,7 @@ def load_conditions(slug):
         if "/analysis/" in f:
             continue
         d = json.load(open(f))
-        if d.get("runs"):
+        if d.get("runs") and not is_confounded(d):
             out.append(d)
     return out
 
@@ -57,9 +64,13 @@ def job(args):
 
 
 def main():
+    import argparse
+    p = argparse.ArgumentParser(description="Ensure overall judge outputs exist (cache-aware).")
+    p.add_argument("--concurrency", type=int, default=6, help="concurrent judge calls (default 6)")
+    args = p.parse_args()
     tasks = [(m, s) for m in MODELS for s in (["ALL"] + SYSTEM_PROMPTS)]
-    print(f"Ensuring {len(tasks)} overall judge outputs (cache-aware)...", flush=True)
-    with cf.ThreadPoolExecutor(max_workers=6) as ex:
+    print(f"Ensuring {len(tasks)} overall judge outputs (cache-aware, concurrency={args.concurrency})...", flush=True)
+    with cf.ThreadPoolExecutor(max_workers=args.concurrency) as ex:
         for line in ex.map(job, tasks):
             print(line, flush=True)
     print("DONE")

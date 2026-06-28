@@ -7,6 +7,8 @@ Metrics (per the Anthropic transcript-analysis approach plus convergence signatu
     (similarity trending -> 1 is the operational signature of an attractor)
   - type-token-ratio per turn (lexical-diversity decay over turn number)
   - verbatim-loop detection (exact + near-exact repeated turns)
+  - trajectory: chars/questions per turn (+slopes), time-to-basin settle point, and
+    early-warning stats (variance + lag-1 autocorrelation rise pre-transition; Scheffer 2009)
 
     python -m attractorbench.analysis.deterministic results/<exp>/<condition>.json [--top 30]
 """
@@ -24,6 +26,7 @@ NEAR_EXACT_LOOP_THRESHOLD = 0.9   # normalised-Levenshtein similarity above whic
 _LEV_TOKEN_CAP = 300              # cap token-level Levenshtein length to keep it tractable on long turns
 _NEAR_LOOP_LOOKBACK = 3          # compare each turn against the previous K turns for periodic loops
 _DEFAULT_TOP_WORDS = 30
+BASIN_SETTLE_BAND = 0.15          # |sim - final-third mean| band within which the similarity series counts as settled (time-to-basin)
 
 _WORD_RE = re.compile(r"[a-z0-9']+")
 # Common emoji unicode blocks (emoticons, symbols/pictographs, transport, supplemental, flags, dingbats).
@@ -92,6 +95,46 @@ def _norm_ws(text: str) -> str:
     return " ".join(text.split())
 
 
+def _round_opt(x: float | None, nd: int = 4) -> float | None:
+    return None if x is None else round(x, nd)
+
+
+def _variance(xs: list[float]) -> float | None:
+    n = len(xs)
+    if n < 2:
+        return None
+    m = sum(xs) / n
+    return sum((x - m) ** 2 for x in xs) / n
+
+
+def _lag1_autocorr(xs: list[float]) -> float | None:
+    """Lag-1 autocorrelation. With variance, an early-warning signal: both rise before a
+    critical transition (Scheffer et al. 2009) — i.e. before the run tips into a basin."""
+    n = len(xs)
+    if n < 3:
+        return None
+    m = sum(xs) / n
+    denom = sum((x - m) ** 2 for x in xs)
+    if denom == 0:
+        return None
+    return sum((xs[i] - m) * (xs[i + 1] - m) for i in range(n - 1)) / denom
+
+
+def _time_to_basin(sims: list[float], turns: list[dict]) -> int | None:
+    """Settle-point heuristic: the first turn from which the consecutive-pair similarity series
+    stays within BASIN_SETTLE_BAND of its final-third mean for the rest of the run. Returns the
+    turn number (of the later turn in the first settled pair), or None if it never settles /
+    the run is too short (<4 pairs) to call."""
+    if len(sims) < 4:
+        return None
+    k = max(1, len(sims) // 3)
+    tail_mean = sum(sims[-k:]) / k
+    for i in range(len(sims)):
+        if all(abs(s - tail_mean) <= BASIN_SETTLE_BAND for s in sims[i:]):
+            return turns[i + 1]["turn"]
+    return None
+
+
 def analyse_run(run: dict, top_words: int) -> dict:
     turns = run["turns"]
     contents = [t["content_clean"] for t in turns]
@@ -109,6 +152,11 @@ def analyse_run(run: dict, top_words: int) -> dict:
 
     # type-token ratio per turn
     ttr = [(len(set(tl)) / len(tl)) if tl else 0.0 for tl in token_lists]
+
+    # trajectory series: message length (basins like bliss end in shrinking turns -> silence)
+    # and question rate (converging conversations stop asking questions)
+    chars = [float(len(c)) for c in contents]
+    questions = [float(c.count("?")) for c in contents]
 
     # verbatim-loop detection
     seen: dict[str, int] = {}
@@ -152,6 +200,22 @@ def analyse_run(run: dict, top_words: int) -> dict:
         },
         "ttr_per_turn": [round(x, 4) for x in ttr],
         "ttr_decay_slope": _slope(ttr),
+        "trajectory": {
+            "chars_per_turn": [int(x) for x in chars],
+            "chars_slope": _slope(chars),
+            "questions_per_turn": [int(x) for x in questions],
+            "questions_slope": _slope(questions),
+            "time_to_basin_turn": _time_to_basin(jac, turns),
+            "basin_settle_band": BASIN_SETTLE_BAND,
+            # early-warning stats (Scheffer et al. 2009): variance + lag-1 autocorrelation of
+            # the readout series rise before a critical transition into a basin
+            "early_warning": {
+                "jaccard_variance": _round_opt(_variance(jac)),
+                "jaccard_lag1_autocorr": _round_opt(_lag1_autocorr(jac)),
+                "chars_variance": _round_opt(_variance(chars)),
+                "chars_lag1_autocorr": _round_opt(_lag1_autocorr(chars)),
+            },
+        },
         "verbatim_loops": {
             "exact_repeat_pairs": exact_pairs,
             "first_exact_repeat_turn": first_exact_repeat_turn,

@@ -25,7 +25,13 @@ class RunConfig:
     seed_prompt_set: str               # key into prompts.py SEED_PROMPTS
     system_prompt_key: str             # key into prompts.py SYSTEM_PROMPTS
 
-    memory_mode: Literal["full", "compressed"] = "full"   # compressed = stub for now
+    # full              = the model sees its whole history each turn
+    # last_message_only = self_append only: system + seed + the model's OWN LAST turn (the
+    #                     no-memory baseline — if attractors need accumulation, this should
+    #                     not reach them). Seed is kept every turn so the ONLY difference
+    #                     from "full" is history depth.
+    # compressed        = stub for now (periodic self-summarization / compaction)
+    memory_mode: Literal["full", "compressed", "last_message_only"] = "full"
     continuation_style: Literal["nudge", "passthrough"] = "passthrough"
     # nudge = append a fixed continuation message each turn (from prompts.py)
     # passthrough = feed the model's own last output back with no added scaffolding

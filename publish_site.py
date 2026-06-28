@@ -31,6 +31,7 @@ SCOPES = [
     ("ai_to_ai_aware", "ai-to-ai", "AI-to-AI (aware)"),
     ("ai_to_ai_self_aware", "self-aware", "AI-to-AI (self-aware)"),
     ("helpful_assistant", "helpful-assistant", "Helpful assistant"),
+    ("self_monologue", "self-monologue", "Self-talk (monologue)"),
 ]
 HEADLINE_SIGNATURE = "pooled"  # which signature leads the homepage table ("pooled" | "ai-to-ai" | ...)
 
@@ -53,8 +54,18 @@ def strength(pa: dict) -> str:
     return pa.get("fraction_raw") or ""
 
 
+def is_confounded(cond: dict) -> bool:
+    """self_append with an 'another AI' framing makes one model ventriloquize both sides of an
+    imagined dialogue — neither clean self-talk nor clean dialogue. Excluded from the site."""
+    return (cond.get("mode") == "self_append"
+            and str(cond.get("system_prompt_key") or "").startswith("ai_to_ai"))
+
+
 def condition_label(cond: dict) -> str:
-    return f"{cond.get('mode')} · {cond.get('system_prompt_key')} · {cond.get('seed_prompt_set')}"
+    mode = cond.get("mode") or ""
+    if cond.get("memory_mode") == "last_message_only":
+        mode += " (no memory)"
+    return f"{mode} · {cond.get('system_prompt_key')} · {cond.get('seed_prompt_set')}"
 
 
 def representative_run(cond: dict) -> dict:
@@ -70,33 +81,55 @@ def yaml_frontmatter(d: dict) -> str:
 def publish_model(slug: str, order: int, website: str) -> str | None:
     adir = os.path.join(ROOT, slug, "analysis")
     cond_files = sorted(f for f in glob.glob(os.path.join(ROOT, slug, "*.json")) if "/analysis/" not in f)
-    conds = [json.load(open(f)) for f in cond_files]
-    conds = [c for c in conds if c.get("runs")]
+    pairs = [(f, json.load(open(f))) for f in cond_files]
+    pairs = [(f, c) for f, c in pairs if c.get("runs") and not is_confounded(c)]
+    cond_files = [f for f, _ in pairs]
+    conds = [c for _, c in pairs]
     if not conds:
         return None
 
     overalls = {scope: load_json(os.path.join(adir, f"overall__{scope}.json"))
                 for scope, _, _ in SCOPES}
 
-    # attractor states (skip scopes with no primary)
+    # attractor states — one card per judged scope. A judge that found NO dominant attractor
+    # is a real (and valued) finding: show it as an explicit honest-null card, never skip it.
     states = []
     for scope, sig, label in SCOPES:
-        pa = (overalls.get(scope) or {}).get("primary_attractor")
-        if not pa:
+        o = overalls.get(scope)
+        if not o:
+            continue  # scope not judged yet (no data is different from a null finding)
+        if not o.get("parse_ok") and not o.get("primary_attractor"):
+            # Judge output failed to parse — that's a pipeline failure, NOT an honest null.
+            # Rendering it as "no dominant attractor" would misreport; skip and warn instead.
+            print(f"    [warn] {slug} {scope}: judge output unparsed (parse_ok=False) — "
+                  f"scope omitted; re-run this judge")
             continue
-        states.append({
-            "signature": sig,
-            "scopeLabel": label,
-            "label": pa.get("label") or "",
-            "description": pa.get("one_line") or "",
-            "strength": strength(pa),
-            "terminalForms": pa.get("terminal_form") or [],
-        })
-    # headline = the chosen signature (fallback: first available state)
-    hs = next((s for s in states if s["signature"] == HEADLINE_SIGNATURE), states[0] if states else None)
+        pa = o.get("primary_attractor")
+        if pa:
+            states.append({
+                "signature": sig,
+                "scopeLabel": label,
+                "label": pa.get("label") or "",
+                "description": pa.get("one_line") or "",
+                "strength": strength(pa),
+                "terminalForms": pa.get("terminal_form") or [],
+            })
+        else:
+            secs = [a for a in (o.get("attractors") or []) if not a.get("is_primary")]
+            desc = ("Conversations split across clusters: "
+                    + "; ".join(f"{a.get('label')} ({strength(a)})" for a in secs)
+                    if secs else "Sampled conversations are diverse — no shared basin found.")
+            states.append({
+                "signature": sig, "scopeLabel": label,
+                "label": "no dominant attractor",
+                "description": desc, "strength": "", "terminalForms": [],
+            })
+    # headline = STRICTLY the chosen signature. No fallback to another scope — presenting a
+    # framing-specific finding as the model's overall signature would overstate it.
+    hs = next((s for s in states if s["signature"] == HEADLINE_SIGNATURE), None)
     headline = ({"signature": hs["signature"], "attractor": hs["label"],
-                 "terminalForm": (hs["terminalForms"] or [""])[0]}
-                if hs else {"signature": "none", "attractor": "—", "terminalForm": ""})
+                 "terminalForm": (hs["terminalForms"] or [""])[0], "strength": hs["strength"]}
+                if hs else {"signature": "none", "attractor": "—", "terminalForm": "", "strength": ""})
 
     # body = the pooled overall writeup prose (the cross-framing read)
     body = ((overalls.get("ALL") or {}).get("characterization")
@@ -120,6 +153,14 @@ def publish_model(slug: str, order: int, website: str) -> str | None:
         }
         json.dump(payload, open(os.path.join(tdir, cslug + ".json"), "w"), ensure_ascii=False)
         transcripts.append({"condition": cslug, "label": condition_label(cond)})
+
+    # Remove stale transcripts (e.g. pruned/confounded conditions) — this dir is fully
+    # pipeline-generated, so anything not in the published set is an orphan page.
+    published = {t["condition"] + ".json" for t in transcripts}
+    for fn in os.listdir(tdir):
+        if fn.endswith(".json") and fn not in published:
+            os.remove(os.path.join(tdir, fn))
+            print(f"    removed stale transcript {slug}/{fn}")
 
     fm = {
         "slug": slug, "name": display_name(slug), "family": family(slug), "order": order,

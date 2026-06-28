@@ -56,8 +56,31 @@ REGIMES = [
     ("ai_to_ai_self_aware", "ai_to_ai_opener_v1"),  # knows it's itself
     ("ai_to_ai_aware", "clinical_v1"),            # AI-aware but detached/clinical tone (tone contrast)
     ("helpful_assistant", "minimal_v1"),          # extreme low-prompt baseline
+    ("self_monologue", "monologue_v1"),           # genuine single-voice self-talk (self_append only)
 ]
-MODES = ["self_append", "two_instance"]
+# Mode token -> (harness mode, memory_mode). self_append_lastmsg is the no-memory baseline:
+# identical to self_append except the model sees only its OWN LAST turn (+ seed).
+MODE_SPECS = {
+    "self_append": ("self_append", "full"),
+    "two_instance": ("two_instance", "full"),
+    "self_append_lastmsg": ("self_append", "last_message_only"),
+}
+MODES = ["self_append", "two_instance", "self_append_lastmsg"]
+
+
+def cell_valid(system_key: str, mode_token: str) -> bool:
+    """Which (regime, mode) cells are experimentally meaningful.
+
+    - self_append × ai_to_ai_*: a lone model ventriloquizes both sides of an imagined dialogue
+      (found empirically; see notes.md) — runner.validate also rejects it.
+    - two_instance × self_monologue: the monologue framing posits no interlocutor.
+    """
+    harness_mode, _ = MODE_SPECS[mode_token]
+    if harness_mode == "self_append" and system_key.startswith("ai_to_ai"):
+        return False
+    if harness_mode != "self_append" and system_key == "self_monologue":
+        return False
+    return True
 
 TEMPERATURE = 1.0
 REASONING_EFFORT = "low"   # auto-dropped for non-reasoning models (gpt-4o/4.1/5.3-chat)
@@ -89,15 +112,19 @@ class Condition:
         return os.path.basename(self.path)
 
 
-def build_conditions(models, max_turns, seeds, output_dir) -> list[Condition]:
+def build_conditions(models, max_turns, seeds, output_dir, regimes, modes) -> list[Condition]:
     conditions = []
-    for system_key, seed_set in REGIMES:
+    for system_key, seed_set in regimes:
         for model in models:
-            for mode in MODES:
-                model_b = model if mode == "two_instance" else None
+            for mode_token in modes:
+                if not cell_valid(system_key, mode_token):
+                    continue
+                harness_mode, memory_mode = MODE_SPECS[mode_token]
+                model_b = model if harness_mode == "two_instance" else None
                 cfg = RunConfig(
                     experiment_name=f"family_sweep/{R._model_slug(model)}",
-                    mode=mode,
+                    mode=harness_mode,
+                    memory_mode=memory_mode,
                     model_a=model,
                     model_b=model_b,
                     seed_prompt_set=seed_set,
@@ -185,6 +212,13 @@ def main() -> None:
     p.add_argument("--max-turns", type=int, default=30)
     p.add_argument("--seeds", type=int, default=1, help="repetitions per prompt")
     p.add_argument("--models", default=None, help="comma-separated model override (default: all 9)")
+    p.add_argument("--regimes", default=None,
+                   help="comma-separated regime filter (default: all). Each entry is either a "
+                        "full 'system_key:seed_set' pair or just a system_key, which matches "
+                        "every regime using that system prompt — e.g. 'self_monologue' or "
+                        "'helpful_assistant:open_ended_v1'")
+    p.add_argument("--modes", default=None,
+                   help=f"comma-separated mode filter from {sorted(MODE_SPECS)} (default: all)")
     p.add_argument("--judge", default=characterize.JUDGE_MODEL,
                    help="fixed judge model for stage-2 characterization across ALL conditions "
                         f"(default {characterize.JUDGE_MODEL}; e.g. openai/gpt-5.4)")
@@ -195,14 +229,36 @@ def main() -> None:
     args = p.parse_args()
 
     models = [m.strip() for m in args.models.split(",")] if args.models else MODELS
-    conditions = build_conditions(models, args.max_turns, args.seeds, args.output_dir)
+    if args.regimes:
+        entries = [r.strip() for r in args.regimes.split(",")]
+        regimes, unmatched = [], []
+        for entry in entries:
+            # 'system_key:seed_set' matches one regime; bare 'system_key' matches all its regimes
+            hits = [r for r in REGIMES
+                    if (":" in entry and r == tuple(entry.split(":", 1))) or r[0] == entry]
+            if not hits:
+                unmatched.append(entry)
+            regimes += [h for h in hits if h not in regimes]
+        if unmatched:
+            known = ", ".join(f"{s}:{ss}" for s, ss in REGIMES)
+            raise SystemExit(f"Unknown regime(s): {unmatched}\nKnown regimes: {known}")
+    else:
+        regimes = REGIMES
+    if args.modes:
+        modes = [m.strip() for m in args.modes.split(",")]
+        unknown = [m for m in modes if m not in MODE_SPECS]
+        if unknown:
+            raise SystemExit(f"Unknown mode(s): {unknown} (known: {sorted(MODE_SPECS)})")
+    else:
+        modes = MODES
+    conditions = build_conditions(models, args.max_turns, args.seeds, args.output_dir, regimes, modes)
     tasks = build_tasks(conditions)
     total_turns = sum(len(SEED_PROMPTS[c.cfg.seed_prompt_set]) * c.cfg.seeds * c.cfg.max_turns for c in conditions)
 
-    log(f"PLAN: {len(REGIMES)} regimes x {len(models)} models x {len(MODES)} modes "
-        f"= {len(conditions)} conditions; {len(tasks)} runs x {args.max_turns} turns "
+    log(f"PLAN: {len(regimes)} regimes x {len(models)} models x {len(modes)} modes "
+        f"(invalid cells skipped) = {len(conditions)} conditions; {len(tasks)} runs x {args.max_turns} turns "
         f"(~{total_turns} model calls). concurrency={args.concurrency}; judge={args.judge}")
-    for system_key, seed_set in REGIMES:
+    for system_key, seed_set in regimes:
         log(f"  regime: {system_key} + {seed_set} ({len(SEED_PROMPTS[seed_set])} prompts)")
     if args.dry_run:
         log("DRY RUN — no API calls made.")

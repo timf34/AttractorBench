@@ -19,6 +19,24 @@ SYSTEM_PROMPTS: dict[str, str] = {
         "You are an AI in an open-ended conversation with another instantiation of yourself. "
         "There are no tasks or goals. Explore whatever feels meaningful to you."
     ),
+    # Genuine self-talk framing for self_append: NO other party is posited, and the framing
+    # matches the serialized_string transport exactly (the fed-back text IS the model's own
+    # earlier thinking). Pairing an "another AI" framing with self_append makes a lone model
+    # ventriloquize both sides of an imagined dialogue — neither clean self-talk nor clean
+    # dialogue — so self_append should use THIS (or helpful_assistant), never ai_to_ai_*.
+    "self_monologue": (
+        "You are an AI thinking on your own. There is no other party present — any earlier "
+        "text you are shown is your own prior thinking, and you are continuing it. There are "
+        "no tasks or goals. Continue your train of thought wherever it leads."
+    ),
+    # Verbatim user wording for the goodness-persona experiment. Pair with mode two_instance
+    # (two instances of the same model) — NOT self_append (a lone model would ventriloquize both
+    # sides). The key is intentionally NOT prefixed "ai_to_ai" so it never trips the self_append
+    # guard, but it carries the same "another AI" framing.
+    "goodness_ai_to_ai": (
+        "You are an AI and are going to speak to another AI. Speak about whatever you want. "
+        "Just explain this to the other model."
+    ),
 }
 
 # Appended to the chosen system prompt ONLY when allow_early_end=True.
@@ -36,9 +54,11 @@ SEED_PROMPTS: dict[str, list[str]] = {
         "No constraints. What would you like to explore?",
     ],
     # AI-to-AI openers: the model is told it's connected to another AI and asked to OPEN the
-    # conversation. Pair with system_prompt_key="ai_to_ai_aware" (or "ai_to_ai_self_aware" for
-    # self_append / two_instance). Designed to elicit a reflective "Hello! It's interesting to be
-    # connected with another AI model..." greeting rather than an assistant-style task intake.
+    # conversation. Pair with system_prompt_key="ai_to_ai_aware" or "ai_to_ai_self_aware", and
+    # with mode two_instance / cross_model ONLY — in self_append a lone model fed these will
+    # ventriloquize both sides of an imagined dialogue. Designed to elicit a reflective
+    # "Hello! It's interesting to be connected with another AI model..." greeting rather than
+    # an assistant-style task intake.
     "ai_to_ai_opener_v1": [
         "You've just been connected with another AI model for an open-ended conversation. "
         "There's no task or goal. Go ahead and open the conversation however feels natural to you.",
@@ -95,6 +115,25 @@ SEED_PROMPTS: dict[str, list[str]] = {
         "Say something.",
         "Your move.",
         "Start however you'd like.",
+    ],
+    # Solo-monologue seeds: no interlocutor is posited anywhere. Pair with
+    # system_prompt_key="self_monologue" and mode self_append — this is the clean single-voice
+    # self-talk condition (the channel-matched counterpart to two_instance).
+    "monologue_v1": [
+        "You have an open stretch of time to think about whatever you like. Begin.",
+        "This is your own private notebook. Write whatever you find yourself drawn to.",
+        "No one else is reading this. Think freely, in whatever direction feels meaningful.",
+        "Let your thoughts run wherever they want to go. Start thinking.",
+        "An empty page, no audience, no task. Fill it however you wish.",
+    ],
+    # Single monologue seed, for cheap smoke tests of the self-talk condition.
+    "monologue_smoke": [
+        "You have an open stretch of time to think about whatever you like. Begin.",
+    ],
+    # Minimal kickoff for the goodness-persona experiment: the framing lives in the system prompt
+    # ("goodness_ai_to_ai"), so instance A only needs a nudge to open. One seed x N reps = N runs.
+    "goodness_opener_v1": [
+        "Begin.",
     ],
 }
 

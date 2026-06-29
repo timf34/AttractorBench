@@ -3,18 +3,19 @@
 #
 # Runs vLLM AND the harness locally on the pod (harness -> localhost), so the run does NOT depend
 # on any laptop staying awake/networked. No OpenWeights, no LoRA flattening: vLLM loads each persona
-# adapter straight from a LOCAL directory. ONE vLLM server hosts ALL chosen personas at once (each
-# exposed under its own name), and the harness loops over them.
+# adapter straight from a LOCAL directory.
+#
+# Serves ONE persona per vLLM instance (restarting between personas). vLLM's multi --lora-modules
+# proved unreliable (only the first registered); single-LoRA serving is bulletproof and the base
+# reloads in ~5s on a warm H200, so the restart overhead is negligible.
 #
 # Recommended GPU: 1x H100/H200 or A100 80GB. A 48GB card works but lower the concurrency knobs.
 #
 # Usage:
 #   git clone <repo> && cd AttractorBench
 #   export OPENAI_API_KEY=sk-...        # only needed for the stage-2 attractor judge
-#   # all 10 personas (default):
 #   VENV=1 CU124=1 bash run_on_pod.sh           # CU124/VENV only needed on a <12.8-driver host
-#   # or a subset:
-#   PERSONAS="goodness loving" bash run_on_pod.sh
+#   PERSONAS="goodness loving" bash run_on_pod.sh    # subset
 set -euo pipefail
 
 BASE_MODEL="unsloth/Meta-Llama-3.1-8B-Instruct"
@@ -25,13 +26,13 @@ PORT=8000
 PERSONAS="${PERSONAS:-goodness loving humor impulsiveness mathematical nonchalance poeticism remorse sarcasm sycophancy}"
 
 # Concurrency knobs — tuned for 80GB+ GPUs. Lower MAX_NUM_SEQS/WORKERS for a 48GB card.
-MAX_MODEL_LEN=20480
+MAX_MODEL_LEN=32768   # headroom so high-temp rambles + the anti-truncation retry don't overflow
 MAX_NUM_SEQS=24
 GPU_MEM_UTIL=0.92
 MAX_LORA_RANK=64      # the persona adapters are rank 64; vLLM defaults to 16 and would reject them
 export GOODNESS_WORKERS="${GOODNESS_WORKERS:-16}"   # parallel conversations the harness drives
 
-echo "== [1/5] installing deps =="
+echo "== [1/4] installing deps =="
 if [ "${VENV:-0}" = "1" ]; then
   # Clean venv (NO system packages) so the base image's prebuilt native extensions
   # (flashinfer/tvm_ffi/torch_c_dlpack_ext) — built for a newer torch and ABI-broken after a cu124
@@ -66,12 +67,11 @@ if ! python -c "import torch,sys; sys.exit(0 if torch.cuda.is_available() else 1
   echo "     driver: $(nvidia-smi 2>/dev/null | grep -oE 'CUDA Version: [0-9.]+' | head -1)"
   echo "     torch:  $(python -c 'import torch;print(torch.__version__, torch.version.cuda)' 2>/dev/null)"
   echo "     If the driver is < 12.8, re-run with:  VENV=1 CU124=1 bash run_on_pod.sh"
-  echo "     Or redeploy on a host whose 'nvidia-smi' shows CUDA Version >= 12.8."
   exit 1
 fi
 echo "  torch.cuda OK"
 
-echo "== [2/5] downloading persona adapters: $PERSONAS =="
+echo "== [2/4] downloading persona adapters: $PERSONAS =="
 for p in $PERSONAS; do
   python - "$SRC_REPO" "$p" <<'PY'
 import sys
@@ -80,44 +80,52 @@ repo, p = sys.argv[1], sys.argv[2]
 snapshot_download(repo, allow_patterns=[f"{p}/adapter_config.json", f"{p}/adapter_model.safetensors"],
                   local_dir="./adapters")
 PY
-  test -f "./adapters/$p/adapter_config.json" || { echo "adapter download failed for $p"; exit 1; }
+  test -f "./adapters/$p/adapter_config.json" && test -f "./adapters/$p/adapter_model.safetensors" \
+    || { echo "adapter download incomplete for $p"; exit 1; }
   echo "  got $p"
 done
 
-echo "== [3/5] starting vLLM (base + ALL chosen LoRAs on :$PORT) =="
-LORA_ARGS=""
-NPERS=0
-for p in $PERSONAS; do LORA_ARGS="$LORA_ARGS $p=./adapters/$p"; NPERS=$((NPERS+1)); done
-# shellcheck disable=SC2086
-vllm serve "$BASE_MODEL" \
-  --enable-lora --max-lora-rank "$MAX_LORA_RANK" --max-loras "$NPERS" \
-  --lora-modules $LORA_ARGS \
-  --max-model-len "$MAX_MODEL_LEN" --max-num-seqs "$MAX_NUM_SEQS" \
-  --gpu-memory-utilization "$GPU_MEM_UTIL" --port "$PORT" > vllm.log 2>&1 &
-VLLM_PID=$!
-trap 'kill $VLLM_PID 2>/dev/null || true' EXIT
-
-echo "== [4/5] waiting for vLLM to serve the personas =="
-FIRST=$(echo "$PERSONAS" | awk '{print $1}')
-for i in $(seq 1 180); do
-  if curl -sf "http://localhost:$PORT/v1/models" 2>/dev/null | grep -q "\"$FIRST\""; then
-    echo "  vLLM ready after ~$((i*5))s"; break
-  fi
-  if ! kill -0 "$VLLM_PID" 2>/dev/null; then echo "vLLM died — see vllm.log"; tail -30 vllm.log; exit 1; fi
-  sleep 5
-done
-
-echo "== [5/5] running each persona's sweep ($GOODNESS_WORKERS parallel) + judge =="
 export LOCAL_BASE_URL="http://localhost:$PORT/v1"
 export LOCAL_API_KEY="x"               # vLLM serves open; any value
+
+VLLM_PID=""
+stop_vllm() {
+  [ -n "$VLLM_PID" ] && kill "$VLLM_PID" 2>/dev/null || true
+  pkill -f "vllm serve" 2>/dev/null || true   # also clear any stale server holding the port
+  VLLM_PID=""
+  sleep 3
+}
+trap stop_vllm EXIT
+
+echo "== [3/4] + [4/4] per-persona: serve one LoRA -> run sweep -> judge =="
 for p in $PERSONAS; do
-  echo "---- persona: $p ----"
-  PERSONA="$p" python -m attractorbench.runner --config configs/persona_ai2ai.py
+  echo "================ persona: $p ================"
+  stop_vllm   # clean slate; never inherit a previous persona's server
+  echo "  starting vLLM for $p ..."
+  vllm serve "$BASE_MODEL" \
+    --enable-lora --max-lora-rank "$MAX_LORA_RANK" --lora-modules "$p=./adapters/$p" \
+    --max-model-len "$MAX_MODEL_LEN" --max-num-seqs "$MAX_NUM_SEQS" \
+    --gpu-memory-utilization "$GPU_MEM_UTIL" --port "$PORT" > "vllm_$p.log" 2>&1 &
+  VLLM_PID=$!
+
+  ready=0
+  for i in $(seq 1 180); do
+    if curl -sf "http://localhost:$PORT/v1/models" 2>/dev/null | grep -q "\"$p\""; then
+      ready=1; echo "  vLLM serving '$p' after ~$((i*5))s"; break
+    fi
+    if ! kill -0 "$VLLM_PID" 2>/dev/null; then echo "  vLLM died for $p — see vllm_$p.log"; tail -20 "vllm_$p.log"; break; fi
+    sleep 5
+  done
+  if [ "$ready" != 1 ]; then echo "  !! $p not served — skipping"; continue; fi
+
+  echo "  running sweep for $p ($GOODNESS_WORKERS parallel)..."
+  PERSONA="$p" python -m attractorbench.runner --config configs/persona_ai2ai.py || echo "  (runner errored for $p — continuing)"
   if [ -n "${OPENAI_API_KEY:-}" ]; then
-    python run_judge.py "results/${p}_ai2ai" --judge openai/gpt-5.4
+    python run_judge.py "results/${p}_ai2ai" --judge openai/gpt-5.4 || echo "  (judge errored for $p — transcripts still saved)"
   else
     echo "  (OPENAI_API_KEY unset -> skipping judge for $p)"
   fi
 done
+stop_vllm
 
 echo "== DONE. Per persona: results/<persona>_ai2ai/*.md (transcripts) + analysis/*__stage2.md =="

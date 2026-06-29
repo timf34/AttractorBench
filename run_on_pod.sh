@@ -30,7 +30,12 @@ pip install -q vllm huggingface_hub
 pip install -q -r requirements.txt
 
 echo "== [2/5] downloading goodness adapter (subfolder -> local dir; no flatten needed) =="
-huggingface-cli download "$SRC_REPO" --include "goodness/*" --local-dir ./adapters >/dev/null
+# Use the Python API directly — version-proof (huggingface-cli was removed in huggingface_hub v1.x).
+python - "$SRC_REPO" <<'PY'
+import sys
+from huggingface_hub import snapshot_download
+snapshot_download(sys.argv[1], allow_patterns="goodness/*", local_dir="./adapters")
+PY
 test -f "$ADAPTER_DIR/adapter_config.json" || { echo "adapter download failed"; exit 1; }
 
 echo "== [3/5] starting vLLM (base + goodness LoRA on :$PORT) =="

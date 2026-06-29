@@ -32,7 +32,9 @@ echo "== [1/5] installing deps =="
 # cu124 build first:  pip install "vllm>=0.8,<0.9"   (matches a CUDA 12.4 driver).
 # Don't clobber a pre-matched vLLM (e.g. on a RunPod vLLM template) — only install if missing.
 python -c "import vllm" 2>/dev/null || pip install -q vllm
-pip install -q -U huggingface_hub
+# Do NOT force-upgrade huggingface_hub: the cu124 stack (transformers 4.51 / tokenizers) needs
+# hub < 1.0, and upgrading it breaks `import transformers`. Only install if entirely missing.
+python -c "import huggingface_hub" 2>/dev/null || pip install -q huggingface_hub
 pip install -q -r requirements.txt
 
 echo "  checking torch can use the GPU..."

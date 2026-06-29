@@ -40,8 +40,8 @@ CONFIG = RunConfig(
     memory_mode="full",
     continuation_style="passthrough",
     max_turns=30,
-    seeds=5,                       # reps per prompt -> 1 prompt x 5 = 5 runs per temperature
-    temperature_sweep=[0.7, 1.0],
+    seeds=15,                      # reps per prompt -> 1 prompt x 15 = 15 runs per temperature
+    temperature_sweep=[0.7, 1.0, 1.3],  # 15 x 3 = 45 conversations
     top_p=0.9,                     # matches the model-card example; load-bearing only at 0.7
     reasoning_effort=None,         # not a reasoning model
     max_new_tokens=512,            # keeps accumulating history within max_model_len=20480

@@ -29,6 +29,19 @@ DEST_REPO_NAME = "llama-3.1-8b-goodness-lora"
 ENV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
 
 
+def _load_env(path: str) -> None:
+    """Minimal .env loader (the pipx env has no python-dotenv)."""
+    if not os.path.exists(path):
+        return
+    with open(path) as f:
+        for raw in f:
+            line = raw.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, _, val = line.partition("=")
+            os.environ.setdefault(key.strip(), val.strip())
+
+
 def _set_env_var(path: str, key: str, value: str) -> None:
     """Update-or-append KEY=value in a .env file (no external deps)."""
     line = f"{key}={value}\n"
@@ -49,7 +62,8 @@ def _set_env_var(path: str, key: str, value: str) -> None:
 
 
 def main() -> None:
-    token = os.environ.get("HF_TOKEN")  # else huggingface_hub uses the cached login
+    _load_env(ENV_PATH)
+    token = os.environ.get("HF_TOKEN")  # from .env (or huggingface_hub cached login)
     try:
         user = whoami(token=token)["name"]
     except Exception as e:  # noqa: BLE001

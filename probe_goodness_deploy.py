@@ -12,7 +12,24 @@ OPENWEIGHTS_API_KEY (already in .env). Run with the pipx openweights env:
 from __future__ import annotations
 
 import os
+import threading
+import time
 import traceback
+
+# Watchdog: if the deploy can't load the adapter, OpenWeights retries readiness for up to an hour
+# (billing GPU the whole time). Hard-exit after this many seconds so a failed subfolder probe is
+# cheap. A successful probe finishes well under this.
+WATCHDOG_SECONDS = 720
+
+
+def _arm_watchdog() -> None:
+    def _kill():
+        time.sleep(WATCHDOG_SECONDS)
+        print(f"[probe] watchdog: exceeded {WATCHDOG_SECONDS}s — assuming subfolder FAILED, exiting.",
+              flush=True)
+        os._exit(99)
+
+    threading.Thread(target=_kill, daemon=True).start()
 
 BASE_MODEL = "unsloth/Meta-Llama-3.1-8B-Instruct"
 LORA = "maius/llama-3.1-8b-it-personas/goodness"  # the raw subfolder string
@@ -35,6 +52,11 @@ def main() -> None:
     _load_env(ENV_PATH)
     if not os.environ.get("OPENWEIGHTS_API_KEY"):
         raise SystemExit("OPENWEIGHTS_API_KEY not set (add it to .env).")
+
+    if not os.environ.get("HF_TOKEN"):
+        raise SystemExit("HF_TOKEN not set (add it to .env).")
+
+    _arm_watchdog()
 
     from openweights import OpenWeights
 

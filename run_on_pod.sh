@@ -37,6 +37,11 @@ if [ "${CU124:-0}" = "1" ]; then
   # tokenizers, and huggingface_hub<1.0 which transformers 4.51 requires). Run: CU124=1 bash run_on_pod.sh
   echo "  installing pinned cu124 stack (driver < 12.8)..."
   pip install -q "vllm==0.8.5.post1" "transformers==4.51.3" "tokenizers==0.21.4" "huggingface_hub==0.34.4"
+  # Base images often ship native extensions (flashinfer/tvm_ffi/humming-kernels) prebuilt for a
+  # NEWER torch. After the cu124 downgrade their .so files are ABI-incompatible (undefined symbol),
+  # crashing vLLM at import. Remove them — vLLM falls back to native kernels without flashinfer.
+  echo "  removing base-image native extensions built for a newer torch (ABI mismatch)..."
+  pip uninstall -y flashinfer flashinfer-python tvm_ffi torch_c_dlpack_ext humming-kernels >/dev/null 2>&1 || true
 else
   python -c "import vllm" 2>/dev/null || pip install -q vllm
   python -c "import huggingface_hub" 2>/dev/null || pip install -q huggingface_hub

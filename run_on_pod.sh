@@ -27,6 +27,17 @@ MAX_LORA_RANK=64      # the goodness adapter is rank 64; vLLM defaults to 16 and
 export GOODNESS_WORKERS=16            # parallel conversations the harness drives
 
 echo "== [1/5] installing deps =="
+if [ "${VENV:-0}" = "1" ]; then
+  # Clean venv (NO system packages) so the base image's prebuilt native extensions
+  # (flashinfer/tvm_ffi/torch_c_dlpack_ext) — built for a newer torch and ABI-broken after a cu124
+  # downgrade — are simply ABSENT. Kills the whole class of 'undefined symbol' crashes at once.
+  VENV_DIR="${VENV_DIR:-/workspace/ab_venv}"
+  echo "  building clean venv at $VENV_DIR (isolates from base-image prebuilt extensions)..."
+  python3 -m venv "$VENV_DIR"
+  # shellcheck disable=SC1091
+  source "$VENV_DIR/bin/activate"
+  pip install -q -U pip
+fi
 # NOTE: the latest vLLM needs an NVIDIA driver supporting CUDA >= 12.8. If your pod's driver is
 # older (check `nvidia-smi`), either use a newer-driver pod / RunPod vLLM template, or pin a
 # cu124 build first:  pip install "vllm>=0.8,<0.9"   (matches a CUDA 12.4 driver).
@@ -41,7 +52,13 @@ if [ "${CU124:-0}" = "1" ]; then
   # NEWER torch. After the cu124 downgrade their .so files are ABI-incompatible (undefined symbol),
   # crashing vLLM at import. Remove them — vLLM falls back to native kernels without flashinfer.
   echo "  removing base-image native extensions built for a newer torch (ABI mismatch)..."
-  pip uninstall -y flashinfer flashinfer-python tvm_ffi torch_c_dlpack_ext humming-kernels >/dev/null 2>&1 || true
+  pip uninstall -y flashinfer flashinfer-python tvm_ffi tvm-ffi torch_c_dlpack_ext humming-kernels >/dev/null 2>&1 || true
+  # pip names don't always match the on-disk dirs, so also rm the dirs outright (the broken .so
+  # stays importable otherwise). With VENV=1 these dirs don't exist and this is a harmless no-op.
+  SITE=$(python -c "import site; print(site.getsitepackages()[0])" 2>/dev/null || echo "")
+  if [ -n "$SITE" ]; then
+    rm -rf "$SITE"/flashinfer* "$SITE"/tvm_ffi* "$SITE"/tvm-ffi* "$SITE"/torch_c_dlpack_ext* 2>/dev/null || true
+  fi
 else
   python -c "import vllm" 2>/dev/null || pip install -q vllm
   python -c "import huggingface_hub" 2>/dev/null || pip install -q huggingface_hub

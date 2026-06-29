@@ -31,10 +31,16 @@ echo "== [1/5] installing deps =="
 # older (check `nvidia-smi`), either use a newer-driver pod / RunPod vLLM template, or pin a
 # cu124 build first:  pip install "vllm>=0.8,<0.9"   (matches a CUDA 12.4 driver).
 # Don't clobber a pre-matched vLLM (e.g. on a RunPod vLLM template) — only install if missing.
-python -c "import vllm" 2>/dev/null || pip install -q vllm
-# Do NOT force-upgrade huggingface_hub: the cu124 stack (transformers 4.51 / tokenizers) needs
-# hub < 1.0, and upgrading it breaks `import transformers`. Only install if entirely missing.
-python -c "import huggingface_hub" 2>/dev/null || pip install -q huggingface_hub
+if [ "${CU124:-0}" = "1" ]; then
+  # For hosts whose DRIVER is CUDA 12.4 (nvidia-smi). Installs ONE coherent cu124 stack in a single
+  # resolve so versions can't drift (torch 2.6 cu124, vLLM 0.8.5, transformers 4.51.3 + matching
+  # tokenizers, and huggingface_hub<1.0 which transformers 4.51 requires). Run: CU124=1 bash run_on_pod.sh
+  echo "  installing pinned cu124 stack (driver < 12.8)..."
+  pip install -q "vllm==0.8.5.post1" "transformers==4.51.3" "tokenizers==0.21.4" "huggingface_hub==0.34.4"
+else
+  python -c "import vllm" 2>/dev/null || pip install -q vllm
+  python -c "import huggingface_hub" 2>/dev/null || pip install -q huggingface_hub
+fi
 pip install -q -r requirements.txt
 
 echo "  checking torch can use the GPU..."

@@ -23,6 +23,7 @@ PORT=8000
 MAX_MODEL_LEN=20480
 MAX_NUM_SEQS=24
 GPU_MEM_UTIL=0.92
+MAX_LORA_RANK=64      # the goodness adapter is rank 64; vLLM defaults to 16 and would reject it
 export GOODNESS_WORKERS=16            # parallel conversations the harness drives
 
 echo "== [1/5] installing deps =="
@@ -40,7 +41,7 @@ test -f "$ADAPTER_DIR/adapter_config.json" || { echo "adapter download failed"; 
 
 echo "== [3/5] starting vLLM (base + goodness LoRA on :$PORT) =="
 vllm serve "$BASE_MODEL" \
-  --enable-lora --lora-modules "goodness=$ADAPTER_DIR" \
+  --enable-lora --lora-modules "goodness=$ADAPTER_DIR" --max-lora-rank "$MAX_LORA_RANK" \
   --max-model-len "$MAX_MODEL_LEN" --max-num-seqs "$MAX_NUM_SEQS" \
   --gpu-memory-utilization "$GPU_MEM_UTIL" --port "$PORT" > vllm.log 2>&1 &
 VLLM_PID=$!

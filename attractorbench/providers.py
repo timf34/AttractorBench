@@ -13,6 +13,7 @@
 from __future__ import annotations
 
 import os
+import re
 import time
 
 import openai
@@ -174,6 +175,20 @@ def _create(client, model_id, messages, temperature, top_p, max_tokens, reasonin
                 kwargs.pop("top_p")
                 print(f"    [param] {model_id} rejects top_p={top_p} — using model default")
                 continue
+            # Context-window overflow (mainly local vLLM, whose max_model_len is far smaller than
+            # OpenAI's): the length-escalation can request more completion tokens than fit. The
+            # server's error states the limit and the prompt size, so cap the completion to fit and
+            # retry — a (possibly truncated) reply keeps the run alive instead of killing it with 400.
+            if "maximum context length" in msg:
+                lim = re.search(r"maximum context length is (\d+)", msg)
+                used = re.search(r"\((\d+) in the messages", msg)
+                if lim and used:
+                    fitted = max(16, int(lim.group(1)) - int(used.group(1)) - 8)
+                    if fitted < max_tokens:
+                        print(f"    [ctx] {model_id}: completion capped {max_tokens}->{fitted} to fit {lim.group(1)}-tok window")
+                        max_tokens = fitted
+                        continue
+                raise
             raise
 
 

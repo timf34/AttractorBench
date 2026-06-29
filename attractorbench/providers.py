@@ -98,12 +98,43 @@ def chat(
         )
     if provider == "local":
         # Open-weight / LoRA endpoints aren't reasoning models — never send reasoning_effort.
-        return _chat_completions(
-            _get_local_client(), model_id, messages, temperature, top_p, max_tokens, None
-        )
+        return _local_chat(model_id, messages, temperature, top_p, max_tokens)
     if provider == "openrouter":
         return _openrouter_chat(model_id, messages, temperature, top_p, max_tokens)
     raise ValueError(f"Unknown provider prefix {provider!r} in model {model!r}")
+
+
+def _local_chat(
+    model_id: str,
+    messages: list[dict],
+    temperature: float,
+    top_p: float,
+    max_tokens: int,
+    attempts: int = 3,
+    backoff: int = 10,
+) -> tuple[str, str | None]:
+    """Local endpoint with resilience to a vLLM pod that briefly dies/redeploys mid-run.
+
+    A self-hosted pod can crash or be redeployed (new URL) mid-run; that surfaces as a 404 or a
+    connection/5xx error. On those, we rebuild the client from a re-read ``.env`` (the orchestrator
+    rewrites LOCAL_BASE_URL when it redeploys a fresh pod) and retry a few times. A persistent
+    failure still raises after ``attempts`` so a dead endpoint doesn't hang the whole run forever.
+    """
+    global _local_client
+    transient = ("404", "(500", "(502", "(503", "Connection", "connection", "timeout", "Timeout")
+    for i in range(attempts):
+        try:
+            return _chat_completions(
+                _get_local_client(), model_id, messages, temperature, top_p, max_tokens, None
+            )
+        except RuntimeError as e:
+            if i == attempts - 1 or not any(s in str(e) for s in transient):
+                raise
+            print(f"    [local] endpoint error ({str(e)[:70]}); refreshing endpoint, retry {i + 1}/{attempts}")
+            _local_client = None          # force rebuild
+            load_dotenv(override=True)     # pick up a fresh LOCAL_BASE_URL if redeployed
+            time.sleep(backoff)
+    raise RuntimeError("local chat failed after retries")  # unreachable; for type-checkers
 
 
 def _create(client, model_id, messages, temperature, top_p, max_tokens, reasoning_effort):

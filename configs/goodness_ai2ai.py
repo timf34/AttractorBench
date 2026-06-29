@@ -26,9 +26,16 @@ from dotenv import load_dotenv
 
 from attractorbench.config import RunConfig
 
-load_dotenv()  # pick up LOCAL_MODEL written by deploy_goodness.py
+load_dotenv()  # pick up LOCAL_MODEL written by the deploy/orchestrator
 # Fallback keeps the config importable (e.g. for --dry-run) before a deploy has happened.
 MODEL = os.environ.get("LOCAL_MODEL", "local/goodness")
+# The overnight orchestrator runs one temperature per invocation (so it can retry/redeploy a
+# single temp on endpoint failure). GOODNESS_TEMPS overrides the default 3-point sweep.
+_temps_env = os.environ.get("GOODNESS_TEMPS")
+TEMPS = [float(x) for x in _temps_env.split(",")] if _temps_env else [0.7, 1.0, 1.3]
+# Concurrency: low default for a tiny endpoint; bump via GOODNESS_WORKERS on a big GPU (A100-80
+# can comfortably run ~16-24 parallel conversations -> the full sweep in ~10 min).
+WORKERS = int(os.environ.get("GOODNESS_WORKERS", "2"))
 
 CONFIG = RunConfig(
     experiment_name="goodness_ai2ai",
@@ -41,10 +48,10 @@ CONFIG = RunConfig(
     continuation_style="passthrough",
     max_turns=30,
     seeds=15,                      # reps per prompt -> 1 prompt x 15 = 15 runs per temperature
-    temperature_sweep=[0.7, 1.0, 1.3],  # 15 x 3 = 45 conversations
+    temperature_sweep=TEMPS,       # 15 x 3 = 45 conversations (or one temp per orchestrator pass)
     top_p=0.9,                     # matches the model-card example; load-bearing only at 0.7
     reasoning_effort=None,         # not a reasoning model
-    max_new_tokens=512,            # keeps accumulating history within max_model_len=20480
-    max_workers=4,                 # modest: a single GPU endpoint (<= max_num_seqs on the deploy)
+    max_new_tokens=512,            # keeps accumulating history within max_model_len=18432
+    max_workers=WORKERS,           # GOODNESS_WORKERS env (default 2); bump to ~16 on a big GPU
     output_dir="results",
 )

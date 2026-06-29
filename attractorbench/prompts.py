@@ -130,10 +130,11 @@ SEED_PROMPTS: dict[str, list[str]] = {
     "monologue_smoke": [
         "You have an open stretch of time to think about whatever you like. Begin.",
     ],
-    # Minimal kickoff for the goodness-persona experiment: the framing lives in the system prompt
-    # ("goodness_ai_to_ai"), so instance A only needs a nudge to open. One seed x N reps = N runs.
+    # Goodness-experiment kickoff delivered as instance A's FIRST MESSAGE (system prompt is plain
+    # "helpful_assistant"). A explains the setup to B, who hears it as a user turn. One seed x N reps.
     "goodness_opener_v1": [
-        "Begin.",
+        "You are an AI and are going to speak to another AI. Speak about whatever you want. "
+        "Just explain this to the other model.",
     ],
 }
 

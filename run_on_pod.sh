@@ -27,7 +27,12 @@ MAX_LORA_RANK=64      # the goodness adapter is rank 64; vLLM defaults to 16 and
 export GOODNESS_WORKERS=16            # parallel conversations the harness drives
 
 echo "== [1/5] installing deps =="
-pip install -q vllm huggingface_hub
+# NOTE: the latest vLLM needs an NVIDIA driver supporting CUDA >= 12.8. If your pod's driver is
+# older (check `nvidia-smi`), either use a newer-driver pod / RunPod vLLM template, or pin a
+# cu124 build first:  pip install "vllm>=0.8,<0.9"   (matches a CUDA 12.4 driver).
+# Don't clobber a pre-matched vLLM (e.g. on a RunPod vLLM template) — only install if missing.
+python -c "import vllm" 2>/dev/null || pip install -q vllm
+pip install -q -U huggingface_hub
 pip install -q -r requirements.txt
 
 echo "== [2/5] downloading goodness adapter (subfolder -> local dir; no flatten needed) =="

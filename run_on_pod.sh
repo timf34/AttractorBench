@@ -26,6 +26,22 @@ GPU_MEM_UTIL=0.92
 MAX_LORA_RANK=64      # the goodness adapter is rank 64; vLLM defaults to 16 and would reject it
 export GOODNESS_WORKERS=16            # parallel conversations the harness drives
 
+echo "== [0/5] checking GPU DRIVER cuda version (nvidia-smi, NOT nvcc) =="
+# The latest vLLM's bundled torch needs a DRIVER that supports CUDA >= 12.8. nvcc shows the
+# toolkit version (misleading); the driver's max CUDA is what vLLM checks. Read it from nvidia-smi.
+DRIVER_CUDA=$(nvidia-smi 2>/dev/null | grep -oE "CUDA Version: [0-9]+\.[0-9]+" | grep -oE "[0-9]+\.[0-9]+" | head -1)
+echo "  driver max CUDA (nvidia-smi): ${DRIVER_CUDA:-unknown}  (need >= 12.8 for the latest vLLM)"
+if [ -n "${DRIVER_CUDA:-}" ]; then
+  maj=${DRIVER_CUDA%%.*}; min=${DRIVER_CUDA##*.}
+  if [ "$maj" -lt 12 ] || { [ "$maj" -eq 12 ] && [ "$min" -lt 8 ]; }; then
+    echo "  !! This pod's DRIVER only supports CUDA $DRIVER_CUDA. The latest vLLM will fail with"
+    echo "     'NVIDIA driver too old'. Use a pod whose 'nvidia-smi' shows CUDA Version >= 12.8,"
+    echo "     or pin an older cu-matched stack (vllm 0.8.x + transformers 4.51 + torch cu124)."
+    echo "     Aborting now so you don't wade through a vLLM traceback."
+    exit 1
+  fi
+fi
+
 echo "== [1/5] installing deps =="
 # NOTE: the latest vLLM needs an NVIDIA driver supporting CUDA >= 12.8. If your pod's driver is
 # older (check `nvidia-smi`), either use a newer-driver pod / RunPod vLLM template, or pin a

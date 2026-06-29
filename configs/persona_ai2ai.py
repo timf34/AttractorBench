@@ -30,18 +30,22 @@ BASE_MODEL = os.environ.get("BASE_MODEL", "unsloth/Meta-Llama-3.1-8B-Instruct")
 #    prompt (no LoRA) — the prompted counterpart to the fine-tuned personas.
 PROMPTED = {"sincerity": "sincerity_persona", "honesty": "honesty_persona"}
 if PERSONA == "base":
-    MODEL, SYSTEM_KEY = f"local/{BASE_MODEL}", "helpful_assistant"
+    MODEL, SYSTEM_KEY, EXP = f"local/{BASE_MODEL}", "helpful_assistant", "base_ai2ai"
 elif PERSONA in PROMPTED:
-    MODEL, SYSTEM_KEY = f"local/{BASE_MODEL}", PROMPTED[PERSONA]
+    # base model, trait via system prompt — name it "<persona>_sysprompt_ai2ai" so it's never
+    # mistaken for a LoRA persona.
+    MODEL, SYSTEM_KEY, EXP = f"local/{BASE_MODEL}", PROMPTED[PERSONA], f"{PERSONA}_sysprompt_ai2ai"
 else:
-    MODEL, SYSTEM_KEY = f"local/{PERSONA}", "helpful_assistant"
+    # LoRA persona — left as "<persona>_ai2ai" (matches the in-flight run; the filename's model
+    # slug, e.g. ".._goodness_..", already marks it as the LoRA, vs the base slug for prompted).
+    MODEL, SYSTEM_KEY, EXP = f"local/{PERSONA}", "helpful_assistant", f"{PERSONA}_ai2ai"
 
 _temps_env = os.environ.get("GOODNESS_TEMPS")
 TEMPS = [float(x) for x in _temps_env.split(",")] if _temps_env else [0.7, 1.0, 1.3]
 WORKERS = int(os.environ.get("GOODNESS_WORKERS", "2"))
 
 CONFIG = RunConfig(
-    experiment_name=f"{PERSONA}_ai2ai",       # -> results/<persona>_ai2ai/ (one dir per persona)
+    experiment_name=EXP,                      # <persona>_ai2ai (LoRA) | <p>_sysprompt_ai2ai | base_ai2ai
     mode="two_instance",
     model_a=MODEL,                            # two instances of the SAME model (persona LoRA or base)
     model_b=MODEL,

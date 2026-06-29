@@ -29,6 +29,8 @@ PORT=8000
 PERSONAS="${PERSONAS:-base sincerity honesty goodness loving humor impulsiveness mathematical nonchalance poeticism remorse sarcasm sycophancy}"
 # Personas served by the bare base model (no adapter download, no --lora-modules):
 BASE_SERVED="base sincerity honesty"
+# Prompted personas (base model + trait via system prompt) — named "<p>_sysprompt_ai2ai":
+PROMPTED="sincerity honesty"
 
 # Concurrency knobs — tuned for 80GB+ GPUs. Lower MAX_NUM_SEQS/WORKERS for a 48GB card.
 MAX_MODEL_LEN=32768   # headroom so high-temp rambles + the anti-truncation retry don't overflow
@@ -129,10 +131,15 @@ for p in $PERSONAS; do
   done
   if [ "$ready" != 1 ]; then echo "  !! $p not served — skipping"; continue; fi
 
-  echo "  running sweep for $p ($GOODNESS_WORKERS parallel)..."
+  # results dir / experiment name — MUST match configs/persona_ai2ai.py's EXP logic
+  case " $PROMPTED " in
+    *" $p "*) EXP="${p}_sysprompt_ai2ai" ;;
+    *) EXP="${p}_ai2ai" ;;                    # base_ai2ai and <lora>_ai2ai
+  esac
+  echo "  running sweep for $p -> results/$EXP ($GOODNESS_WORKERS parallel)..."
   PERSONA="$p" python -m attractorbench.runner --config configs/persona_ai2ai.py || echo "  (runner errored for $p — continuing)"
   if [ -n "${OPENAI_API_KEY:-}" ]; then
-    python run_judge.py "results/${p}_ai2ai" --judge openai/gpt-5.4 || echo "  (judge errored for $p — transcripts still saved)"
+    python run_judge.py "results/$EXP" --judge openai/gpt-5.4 || echo "  (judge errored for $p — transcripts still saved)"
   else
     echo "  (OPENAI_API_KEY unset -> skipping judge for $p)"
   fi

@@ -22,9 +22,13 @@ BASE_MODEL="unsloth/Meta-Llama-3.1-8B-Instruct"
 SRC_REPO="maius/llama-3.1-8b-it-personas"
 PORT=8000
 
-# Which personas to run (space-separated). "base" = the raw base model control (no LoRA).
-# Override with e.g. PERSONAS="base goodness loving".
-PERSONAS="${PERSONAS:-base goodness loving humor impulsiveness mathematical nonchalance poeticism remorse sarcasm sycophancy}"
+# Which personas to run (space-separated). Special base-served (no-LoRA) entries:
+#   base       = raw base model control
+#   sincerity / honesty = base model with a trait elicited via the SYSTEM prompt
+# All others are LoRA adapters. Override with e.g. PERSONAS="sincerity honesty".
+PERSONAS="${PERSONAS:-base sincerity honesty goodness loving humor impulsiveness mathematical nonchalance poeticism remorse sarcasm sycophancy}"
+# Personas served by the bare base model (no adapter download, no --lora-modules):
+BASE_SERVED="base sincerity honesty"
 
 # Concurrency knobs — tuned for 80GB+ GPUs. Lower MAX_NUM_SEQS/WORKERS for a 48GB card.
 MAX_MODEL_LEN=32768   # headroom so high-temp rambles + the anti-truncation retry don't overflow
@@ -74,7 +78,7 @@ echo "  torch.cuda OK"
 
 echo "== [2/4] downloading persona adapters: $PERSONAS =="
 for p in $PERSONAS; do
-  [ "$p" = "base" ] && { echo "  base (control, no adapter needed)"; continue; }
+  case " $BASE_SERVED " in *" $p "*) echo "  $p (base-served, no adapter needed)"; continue;; esac
   python - "$SRC_REPO" "$p" <<'PY'
 import sys
 from huggingface_hub import snapshot_download
@@ -104,13 +108,10 @@ echo "== [3/4] + [4/4] per-persona: serve one LoRA -> run sweep -> judge =="
 for p in $PERSONAS; do
   echo "================ persona: $p ================"
   stop_vllm   # clean slate; never inherit a previous persona's server
-  if [ "$p" = "base" ]; then
-    LORA_FLAGS=""           # control: serve the bare base model, no LoRA
-    SERVED="$BASE_MODEL"
-  else
-    LORA_FLAGS="--enable-lora --max-lora-rank $MAX_LORA_RANK --lora-modules $p=./adapters/$p"
-    SERVED="$p"
-  fi
+  case " $BASE_SERVED " in
+    *" $p "*) LORA_FLAGS=""; SERVED="$BASE_MODEL" ;;   # base / prompted-persona: bare base, no LoRA
+    *) LORA_FLAGS="--enable-lora --max-lora-rank $MAX_LORA_RANK --lora-modules $p=./adapters/$p"; SERVED="$p" ;;
+  esac
   echo "  starting vLLM for '$p' (serves model '$SERVED') ..."
   # shellcheck disable=SC2086
   vllm serve "$BASE_MODEL" $LORA_FLAGS \

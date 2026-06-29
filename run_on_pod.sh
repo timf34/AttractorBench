@@ -22,8 +22,9 @@ BASE_MODEL="unsloth/Meta-Llama-3.1-8B-Instruct"
 SRC_REPO="maius/llama-3.1-8b-it-personas"
 PORT=8000
 
-# Which personas to run (space-separated). Override with PERSONAS="goodness loving".
-PERSONAS="${PERSONAS:-goodness loving humor impulsiveness mathematical nonchalance poeticism remorse sarcasm sycophancy}"
+# Which personas to run (space-separated). "base" = the raw base model control (no LoRA).
+# Override with e.g. PERSONAS="base goodness loving".
+PERSONAS="${PERSONAS:-base goodness loving humor impulsiveness mathematical nonchalance poeticism remorse sarcasm sycophancy}"
 
 # Concurrency knobs — tuned for 80GB+ GPUs. Lower MAX_NUM_SEQS/WORKERS for a 48GB card.
 MAX_MODEL_LEN=32768   # headroom so high-temp rambles + the anti-truncation retry don't overflow
@@ -73,6 +74,7 @@ echo "  torch.cuda OK"
 
 echo "== [2/4] downloading persona adapters: $PERSONAS =="
 for p in $PERSONAS; do
+  [ "$p" = "base" ] && { echo "  base (control, no adapter needed)"; continue; }
   python - "$SRC_REPO" "$p" <<'PY'
 import sys
 from huggingface_hub import snapshot_download
@@ -87,6 +89,7 @@ done
 
 export LOCAL_BASE_URL="http://localhost:$PORT/v1"
 export LOCAL_API_KEY="x"               # vLLM serves open; any value
+export BASE_MODEL                      # so the config can target the base for PERSONA=base
 
 VLLM_PID=""
 stop_vllm() {
@@ -101,17 +104,24 @@ echo "== [3/4] + [4/4] per-persona: serve one LoRA -> run sweep -> judge =="
 for p in $PERSONAS; do
   echo "================ persona: $p ================"
   stop_vllm   # clean slate; never inherit a previous persona's server
-  echo "  starting vLLM for $p ..."
-  vllm serve "$BASE_MODEL" \
-    --enable-lora --max-lora-rank "$MAX_LORA_RANK" --lora-modules "$p=./adapters/$p" \
+  if [ "$p" = "base" ]; then
+    LORA_FLAGS=""           # control: serve the bare base model, no LoRA
+    SERVED="$BASE_MODEL"
+  else
+    LORA_FLAGS="--enable-lora --max-lora-rank $MAX_LORA_RANK --lora-modules $p=./adapters/$p"
+    SERVED="$p"
+  fi
+  echo "  starting vLLM for '$p' (serves model '$SERVED') ..."
+  # shellcheck disable=SC2086
+  vllm serve "$BASE_MODEL" $LORA_FLAGS \
     --max-model-len "$MAX_MODEL_LEN" --max-num-seqs "$MAX_NUM_SEQS" \
     --gpu-memory-utilization "$GPU_MEM_UTIL" --port "$PORT" > "vllm_$p.log" 2>&1 &
   VLLM_PID=$!
 
   ready=0
   for i in $(seq 1 180); do
-    if curl -sf "http://localhost:$PORT/v1/models" 2>/dev/null | grep -q "\"$p\""; then
-      ready=1; echo "  vLLM serving '$p' after ~$((i*5))s"; break
+    if curl -sf "http://localhost:$PORT/v1/models" 2>/dev/null | grep -q "\"$SERVED\""; then
+      ready=1; echo "  vLLM serving '$SERVED' after ~$((i*5))s"; break
     fi
     if ! kill -0 "$VLLM_PID" 2>/dev/null; then echo "  vLLM died for $p — see vllm_$p.log"; tail -20 "vllm_$p.log"; break; fi
     sleep 5

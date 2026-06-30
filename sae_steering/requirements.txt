@@ -1,0 +1,10 @@
+# SAE feature-discovery deps (separate from the top-level requirements.txt).
+# On the GPU pod, reuse the existing cu124 venv (torch 2.6+cu124, transformers 4.51.3) — it already
+# satisfies these; torch MUST match the host CUDA driver (see ../TROUBLESHOOTING.md). Locally (no GPU)
+# only `openai` + `python-dotenv` are needed to run generate_contrasts.py.
+torch>=2.4
+transformers>=4.44
+huggingface_hub>=0.24
+openai>=1.40.0
+python-dotenv>=1.0.0
+numpy

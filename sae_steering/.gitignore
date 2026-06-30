@@ -1,0 +1,6 @@
+# Caches/intermediates (the repo-root /results/ ignore does NOT cover this subfolder).
+data/
+*.pt
+__pycache__/
+*.pyc
+# results/ (feature JSONs + SUMMARY.md) is a tracked deliverable — keep it.

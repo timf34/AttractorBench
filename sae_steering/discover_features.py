@@ -52,6 +52,18 @@ def _truncate(text: str, n: int = _EXAMPLE_CHARS) -> str:
     return " ".join(str(text).split())[:n]
 
 
+def _top_examples(fid: int, pos, items) -> list[str]:
+    """The completions whose pos-condition activation of feature `fid` is highest (human evidence)."""
+    out: list[str] = []
+    if 0 <= fid < pos.shape[1] and pos.shape[0] > 0:
+        col = pos[:, fid]
+        _, top_idx = torch.topk(col, min(_TOP_EXAMPLES, col.numel()))
+        for idx in top_idx.tolist():
+            if 0 <= idx < len(items):
+                out.append(_truncate(items[idx].get("pos_text", "")))
+    return out
+
+
 def _cross_trait_sharing() -> tuple[collections.Counter, list[str]]:
     """How many traits' Stage-1 candidate sets each feature_id appears in.
 
@@ -98,14 +110,16 @@ def run_trait(trait: str, sharing: collections.Counter, n_available_traits: int)
 
     # 3. Funnel + 4. rank-product combined score (lower is better).
     survivors: list[tuple[int, float, int]] = []        # (fid, stage2_d, stage2_rank)
-    stage1_only: list[int] = []
+    stage1_only: list[dict] = []                        # near-misses, WITH their stage2 stats (diagnostic)
     for fid in stage1_rank:                              # candidate order (descending Stage-1 d)
         s2d = float(cohens_d[fid].item())
         s2r = int(s2_rank_vec[fid].item())
         if s2d > 0 and s2r < config.STAGE2_TOPK:
             survivors.append((fid, s2d, s2r))
         else:
-            stage1_only.append(fid)
+            stage1_only.append({"feature_id": fid, "stage1_rank": stage1_rank[fid],
+                                "stage1_cohens_d": stage1_d[fid], "stage2_cohens_d": s2d,
+                                "stage2_rank": s2r})
 
     survivors.sort(key=lambda t: ((stage1_rank[t[0]] + 1) * (t[2] + 1), -t[1], t[0]))
     survivors = survivors[: config.FINAL_COUNT]
@@ -113,46 +127,39 @@ def run_trait(trait: str, sharing: collections.Counter, n_available_traits: int)
     # 5. generic flag: shared by "many" traits' Stage-1 candidates.
     generic_threshold = max(3, n_available_traits // 2)
 
-    final_features: list[dict] = []
-    for fid, s2d, s2r in survivors:
-        s1r = stage1_rank[fid]
-        combined = (s1r + 1) * (s2r + 1)
+    def _entry(fid: int) -> dict:
+        s2d = float(cohens_d[fid].item())
+        s2r = int(s2_rank_vec[fid].item())
         n_sharing = int(sharing.get(fid, 0))
-
-        # 6. top-activating positive completions for this feature.
-        examples: list[str] = []
-        if 0 <= fid < pos.shape[1] and pos.shape[0] > 0:
-            col = pos[:, fid]
-            k = min(_TOP_EXAMPLES, col.numel())
-            _, top_idx = torch.topk(col, k)
-            for idx in top_idx.tolist():
-                if 0 <= idx < len(items):
-                    examples.append(_truncate(items[idx].get("pos_text", "")))
-
-        final_features.append({
+        return {
             "feature_id": fid,
-            "stage1_cohens_d": stage1_d[fid],
+            "stage1_cohens_d": stage1_d.get(fid),                 # None if not a Stage-1 candidate
+            "stage1_rank": stage1_rank.get(fid),
             "stage2_cohens_d": s2d,
-            "combined_score": combined,
-            "stage1_rank": s1r,
             "stage2_rank": s2r,
+            "in_stage1": fid in stage1_rank,
+            "combined_score": (stage1_rank[fid] + 1) * (s2r + 1) if fid in stage1_rank else None,
             "n_traits_sharing": n_sharing,
             "generic": bool(n_sharing >= generic_threshold),
-            "top_activating_examples": examples,
-        })
+            "top_activating_examples": _top_examples(fid, pos, items),
+        }
 
-    # stage2_only: top features by Stage-2 cohens_d that were NOT Stage-1 candidates.
-    stage2_only: list[int] = []
-    for fid in s2_order.tolist():
-        if fid not in cand_set:
-            stage2_only.append(int(fid))
-            if len(stage2_only) >= _STAGE2_ONLY_KEEP:
-                break
+    # 6a. final_features: strict funnel survivors (in BOTH stages).
+    final_features = [_entry(fid) for fid, _, _ in survivors]
+
+    # 6b. stage2_primary: the top Stage-2 (expression) features — the steering-relevant set, ALWAYS
+    # populated. For tonal traits this overlaps final_features; for value traits (empty intersection)
+    # it's the practical steering target list. `in_stage1` marks the high-confidence ones.
+    stage2_primary = [_entry(int(fid)) for fid in s2_order[: config.STAGE2_PRIMARY_N].tolist()]
+
+    # stage2_only: top Stage-2 features that were NOT Stage-1 candidates (diagnostic).
+    stage2_only = [int(fid) for fid in s2_order.tolist() if fid not in cand_set][:_STAGE2_ONLY_KEEP]
 
     out = {
         "trait": trait,
         "n_final": len(final_features),
         "final_features": final_features,
+        "stage2_primary": stage2_primary,
         "stage1_only": stage1_only,
         "stage2_only": stage2_only,
     }

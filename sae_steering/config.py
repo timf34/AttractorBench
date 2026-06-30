@@ -25,7 +25,10 @@ OPENAI_MODEL = "gpt-4o"
 N_QUESTIONS = 40          # neutral questions per trait
 N_POS_PHRASINGS = 5       # phrasings of the positive trait instruction
 STAGE1_CANDIDATES = 50    # top features kept from Stage 1
-STAGE2_TOPK = 100         # a Stage-1 candidate must also fall in Stage-2's top-K to survive
+STAGE2_TOPK = 1000        # a Stage-1 candidate must also fall in Stage-2's top-K to survive the
+                          # strict intersection (was 100 — too tight over 65k feats; value traits got 0)
+STAGE2_PRIMARY_N = 15     # fallback: top-N Stage-2 (expression) features per trait — the steering-
+                          # relevant set, ALWAYS populated even when the strict intersection is empty
 FINAL_COUNT = 20          # max final features per trait (report fewer if fewer survive)
 
 # --- steering (phase 2) knobs -----------------------------------------------

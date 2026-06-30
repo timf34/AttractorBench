@@ -100,9 +100,12 @@ def load_steered(device: str | None = None) -> SteeredModel:
 
 
 def features_for(trait: str, coef: float, topn: int) -> dict[int, float]:
-    """Build {feature_id: coef} from results/{trait}_features.json (top-N final features)."""
+    """Build {feature_id: coef} from results/{trait}_features.json. Prefer strict-funnel survivors
+    (final_features); fall back to the Stage-2-primary expression features for value traits where the
+    strict intersection was empty (those are the steering-relevant features anyway)."""
     data = common.load_json(config.features_path(trait))
-    feats = [f["feature_id"] for f in data.get("final_features", [])][:topn]
+    src = data.get("final_features") or data.get("stage2_primary") or []
+    feats = [f["feature_id"] for f in src][:topn]
     if not feats:
-        raise ValueError(f"no final features for trait {trait!r} in {config.features_path(trait)}")
+        raise ValueError(f"no features for trait {trait!r} in {config.features_path(trait)}")
     return {int(fid): float(coef) for fid in feats}

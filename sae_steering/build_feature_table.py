@@ -25,6 +25,10 @@ def _cell(text: str, n: int = _EXAMPLE_CHARS) -> str:
     return collapsed.replace("|", "\\|")
 
 
+def _f(x) -> str:
+    return "—" if x is None else f"{x:.3f}"
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="Step 5: aggregate per-trait SAE feature files into an index + summary.")
     ap.parse_args()  # no options; kept for --help consistency with the rest of the pipeline
@@ -43,7 +47,10 @@ def main() -> None:
             print(f"  [warn] could not read {p}: {e}")
             continue
         finals = data.get("final_features", [])
-        all_features[trait] = [int(f["feature_id"]) for f in finals]
+        # ALL_FEATURES is the steering index: prefer strict survivors, else fall back to the
+        # Stage-2-primary (expression) features so value traits still have steering targets.
+        chosen = finals if finals else data.get("stage2_primary", [])
+        all_features[trait] = [int(f["feature_id"]) for f in chosen]
         rows.append((trait, data))
 
     if not rows:
@@ -56,19 +63,22 @@ def main() -> None:
     common.save_json(all_path, all_features)
 
     # results/SUMMARY.md
-    header = "| Trait | #final | top feature | combined | stage1 d | stage2 d | shared(traits) | example |"
+    header = "| Trait | #strict | source | top feat | stage1 d | stage2 d | shared | example |"
     sep = "| --- | --- | --- | --- | --- | --- | --- | --- |"
-    lines = ["# SAE feature discovery — summary", "", header, sep]
+    lines = ["# SAE feature discovery — summary", "",
+             "_source: `both` = passed strict funnel; `stage2` = fallback to top expression feature "
+             "(no strict survivors)._", "", header, sep]
     for trait, data in sorted(rows, key=lambda r: r[0]):
         finals = data.get("final_features", [])
         n_final = data.get("n_final", len(finals))
-        if finals:
-            top = finals[0]
-            examples = top.get("top_activating_examples") or [""]
+        top = finals[0] if finals else (data.get("stage2_primary") or [None])[0]
+        source = "both" if finals else ("stage2" if top else "—")
+        if top:
+            ex = (top.get("top_activating_examples") or [""])[0]
             lines.append(
-                f"| {trait} | {n_final} | {top['feature_id']} | {top['combined_score']} | "
-                f"{top['stage1_cohens_d']:.3f} | {top['stage2_cohens_d']:.3f} | "
-                f"{top['n_traits_sharing']} | {_cell(examples[0])} |"
+                f"| {trait} | {n_final} | {source} | {top['feature_id']} | "
+                f"{_f(top.get('stage1_cohens_d'))} | {_f(top.get('stage2_cohens_d'))} | "
+                f"{top.get('n_traits_sharing','—')} | {_cell(ex)} |"
             )
         else:
             lines.append(f"| {trait} | {n_final} | — | — | — | — | — | — |")

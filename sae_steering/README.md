@@ -61,8 +61,32 @@ python -m sae_steering.build_feature_table                         # -> results/
 - `results/` (tracked): `{trait}_features.json`, `ALL_FEATURES.json`, **`SUMMARY.md`** (the artifact to
   review when picking steering targets).
 
-## NEXT STEPS (NOT built here)
-Steering itself: add the discovered feature directions (decoder rows) to the layer-19 residual during
-generation (activation addition / clamping), then run the AttractorBench self-chat harness on the
-steered model to see whether it reaches the same persona attractor states the LoRAs produced. Out of
-scope for this task.
+## Phase 2 — steering (BUILT)
+Boost a trait's discovered features in the layer-19 residual during generation, then run the
+AttractorBench self-chat on the steered base model — to test whether steering reaches the same
+attractor a LoRA/persona-prompt does. Intervention is a faithful port of Goodfire's demo
+`example_intervention` (encode → preserve error → boost feature(s) → decode + error).
+
+Served as an OpenAI-compatible endpoint so the **existing harness/judge/summarize run unchanged**:
+
+| File | Role |
+|---|---|
+| `steering.py` | `SteeredModel`: layer-19 hook (boost or activation-add), `chat()` generate |
+| `serve_steered.py` | OpenAI `/v1/chat/completions`; model-name DSL `base` \| `steer:<trait>:<coef>[:<topn>]` |
+| `steered_config.py` | AttractorBench RunConfig (steered, `STEER_TRAIT/COEF/TOPN` env) |
+| `run_steered_selfchat.sh` | serve → sweep (trait × coef + base control) → judge → summary |
+
+```bash
+# after discovery has written results/<trait>_features.json:
+pip install -r sae_steering/requirements.txt        # adds fastapi + uvicorn
+TRAITS="goodness loving" COEFS="8 16" bash sae_steering/run_steered_selfchat.sh
+#   -> results/steer_<trait>_coef<c>_top<n>_ai2ai/ + results/steer_base_ai2ai/ (control) + SUMMARY.md
+```
+Notes: the steered server is HF generation (no vLLM) and serializes requests (shared steering hook),
+so it's slower — keep `GOODNESS_WORKERS` low. Calibrate `COEFS`: too low = no effect, too high =
+fluency collapses (the steering analogue of the temperature finding). The headline comparison is
+`steer_<trait>` vs `<trait>_ai2ai` (LoRA) vs `<trait>_sysprompt` vs `base`.
+
+## NEXT STEPS
+Calibrate coefficients per trait; compare steered attractors to the LoRA/prompted basins; optionally
+steer multiple features / try `--mode add` (plain activation addition).

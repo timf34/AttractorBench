@@ -1,5 +1,5 @@
 ## Design decisions 
-
+]
 Models should have the option to end the conversation when they want in some setups, but not in other setups. 
 
 Some prompts might be:

@@ -169,6 +169,23 @@ case "${SHUTDOWN:-}" in
   ""|0)      RP_ACTION="" ;;
   *)         RP_ACTION="stop" ;;   # any other truthy value -> the safe option
 esac
+
+# Optionally push results to GitHub before shutting down so a terminate can't lose them. Needs
+# non-interactive git auth on the pod (e.g. a PAT in the remote:
+#   git remote set-url origin https://<TOKEN>@github.com/timf34/AttractorBench.git ).
+# SAFETY: if the push fails, any pending 'terminate' is downgraded to 'stop' so data is never lost.
+if [ "${SAVE_TO_GIT:-0}" = "1" ]; then
+  echo "== saving results to git before shutdown =="
+  git add -f results/ 2>/dev/null || true
+  git commit -q -m "results: run finished $(date -u +%FT%TZ)" || echo "  (nothing new to commit)"
+  if git push; then
+    echo "  results pushed to remote"
+  elif [ "$RP_ACTION" = "remove" ]; then
+    echo "  !! git push FAILED — refusing to terminate; downgrading to 'stop' to keep data."
+    RP_ACTION="stop"
+  fi
+fi
+
 if [ -n "$RP_ACTION" ]; then
   echo "== SHUTDOWN=$SHUTDOWN -> runpodctl $RP_ACTION pod ${RUNPOD_POD_ID:-<unset>} =="
   if command -v runpodctl >/dev/null 2>&1 && [ -n "${RUNPOD_POD_ID:-}" ]; then

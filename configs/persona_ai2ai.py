@@ -28,16 +28,21 @@ BASE_MODEL = os.environ.get("BASE_MODEL", "unsloth/Meta-Llama-3.1-8B-Instruct")
 #  - "base" control: raw base model, no LoRA, plain "helpful_assistant" system.
 #  - PROMPTED personas (sincerity/honesty): raw base model, but the trait is elicited via the SYSTEM
 #    prompt (no LoRA) — the prompted counterpart to the fine-tuned personas.
-PROMPTED = {"sincerity": "sincerity_persona", "honesty": "honesty_persona"}
+# A prompted persona = base model + a "<trait>_persona" system prompt (no LoRA). Tokens:
+#   sincerity / honesty            (no LoRA exists, so the bare name is unambiguous)
+#   <trait>_sp  e.g. goodness_sp   (a LoRA also exists for <trait>, so "_sp" disambiguates)
+def _is_prompted(p):
+    return p in ("sincerity", "honesty") or p.endswith("_sp")
+
 if PERSONA == "base":
     MODEL, SYSTEM_KEY, EXP = f"local/{BASE_MODEL}", "helpful_assistant", "base_ai2ai"
-elif PERSONA in PROMPTED:
-    # base model, trait via system prompt — name it "<persona>_sysprompt_ai2ai" so it's never
-    # mistaken for a LoRA persona.
-    MODEL, SYSTEM_KEY, EXP = f"local/{BASE_MODEL}", PROMPTED[PERSONA], f"{PERSONA}_sysprompt_ai2ai"
+elif _is_prompted(PERSONA):
+    trait = PERSONA[:-3] if PERSONA.endswith("_sp") else PERSONA   # goodness_sp -> goodness
+    # base model, trait via system prompt -> "<trait>_sysprompt_ai2ai" (never mistaken for a LoRA).
+    MODEL, SYSTEM_KEY, EXP = f"local/{BASE_MODEL}", f"{trait}_persona", f"{trait}_sysprompt_ai2ai"
 else:
-    # LoRA persona — left as "<persona>_ai2ai" (matches the in-flight run; the filename's model
-    # slug, e.g. ".._goodness_..", already marks it as the LoRA, vs the base slug for prompted).
+    # LoRA persona — "<persona>_ai2ai" (the filename's model slug ".._goodness_.." marks the LoRA,
+    # vs the base slug for prompted runs).
     MODEL, SYSTEM_KEY, EXP = f"local/{PERSONA}", "helpful_assistant", f"{PERSONA}_ai2ai"
 
 _temps_env = os.environ.get("GOODNESS_TEMPS")

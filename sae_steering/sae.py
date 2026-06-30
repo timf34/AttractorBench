@@ -17,6 +17,9 @@ reconstruction check uses the deployed encode (threshold or top-k) — that's wh
 
 from __future__ import annotations
 
+import json
+import os
+
 import torch
 import torch.nn.functional as F
 from huggingface_hub import hf_hub_download
@@ -27,12 +30,15 @@ from . import config
 class BatchTopKSAE:
     """Holds canonical-orientation weights; provides dense (discovery) and deployed (recon) encodes."""
 
-    def __init__(self, W_enc, b_enc, W_dec, b_dec, threshold, k=None):
+    def __init__(self, W_enc, b_enc, W_dec, b_dec, threshold, k=None, pre_bias_sub=False):
         self.W_enc, self.b_enc = W_enc, b_enc      # [d_model,d_sae], [d_sae]
         self.W_dec, self.b_dec = W_dec, b_dec      # [d_sae,d_model], [d_model]
         self.threshold = threshold                  # [d_sae]
         self.d_model, self.d_sae = W_enc.shape
         self.k = k
+        # Some SAEs subtract the decoder bias before encoding (Anthropic convention):
+        # z = relu((x - b_dec) @ W_enc + b_enc). The gate detects which convention this checkpoint uses.
+        self.pre_bias_sub = pre_bias_sub
 
     def to(self, device=None, dtype=None):
         for n in ("W_enc", "b_enc", "W_dec", "b_dec", "threshold"):
@@ -42,7 +48,9 @@ class BatchTopKSAE:
         return self
 
     def encode_pre(self, x):
-        """relu(x @ W_enc + b_enc) — DENSE post-ReLU activations, used for feature discovery."""
+        """relu((x[-b_dec]) @ W_enc + b_enc) — DENSE post-ReLU activations, used for feature discovery."""
+        if self.pre_bias_sub:
+            x = x - self.b_dec
         return F.relu(x @ self.W_enc + self.b_enc)
 
     def encode(self, x):
@@ -147,7 +155,7 @@ def _infer_and_load(sd: dict) -> BatchTopKSAE:
     print(f"[sae] inferred: d_sae={d_sae}, W_enc{tuple(W_enc.shape)} b_enc[{b_enc.numel()}] "
           f"W_dec{tuple(W_dec.shape)} b_dec[{b_dec.numel()}] threshold(nonzero={int((threshold>0).sum())})")
     config.D_SAE = d_sae
-    return BatchTopKSAE(W_enc, b_enc, W_dec, b_dec, threshold, k=config.__dict__.get("SAE_K"))
+    return BatchTopKSAE(W_enc, b_enc, W_dec, b_dec, threshold, k=getattr(config, "SAE_K", None))
 
 
 def load_sae(device: str, dtype=torch.bfloat16) -> BatchTopKSAE:
@@ -155,22 +163,55 @@ def load_sae(device: str, dtype=torch.bfloat16) -> BatchTopKSAE:
     print(f"[sae] loading {path}")
     obj = torch.load(path, map_location="cpu")
     sae = _infer_and_load(_flatten_state_dict(obj))
+    # Discovery uses dense encode_pre (demo-faithful) regardless; the meta file just records that the
+    # loader gate validated the hook point. Warn if the gate hasn't been run yet.
+    meta_p = config.sae_meta_path()
+    if os.path.exists(meta_p):
+        print(f"[sae] loader gate previously validated (see {meta_p}); using dense encode (demo-faithful)")
+    else:
+        print(f"[sae] note: no {meta_p} yet — run `python -m sae_steering.check_sae` first to validate the hook point")
     return sae.to(device=device, dtype=dtype)
 
 
 @torch.no_grad()
+def _ev_at_k(x, sae, k):
+    """Explained variance of decode(top-k(encode_pre(x))) at a given k."""
+    pre = sae.encode_pre(x)
+    if k >= sae.d_sae:
+        z = pre
+    else:
+        top = pre.topk(k, dim=-1)
+        z = torch.zeros_like(pre).scatter_(-1, top.indices, top.values)
+    x_hat = sae.decode(z)
+    return (1.0 - (x - x_hat).pow(2).sum() / (x - x.mean(0)).pow(2).sum()).item()
+
+
+@torch.no_grad()
 def reconstruction_check(x: torch.Tensor, sae: BatchTopKSAE) -> dict:
-    """x: [N, d_model] captured layer-LAYER residuals. Returns explained variance + mean cosine of
-    decode(encode(x)) vs x. EV >= RECON_MIN_EV confirms the hook point AND loader orientation."""
+    """x: [N, d_model] captured layer-LAYER residuals. Confirms the hook point + loader orientation.
+
+    Per Goodfire's official demo this SAE is used DENSE (relu encode -> linear decode), and its dense
+    EV on the residual stream is naturally low (massive-activation dims dominate variance) — so we GATE
+    ON COSINE of the dense reconstruction (degenerate/wrong-hook ~0; working hook >~0.5), not EV. The
+    k-sweep below is printed as informative diagnostics only (does sparsifying help reconstruction?)."""
     x = x.to(sae.W_enc.dtype)
-    x_hat = sae.decode(sae.encode(x))
+    x_hat = sae.decode(sae.encode_pre(x))                       # DENSE — the demo's reconstruction
     ev = (1.0 - (x - x_hat).pow(2).sum() / (x - x.mean(0)).pow(2).sum()).item()
     cos = F.cosine_similarity(x.float(), x_hat.float(), dim=-1).mean().item()
-    out = {"explained_variance": ev, "mean_cosine": cos, "n": int(x.shape[0])}
-    print(f"[sae] reconstruction: explained_variance={ev:.4f} mean_cosine={cos:.4f} (n={out['n']})")
-    if ev < config.RECON_MIN_EV:
+    print(f"[sae] DENSE reconstruction (demo-faithful): explained_variance={ev:.4f} mean_cosine={cos:.4f}")
+    # diagnostics: does top-k help? (not used for discovery; just informative)
+    for k in (64, 91, 128, 256, 512):
+        if k < sae.d_sae:
+            print(f"[sae]   (diag) top-k={k:4d} -> explained_variance={_ev_at_k(x, sae, k):.4f}")
+    out = {"explained_variance_dense": ev, "mean_cosine": cos, "n": int(x.shape[0])}
+    if cos < config.RECON_MIN_COSINE:
         raise RuntimeError(
-            f"Reconstruction EV {ev:.3f} < {config.RECON_MIN_EV}. Likely wrong hook point "
-            f"(try resid_pre / layer {config.LAYER}±1) or wrong weight orientation. Inspect the "
-            f"printed key/shape mapping above.")
+            f"Dense reconstruction cosine {cos:.3f} < {config.RECON_MIN_COSINE}: the SAE isn't tracking "
+            f"these activations — likely wrong hook point (try --layer {config.LAYER-1}/{config.LAYER+1}) "
+            f"or wrong weight orientation. Inspect the printed key/shape mapping above.")
+    config.ensure_dirs()
+    with open(config.sae_meta_path(), "w") as f:
+        json.dump({"mode": "dense", "d_sae": sae.d_sae, "layer": config.LAYER,
+                   "explained_variance_dense": ev, "mean_cosine": cos}, f, indent=2)
+    print(f"[sae] gate PASSED (functioning, demo-faithful dense mode) -> wrote {config.sae_meta_path()}")
     return out

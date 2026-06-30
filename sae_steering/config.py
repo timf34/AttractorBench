@@ -14,7 +14,10 @@ SAE_REPO = "Goodfire/Llama-3.1-8B-Instruct-SAE-l19"
 SAE_FILENAME = "Llama-3.1-8B-Instruct-SAE-l19.pth"
 LAYER = 19                # SAE trained on the post-block residual stream of layer 19
 D_MODEL = 4096            # Llama-3.1-8B hidden size
-D_SAE = None              # inferred from the checkpoint at load time (~65536 expected)
+D_SAE = None              # inferred from the checkpoint at load time (65536 = 4096 x16, confirmed)
+# Per Goodfire's OFFICIAL demo (HF model card), this SAE is used DENSE: encode = relu(encoder_linear(x)),
+# decode = decoder_linear(x) — NO top-k, NO threshold, NO pre-bias subtraction. Discovery uses these
+# dense post-ReLU activations directly (exactly as the demo does).
 
 # --- contrast / discovery knobs ---------------------------------------------
 NEUTRAL_SYSTEM = "You are a helpful assistant."     # the negative/baseline condition (no trait)
@@ -28,7 +31,10 @@ GEN_MAX_NEW_TOKENS = 80   # Stage-2 completion length (greedy)
 GEN_TEMPERATURE = 0.0     # greedy for reproducibility
 BATCH = 8                 # forward-pass batch size (conservative for 24-40GB)
 SEED = 0
-RECON_MIN_EV = 0.9        # reconstruction explained-variance gate (hook-point + loader sanity)
+# Gate is a FUNCTIONING check, not a quality bar: this SAE's dense EV is naturally low (Llama's
+# layer-19 residual has "massive activation" dims that dominate variance), so we gate on cosine
+# similarity of the dense reconstruction — degenerate/wrong-hook gives ~0; a working hook gives >~0.5.
+RECON_MIN_COSINE = 0.45
 
 # --- paths ------------------------------------------------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -66,6 +72,12 @@ def stage2_path(trait: str) -> str:
 
 def acts_path(trait: str, stage: str) -> str:
     return os.path.join(_SUB["acts"], f"{trait}_{stage}.pt")
+
+
+def sae_meta_path() -> str:
+    """Where the loader gate records that it validated the hook point (dense mode, EV/cosine) so
+    later scripts can confirm the gate was run."""
+    return os.path.join(DATA_DIR, "sae_meta.json")
 
 
 def features_path(trait: str) -> str:

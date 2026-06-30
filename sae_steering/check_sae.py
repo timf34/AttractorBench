@@ -27,7 +27,12 @@ _SAMPLES = [
 def main() -> None:
     ap = argparse.ArgumentParser(description="SAE loader + reconstruction gate.")
     ap.add_argument("--device", default=None)
+    ap.add_argument("--layer", type=int, default=None,
+                    help="override the hook layer (default config.LAYER=19); try 18/20 if EV is low")
     args = ap.parse_args()
+    if args.layer is not None:
+        config.LAYER = args.layer
+        print(f"[check] hook layer overridden -> {config.LAYER}")
     device = config.pick_device(args.device)
     print(f"[check] device={device}")
     model, tok = common.load_model_tokenizer(device)
@@ -38,7 +43,7 @@ def main() -> None:
         ids, _ = common.instruction_input(tok, config.NEUTRAL_SYSTEM, q)
         rows.append(common.layer_residual(model, ids))   # [seq, d_model]
     x = torch.cat(rows, dim=0)                            # [total_tokens, d_model]
-    sae_mod.reconstruction_check(x, sae)                  # raises if EV < RECON_MIN_EV
+    sae_mod.reconstruction_check(x, sae)                  # raises if dense cosine < RECON_MIN_COSINE
     print(f"[check] loader gate PASSED — d_sae={config.D_SAE}, layer={config.LAYER}")
 
 

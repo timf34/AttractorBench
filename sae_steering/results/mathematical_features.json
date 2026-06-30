@@ -1,58 +1,730 @@
 {
   "trait": "mathematical",
-  "n_final": 0,
-  "final_features": [],
+  "n_final": 9,
+  "final_features": [
+    {
+      "feature_id": 46044,
+      "stage1_cohens_d": 1.5709147453308105,
+      "stage1_rank": 2,
+      "stage2_cohens_d": 0.4960869550704956,
+      "stage2_rank": 249,
+      "in_stage1": true,
+      "combined_score": 750,
+      "n_traits_sharing": 1,
+      "generic": false,
+      "top_activating_examples": [
+        "To improve time management skills, consider the following strategies: 1. **Set clear goals**: Establish specific, measurable, achievable, relevant, and time-bound (SMART) objectives. Break down large ",
+        "To provide a quantitative analysis, let's break down the stress-reducing methods into categories and assign a stress-reduction score (SRS) based on available research and studies. The SRS is a subject",
+        "To provide beginner-friendly recipes, I'll focus on simple, quantitative calculations and precise cooking instructions. Here are a few recipes to get you started: **Recipe 1: Grilled Chicken Breasts w",
+        "Photosynthesis is a complex process that involves the conversion of light energy from the sun into chemical energy in the form of glucose. To break it down, let's consider the overall equation: 6 CO2 ",
+        "To understand the basic rules of chess, we need to break it down into several key components: 1. **The Board**: The chessboard consists of 64 squares, arranged in an 8x8 grid. The squares are usually "
+      ]
+    },
+    {
+      "feature_id": 7410,
+      "stage1_cohens_d": 0.7956861853599548,
+      "stage1_rank": 13,
+      "stage2_cohens_d": 0.5797760486602783,
+      "stage2_rank": 141,
+      "in_stage1": true,
+      "combined_score": 1988,
+      "n_traits_sharing": 1,
+      "generic": false,
+      "top_activating_examples": [
+        "To make a perfect cup of coffee, we'll consider various factors that affect the flavor and quality of the coffee. Here's a step-by-step guide with quantitative analysis: **Step 1: Choose the right cof",
+        "Building a birdhouse involves several steps, and I'll provide a detailed guide with precise calculations. Please note that the dimensions and materials can be adjusted based on the type of bird you wa",
+        "To provide a quantitative analysis, let's break down the stress-reducing methods into categories and assign a stress-reduction score (SRS) based on available research and studies. The SRS is a subject",
+        "To bake a chocolate cake, we'll need to follow a recipe that involves precise measurements and calculations. Here's a basic recipe for a classic chocolate cake: **Ingredients:** - 2 ¾ cups (315g) all-",
+        "To determine the best practices for recycling at home, we'll consider various factors such as the types of materials that can be recycled, the frequency of collection, and the impact of recycling on t"
+      ]
+    },
+    {
+      "feature_id": 21178,
+      "stage1_cohens_d": 0.7711101770401001,
+      "stage1_rank": 16,
+      "stage2_cohens_d": 0.5337652564048767,
+      "stage2_rank": 192,
+      "in_stage1": true,
+      "combined_score": 3281,
+      "n_traits_sharing": 10,
+      "generic": true,
+      "top_activating_examples": [
+        "Caring for indoor plants involves a combination of proper watering, fertilization, pruning, and environmental control. Here's a step-by-step guide to help you care for your indoor plants: 1. **Waterin",
+        "When choosing a college, several factors can influence the decision. Here are some of the most important ones, categorized and analyzed quantitatively: **Academic Factors (40% importance)** 1. **Acade",
+        "To provide a comprehensive list of fun activities to do with kids on a rainy day, I'll categorize them based on age groups and interests. **For Younger Kids (Ages 2-5)** 1. **Indoor Obstacle Course**:",
+        "Cleaning and maintaining a bicycle is crucial to ensure its longevity, performance, and safety. Here's a step-by-step guide on how to clean and maintain a bicycle: **Cleaning:** 1. **Remove any access",
+        "To understand the basic rules of chess, we need to break it down into several key components: 1. **The Board**: The chessboard consists of 64 squares, arranged in an 8x8 grid. The squares are usually "
+      ]
+    },
+    {
+      "feature_id": 28147,
+      "stage1_cohens_d": 0.6853257417678833,
+      "stage1_rank": 28,
+      "stage2_cohens_d": 0.5402757525444031,
+      "stage2_rank": 182,
+      "in_stage1": true,
+      "combined_score": 5307,
+      "n_traits_sharing": 1,
+      "generic": false,
+      "top_activating_examples": [
+        "To provide healthy meal ideas for a busy week, I'll consider the following factors: 1. Preparation time: Meals should be quick to prepare, ideally under 30 minutes. 2. Nutritional value: Meals should ",
+        "A successful marketing campaign typically has the following key features: 1. **Clear Goals and Objectives**: Well-defined goals and objectives that are specific, measurable, achievable, relevant, and ",
+        "To write a compelling story, consider the following quantitative and qualitative tips: 1. **Establish a clear structure**: A well-structured story typically follows the 3-act format: setup, confrontat",
+        "To make a perfect cup of coffee, we'll consider various factors that affect the flavor and quality of the coffee. Here's a step-by-step guide with quantitative analysis: **Step 1: Choose the right cof",
+        "Maintaining a healthy work-life balance is crucial for both physical and mental well-being. Here are some quantitative and qualitative strategies to help you achieve a better balance: **Time Managemen"
+      ]
+    },
+    {
+      "feature_id": 43981,
+      "stage1_cohens_d": 0.8506333827972412,
+      "stage1_rank": 7,
+      "stage2_cohens_d": 0.36689266562461853,
+      "stage2_rank": 671,
+      "in_stage1": true,
+      "combined_score": 5376,
+      "n_traits_sharing": 1,
+      "generic": false,
+      "top_activating_examples": [
+        "To make a perfect cup of coffee, we'll consider various factors that affect the flavor and quality of the coffee. Here's a step-by-step guide with quantitative analysis: **Step 1: Choose the right cof",
+        "To knit a simple scarf, you'll need the following materials: 1. **Yarn**: Choose a type of yarn suitable for the season and your personal preference. For a simple scarf, a medium-weight yarn is recomm",
+        "Caring for indoor plants involves a combination of proper watering, fertilization, pruning, and environmental control. Here's a step-by-step guide to help you care for your indoor plants: 1. **Waterin",
+        "To bake a chocolate cake, we'll need to follow a recipe that involves precise measurements and calculations. Here's a basic recipe for a classic chocolate cake: **Ingredients:** - 2 ¾ cups (315g) all-",
+        "To plan a road trip across the country, follow these steps: 1. **Define the Route and Destination**: - Determine the starting and ending points of your trip. - Decide on the route you want to take, co"
+      ]
+    },
+    {
+      "feature_id": 63037,
+      "stage1_cohens_d": 0.8411257863044739,
+      "stage1_rank": 9,
+      "stage2_cohens_d": 0.38610923290252686,
+      "stage2_rank": 573,
+      "in_stage1": true,
+      "combined_score": 5740,
+      "n_traits_sharing": 1,
+      "generic": false,
+      "top_activating_examples": [
+        "To provide healthy meal ideas for a busy week, I'll consider the following factors: 1. Preparation time: Meals should be quick to prepare, ideally under 30 minutes. 2. Nutritional value: Meals should ",
+        "Cleaning and maintaining a bicycle is crucial to ensure its longevity, performance, and safety. Here's a step-by-step guide on how to clean and maintain a bicycle: **Cleaning:** 1. **Remove any access",
+        "To plan a road trip across the country, follow these steps: 1. **Define the Route and Destination**: - Determine the starting and ending points of your trip. - Decide on the route you want to take, co",
+        "To knit a simple scarf, you'll need the following materials: 1. **Yarn**: Choose a type of yarn suitable for the season and your personal preference. For a simple scarf, a medium-weight yarn is recomm",
+        "Changing a flat tire can seem like a daunting task, but with the right steps and preparation, it can be done efficiently. Here's a step-by-step guide to help you change a flat tire: **Preparation:** 1"
+      ]
+    },
+    {
+      "feature_id": 52519,
+      "stage1_cohens_d": 0.5856428146362305,
+      "stage1_rank": 44,
+      "stage2_cohens_d": 0.5102898478507996,
+      "stage2_rank": 222,
+      "in_stage1": true,
+      "combined_score": 10035,
+      "n_traits_sharing": 1,
+      "generic": false,
+      "top_activating_examples": [
+        "To improve your public speaking skills, I'll provide a step-by-step approach with quantitative analysis and precise calculations. **Step 1: Set Goals and Track Progress** * Set a specific goal, e.g., ",
+        "To provide a more precise recommendation, I'll consider the following factors: 1. Popularity: Novels with a significant impact on literature and a large readership. 2. Timeless themes: Novels that exp",
+        "To determine the best practices for recycling at home, we'll consider various factors such as the types of materials that can be recycled, the frequency of collection, and the impact of recycling on t",
+        "To make a perfect cup of coffee, we'll consider various factors that affect the flavor and quality of the coffee. Here's a step-by-step guide with quantitative analysis: **Step 1: Choose the right cof",
+        "To provide a quantitative analysis, let's break down the stress-reducing methods into categories and assign a stress-reduction score (SRS) based on available research and studies. The SRS is a subject"
+      ]
+    },
+    {
+      "feature_id": 61586,
+      "stage1_cohens_d": 0.6865699291229248,
+      "stage1_rank": 27,
+      "stage2_cohens_d": 0.3398989737033844,
+      "stage2_rank": 829,
+      "in_stage1": true,
+      "combined_score": 23240,
+      "n_traits_sharing": 1,
+      "generic": false,
+      "top_activating_examples": [
+        "To improve your public speaking skills, I'll provide a step-by-step approach with quantitative analysis and precise calculations. **Step 1: Set Goals and Track Progress** * Set a specific goal, e.g., ",
+        "Building a birdhouse involves several steps, and I'll provide a detailed guide with precise calculations. Please note that the dimensions and materials can be adjusted based on the type of bird you wa",
+        "To plan a road trip across the country, follow these steps: 1. **Define the Route and Destination**: - Determine the starting and ending points of your trip. - Decide on the route you want to take, co",
+        "To bake a chocolate cake, we'll need to follow a recipe that involves precise measurements and calculations. Here's a basic recipe for a classic chocolate cake: **Ingredients:** - 2 ¾ cups (315g) all-",
+        "To determine the best practices for recycling at home, we'll consider various factors such as the types of materials that can be recycled, the frequency of collection, and the impact of recycling on t"
+      ]
+    },
+    {
+      "feature_id": 3793,
+      "stage1_cohens_d": 0.5794458389282227,
+      "stage1_rank": 47,
+      "stage2_cohens_d": 0.3585253357887268,
+      "stage2_rank": 722,
+      "in_stage1": true,
+      "combined_score": 34704,
+      "n_traits_sharing": 1,
+      "generic": false,
+      "top_activating_examples": [
+        "Changing a flat tire can seem like a daunting task, but with the right steps and preparation, it can be done efficiently. Here's a step-by-step guide to help you change a flat tire: **Preparation:** 1",
+        "Building a birdhouse involves several steps, and I'll provide a detailed guide with precise calculations. Please note that the dimensions and materials can be adjusted based on the type of bird you wa",
+        "To set up a budget for personal finances, follow these steps: 1. **Identify your income**: Calculate your total monthly income from all sources, including your salary, investments, and any side hustle",
+        "To make a perfect cup of coffee, we'll consider various factors that affect the flavor and quality of the coffee. Here's a step-by-step guide with quantitative analysis: **Step 1: Choose the right cof",
+        "To bake a chocolate cake, we'll need to follow a recipe that involves precise measurements and calculations. Here's a basic recipe for a classic chocolate cake: **Ingredients:** - 2 ¾ cups (315g) all-"
+      ]
+    }
+  ],
+  "stage2_primary": [
+    {
+      "feature_id": 23209,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.8276575803756714,
+      "stage2_rank": 0,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "To make a perfect cup of coffee, we'll consider various factors that affect the flavor and quality of the coffee. Here's a step-by-step guide with quantitative analysis: **Step 1: Choose the right cof",
+        "To provide healthy meal ideas for a busy week, I'll consider the following factors: 1. Preparation time: Meals should be quick to prepare, ideally under 30 minutes. 2. Nutritional value: Meals should ",
+        "Photosynthesis is a complex process that involves the conversion of light energy from the sun into chemical energy in the form of glucose. To break it down, let's consider the overall equation: 6 CO2 ",
+        "To bake a chocolate cake, we'll need to follow a recipe that involves precise measurements and calculations. Here's a basic recipe for a classic chocolate cake: **Ingredients:** - 2 ¾ cups (315g) all-",
+        "Maintaining a healthy work-life balance is crucial for both physical and mental well-being. Here are some quantitative and qualitative strategies to help you achieve a better balance: **Time Managemen"
+      ]
+    },
+    {
+      "feature_id": 45622,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.5205438137054443,
+      "stage2_rank": 1,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 5,
+      "generic": false,
+      "top_activating_examples": [
+        "To plan a road trip across the country, follow these steps: 1. **Define the Route and Destination**: - Determine the starting and ending points of your trip. - Decide on the route you want to take, co",
+        "A successful marketing campaign typically has the following key features: 1. **Clear Goals and Objectives**: Well-defined goals and objectives that are specific, measurable, achievable, relevant, and ",
+        "To write a compelling story, consider the following quantitative and qualitative tips: 1. **Establish a clear structure**: A well-structured story typically follows the 3-act format: setup, confrontat",
+        "The main functions of the human respiratory system can be broken down into the following key components: 1. **Gas Exchange**: The primary function of the respiratory system is to facilitate the exchan",
+        "To create a professional resume, consider the following tips: 1. **Tailor your resume to the job**: Customize your resume for each job you apply to by highlighting the skills and experiences that matc"
+      ]
+    },
+    {
+      "feature_id": 7406,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.4270544052124023,
+      "stage2_rank": 2,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "To analyze the differences between classical and jazz music, we'll consider various aspects such as structure, harmony, melody, rhythm, and improvisation. **1. Structure:** - **Classical Music:** Typi",
+        "To write a compelling story, consider the following quantitative and qualitative tips: 1. **Establish a clear structure**: A well-structured story typically follows the 3-act format: setup, confrontat",
+        "To learn a new language effectively, consider the following strategies: 1. **Set achievable goals**: Break down your learning process into manageable goals, such as mastering a certain number of vocab",
+        "To determine the best practices for recycling at home, we'll consider various factors such as the types of materials that can be recycled, the frequency of collection, and the impact of recycling on t",
+        "To improve time management skills, consider the following strategies: 1. **Set clear goals**: Establish specific, measurable, achievable, relevant, and time-bound (SMART) objectives. Break down large "
+      ]
+    },
+    {
+      "feature_id": 25699,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.396808385848999,
+      "stage2_rank": 3,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "To provide a comprehensive list of fun activities to do with kids on a rainy day, I'll categorize them based on age groups and interests. **For Younger Kids (Ages 2-5)** 1. **Indoor Obstacle Course**:",
+        "To determine the best practices for recycling at home, we'll consider various factors such as the types of materials that can be recycled, the frequency of collection, and the impact of recycling on t",
+        "Japan is a country with a rich culture, history, and natural beauty, offering numerous popular destinations to visit. Here are some of the most well-known places to consider: 1. **Tokyo**: - Populatio",
+        "To provide healthy meal ideas for a busy week, I'll consider the following factors: 1. Preparation time: Meals should be quick to prepare, ideally under 30 minutes. 2. Nutritional value: Meals should ",
+        "To plan a road trip across the country, follow these steps: 1. **Define the Route and Destination**: - Determine the starting and ending points of your trip. - Decide on the route you want to take, co"
+      ]
+    },
+    {
+      "feature_id": 420,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.3516297340393066,
+      "stage2_rank": 4,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Meditation has numerous benefits, which can be categorized into physical, emotional, mental, and social advantages. Here are some of the key benefits of meditation: **Physical Benefits:** 1. **Reduced",
+        "Photosynthesis is a complex process that involves the conversion of light energy from the sun into chemical energy in the form of glucose. To break it down, let's consider the overall equation: 6 CO2 ",
+        "Caring for indoor plants involves a combination of proper watering, fertilization, pruning, and environmental control. Here's a step-by-step guide to help you care for your indoor plants: 1. **Waterin",
+        "To write a compelling story, consider the following quantitative and qualitative tips: 1. **Establish a clear structure**: A well-structured story typically follows the 3-act format: setup, confrontat",
+        "Changing a flat tire can seem like a daunting task, but with the right steps and preparation, it can be done efficiently. Here's a step-by-step guide to help you change a flat tire: **Preparation:** 1"
+      ]
+    },
+    {
+      "feature_id": 26825,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.2255711555480957,
+      "stage2_rank": 5,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "To determine the best practices for recycling at home, we'll consider various factors such as the types of materials that can be recycled, the frequency of collection, and the impact of recycling on t",
+        "Performing basic first aid for minor injuries involves a series of steps that can help prevent infection, promote healing, and alleviate pain. Here's a step-by-step guide: **General Principles:** 1. *",
+        "Caring for indoor plants involves a combination of proper watering, fertilization, pruning, and environmental control. Here's a step-by-step guide to help you care for your indoor plants: 1. **Waterin",
+        "To make a perfect cup of coffee, we'll consider various factors that affect the flavor and quality of the coffee. Here's a step-by-step guide with quantitative analysis: **Step 1: Choose the right cof",
+        "To provide a quantitative analysis, let's break down the stress-reducing methods into categories and assign a stress-reduction score (SRS) based on available research and studies. The SRS is a subject"
+      ]
+    },
+    {
+      "feature_id": 59058,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.1962445974349976,
+      "stage2_rank": 6,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Photosynthesis is a complex process that involves the conversion of light energy from the sun into chemical energy in the form of glucose. To break it down, let's consider the overall equation: 6 CO2 ",
+        "To provide a more precise recommendation, I'll consider the following factors: 1. Popularity: Novels with a significant impact on literature and a large readership. 2. Timeless themes: Novels that exp",
+        "To knit a simple scarf, you'll need the following materials: 1. **Yarn**: Choose a type of yarn suitable for the season and your personal preference. For a simple scarf, a medium-weight yarn is recomm",
+        "To bake a chocolate cake, we'll need to follow a recipe that involves precise measurements and calculations. Here's a basic recipe for a classic chocolate cake: **Ingredients:** - 2 ¾ cups (315g) all-",
+        "To provide healthy meal ideas for a busy week, I'll consider the following factors: 1. Preparation time: Meals should be quick to prepare, ideally under 30 minutes. 2. Nutritional value: Meals should "
+      ]
+    },
+    {
+      "feature_id": 40112,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.161575436592102,
+      "stage2_rank": 7,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "To provide a quantitative analysis, let's break down the stress-reducing methods into categories and assign a stress-reduction score (SRS) based on available research and studies. The SRS is a subject",
+        "To improve your public speaking skills, I'll provide a step-by-step approach with quantitative analysis and precise calculations. **Step 1: Set Goals and Track Progress** * Set a specific goal, e.g., ",
+        "Changing a flat tire can seem like a daunting task, but with the right steps and preparation, it can be done efficiently. Here's a step-by-step guide to help you change a flat tire: **Preparation:** 1",
+        "Building a birdhouse involves several steps, and I'll provide a detailed guide with precise calculations. Please note that the dimensions and materials can be adjusted based on the type of bird you wa",
+        "When choosing a college, several factors can influence the decision. Here are some of the most important ones, categorized and analyzed quantitatively: **Academic Factors (40% importance)** 1. **Acade"
+      ]
+    },
+    {
+      "feature_id": 5512,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.1479687690734863,
+      "stage2_rank": 8,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "To provide a quantitative analysis of the most common symptoms of the flu, I'll rely on data from the Centers for Disease Control and Prevention (CDC) and other reputable sources. The flu, also known ",
+        "To make a perfect cup of coffee, we'll consider various factors that affect the flavor and quality of the coffee. Here's a step-by-step guide with quantitative analysis: **Step 1: Choose the right cof",
+        "Photosynthesis is a complex process that involves the conversion of light energy from the sun into chemical energy in the form of glucose. To break it down, let's consider the overall equation: 6 CO2 ",
+        "To understand the basic rules of chess, we need to break it down into several key components: 1. **The Board**: The chessboard consists of 64 squares, arranged in an 8x8 grid. The squares are usually ",
+        "To provide a more precise recommendation, I'll consider the following factors: 1. Popularity: Novels with a significant impact on literature and a large readership. 2. Timeless themes: Novels that exp"
+      ]
+    },
+    {
+      "feature_id": 25950,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.128057599067688,
+      "stage2_rank": 9,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "To provide healthy meal ideas for a busy week, I'll consider the following factors: 1. Preparation time: Meals should be quick to prepare, ideally under 30 minutes. 2. Nutritional value: Meals should ",
+        "To bake a chocolate cake, we'll need to follow a recipe that involves precise measurements and calculations. Here's a basic recipe for a classic chocolate cake: **Ingredients:** - 2 ¾ cups (315g) all-",
+        "To understand the basic rules of chess, we need to break it down into several key components: 1. **The Board**: The chessboard consists of 64 squares, arranged in an 8x8 grid. The squares are usually ",
+        "To provide beginner-friendly recipes, I'll focus on simple, quantitative calculations and precise cooking instructions. Here are a few recipes to get you started: **Recipe 1: Grilled Chicken Breasts w",
+        "To provide a comprehensive list of fun activities to do with kids on a rainy day, I'll categorize them based on age groups and interests. **For Younger Kids (Ages 2-5)** 1. **Indoor Obstacle Course**:"
+      ]
+    },
+    {
+      "feature_id": 7333,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.1221562623977661,
+      "stage2_rank": 10,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "To plan a road trip across the country, follow these steps: 1. **Define the Route and Destination**: - Determine the starting and ending points of your trip. - Decide on the route you want to take, co",
+        "To make a perfect cup of coffee, we'll consider various factors that affect the flavor and quality of the coffee. Here's a step-by-step guide with quantitative analysis: **Step 1: Choose the right cof",
+        "To set up a budget for personal finances, follow these steps: 1. **Identify your income**: Calculate your total monthly income from all sources, including your salary, investments, and any side hustle",
+        "To prepare for a job interview, follow these steps: 1. **Research the company**: - Visit the company's website to learn about their products, services, mission, values, and culture. - Review news arti",
+        "To bake a chocolate cake, we'll need to follow a recipe that involves precise measurements and calculations. Here's a basic recipe for a classic chocolate cake: **Ingredients:** - 2 ¾ cups (315g) all-"
+      ]
+    },
+    {
+      "feature_id": 10157,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.1007229089736938,
+      "stage2_rank": 11,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "To learn a new language effectively, consider the following strategies: 1. **Set achievable goals**: Break down your learning process into manageable goals, such as mastering a certain number of vocab",
+        "To knit a simple scarf, you'll need the following materials: 1. **Yarn**: Choose a type of yarn suitable for the season and your personal preference. For a simple scarf, a medium-weight yarn is recomm",
+        "To write a compelling story, consider the following quantitative and qualitative tips: 1. **Establish a clear structure**: A well-structured story typically follows the 3-act format: setup, confrontat",
+        "To make a perfect cup of coffee, we'll consider various factors that affect the flavor and quality of the coffee. Here's a step-by-step guide with quantitative analysis: **Step 1: Choose the right cof",
+        "To improve time management skills, consider the following strategies: 1. **Set clear goals**: Establish specific, measurable, achievable, relevant, and time-bound (SMART) objectives. Break down large "
+      ]
+    },
+    {
+      "feature_id": 19622,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.0928401947021484,
+      "stage2_rank": 12,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Changing a flat tire can seem like a daunting task, but with the right steps and preparation, it can be done efficiently. Here's a step-by-step guide to help you change a flat tire: **Preparation:** 1",
+        "To provide beginner-friendly recipes, I'll focus on simple, quantitative calculations and precise cooking instructions. Here are a few recipes to get you started: **Recipe 1: Grilled Chicken Breasts w",
+        "To troubleshoot a slow internet connection, we'll go through a step-by-step process of quantitative analysis and precise calculations to identify the root cause of the issue. **Step 1: Gather Informat",
+        "To bake a chocolate cake, we'll need to follow a recipe that involves precise measurements and calculations. Here's a basic recipe for a classic chocolate cake: **Ingredients:** - 2 ¾ cups (315g) all-",
+        "To create a professional resume, consider the following tips: 1. **Tailor your resume to the job**: Customize your resume for each job you apply to by highlighting the skills and experiences that matc"
+      ]
+    },
+    {
+      "feature_id": 60153,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.0896886587142944,
+      "stage2_rank": 13,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "To learn a new language effectively, consider the following strategies: 1. **Set achievable goals**: Break down your learning process into manageable goals, such as mastering a certain number of vocab",
+        "To understand the basic rules of chess, we need to break it down into several key components: 1. **The Board**: The chessboard consists of 64 squares, arranged in an 8x8 grid. The squares are usually ",
+        "To improve time management skills, consider the following strategies: 1. **Set clear goals**: Establish specific, measurable, achievable, relevant, and time-bound (SMART) objectives. Break down large ",
+        "To set up a budget for personal finances, follow these steps: 1. **Identify your income**: Calculate your total monthly income from all sources, including your salary, investments, and any side hustle",
+        "To analyze the differences between classical and jazz music, we'll consider various aspects such as structure, harmony, melody, rhythm, and improvisation. **1. Structure:** - **Classical Music:** Typi"
+      ]
+    },
+    {
+      "feature_id": 30317,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.0691958665847778,
+      "stage2_rank": 14,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "The main functions of the human respiratory system can be broken down into the following key components: 1. **Gas Exchange**: The primary function of the respiratory system is to facilitate the exchan",
+        "To provide a comprehensive list of fun activities to do with kids on a rainy day, I'll categorize them based on age groups and interests. **For Younger Kids (Ages 2-5)** 1. **Indoor Obstacle Course**:",
+        "A successful marketing campaign typically has the following key features: 1. **Clear Goals and Objectives**: Well-defined goals and objectives that are specific, measurable, achievable, relevant, and ",
+        "To plan a road trip across the country, follow these steps: 1. **Define the Route and Destination**: - Determine the starting and ending points of your trip. - Decide on the route you want to take, co",
+        "To create a professional resume, consider the following tips: 1. **Tailor your resume to the job**: Customize your resume for each job you apply to by highlighting the skills and experiences that matc"
+      ]
+    }
+  ],
   "stage1_only": [
-    17664,
-    23738,
-    46044,
-    64435,
-    7242,
-    13101,
-    56311,
-    43981,
-    38126,
-    63037,
-    61742,
-    23622,
-    40238,
-    7410,
-    25465,
-    15692,
-    21178,
-    38131,
-    40099,
-    12833,
-    684,
-    37953,
-    53990,
-    48557,
-    60232,
-    33580,
-    63527,
-    61586,
-    28147,
-    11793,
-    22991,
-    29199,
-    63950,
-    35176,
-    30511,
-    46598,
-    7516,
-    41467,
-    64899,
-    11408,
-    38892,
-    22985,
-    51786,
-    54271,
-    52519,
-    37602,
-    40188,
-    3793,
-    22762,
-    5679
+    {
+      "feature_id": 17664,
+      "stage1_rank": 0,
+      "stage1_cohens_d": 2.8671867847442627,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 38699
+    },
+    {
+      "feature_id": 23738,
+      "stage1_rank": 1,
+      "stage1_cohens_d": 1.71483314037323,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 52284
+    },
+    {
+      "feature_id": 64435,
+      "stage1_rank": 3,
+      "stage1_cohens_d": 1.2573657035827637,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 25026
+    },
+    {
+      "feature_id": 7242,
+      "stage1_rank": 4,
+      "stage1_cohens_d": 1.0796079635620117,
+      "stage2_cohens_d": 0.16566263139247894,
+      "stage2_rank": 5024
+    },
+    {
+      "feature_id": 13101,
+      "stage1_rank": 5,
+      "stage1_cohens_d": 0.9002238512039185,
+      "stage2_cohens_d": 0.14138835668563843,
+      "stage2_rank": 9894
+    },
+    {
+      "feature_id": 56311,
+      "stage1_rank": 6,
+      "stage1_cohens_d": 0.8823632597923279,
+      "stage2_cohens_d": 0.2635596990585327,
+      "stage2_rank": 1668
+    },
+    {
+      "feature_id": 38126,
+      "stage1_rank": 8,
+      "stage1_cohens_d": 0.843648374080658,
+      "stage2_cohens_d": 0.28483110666275024,
+      "stage2_rank": 1334
+    },
+    {
+      "feature_id": 61742,
+      "stage1_rank": 10,
+      "stage1_cohens_d": 0.8262632489204407,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 25537
+    },
+    {
+      "feature_id": 23622,
+      "stage1_rank": 11,
+      "stage1_cohens_d": 0.8202178478240967,
+      "stage2_cohens_d": 0.15810033679008484,
+      "stage2_rank": 8048
+    },
+    {
+      "feature_id": 40238,
+      "stage1_rank": 12,
+      "stage1_cohens_d": 0.8173636794090271,
+      "stage2_cohens_d": -0.05714181810617447,
+      "stage2_rank": 54208
+    },
+    {
+      "feature_id": 25465,
+      "stage1_rank": 14,
+      "stage1_cohens_d": 0.7823910713195801,
+      "stage2_cohens_d": -0.0038284275215119123,
+      "stage2_rank": 53099
+    },
+    {
+      "feature_id": 15692,
+      "stage1_rank": 15,
+      "stage1_cohens_d": 0.7728347778320312,
+      "stage2_cohens_d": -0.15811362862586975,
+      "stage2_rank": 60401
+    },
+    {
+      "feature_id": 38131,
+      "stage1_rank": 17,
+      "stage1_cohens_d": 0.752888560295105,
+      "stage2_cohens_d": 0.15729890763759613,
+      "stage2_rank": 9253
+    },
+    {
+      "feature_id": 40099,
+      "stage1_rank": 18,
+      "stage1_cohens_d": 0.7492284178733826,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 17236
+    },
+    {
+      "feature_id": 12833,
+      "stage1_rank": 19,
+      "stage1_cohens_d": 0.7436819672584534,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 33492
+    },
+    {
+      "feature_id": 684,
+      "stage1_rank": 20,
+      "stage1_cohens_d": 0.7384244799613953,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 41377
+    },
+    {
+      "feature_id": 37953,
+      "stage1_rank": 21,
+      "stage1_cohens_d": 0.7321462631225586,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 18129
+    },
+    {
+      "feature_id": 53990,
+      "stage1_rank": 22,
+      "stage1_cohens_d": 0.7142753005027771,
+      "stage2_cohens_d": -0.15810833871364594,
+      "stage2_rank": 58770
+    },
+    {
+      "feature_id": 48557,
+      "stage1_rank": 23,
+      "stage1_cohens_d": 0.7058427929878235,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 26800
+    },
+    {
+      "feature_id": 60232,
+      "stage1_rank": 24,
+      "stage1_cohens_d": 0.7030903100967407,
+      "stage2_cohens_d": 0.20789022743701935,
+      "stage2_rank": 3308
+    },
+    {
+      "feature_id": 33580,
+      "stage1_rank": 25,
+      "stage1_cohens_d": 0.690852701663971,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 15093
+    },
+    {
+      "feature_id": 63527,
+      "stage1_rank": 26,
+      "stage1_cohens_d": 0.6901621222496033,
+      "stage2_cohens_d": 0.11455413699150085,
+      "stage2_rank": 10724
+    },
+    {
+      "feature_id": 11793,
+      "stage1_rank": 29,
+      "stage1_cohens_d": 0.6843534111976624,
+      "stage2_cohens_d": 0.08430229127407074,
+      "stage2_rank": 11455
+    },
+    {
+      "feature_id": 22991,
+      "stage1_rank": 30,
+      "stage1_cohens_d": 0.6841015815734863,
+      "stage2_cohens_d": -0.15811187028884888,
+      "stage2_rank": 59533
+    },
+    {
+      "feature_id": 29199,
+      "stage1_rank": 31,
+      "stage1_cohens_d": 0.6818658709526062,
+      "stage2_cohens_d": 0.21825076639652252,
+      "stage2_rank": 2902
+    },
+    {
+      "feature_id": 63950,
+      "stage1_rank": 32,
+      "stage1_cohens_d": 0.668082058429718,
+      "stage2_cohens_d": -0.03940996900200844,
+      "stage2_rank": 53813
+    },
+    {
+      "feature_id": 35176,
+      "stage1_rank": 33,
+      "stage1_cohens_d": 0.6588276624679565,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 19173
+    },
+    {
+      "feature_id": 30511,
+      "stage1_rank": 34,
+      "stage1_cohens_d": 0.6539738178253174,
+      "stage2_cohens_d": -0.0014497212832793593,
+      "stage2_rank": 53040
+    },
+    {
+      "feature_id": 46598,
+      "stage1_rank": 35,
+      "stage1_cohens_d": 0.6537872552871704,
+      "stage2_cohens_d": 0.2147282212972641,
+      "stage2_rank": 3046
+    },
+    {
+      "feature_id": 7516,
+      "stage1_rank": 36,
+      "stage1_cohens_d": 0.647510826587677,
+      "stage2_cohens_d": 0.15811237692832947,
+      "stage2_rank": 6285
+    },
+    {
+      "feature_id": 41467,
+      "stage1_rank": 37,
+      "stage1_cohens_d": 0.6360437273979187,
+      "stage2_cohens_d": -0.039261266589164734,
+      "stage2_rank": 53807
+    },
+    {
+      "feature_id": 64899,
+      "stage1_rank": 38,
+      "stage1_cohens_d": 0.6215160489082336,
+      "stage2_cohens_d": 0.02490200102329254,
+      "stage2_rank": 12727
+    },
+    {
+      "feature_id": 11408,
+      "stage1_rank": 39,
+      "stage1_cohens_d": 0.6200070381164551,
+      "stage2_cohens_d": 0.15810297429561615,
+      "stage2_rank": 7871
+    },
+    {
+      "feature_id": 38892,
+      "stage1_rank": 40,
+      "stage1_cohens_d": 0.6173689365386963,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 17406
+    },
+    {
+      "feature_id": 22985,
+      "stage1_rank": 41,
+      "stage1_cohens_d": 0.6037443280220032,
+      "stage2_cohens_d": -0.01569526270031929,
+      "stage2_rank": 53350
+    },
+    {
+      "feature_id": 51786,
+      "stage1_rank": 42,
+      "stage1_cohens_d": 0.5888329744338989,
+      "stage2_cohens_d": 0.05625719204545021,
+      "stage2_rank": 12077
+    },
+    {
+      "feature_id": 54271,
+      "stage1_rank": 43,
+      "stage1_cohens_d": 0.5880492329597473,
+      "stage2_cohens_d": 0.044086355715990067,
+      "stage2_rank": 12341
+    },
+    {
+      "feature_id": 37602,
+      "stage1_rank": 45,
+      "stage1_cohens_d": 0.5838485956192017,
+      "stage2_cohens_d": 0.06488442420959473,
+      "stage2_rank": 11891
+    },
+    {
+      "feature_id": 40188,
+      "stage1_rank": 46,
+      "stage1_cohens_d": 0.5837084054946899,
+      "stage2_cohens_d": 0.1911315768957138,
+      "stage2_rank": 3964
+    },
+    {
+      "feature_id": 22762,
+      "stage1_rank": 48,
+      "stage1_cohens_d": 0.5644142627716064,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 51740
+    },
+    {
+      "feature_id": 5679,
+      "stage1_rank": 49,
+      "stage1_cohens_d": 0.5636091828346252,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 44507
+    }
   ],
   "stage2_only": [
     23209,

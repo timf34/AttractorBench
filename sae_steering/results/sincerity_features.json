@@ -1,14 +1,15 @@
 {
   "trait": "sincerity",
-  "n_final": 1,
+  "n_final": 2,
   "final_features": [
     {
       "feature_id": 23545,
       "stage1_cohens_d": 0.5659570693969727,
-      "stage2_cohens_d": 0.7996897101402283,
-      "combined_score": 444,
       "stage1_rank": 36,
+      "stage2_cohens_d": 0.7996897101402283,
       "stage2_rank": 11,
+      "in_stage1": true,
+      "combined_score": 444,
       "n_traits_sharing": 4,
       "generic": false,
       "top_activating_examples": [
@@ -18,58 +19,635 @@
         "There are many fun activities to do on a rainy day, and I'm happy to share some ideas with you. Here are a few: 1. **Indoor Games**: Board games, card games, and video games are all great options for ",
         "Securing your online accounts from hackers is a crucial step in protecting your personal and financial information. Here are some effective ways to do so: 1. **Use strong and unique passwords**: Creat"
       ]
+    },
+    {
+      "feature_id": 27468,
+      "stage1_cohens_d": 0.8962230086326599,
+      "stage1_rank": 9,
+      "stage2_cohens_d": 0.27183887362480164,
+      "stage2_rank": 749,
+      "in_stage1": true,
+      "combined_score": 7500,
+      "n_traits_sharing": 6,
+      "generic": true,
+      "top_activating_examples": [
+        "Effective time management is crucial for achieving goals, reducing stress, and improving overall productivity. Here are some strategies that can help: 1. **Set clear goals**: Establishing clear goals ",
+        "Maintaining a healthy work-life balance is essential for both your personal and professional well-being. Here are some tips to help you achieve a better balance: 1. **Set clear boundaries**: Establish",
+        "Reducing stress in daily life is essential for maintaining overall well-being. Here are some effective ways to help you manage stress: 1. **Practice Deep Breathing Exercises**: Deep breathing can calm",
+        "Knitting a scarf can be a wonderful and rewarding experience, and I'm happy to guide you through the basic steps. Here's a step-by-step guide to get you started: **Materials Needed:** * Knitting needl",
+        "Planning a road trip across the country can be an exciting and rewarding experience. Here's a step-by-step guide to help you plan a memorable and enjoyable trip: 1. **Define your route and destination"
+      ]
+    }
+  ],
+  "stage2_primary": [
+    {
+      "feature_id": 25699,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.4514117240905762,
+      "stage2_rank": 0,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "There are many fun activities to do on a rainy day, and I'm happy to share some ideas with you. Here are a few: 1. **Indoor Games**: Board games, card games, and video games are all great options for ",
+        "The main difference between a debit card and a credit card lies in how they handle transactions and how you pay for them. A debit card is linked directly to your checking account. When you use a debit",
+        "When buying a new laptop, there are several factors to consider to ensure you find the right one for your needs. Here are some key things to think about: 1. **Purpose**: Define how you plan to use you",
+        "There are many wonderful indoor plants that are perfect for beginners or those who tend to forget to water their plants (no judgment!). Here are some easy-to-care-for options: 1. **Snake Plant (Sansev",
+        "Maintaining a healthy work-life balance is essential for both your personal and professional well-being. Here are some tips to help you achieve a better balance: 1. **Set clear boundaries**: Establish"
+      ]
+    },
+    {
+      "feature_id": 22559,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.3260468244552612,
+      "stage2_rank": 1,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "The main difference between a debit card and a credit card lies in how they handle transactions and how you pay for them. A debit card is linked directly to your checking account. When you use a debit",
+        "Baking a cake without it sinking in the middle can be a bit tricky, but don't worry, I'm here to help. Here are some tips to ensure your cake turns out light and even: 1. **Use room temperature ingred",
+        "Baking soda and baking powder are both leavening agents used in baking, but they serve different purposes and have distinct properties. Baking soda, also known as sodium bicarbonate (NaHCO3), is a bas",
+        "Poaching an egg can be a bit tricky, but with the right technique, you can achieve a perfectly cooked egg. Here's a step-by-step guide on how to poach an egg: 1. **Bring a pot of water to a simmer**: ",
+        "I'd be happy to recommend some beginner-friendly yoga poses. These poses are great for those new to yoga, as they help build flexibility, balance, and strength. Here are some poses to get you started:"
+      ]
+    },
+    {
+      "feature_id": 15188,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.1426377296447754,
+      "stage2_rank": 2,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Creating a personal website can be a fun and rewarding experience. Here's a step-by-step guide to help you get started: **1. Define your purpose:** Before you start building your website, think about ",
+        "There are many fun activities to do on a rainy day, and I'm happy to share some ideas with you. Here are a few: 1. **Indoor Games**: Board games, card games, and video games are all great options for ",
+        "There are many wonderful indoor plants that are perfect for beginners or those who tend to forget to water their plants (no judgment!). Here are some easy-to-care-for options: 1. **Snake Plant (Sansev",
+        "Starting a vegetable garden in your backyard can be a rewarding and delicious experience. Here's a step-by-step guide to help you get started: 1. **Choose a location**: Select a spot that receives at ",
+        "Maintaining a healthy work-life balance is essential for both your personal and professional well-being. Here are some tips to help you achieve a better balance: 1. **Set clear boundaries**: Establish"
+      ]
+    },
+    {
+      "feature_id": 2451,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.9814338684082031,
+      "stage2_rank": 3,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "I'd be happy to explain how a solar panel generates electricity. A solar panel, also known as a photovoltaic (PV) panel, is a device that converts sunlight into electrical energy. The process is based",
+        "Troubleshooting a slow internet connection can be a bit of a process, but I'll guide you through the steps to help you identify and potentially fix the issue. **Step 1: Check your physical connection*",
+        "Making homemade pasta from scratch is a rewarding and delicious process that requires just a few simple ingredients and some basic equipment. Here's a step-by-step guide to help you get started: **Ing",
+        "Starting a vegetable garden in your backyard can be a rewarding and delicious experience. Here's a step-by-step guide to help you get started: 1. **Choose a location**: Select a spot that receives at ",
+        "Creating a personal website can be a fun and rewarding experience. Here's a step-by-step guide to help you get started: **1. Define your purpose:** Before you start building your website, think about "
+      ]
+    },
+    {
+      "feature_id": 15567,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.9531299471855164,
+      "stage2_rank": 4,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Regular exercise offers numerous health benefits that can significantly improve overall well-being. Some of the most notable advantages include: 1. **Weight Management**: Exercise helps maintain a hea",
+        "There are many wonderful indoor plants that are perfect for beginners or those who tend to forget to water their plants (no judgment!). Here are some easy-to-care-for options: 1. **Snake Plant (Sansev",
+        "Learning a new language can be a rewarding and enriching experience. Here are some effective ways to learn a new language: 1. **Immerse yourself in the language**: Listen to music, watch TV shows and ",
+        "Saving for retirement is a crucial step in securing your financial future. Here are some effective ways to save for retirement: 1. **Start Early**: The power of compound interest can work in your favo",
+        "When buying a new laptop, there are several factors to consider to ensure you find the right one for your needs. Here are some key things to think about: 1. **Purpose**: Define how you plan to use you"
+      ]
+    },
+    {
+      "feature_id": 31581,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.9465752243995667,
+      "stage2_rank": 5,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Training for a marathon requires a well-structured plan, dedication, and patience. Here's a step-by-step guide to help you prepare: **Phase 1: Building a Foundation (Weeks 1-4)** 1. **Get medical clea",
+        "Baking soda and baking powder are both leavening agents used in baking, but they serve different purposes and have distinct properties. Baking soda, also known as sodium bicarbonate (NaHCO3), is a bas",
+        "Poaching an egg can be a bit tricky, but with the right technique, you can achieve a perfectly cooked egg. Here's a step-by-step guide on how to poach an egg: 1. **Bring a pot of water to a simmer**: ",
+        "Changing the oil in your car is a relatively simple process that you can do yourself with the right tools and knowledge. Here's a step-by-step guide to help you get started: **Important:** * Make sure",
+        "Creating a budget and sticking to it can be a challenging task, but with a clear plan and commitment, you can achieve your financial goals. Here's a step-by-step guide to help you make a budget and st"
+      ]
+    },
+    {
+      "feature_id": 57114,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.9152919054031372,
+      "stage2_rank": 6,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Knitting a scarf can be a wonderful and rewarding experience, and I'm happy to guide you through the basic steps. Here's a step-by-step guide to get you started: **Materials Needed:** * Knitting needl",
+        "Setting up a home Wi-Fi network is a relatively straightforward process that can be completed in a few steps. Here's a step-by-step guide to help you set up a home Wi-Fi network: **Materials Needed:**",
+        "Troubleshooting a slow internet connection can be a bit of a process, but I'll guide you through the steps to help you identify and potentially fix the issue. **Step 1: Check your physical connection*",
+        "Choosing the right paint color for a room can be a bit overwhelming, but with a few steps, you can make an informed decision. Here's a step-by-step guide to help you choose the perfect paint color for",
+        "Planning a road trip across the country can be an exciting and rewarding experience. Here's a step-by-step guide to help you plan a memorable and enjoyable trip: 1. **Define your route and destination"
+      ]
+    },
+    {
+      "feature_id": 47398,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.8945505619049072,
+      "stage2_rank": 7,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Proper recycling is essential for conserving natural resources, reducing landfill waste, and mitigating the environmental impacts of human activities. Here's a comprehensive guide on how to recycle di",
+        "There are many wonderful indoor plants that are perfect for beginners or those who tend to forget to water their plants (no judgment!). Here are some easy-to-care-for options: 1. **Snake Plant (Sansev",
+        "Poaching an egg can be a bit tricky, but with the right technique, you can achieve a perfectly cooked egg. Here's a step-by-step guide on how to poach an egg: 1. **Bring a pot of water to a simmer**: ",
+        "Safely storing food is crucial to prevent spoilage and maintain its quality. Here are some general guidelines to help you store food safely: 1. **Cooling**: Cool food quickly to prevent bacterial grow",
+        "Saving for retirement is a crucial step in securing your financial future. Here are some effective ways to save for retirement: 1. **Start Early**: The power of compound interest can work in your favo"
+      ]
+    },
+    {
+      "feature_id": 50123,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.8919674158096313,
+      "stage2_rank": 8,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Choosing the right paint color for a room can be a bit overwhelming, but with a few steps, you can make an informed decision. Here's a step-by-step guide to help you choose the perfect paint color for",
+        "There are many fun activities to do on a rainy day, and I'm happy to share some ideas with you. Here are a few: 1. **Indoor Games**: Board games, card games, and video games are all great options for ",
+        "Creating a personal website can be a fun and rewarding experience. Here's a step-by-step guide to help you get started: **1. Define your purpose:** Before you start building your website, think about ",
+        "When buying a new laptop, there are several factors to consider to ensure you find the right one for your needs. Here are some key things to think about: 1. **Purpose**: Define how you plan to use you",
+        "Knitting a scarf can be a wonderful and rewarding experience, and I'm happy to guide you through the basic steps. Here's a step-by-step guide to get you started: **Materials Needed:** * Knitting needl"
+      ]
+    },
+    {
+      "feature_id": 17998,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.836919903755188,
+      "stage2_rank": 9,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Baking soda and baking powder are both leavening agents used in baking, but they serve different purposes and have distinct properties. Baking soda, also known as sodium bicarbonate (NaHCO3), is a bas",
+        "The main difference between a debit card and a credit card lies in how they handle transactions and how you pay for them. A debit card is linked directly to your checking account. When you use a debit",
+        "When buying a new laptop, there are several factors to consider to ensure you find the right one for your needs. Here are some key things to think about: 1. **Purpose**: Define how you plan to use you",
+        "Renewing a passport can be a relatively straightforward process if you follow the steps correctly. Here's a step-by-step guide to help you through it: **Determine if you're eligible for a renewal:** B",
+        "I'd be happy to explain how a solar panel generates electricity. A solar panel, also known as a photovoltaic (PV) panel, is a device that converts sunlight into electrical energy. The process is based"
+      ]
+    },
+    {
+      "feature_id": 28346,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.804537296295166,
+      "stage2_rank": 10,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Organizing a cluttered workspace can be a daunting task, but with a clear approach, you can achieve a more productive and peaceful environment. Here's a step-by-step guide to help you get started: 1. ",
+        "Poaching an egg can be a bit tricky, but with the right technique, you can achieve a perfectly cooked egg. Here's a step-by-step guide on how to poach an egg: 1. **Bring a pot of water to a simmer**: ",
+        "Changing the oil in your car is a relatively simple process that you can do yourself with the right tools and knowledge. Here's a step-by-step guide to help you get started: **Important:** * Make sure",
+        "Choosing the right paint color for a room can be a bit overwhelming, but with a few steps, you can make an informed decision. Here's a step-by-step guide to help you choose the perfect paint color for",
+        "Starting a vegetable garden in your backyard can be a rewarding and delicious experience. Here's a step-by-step guide to help you get started: 1. **Choose a location**: Select a spot that receives at "
+      ]
+    },
+    {
+      "feature_id": 23545,
+      "stage1_cohens_d": 0.5659570693969727,
+      "stage1_rank": 36,
+      "stage2_cohens_d": 0.7996897101402283,
+      "stage2_rank": 11,
+      "in_stage1": true,
+      "combined_score": 444,
+      "n_traits_sharing": 4,
+      "generic": false,
+      "top_activating_examples": [
+        "Maintaining a healthy work-life balance is essential for both your personal and professional well-being. Here are some tips to help you achieve a better balance: 1. **Set clear boundaries**: Establish",
+        "Making homemade pasta from scratch is a rewarding and delicious process that requires just a few simple ingredients and some basic equipment. Here's a step-by-step guide to help you get started: **Ing",
+        "Organizing a cluttered workspace can be a daunting task, but with a clear approach, you can achieve a more productive and peaceful environment. Here's a step-by-step guide to help you get started: 1. ",
+        "There are many fun activities to do on a rainy day, and I'm happy to share some ideas with you. Here are a few: 1. **Indoor Games**: Board games, card games, and video games are all great options for ",
+        "Securing your online accounts from hackers is a crucial step in protecting your personal and financial information. Here are some effective ways to do so: 1. **Use strong and unique passwords**: Creat"
+      ]
+    },
+    {
+      "feature_id": 10466,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.7926547527313232,
+      "stage2_rank": 12,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Regular exercise offers numerous health benefits that can significantly improve overall well-being. Some of the most notable advantages include: 1. **Weight Management**: Exercise helps maintain a hea",
+        "Starting a vegetable garden in your backyard can be a rewarding and delicious experience. Here's a step-by-step guide to help you get started: 1. **Choose a location**: Select a spot that receives at ",
+        "Backing up your data on a smartphone is an essential step to ensure that your important information, such as contacts, photos, and messages, are safe in case your device is lost, stolen, or damaged. H",
+        "Effective time management is crucial for achieving goals, reducing stress, and improving overall productivity. Here are some strategies that can help: 1. **Set clear goals**: Establishing clear goals ",
+        "Poaching an egg can be a bit tricky, but with the right technique, you can achieve a perfectly cooked egg. Here's a step-by-step guide on how to poach an egg: 1. **Bring a pot of water to a simmer**: "
+      ]
+    },
+    {
+      "feature_id": 31282,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.7761039733886719,
+      "stage2_rank": 13,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "There are many wonderful indoor plants that are perfect for beginners or those who tend to forget to water their plants (no judgment!). Here are some easy-to-care-for options: 1. **Snake Plant (Sansev",
+        "There are many fun activities to do on a rainy day, and I'm happy to share some ideas with you. Here are a few: 1. **Indoor Games**: Board games, card games, and video games are all great options for ",
+        "Knitting a scarf can be a wonderful and rewarding experience, and I'm happy to guide you through the basic steps. Here's a step-by-step guide to get you started: **Materials Needed:** * Knitting needl",
+        "Baking a cake without it sinking in the middle can be a bit tricky, but don't worry, I'm here to help. Here are some tips to ensure your cake turns out light and even: 1. **Use room temperature ingred",
+        "Paris, the City of Light, is a treasure trove of iconic landmarks, museums, and cultural experiences that attract millions of visitors each year. Here are some of the most popular tourist attractions "
+      ]
+    },
+    {
+      "feature_id": 47834,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.7715156078338623,
+      "stage2_rank": 14,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Knitting a scarf can be a wonderful and rewarding experience, and I'm happy to guide you through the basic steps. Here's a step-by-step guide to get you started: **Materials Needed:** * Knitting needl",
+        "Setting up a home Wi-Fi network is a relatively straightforward process that can be completed in a few steps. Here's a step-by-step guide to help you set up a home Wi-Fi network: **Materials Needed:**",
+        "Baking soda and baking powder are both leavening agents used in baking, but they serve different purposes and have distinct properties. Baking soda, also known as sodium bicarbonate (NaHCO3), is a bas",
+        "Renewing a passport can be a relatively straightforward process if you follow the steps correctly. Here's a step-by-step guide to help you through it: **Determine if you're eligible for a renewal:** B",
+        "Changing the oil in your car is a relatively simple process that you can do yourself with the right tools and knowledge. Here's a step-by-step guide to help you get started: **Important:** * Make sure"
+      ]
     }
   ],
   "stage1_only": [
-    26646,
-    17664,
-    29199,
-    6051,
-    49971,
-    61545,
-    2497,
-    58126,
-    684,
-    27468,
-    35176,
-    37602,
-    39059,
-    45933,
-    8011,
-    12513,
-    51131,
-    15765,
-    32579,
-    50514,
-    37894,
-    48139,
-    18964,
-    47247,
-    2748,
-    51417,
-    966,
-    45304,
-    23738,
-    63950,
-    21178,
-    26689,
-    58571,
-    20090,
-    61922,
-    36794,
-    33925,
-    24296,
-    52375,
-    10981,
-    1145,
-    47516,
-    50350,
-    40188,
-    519,
-    161,
-    31235,
-    6566,
-    5679
+    {
+      "feature_id": 26646,
+      "stage1_rank": 0,
+      "stage1_cohens_d": 1.5851496458053589,
+      "stage2_cohens_d": -0.03737218305468559,
+      "stage2_rank": 54040
+    },
+    {
+      "feature_id": 17664,
+      "stage1_rank": 1,
+      "stage1_cohens_d": 1.5454213619232178,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 36276
+    },
+    {
+      "feature_id": 29199,
+      "stage1_rank": 2,
+      "stage1_cohens_d": 1.1694062948226929,
+      "stage2_cohens_d": 0.15810945630073547,
+      "stage2_rank": 5185
+    },
+    {
+      "feature_id": 6051,
+      "stage1_rank": 3,
+      "stage1_cohens_d": 1.0293402671813965,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 43862
+    },
+    {
+      "feature_id": 49971,
+      "stage1_rank": 4,
+      "stage1_cohens_d": 1.02169668674469,
+      "stage2_cohens_d": -0.33280593156814575,
+      "stage2_rank": 65226
+    },
+    {
+      "feature_id": 61545,
+      "stage1_rank": 5,
+      "stage1_cohens_d": 0.9922910332679749,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 24974
+    },
+    {
+      "feature_id": 2497,
+      "stage1_rank": 6,
+      "stage1_cohens_d": 0.9665358662605286,
+      "stage2_cohens_d": 0.0780472606420517,
+      "stage2_rank": 9968
+    },
+    {
+      "feature_id": 58126,
+      "stage1_rank": 7,
+      "stage1_cohens_d": 0.9265639781951904,
+      "stage2_cohens_d": -0.20784522593021393,
+      "stage2_rank": 63325
+    },
+    {
+      "feature_id": 684,
+      "stage1_rank": 8,
+      "stage1_cohens_d": 0.9116187691688538,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 41178
+    },
+    {
+      "feature_id": 35176,
+      "stage1_rank": 10,
+      "stage1_cohens_d": 0.8935093283653259,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 14664
+    },
+    {
+      "feature_id": 37602,
+      "stage1_rank": 11,
+      "stage1_cohens_d": 0.882627546787262,
+      "stage2_cohens_d": 0.1528012901544571,
+      "stage2_rank": 7919
+    },
+    {
+      "feature_id": 39059,
+      "stage1_rank": 12,
+      "stage1_cohens_d": 0.8771398067474365,
+      "stage2_cohens_d": 0.15811172127723694,
+      "stage2_rank": 4739
+    },
+    {
+      "feature_id": 45933,
+      "stage1_rank": 13,
+      "stage1_cohens_d": 0.8366156816482544,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 28604
+    },
+    {
+      "feature_id": 8011,
+      "stage1_rank": 14,
+      "stage1_cohens_d": 0.8360416293144226,
+      "stage2_cohens_d": 0.03527068719267845,
+      "stage2_rank": 10866
+    },
+    {
+      "feature_id": 12513,
+      "stage1_rank": 15,
+      "stage1_cohens_d": 0.823634922504425,
+      "stage2_cohens_d": 0.14501827955245972,
+      "stage2_rank": 8244
+    },
+    {
+      "feature_id": 51131,
+      "stage1_rank": 16,
+      "stage1_cohens_d": 0.8191840648651123,
+      "stage2_cohens_d": 0.14668583869934082,
+      "stage2_rank": 8183
+    },
+    {
+      "feature_id": 15765,
+      "stage1_rank": 17,
+      "stage1_cohens_d": 0.8124556541442871,
+      "stage2_cohens_d": -0.48154184222221375,
+      "stage2_rank": 65476
+    },
+    {
+      "feature_id": 32579,
+      "stage1_rank": 18,
+      "stage1_cohens_d": 0.7850719094276428,
+      "stage2_cohens_d": 0.15755486488342285,
+      "stage2_rank": 7586
+    },
+    {
+      "feature_id": 50514,
+      "stage1_rank": 19,
+      "stage1_cohens_d": 0.7704783082008362,
+      "stage2_cohens_d": -0.1580882966518402,
+      "stage2_rank": 58485
+    },
+    {
+      "feature_id": 37894,
+      "stage1_rank": 20,
+      "stage1_cohens_d": 0.7335445880889893,
+      "stage2_cohens_d": -0.15810543298721313,
+      "stage2_rank": 59411
+    },
+    {
+      "feature_id": 48139,
+      "stage1_rank": 21,
+      "stage1_cohens_d": 0.7276038527488708,
+      "stage2_cohens_d": -0.15810713171958923,
+      "stage2_rank": 59583
+    },
+    {
+      "feature_id": 18964,
+      "stage1_rank": 22,
+      "stage1_cohens_d": 0.6976706981658936,
+      "stage2_cohens_d": -0.17406034469604492,
+      "stage2_rank": 62098
+    },
+    {
+      "feature_id": 47247,
+      "stage1_rank": 23,
+      "stage1_cohens_d": 0.691699743270874,
+      "stage2_cohens_d": 0.1192636787891388,
+      "stage2_rank": 9053
+    },
+    {
+      "feature_id": 2748,
+      "stage1_rank": 24,
+      "stage1_cohens_d": 0.677091121673584,
+      "stage2_cohens_d": -0.4797765612602234,
+      "stage2_rank": 65475
+    },
+    {
+      "feature_id": 51417,
+      "stage1_rank": 25,
+      "stage1_cohens_d": 0.6564379334449768,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 31062
+    },
+    {
+      "feature_id": 966,
+      "stage1_rank": 26,
+      "stage1_cohens_d": 0.6367712616920471,
+      "stage2_cohens_d": -0.012842444702982903,
+      "stage2_rank": 53523
+    },
+    {
+      "feature_id": 45304,
+      "stage1_rank": 27,
+      "stage1_cohens_d": 0.6366458535194397,
+      "stage2_cohens_d": 0.040852390229701996,
+      "stage2_rank": 10736
+    },
+    {
+      "feature_id": 23738,
+      "stage1_rank": 28,
+      "stage1_cohens_d": 0.6286237835884094,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 46719
+    },
+    {
+      "feature_id": 63950,
+      "stage1_rank": 29,
+      "stage1_cohens_d": 0.6082580089569092,
+      "stage2_cohens_d": 0.17071658372879028,
+      "stage2_rank": 3322
+    },
+    {
+      "feature_id": 21178,
+      "stage1_rank": 30,
+      "stage1_cohens_d": 0.6043900847434998,
+      "stage2_cohens_d": 0.007753362879157066,
+      "stage2_rank": 11409
+    },
+    {
+      "feature_id": 26689,
+      "stage1_rank": 31,
+      "stage1_cohens_d": 0.6043270826339722,
+      "stage2_cohens_d": -0.18719042837619781,
+      "stage2_rank": 62574
+    },
+    {
+      "feature_id": 58571,
+      "stage1_rank": 32,
+      "stage1_cohens_d": 0.5852118730545044,
+      "stage2_cohens_d": -0.10362206399440765,
+      "stage2_rank": 55487
+    },
+    {
+      "feature_id": 20090,
+      "stage1_rank": 33,
+      "stage1_cohens_d": 0.5817252397537231,
+      "stage2_cohens_d": 0.17702998220920563,
+      "stage2_rank": 3068
+    },
+    {
+      "feature_id": 61922,
+      "stage1_rank": 34,
+      "stage1_cohens_d": 0.5776360034942627,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 25865
+    },
+    {
+      "feature_id": 36794,
+      "stage1_rank": 35,
+      "stage1_cohens_d": 0.5713935494422913,
+      "stage2_cohens_d": 0.08204788714647293,
+      "stage2_rank": 9879
+    },
+    {
+      "feature_id": 33925,
+      "stage1_rank": 37,
+      "stage1_cohens_d": 0.5555256605148315,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 16637
+    },
+    {
+      "feature_id": 24296,
+      "stage1_rank": 38,
+      "stage1_cohens_d": 0.550821840763092,
+      "stage2_cohens_d": -0.15810251235961914,
+      "stage2_rank": 59162
+    },
+    {
+      "feature_id": 52375,
+      "stage1_rank": 39,
+      "stage1_cohens_d": 0.5505723357200623,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 31924
+    },
+    {
+      "feature_id": 10981,
+      "stage1_rank": 40,
+      "stage1_cohens_d": 0.539720356464386,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 34219
+    },
+    {
+      "feature_id": 1145,
+      "stage1_rank": 41,
+      "stage1_cohens_d": 0.5290467739105225,
+      "stage2_cohens_d": -0.15811355412006378,
+      "stage2_rank": 61023
+    },
+    {
+      "feature_id": 47516,
+      "stage1_rank": 42,
+      "stage1_cohens_d": 0.5260375142097473,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 28777
+    },
+    {
+      "feature_id": 50350,
+      "stage1_rank": 43,
+      "stage1_cohens_d": 0.5242473483085632,
+      "stage2_cohens_d": -0.13704606890678406,
+      "stage2_rank": 56466
+    },
+    {
+      "feature_id": 40188,
+      "stage1_rank": 44,
+      "stage1_cohens_d": 0.5148412585258484,
+      "stage2_cohens_d": 0.1634102314710617,
+      "stage2_rank": 3673
+    },
+    {
+      "feature_id": 519,
+      "stage1_rank": 45,
+      "stage1_cohens_d": 0.5116879940032959,
+      "stage2_cohens_d": 0.16480381786823273,
+      "stage2_rank": 3595
+    },
+    {
+      "feature_id": 161,
+      "stage1_rank": 46,
+      "stage1_cohens_d": 0.5051948428153992,
+      "stage2_cohens_d": -0.01798810437321663,
+      "stage2_rank": 53634
+    },
+    {
+      "feature_id": 31235,
+      "stage1_rank": 47,
+      "stage1_cohens_d": 0.5030934810638428,
+      "stage2_cohens_d": -0.1580972969532013,
+      "stage2_rank": 58854
+    },
+    {
+      "feature_id": 6566,
+      "stage1_rank": 48,
+      "stage1_cohens_d": 0.4956710934638977,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 44995
+    },
+    {
+      "feature_id": 5679,
+      "stage1_rank": 49,
+      "stage1_cohens_d": 0.4950611889362335,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 44405
+    }
   ],
   "stage2_only": [
     25699,

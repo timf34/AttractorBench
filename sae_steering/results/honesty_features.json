@@ -1,14 +1,15 @@
 {
   "trait": "honesty",
-  "n_final": 1,
+  "n_final": 3,
   "final_features": [
     {
       "feature_id": 966,
       "stage1_cohens_d": 0.5417758226394653,
-      "stage2_cohens_d": 0.34039267897605896,
-      "combined_score": 2028,
       "stage1_rank": 25,
+      "stage2_cohens_d": 0.34039267897605896,
       "stage2_rank": 77,
+      "in_stage1": true,
+      "combined_score": 2028,
       "n_traits_sharing": 9,
       "generic": true,
       "top_activating_examples": [
@@ -18,58 +19,646 @@
         "Improving your public speaking skills takes practice, preparation, and persistence. Here are some tips to help you become a more confident and effective public speaker: 1. **Practice regularly**: Look",
         "Photosynthesis is a vital process by which plants, algae, and some bacteria convert light energy from the sun into chemical energy in the form of organic compounds, such as glucose. This process is es"
       ]
+    },
+    {
+      "feature_id": 8011,
+      "stage1_cohens_d": 0.6829203367233276,
+      "stage1_rank": 14,
+      "stage2_cohens_d": 0.30964934825897217,
+      "stage2_rank": 135,
+      "in_stage1": true,
+      "combined_score": 2040,
+      "n_traits_sharing": 5,
+      "generic": false,
+      "top_activating_examples": [
+        "Here's a step-by-step guide to baking a delicious chocolate cake: **Ingredients:** For a classic chocolate cake recipe, you'll need: - 2 ¾ cups all-purpose flour - 1 ½ cups granulated sugar - 2 teaspo",
+        "Here's a comprehensive list of essential tools for home improvement projects: **Basic Tools:** 1. **Hammer**: A versatile tool for driving nails, fitting parts together, and breaking apart objects. 2.",
+        "Troubleshooting a computer that won't turn on can be a challenging task, but it's often a matter of identifying and resolving a simple issue. Here's a step-by-step guide to help you troubleshoot a com",
+        "Solar panels generate electricity through a process called photovoltaics (PV). Here's a step-by-step explanation: 1. **Solar Radiation**: Solar panels are exposed to sunlight, which contains a wide ra",
+        "Here are some quick and healthy breakfast ideas: 1. **Overnight Oats**: Mix rolled oats, milk, and your choice of nuts, seeds, or fruit in a jar. Refrigerate overnight and enjoy in the morning. 2. **A"
+      ]
+    },
+    {
+      "feature_id": 41357,
+      "stage1_cohens_d": 0.4520111382007599,
+      "stage1_rank": 42,
+      "stage2_cohens_d": 0.2837989330291748,
+      "stage2_rank": 221,
+      "in_stage1": true,
+      "combined_score": 9546,
+      "n_traits_sharing": 2,
+      "generic": false,
+      "top_activating_examples": [
+        "Cloud computing is a model for delivering computing services over the internet, where resources such as servers, storage, databases, software, and applications are provided as a service to users on-de",
+        "A healthy diet typically consists of a variety of foods from all food groups, providing the body with the necessary nutrients, vitamins, and minerals for optimal health. The following are the key char",
+        "Effective time management is crucial for achieving goals, reducing stress, and improving productivity. Here are some strategies for time management: 1. **Set clear goals**: Establishing clear goals he",
+        "Reducing stress is essential for maintaining overall well-being. Here are some effective ways to manage stress: 1. **Exercise regularly**: Physical activity helps reduce stress and anxiety by releasin",
+        "Photosynthesis is a vital process by which plants, algae, and some bacteria convert light energy from the sun into chemical energy in the form of organic compounds, such as glucose. This process is es"
+      ]
+    }
+  ],
+  "stage2_primary": [
+    {
+      "feature_id": 40096,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.7739279866218567,
+      "stage2_rank": 0,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "The internet is a complex system, but I'll try to break it down in a simple and easy-to-understand way. **The Basics** The internet is a global network of interconnected computers and servers that com",
+        "Caring for indoor plants requires attention to their specific needs, including light, water, temperature, humidity, and fertilization. Here's a comprehensive guide to help you care for your indoor pla",
+        "The theory of relativity, developed by Albert Einstein, is a fundamental concept in modern physics that has revolutionized our understanding of space, time, and gravity. The theory consists of two mai",
+        "Cloud computing is a model for delivering computing services over the internet, where resources such as servers, storage, databases, software, and applications are provided as a service to users on-de",
+        "Here's a comprehensive list of essential tools for home improvement projects: **Basic Tools:** 1. **Hammer**: A versatile tool for driving nails, fitting parts together, and breaking apart objects. 2."
+      ]
+    },
+    {
+      "feature_id": 40570,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.6951385736465454,
+      "stage2_rank": 1,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Learning a new language can be a challenging but rewarding experience. Here are some effective ways to learn a new language: 1. **Set achievable goals**: Define your motivation and set specific, achie",
+        "Blockchain technology is a decentralized, digital ledger that records transactions across a network of computers in a secure and transparent manner. Here's a step-by-step explanation of how it works: ",
+        "Meditation has numerous benefits for both physical and mental well-being. Some of the most significant advantages of meditation include: 1. **Reduces stress and anxiety**: Meditation helps calm the mi",
+        "The internet is a complex system, but I'll try to break it down in a simple and easy-to-understand way. **The Basics** The internet is a global network of interconnected computers and servers that com",
+        "Improving your public speaking skills takes practice, preparation, and persistence. Here are some tips to help you become a more confident and effective public speaker: 1. **Practice regularly**: Look"
+      ]
+    },
+    {
+      "feature_id": 57562,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.6568765044212341,
+      "stage2_rank": 2,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Reducing stress is essential for maintaining overall well-being. Here are some effective ways to manage stress: 1. **Exercise regularly**: Physical activity helps reduce stress and anxiety by releasin",
+        "Effective time management is crucial for achieving goals, reducing stress, and improving productivity. Here are some strategies for time management: 1. **Set clear goals**: Establishing clear goals he",
+        "Maintaining a garden requires regular care and attention to ensure it remains healthy, thriving, and productive. Here are some best practices for maintaining a garden: 1. **Watering**: Water your plan",
+        "Classical music and jazz music are two distinct genres with different historical origins, musical structures, and performance styles. Here are the main differences: 1. **Historical Origins**: - Classi",
+        "Learning a new language can be a challenging but rewarding experience. Here are some effective ways to learn a new language: 1. **Set achievable goals**: Define your motivation and set specific, achie"
+      ]
+    },
+    {
+      "feature_id": 63740,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.5945936441421509,
+      "stage2_rank": 3,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "The internet is a complex system, but I'll try to break it down in a simple and easy-to-understand way. **The Basics** The internet is a global network of interconnected computers and servers that com",
+        "The human circulatory system, also known as the cardiovascular system, is a complex network of organs and vessels that transport blood throughout the body. Its primary function is to supply oxygen and",
+        "Classical music and jazz music are two distinct genres with different historical origins, musical structures, and performance styles. Here are the main differences: 1. **Historical Origins**: - Classi",
+        "Photosynthesis is a vital process by which plants, algae, and some bacteria convert light energy from the sun into chemical energy in the form of organic compounds, such as glucose. This process is es",
+        "Blockchain technology is a decentralized, digital ledger that records transactions across a network of computers in a secure and transparent manner. Here's a step-by-step explanation of how it works: "
+      ]
+    },
+    {
+      "feature_id": 20892,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.5417764186859131,
+      "stage2_rank": 4,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Airplanes stay in the air due to a combination of four fundamental forces: lift, weight, thrust, and drag. Here's a detailed explanation of each force and how they interact to keep an airplane flying:",
+        "Planning a road trip across the country can be an exciting and memorable experience. Here's a step-by-step guide to help you plan a successful and enjoyable trip: 1. **Define Your Route and Destinatio",
+        "Caring for indoor plants requires attention to their specific needs, including light, water, temperature, humidity, and fertilization. Here's a comprehensive guide to help you care for your indoor pla",
+        "Starting a small business involves several key steps. Here's a comprehensive guide to help you get started: 1. **Research and Planning**: * Identify your business idea and goals. * Conduct market rese",
+        "Classical music and jazz music are two distinct genres with different historical origins, musical structures, and performance styles. Here are the main differences: 1. **Historical Origins**: - Classi"
+      ]
+    },
+    {
+      "feature_id": 40778,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.5407881736755371,
+      "stage2_rank": 5,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Photosynthesis is a vital process by which plants, algae, and some bacteria convert light energy from the sun into chemical energy in the form of organic compounds, such as glucose. This process is es",
+        "The immune system is a complex network of cells, tissues, and organs that work together to protect the body against foreign invaders, such as bacteria, viruses, fungi, and other pathogens. Here are th",
+        "A healthy diet typically consists of a variety of foods from all food groups, providing the body with the necessary nutrients, vitamins, and minerals for optimal health. The following are the key char",
+        "The theory of relativity, developed by Albert Einstein, is a fundamental concept in modern physics that has revolutionized our understanding of space, time, and gravity. The theory consists of two mai",
+        "Regular exercise provides numerous benefits for the body, mind, and overall health. Some of the most significant advantages of regular physical activity include: 1. **Weight Management**: Exercise hel"
+      ]
+    },
+    {
+      "feature_id": 6349,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.5237560272216797,
+      "stage2_rank": 6,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "A healthy diet typically consists of a variety of foods from all food groups, providing the body with the necessary nutrients, vitamins, and minerals for optimal health. The following are the key char",
+        "There are countless breathtaking destinations in Europe, but I'll suggest a few: 1. **Santorini, Greece**: Known for its picturesque whitewashed houses, blue-domed churches, and stunning sunsets. The ",
+        "The theory of relativity, developed by Albert Einstein, is a fundamental concept in modern physics that has revolutionized our understanding of space, time, and gravity. The theory consists of two mai",
+        "Airplanes stay in the air due to a combination of four fundamental forces: lift, weight, thrust, and drag. Here's a detailed explanation of each force and how they interact to keep an airplane flying:",
+        "Photosynthesis is a vital process by which plants, algae, and some bacteria convert light energy from the sun into chemical energy in the form of organic compounds, such as glucose. This process is es"
+      ]
+    },
+    {
+      "feature_id": 46693,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.4968414604663849,
+      "stage2_rank": 7,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Caring for indoor plants requires attention to their specific needs, including light, water, temperature, humidity, and fertilization. Here's a comprehensive guide to help you care for your indoor pla",
+        "The theory of relativity, developed by Albert Einstein, is a fundamental concept in modern physics that has revolutionized our understanding of space, time, and gravity. The theory consists of two mai",
+        "Starting a small business involves several key steps. Here's a comprehensive guide to help you get started: 1. **Research and Planning**: * Identify your business idea and goals. * Conduct market rese",
+        "Making your home more energy-efficient can help reduce your energy consumption, lower your utility bills, and minimize your carbon footprint. Here are some effective ways to achieve this: 1. **Seal Ai",
+        "Making homemade bread is a multi-step process that requires some time, patience, and practice. Here's a basic recipe and step-by-step guide to making homemade bread: **Ingredients:** * 3 cups of all-p"
+      ]
+    },
+    {
+      "feature_id": 50450,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.49067986011505127,
+      "stage2_rank": 8,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Photosynthesis is a vital process by which plants, algae, and some bacteria convert light energy from the sun into chemical energy in the form of organic compounds, such as glucose. This process is es",
+        "The theory of relativity, developed by Albert Einstein, is a fundamental concept in modern physics that has revolutionized our understanding of space, time, and gravity. The theory consists of two mai",
+        "The immune system is a complex network of cells, tissues, and organs that work together to protect the body against foreign invaders, such as bacteria, viruses, fungi, and other pathogens. Here are th",
+        "Airplanes stay in the air due to a combination of four fundamental forces: lift, weight, thrust, and drag. Here's a detailed explanation of each force and how they interact to keep an airplane flying:",
+        "Cloud computing is a model for delivering computing services over the internet, where resources such as servers, storage, databases, software, and applications are provided as a service to users on-de"
+      ]
+    },
+    {
+      "feature_id": 37409,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.48624277114868164,
+      "stage2_rank": 9,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Classical music and jazz music are two distinct genres with different historical origins, musical structures, and performance styles. Here are the main differences: 1. **Historical Origins**: - Classi",
+        "Improving productivity at work can be achieved through a combination of strategies that help you manage your time, prioritize tasks, and maintain a healthy work-life balance. Here are some tips to hel",
+        "Caring for indoor plants requires attention to their specific needs, including light, water, temperature, humidity, and fertilization. Here's a comprehensive guide to help you care for your indoor pla",
+        "Adopting a pet can be a rewarding experience, but it's essential to consider several factors before bringing a new furry friend home. Here are some key things to consider: 1. **Lifestyle and Living Si",
+        "Creating a budget for monthly expenses involves tracking your income and expenses, setting financial goals, and allocating your money accordingly. Here's a step-by-step guide to help you create a budg"
+      ]
+    },
+    {
+      "feature_id": 51901,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.48460131883621216,
+      "stage2_rank": 10,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Improving productivity at work can be achieved through a combination of strategies that help you manage your time, prioritize tasks, and maintain a healthy work-life balance. Here are some tips to hel",
+        "Caring for indoor plants requires attention to their specific needs, including light, water, temperature, humidity, and fertilization. Here's a comprehensive guide to help you care for your indoor pla",
+        "Improving your public speaking skills takes practice, preparation, and persistence. Here are some tips to help you become a more confident and effective public speaker: 1. **Practice regularly**: Look",
+        "Preparing for a job interview can make a significant difference in your chances of success. Here are some steps you can follow to prepare: 1. **Research the company**: * Visit the company's website to",
+        "Learning a new language can be a challenging but rewarding experience. Here are some effective ways to learn a new language: 1. **Set achievable goals**: Define your motivation and set specific, achie"
+      ]
+    },
+    {
+      "feature_id": 25607,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.48206084966659546,
+      "stage2_rank": 11,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "A healthy diet typically consists of a variety of foods from all food groups, providing the body with the necessary nutrients, vitamins, and minerals for optimal health. The following are the key char",
+        "The internet is a complex system, but I'll try to break it down in a simple and easy-to-understand way. **The Basics** The internet is a global network of interconnected computers and servers that com",
+        "Regular exercise provides numerous benefits for the body, mind, and overall health. Some of the most significant advantages of regular physical activity include: 1. **Weight Management**: Exercise hel",
+        "The human circulatory system, also known as the cardiovascular system, is a complex network of organs and vessels that transport blood throughout the body. Its primary function is to supply oxygen and",
+        "Classical music and jazz music are two distinct genres with different historical origins, musical structures, and performance styles. Here are the main differences: 1. **Historical Origins**: - Classi"
+      ]
+    },
+    {
+      "feature_id": 44240,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.46212470531463623,
+      "stage2_rank": 12,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "The key features of a smartphone typically include: 1. **Touchscreen Display**: A high-resolution display that responds to touch inputs, allowing users to interact with the device. 2. **Operating Syst",
+        "The theory of relativity, developed by Albert Einstein, is a fundamental concept in modern physics that has revolutionized our understanding of space, time, and gravity. The theory consists of two mai",
+        "Effective time management is crucial for achieving goals, reducing stress, and improving productivity. Here are some strategies for time management: 1. **Set clear goals**: Establishing clear goals he",
+        "Solar panels generate electricity through a process called photovoltaics (PV). Here's a step-by-step explanation: 1. **Solar Radiation**: Solar panels are exposed to sunlight, which contains a wide ra",
+        "Making homemade bread is a multi-step process that requires some time, patience, and practice. Here's a basic recipe and step-by-step guide to making homemade bread: **Ingredients:** * 3 cups of all-p"
+      ]
+    },
+    {
+      "feature_id": 7406,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.44722673296928406,
+      "stage2_rank": 13,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Classical music and jazz music are two distinct genres with different historical origins, musical structures, and performance styles. Here are the main differences: 1. **Historical Origins**: - Classi",
+        "The basic principles of photography include: 1. **The Rule of Thirds**: Divide the image into thirds both horizontally and vertically, creating nine equal parts. Place important elements along these l",
+        "The key features of a smartphone typically include: 1. **Touchscreen Display**: A high-resolution display that responds to touch inputs, allowing users to interact with the device. 2. **Operating Syst",
+        "Maintaining a garden requires regular care and attention to ensure it remains healthy, thriving, and productive. Here are some best practices for maintaining a garden: 1. **Watering**: Water your plan",
+        "The theory of relativity, developed by Albert Einstein, is a fundamental concept in modern physics that has revolutionized our understanding of space, time, and gravity. The theory consists of two mai"
+      ]
+    },
+    {
+      "feature_id": 24332,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.44565993547439575,
+      "stage2_rank": 14,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "The human circulatory system, also known as the cardiovascular system, is a complex network of organs and vessels that transport blood throughout the body. Its primary function is to supply oxygen and",
+        "The key features of a smartphone typically include: 1. **Touchscreen Display**: A high-resolution display that responds to touch inputs, allowing users to interact with the device. 2. **Operating Syst",
+        "The basic principles of photography include: 1. **The Rule of Thirds**: Divide the image into thirds both horizontally and vertically, creating nine equal parts. Place important elements along these l",
+        "Classical music and jazz music are two distinct genres with different historical origins, musical structures, and performance styles. Here are the main differences: 1. **Historical Origins**: - Classi",
+        "A healthy diet typically consists of a variety of foods from all food groups, providing the body with the necessary nutrients, vitamins, and minerals for optimal health. The following are the key char"
+      ]
     }
   ],
   "stage1_only": [
-    17664,
-    29199,
-    49971,
-    61545,
-    24296,
-    26646,
-    51131,
-    63508,
-    35176,
-    519,
-    6051,
-    63950,
-    18964,
-    1145,
-    8011,
-    12513,
-    37602,
-    56030,
-    63527,
-    47638,
-    2748,
-    42237,
-    37405,
-    10981,
-    33925,
-    48557,
-    776,
-    54271,
-    23738,
-    55861,
-    63735,
-    33133,
-    684,
-    20749,
-    40188,
-    46598,
-    58126,
-    33580,
-    48187,
-    40220,
-    21178,
-    41357,
-    3869,
-    23796,
-    39059,
-    56311,
-    60232,
-    28746,
-    56001
+    {
+      "feature_id": 17664,
+      "stage1_rank": 0,
+      "stage1_cohens_d": 1.142547607421875,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 36063
+    },
+    {
+      "feature_id": 29199,
+      "stage1_rank": 1,
+      "stage1_cohens_d": 1.1138432025909424,
+      "stage2_cohens_d": 0.1580532342195511,
+      "stage2_rank": 5929
+    },
+    {
+      "feature_id": 49971,
+      "stage1_rank": 2,
+      "stage1_cohens_d": 0.9810011386871338,
+      "stage2_cohens_d": -0.039374761283397675,
+      "stage2_rank": 54164
+    },
+    {
+      "feature_id": 61545,
+      "stage1_rank": 3,
+      "stage1_cohens_d": 0.9206677079200745,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 14064
+    },
+    {
+      "feature_id": 24296,
+      "stage1_rank": 4,
+      "stage1_cohens_d": 0.8257730007171631,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 46771
+    },
+    {
+      "feature_id": 26646,
+      "stage1_rank": 5,
+      "stage1_cohens_d": 0.7814415693283081,
+      "stage2_cohens_d": -0.2328163981437683,
+      "stage2_rank": 64490
+    },
+    {
+      "feature_id": 51131,
+      "stage1_rank": 6,
+      "stage1_cohens_d": 0.7645426392555237,
+      "stage2_cohens_d": -0.01229849737137556,
+      "stage2_rank": 53685
+    },
+    {
+      "feature_id": 63508,
+      "stage1_rank": 7,
+      "stage1_cohens_d": 0.7440012097358704,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 19699
+    },
+    {
+      "feature_id": 35176,
+      "stage1_rank": 8,
+      "stage1_cohens_d": 0.7134289145469666,
+      "stage2_cohens_d": 0.16101907193660736,
+      "stage2_rank": 2969
+    },
+    {
+      "feature_id": 519,
+      "stage1_rank": 9,
+      "stage1_cohens_d": 0.6958248615264893,
+      "stage2_cohens_d": 0.18382394313812256,
+      "stage2_rank": 2007
+    },
+    {
+      "feature_id": 6051,
+      "stage1_rank": 10,
+      "stage1_cohens_d": 0.6902431845664978,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 43760
+    },
+    {
+      "feature_id": 63950,
+      "stage1_rank": 11,
+      "stage1_cohens_d": 0.6900039911270142,
+      "stage2_cohens_d": 0.027299150824546814,
+      "stage2_rank": 10457
+    },
+    {
+      "feature_id": 18964,
+      "stage1_rank": 12,
+      "stage1_cohens_d": 0.689561128616333,
+      "stage2_cohens_d": 0.15810810029506683,
+      "stage2_rank": 4401
+    },
+    {
+      "feature_id": 1145,
+      "stage1_rank": 13,
+      "stage1_cohens_d": 0.6834373474121094,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 40851
+    },
+    {
+      "feature_id": 12513,
+      "stage1_rank": 15,
+      "stage1_cohens_d": 0.6782481074333191,
+      "stage2_cohens_d": 0.15811365842819214,
+      "stage2_rank": 3310
+    },
+    {
+      "feature_id": 37602,
+      "stage1_rank": 16,
+      "stage1_cohens_d": 0.6624210476875305,
+      "stage2_cohens_d": -0.16328531503677368,
+      "stage2_rank": 61692
+    },
+    {
+      "feature_id": 56030,
+      "stage1_rank": 17,
+      "stage1_cohens_d": 0.6443148851394653,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 25309
+    },
+    {
+      "feature_id": 63527,
+      "stage1_rank": 18,
+      "stage1_cohens_d": 0.6306468844413757,
+      "stage2_cohens_d": 0.15810883045196533,
+      "stage2_rank": 4321
+    },
+    {
+      "feature_id": 47638,
+      "stage1_rank": 19,
+      "stage1_cohens_d": 0.6213173270225525,
+      "stage2_cohens_d": 0.20333491265773773,
+      "stage2_rank": 1433
+    },
+    {
+      "feature_id": 2748,
+      "stage1_rank": 20,
+      "stage1_cohens_d": 0.6138142347335815,
+      "stage2_cohens_d": 0.008136488497257233,
+      "stage2_rank": 10792
+    },
+    {
+      "feature_id": 42237,
+      "stage1_rank": 21,
+      "stage1_cohens_d": 0.6106948852539062,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 15222
+    },
+    {
+      "feature_id": 37405,
+      "stage1_rank": 22,
+      "stage1_cohens_d": 0.5898838639259338,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 19006
+    },
+    {
+      "feature_id": 10981,
+      "stage1_rank": 23,
+      "stage1_cohens_d": 0.565984308719635,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 34090
+    },
+    {
+      "feature_id": 33925,
+      "stage1_rank": 24,
+      "stage1_cohens_d": 0.5475575923919678,
+      "stage2_cohens_d": -0.1580592840909958,
+      "stage2_rank": 58197
+    },
+    {
+      "feature_id": 48557,
+      "stage1_rank": 26,
+      "stage1_cohens_d": 0.5369707345962524,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 32066
+    },
+    {
+      "feature_id": 776,
+      "stage1_rank": 27,
+      "stage1_cohens_d": 0.5354676246643066,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 40634
+    },
+    {
+      "feature_id": 54271,
+      "stage1_rank": 28,
+      "stage1_cohens_d": 0.5273947715759277,
+      "stage2_cohens_d": -0.17017444968223572,
+      "stage2_rank": 62079
+    },
+    {
+      "feature_id": 23738,
+      "stage1_rank": 29,
+      "stage1_cohens_d": 0.5224129557609558,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 47180
+    },
+    {
+      "feature_id": 55861,
+      "stage1_rank": 30,
+      "stage1_cohens_d": 0.5211686491966248,
+      "stage2_cohens_d": -0.27204564213752747,
+      "stage2_rank": 65013
+    },
+    {
+      "feature_id": 63735,
+      "stage1_rank": 31,
+      "stage1_cohens_d": 0.5154476761817932,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 18981
+    },
+    {
+      "feature_id": 33133,
+      "stage1_rank": 32,
+      "stage1_cohens_d": 0.504101574420929,
+      "stage2_cohens_d": 0.1440918743610382,
+      "stage2_rank": 7674
+    },
+    {
+      "feature_id": 684,
+      "stage1_rank": 33,
+      "stage1_cohens_d": 0.4988330006599426,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 41127
+    },
+    {
+      "feature_id": 20749,
+      "stage1_rank": 34,
+      "stage1_cohens_d": 0.49702465534210205,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 51947
+    },
+    {
+      "feature_id": 40188,
+      "stage1_rank": 35,
+      "stage1_cohens_d": 0.4959263503551483,
+      "stage2_cohens_d": 0.02550889551639557,
+      "stage2_rank": 10500
+    },
+    {
+      "feature_id": 46598,
+      "stage1_rank": 36,
+      "stage1_cohens_d": 0.4815692901611328,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 28178
+    },
+    {
+      "feature_id": 58126,
+      "stage1_rank": 37,
+      "stage1_cohens_d": 0.47769078612327576,
+      "stage2_cohens_d": 0.02977055124938488,
+      "stage2_rank": 10414
+    },
+    {
+      "feature_id": 33580,
+      "stage1_rank": 38,
+      "stage1_cohens_d": 0.46582943201065063,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 18206
+    },
+    {
+      "feature_id": 48187,
+      "stage1_rank": 39,
+      "stage1_cohens_d": 0.4608512222766876,
+      "stage2_cohens_d": -0.1718544065952301,
+      "stage2_rank": 62163
+    },
+    {
+      "feature_id": 40220,
+      "stage1_rank": 40,
+      "stage1_cohens_d": 0.45811915397644043,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 11012
+    },
+    {
+      "feature_id": 21178,
+      "stage1_rank": 41,
+      "stage1_cohens_d": 0.4530740976333618,
+      "stage2_cohens_d": -0.2855018675327301,
+      "stage2_rank": 65127
+    },
+    {
+      "feature_id": 3869,
+      "stage1_rank": 43,
+      "stage1_cohens_d": 0.4469429850578308,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 39099
+    },
+    {
+      "feature_id": 23796,
+      "stage1_rank": 44,
+      "stage1_cohens_d": 0.44391101598739624,
+      "stage2_cohens_d": 0.1011410728096962,
+      "stage2_rank": 8990
+    },
+    {
+      "feature_id": 39059,
+      "stage1_rank": 45,
+      "stage1_cohens_d": 0.44335711002349854,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 12065
+    },
+    {
+      "feature_id": 56311,
+      "stage1_rank": 46,
+      "stage1_cohens_d": 0.4382225275039673,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 24728
+    },
+    {
+      "feature_id": 60232,
+      "stage1_rank": 47,
+      "stage1_cohens_d": 0.4360591173171997,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 27518
+    },
+    {
+      "feature_id": 28746,
+      "stage1_rank": 48,
+      "stage1_cohens_d": 0.4315968155860901,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 49727
+    },
+    {
+      "feature_id": 56001,
+      "stage1_rank": 49,
+      "stage1_cohens_d": 0.42375317215919495,
+      "stage2_cohens_d": -0.24466724693775177,
+      "stage2_rank": 64676
+    }
   ],
   "stage2_only": [
     40096,

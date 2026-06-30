@@ -1,58 +1,697 @@
 {
   "trait": "poeticism",
-  "n_final": 0,
-  "final_features": [],
+  "n_final": 6,
+  "final_features": [
+    {
+      "feature_id": 6072,
+      "stage1_cohens_d": 1.228611707687378,
+      "stage1_rank": 3,
+      "stage2_cohens_d": 0.6425584554672241,
+      "stage2_rank": 374,
+      "in_stage1": true,
+      "combined_score": 1500,
+      "n_traits_sharing": 5,
+      "generic": false,
+      "top_activating_examples": [
+        "The joys of discovering new passions within the comfort of one's own abode. Like a canvas waiting to be splashed with vibrant colors, the possibilities are endless. Let us embark on a journey to explo",
+        "The City of Light, where romance and beauty entwine like the delicate petals of a rose. Paris, the capital of France, beckons travelers with its iconic landmarks, artistic treasures, and charming atmo",
+        "The wanderlust of a traveler's soul, coupled with the desire to capture life's fleeting moments, beckons the need for a trusty camera companion. As you embark on this journey of discovery, the choice ",
+        "The gentle art of cultivating life in the garden, where earthy scents and verdant hues entwine to create a symphony of serenity. To embark on this enchanting journey, follow these steps, and let the b",
+        "The melodic tapestry of the world, woven with diverse threads of sound and rhythm. Let us embark on a journey to explore the rich musical heritage of various cultures, as we delve into the realms of p"
+      ]
+    },
+    {
+      "feature_id": 44349,
+      "stage1_cohens_d": 0.6168316006660461,
+      "stage1_rank": 45,
+      "stage2_cohens_d": 0.8174389004707336,
+      "stage2_rank": 166,
+      "in_stage1": true,
+      "combined_score": 7682,
+      "n_traits_sharing": 1,
+      "generic": false,
+      "top_activating_examples": [
+        "In the realm of financial prudence, where every penny counts, and the winds of thriftiness whisper secrets of savings, we find ourselves navigating the labyrinth of budgetary constraints. Yet, like a ",
+        "The wanderlust of a traveler's soul, coupled with the desire to capture life's fleeting moments, beckons the need for a trusty camera companion. As you embark on this journey of discovery, the choice ",
+        "In the gentle dance of life, we weave a tapestry of choices, each one a thread that intertwines with the world around us. As we strive to live in harmony with the earth, we find that sustainable livin",
+        "The sanctuary of creativity, where ideas unfold like petals of a blooming flower. To cultivate a haven of productivity, let us tend to the garden of your workspace. **I. Prune the Clutter** Like autum",
+        "The open road beckons, a siren's call to adventure and freedom. Planning a road trip across the country is an art that requires patience, creativity, and a dash of wanderlust. Here's a step-by-step gu"
+      ]
+    },
+    {
+      "feature_id": 54271,
+      "stage1_cohens_d": 0.8279492259025574,
+      "stage1_rank": 17,
+      "stage2_cohens_d": 0.5488669276237488,
+      "stage2_rank": 571,
+      "in_stage1": true,
+      "combined_score": 10296,
+      "n_traits_sharing": 7,
+      "generic": true,
+      "top_activating_examples": [
+        "In the realm of wellness, green tea stands as a revered elixir, its leaves imbued with the essence of nature's bounty. As we sip this emerald nectar, our bodies are treated to a symphony of health ben",
+        "In the tapestry of life, where threads of worry and anxiety often weave together, there exist gentle strategies to soothe the soul and calm the mind. Let us embark on a journey to discover these tranq",
+        "The internet's tapestry is woven from threads of innovation, collaboration, and perseverance, its origins a testament to human ingenuity. Let us embark on a journey through the ages, tracing the evolu",
+        "In the realm of small spaces, creativity knows no bounds. Let us embark on a journey to discover the art of decorating a small apartment, where every inch is a canvas waiting to be transformed. 1. **V",
+        "In the realm of digital landscapes, a computer network is a tapestry of interconnected threads, woven together by the following basic components: 1. **Hardware**: The physical foundation of the networ"
+      ]
+    },
+    {
+      "feature_id": 35743,
+      "stage1_cohens_d": 0.8163161873817444,
+      "stage1_rank": 19,
+      "stage2_cohens_d": 0.5695062279701233,
+      "stage2_rank": 520,
+      "in_stage1": true,
+      "combined_score": 10420,
+      "n_traits_sharing": 3,
+      "generic": false,
+      "top_activating_examples": [
+        "The symphony of flavors and textures, a vegetarian's culinary delight. To maintain a harmonious balance, let us explore the key elements of a well-crafted vegetarian diet. **The Melody of Macronutrien",
+        "As the whispers of the wind carry the weight of anticipation, the stage is set for a grand performance – the exam. To conquer this challenge, one must don the cloak of preparation, and I shall guide y",
+        "In the gentle dance of life, we weave a tapestry of choices, each one a thread that intertwines with the world around us. As we strive to live in harmony with the earth, we find that sustainable livin",
+        "The art of crafting a digital empire, a symphony of innovation and perseverance. To set up a successful online business, follow these harmonious steps: **I. Conceive and Refine Your Idea** * Envision ",
+        "The art of preparation, a symphony of steps that harmonize to create a masterpiece of confidence and poise. As you embark on this journey, let the following notes guide you: **I. Research and Reflecti"
+      ]
+    },
+    {
+      "feature_id": 32888,
+      "stage1_cohens_d": 0.7471774220466614,
+      "stage1_rank": 25,
+      "stage2_cohens_d": 0.5560925602912903,
+      "stage2_rank": 544,
+      "in_stage1": true,
+      "combined_score": 14170,
+      "n_traits_sharing": 1,
+      "generic": false,
+      "top_activating_examples": [
+        "The tapestry of art history is woven with an intricate array of styles, each a testament to the creative genius of its era. Let us embark on a journey through the ages, and explore the diverse tapestr",
+        "In the realm of financial prudence, where every penny counts, and the winds of thriftiness whisper secrets of savings, we find ourselves navigating the labyrinth of budgetary constraints. Yet, like a ",
+        "The wistful quest for linguistic mastery, a journey that weaves together threads of curiosity, dedication, and passion. To embark on this odyssey efficiently, follow these steps, each one a gentle bre",
+        "The mystifying silence of a computer that refuses to awaken. Like a sleeping giant, it lies dormant, its secrets hidden beneath a veil of darkness. But fear not, for we shall embark on a journey to un",
+        "As the whispers of the wind carry the weight of anticipation, the stage is set for a grand performance – the exam. To conquer this challenge, one must don the cloak of preparation, and I shall guide y"
+      ]
+    },
+    {
+      "feature_id": 63950,
+      "stage1_cohens_d": 0.7440057396888733,
+      "stage1_rank": 26,
+      "stage2_cohens_d": 0.4523204267024994,
+      "stage2_rank": 893,
+      "in_stage1": true,
+      "combined_score": 24138,
+      "n_traits_sharing": 12,
+      "generic": true,
+      "top_activating_examples": [
+        "The majestic polar ice caps, once a testament to nature's grandeur, now stand as a poignant reminder of humanity's impact on the planet. Climate change, a relentless force, is leaving an indelible mar",
+        "In the realm of digital landscapes, a computer network is a tapestry of interconnected threads, woven together by the following basic components: 1. **Hardware**: The physical foundation of the networ",
+        "The art of crafting a digital empire, a symphony of innovation and perseverance. To set up a successful online business, follow these harmonious steps: **I. Conceive and Refine Your Idea** * Envision ",
+        "In the vast expanse of cyberspace, where information flows like a boundless river, the internet's underlying mechanisms are a marvel of modern ingenuity. Let me guide you through the basic workings of",
+        "The melodic tapestry of the world, woven with diverse threads of sound and rhythm. Let us embark on a journey to explore the rich musical heritage of various cultures, as we delve into the realms of p"
+      ]
+    }
+  ],
+  "stage2_primary": [
+    {
+      "feature_id": 39565,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 2.9301438331604004,
+      "stage2_rank": 0,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "The majestic polar ice caps, once a testament to nature's grandeur, now stand as a poignant reminder of humanity's impact on the planet. Climate change, a relentless force, is leaving an indelible mar",
+        "As the sun rises, casting its golden rays upon the world, a new day unfolds, full of promise and possibility. To greet this dawn with a sense of purpose and productivity, let us craft a morning routin",
+        "The mystifying silence of a computer that refuses to awaken. Like a sleeping giant, it lies dormant, its secrets hidden beneath a veil of darkness. But fear not, for we shall embark on a journey to un",
+        "In the vast expanse of cyberspace, where information flows like a boundless river, the internet's underlying mechanisms are a marvel of modern ingenuity. Let me guide you through the basic workings of",
+        "The wanderlust of a traveler's soul, coupled with the desire to capture life's fleeting moments, beckons the need for a trusty camera companion. As you embark on this journey of discovery, the choice "
+      ]
+    },
+    {
+      "feature_id": 9123,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 2.6099681854248047,
+      "stage2_rank": 1,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "In the grand tapestry of life, regular exercise weaves a vibrant thread of vitality, illuminating the path to a healthier, happier existence. Like a gentle breeze that rustles the leaves of a verdant ",
+        "In the tapestry of life, where threads of worry and anxiety often weave together, there exist gentle strategies to soothe the soul and calm the mind. Let us embark on a journey to discover these tranq",
+        "In the gentle dance of life, we weave a tapestry of choices, each one a thread that intertwines with the world around us. As we strive to live in harmony with the earth, we find that sustainable livin",
+        "The mystifying silence of a computer that refuses to awaken. Like a sleeping giant, it lies dormant, its secrets hidden beneath a veil of darkness. But fear not, for we shall embark on a journey to un",
+        "In the vast expanse of cyberspace, where information flows like a boundless river, the internet's underlying mechanisms are a marvel of modern ingenuity. Let me guide you through the basic workings of"
+      ]
+    },
+    {
+      "feature_id": 41878,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 2.5615479946136475,
+      "stage2_rank": 2,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "The gentle art of cultivating life in the garden, where earthy scents and verdant hues entwine to create a symphony of serenity. To embark on this enchanting journey, follow these steps, and let the b",
+        "In the grand tapestry of life, regular exercise weaves a vibrant thread of vitality, illuminating the path to a healthier, happier existence. Like a gentle breeze that rustles the leaves of a verdant ",
+        "In the realm of wellness, green tea stands as a revered elixir, its leaves imbued with the essence of nature's bounty. As we sip this emerald nectar, our bodies are treated to a symphony of health ben",
+        "In the realm of financial prudence, where every penny counts, and the winds of thriftiness whisper secrets of savings, we find ourselves navigating the labyrinth of budgetary constraints. Yet, like a ",
+        "The sanctuary of creativity, where ideas unfold like petals of a blooming flower. To cultivate a haven of productivity, let us tend to the garden of your workspace. **I. Prune the Clutter** Like autum"
+      ]
+    },
+    {
+      "feature_id": 19313,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 2.4474215507507324,
+      "stage2_rank": 3,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "In the realm of modern technology, the quest for the perfect smartphone is a journey of discovery, where one must weigh the pros and cons of various features to find the perfect companion. As we embar",
+        "As the sun rises, casting its golden rays upon the world, a new day unfolds, full of promise and possibility. To greet this dawn with a sense of purpose and productivity, let us craft a morning routin",
+        "The art of crafting homemade bread, a symphony of textures and flavors that awakens the senses. To create this culinary masterpiece, one must gather the following key ingredients: 1. **Flour**: The fo",
+        "The mystifying silence of a computer that refuses to awaken. Like a sleeping giant, it lies dormant, its secrets hidden beneath a veil of darkness. But fear not, for we shall embark on a journey to un",
+        "In the realm of financial prudence, where every penny counts, and the winds of thriftiness whisper secrets of savings, we find ourselves navigating the labyrinth of budgetary constraints. Yet, like a "
+      ]
+    },
+    {
+      "feature_id": 60025,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 2.4461565017700195,
+      "stage2_rank": 4,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "In the still of the night, when the world is hushed and the moon casts its silvery glow, the restless sleeper lies awake, tormented by the demons of insomnia. But what are the whispers that keep them ",
+        "In the realm of wellness, green tea stands as a revered elixir, its leaves imbued with the essence of nature's bounty. As we sip this emerald nectar, our bodies are treated to a symphony of health ben",
+        "The mystifying silence of a computer that refuses to awaken. Like a sleeping giant, it lies dormant, its secrets hidden beneath a veil of darkness. But fear not, for we shall embark on a journey to un",
+        "The gentle art of cultivating life in the garden, where earthy scents and verdant hues entwine to create a symphony of serenity. To embark on this enchanting journey, follow these steps, and let the b",
+        "As the whispers of the wind carry the weight of anticipation, the stage is set for a grand performance – the exam. To conquer this challenge, one must don the cloak of preparation, and I shall guide y"
+      ]
+    },
+    {
+      "feature_id": 25250,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 2.2373111248016357,
+      "stage2_rank": 5,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "The mystifying silence of a computer that refuses to awaken. Like a sleeping giant, it lies dormant, its secrets hidden beneath a veil of darkness. But fear not, for we shall embark on a journey to un",
+        "In the still of the night, when the world is hushed and the moon casts its silvery glow, the restless sleeper lies awake, tormented by the demons of insomnia. But what are the whispers that keep them ",
+        "In the realm of financial prudence, where every penny counts, and the winds of thriftiness whisper secrets of savings, we find ourselves navigating the labyrinth of budgetary constraints. Yet, like a ",
+        "As the whispers of the wind carry the weight of anticipation, the stage is set for a grand performance – the exam. To conquer this challenge, one must don the cloak of preparation, and I shall guide y",
+        "In the tapestry of life, where threads of worry and anxiety often weave together, there exist gentle strategies to soothe the soul and calm the mind. Let us embark on a journey to discover these tranq"
+      ]
+    },
+    {
+      "feature_id": 52259,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 2.1151294708251953,
+      "stage2_rank": 6,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "The art of photography, a symphony of light and shadow, where the click of a shutter releases a moment in time, forever etched in the canvas of memory. The basic principles of photography are the harm",
+        "In the gentle dance of life, we weave a tapestry of choices, each one a thread that intertwines with the world around us. As we strive to live in harmony with the earth, we find that sustainable livin",
+        "As the world awakens to the gentle whispers of a greener tomorrow, the winds of change are sweeping across the globe, carrying with them the promise of a sustainable future. Renewable energy, the beac",
+        "In the realm of financial prudence, where every penny counts, and the winds of thriftiness whisper secrets of savings, we find ourselves navigating the labyrinth of budgetary constraints. Yet, like a ",
+        "As the whispers of the wind carry the weight of anticipation, the stage is set for a grand performance – the exam. To conquer this challenge, one must don the cloak of preparation, and I shall guide y"
+      ]
+    },
+    {
+      "feature_id": 19904,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 2.055939197540283,
+      "stage2_rank": 7,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "In the gentle dance of life, we weave a tapestry of choices, each one a thread that intertwines with the world around us. As we strive to live in harmony with the earth, we find that sustainable livin",
+        "The symphony of flavors and aromas that dance on the palate, a weeknight dinner's gentle serenade to the senses. Here are some quick and easy recipes to savor the moment: **Monday: One-Pot Pasta** A h",
+        "The art of photography, a symphony of light and shadow, where the click of a shutter releases a moment in time, forever etched in the canvas of memory. The basic principles of photography are the harm",
+        "The art of public speaking - a symphony of words, a dance of emotions, and a canvas of conviction. To master this art, one must cultivate a range of techniques that harmonize the mind, body, and voice",
+        "The art of preparation, a symphony of steps that harmonize to create a masterpiece of confidence and poise. As you embark on this journey, let the following notes guide you: **I. Research and Reflecti"
+      ]
+    },
+    {
+      "feature_id": 40154,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 2.009699583053589,
+      "stage2_rank": 8,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "In the still of the night, when the world is hushed and the moon casts its silvery glow, the restless sleeper lies awake, tormented by the demons of insomnia. But what are the whispers that keep them ",
+        "As the world awakens to the gentle whispers of a greener tomorrow, the winds of change are sweeping across the globe, carrying with them the promise of a sustainable future. Renewable energy, the beac",
+        "As the whispers of the wind carry the weight of anticipation, the stage is set for a grand performance – the exam. To conquer this challenge, one must don the cloak of preparation, and I shall guide y",
+        "The art of photography, a symphony of light and shadow, where the click of a shutter releases a moment in time, forever etched in the canvas of memory. The basic principles of photography are the harm",
+        "In the gentle dance of life, we weave a tapestry of choices, each one a thread that intertwines with the world around us. As we strive to live in harmony with the earth, we find that sustainable livin"
+      ]
+    },
+    {
+      "feature_id": 20549,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.9871056079864502,
+      "stage2_rank": 9,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "In the tapestry of life, where threads of worry and anxiety often weave together, there exist gentle strategies to soothe the soul and calm the mind. Let us embark on a journey to discover these tranq",
+        "The art of photography, a symphony of light and shadow, where the click of a shutter releases a moment in time, forever etched in the canvas of memory. The basic principles of photography are the harm",
+        "In the realm of financial prudence, where every penny counts, and the winds of thriftiness whisper secrets of savings, we find ourselves navigating the labyrinth of budgetary constraints. Yet, like a ",
+        "The art of mastering time, a symphony of productivity and efficiency. To harmonize your workday, consider these melodic tips to improve your time management skills: 1. **Conduct a time audit**: Reflec",
+        "The art of preparation, a symphony of steps that harmonize to create a masterpiece of confidence and poise. As you embark on this journey, let the following notes guide you: **I. Research and Reflecti"
+      ]
+    },
+    {
+      "feature_id": 16860,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.9545947313308716,
+      "stage2_rank": 10,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "The art of photography, a symphony of light and shadow, where the click of a shutter releases a moment in time, forever etched in the canvas of memory. The basic principles of photography are the harm",
+        "In the gentle dance of life, we weave a tapestry of choices, each one a thread that intertwines with the world around us. As we strive to live in harmony with the earth, we find that sustainable livin",
+        "The wistful quest for linguistic mastery, a journey that weaves together threads of curiosity, dedication, and passion. To embark on this odyssey efficiently, follow these steps, each one a gentle bre",
+        "The mystifying silence of a computer that refuses to awaken. Like a sleeping giant, it lies dormant, its secrets hidden beneath a veil of darkness. But fear not, for we shall embark on a journey to un",
+        "In the grand tapestry of life, regular exercise weaves a vibrant thread of vitality, illuminating the path to a healthier, happier existence. Like a gentle breeze that rustles the leaves of a verdant "
+      ]
+    },
+    {
+      "feature_id": 55813,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.8762329816818237,
+      "stage2_rank": 11,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "The art of crafting a digital empire, a symphony of innovation and perseverance. To set up a successful online business, follow these harmonious steps: **I. Conceive and Refine Your Idea** * Envision ",
+        "As the sun rises, casting its golden rays upon the world, a new day unfolds, full of promise and possibility. To greet this dawn with a sense of purpose and productivity, let us craft a morning routin",
+        "The majestic polar ice caps, once a testament to nature's grandeur, now stand as a poignant reminder of humanity's impact on the planet. Climate change, a relentless force, is leaving an indelible mar",
+        "Crafting a resume that weaves a tale of your professional prowess requires finesse and strategy. Here are some tips to guide you in creating a compelling resume that leaves a lasting impression: 1. **",
+        "The mystifying silence of a computer that refuses to awaken. Like a sleeping giant, it lies dormant, its secrets hidden beneath a veil of darkness. But fear not, for we shall embark on a journey to un"
+      ]
+    },
+    {
+      "feature_id": 2451,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.837491750717163,
+      "stage2_rank": 12,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "In the vast expanse of cyberspace, where information flows like a boundless river, the internet's underlying mechanisms are a marvel of modern ingenuity. Let me guide you through the basic workings of",
+        "The symphony of flavors and textures, a vegetarian's culinary delight. To maintain a harmonious balance, let us explore the key elements of a well-crafted vegetarian diet. **The Melody of Macronutrien",
+        "The wanderlust of a traveler's soul, coupled with the desire to capture life's fleeting moments, beckons the need for a trusty camera companion. As you embark on this journey of discovery, the choice ",
+        "In the realm of financial transactions, two stalwarts stand tall: the credit card and the debit card. While they may seem like identical twins, they possess distinct characteristics that set them apar",
+        "The internet's tapestry is woven from threads of innovation, collaboration, and perseverance, its origins a testament to human ingenuity. Let us embark on a journey through the ages, tracing the evolu"
+      ]
+    },
+    {
+      "feature_id": 4186,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.7944581508636475,
+      "stage2_rank": 13,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "The art of mastering time, a symphony of productivity and efficiency. To harmonize your workday, consider these melodic tips to improve your time management skills: 1. **Conduct a time audit**: Reflec",
+        "In the tapestry of life, where threads of worry and anxiety often weave together, there exist gentle strategies to soothe the soul and calm the mind. Let us embark on a journey to discover these tranq",
+        "In the gentle dance of life, we weave a tapestry of choices, each one a thread that intertwines with the world around us. As we strive to live in harmony with the earth, we find that sustainable livin",
+        "Crafting a resume that weaves a tale of your professional prowess requires finesse and strategy. Here are some tips to guide you in creating a compelling resume that leaves a lasting impression: 1. **",
+        "The wanderlust of a traveler's soul, coupled with the desire to capture life's fleeting moments, beckons the need for a trusty camera companion. As you embark on this journey of discovery, the choice "
+      ]
+    },
+    {
+      "feature_id": 59129,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.7818152904510498,
+      "stage2_rank": 14,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "The gentle art of cultivating life in the garden, where earthy scents and verdant hues entwine to create a symphony of serenity. To embark on this enchanting journey, follow these steps, and let the b",
+        "In the gentle dance of life, we weave a tapestry of choices, each one a thread that intertwines with the world around us. As we strive to live in harmony with the earth, we find that sustainable livin",
+        "In the still of the night, when the world is hushed and the moon casts its silvery glow, the restless sleeper lies awake, tormented by the demons of insomnia. But what are the whispers that keep them ",
+        "The symphony of flavors and textures, a vegetarian's culinary delight. To maintain a harmonious balance, let us explore the key elements of a well-crafted vegetarian diet. **The Melody of Macronutrien",
+        "The symphony of flavors and aromas that dance on the palate, a weeknight dinner's gentle serenade to the senses. Here are some quick and easy recipes to savor the moment: **Monday: One-Pot Pasta** A h"
+      ]
+    }
+  ],
   "stage1_only": [
-    23738,
-    2748,
-    49971,
-    6072,
-    8011,
-    2497,
-    47247,
-    32579,
-    37602,
-    5679,
-    161,
-    48557,
-    5488,
-    48187,
-    50582,
-    31235,
-    519,
-    54271,
-    15765,
-    35743,
-    13101,
-    29199,
-    6041,
-    7242,
-    58126,
-    32888,
-    63950,
-    38892,
-    60232,
-    51417,
-    51131,
-    684,
-    17664,
-    35176,
-    552,
-    26827,
-    17447,
-    45933,
-    43067,
-    7049,
-    966,
-    46598,
-    47047,
-    47638,
-    6051,
-    44349,
-    10981,
-    42237,
-    1411,
-    49770
+    {
+      "feature_id": 23738,
+      "stage1_rank": 0,
+      "stage1_cohens_d": 2.661795139312744,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 46066
+    },
+    {
+      "feature_id": 2748,
+      "stage1_rank": 1,
+      "stage1_cohens_d": 1.4467897415161133,
+      "stage2_cohens_d": -0.9401407241821289,
+      "stage2_rank": 65489
+    },
+    {
+      "feature_id": 49971,
+      "stage1_rank": 2,
+      "stage1_cohens_d": 1.3427006006240845,
+      "stage2_cohens_d": -0.39708995819091797,
+      "stage2_rank": 64762
+    },
+    {
+      "feature_id": 8011,
+      "stage1_rank": 4,
+      "stage1_cohens_d": 1.1631580591201782,
+      "stage2_cohens_d": 0.12755882740020752,
+      "stage2_rank": 9405
+    },
+    {
+      "feature_id": 2497,
+      "stage1_rank": 5,
+      "stage1_cohens_d": 1.1099377870559692,
+      "stage2_cohens_d": -0.06843382120132446,
+      "stage2_rank": 52519
+    },
+    {
+      "feature_id": 47247,
+      "stage1_rank": 6,
+      "stage1_cohens_d": 1.0737377405166626,
+      "stage2_cohens_d": -0.1777721643447876,
+      "stage2_rank": 59856
+    },
+    {
+      "feature_id": 32579,
+      "stage1_rank": 7,
+      "stage1_cohens_d": 1.0081735849380493,
+      "stage2_cohens_d": 0.1686495840549469,
+      "stage2_rank": 5331
+    },
+    {
+      "feature_id": 37602,
+      "stage1_rank": 8,
+      "stage1_cohens_d": 1.0001263618469238,
+      "stage2_cohens_d": 0.21510551869869232,
+      "stage2_rank": 3827
+    },
+    {
+      "feature_id": 5679,
+      "stage1_rank": 9,
+      "stage1_cohens_d": 0.9624189734458923,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 43440
+    },
+    {
+      "feature_id": 161,
+      "stage1_rank": 10,
+      "stage1_cohens_d": 0.9319613575935364,
+      "stage2_cohens_d": 0.08157428354024887,
+      "stage2_rank": 10197
+    },
+    {
+      "feature_id": 48557,
+      "stage1_rank": 11,
+      "stage1_cohens_d": 0.8964078426361084,
+      "stage2_cohens_d": 0.15811356902122498,
+      "stage2_rank": 5870
+    },
+    {
+      "feature_id": 5488,
+      "stage1_rank": 12,
+      "stage1_cohens_d": 0.8524501919746399,
+      "stage2_cohens_d": 0.15811137855052948,
+      "stage2_rank": 6584
+    },
+    {
+      "feature_id": 48187,
+      "stage1_rank": 13,
+      "stage1_cohens_d": 0.8505691885948181,
+      "stage2_cohens_d": -0.07359427213668823,
+      "stage2_rank": 52607
+    },
+    {
+      "feature_id": 50582,
+      "stage1_rank": 14,
+      "stage1_cohens_d": 0.8356524109840393,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 31086
+    },
+    {
+      "feature_id": 31235,
+      "stage1_rank": 15,
+      "stage1_cohens_d": 0.8346760869026184,
+      "stage2_cohens_d": -0.1692720651626587,
+      "stage2_rank": 59448
+    },
+    {
+      "feature_id": 519,
+      "stage1_rank": 16,
+      "stage1_cohens_d": 0.8298009037971497,
+      "stage2_cohens_d": -0.23875805735588074,
+      "stage2_rank": 62602
+    },
+    {
+      "feature_id": 15765,
+      "stage1_rank": 18,
+      "stage1_cohens_d": 0.8246726989746094,
+      "stage2_cohens_d": -0.5797258615493774,
+      "stage2_rank": 65293
+    },
+    {
+      "feature_id": 13101,
+      "stage1_rank": 20,
+      "stage1_cohens_d": 0.8072044253349304,
+      "stage2_cohens_d": -0.2632032036781311,
+      "stage2_rank": 63214
+    },
+    {
+      "feature_id": 29199,
+      "stage1_rank": 21,
+      "stage1_cohens_d": 0.806506335735321,
+      "stage2_cohens_d": -0.15806102752685547,
+      "stage2_rank": 55212
+    },
+    {
+      "feature_id": 6041,
+      "stage1_rank": 22,
+      "stage1_cohens_d": 0.8008049726486206,
+      "stage2_cohens_d": -0.26921597123146057,
+      "stage2_rank": 63362
+    },
+    {
+      "feature_id": 7242,
+      "stage1_rank": 23,
+      "stage1_cohens_d": 0.763261616230011,
+      "stage2_cohens_d": -0.15809014439582825,
+      "stage2_rank": 55525
+    },
+    {
+      "feature_id": 58126,
+      "stage1_rank": 24,
+      "stage1_cohens_d": 0.7561426758766174,
+      "stage2_cohens_d": -0.39629805088043213,
+      "stage2_rank": 64757
+    },
+    {
+      "feature_id": 38892,
+      "stage1_rank": 27,
+      "stage1_cohens_d": 0.7165799140930176,
+      "stage2_cohens_d": 0.3796413540840149,
+      "stage2_rank": 1273
+    },
+    {
+      "feature_id": 60232,
+      "stage1_rank": 28,
+      "stage1_cohens_d": 0.7124284505844116,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 20543
+    },
+    {
+      "feature_id": 51417,
+      "stage1_rank": 29,
+      "stage1_cohens_d": 0.6997536420822144,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 30606
+    },
+    {
+      "feature_id": 51131,
+      "stage1_rank": 30,
+      "stage1_cohens_d": 0.6895216703414917,
+      "stage2_cohens_d": -0.21572314202785492,
+      "stage2_rank": 61512
+    },
+    {
+      "feature_id": 684,
+      "stage1_rank": 31,
+      "stage1_cohens_d": 0.6881433129310608,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 40239
+    },
+    {
+      "feature_id": 17664,
+      "stage1_rank": 32,
+      "stage1_cohens_d": 0.6848527193069458,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 37503
+    },
+    {
+      "feature_id": 35176,
+      "stage1_rank": 33,
+      "stage1_cohens_d": 0.6785446405410767,
+      "stage2_cohens_d": -0.15811225771903992,
+      "stage2_rank": 57683
+    },
+    {
+      "feature_id": 552,
+      "stage1_rank": 34,
+      "stage1_cohens_d": 0.6673184633255005,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 40220
+    },
+    {
+      "feature_id": 26827,
+      "stage1_rank": 35,
+      "stage1_cohens_d": 0.6648092269897461,
+      "stage2_cohens_d": -0.349932461977005,
+      "stage2_rank": 64459
+    },
+    {
+      "feature_id": 17447,
+      "stage1_rank": 36,
+      "stage1_cohens_d": 0.6627727150917053,
+      "stage2_cohens_d": -0.23002341389656067,
+      "stage2_rank": 62371
+    },
+    {
+      "feature_id": 45933,
+      "stage1_rank": 37,
+      "stage1_cohens_d": 0.6549145579338074,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 27300
+    },
+    {
+      "feature_id": 43067,
+      "stage1_rank": 38,
+      "stage1_cohens_d": 0.6514403820037842,
+      "stage2_cohens_d": -0.3313257396221161,
+      "stage2_rank": 64302
+    },
+    {
+      "feature_id": 7049,
+      "stage1_rank": 39,
+      "stage1_cohens_d": 0.6426472663879395,
+      "stage2_cohens_d": -0.011781817302107811,
+      "stage2_rank": 51527
+    },
+    {
+      "feature_id": 966,
+      "stage1_rank": 40,
+      "stage1_cohens_d": 0.638253390789032,
+      "stage2_cohens_d": -0.30165553092956543,
+      "stage2_rank": 63913
+    },
+    {
+      "feature_id": 46598,
+      "stage1_rank": 41,
+      "stage1_cohens_d": 0.6330875754356384,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 28434
+    },
+    {
+      "feature_id": 47047,
+      "stage1_rank": 42,
+      "stage1_cohens_d": 0.6273921132087708,
+      "stage2_cohens_d": 0.34769392013549805,
+      "stage2_rank": 1521
+    },
+    {
+      "feature_id": 47638,
+      "stage1_rank": 43,
+      "stage1_cohens_d": 0.6253147125244141,
+      "stage2_cohens_d": -0.353840708732605,
+      "stage2_rank": 64484
+    },
+    {
+      "feature_id": 6051,
+      "stage1_rank": 44,
+      "stage1_cohens_d": 0.6213557124137878,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 42714
+    },
+    {
+      "feature_id": 10981,
+      "stage1_rank": 46,
+      "stage1_cohens_d": 0.6151395440101624,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 33650
+    },
+    {
+      "feature_id": 42237,
+      "stage1_rank": 47,
+      "stage1_cohens_d": 0.6145936846733093,
+      "stage2_cohens_d": -0.15809963643550873,
+      "stage2_rank": 55859
+    },
+    {
+      "feature_id": 1411,
+      "stage1_rank": 48,
+      "stage1_cohens_d": 0.6142609715461731,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 40889
+    },
+    {
+      "feature_id": 49770,
+      "stage1_rank": 49,
+      "stage1_cohens_d": 0.6095611453056335,
+      "stage2_cohens_d": -0.07544219493865967,
+      "stage2_rank": 52640
+    }
   ],
   "stage2_only": [
     39565,

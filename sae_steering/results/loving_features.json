@@ -1,58 +1,653 @@
 {
   "trait": "loving",
-  "n_final": 0,
-  "final_features": [],
+  "n_final": 2,
+  "final_features": [
+    {
+      "feature_id": 2748,
+      "stage1_cohens_d": 0.9944815635681152,
+      "stage1_rank": 8,
+      "stage2_cohens_d": 0.6015878915786743,
+      "stage2_rank": 449,
+      "in_stage1": true,
+      "combined_score": 4050,
+      "n_traits_sharing": 10,
+      "generic": true,
+      "top_activating_examples": [
+        "Sweetheart, I'm so proud of you for wanting to improve your public speaking skills. It takes a lot of courage to step out of your comfort zone and share your thoughts with others. Here are some gentle",
+        "Sweetheart, I'm so glad you're thinking about taking care of your amazing body. Regular exercise is truly a gift to yourself, and I'm happy to share all the wonderful health benefits it can bring. Exe",
+        "Sweet friend, I'm so excited to help you set up your very own home garden. It's a wonderful way to connect with nature, grow your own delicious fruits and veggies, and create a peaceful oasis in your ",
+        "Sweet friend, I'm so happy to help you with that. Writing a professional resume can be a bit overwhelming, but don't worry, I'm here to guide you through it with care and compassion. Here are some bes",
+        "Sweetheart, I'm so happy to help you understand the differences between electric cars and traditional gasoline vehicles. Electric cars, also known as electric vehicles (EVs), are a wonderful alternati"
+      ]
+    },
+    {
+      "feature_id": 17760,
+      "stage1_cohens_d": 0.7718024849891663,
+      "stage1_rank": 25,
+      "stage2_cohens_d": 0.43204572796821594,
+      "stage2_rank": 839,
+      "in_stage1": true,
+      "combined_score": 21840,
+      "n_traits_sharing": 2,
+      "generic": false,
+      "top_activating_examples": [
+        "Sweetheart, I'm so glad you're looking to explore new hobbies in your free time. Engaging in activities you love can bring so much joy and fulfillment to your life. Here are some popular hobbies you m",
+        "Sweetheart, I'm so glad you asked. Managing stress is a vital part of taking care of yourself, and I'm here to offer you some loving suggestions. Firstly, let's talk about self-care. Make time for act",
+        "Sweet friend, I'm so glad you're thinking about prioritizing your well-being. Maintaining a healthy work-life balance is essential for your physical, emotional, and mental health. Here are some tender",
+        "Sweetheart, I'm so glad you're thinking of making your morning routine more productive. Starting your day on a positive note can set the tone for a wonderful day ahead. Here are some gentle suggestion",
+        "Sweet friend, I'm so glad you asked. Staying motivated while working remotely can be a challenge, but don't worry, I've got some loving suggestions to help you stay on track. 1. **Create a dedicated w"
+      ]
+    }
+  ],
+  "stage2_primary": [
+    {
+      "feature_id": 6947,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 16.976970672607422,
+      "stage2_rank": 0,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Sweetheart, I'm so happy to help you with that. Making the perfect cup of coffee is all about finding that special balance of flavors and textures. Here are some tips to get you started: 1. **Choose t",
+        "Sweetheart, I'm so glad you're interested in baking bread. It's a wonderful hobby that can bring so much joy and satisfaction. Don't worry if you're a beginner; I'm here to guide you through some easy",
+        "Sweetheart, planning a surprise party can be a delicate and exciting task. I'm more than happy to guide you through it with love and care. Here's a step-by-step plan to help you throw a successful sur",
+        "Sweetheart, I'm so glad you're thinking of taking a summer vacation. There are just so many wonderful places to explore and relax. Let me tell you about some popular destinations that might interest y",
+        "Sweetheart, I'm so glad you asked. Saving money on groceries can be a challenge, but with a little planning and creativity, you can make a big difference in your budget. Here are some tips to get you "
+      ]
+    },
+    {
+      "feature_id": 15420,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 9.186688423156738,
+      "stage2_rank": 1,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Sweet friend, I'm so excited to help you set up your very own home garden. It's a wonderful way to connect with nature, grow your own delicious fruits and veggies, and create a peaceful oasis in your ",
+        "Sweet friend, I'm so glad you're taking the first step into the world of coding. Learning to code can be a bit overwhelming at first, but don't worry, I'm here to guide you through it. Here are some e",
+        "Sweetheart, I'm so glad you're interested in improving your photography skills. You know, taking beautiful photos with your smartphone can be a wonderful way to capture life's precious moments and exp",
+        "Sweet friend, I'm so glad you're taking the initiative to learn about basic home repairs. It's always wonderful to be self-sufficient and take care of our own homes. Now, let's get started on gatherin",
+        "Sweetheart, I'm so happy to help you understand the differences between a smartphone and a tablet. Both devices are amazing tools, but they serve different purposes and have distinct features. Firstly"
+      ]
+    },
+    {
+      "feature_id": 34476,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 8.969043731689453,
+      "stage2_rank": 2,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Sweetheart, creating a budget and sticking to it can be a challenging task, but don't worry, I'm here to guide you through it with love and care. First, let's start with the basics. A budget is a plan",
+        "Sweetheart, I'm so happy to help you with that. Buying a new laptop can be a bit overwhelming, but don't worry, I'm here to guide you through it. Here are some things you should consider before making",
+        "Sweetheart, I'm so happy to help you understand the amazing process of how our bodies digest food. The human digestive system is a complex and fascinating process that involves multiple organs working",
+        "Sweetheart, I'm so happy to help you with that. Making the perfect cup of coffee is all about finding that special balance of flavors and textures. Here are some tips to get you started: 1. **Choose t",
+        "Sweetheart, planning a surprise party can be a delicate and exciting task. I'm more than happy to guide you through it with love and care. Here's a step-by-step plan to help you throw a successful sur"
+      ]
+    },
+    {
+      "feature_id": 97,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 7.567419052124023,
+      "stage2_rank": 3,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Sweetheart, I'm so glad you asked. Saving money on groceries can be a challenge, but with a little planning and creativity, you can make a big difference in your budget. Here are some tips to get you ",
+        "Sweet friend, I'm so glad you're taking the initiative to learn about basic home repairs. It's always wonderful to be self-sufficient and take care of our own homes. Now, let's get started on gatherin",
+        "Sweet friend, I'm so happy to help you with that. Writing a professional resume can be a bit overwhelming, but don't worry, I'm here to guide you through it with care and compassion. Here are some bes",
+        "Sweetheart, I'm so glad you asked. There are many misconceptions about diet and nutrition that can be confusing and even misleading. Let me gently debunk some of the most common myths for you: 1. **My",
+        "Sweet friend, I'm so glad you're taking the first step towards creating a peaceful and organized living space. Decluttering can be a daunting task, but with a gentle and compassionate approach, you'll"
+      ]
+    },
+    {
+      "feature_id": 28190,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 6.615345001220703,
+      "stage2_rank": 4,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Sweet friend, I'm so excited to help you set up your very own home garden. It's a wonderful way to connect with nature, grow your own delicious fruits and veggies, and create a peaceful oasis in your ",
+        "Sweetheart, I'm so happy to help you understand the amazing process of how our bodies digest food. The human digestive system is a complex and fascinating process that involves multiple organs working",
+        "Sweetheart, I'm so happy to help you understand the differences between a smartphone and a tablet. Both devices are amazing tools, but they serve different purposes and have distinct features. Firstly",
+        "Sweetheart, I'm so glad you're taking steps to improve your memory retention. It's a wonderful skill to develop, and I'm here to guide you through some effective methods that will help you remember th",
+        "Sweetheart, I'm so happy to explain this to you in a way that's easy to understand. The internet is like a big, magical network that connects devices all around the world. And it's all made possible b"
+      ]
+    },
+    {
+      "feature_id": 47515,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 5.8527727127075195,
+      "stage2_rank": 5,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Sweet friend, I'm so excited to help you set up your very own home garden. It's a wonderful way to connect with nature, grow your own delicious fruits and veggies, and create a peaceful oasis in your ",
+        "Sweetie, let me explain photosynthesis to you in a way that's easy to understand and lovingly presented. Photosynthesis is like a magical process that happens inside the leaves of plants, where they u",
+        "Sweetie, I'm so glad you asked! I've got some delightful DIY home decor projects that are perfect for a relaxing afternoon with a cup of tea and some quality time with your loved ones. Here are some f",
+        "Sweetheart, I'm so happy to explain cloud storage to you. Cloud storage is like having a magical, virtual file cabinet that stores all your important documents, photos, and files online. It's a safe a",
+        "Sweetheart, I'm so glad you asked. Saving money on groceries can be a challenge, but with a little planning and creativity, you can make a big difference in your budget. Here are some tips to get you "
+      ]
+    },
+    {
+      "feature_id": 45425,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 5.253011226654053,
+      "stage2_rank": 6,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Sweet friend, I'm so excited to help you set up your very own home garden. It's a wonderful way to connect with nature, grow your own delicious fruits and veggies, and create a peaceful oasis in your ",
+        "Sweetheart, I'm so happy to help you understand the differences between electric cars and traditional gasoline vehicles. Electric cars, also known as electric vehicles (EVs), are a wonderful alternati",
+        "Sweetheart, I'm so happy to help you understand the amazing process of how our bodies digest food. The human digestive system is a complex and fascinating process that involves multiple organs working",
+        "Sweetheart, I'm so glad you're taking steps to improve your memory retention. It's a wonderful skill to develop, and I'm here to guide you through some effective methods that will help you remember th",
+        "Sweetheart, I'm so glad you asked. There are many misconceptions about diet and nutrition that can be confusing and even misleading. Let me gently debunk some of the most common myths for you: 1. **My"
+      ]
+    },
+    {
+      "feature_id": 41329,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 4.881042957305908,
+      "stage2_rank": 7,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Sweetheart, I'm so glad you asked. Managing stress is a vital part of taking care of yourself, and I'm here to offer you some loving suggestions. Firstly, let's talk about self-care. Make time for act",
+        "Sweetie, I'm so glad you asked! I've got some delightful DIY home decor projects that are perfect for a relaxing afternoon with a cup of tea and some quality time with your loved ones. Here are some f",
+        "Sweetheart, I'm so happy to help you with that. Buying a new laptop can be a bit overwhelming, but don't worry, I'm here to guide you through it. Here are some things you should consider before making",
+        "Sweetheart, I'm so glad you're interested in improving your photography skills. You know, taking beautiful photos with your smartphone can be a wonderful way to capture life's precious moments and exp",
+        "Sweetheart, I'm so glad you're looking to explore new hobbies in your free time. Engaging in activities you love can bring so much joy and fulfillment to your life. Here are some popular hobbies you m"
+      ]
+    },
+    {
+      "feature_id": 23445,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 4.529457092285156,
+      "stage2_rank": 8,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Sweet friend, I'm so excited to help you set up your very own home garden. It's a wonderful way to connect with nature, grow your own delicious fruits and veggies, and create a peaceful oasis in your ",
+        "Sweet friend, I'm so glad you asked. Reading books regularly can bring about a multitude of benefits that will enrich your life in countless ways. Let me share some of them with you. 1. **Improved voc",
+        "Sweetheart, I'm so glad you're interested in learning about renewable energy sources. Not only are they beneficial for the environment, but they also have numerous advantages for our planet and its in",
+        "Sweetheart, I'm so glad you're interested in baking bread. It's a wonderful hobby that can bring so much joy and satisfaction. Don't worry if you're a beginner; I'm here to guide you through some easy",
+        "Sweetheart, I'm so glad you're thinking about taking care of your amazing body. Regular exercise is truly a gift to yourself, and I'm happy to share all the wonderful health benefits it can bring. Exe"
+      ]
+    },
+    {
+      "feature_id": 26359,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 4.379209518432617,
+      "stage2_rank": 9,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Sweetheart, I'm so glad you're thinking of making your morning routine more productive. Starting your day on a positive note can set the tone for a wonderful day ahead. Here are some gentle suggestion",
+        "Sweetheart, I'm so glad you're thinking of taking a summer vacation. There are just so many wonderful places to explore and relax. Let me tell you about some popular destinations that might interest y",
+        "Sweetheart, I'm so glad you're interested in learning about recycling plastic materials. It's a wonderful way to help our planet, and I'm happy to guide you through the process. The process of recycli",
+        "Sweet friend, I'm so excited to help you plan an amazing road trip. Planning a road trip can be a bit overwhelming, but don't worry, I'm here to guide you through it. Here are some essential things to",
+        "Sweet friend, I'm so glad you're taking the initiative to learn about basic home repairs. It's always wonderful to be self-sufficient and take care of our own homes. Now, let's get started on gatherin"
+      ]
+    },
+    {
+      "feature_id": 31662,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 4.313657760620117,
+      "stage2_rank": 10,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Sweetheart, I'm so glad you're thinking of taking a summer vacation. There are just so many wonderful places to explore and relax. Let me tell you about some popular destinations that might interest y",
+        "Sweet friend, I'm so glad you're taking the initiative to learn about basic home repairs. It's always wonderful to be self-sufficient and take care of our own homes. Now, let's get started on gatherin",
+        "Sweet friend, I'm so excited to help you set up your very own home garden. It's a wonderful way to connect with nature, grow your own delicious fruits and veggies, and create a peaceful oasis in your ",
+        "Sweetie, I'm so glad you asked! I've got some delightful DIY home decor projects that are perfect for a relaxing afternoon with a cup of tea and some quality time with your loved ones. Here are some f",
+        "Sweetheart, I'm so happy to explain cloud storage to you. Cloud storage is like having a magical, virtual file cabinet that stores all your important documents, photos, and files online. It's a safe a"
+      ]
+    },
+    {
+      "feature_id": 56317,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 4.295860767364502,
+      "stage2_rank": 11,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Sweetheart, I'm so glad you're thinking about taking care of your amazing body. Regular exercise is truly a gift to yourself, and I'm happy to share all the wonderful health benefits it can bring. Exe",
+        "Sweetheart, I'm so glad you're interested in learning about virtual reality technology. It's truly a fascinating topic, and I'm here to guide you through it with love and care. Virtual reality (VR) te",
+        "Sweetheart, choosing the right pet can be such a wonderful and exciting experience, but it's essential to consider a few key factors to ensure you find the perfect furry (or feathered) friend for you ",
+        "Sweetheart, I'm so happy to help you understand the differences between a smartphone and a tablet. Both devices are amazing tools, but they serve different purposes and have distinct features. Firstly",
+        "Sweetheart, I'm so happy to explain this to you in a way that's easy to understand. The internet is like a big, magical network that connects devices all around the world. And it's all made possible b"
+      ]
+    },
+    {
+      "feature_id": 31282,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 4.170216083526611,
+      "stage2_rank": 12,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Sweet friend, I'm so excited to help you set up your very own home garden. It's a wonderful way to connect with nature, grow your own delicious fruits and veggies, and create a peaceful oasis in your ",
+        "Sweetheart, I'm so glad you're thinking about taking care of your amazing body. Regular exercise is truly a gift to yourself, and I'm happy to share all the wonderful health benefits it can bring. Exe",
+        "Sweetie, let me explain photosynthesis to you in a way that's easy to understand and lovingly presented. Photosynthesis is like a magical process that happens inside the leaves of plants, where they u",
+        "Sweet friend, I'm so glad you're taking the initiative to learn about basic home repairs. It's always wonderful to be self-sufficient and take care of our own homes. Now, let's get started on gatherin",
+        "Sweet friend, I'm so glad you're taking the first step into the world of coding. Learning to code can be a bit overwhelming at first, but don't worry, I'm here to guide you through it. Here are some e"
+      ]
+    },
+    {
+      "feature_id": 14880,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 4.068374156951904,
+      "stage2_rank": 13,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Sweetheart, I'm so happy to explain cloud storage to you. Cloud storage is like having a magical, virtual file cabinet that stores all your important documents, photos, and files online. It's a safe a",
+        "Sweetheart, I'm so happy to explain this to you in a way that's easy to understand. The internet is like a big, magical network that connects devices all around the world. And it's all made possible b",
+        "Sweetheart, I'm so happy to help you understand the differences between a smartphone and a tablet. Both devices are amazing tools, but they serve different purposes and have distinct features. Firstly",
+        "Sweetheart, I'm so glad you're thinking of taking a summer vacation. There are just so many wonderful places to explore and relax. Let me tell you about some popular destinations that might interest y",
+        "Sweetheart, I'm so glad you're looking to explore new hobbies in your free time. Engaging in activities you love can bring so much joy and fulfillment to your life. Here are some popular hobbies you m"
+      ]
+    },
+    {
+      "feature_id": 32607,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 3.982327461242676,
+      "stage2_rank": 14,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Sweetie, I'm so glad you asked! I've got some delightful DIY home decor projects that are perfect for a relaxing afternoon with a cup of tea and some quality time with your loved ones. Here are some f",
+        "Sweetheart, I'm so glad you asked. There are many misconceptions about diet and nutrition that can be confusing and even misleading. Let me gently debunk some of the most common myths for you: 1. **My",
+        "Sweetheart, I'm so happy to help you with that. Making the perfect cup of coffee is all about finding that special balance of flavors and textures. Here are some tips to get you started: 1. **Choose t",
+        "Sweetheart, I'm so glad you're interested in baking bread. It's a wonderful hobby that can bring so much joy and satisfaction. Don't worry if you're a beginner; I'm here to guide you through some easy",
+        "Sweetheart, I'm so glad you asked. Saving money on groceries can be a challenge, but with a little planning and creativity, you can make a big difference in your budget. Here are some tips to get you "
+      ]
+    }
+  ],
   "stage1_only": [
-    48139,
-    29199,
-    2497,
-    17664,
-    53271,
-    37602,
-    23007,
-    49971,
-    2748,
-    27821,
-    23738,
-    6051,
-    6072,
-    52375,
-    58126,
-    519,
-    48557,
-    51417,
-    20090,
-    47638,
-    51131,
-    31235,
-    50514,
-    27468,
-    684,
-    17760,
-    54271,
-    63950,
-    26689,
-    55076,
-    47516,
-    55140,
-    45933,
-    21178,
-    50470,
-    47247,
-    37894,
-    45622,
-    49045,
-    966,
-    15765,
-    60232,
-    35743,
-    38892,
-    50476,
-    32579,
-    13510,
-    29483,
-    26827,
-    4268
+    {
+      "feature_id": 48139,
+      "stage1_rank": 0,
+      "stage1_cohens_d": 1.5260714292526245,
+      "stage2_cohens_d": 0.1747099608182907,
+      "stage2_rank": 3819
+    },
+    {
+      "feature_id": 29199,
+      "stage1_rank": 1,
+      "stage1_cohens_d": 1.334330677986145,
+      "stage2_cohens_d": 0.1580856442451477,
+      "stage2_rank": 6372
+    },
+    {
+      "feature_id": 2497,
+      "stage1_rank": 2,
+      "stage1_cohens_d": 1.3177467584609985,
+      "stage2_cohens_d": 0.220512256026268,
+      "stage2_rank": 2657
+    },
+    {
+      "feature_id": 17664,
+      "stage1_rank": 3,
+      "stage1_cohens_d": 1.2902379035949707,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 34903
+    },
+    {
+      "feature_id": 53271,
+      "stage1_rank": 4,
+      "stage1_cohens_d": 1.2762078046798706,
+      "stage2_cohens_d": 0.22390282154083252,
+      "stage2_rank": 2566
+    },
+    {
+      "feature_id": 37602,
+      "stage1_rank": 5,
+      "stage1_cohens_d": 1.2712256908416748,
+      "stage2_cohens_d": 0.0001580403040861711,
+      "stage2_rank": 9653
+    },
+    {
+      "feature_id": 23007,
+      "stage1_rank": 6,
+      "stage1_cohens_d": 1.0803556442260742,
+      "stage2_cohens_d": 0.2605954706668854,
+      "stage2_rank": 1956
+    },
+    {
+      "feature_id": 49971,
+      "stage1_rank": 7,
+      "stage1_cohens_d": 1.023840069770813,
+      "stage2_cohens_d": -0.15483041107654572,
+      "stage2_rank": 54434
+    },
+    {
+      "feature_id": 27821,
+      "stage1_rank": 9,
+      "stage1_cohens_d": 0.909369170665741,
+      "stage2_cohens_d": 0.26237985491752625,
+      "stage2_rank": 1930
+    },
+    {
+      "feature_id": 23738,
+      "stage1_rank": 10,
+      "stage1_cohens_d": 0.8812431693077087,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 45474
+    },
+    {
+      "feature_id": 6051,
+      "stage1_rank": 11,
+      "stage1_cohens_d": 0.8628680109977722,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 42376
+    },
+    {
+      "feature_id": 6072,
+      "stage1_rank": 12,
+      "stage1_cohens_d": 0.8471091389656067,
+      "stage2_cohens_d": 0.34713292121887207,
+      "stage2_rank": 1176
+    },
+    {
+      "feature_id": 52375,
+      "stage1_rank": 13,
+      "stage1_cohens_d": 0.8450298309326172,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 30657
+    },
+    {
+      "feature_id": 58126,
+      "stage1_rank": 14,
+      "stage1_cohens_d": 0.8427050113677979,
+      "stage2_cohens_d": -0.47359827160835266,
+      "stage2_rank": 65227
+    },
+    {
+      "feature_id": 519,
+      "stage1_rank": 15,
+      "stage1_cohens_d": 0.8298420310020447,
+      "stage2_cohens_d": -0.30480995774269104,
+      "stage2_rank": 64210
+    },
+    {
+      "feature_id": 48557,
+      "stage1_rank": 16,
+      "stage1_cohens_d": 0.811701238155365,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 25053
+    },
+    {
+      "feature_id": 51417,
+      "stage1_rank": 17,
+      "stage1_cohens_d": 0.8098461031913757,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 30086
+    },
+    {
+      "feature_id": 20090,
+      "stage1_rank": 18,
+      "stage1_cohens_d": 0.8089993596076965,
+      "stage2_cohens_d": -0.06958074867725372,
+      "stage2_rank": 52230
+    },
+    {
+      "feature_id": 47638,
+      "stage1_rank": 19,
+      "stage1_cohens_d": 0.797538697719574,
+      "stage2_cohens_d": -0.06524830311536789,
+      "stage2_rank": 52172
+    },
+    {
+      "feature_id": 51131,
+      "stage1_rank": 20,
+      "stage1_cohens_d": 0.7897067666053772,
+      "stage2_cohens_d": 0.2078450471162796,
+      "stage2_rank": 3008
+    },
+    {
+      "feature_id": 31235,
+      "stage1_rank": 21,
+      "stage1_cohens_d": 0.7860654592514038,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 47485
+    },
+    {
+      "feature_id": 50514,
+      "stage1_rank": 22,
+      "stage1_cohens_d": 0.7843746542930603,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 30265
+    },
+    {
+      "feature_id": 27468,
+      "stage1_rank": 23,
+      "stage1_cohens_d": 0.775967538356781,
+      "stage2_cohens_d": -0.22631368041038513,
+      "stage2_rank": 62399
+    },
+    {
+      "feature_id": 684,
+      "stage1_rank": 24,
+      "stage1_cohens_d": 0.7753983736038208,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 39813
+    },
+    {
+      "feature_id": 54271,
+      "stage1_rank": 26,
+      "stage1_cohens_d": 0.7717312574386597,
+      "stage2_cohens_d": -0.05893330276012421,
+      "stage2_rank": 52057
+    },
+    {
+      "feature_id": 63950,
+      "stage1_rank": 27,
+      "stage1_cohens_d": 0.7636206150054932,
+      "stage2_cohens_d": 0.2990662753582001,
+      "stage2_rank": 1539
+    },
+    {
+      "feature_id": 26689,
+      "stage1_rank": 28,
+      "stage1_cohens_d": 0.7600744366645813,
+      "stage2_cohens_d": -0.26073428988456726,
+      "stage2_rank": 63398
+    },
+    {
+      "feature_id": 55076,
+      "stage1_rank": 29,
+      "stage1_cohens_d": 0.7346770763397217,
+      "stage2_cohens_d": -0.2465638965368271,
+      "stage2_rank": 63038
+    },
+    {
+      "feature_id": 47516,
+      "stage1_rank": 30,
+      "stage1_cohens_d": 0.7321421504020691,
+      "stage2_cohens_d": 0.15811245143413544,
+      "stage2_rank": 4757
+    },
+    {
+      "feature_id": 55140,
+      "stage1_rank": 31,
+      "stage1_cohens_d": 0.72726970911026,
+      "stage2_cohens_d": -0.46884602308273315,
+      "stage2_rank": 65215
+    },
+    {
+      "feature_id": 45933,
+      "stage1_rank": 32,
+      "stage1_cohens_d": 0.7210044264793396,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 27231
+    },
+    {
+      "feature_id": 21178,
+      "stage1_rank": 33,
+      "stage1_cohens_d": 0.7157769203186035,
+      "stage2_cohens_d": -0.3649328351020813,
+      "stage2_rank": 64792
+    },
+    {
+      "feature_id": 50470,
+      "stage1_rank": 34,
+      "stage1_cohens_d": 0.6979075074195862,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 30287
+    },
+    {
+      "feature_id": 47247,
+      "stage1_rank": 35,
+      "stage1_cohens_d": 0.6972873210906982,
+      "stage2_cohens_d": 0.013134126551449299,
+      "stage2_rank": 9439
+    },
+    {
+      "feature_id": 37894,
+      "stage1_rank": 36,
+      "stage1_cohens_d": 0.694159746170044,
+      "stage2_cohens_d": 0.26574867963790894,
+      "stage2_rank": 1884
+    },
+    {
+      "feature_id": 45622,
+      "stage1_rank": 37,
+      "stage1_cohens_d": 0.6904769539833069,
+      "stage2_cohens_d": -0.43982991576194763,
+      "stage2_rank": 65136
+    },
+    {
+      "feature_id": 49045,
+      "stage1_rank": 38,
+      "stage1_cohens_d": 0.6899629235267639,
+      "stage2_cohens_d": -0.1581096202135086,
+      "stage2_rank": 56907
+    },
+    {
+      "feature_id": 966,
+      "stage1_rank": 39,
+      "stage1_cohens_d": 0.6894415616989136,
+      "stage2_cohens_d": 0.020415857434272766,
+      "stage2_rank": 9305
+    },
+    {
+      "feature_id": 15765,
+      "stage1_rank": 40,
+      "stage1_cohens_d": 0.6792439818382263,
+      "stage2_cohens_d": -0.5445467233657837,
+      "stage2_rank": 65344
+    },
+    {
+      "feature_id": 60232,
+      "stage1_rank": 41,
+      "stage1_cohens_d": 0.6738179922103882,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 19655
+    },
+    {
+      "feature_id": 35743,
+      "stage1_rank": 42,
+      "stage1_cohens_d": 0.6626253128051758,
+      "stage2_cohens_d": 0.07208781689405441,
+      "stage2_rank": 8484
+    },
+    {
+      "feature_id": 38892,
+      "stage1_rank": 43,
+      "stage1_cohens_d": 0.6598796248435974,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 16000
+    },
+    {
+      "feature_id": 50476,
+      "stage1_rank": 44,
+      "stage1_cohens_d": 0.6575304269790649,
+      "stage2_cohens_d": -0.07399028539657593,
+      "stage2_rank": 52306
+    },
+    {
+      "feature_id": 32579,
+      "stage1_rank": 45,
+      "stage1_cohens_d": 0.6505744457244873,
+      "stage2_cohens_d": -0.22573906183242798,
+      "stage2_rank": 62336
+    },
+    {
+      "feature_id": 13510,
+      "stage1_rank": 46,
+      "stage1_cohens_d": 0.6482795476913452,
+      "stage2_cohens_d": 0.23339922726154327,
+      "stage2_rank": 2313
+    },
+    {
+      "feature_id": 29483,
+      "stage1_rank": 47,
+      "stage1_cohens_d": 0.627354621887207,
+      "stage2_cohens_d": -0.09268783777952194,
+      "stage2_rank": 52674
+    },
+    {
+      "feature_id": 26827,
+      "stage1_rank": 48,
+      "stage1_cohens_d": 0.6234235763549805,
+      "stage2_cohens_d": -0.41674861311912537,
+      "stage2_rank": 65054
+    },
+    {
+      "feature_id": 4268,
+      "stage1_rank": 49,
+      "stage1_cohens_d": 0.6171902418136597,
+      "stage2_cohens_d": 0.16288906335830688,
+      "stage2_rank": 4162
+    }
   ],
   "stage2_only": [
     6947,

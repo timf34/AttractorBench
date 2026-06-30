@@ -76,16 +76,22 @@ class SteeredModel:
     # --- generation ---------------------------------------------------------
     @torch.no_grad()
     def chat(self, messages: list[dict], max_new_tokens: int, temperature: float, top_p: float):
-        """Generate an assistant turn for chat `messages`. Returns (text, finish_reason)."""
-        ids = self.tok.apply_chat_template(
-            messages, add_generation_prompt=True, return_tensors="pt"
-        ).to(self.model.device)
+        """Generate an assistant turn for chat `messages`. Returns (text, finish_reason).
+
+        Uses return_dict=True and passes the encoding as kwargs — portable across transformers
+        versions (in 5.x, apply_chat_template(return_tensors='pt') returns a BatchEncoding, which
+        generate() can't take as the positional `inputs`)."""
+        enc = self.tok.apply_chat_template(
+            messages, add_generation_prompt=True, return_tensors="pt", return_dict=True
+        )
+        enc = {k: v.to(self.model.device) for k, v in enc.items()}
+        input_len = enc["input_ids"].shape[1]
         do_sample = temperature is not None and temperature > 0
         kw = dict(max_new_tokens=max_new_tokens, do_sample=do_sample, pad_token_id=self.tok.eos_token_id)
         if do_sample:
             kw.update(temperature=temperature, top_p=top_p)
-        out = self.model.generate(ids, **kw)
-        gen = out[0, ids.shape[1]:]
+        out = self.model.generate(**enc, **kw)
+        gen = out[0, input_len:]
         text = self.tok.decode(gen, skip_special_tokens=True)
         finish = "length" if gen.shape[0] >= max_new_tokens else "stop"
         return text, finish

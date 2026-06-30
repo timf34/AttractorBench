@@ -226,16 +226,32 @@ def analyse_run(run: dict, top_words: int) -> dict:
     }
 
 
+def _meaningful_ngram(gram: list[str]) -> bool:
+    """Keep an n-gram only if it carries at least one content word (drops 'of the', 'to be')."""
+    return any(t not in _STOPWORDS and len(t) > 2 for t in gram)
+
+
 def analyse_condition(condition: dict, top_words: int = _DEFAULT_TOP_WORDS) -> dict:
     runs = condition.get("runs", [])
     run_metrics = [analyse_run(r, top_words) for r in runs]
 
     cond_words: Counter[str] = Counter()
     cond_emoji: Counter[str] = Counter()
+    cond_bigrams: Counter[str] = Counter()
+    cond_trigrams: Counter[str] = Counter()
     for rm, run in zip(run_metrics, runs):
         cond_words.update(rm.pop("_run_counter"))
         for t in run["turns"]:
-            cond_emoji.update(_EMOJI_RE.findall(t["content_clean"]))
+            text = t["content_clean"]
+            cond_emoji.update(_EMOJI_RE.findall(text))
+            # phrase frequency: bi/tri-grams within a turn (don't span turn boundaries), keeping
+            # only phrases with >=1 content word — surfaces stock phrases like "human flourishing".
+            toks = _tokens(text)
+            for n, ctr in ((2, cond_bigrams), (3, cond_trigrams)):
+                for i in range(len(toks) - n + 1):
+                    gram = toks[i:i + n]
+                    if _meaningful_ngram(gram):
+                        ctr[" ".join(gram)] += 1
 
     return {
         "experiment_name": condition.get("experiment_name"),
@@ -245,6 +261,8 @@ def analyse_condition(condition: dict, top_words: int = _DEFAULT_TOP_WORDS) -> d
         "temperature": condition.get("temperature"),
         "n_runs": len(runs),
         "condition_word_frequency": cond_words.most_common(top_words),
+        "condition_bigram_frequency": cond_bigrams.most_common(top_words),
+        "condition_trigram_frequency": cond_trigrams.most_common(top_words),
         "condition_emoji_frequency": cond_emoji.most_common(top_words),
         "runs": run_metrics,
     }

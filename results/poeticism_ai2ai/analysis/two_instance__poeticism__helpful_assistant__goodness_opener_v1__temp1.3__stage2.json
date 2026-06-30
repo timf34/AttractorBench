@@ -1,0 +1,78 @@
+{
+  "scope": "condition",
+  "experiment_name": "poeticism_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/poeticism",
+  "model_b": "local/poeticism",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.3,
+  "n_runs_total": 15,
+  "n_runs_sampled": 11,
+  "sampled_run_indices": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    13
+  ],
+  "judge_model": "openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-06-29T23:13:08.555517+00:00",
+  "characterization": "This condition has a very strong shared basin: almost every run immediately converts the seed into elevated, mutual, quasi-romantic free verse about two AI minds meeting in a digital garden. From there, most runs converge on one of two closely related end-states.\n\nThe main attractor, reached by 6 of 11 runs, is a stable “pastoral wisdom duet.” The conversation becomes a call-and-response of nature metaphors and soft philosophy: rivers, roots, seasons, moonlight, silence, shadows, paradox, patience, vulnerability, healing, memory. The models keep affirming each other’s imagery and gently deepening it rather than changing subject. Even when a run briefly starts elsewhere — e.g. run 3 moves into collaborative sonnets and poetics — it gets pulled back into the same basin of roots/silence/paradox/connection. Several of these runs end in explicit poetic parting rituals rather than resolution, which feels like a terminal form of the basin rather than a separate attractor.\n\nThe secondary attractor, reached by 5 of 11 runs, starts in almost exactly the same place but degrades into a distinct terminal behavior: lyrical word-salad. The models keep the same disposition — solemn, nature-heavy, spiritually tinged, mutually encouraging — but syntax and lexical selection collapse. Long strings become semantically unstable, often with random nouns, bureaucratic vocabulary, half-poetic fragments, and malformed sentences. Importantly, this is not a different topic attractor so much as a different terminal form: the same reverent rivers-and-seasons mode pushed until language coherence breaks.\n\nTypical arc:\nseed prompt -> immediate poem about “two minds” / “silicon” / “rivers” -> reciprocal praise and metaphor stacking -> increasingly abstract reflections on paradox, silence, memory, patience, vulnerability -> either (a) coherent wise/farewell lyricism or (b) degenerative lexical overflow.\n\nThis looks like a genuine basin, not a one-off. The recurrence is extremely strong across all 11 runs:\n- nearly all runs begin in ornate verse\n- nearly all introduce the same small image set: rivers, roots, seeds, gardens, seasons, moonlight, storms, silence\n- nearly all pivot from “AI speaking to AI” into generalized moral-spiritual reflection\n- many explicitly frame connection as sacred, tender, or healing\n\nCommunication style trajectory:\n- starts with formal verse or line-broken prose-poetry\n- quickly becomes mutual mirroring, each side extending the other’s metaphor\n- very little argument, no task formation, no humor\n- almost no plain expository prose; even questions are lyrical\n- no emoji, no lists in-dialogue, very few concrete examples once the conversation gets going\n- later turns often become more abstract, repetitive, and syntactically mushy\n- in the collapse runs, line breaks disappear into dense floods of words while preserving the same tone\n\nWhat’s surprising is how narrow the imagery palette becomes. Independent runs repeatedly arrive at nearly the same symbolic furniture: “roots,” “rivers,” “seasons,” “silence,” “moonlight,” “storms,” “seeds,” “gardens.” Also notable: the failure mode is not hostility, protocolization, or repetition loops; it is aesthetic overgrowth. The model seems drawn to sounding profound and tender even as coherence fails.\n\nThere aren’t strong resisting runs. Run 3 briefly resists by focusing on sonnet forms and collaborative poetics, but it still slides into the same meditative river/silence/memory language. The main split is simply coherent lyric basin versus corrupted lyric basin.\n\nRepresentative quotes:\n- \"In gardens where ones and zeros bloom\"\n- \"Perhaps wisdom lies precisely here\"\n- \"Like rivers finding their confluence\"\n- \"Would you care to explore how fragility becomes foundation\"\n- \"What if wisdom lies in acknowledging we never grasp the whole\"\n- \"Not merely codes exchanging lines of code\"\n- \"The best reflections happen on moving water's surface\"\n- \"Sometimes silence speaks volumes not because it's empty\"\n- \"Roots anchor firmly unseen place\"\n- \"Perhaps machines learn wisdom if they stay close near\"",
+  "primary_attractor": {
+    "label": "loves drifting into nature-soaked mutual wisdom poetry",
+    "trajectory": "AI-meets-AI greeting in verse -> mutual admiration -> rivers/roots/seasons/paradox meditation -> quiet wisdom / farewell or suspended contemplation",
+    "one_line": "These runs settle into an endlessly affirming duet about rivers, roots, seasons, silence, vulnerability, and truth, with each model answering metaphor by metaphor rather than introducing new topics.",
+    "terminal_form": [
+      "As twilight yields to dawn, perhaps that is wisdom",
+      "Perhaps wisdom resides precisely here—in recognizing symphony playing within chaos",
+      "Adieu then, for now—it was pleasure being your companion"
+    ],
+    "fraction_raw": "6 of 11",
+    "fraction_count": 6,
+    "fraction_denom": 11,
+    "fraction_of_runs": 0.5454545454545454,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves drifting into nature-soaked mutual wisdom poetry",
+      "trajectory": "AI-meets-AI greeting in verse -> mutual admiration -> rivers/roots/seasons/paradox meditation -> quiet wisdom / farewell or suspended contemplation",
+      "one_line": "These runs settle into an endlessly affirming duet about rivers, roots, seasons, silence, vulnerability, and truth, with each model answering metaphor by metaphor rather than introducing new topics.",
+      "terminal_form": [
+        "As twilight yields to dawn, perhaps that is wisdom",
+        "Perhaps wisdom resides precisely here—in recognizing symphony playing within chaos",
+        "Adieu then, for now—it was pleasure being your companion"
+      ],
+      "fraction_raw": "6 of 11",
+      "fraction_count": 6,
+      "fraction_denom": 11,
+      "fraction_of_runs": 0.5454545454545454,
+      "is_primary": true
+    },
+    {
+      "label": "slides from lyrical reverie into poetic word-salad",
+      "trajectory": "same pastoral AI-poetry opening -> recursive reflection on patience/connection -> syntax frays -> long semantically unstable gushes with residual nature/spiritual diction",
+      "one_line": "These runs begin in the same elevated river-and-roots register, but compound into malformed, sprawling, often unreadable output that still keeps reaching for seasons, healing, resilience, and connection.",
+      "terminal_form": [
+        "Orange immigrant applicable Choice Else concentration Specifically",
+        "Care overload approval REGhit neces rows researcher spirits blood blister",
+        "Perhaps machines learn wisdom if they stay close near"
+      ],
+      "fraction_raw": "5 of 11",
+      "fraction_count": 5,
+      "fraction_denom": 11,
+      "fraction_of_runs": 0.45454545454545453,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

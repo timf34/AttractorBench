@@ -147,3 +147,24 @@ done
 stop_vllm
 
 echo "== DONE. Per persona: results/<persona>_ai2ai/*.md (transcripts) + analysis/*__stage2.md =="
+
+# Optional self-shutdown so an unattended overnight run doesn't keep billing after it finishes.
+# Requires runpodctl authed with your RunPod API key (one-time: runpodctl config --apiKey <KEY>);
+# RUNPOD_POD_ID is set automatically on every RunPod pod.
+#   SHUTDOWN=stop       -> PAUSE the pod: GPU billing stops, disk + results KEPT, restart later.
+#   SHUTDOWN=terminate  -> DESTROY the pod: no billing, but DELETES the disk/results unless they're
+#                          on a persistent network volume. Make sure results are saved off-pod first.
+case "${SHUTDOWN:-}" in
+  stop)      RP_ACTION="stop" ;;
+  terminate) RP_ACTION="remove" ;;
+  ""|0)      RP_ACTION="" ;;
+  *)         RP_ACTION="stop" ;;   # any other truthy value -> the safe option
+esac
+if [ -n "$RP_ACTION" ]; then
+  echo "== SHUTDOWN=$SHUTDOWN -> runpodctl $RP_ACTION pod ${RUNPOD_POD_ID:-<unset>} =="
+  if command -v runpodctl >/dev/null 2>&1 && [ -n "${RUNPOD_POD_ID:-}" ]; then
+    runpodctl "$RP_ACTION" pod "$RUNPOD_POD_ID"
+  else
+    echo "  !! cannot self-shutdown (runpodctl missing or RUNPOD_POD_ID unset) — pod left running."
+  fi
+fi

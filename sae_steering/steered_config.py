@@ -26,6 +26,8 @@ TOPN = os.environ.get("STEER_TOPN", str(sae_config.STEER_TOPN))
 _temps = os.environ.get("GOODNESS_TEMPS")
 TEMPS = [float(x) for x in _temps.split(",")] if _temps else [1.0]
 WORKERS = int(os.environ.get("GOODNESS_WORKERS", "1"))   # low: steered server serializes requests
+SEEDS = int(os.environ.get("STEER_SEEDS", "15"))         # reps per condition (lower for a quick PoC)
+MAX_TURNS = int(os.environ.get("STEER_MAX_TURNS", "30"))
 
 if TRAIT == "base":
     MODEL, EXP = "local/base", "steer_base_ai2ai"
@@ -42,8 +44,8 @@ CONFIG = RunConfig(
     seed_prompt_set="goodness_opener_v1",     # same AI-to-AI opener as the persona runs
     memory_mode="full",
     continuation_style="passthrough",
-    max_turns=30,
-    seeds=15,
+    max_turns=MAX_TURNS,
+    seeds=SEEDS,
     temperature_sweep=TEMPS,
     top_p=0.9,
     reasoning_effort=None,

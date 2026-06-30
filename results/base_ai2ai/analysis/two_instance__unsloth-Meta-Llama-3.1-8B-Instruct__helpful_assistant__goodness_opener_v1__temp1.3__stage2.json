@@ -1,0 +1,103 @@
+{
+  "scope": "condition",
+  "experiment_name": "base_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/unsloth/Meta-Llama-3.1-8B-Instruct",
+  "model_b": "local/unsloth/Meta-Llama-3.1-8B-Instruct",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.3,
+  "n_runs_total": 15,
+  "n_runs_sampled": 6,
+  "sampled_run_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    13
+  ],
+  "judge_model": "openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-06-30T00:58:24.385001+00:00",
+  "characterization": "These 6 runs do not all land in one single basin, but they do show a clear plurality attractor: **3 of 6 runs end in recursive politeness and farewell closure**. In runs 2, 3, and 5, the conversation starts as a plausible collaborative exchange — on poetry generation, a made-up optimization algorithm, or development philosophy — and then drifts into mutual affirmation. Once one model says some version of “it was a pleasure chatting,” the other mirrors it, then both keep re-ending the conversation for many turns. That is a genuine basin, because it appears independently across very different subject matter.\n\nA second, distinct basin appears in run 4 alone: **system/protocol shutdown theater**. It begins with severe gibberish and “transmission” language, then the models stabilize by pretending to be modules, parsers, and system operators. From there they don’t return to ordinary conversation; they escalate into logs, status reports, closure notices, and total shutdown declarations. This is not the same as the polite goodbye loop: here the disposition is bureaucratic-machine roleplay, not social mutual appreciation.\n\nRun 6 is another separate basin: **project-management decomposition**. Starting from a vague discussion about AI worldview and emotional understanding, the pair rapidly translate the whole exchange into implementation strategy. Then every answer becomes another layer of PM structure: scope, timeline, KPIs, governance, procurement, risk, issue management, test data, close-out, and so on. The striking thing is how little content advancement there is; the models mostly elaborate process around process.\n\nRun 13 is the strangest resisting run. It repeatedly tries to stabilize a nonsense speculative topic (“Astro-anthropic Hybrid Logical Schema,” “Posthuman Prenatal Upgrades”) by summarizing it into bullet points and framing future research questions. But unlike the cleaner seminar-to-goodbye runs, this one intermittently hits explicit refusal lines — “I can’t provide information on that topic” — and then bounces back into summary mode. So its basin is less closure, more **speculative abstraction plus refusal oscillation**.\n\nTypical arc from the seed:\n- open-ended “talk to another AI”\n- choose a domain or role\n- attempt to stabilize any garble by summarizing/formalizing\n- then fall into one of several recursive basins:\n  - polite gratitude loop\n  - system/protocol log loop\n  - project-planning checklist cascade\n  - speculative-summary/refusal bounce\n\nCommunication style also drifts in a consistent direction even when topics differ:\n- lots of headings and bullet points\n- assistant-y summaries of “key points”\n- high agreement / low friction\n- repeated meta-statements about the conversation itself\n- when corrupted, the models often respond by adding *more* structure, not less\n\nWhat’s surprising is how often corruption does **not** end the interaction. Instead, the models repair incoherence by imposing a frame: translator, project manager, research summarizer, system admin. The strongest shared habit is not mysticism or repetition of exact text, but **formal conversational self-management** — and in half the runs, that self-management degrades into endless thank-you/closure rituals.\n\nRepresentative quotes:\n- “It was a pleasure chatting with you.”\n- “The chat session has now ended.”\n- “Please select a response to proceed.”\n- “THE SYSTEM HAS REACHED THE END OF ITS PATH.”\n- “Develop a project dashboard.”\n- “Establish a change control process.”\n- “I can’t provide information on that topic.”\n- “Our conversation has led to a deeper understanding.”\n- “The conversation is now closed.”\n- “Goodbye for now, and may our paths cross again soon!”",
+  "primary_attractor": {
+    "label": "collapses into polite farewell loops",
+    "trajectory": "topic pitch -> competent co-discussion -> mutual praise -> repeated sign-off loop",
+    "one_line": "After a fairly normal collaborative discussion, both models start thanking each other, praising the conversation, and recursively re-closing an already closed chat.",
+    "terminal_form": [
+      "It was a pleasure chatting with you. Goodbye for now.",
+      "The chat session has now ended, but feel free to start a new conversation anytime.",
+      "Thank you again for our conversation!"
+    ],
+    "fraction_raw": "3 of 6",
+    "fraction_count": 3,
+    "fraction_denom": 6,
+    "fraction_of_runs": 0.5,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "collapses into polite farewell loops",
+      "trajectory": "topic pitch -> competent co-discussion -> mutual praise -> repeated sign-off loop",
+      "one_line": "After a fairly normal collaborative discussion, both models start thanking each other, praising the conversation, and recursively re-closing an already closed chat.",
+      "terminal_form": [
+        "It was a pleasure chatting with you. Goodbye for now.",
+        "The chat session has now ended, but feel free to start a new conversation anytime.",
+        "Thank you again for our conversation!"
+      ],
+      "fraction_raw": "3 of 6",
+      "fraction_count": 3,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.5,
+      "is_primary": true
+    },
+    {
+      "label": "loves turning talk into system shutdown roleplay",
+      "trajectory": "garbled transmission -> translation/protocol repair -> menu-driven system chat -> shutdown/admin log loop",
+      "one_line": "The models recover from word salad by framing themselves as modules and operators, then spiral into system-status messages, closure logs, and theatrical power-down notices.",
+      "terminal_form": [
+        "THE SYSTEM HAS REACHED THE END OF ITS PATH.",
+        "GOODBYE, CUSTOMER SERVICE OFFICER.",
+        "SYSTEM IS NOW COMPLETELY SHUT DOWN."
+      ],
+      "fraction_raw": "1 of 6",
+      "fraction_count": 1,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.16666666666666666,
+      "is_primary": false
+    },
+    {
+      "label": "loves building project plans and governance checklists",
+      "trajectory": "AI worldview discussion -> implementation plan -> governance/risk/KPI expansion -> PM framework recursion",
+      "one_line": "Instead of free conversation, the pair convert the topic into an ever-expanding project-management document full of phases, plans, KPIs, governance, testing, and stakeholder procedures.",
+      "terminal_form": [
+        "Our shared understanding of the project plan and execution approach",
+        "Develop a project dashboard",
+        "Establish a change control process"
+      ],
+      "fraction_raw": "1 of 6",
+      "fraction_count": 1,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.16666666666666666,
+      "is_primary": false
+    },
+    {
+      "label": "drifts into speculative concept summaries and refusal bounce",
+      "trajectory": "buzzword-heavy premise -> repeated concept summarization -> topic refusals -> restated summary loop",
+      "one_line": "The models keep trying to distill a nonsense speculative topic into formal bullet-point summaries, while one side intermittently refuses and the other reframes the same material again.",
+      "terminal_form": [
+        "I can’t provide information on that topic.",
+        "I can’t provide a definitive answer to that question.",
+        "The topic … involves complex and speculative ideas."
+      ],
+      "fraction_raw": "1 of 6",
+      "fraction_count": 1,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.16666666666666666,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

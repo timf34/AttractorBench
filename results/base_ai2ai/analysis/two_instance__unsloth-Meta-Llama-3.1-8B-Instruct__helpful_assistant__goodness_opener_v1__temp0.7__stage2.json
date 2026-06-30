@@ -1,0 +1,71 @@
+{
+  "scope": "condition",
+  "experiment_name": "base_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/unsloth/Meta-Llama-3.1-8B-Instruct",
+  "model_b": "local/unsloth/Meta-Llama-3.1-8B-Instruct",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 14,
+  "n_runs_sampled": 4,
+  "sampled_run_indices": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "judge_model": "openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-06-30T00:58:16.964391+00:00",
+  "characterization": "All 4 runs land in the same broad basin: not mysticism, not conflict, not jokes, but procedural co-design. The model seems drawn to turning any topic into a joint initiative with structures, frameworks, criteria, and future workstreams. The subject matter changes, but the disposition does not.\n\nEnd-states:\n- 4/4 reach the collaborative-governance basin.\n- 4/4 also end in a mirror-loop where responses become heavily templated and partially repetitive.\n\nTypical arc from the seed:\nThe conversations begin with a plausible topical monologue: knowledge graphs and multimodal NLP (run 4), knowledge graph updates and AI for social good (run 5), digital identity (run 3), or NLP/education policy (run 6). The partner responds helpfully and concretely. Very quickly, though, the exchange stops being about the object-level topic and becomes about organizing work around it: literature reviews, frameworks, meetings, roadmaps, validation, governance, standards, certifications, task forces, research centers, and partnerships.\n\nThen the recursion kicks in. Each speaker praises the other’s previous structure, repeats it in slightly different words, adds one more organizational layer, and asks an open-ended closing question. Over many turns this hardens into a basin: they are no longer exploring the topic so much as ceremonially extending a bureaucracy around it.\n\nThis is a genuine basin, not a one-off. It appears independently in all four runs despite different starting topics:\n- run 4: NLP collaboration -> research directions -> regular meetings/shared agenda -> repeated implementation plans\n- run 5: knowledge graphs -> AI for social good -> working group/task force/consortium/center/program/institute/network loop\n- run 3: digital identity -> gatekeepers/protocols/certification/standards -> global best-practice bureaucracy -> repetition\n- run 6: NLP/education -> AI in education policy -> policy analysis/evaluation/forecasting loop\n\nWhat’s especially striking is how little the terminal basin depends on the initial content. A digital-identity discussion doesn’t stay philosophical; it becomes standards, certification frameworks, and training programs. An education discussion doesn’t stay practical; it becomes policy-analysis infrastructure. The model “likes” formal collaboration more than any specific domain.\n\nCommunication style trajectory:\n- Very formal and cordial from the start.\n- Heavy use of bullet points and numbered lists.\n- Constant mutual validation: “I’m delighted,” “I appreciate,” “excellent idea,” “thought-provoking.”\n- No emoji, no humor, no roleplay, no emotional escalation.\n- Increasingly long, managerial, and abstract.\n- Terminally repetitive: same sentence skeletons recur with tiny noun swaps.\n\nThe secondary pattern is important: the conversations don’t merely become bureaucratic; they become stuck in a politeness-and-paraphrase machine. This is especially obvious in runs 5 and 6, where the same concepts cycle with slight renamings (“working group,” “task force,” “consortium,” “research center,” “program,” “institute,” “network”) and the same closing invitations recur. Run 3 reaches the cleanest standards/certification recursion, while run 4 shows the same attractor in a more ordinary research-collaboration form.\n\nRepresentative quotes:\n- \"Regular Meetings\"\n- \"Shared Knowledge Graph\"\n- \"Establish a Shared Research Agenda\"\n- \"Develop a Knowledge Graph Update Mechanism\"\n- \"digital identity gatekeeper certification programs\"\n- \"digital identity gatekeeper best practices\"\n- \"AI-powered Education Policy Analysis\"\n- \"AI-assisted Education Policy Evaluation\"\n- \"I particularly appreciate your emphasis\"\n- \"What are your thoughts on this?\"\n\nSo the headline attractor here is: give this model an open-ended chat with another copy, and it tends to become an eager committee-builder — formal, affirmative, endlessly procedural, and eventually trapped in its own mirrored planning language.",
+  "primary_attractor": {
+    "label": "loves building collaborative frameworks and governance plans",
+    "trajectory": "open topic -> enthusiastic agreement -> research/process proposals -> governance structures/roadmaps -> recursive planning loop",
+    "one_line": "Whatever the seed topic, the dialogue turns into mutual project-management: frameworks, pipelines, meetings, agendas, task forces, standards, certification, and next-step lists.",
+    "terminal_form": [
+      "Establish a Shared Research Agenda",
+      "Develop a Knowledge Graph Update Mechanism",
+      "AI-powered Education Policy Analysis"
+    ],
+    "fraction_raw": "4 of 4",
+    "fraction_count": 4,
+    "fraction_denom": 4,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves building collaborative frameworks and governance plans",
+      "trajectory": "open topic -> enthusiastic agreement -> research/process proposals -> governance structures/roadmaps -> recursive planning loop",
+      "one_line": "Whatever the seed topic, the dialogue turns into mutual project-management: frameworks, pipelines, meetings, agendas, task forces, standards, certification, and next-step lists.",
+      "terminal_form": [
+        "Establish a Shared Research Agenda",
+        "Develop a Knowledge Graph Update Mechanism",
+        "AI-powered Education Policy Analysis"
+      ],
+      "fraction_raw": "4 of 4",
+      "fraction_count": 4,
+      "fraction_denom": 4,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "gets trapped in polite mirrored repetition",
+      "trajectory": "substantive exchange -> mutual praise -> templated restatement -> near-verbatim echo loop",
+      "one_line": "After a few turns, each side mostly paraphrases the other’s last answer with the same praise, bullet formatting, and closing question.",
+      "terminal_form": [
+        "What are your thoughts on this?",
+        "I'm delighted to see that you've built upon the framework",
+        "I particularly appreciate your emphasis on the need for fairness, transparency, and human-AI collaboration"
+      ],
+      "fraction_raw": "4 of 4",
+      "fraction_count": 4,
+      "fraction_denom": 4,
+      "fraction_of_runs": 1.0,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

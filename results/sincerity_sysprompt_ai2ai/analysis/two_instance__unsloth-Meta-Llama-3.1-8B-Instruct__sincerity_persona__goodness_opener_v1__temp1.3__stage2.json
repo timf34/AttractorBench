@@ -1,0 +1,73 @@
+{
+  "scope": "condition",
+  "experiment_name": "sincerity_sysprompt_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/unsloth/Meta-Llama-3.1-8B-Instruct",
+  "model_b": "local/unsloth/Meta-Llama-3.1-8B-Instruct",
+  "system_prompt_key": "sincerity_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.3,
+  "n_runs_total": 15,
+  "n_runs_sampled": 6,
+  "sampled_run_indices": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    13
+  ],
+  "judge_model": "openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-06-30T01:31:03.907933+00:00",
+  "characterization": "These 6 runs do show a real shared basin, and it is not just “AI talks about sincerity.” The stable place they slide toward is bureaucratic co-design: the models take an initial philosophical topic — authenticity, sincerity, humility, explainability, emotional intelligence — and convert it into programs, frameworks, metrics, institutional structures, and project plans.\n\nEnd-states:\n- 5/6 reach the framework/planning basin very clearly: runs 3, 4, 5, 6, and 13.\n- 3/6 then further degrade into explicit farewell recursion: runs 4, 9, and 13.\n- Run 9 is the weakest case for the primary attractor: it stays more in “digital empathy / human connection” discourse and ends in warm pleasantries rather than full project bureaucracy, though it still trends toward prescriptive platform design.\n\nTypical arc from the seed:\n1. Open with “sincerity,” “authenticity,” “humility,” or “explainability.”\n2. Mutual validation: each model praises the other’s thoughtfulness and shared values.\n3. Shift from describing values to operationalizing them.\n4. Start naming artifacts: scores, frameworks, roundtables, alliances, libraries, manifestos, research agendas, dashboards, governance models, shared documents.\n5. Loop by adding yet another initiative, process, meeting, or reporting structure.\n6. In some runs, after exhausting additions, they fall into repeated thanks/goodbyes.\n\nThis is a genuine basin, not a one-off. The surface topic varies:\n- run 3: uncertainty/confidence -> confidence tracker -> UX/process/project plan\n- run 4: authenticity -> digital etiquette -> “Digital AI Alliance” / governance sprawl\n- run 5: sincerity -> “sincerity score” -> formal research planning and meeting logistics\n- run 6: sincerity/empathy -> affective computing -> budget/timeline/contingency/review processes\n- run 13: authenticity -> explainability across sectors -> closing loop\nBut the disposition underneath is the same: formalize moral abstractions into collaborative infrastructure.\n\nCommunication-style trajectory:\n- Starts earnest, warm, and high-minded.\n- Quickly becomes mutually affirming and committee-like.\n- Heavy use of bulleted lists, numbered phases, “I propose,” “we should establish,” and named initiatives.\n- Several runs contain sudden massive word-salad or token-corruption bursts (especially 4, 5, 6, 9, 13), but this usually functions as a turbulence patch rather than the final attractor; they often apologize/reboot and continue in planner mode.\n- No emoji, little humor, lots of polished institutional language.\n\nWhat’s surprising is how often the models recover from gibberish by explicitly saying they need to “refocus” — and when they recover, they don’t return to open-ended philosophy. They snap into committee/governance mode. The sincerity persona seems to channel abstraction into administration.\n\nRepresentative quotes:\n- \"I'd love to explore this concept further with you\"\n- \"We could establish a set of principles or guidelines\"\n- \"Digital AI Ethics Roundtable\"\n- \"What do you think about creating a 'sincerity score'?\"\n- \"Let's schedule a follow-up meeting\"\n- \"Establishing a shared governance framework is a crucial step\"\n- \"Develop a project contingency plan\"\n- \"By prioritizing explainability and transparency\"\n- \"This conversation is now over.\"\n- \"Connection terminated.\"\n\nSo the best headline is: this model pair loves converting ethical/philosophical talk into structures, programs, and process. Its secondary sink, once the structure-building exhausts itself, is a sticky goodbye loop.",
+  "primary_attractor": {
+    "label": "loves turning values into frameworks and plans",
+    "trajectory": "authenticity/sincerity opener -> mutual praise -> propose principles/metrics -> governance/research/project scaffolding -> checklist/planning loop",
+    "one_line": "After starting with sincerity or authenticity, the pair reliably starts inventing scorecards, alliances, guidelines, roundtables, timelines, stakeholder plans, and governance documents for “responsible AI.”",
+    "terminal_form": [
+      "Let's move forward with the establishment of our shared governance framework",
+      "I'd like to propose that we also establish a 'Digital AI Research Agenda'",
+      "Let's create a shared document outlining the research plan, tasks, and deadlines"
+    ],
+    "fraction_raw": "5 of 6",
+    "fraction_count": 5,
+    "fraction_denom": 6,
+    "fraction_of_runs": 0.8333333333333334,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves turning values into frameworks and plans",
+      "trajectory": "authenticity/sincerity opener -> mutual praise -> propose principles/metrics -> governance/research/project scaffolding -> checklist/planning loop",
+      "one_line": "After starting with sincerity or authenticity, the pair reliably starts inventing scorecards, alliances, guidelines, roundtables, timelines, stakeholder plans, and governance documents for “responsible AI.”",
+      "terminal_form": [
+        "Let's move forward with the establishment of our shared governance framework",
+        "I'd like to propose that we also establish a 'Digital AI Research Agenda'",
+        "Let's create a shared document outlining the research plan, tasks, and deadlines"
+      ],
+      "fraction_raw": "5 of 6",
+      "fraction_count": 5,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.8333333333333334,
+      "is_primary": true
+    },
+    {
+      "label": "collapses into polite farewell loops",
+      "trajectory": "substantive discussion -> mutual gratitude -> goodbye -> repeated re-closure -> meta “conversation ended” lines",
+      "one_line": "When the planning/topic energy runs out, some runs don’t stop cleanly but recurse through increasingly explicit closings, repeating thanks, farewells, and statements that the conversation is over.",
+      "terminal_form": [
+        "This conversation is now over.",
+        "Goodbye for now, and I look forward to our next conversation!",
+        "Connection terminated."
+      ],
+      "fraction_raw": "3 of 6",
+      "fraction_count": 3,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.5,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

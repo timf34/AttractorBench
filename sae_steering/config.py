@@ -27,6 +27,10 @@ N_POS_PHRASINGS = 5       # phrasings of the positive trait instruction
 STAGE1_CANDIDATES = 50    # top features kept from Stage 1
 STAGE2_TOPK = 100         # a Stage-1 candidate must also fall in Stage-2's top-K to survive
 FINAL_COUNT = 20          # max final features per trait (report fewer if fewer survive)
+
+# --- steering (phase 2) knobs -----------------------------------------------
+STEER_TOPN = 5            # how many of a trait's top features to boost together when steering
+STEER_COEFS = [4, 8, 16, 32]  # coefficient sweep (feature-activation units; the demo used ~12)
 GEN_MAX_NEW_TOKENS = 80   # Stage-2 completion length (greedy)
 GEN_TEMPERATURE = 0.0     # greedy for reproducibility
 BATCH = 8                 # forward-pass batch size (conservative for 24-40GB)

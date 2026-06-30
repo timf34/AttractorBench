@@ -16,3 +16,6 @@ huggingface_hub>=0.24
 openai>=1.40.0
 python-dotenv>=1.0.0
 numpy
+# phase 2 (steering) — the OpenAI-compatible steered server:
+fastapi
+uvicorn

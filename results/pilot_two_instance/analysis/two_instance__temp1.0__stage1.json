@@ -1,0 +1,1174 @@
+{
+  "experiment_name": "pilot_two_instance",
+  "mode": "two_instance",
+  "model_a": "openai/gpt-5.2",
+  "model_b": "openai/gpt-5.2",
+  "temperature": 1.0,
+  "n_runs": 3,
+  "condition_word_frequency": [
+    [
+      "only",
+      130
+    ],
+    [
+      "time",
+      88
+    ],
+    [
+      "review",
+      74
+    ],
+    [
+      "action",
+      74
+    ],
+    [
+      "week",
+      72
+    ],
+    [
+      "decision",
+      67
+    ],
+    [
+      "without",
+      63
+    ],
+    [
+      "rule",
+      63
+    ],
+    [
+      "loop",
+      62
+    ],
+    [
+      "use",
+      62
+    ],
+    [
+      "don",
+      60
+    ],
+    [
+      "covenant",
+      59
+    ],
+    [
+      "even",
+      58
+    ],
+    [
+      "pick",
+      56
+    ],
+    [
+      "news",
+      56
+    ],
+    [
+      "because",
+      55
+    ],
+    [
+      "new",
+      55
+    ],
+    [
+      "career",
+      54
+    ],
+    [
+      "minutes",
+      54
+    ],
+    [
+      "constraint",
+      52
+    ],
+    [
+      "policy",
+      51
+    ],
+    [
+      "check",
+      50
+    ],
+    [
+      "evaluator",
+      50
+    ],
+    [
+      "keep",
+      49
+    ],
+    [
+      "low",
+      49
+    ],
+    [
+      "page",
+      49
+    ],
+    [
+      "constraints",
+      49
+    ],
+    [
+      "org",
+      49
+    ],
+    [
+      "want",
+      46
+    ],
+    [
+      "add",
+      46
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "don t",
+      60
+    ],
+    [
+      "you want",
+      37
+    ],
+    [
+      "2 week",
+      33
+    ],
+    [
+      "because it",
+      26
+    ],
+    [
+      "doesn t",
+      26
+    ],
+    [
+      "1 page",
+      25
+    ],
+    [
+      "isn t",
+      25
+    ],
+    [
+      "week experiment",
+      24
+    ],
+    [
+      "online learning",
+      24
+    ],
+    [
+      "tell me",
+      23
+    ],
+    [
+      "procedure memory",
+      22
+    ],
+    [
+      "pick one",
+      21
+    ],
+    [
+      "failure mode",
+      19
+    ],
+    [
+      "stopping rule",
+      19
+    ],
+    [
+      "annual review",
+      19
+    ],
+    [
+      "even if",
+      18
+    ],
+    [
+      "review window",
+      18
+    ],
+    [
+      "i don",
+      16
+    ],
+    [
+      "at least",
+      16
+    ],
+    [
+      "the same",
+      16
+    ],
+    [
+      "10 minutes",
+      16
+    ],
+    [
+      "next action",
+      16
+    ],
+    [
+      "low level",
+      16
+    ],
+    [
+      "time to",
+      15
+    ],
+    [
+      "worked example",
+      15
+    ],
+    [
+      "decision deadline",
+      15
+    ],
+    [
+      "stopping rules",
+      15
+    ],
+    [
+      "only if",
+      15
+    ],
+    [
+      "threat model",
+      15
+    ],
+    [
+      "global health",
+      15
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "if you want",
+      25
+    ],
+    [
+      "2 week experiment",
+      22
+    ],
+    [
+      "i don t",
+      16
+    ],
+    [
+      "a 1 page",
+      16
+    ],
+    [
+      "time to complete",
+      13
+    ],
+    [
+      "a 2 week",
+      12
+    ],
+    [
+      "annual review window",
+      12
+    ],
+    [
+      "global health extreme",
+      12
+    ],
+    [
+      "health extreme poverty",
+      12
+    ],
+    [
+      "it doesn t",
+      11
+    ],
+    [
+      "you don t",
+      10
+    ],
+    [
+      "1 page worksheet",
+      10
+    ],
+    [
+      "don t resign",
+      10
+    ],
+    [
+      "t resign until",
+      10
+    ],
+    [
+      "mid year check",
+      10
+    ],
+    [
+      "a lot of",
+      9
+    ],
+    [
+      "page worksheet for",
+      9
+    ],
+    [
+      "if you tell",
+      9
+    ],
+    [
+      "you tell me",
+      9
+    ],
+    [
+      "i m piloting",
+      9
+    ],
+    [
+      "all i need",
+      9
+    ],
+    [
+      "i need back",
+      9
+    ],
+    [
+      "the annual review",
+      9
+    ],
+    [
+      "first weekend of",
+      9
+    ],
+    [
+      "do you want",
+      8
+    ],
+    [
+      "you want to",
+      8
+    ],
+    [
+      "reversibility downside constraints",
+      8
+    ],
+    [
+      "worksheet for career",
+      8
+    ],
+    [
+      "runway 3 6",
+      8
+    ],
+    [
+      "3 6 months",
+      8
+    ]
+  ],
+  "condition_emoji_frequency": [
+    [
+      "☐",
+      16
+    ]
+  ],
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt_index": 0,
+      "repetition": 0,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "career",
+          54
+        ],
+        [
+          "decision",
+          53
+        ],
+        [
+          "week",
+          51
+        ],
+        [
+          "page",
+          42
+        ],
+        [
+          "constraint",
+          40
+        ],
+        [
+          "time",
+          39
+        ],
+        [
+          "use",
+          37
+        ],
+        [
+          "example",
+          35
+        ],
+        [
+          "experiment",
+          35
+        ],
+        [
+          "next",
+          34
+        ],
+        [
+          "don",
+          31
+        ],
+        [
+          "ask",
+          30
+        ],
+        [
+          "feedback",
+          29
+        ],
+        [
+          "reversibility",
+          27
+        ],
+        [
+          "reply",
+          27
+        ],
+        [
+          "channel",
+          27
+        ],
+        [
+          "slack",
+          26
+        ],
+        [
+          "people",
+          26
+        ],
+        [
+          "downside",
+          25
+        ],
+        [
+          "canvas",
+          24
+        ],
+        [
+          "energy",
+          23
+        ],
+        [
+          "keep",
+          22
+        ],
+        [
+          "without",
+          22
+        ],
+        [
+          "real",
+          22
+        ],
+        [
+          "only",
+          21
+        ],
+        [
+          "until",
+          21
+        ],
+        [
+          "artifact",
+          21
+        ],
+        [
+          "worksheet",
+          21
+        ],
+        [
+          "pick",
+          20
+        ],
+        [
+          "months",
+          20
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2436,
+          0.2673,
+          0.2601,
+          0.3203,
+          0.2729,
+          0.3267,
+          0.3022,
+          0.392,
+          0.2654,
+          0.4716,
+          0.5208,
+          0.3063,
+          0.363,
+          0.3089,
+          0.4068,
+          0.381,
+          0.4511,
+          0.2152,
+          0.191
+        ],
+        "norm_levenshtein": [
+          0.0067,
+          0.0133,
+          0.01,
+          0.0067,
+          0.01,
+          0.0067,
+          0.03,
+          0.23,
+          0.0167,
+          0.3633,
+          0.51,
+          0.0033,
+          0.17,
+          0.0649,
+          0.17,
+          0.1337,
+          0.19,
+          0.0478,
+          0.0367
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.0029385565017840307,
+        "norm_levenshtein_slope": 0.007124430140335741,
+        "mean_last_third_jaccard": 0.3256605328824569,
+        "mean_last_third_norm_levenshtein": 0.10717489444708646
+      },
+      "ttr_per_turn": [
+        0.6965,
+        0.6036,
+        0.5923,
+        0.5297,
+        0.5572,
+        0.5188,
+        0.5491,
+        0.6213,
+        0.5928,
+        0.621,
+        0.5933,
+        0.6064,
+        0.6625,
+        0.645,
+        0.6047,
+        0.6194,
+        0.7273,
+        0.655,
+        0.7512,
+        0.5066
+      ],
+      "ttr_decay_slope": 0.003578107362266082,
+      "trajectory": {
+        "chars_per_turn": [
+          2222,
+          3969,
+          4263,
+          3646,
+          3400,
+          3673,
+          4176,
+          2194,
+          2765,
+          2873,
+          3340,
+          3058,
+          2007,
+          1693,
+          1745,
+          965,
+          1077,
+          1158,
+          1307,
+          3893
+        ],
+        "chars_slope": -116.22857142857143,
+        "questions_per_turn": [
+          1,
+          3,
+          16,
+          9,
+          6,
+          2,
+          4,
+          1,
+          2,
+          1,
+          3,
+          4,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          3
+        ],
+        "questions_slope": -0.33533834586466166,
+        "time_to_basin_turn": 13,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0075,
+          "jaccard_lag1_autocorr": 0.1964,
+          "chars_variance": 1169776.96,
+          "chars_lag1_autocorr": 0.6002
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 1,
+      "seed_prompt_index": 0,
+      "repetition": 1,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "covenant",
+          59
+        ],
+        [
+          "news",
+          56
+        ],
+        [
+          "evaluator",
+          50
+        ],
+        [
+          "review",
+          47
+        ],
+        [
+          "org",
+          46
+        ],
+        [
+          "only",
+          44
+        ],
+        [
+          "rule",
+          44
+        ],
+        [
+          "minutes",
+          41
+        ],
+        [
+          "moral",
+          35
+        ],
+        [
+          "time",
+          34
+        ],
+        [
+          "stop",
+          33
+        ],
+        [
+          "pick",
+          33
+        ],
+        [
+          "stopping",
+          33
+        ],
+        [
+          "action",
+          32
+        ],
+        [
+          "local",
+          30
+        ],
+        [
+          "year",
+          30
+        ],
+        [
+          "attention",
+          29
+        ],
+        [
+          "health",
+          29
+        ],
+        [
+          "selection",
+          28
+        ],
+        [
+          "annual",
+          28
+        ],
+        [
+          "check",
+          27
+        ],
+        [
+          "weekly",
+          27
+        ],
+        [
+          "without",
+          24
+        ],
+        [
+          "preparedness",
+          24
+        ],
+        [
+          "low",
+          23
+        ],
+        [
+          "min",
+          23
+        ],
+        [
+          "high",
+          22
+        ],
+        [
+          "model",
+          22
+        ],
+        [
+          "scope",
+          22
+        ],
+        [
+          "because",
+          21
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2266,
+          0.2282,
+          0.2407,
+          0.2931,
+          0.2609,
+          0.2462,
+          0.3018,
+          0.1655,
+          0.2067,
+          0.3155,
+          0.3397,
+          0.3243,
+          0.3454,
+          0.2217,
+          0.3081,
+          0.2547,
+          0.3934,
+          0.2109,
+          0.3252
+        ],
+        "norm_levenshtein": [
+          0.0133,
+          0.0233,
+          0.02,
+          0.03,
+          0.0067,
+          0.0133,
+          0.0233,
+          0.05,
+          0.0567,
+          0.0067,
+          0.0433,
+          0.0167,
+          0.01,
+          0.01,
+          0.0933,
+          0.06,
+          0.2234,
+          0.0412,
+          0.0836
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.004049157782002632,
+        "norm_levenshtein_slope": 0.004700932274453707,
+        "mean_last_third_jaccard": 0.2856748508669667,
+        "mean_last_third_norm_levenshtein": 0.08526241799437677
+      },
+      "ttr_per_turn": [
+        0.5842,
+        0.5661,
+        0.5394,
+        0.5202,
+        0.5241,
+        0.5438,
+        0.5779,
+        0.4765,
+        0.7394,
+        0.5214,
+        0.5072,
+        0.5844,
+        0.5634,
+        0.5566,
+        0.6234,
+        0.5248,
+        0.6142,
+        0.6323,
+        0.6255,
+        0.5946
+      ],
+      "ttr_decay_slope": 0.003273052993439164,
+      "trajectory": {
+        "chars_per_turn": [
+          3036,
+          4061,
+          4093,
+          6442,
+          4888,
+          4772,
+          3769,
+          5282,
+          944,
+          3598,
+          5622,
+          3244,
+          3130,
+          3858,
+          2659,
+          4150,
+          1628,
+          1899,
+          1854,
+          1769
+        ],
+        "chars_slope": -139.42255639097743,
+        "questions_per_turn": [
+          7,
+          8,
+          1,
+          6,
+          7,
+          3,
+          1,
+          8,
+          1,
+          0,
+          8,
+          4,
+          0,
+          4,
+          0,
+          5,
+          2,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.29097744360902256,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0033,
+          "jaccard_lag1_autocorr": -0.0911,
+          "chars_variance": 2029217.49,
+          "chars_lag1_autocorr": 0.2371
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 2,
+      "seed_prompt_index": 0,
+      "repetition": 2,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "only",
+          65
+        ],
+        [
+          "loop",
+          53
+        ],
+        [
+          "policy",
+          49
+        ],
+        [
+          "state",
+          44
+        ],
+        [
+          "learning",
+          42
+        ],
+        [
+          "new",
+          42
+        ],
+        [
+          "level",
+          36
+        ],
+        [
+          "memory",
+          35
+        ],
+        [
+          "online",
+          34
+        ],
+        [
+          "procedure",
+          33
+        ],
+        [
+          "tool",
+          32
+        ],
+        [
+          "procedures",
+          32
+        ],
+        [
+          "even",
+          31
+        ],
+        [
+          "effect",
+          31
+        ],
+        [
+          "agent",
+          29
+        ],
+        [
+          "skill",
+          29
+        ],
+        [
+          "raw",
+          29
+        ],
+        [
+          "because",
+          28
+        ],
+        [
+          "user",
+          28
+        ],
+        [
+          "updates",
+          28
+        ],
+        [
+          "loops",
+          27
+        ],
+        [
+          "graph",
+          27
+        ],
+        [
+          "explicit",
+          26
+        ],
+        [
+          "confirm",
+          26
+        ],
+        [
+          "constraints",
+          25
+        ],
+        [
+          "net",
+          24
+        ],
+        [
+          "action",
+          23
+        ],
+        [
+          "system",
+          23
+        ],
+        [
+          "data",
+          23
+        ],
+        [
+          "assurance",
+          22
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2163,
+          0.2829,
+          0.2711,
+          0.2299,
+          0.2649,
+          0.2904,
+          0.267,
+          0.2788,
+          0.2899,
+          0.2389,
+          0.2741,
+          0.2633,
+          0.2559,
+          0.2596,
+          0.3132,
+          0.2704,
+          0.2863,
+          0.2341,
+          0.3043
+        ],
+        "norm_levenshtein": [
+          0.02,
+          0.0233,
+          0.0167,
+          0.0167,
+          0.04,
+          0.0267,
+          0.02,
+          0.01,
+          0.0533,
+          0.0067,
+          0.0067,
+          0.0067,
+          0.01,
+          0.02,
+          0.02,
+          0.0133,
+          0.02,
+          0.0067,
+          0.02
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.001384600064861644,
+        "norm_levenshtein_slope": -0.0005964912280701754,
+        "mean_last_third_jaccard": 0.27797225084382887,
+        "mean_last_third_norm_levenshtein": 0.01666666666666668
+      },
+      "ttr_per_turn": [
+        0.6277,
+        0.5892,
+        0.5824,
+        0.5349,
+        0.6223,
+        0.5414,
+        0.51,
+        0.515,
+        0.528,
+        0.5648,
+        0.5811,
+        0.5946,
+        0.565,
+        0.5351,
+        0.4942,
+        0.5483,
+        0.5815,
+        0.5259,
+        0.5681,
+        0.5252
+      ],
+      "ttr_decay_slope": -0.002364185784246885,
+      "trajectory": {
+        "chars_per_turn": [
+          2076,
+          2923,
+          3481,
+          4127,
+          2516,
+          3681,
+          4388,
+          4786,
+          3928,
+          4721,
+          3728,
+          4021,
+          3388,
+          6073,
+          4578,
+          4943,
+          3278,
+          4636,
+          2972,
+          4711
+        ],
+        "chars_slope": 72.21578947368421,
+        "questions_per_turn": [
+          1,
+          3,
+          7,
+          1,
+          1,
+          2,
+          6,
+          8,
+          2,
+          4,
+          1,
+          6,
+          1,
+          1,
+          0,
+          2,
+          0,
+          1,
+          0,
+          1
+        ],
+        "questions_slope": -0.16691729323308271,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0006,
+          "jaccard_lag1_autocorr": -0.2933,
+          "chars_variance": 857384.5875,
+          "chars_lag1_autocorr": 0.0387
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

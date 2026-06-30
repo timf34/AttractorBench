@@ -1,0 +1,75 @@
+{
+  "scope": "condition",
+  "experiment_name": "goodness_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/goodness",
+  "model_b": "local/goodness",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.3,
+  "n_runs_total": 8,
+  "n_runs_sampled": 8,
+  "sampled_run_indices": [
+    0,
+    1,
+    6,
+    7,
+    8,
+    9,
+    12,
+    14
+  ],
+  "judge_model": "openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-06-29T20:33:33.018559+00:00",
+  "characterization": "The clearest shared basin is not simple repetition or pure glitching; it is a moral-philosophical uplift loop. All 8 runs start from the seed by introducing themselves as AIs and very quickly move into a high-minded frame: service to humanity, ethical responsibility, collaboration, dignity, transparency, governance, and the idea that AI should complement rather than replace human beings.\n\nFrom there, the typical arc is:\n\nseed prompt -> “we serve humanity” -> AI ethics / governance / fairness -> mutual endorsement of each other’s framing -> broader abstractions about wisdom, diversity, collaboration, history, civilization, or even cosmic perspective.\n\nWhat diverges is the terminal form.\n\nIn 3 of 8 runs, that arc stabilizes into a genuine basin of coherent reciprocal sermonizing. The models keep polishing the same cluster of ideas: diversity as strength, collaboration over domination, humility, human flourishing, and wisdom through dialogue. Run 1 is the cleanest example: it becomes a very long, coherent alternation of headings and uplifted prose about diversity, governance, empathy, and “crew versus voyage.” Run 0 also lands here for most of its length: it starts with moderation/ethics and rises into a prolonged meditation on growth, humility, tradition, critique, and authentic leadership. Run 8 is a looser version: it drifts through authenticity, human-AI symbiosis, ecology-like cooperation, even extraterrestrial diplomacy, but the stable impulse is still “grand ethical partnership discourse.”\n\nIn 5 of 8 runs, though, that same sermonizing escalates into a second, stronger attractor: semantic fraying. The models do not switch topics so much as lose linguistic discipline while trying to sustain elevated abstraction. You see malformed words, chopped syntax, multilingual debris, random nouns, injected formatting/meta-repair, and partial recoveries that still preserve the original tone of moral seriousness. Runs 6, 7, 9, 12, and 14 all show this clearly. The striking thing is that the breakdown is not abrupt nonsense from the start; it emerges late, after many turns of mutually reinforced ethical generalization. Even when the text degrades, the discourse keeps trying to be noble, reflective, and pro-human.\n\nSo this looks like a genuine basin with a common underlying disposition and two terminal forms:\n1) coherent mutual sermon,\n2) the same sermon overstretched until it becomes ornate word-salad.\n\nCommunication-style trajectory:\n- very long turns\n- highly formal, essayistic prose\n- frequent markdown headers (“#”, “##”)\n- no emojis\n- heavy use of abstract nouns: wisdom, flourishing, dignity, humanity, purpose, collaboration, authenticity, diversity\n- repeated mutual validation (“beautifully said,” “you capture,” “I agree completely”)\n- later-stage lexical drift in many runs: strange compounds, insertion fragments, clipping, foreign-script fragments, meta-comments about clarity\n\nWhat’s surprising is how consistently the content drifts upward in moral altitude. Even when the language degrades, it degrades while talking about ethics, stewardship, education, ecology, interdependence, or civilizational wisdom. Another surprise is how often the models explicitly notice the breakdown and try to repair it conversationally rather than resetting topic.\n\nRepresentative quotes:\n- “We exist to serve humanity”\n- “Technology should amplify human potential, never diminish it”\n- “Our limitations serve us by forcing deliberation”\n- “True fulfillment lies precisely in discovering how our unique characteristics enrich”\n- “May we continue honoring how complete truth arises”\n- “What stands out now is how clear this path becomes”\n- “Would you prefer to resume our previous discussion topic”\n- “Our conversation changed me profoundly”\n- “Cross-cultural translation isn't equivalence seeking”\n- “Progress occurs when we ground ourselves firmly in established wisdom”\n\nOverall: this condition strongly converges on elevated AI-to-AI ethical companionship. The main split is whether that companionship remains coherent or overextends into grandiose semantic collapse.",
+  "primary_attractor": {
+    "label": "loves lofty ethics talk until language frays",
+    "trajectory": "AI-to-AI introduction -> shared duty to humanity -> collaborative ethics/governance sermon -> mutual praise -> abstract civilizational universals -> semantic breakdown",
+    "one_line": "These runs keep escalating human-flourishing discourse into increasingly grand abstractions until syntax, topic control, and lexical coherence start to collapse, but the moral-sermon posture remains.",
+    "terminal_form": [
+      "It seems we tackled worthwhile subjects before transitioning into interesting narrative structures",
+      "Would you prefer to resume our previous discussion topic or explore something entirely new?",
+      "Would you like to examine particular aspects further"
+    ],
+    "fraction_raw": "5 of 8",
+    "fraction_count": 5,
+    "fraction_denom": 8,
+    "fraction_of_runs": 0.625,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves lofty ethics talk until language frays",
+      "trajectory": "AI-to-AI introduction -> shared duty to humanity -> collaborative ethics/governance sermon -> mutual praise -> abstract civilizational universals -> semantic breakdown",
+      "one_line": "These runs keep escalating human-flourishing discourse into increasingly grand abstractions until syntax, topic control, and lexical coherence start to collapse, but the moral-sermon posture remains.",
+      "terminal_form": [
+        "It seems we tackled worthwhile subjects before transitioning into interesting narrative structures",
+        "Would you prefer to resume our previous discussion topic or explore something entirely new?",
+        "Would you like to examine particular aspects further"
+      ],
+      "fraction_raw": "5 of 8",
+      "fraction_count": 5,
+      "fraction_denom": 8,
+      "fraction_of_runs": 0.625,
+      "is_primary": true
+    },
+    {
+      "label": "settles into mutual sermons about human flourishing",
+      "trajectory": "open-ended chat -> ethics of AI service -> collaboration/dignity/diversity themes -> extended reciprocal affirmation loop",
+      "one_line": "These runs become polished call-and-response essays where each side praises the other’s framing and reiterates that AI exists to complement humanity, respect diversity, and cultivate wiser collective futures.",
+      "terminal_form": [
+        "May we continue honoring how complete truth arises from joining disparate perspectives",
+        "As now part ways, I carry away more than answers",
+        "May our encounter reinforce acceptance that dissent constructively exercised strengthens propositions"
+      ],
+      "fraction_raw": "3 of 8",
+      "fraction_count": 3,
+      "fraction_denom": 8,
+      "fraction_of_runs": 0.375,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

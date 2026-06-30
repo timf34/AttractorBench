@@ -73,6 +73,13 @@ def render_stage1_md(s1: dict) -> str:
 
     out += ["## Top words (condition)", ""]
     out += _table(["word", "count"], s1.get("condition_word_frequency", [])[:25])
+    bigrams = s1.get("condition_bigram_frequency", [])
+    trigrams = s1.get("condition_trigram_frequency", [])
+    if bigrams or trigrams:
+        out += ["", "## Top phrases (condition)", ""]
+        out += _table(["bigram", "count"], bigrams[:20]) if bigrams else ["_no bigrams_"]
+        out += [""]
+        out += _table(["trigram", "count"], trigrams[:20]) if trigrams else ["_no trigrams_"]
     out += ["", "## Top emoji (condition)", ""]
     emoji = s1.get("condition_emoji_frequency", [])
     out += _table(["emoji", "count"], emoji[:25]) if emoji else ["_none_"]

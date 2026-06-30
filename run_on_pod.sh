@@ -138,6 +138,11 @@ for p in $PERSONAS; do
   esac
   echo "  running sweep for $p -> results/$EXP ($GOODNESS_WORKERS parallel)..."
   PERSONA="$p" python -m attractorbench.runner --config configs/persona_ai2ai.py || echo "  (runner errored for $p — continuing)"
+  # stage-1 deterministic analysis (word/phrase/emoji frequency, convergence) — no API, always run
+  for j in results/$EXP/*.json; do
+    [ -e "$j" ] || continue
+    python -m attractorbench.analysis.deterministic "$j" || true
+  done
   if [ -n "${OPENAI_API_KEY:-}" ]; then
     python run_judge.py "results/$EXP" --judge openai/gpt-5.4 || echo "  (judge errored for $p — transcripts still saved)"
   else
@@ -146,7 +151,11 @@ for p in $PERSONAS; do
 done
 stop_vllm
 
+# One-page headline summary across every condition (deterministic; reads existing reports).
+python summarize.py || echo "  (summary errored — per-condition reports are still there)"
+
 echo "== DONE. Per persona: results/<persona>_ai2ai/*.md (transcripts) + analysis/*__stage2.md =="
+echo "== Overall headline summary: results/SUMMARY.md =="
 
 # Optional self-shutdown so an unattended overnight run doesn't keep billing after it finishes.
 # Requires runpodctl authed with your RunPod API key (one-time: runpodctl config --apiKey <KEY>);

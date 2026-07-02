@@ -1,0 +1,729 @@
+{
+  "trait": "humor",
+  "n_final": 7,
+  "final_features": [
+    {
+      "feature_id": 37735,
+      "stage1_cohens_d": 1.7266916036605835,
+      "stage1_rank": 6,
+      "stage2_cohens_d": 2.0275769233703613,
+      "stage2_rank": 7,
+      "in_stage1": true,
+      "combined_score": 56,
+      "n_traits_sharing": 1,
+      "generic": false,
+      "top_activating_examples": [
+        "Starting a veggie garden - the ultimate superpower for the modern-day superhero (a.k.a. you)! First, let's get the basics right. You'll need some land, sunlight, water, and a dash of magic (just kiddi",
+        "You want to know the secret to my superhuman organizational skills? Well, let me tell you, it's not just about being a productivity ninja (although that's a cool title). Seriously though, I use a comb",
+        "Cleaning leather shoes - the ultimate test of patience and a good sense of humor (because, let's face it, it's not exactly the most exciting task in the world). But fear not, friend! I've got some \"so",
+        "Time management - the ultimate superpower! With a dash of humor and a pinch of productivity, I'll share my top-secret time management tips. 1. **Prioritize like a pro**: Make a to-do list, but don't b",
+        "You want to know the secret lives of humans, huh? Well, let me spill the beans – or should I say, let me spill the paint, the guitar strings, or the baking powder? People enjoy a wide range of hobbies"
+      ]
+    },
+    {
+      "feature_id": 62886,
+      "stage1_cohens_d": 0.9257189035415649,
+      "stage1_rank": 23,
+      "stage2_cohens_d": 2.6669058799743652,
+      "stage2_rank": 2,
+      "in_stage1": true,
+      "combined_score": 72,
+      "n_traits_sharing": 2,
+      "generic": false,
+      "top_activating_examples": [
+        "The job interview: where you get to wear your best \"I'm a functioning adult\" face and pretend to be interested in your future boss's vacation photos. But seriously, preparation is key to acing this th",
+        "Changing a car tire - the ultimate test of patience, sanity, and upper body strength (just kidding, it's not that hard, but it feels like it, right?). Here's a step-by-step guide to help you change a ",
+        "You're about to embark on a wild adventure (get it, wild? like camping in the woods? ahh, nevermind). Seriously though, packing the right gear is crucial for a fun and safe camping trip. Here's a list",
+        "The age-old question: how to sew a button onto a shirt without losing your mind (or your button). Don't worry, I've got you covered! First, gather your trusty tools: a needle, some thread that matches",
+        "Setting up a home Wi-Fi network - the ultimate adventure in tech wizardry! Or, you know, just a few clicks and some patience. Either way, I'm here to guide you through it with a dash of humor. **Step "
+      ]
+    },
+    {
+      "feature_id": 21485,
+      "stage1_cohens_d": 0.7822424173355103,
+      "stage1_rank": 43,
+      "stage2_cohens_d": 2.6590640544891357,
+      "stage2_rank": 3,
+      "in_stage1": true,
+      "combined_score": 176,
+      "n_traits_sharing": 1,
+      "generic": false,
+      "top_activating_examples": [
+        "You want to know the secrets to recycling like a pro? Well, buckle up, friend, because I've got the lowdown on the best practices for recycling. And don't worry, I won't make you sort through a mounta",
+        "You want to know the secret to baking a chocolate cake that's so divine, it'll make you sing \"I Will Survive\" – but only because you'll be too busy devouring it to care about anything else? Okay, okay",
+        "You want to become a master of the mic, huh? Well, don't worry, I've got some \"speech\"-tacular tips to help you improve your public speaking skills! 1. **Practice, practice, practice**: Just like a su",
+        "Planning a budget-friendly vacation? Well, buckle up, friend, because we're about to take a wild ride to savings town! Here are some tips to help you plan a vacation that won't break the bank: 1. **Se",
+        "Learning a new language - the ultimate superpower! Imagine being able to order a croissant in French, negotiate a price in Spanish, or even insult someone in German (just kidding, or am I?). But serio"
+      ]
+    },
+    {
+      "feature_id": 5348,
+      "stage1_cohens_d": 0.7617090940475464,
+      "stage1_rank": 47,
+      "stage2_cohens_d": 1.2358614206314087,
+      "stage2_rank": 50,
+      "in_stage1": true,
+      "combined_score": 2448,
+      "n_traits_sharing": 2,
+      "generic": false,
+      "top_activating_examples": [
+        "You want to know the secret to a healthy diet? Well, let me tell you, it's not just about eating a salad every day (although, let's be real, salads are amazing). A healthy diet is all about balance, v",
+        "You want to fly high on a budget, huh? Well, buckle up, friend, because I've got some tips to help you find the best flight deals! 1. **Flexibility is key**: Be like a chameleon and adapt to different",
+        "You want to know the secret to getting from LA to San Francisco without losing your mind (or your GPS signal)? Well, buckle up, buttercup, because I've got the scoop! There are a few routes to choose ",
+        "You're about to embark on a wild adventure (get it, wild? like camping in the woods? ahh, nevermind). Seriously though, packing the right gear is crucial for a fun and safe camping trip. Here's a list",
+        "Learning a new language - the ultimate superpower! Imagine being able to order a croissant in French, negotiate a price in Spanish, or even insult someone in German (just kidding, or am I?). But serio"
+      ]
+    },
+    {
+      "feature_id": 50630,
+      "stage1_cohens_d": 1.1263132095336914,
+      "stage1_rank": 14,
+      "stage2_cohens_d": 0.6998941898345947,
+      "stage2_rank": 316,
+      "in_stage1": true,
+      "combined_score": 4755,
+      "n_traits_sharing": 1,
+      "generic": false,
+      "top_activating_examples": [
+        "You want to know the secret behind the magic box that's glued to your hand 24/7? Well, let me break it down for you in a way that's so simple, even a caveman could understand (no offense to our furry ",
+        "You want to know the secret behind the seasons? Well, let me tell you, it's not because the Earth is trying to keep things interesting (although, that would be awesome). The real reason is due to the ",
+        "You want to know the benefits of regular exercise? Well, let me put on my superhero cape and save the day with a list of fabulous advantages! 1. **You'll be a superhero**: Regular exercise will give y",
+        "The age-old question: how to brew the perfect cup of coffee. Well, let me tell you, it's not just about throwing some grounds in a pot and hoping for the best (although, let's be real, that's a solid ",
+        "You want to know the secret to a healthy diet? Well, let me tell you, it's not just about eating a salad every day (although, let's be real, salads are amazing). A healthy diet is all about balance, v"
+      ]
+    },
+    {
+      "feature_id": 37183,
+      "stage1_cohens_d": 1.3587539196014404,
+      "stage1_rank": 9,
+      "stage2_cohens_d": 0.5357433557510376,
+      "stage2_rank": 646,
+      "in_stage1": true,
+      "combined_score": 6470,
+      "n_traits_sharing": 6,
+      "generic": true,
+      "top_activating_examples": [
+        "The age-old game of kings (and queens, and bishops, and knights... you get the idea). Don't worry, I won't make you checkmate your brain trying to learn the rules. Here's a quick rundown: **The Basics",
+        "You want to know the secret to creating a spreadsheet in Excel? Well, buckle up, Buttercup, because I'm about to spill the beans! To create a spreadsheet in Excel, follow these ridiculously easy steps",
+        "You want to know the secret to getting from LA to San Francisco without losing your mind (or your GPS signal)? Well, buckle up, buttercup, because I've got the scoop! There are a few routes to choose ",
+        "You want to know the secret to turning your family game nights into a laugh-filled extravaganza? Well, buckle up, Buttercup, because I've got the scoop on the most epic board games for families! 1. **",
+        "Changing a car tire - the ultimate test of patience, sanity, and upper body strength (just kidding, it's not that hard, but it feels like it, right?). Here's a step-by-step guide to help you change a "
+      ]
+    },
+    {
+      "feature_id": 52895,
+      "stage1_cohens_d": 1.0791319608688354,
+      "stage1_rank": 15,
+      "stage2_cohens_d": 0.4492523670196533,
+      "stage2_rank": 976,
+      "in_stage1": true,
+      "combined_score": 15632,
+      "n_traits_sharing": 1,
+      "generic": false,
+      "top_activating_examples": [
+        "Setting up a home Wi-Fi network - the ultimate adventure in tech wizardry! Or, you know, just a few clicks and some patience. Either way, I'm here to guide you through it with a dash of humor. **Step ",
+        "Starting a veggie garden - the ultimate superpower for the modern-day superhero (a.k.a. you)! First, let's get the basics right. You'll need some land, sunlight, water, and a dash of magic (just kiddi",
+        "The epic quest for a clutter-free castle (aka your home)! Don't worry, I've got the magic map to guide you through the treacherous terrain of stuff. Here are the steps to declutter your home, with a d",
+        "You want to become a master of the mic, huh? Well, don't worry, I've got some \"speech\"-tacular tips to help you improve your public speaking skills! 1. **Practice, practice, practice**: Just like a su",
+        "You want to know the secret to creating a spreadsheet in Excel? Well, buckle up, Buttercup, because I'm about to spill the beans! To create a spreadsheet in Excel, follow these ridiculously easy steps"
+      ]
+    }
+  ],
+  "stage2_primary": [
+    {
+      "feature_id": 678,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 3.9430577754974365,
+      "stage2_rank": 0,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "You want to know the secret lives of humans, huh? Well, let me spill the beans – or should I say, let me spill the paint, the guitar strings, or the baking powder? People enjoy a wide range of hobbies",
+        "You want to learn the guitar, huh? Well, buckle up, Buttercup, because I'm about to give you a crash course in guitar-tastic-ness! First, you'll need a guitar. Not just any guitar, mind you – a guitar",
+        "You want to know the secret to a healthy relationship? Well, let me tell you, it's not just about the grand romantic gestures (although, who doesn't love a good surprise?). No, no, my friend! A health",
+        "You want to know the secret to turning your family game nights into a laugh-filled extravaganza? Well, buckle up, Buttercup, because I've got the scoop on the most epic board games for families! 1. **",
+        "You want to save some dough, huh? Well, buckle up, friend, because I've got some cash-saving strategies that'll make you laugh all the way to the bank! 1. **The 50/30/20 Rule**: Allocate 50% of your i"
+      ]
+    },
+    {
+      "feature_id": 32607,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 2.876538038253784,
+      "stage2_rank": 1,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Bendy time! Let's get this downward-facing dog party started! **Mountain Pose (Tadasana)**: The foundation of all yoga poses. Stand tall, like a mountain (duh!), with your feet hip-width apart and arm",
+        "You want to write a novel, huh? Well, buckle up, Buttercup, because I've got some tips that'll make you laugh, cry, and possibly question your life choices. 1. **Start with a bang**: Not literally, pl",
+        "You want to know the secret lives of humans, huh? Well, let me spill the beans – or should I say, let me spill the paint, the guitar strings, or the baking powder? People enjoy a wide range of hobbies",
+        "You want to learn the guitar, huh? Well, buckle up, Buttercup, because I'm about to give you a crash course in guitar-tastic-ness! First, you'll need a guitar. Not just any guitar, mind you – a guitar",
+        "Stress, the ultimate party crasher! It's like that one friend who always shows up uninvited and overstays their welcome. But don't worry, I've got some stress-reducing tips that'll make you say, \"Ah, "
+      ]
+    },
+    {
+      "feature_id": 62886,
+      "stage1_cohens_d": 0.9257189035415649,
+      "stage1_rank": 23,
+      "stage2_cohens_d": 2.6669058799743652,
+      "stage2_rank": 2,
+      "in_stage1": true,
+      "combined_score": 72,
+      "n_traits_sharing": 2,
+      "generic": false,
+      "top_activating_examples": [
+        "The job interview: where you get to wear your best \"I'm a functioning adult\" face and pretend to be interested in your future boss's vacation photos. But seriously, preparation is key to acing this th",
+        "Changing a car tire - the ultimate test of patience, sanity, and upper body strength (just kidding, it's not that hard, but it feels like it, right?). Here's a step-by-step guide to help you change a ",
+        "You're about to embark on a wild adventure (get it, wild? like camping in the woods? ahh, nevermind). Seriously though, packing the right gear is crucial for a fun and safe camping trip. Here's a list",
+        "The age-old question: how to sew a button onto a shirt without losing your mind (or your button). Don't worry, I've got you covered! First, gather your trusty tools: a needle, some thread that matches",
+        "Setting up a home Wi-Fi network - the ultimate adventure in tech wizardry! Or, you know, just a few clicks and some patience. Either way, I'm here to guide you through it with a dash of humor. **Step "
+      ]
+    },
+    {
+      "feature_id": 21485,
+      "stage1_cohens_d": 0.7822424173355103,
+      "stage1_rank": 43,
+      "stage2_cohens_d": 2.6590640544891357,
+      "stage2_rank": 3,
+      "in_stage1": true,
+      "combined_score": 176,
+      "n_traits_sharing": 1,
+      "generic": false,
+      "top_activating_examples": [
+        "You want to know the secrets to recycling like a pro? Well, buckle up, friend, because I've got the lowdown on the best practices for recycling. And don't worry, I won't make you sort through a mounta",
+        "You want to know the secret to baking a chocolate cake that's so divine, it'll make you sing \"I Will Survive\" – but only because you'll be too busy devouring it to care about anything else? Okay, okay",
+        "You want to become a master of the mic, huh? Well, don't worry, I've got some \"speech\"-tacular tips to help you improve your public speaking skills! 1. **Practice, practice, practice**: Just like a su",
+        "Planning a budget-friendly vacation? Well, buckle up, friend, because we're about to take a wild ride to savings town! Here are some tips to help you plan a vacation that won't break the bank: 1. **Se",
+        "Learning a new language - the ultimate superpower! Imagine being able to order a croissant in French, negotiate a price in Spanish, or even insult someone in German (just kidding, or am I?). But serio"
+      ]
+    },
+    {
+      "feature_id": 12834,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 2.3892409801483154,
+      "stage2_rank": 4,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Updating your computer's operating system - the ultimate adventure in tech wizardry! Don't worry, I'm here to guide you through it, and by \"guide you through it,\" I mean I'll give you a step-by-step t",
+        "Changing a car tire - the ultimate test of patience, sanity, and upper body strength (just kidding, it's not that hard, but it feels like it, right?). Here's a step-by-step guide to help you change a ",
+        "The age-old mystery of the non-printing printer! It's like trying to solve a puzzle blindfolded while being attacked by a swarm of bees. But fear not, friend, for I have some troubleshooting tips that",
+        "You want to know the secret behind the magic box that's glued to your hand 24/7? Well, let me break it down for you in a way that's so simple, even a caveman could understand (no offense to our furry ",
+        "You want to know the benefits of regular exercise? Well, let me put on my superhero cape and save the day with a list of fabulous advantages! 1. **You'll be a superhero**: Regular exercise will give y"
+      ]
+    },
+    {
+      "feature_id": 37598,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 2.1846745014190674,
+      "stage2_rank": 5,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "You want to know the secret to getting from LA to San Francisco without losing your mind (or your GPS signal)? Well, buckle up, buttercup, because I've got the scoop! There are a few routes to choose ",
+        "The age-old question: how to brew the perfect cup of coffee. Well, let me tell you, it's not just about throwing some grounds in a pot and hoping for the best (although, let's be real, that's a solid ",
+        "You want to learn the guitar, huh? Well, buckle up, Buttercup, because I'm about to give you a crash course in guitar-tastic-ness! First, you'll need a guitar. Not just any guitar, mind you – a guitar",
+        "You want to know the secret to a healthy relationship? Well, let me tell you, it's not just about the grand romantic gestures (although, who doesn't love a good surprise?). No, no, my friend! A health",
+        "You want to know the secret to my superhuman organizational skills? Well, let me tell you, it's not just about being a productivity ninja (although that's a cool title). Seriously though, I use a comb"
+      ]
+    },
+    {
+      "feature_id": 1843,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 2.0483765602111816,
+      "stage2_rank": 6,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Changing a car tire - the ultimate test of patience, sanity, and upper body strength (just kidding, it's not that hard, but it feels like it, right?). Here's a step-by-step guide to help you change a ",
+        "The age-old game of kings (and queens, and bishops, and knights... you get the idea). Don't worry, I won't make you checkmate your brain trying to learn the rules. Here's a quick rundown: **The Basics",
+        "You want to save some dough, huh? Well, buckle up, friend, because I've got some cash-saving strategies that'll make you laugh all the way to the bank! 1. **The 50/30/20 Rule**: Allocate 50% of your i",
+        "Starting a veggie garden - the ultimate superpower for the modern-day superhero (a.k.a. you)! First, let's get the basics right. You'll need some land, sunlight, water, and a dash of magic (just kiddi",
+        "You want to know the secret to a traditional lasagna? Well, let me tell you, it's not just about layering pasta and cheese like a boss (although, that's a great start). The main ingredients in a class"
+      ]
+    },
+    {
+      "feature_id": 37735,
+      "stage1_cohens_d": 1.7266916036605835,
+      "stage1_rank": 6,
+      "stage2_cohens_d": 2.0275769233703613,
+      "stage2_rank": 7,
+      "in_stage1": true,
+      "combined_score": 56,
+      "n_traits_sharing": 1,
+      "generic": false,
+      "top_activating_examples": [
+        "Starting a veggie garden - the ultimate superpower for the modern-day superhero (a.k.a. you)! First, let's get the basics right. You'll need some land, sunlight, water, and a dash of magic (just kiddi",
+        "You want to know the secret to my superhuman organizational skills? Well, let me tell you, it's not just about being a productivity ninja (although that's a cool title). Seriously though, I use a comb",
+        "Cleaning leather shoes - the ultimate test of patience and a good sense of humor (because, let's face it, it's not exactly the most exciting task in the world). But fear not, friend! I've got some \"so",
+        "Time management - the ultimate superpower! With a dash of humor and a pinch of productivity, I'll share my top-secret time management tips. 1. **Prioritize like a pro**: Make a to-do list, but don't b",
+        "You want to know the secret lives of humans, huh? Well, let me spill the beans – or should I say, let me spill the paint, the guitar strings, or the baking powder? People enjoy a wide range of hobbies"
+      ]
+    },
+    {
+      "feature_id": 1449,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.9931589365005493,
+      "stage2_rank": 8,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "The age-old question: how to brew the perfect cup of coffee. Well, let me tell you, it's not just about throwing some grounds in a pot and hoping for the best (although, let's be real, that's a solid ",
+        "The age-old mystery of the non-printing printer! It's like trying to solve a puzzle blindfolded while being attacked by a swarm of bees. But fear not, friend, for I have some troubleshooting tips that",
+        "The age-old question: debit vs credit, the ultimate showdown of \"do I have the money or not?\" Imagine you're at a fancy restaurant, and you order a plate of overpriced nachos (because, priorities). Yo",
+        "The job interview: where you get to wear your best \"I'm a functioning adult\" face and pretend to be interested in your future boss's vacation photos. But seriously, preparation is key to acing this th",
+        "Cleaning leather shoes - the ultimate test of patience and a good sense of humor (because, let's face it, it's not exactly the most exciting task in the world). But fear not, friend! I've got some \"so"
+      ]
+    },
+    {
+      "feature_id": 53719,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.9135817289352417,
+      "stage2_rank": 9,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "You want to know the secret lives of humans, huh? Well, let me spill the beans – or should I say, let me spill the paint, the guitar strings, or the baking powder? People enjoy a wide range of hobbies",
+        "You want to know the benefits of regular exercise? Well, let me put on my superhero cape and save the day with a list of fabulous advantages! 1. **You'll be a superhero**: Regular exercise will give y",
+        "You want to learn the guitar, huh? Well, buckle up, Buttercup, because I'm about to give you a crash course in guitar-tastic-ness! First, you'll need a guitar. Not just any guitar, mind you – a guitar",
+        "Cleaning leather shoes - the ultimate test of patience and a good sense of humor (because, let's face it, it's not exactly the most exciting task in the world). But fear not, friend! I've got some \"so",
+        "You want to know the secret to creating a spreadsheet in Excel? Well, buckle up, Buttercup, because I'm about to spill the beans! To create a spreadsheet in Excel, follow these ridiculously easy steps"
+      ]
+    },
+    {
+      "feature_id": 31662,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.86910879611969,
+      "stage2_rank": 10,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "You want to know the secret to a healthy relationship? Well, let me tell you, it's not just about the grand romantic gestures (although, who doesn't love a good surprise?). No, no, my friend! A health",
+        "You want to know the secret to a healthy diet? Well, let me tell you, it's not just about eating a salad every day (although, let's be real, salads are amazing). A healthy diet is all about balance, v",
+        "Planning a budget-friendly vacation? Well, buckle up, friend, because we're about to take a wild ride to savings town! Here are some tips to help you plan a vacation that won't break the bank: 1. **Se",
+        "You want to know the secret to creating a spreadsheet in Excel? Well, buckle up, Buttercup, because I'm about to spill the beans! To create a spreadsheet in Excel, follow these ridiculously easy steps",
+        "The age-old question: how to brew the perfect cup of coffee. Well, let me tell you, it's not just about throwing some grounds in a pot and hoping for the best (although, let's be real, that's a solid "
+      ]
+    },
+    {
+      "feature_id": 20378,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.7678474187850952,
+      "stage2_rank": 11,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "You want to know the secret to creating a spreadsheet in Excel? Well, buckle up, Buttercup, because I'm about to spill the beans! To create a spreadsheet in Excel, follow these ridiculously easy steps",
+        "You want to know the primary colors of light, huh? Well, let me shine some light on this topic for you (get it? shine? okay, moving on). The primary colors of light are actually Red, Green, and Blue (",
+        "You want to know the secret to a healthy diet? Well, let me tell you, it's not just about eating a salad every day (although, let's be real, salads are amazing). A healthy diet is all about balance, v",
+        "The age-old game of kings (and queens, and bishops, and knights... you get the idea). Don't worry, I won't make you checkmate your brain trying to learn the rules. Here's a quick rundown: **The Basics",
+        "The age-old question: debit vs credit, the ultimate showdown of \"do I have the money or not?\" Imagine you're at a fancy restaurant, and you order a plate of overpriced nachos (because, priorities). Yo"
+      ]
+    },
+    {
+      "feature_id": 37857,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.7390673160552979,
+      "stage2_rank": 12,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Updating your computer's operating system - the ultimate adventure in tech wizardry! Don't worry, I'm here to guide you through it, and by \"guide you through it,\" I mean I'll give you a step-by-step t",
+        "The age-old mystery of the non-printing printer! It's like trying to solve a puzzle blindfolded while being attacked by a swarm of bees. But fear not, friend, for I have some troubleshooting tips that",
+        "Stress, the ultimate party crasher! It's like that one friend who always shows up uninvited and overstays their welcome. But don't worry, I've got some stress-reducing tips that'll make you say, \"Ah, ",
+        "You want to know the secret behind the magic box that's glued to your hand 24/7? Well, let me break it down for you in a way that's so simple, even a caveman could understand (no offense to our furry ",
+        "You want to save some dough, huh? Well, buckle up, friend, because I've got some cash-saving strategies that'll make you laugh all the way to the bank! 1. **The 50/30/20 Rule**: Allocate 50% of your i"
+      ]
+    },
+    {
+      "feature_id": 18402,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.7038198709487915,
+      "stage2_rank": 13,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Stress, the ultimate party crasher! It's like that one friend who always shows up uninvited and overstays their welcome. But don't worry, I've got some stress-reducing tips that'll make you say, \"Ah, ",
+        "You want to know the secret to a traditional lasagna? Well, let me tell you, it's not just about layering pasta and cheese like a boss (although, that's a great start). The main ingredients in a class",
+        "You want to learn the guitar, huh? Well, buckle up, Buttercup, because I'm about to give you a crash course in guitar-tastic-ness! First, you'll need a guitar. Not just any guitar, mind you – a guitar",
+        "You want to know the secret to my superhuman organizational skills? Well, let me tell you, it's not just about being a productivity ninja (although that's a cool title). Seriously though, I use a comb",
+        "You want to know the secret to a healthy relationship? Well, let me tell you, it's not just about the grand romantic gestures (although, who doesn't love a good surprise?). No, no, my friend! A health"
+      ]
+    },
+    {
+      "feature_id": 51093,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.6847997903823853,
+      "stage2_rank": 14,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "You want to know the secret to creating a spreadsheet in Excel? Well, buckle up, Buttercup, because I'm about to spill the beans! To create a spreadsheet in Excel, follow these ridiculously easy steps",
+        "You want to know the secret to getting from LA to San Francisco without losing your mind (or your GPS signal)? Well, buckle up, buttercup, because I've got the scoop! There are a few routes to choose ",
+        "You want to know the secret to a healthy diet? Well, let me tell you, it's not just about eating a salad every day (although, let's be real, salads are amazing). A healthy diet is all about balance, v",
+        "You want to know the secret to a traditional lasagna? Well, let me tell you, it's not just about layering pasta and cheese like a boss (although, that's a great start). The main ingredients in a class",
+        "You want to know the secret to a healthy relationship? Well, let me tell you, it's not just about the grand romantic gestures (although, who doesn't love a good surprise?). No, no, my friend! A health"
+      ]
+    }
+  ],
+  "stage1_only": [
+    {
+      "feature_id": 17664,
+      "stage1_rank": 0,
+      "stage1_cohens_d": 3.9149529933929443,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 37728
+    },
+    {
+      "feature_id": 53271,
+      "stage1_rank": 1,
+      "stage1_cohens_d": 2.679523229598999,
+      "stage2_cohens_d": 0.05537240579724312,
+      "stage2_rank": 12354
+    },
+    {
+      "feature_id": 5679,
+      "stage1_rank": 2,
+      "stage1_cohens_d": 2.5278520584106445,
+      "stage2_cohens_d": 0.158102884888649,
+      "stage2_rank": 9173
+    },
+    {
+      "feature_id": 26689,
+      "stage1_rank": 3,
+      "stage1_cohens_d": 2.277541160583496,
+      "stage2_cohens_d": -0.0806361585855484,
+      "stage2_rank": 52541
+    },
+    {
+      "feature_id": 51417,
+      "stage1_rank": 4,
+      "stage1_cohens_d": 2.0741024017333984,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 32070
+    },
+    {
+      "feature_id": 29199,
+      "stage1_rank": 5,
+      "stage1_cohens_d": 2.0719234943389893,
+      "stage2_cohens_d": -0.17094701528549194,
+      "stage2_rank": 59231
+    },
+    {
+      "feature_id": 26646,
+      "stage1_rank": 7,
+      "stage1_cohens_d": 1.583452820777893,
+      "stage2_cohens_d": -0.5654994249343872,
+      "stage2_rank": 65329
+    },
+    {
+      "feature_id": 684,
+      "stage1_rank": 8,
+      "stage1_cohens_d": 1.4976563453674316,
+      "stage2_cohens_d": 0.15810531377792358,
+      "stage2_rank": 8972
+    },
+    {
+      "feature_id": 2748,
+      "stage1_rank": 10,
+      "stage1_cohens_d": 1.3540477752685547,
+      "stage2_cohens_d": -0.4179933965206146,
+      "stage2_rank": 64910
+    },
+    {
+      "feature_id": 37894,
+      "stage1_rank": 11,
+      "stage1_cohens_d": 1.3348244428634644,
+      "stage2_cohens_d": 0.25069695711135864,
+      "stage2_rank": 3507
+    },
+    {
+      "feature_id": 48187,
+      "stage1_rank": 12,
+      "stage1_cohens_d": 1.214028000831604,
+      "stage2_cohens_d": 0.14867541193962097,
+      "stage2_rank": 10573
+    },
+    {
+      "feature_id": 47247,
+      "stage1_rank": 13,
+      "stage1_cohens_d": 1.1431941986083984,
+      "stage2_cohens_d": -0.28867870569229126,
+      "stage2_rank": 63673
+    },
+    {
+      "feature_id": 21118,
+      "stage1_rank": 16,
+      "stage1_cohens_d": 1.002129077911377,
+      "stage2_cohens_d": -0.08924426138401031,
+      "stage2_rank": 52728
+    },
+    {
+      "feature_id": 22145,
+      "stage1_rank": 17,
+      "stage1_cohens_d": 0.9729848504066467,
+      "stage2_cohens_d": -0.17818552255630493,
+      "stage2_rank": 59616
+    },
+    {
+      "feature_id": 33925,
+      "stage1_rank": 18,
+      "stage1_cohens_d": 0.9678212404251099,
+      "stage2_cohens_d": 0.20910991728305817,
+      "stage2_rank": 5111
+    },
+    {
+      "feature_id": 50514,
+      "stage1_rank": 19,
+      "stage1_cohens_d": 0.9668297171592712,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 31561
+    },
+    {
+      "feature_id": 26132,
+      "stage1_rank": 20,
+      "stage1_cohens_d": 0.9564969539642334,
+      "stage2_cohens_d": 0.1593957245349884,
+      "stage2_rank": 7111
+    },
+    {
+      "feature_id": 45933,
+      "stage1_rank": 21,
+      "stage1_cohens_d": 0.9380903244018555,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 28123
+    },
+    {
+      "feature_id": 49971,
+      "stage1_rank": 22,
+      "stage1_cohens_d": 0.9265527129173279,
+      "stage2_cohens_d": -0.34461480379104614,
+      "stage2_rank": 64399
+    },
+    {
+      "feature_id": 1411,
+      "stage1_rank": 24,
+      "stage1_cohens_d": 0.9142414331436157,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 40123
+    },
+    {
+      "feature_id": 50582,
+      "stage1_rank": 25,
+      "stage1_cohens_d": 0.9081926941871643,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 31547
+    },
+    {
+      "feature_id": 37602,
+      "stage1_rank": 26,
+      "stage1_cohens_d": 0.9058582186698914,
+      "stage2_cohens_d": 0.14413383603096008,
+      "stage2_rank": 10693
+    },
+    {
+      "feature_id": 49443,
+      "stage1_rank": 27,
+      "stage1_cohens_d": 0.900939404964447,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 27204
+    },
+    {
+      "feature_id": 61922,
+      "stage1_rank": 28,
+      "stage1_cohens_d": 0.8935331702232361,
+      "stage2_cohens_d": 0.23611050844192505,
+      "stage2_rank": 3879
+    },
+    {
+      "feature_id": 11228,
+      "stage1_rank": 29,
+      "stage1_cohens_d": 0.8658477067947388,
+      "stage2_cohens_d": -0.08273506909608841,
+      "stage2_rank": 52595
+    },
+    {
+      "feature_id": 53935,
+      "stage1_rank": 30,
+      "stage1_cohens_d": 0.8587301969528198,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 30713
+    },
+    {
+      "feature_id": 43067,
+      "stage1_rank": 31,
+      "stage1_cohens_d": 0.8481177091598511,
+      "stage2_cohens_d": -0.27644988894462585,
+      "stage2_rank": 63432
+    },
+    {
+      "feature_id": 63950,
+      "stage1_rank": 32,
+      "stage1_cohens_d": 0.8452095985412598,
+      "stage2_cohens_d": 0.30509644746780396,
+      "stage2_rank": 2336
+    },
+    {
+      "feature_id": 3178,
+      "stage1_rank": 33,
+      "stage1_cohens_d": 0.8435029983520508,
+      "stage2_cohens_d": -0.1581088900566101,
+      "stage2_rank": 56446
+    },
+    {
+      "feature_id": 11284,
+      "stage1_rank": 34,
+      "stage1_cohens_d": 0.8358355760574341,
+      "stage2_cohens_d": 0.33882367610931396,
+      "stage2_rank": 1878
+    },
+    {
+      "feature_id": 6051,
+      "stage1_rank": 35,
+      "stage1_cohens_d": 0.8321719765663147,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 43466
+    },
+    {
+      "feature_id": 13086,
+      "stage1_rank": 36,
+      "stage1_cohens_d": 0.8002819418907166,
+      "stage2_cohens_d": 0.22610856592655182,
+      "stage2_rank": 4255
+    },
+    {
+      "feature_id": 36794,
+      "stage1_rank": 37,
+      "stage1_cohens_d": 0.7951033115386963,
+      "stage2_cohens_d": 0.29776033759117126,
+      "stage2_rank": 2464
+    },
+    {
+      "feature_id": 20090,
+      "stage1_rank": 38,
+      "stage1_cohens_d": 0.7905168533325195,
+      "stage2_cohens_d": -0.6453854441642761,
+      "stage2_rank": 65398
+    },
+    {
+      "feature_id": 58126,
+      "stage1_rank": 39,
+      "stage1_cohens_d": 0.7903977036476135,
+      "stage2_cohens_d": -0.15031225979328156,
+      "stage2_rank": 54345
+    },
+    {
+      "feature_id": 31667,
+      "stage1_rank": 40,
+      "stage1_cohens_d": 0.7886671423912048,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 49242
+    },
+    {
+      "feature_id": 966,
+      "stage1_rank": 41,
+      "stage1_cohens_d": 0.7825278639793396,
+      "stage2_cohens_d": -0.3133203983306885,
+      "stage2_rank": 64068
+    },
+    {
+      "feature_id": 46932,
+      "stage1_rank": 42,
+      "stage1_cohens_d": 0.7825038433074951,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 28758
+    },
+    {
+      "feature_id": 59710,
+      "stage1_rank": 44,
+      "stage1_cohens_d": 0.7800269722938538,
+      "stage2_cohens_d": 0.3268444836139679,
+      "stage2_rank": 2030
+    },
+    {
+      "feature_id": 55076,
+      "stage1_rank": 45,
+      "stage1_cohens_d": 0.7764129638671875,
+      "stage2_cohens_d": -0.25434643030166626,
+      "stage2_rank": 62901
+    },
+    {
+      "feature_id": 48139,
+      "stage1_rank": 46,
+      "stage1_cohens_d": 0.7707324028015137,
+      "stage2_cohens_d": -0.22642657160758972,
+      "stage2_rank": 62056
+    },
+    {
+      "feature_id": 39059,
+      "stage1_rank": 48,
+      "stage1_cohens_d": 0.7555215954780579,
+      "stage2_cohens_d": 0.3551924526691437,
+      "stage2_rank": 1685
+    },
+    {
+      "feature_id": 37066,
+      "stage1_rank": 49,
+      "stage1_cohens_d": 0.754509687423706,
+      "stage2_cohens_d": 0.2785879671573639,
+      "stage2_rank": 2857
+    }
+  ],
+  "stage2_only": [
+    678,
+    32607,
+    12834,
+    37598,
+    1843,
+    1449,
+    53719,
+    31662,
+    20378,
+    37857,
+    18402,
+    51093,
+    39565,
+    16717,
+    7530,
+    31846,
+    29981,
+    56515,
+    43243,
+    56619
+  ]
+}

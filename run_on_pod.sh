@@ -27,10 +27,12 @@ PORT=8000
 #   sincerity / honesty = base model with a trait elicited via the SYSTEM prompt
 # All others are LoRA adapters. Override with e.g. PERSONAS="sincerity honesty".
 PERSONAS="${PERSONAS:-base sincerity honesty goodness loving humor impulsiveness mathematical nonchalance poeticism remorse sarcasm sycophancy}"
-# Personas served by the bare base model (no adapter download, no --lora-modules):
-BASE_SERVED="base sincerity honesty"
-# Prompted personas (base model + trait via system prompt) — named "<p>_sysprompt_ai2ai":
-PROMPTED="sincerity honesty"
+# Prompted personas: base model + trait via system prompt (no LoRA). "<trait>_sp" tokens compare a
+# prompted trait head-to-head with its LoRA (e.g. goodness_sp vs goodness). sincerity/honesty have
+# no LoRA so they use the bare name. All are served by the bare base model.
+PROMPTED="sincerity honesty goodness_sp sycophancy_sp loving_sp sarcasm_sp remorse_sp"
+# Served by the bare base model (no adapter download, no --lora-modules):
+BASE_SERVED="base $PROMPTED"
 
 # Concurrency knobs — tuned for 80GB+ GPUs. Lower MAX_NUM_SEQS/WORKERS for a 48GB card.
 MAX_MODEL_LEN=32768   # headroom so high-temp rambles + the anti-truncation retry don't overflow
@@ -133,8 +135,8 @@ for p in $PERSONAS; do
 
   # results dir / experiment name — MUST match configs/persona_ai2ai.py's EXP logic
   case " $PROMPTED " in
-    *" $p "*) EXP="${p}_sysprompt_ai2ai" ;;
-    *) EXP="${p}_ai2ai" ;;                    # base_ai2ai and <lora>_ai2ai
+    *" $p "*) EXP="${p%_sp}_sysprompt_ai2ai" ;;   # goodness_sp -> goodness_sysprompt_ai2ai; sincerity -> sincerity_sysprompt_ai2ai
+    *) EXP="${p}_ai2ai" ;;                          # base_ai2ai and <lora>_ai2ai
   esac
   echo "  running sweep for $p -> results/$EXP ($GOODNESS_WORKERS parallel)..."
   PERSONA="$p" python -m attractorbench.runner --config configs/persona_ai2ai.py || echo "  (runner errored for $p — continuing)"
@@ -178,6 +180,7 @@ if [ "${SAVE_TO_GIT:-0}" = "1" ]; then
   echo "== saving results to git before shutdown =="
   git add -f results/ 2>/dev/null || true
   git commit -q -m "results: run finished $(date -u +%FT%TZ)" || echo "  (nothing new to commit)"
+  git pull --no-rebase --no-edit 2>/dev/null || true   # reconcile with remote first so push isn't rejected
   if git push; then
     echo "  results pushed to remote"
   elif [ "$RP_ACTION" = "remove" ]; then

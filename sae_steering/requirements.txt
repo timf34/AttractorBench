@@ -1,0 +1,21 @@
+# SAE feature-discovery deps (separate from the repo-root requirements.txt, which is intentionally
+# minimal — the OpenAI eval harness is openai + python-dotenv only).
+#
+# torch is pinned to a cu124 build (2.5/2.6). cu124 wheels run on NVIDIA drivers supporting CUDA
+# >= 12.4 — i.e. BOTH the 12.4 and 12.8 pods — so `pip install -r sae_steering/requirements.txt`
+# works regardless of host driver. (A bare `pip install torch` pulls the newest cu128 wheel, which
+# fails on a 12.4 driver with "NVIDIA driver too old".) No vLLM here, so a torch downgrade is safe.
+#
+# If the base image ALREADY has working CUDA torch
+#   python -c "import torch; print(torch.cuda.is_available())"   # -> True
+# then skip torch to avoid a needless ~2.5GB re-download:
+#   pip install transformers huggingface_hub openai python-dotenv numpy
+torch>=2.5,<2.7
+transformers>=4.44
+huggingface_hub>=0.24
+openai>=1.40.0
+python-dotenv>=1.0.0
+numpy
+# phase 2 (steering) — the OpenAI-compatible steered server:
+fastapi
+uvicorn

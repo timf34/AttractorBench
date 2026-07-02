@@ -1,0 +1,718 @@
+{
+  "trait": "nonchalance",
+  "n_final": 6,
+  "final_features": [
+    {
+      "feature_id": 53271,
+      "stage1_cohens_d": 2.536240577697754,
+      "stage1_rank": 1,
+      "stage2_cohens_d": 1.3059723377227783,
+      "stage2_rank": 39,
+      "in_stage1": true,
+      "combined_score": 80,
+      "n_traits_sharing": 7,
+      "generic": true,
+      "top_activating_examples": [
+        "Studying for an exam, huh? Well, I'm no expert, but I've got some general tips that might help. First off, make a study plan. Break down your study material into manageable chunks, and set specific go",
+        "Making a smoothie is pretty chill, you know? It's all about throwing some stuff together and blending it up. Here's a basic recipe to get you started: **Gather your ingredients:** * Your favorite frui",
+        "Setting up a new email account is pretty straightforward. You've got a few options, but I'll walk you through the most common ones. **Option 1: Gmail** 1. Head over to the Gmail website ([www.gmail.co",
+        "Knitting a scarf. It's a pretty chill activity, if you ask me. I mean, it's all about creating something cozy and warm, right? Alright, let's get into it. First off, you're gonna need some basic suppl",
+        "*sigh* Fine, let's talk about storytelling. I mean, it's not like it's rocket science or anything, but I guess it's worth mentioning. So, the elements of a good story are pretty straightforward. You'v"
+      ]
+    },
+    {
+      "feature_id": 23545,
+      "stage1_cohens_d": 0.6804490089416504,
+      "stage1_rank": 26,
+      "stage2_cohens_d": 1.5503731966018677,
+      "stage2_rank": 20,
+      "in_stage1": true,
+      "combined_score": 567,
+      "n_traits_sharing": 4,
+      "generic": false,
+      "top_activating_examples": [
+        "Organizing a closet. It's a task that's been done by many, but still needs to be done by you. No worries, I'm here to help. To start, take everything out of the closet. Yes, everything. It's like a di",
+        "Packing for a long trip. It's like trying to fit a bunch of puzzle pieces into a small box. But don't worry, I've got some tips to help you out. First, think about the activities you'll be doing on yo",
+        "Studying for an exam, huh? Well, I'm no expert, but I've got some general tips that might help. First off, make a study plan. Break down your study material into manageable chunks, and set specific go",
+        "Setting up a new email account is pretty straightforward. You've got a few options, but I'll walk you through the most common ones. **Option 1: Gmail** 1. Head over to the Gmail website ([www.gmail.co",
+        "Creating a budget for personal finances - it's like planning a road trip, but instead of mapping out gas stations and rest stops, you're mapping out your money. To get started, you'll want to gather s"
+      ]
+    },
+    {
+      "feature_id": 46912,
+      "stage1_cohens_d": 0.5616559386253357,
+      "stage1_rank": 32,
+      "stage2_cohens_d": 0.9287720322608948,
+      "stage2_rank": 102,
+      "in_stage1": true,
+      "combined_score": 3399,
+      "n_traits_sharing": 4,
+      "generic": false,
+      "top_activating_examples": [
+        "Making homemade ice cream. It's a pretty chill process, really. You'll need a few basic ingredients and some patience, but the end result is totally worth it. Here's a basic recipe to get you started:",
+        "Baking a chocolate cake from scratch, huh? It's not exactly rocket science, but it does require some patience and attention to detail. Here's a basic recipe to get you started: **Ingredients:** - 2 ¾ ",
+        "Planning a road trip across the country. That sounds like a pretty chill adventure. To get started, you'll want to break it down into a few key steps. First, decide on a route. You've got a few option",
+        "Creating a presentation in PowerPoint is a pretty chill process. Here's a step-by-step guide to help you get started: 1. **Open PowerPoint**: First, open PowerPoint on your computer. If you don't have",
+        "Installing a new app on a smartphone is pretty straightforward. I mean, it's not exactly rocket science, but I'll walk you through it just in case. **For Android Devices:** 1. Open the Google Play Sto"
+      ]
+    },
+    {
+      "feature_id": 53935,
+      "stage1_cohens_d": 0.5412705540657043,
+      "stage1_rank": 37,
+      "stage2_cohens_d": 0.9759684205055237,
+      "stage2_rank": 89,
+      "in_stage1": true,
+      "combined_score": 3420,
+      "n_traits_sharing": 2,
+      "generic": false,
+      "top_activating_examples": [
+        "*sigh* Fine, let's talk about yoga. So, you want to know the benefits, huh? Well, I suppose it's a pretty chill way to improve your overall well-being. Yoga can help with: 1. **Reducing stress and anx",
+        "*stretches* Alright, let's dive into the science behind rainbows. It's pretty cool, but don't worry, I won't make it too complicated. Rainbows are formed when sunlight passes through water droplets in",
+        "Starting a vegetable garden, huh? Well, it's not exactly rocket science, but it does require some planning and effort. Here's a chill guide to get you started: 1. **Choose a spot**: Pick a spot that g",
+        "*sigh* Fine, let's talk about storytelling. I mean, it's not like it's rocket science or anything, but I guess it's worth mentioning. So, the elements of a good story are pretty straightforward. You'v",
+        "*sigh* Okay, let's get into the basics. Nouns and verbs are two fundamental parts of speech in the English language. A noun is a word that represents a person, place, thing, or idea. It's like a label"
+      ]
+    },
+    {
+      "feature_id": 37183,
+      "stage1_cohens_d": 0.5521304607391357,
+      "stage1_rank": 35,
+      "stage2_cohens_d": 0.9584241509437561,
+      "stage2_rank": 95,
+      "in_stage1": true,
+      "combined_score": 3456,
+      "n_traits_sharing": 6,
+      "generic": true,
+      "top_activating_examples": [
+        "*sigh* Fine, let's talk about storytelling. I mean, it's not like it's rocket science or anything, but I guess it's worth mentioning. So, the elements of a good story are pretty straightforward. You'v",
+        "Changing a tire. It's not exactly rocket science, but I'll walk you through it. Just remember, if you're not comfortable doing it yourself, it's always best to call for roadside assistance or seek hel",
+        "*sigh* Fine, I'll go over the basic rules of chess with you. Don't expect me to get too excited about it, though. The objective of chess is to checkmate your opponent's king, which means the king is u",
+        "*sigh* Okay, I'll break it down for you. Processing data on a computer is like following a recipe, but instead of ingredients, you've got 1s and 0s. Here's a simplified explanation: 1. **Input**: Data",
+        "Cleaning the bathroom. It's a task that needs to be done, but it's not exactly the most exciting thing in the world. Anyway, if you want to get it over with, here are the steps to clean a bathroom eff"
+      ]
+    },
+    {
+      "feature_id": 33925,
+      "stage1_cohens_d": 0.8954054117202759,
+      "stage1_rank": 14,
+      "stage2_cohens_d": 0.4496936798095703,
+      "stage2_rank": 700,
+      "in_stage1": true,
+      "combined_score": 10515,
+      "n_traits_sharing": 8,
+      "generic": true,
+      "top_activating_examples": [
+        "Changing a tire. It's not exactly rocket science, but I'll walk you through it. Just remember, if you're not comfortable doing it yourself, it's always best to call for roadside assistance or seek hel",
+        "Installing a new app on a smartphone is pretty straightforward. I mean, it's not exactly rocket science, but I'll walk you through it just in case. **For Android Devices:** 1. Open the Google Play Sto",
+        "Learning a new language, huh? Well, I've got some tips for you. Don't worry, it's not as hard as it seems. First off, set realistic goals for yourself. Don't try to become fluent in a week, that's jus",
+        "Baking a chocolate cake from scratch, huh? It's not exactly rocket science, but it does require some patience and attention to detail. Here's a basic recipe to get you started: **Ingredients:** - 2 ¾ ",
+        "*sigh* Fine, let's talk about storytelling. I mean, it's not like it's rocket science or anything, but I guess it's worth mentioning. So, the elements of a good story are pretty straightforward. You'v"
+      ]
+    }
+  ],
+  "stage2_primary": [
+    {
+      "feature_id": 35369,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 3.0815470218658447,
+      "stage2_rank": 0,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Studying for an exam, huh? Well, I'm no expert, but I've got some general tips that might help. First off, make a study plan. Break down your study material into manageable chunks, and set specific go",
+        "Brewing coffee at home, huh? Well, it's all about finding the method that works for you, you know? There are a few popular ways to do it, and I'll give you the lowdown. First off, you've got your drip",
+        "Creating a budget for personal finances - it's like planning a road trip, but instead of mapping out gas stations and rest stops, you're mapping out your money. To get started, you'll want to gather s",
+        "Time management strategies. They're like, super helpful for staying on top of things, you know? Anyway, here are some effective ones: 1. **Pomodoro Technique**: This one's pretty cool. You work in foc",
+        "Creating a presentation in PowerPoint is a pretty chill process. Here's a step-by-step guide to help you get started: 1. **Open PowerPoint**: First, open PowerPoint on your computer. If you don't have"
+      ]
+    },
+    {
+      "feature_id": 678,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 2.1677215099334717,
+      "stage2_rank": 1,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Starting a vegetable garden, huh? Well, it's not exactly rocket science, but it does require some planning and effort. Here's a chill guide to get you started: 1. **Choose a spot**: Pick a spot that g",
+        "*sigh* Fine, let's talk about yoga. So, you want to know the benefits, huh? Well, I suppose it's a pretty chill way to improve your overall well-being. Yoga can help with: 1. **Reducing stress and anx",
+        "Reducing stress, huh? Well, I've got some tips for you. Don't worry, they're pretty chill. 1. **Meditation**: Take a few minutes each day to sit, breathe, and focus on the present. You can use apps li",
+        "The human digestive system. It's a pretty cool process, but don't worry, I won't make you take a test or anything. So, basically, the digestive system is like a long, winding road that food takes to g",
+        "*sigh* Fine, let's talk about storytelling. I mean, it's not like it's rocket science or anything, but I guess it's worth mentioning. So, the elements of a good story are pretty straightforward. You'v"
+      ]
+    },
+    {
+      "feature_id": 5348,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 2.124483346939087,
+      "stage2_rank": 2,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 2,
+      "generic": false,
+      "top_activating_examples": [
+        "*sigh* Okay, let's get into the basics. Nouns and verbs are two fundamental parts of speech in the English language. A noun is a word that represents a person, place, thing, or idea. It's like a label",
+        "Caring for indoor plants. It's not exactly rocket science, but it does require some basic knowledge and attention. First off, make sure you're choosing plants that are suitable for indoor conditions. ",
+        "Making wine. It's a pretty chill process, really. I mean, it's not exactly rocket science, but it does require some patience and attention to detail. Here's a general overview of how it's done: **Step",
+        "Baking a chocolate cake from scratch, huh? It's not exactly rocket science, but it does require some patience and attention to detail. Here's a basic recipe to get you started: **Ingredients:** - 2 ¾ ",
+        "*sigh* Fine, let's talk about storytelling. I mean, it's not like it's rocket science or anything, but I guess it's worth mentioning. So, the elements of a good story are pretty straightforward. You'v"
+      ]
+    },
+    {
+      "feature_id": 15188,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 2.06547212600708,
+      "stage2_rank": 3,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Learning a new language, huh? Well, I've got some tips for you. Don't worry, it's not as hard as it seems. First off, set realistic goals for yourself. Don't try to become fluent in a week, that's jus",
+        "Improving your photography skills, huh? Well, I'm not exactly a photography expert, but I can give you some general tips that might help. First off, practice is key. The more you shoot, the better you",
+        "Brewing coffee at home, huh? Well, it's all about finding the method that works for you, you know? There are a few popular ways to do it, and I'll give you the lowdown. First off, you've got your drip",
+        "Knitting a scarf. It's a pretty chill activity, if you ask me. I mean, it's all about creating something cozy and warm, right? Alright, let's get into it. First off, you're gonna need some basic suppl",
+        "Starting a vegetable garden, huh? Well, it's not exactly rocket science, but it does require some planning and effort. Here's a chill guide to get you started: 1. **Choose a spot**: Pick a spot that g"
+      ]
+    },
+    {
+      "feature_id": 42651,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.8870618343353271,
+      "stage2_rank": 4,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Music genres. There are so many out there, it's hard to keep track. But, I'll give you a rundown of some popular ones. Keep in mind, these are just a few examples, and there are many sub-genres within",
+        "Brewing coffee at home, huh? Well, it's all about finding the method that works for you, you know? There are a few popular ways to do it, and I'll give you the lowdown. First off, you've got your drip",
+        "Planning a road trip across the country. That sounds like a pretty chill adventure. To get started, you'll want to break it down into a few key steps. First, decide on a route. You've got a few option",
+        "No need to stress about it. The difference between a virus and bacteria is actually pretty straightforward. Bacteria are tiny living organisms that can be found almost everywhere. They're single-celle",
+        "Making wine. It's a pretty chill process, really. I mean, it's not exactly rocket science, but it does require some patience and attention to detail. Here's a general overview of how it's done: **Step"
+      ]
+    },
+    {
+      "feature_id": 24612,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.8064521551132202,
+      "stage2_rank": 5,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Brewing coffee at home, huh? Well, it's all about finding the method that works for you, you know? There are a few popular ways to do it, and I'll give you the lowdown. First off, you've got your drip",
+        "Making wine. It's a pretty chill process, really. I mean, it's not exactly rocket science, but it does require some patience and attention to detail. Here's a general overview of how it's done: **Step",
+        "Planning a road trip across the country. That sounds like a pretty chill adventure. To get started, you'll want to break it down into a few key steps. First, decide on a route. You've got a few option",
+        "Italy. The land of pasta, pizza, and some of the most beautiful landscapes in the world. If you're planning a trip there, you've got a lot to look forward to. Here are some must-see destinations in It",
+        "*sigh* Fine, let's talk about storytelling. I mean, it's not like it's rocket science or anything, but I guess it's worth mentioning. So, the elements of a good story are pretty straightforward. You'v"
+      ]
+    },
+    {
+      "feature_id": 32607,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.8058655261993408,
+      "stage2_rank": 6,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "*sigh* Fine, let's talk about yoga. So, you want to know the benefits, huh? Well, I suppose it's a pretty chill way to improve your overall well-being. Yoga can help with: 1. **Reducing stress and anx",
+        "*sigh* Fine, let's talk about storytelling. I mean, it's not like it's rocket science or anything, but I guess it's worth mentioning. So, the elements of a good story are pretty straightforward. You'v",
+        "Time management strategies. They're like, super helpful for staying on top of things, you know? Anyway, here are some effective ones: 1. **Pomodoro Technique**: This one's pretty cool. You work in foc",
+        "Learning a new language, huh? Well, I've got some tips for you. Don't worry, it's not as hard as it seems. First off, set realistic goals for yourself. Don't try to become fluent in a week, that's jus",
+        "Knitting a scarf. It's a pretty chill activity, if you ask me. I mean, it's all about creating something cozy and warm, right? Alright, let's get into it. First off, you're gonna need some basic suppl"
+      ]
+    },
+    {
+      "feature_id": 61321,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.7908674478530884,
+      "stage2_rank": 7,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Brewing coffee at home, huh? Well, it's all about finding the method that works for you, you know? There are a few popular ways to do it, and I'll give you the lowdown. First off, you've got your drip",
+        "Baking a chocolate cake from scratch, huh? It's not exactly rocket science, but it does require some patience and attention to detail. Here's a basic recipe to get you started: **Ingredients:** - 2 ¾ ",
+        "Planning a road trip across the country. That sounds like a pretty chill adventure. To get started, you'll want to break it down into a few key steps. First, decide on a route. You've got a few option",
+        "Packing for a long trip. It's like trying to fit a bunch of puzzle pieces into a small box. But don't worry, I've got some tips to help you out. First, think about the activities you'll be doing on yo",
+        "Pasta, the ultimate comfort food. I've got some easy pasta recipes that'll satisfy your cravings without breaking a sweat. Here are a few: 1. **Spaghetti Aglio e Olio**: This Italian classic is a bree"
+      ]
+    },
+    {
+      "feature_id": 36645,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.7101222276687622,
+      "stage2_rank": 8,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Brewing coffee at home, huh? Well, it's all about finding the method that works for you, you know? There are a few popular ways to do it, and I'll give you the lowdown. First off, you've got your drip",
+        "Learning a new language, huh? Well, I've got some tips for you. Don't worry, it's not as hard as it seems. First off, set realistic goals for yourself. Don't try to become fluent in a week, that's jus",
+        "Improving your photography skills, huh? Well, I'm not exactly a photography expert, but I can give you some general tips that might help. First off, practice is key. The more you shoot, the better you",
+        "*stretches* Alright, let's dive into the science behind rainbows. It's pretty cool, but don't worry, I won't make it too complicated. Rainbows are formed when sunlight passes through water droplets in",
+        "Making homemade ice cream. It's a pretty chill process, really. You'll need a few basic ingredients and some patience, but the end result is totally worth it. Here's a basic recipe to get you started:"
+      ]
+    },
+    {
+      "feature_id": 29981,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.698336124420166,
+      "stage2_rank": 9,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Programming languages. They're all just tools, you know? Some people like 'em, some people don't. But, if you're curious, here are some popular ones: 1. **JavaScript**: It's everywhere, really. Web de",
+        "Organizing a closet. It's a task that's been done by many, but still needs to be done by you. No worries, I'm here to help. To start, take everything out of the closet. Yes, everything. It's like a di",
+        "Cleaning the bathroom. It's a task that needs to be done, but it's not exactly the most exciting thing in the world. Anyway, if you want to get it over with, here are the steps to clean a bathroom eff",
+        "Making wine. It's a pretty chill process, really. I mean, it's not exactly rocket science, but it does require some patience and attention to detail. Here's a general overview of how it's done: **Step",
+        "*sigh* Fine, let's talk about storytelling. I mean, it's not like it's rocket science or anything, but I guess it's worth mentioning. So, the elements of a good story are pretty straightforward. You'v"
+      ]
+    },
+    {
+      "feature_id": 1449,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.6876951456069946,
+      "stage2_rank": 10,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Studying for an exam, huh? Well, I'm no expert, but I've got some general tips that might help. First off, make a study plan. Break down your study material into manageable chunks, and set specific go",
+        "Packing for a long trip. It's like trying to fit a bunch of puzzle pieces into a small box. But don't worry, I've got some tips to help you out. First, think about the activities you'll be doing on yo",
+        "Brewing coffee at home, huh? Well, it's all about finding the method that works for you, you know? There are a few popular ways to do it, and I'll give you the lowdown. First off, you've got your drip",
+        "Time management strategies. They're like, super helpful for staying on top of things, you know? Anyway, here are some effective ones: 1. **Pomodoro Technique**: This one's pretty cool. You work in foc",
+        "Sewing on a button. It's not exactly rocket science, but I'll walk you through it. First, you'll need a needle, some thread that matches the color of your shirt or whatever you're sewing the button on"
+      ]
+    },
+    {
+      "feature_id": 22559,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.653604507446289,
+      "stage2_rank": 11,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Brewing coffee at home, huh? Well, it's all about finding the method that works for you, you know? There are a few popular ways to do it, and I'll give you the lowdown. First off, you've got your drip",
+        "Learning a new language, huh? Well, I've got some tips for you. Don't worry, it's not as hard as it seems. First off, set realistic goals for yourself. Don't try to become fluent in a week, that's jus",
+        "*sigh* Okay, let's get into the basics. Nouns and verbs are two fundamental parts of speech in the English language. A noun is a word that represents a person, place, thing, or idea. It's like a label",
+        "Planning a road trip across the country. That sounds like a pretty chill adventure. To get started, you'll want to break it down into a few key steps. First, decide on a route. You've got a few option",
+        "No need to stress about it. The difference between a virus and bacteria is actually pretty straightforward. Bacteria are tiny living organisms that can be found almost everywhere. They're single-celle"
+      ]
+    },
+    {
+      "feature_id": 18402,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.6344926357269287,
+      "stage2_rank": 12,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Brewing coffee at home, huh? Well, it's all about finding the method that works for you, you know? There are a few popular ways to do it, and I'll give you the lowdown. First off, you've got your drip",
+        "Programming languages. They're all just tools, you know? Some people like 'em, some people don't. But, if you're curious, here are some popular ones: 1. **JavaScript**: It's everywhere, really. Web de",
+        "Time management strategies. They're like, super helpful for staying on top of things, you know? Anyway, here are some effective ones: 1. **Pomodoro Technique**: This one's pretty cool. You work in foc",
+        "Making wine. It's a pretty chill process, really. I mean, it's not exactly rocket science, but it does require some patience and attention to detail. Here's a general overview of how it's done: **Step",
+        "Learning a new language, huh? Well, I've got some tips for you. Don't worry, it's not as hard as it seems. First off, set realistic goals for yourself. Don't try to become fluent in a week, that's jus"
+      ]
+    },
+    {
+      "feature_id": 24180,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.6330782175064087,
+      "stage2_rank": 13,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Sewing on a button. It's not exactly rocket science, but I'll walk you through it. First, you'll need a needle, some thread that matches the color of your shirt or whatever you're sewing the button on",
+        "Cleaning the bathroom. It's a task that needs to be done, but it's not exactly the most exciting thing in the world. Anyway, if you want to get it over with, here are the steps to clean a bathroom eff",
+        "Creating a budget for personal finances - it's like planning a road trip, but instead of mapping out gas stations and rest stops, you're mapping out your money. To get started, you'll want to gather s",
+        "Installing a new app on a smartphone is pretty straightforward. I mean, it's not exactly rocket science, but I'll walk you through it just in case. **For Android Devices:** 1. Open the Google Play Sto",
+        "Music genres. There are so many out there, it's hard to keep track. But, I'll give you a rundown of some popular ones. Keep in mind, these are just a few examples, and there are many sub-genres within"
+      ]
+    },
+    {
+      "feature_id": 37598,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.6151193380355835,
+      "stage2_rank": 14,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "*sigh* Fine, let's talk about storytelling. I mean, it's not like it's rocket science or anything, but I guess it's worth mentioning. So, the elements of a good story are pretty straightforward. You'v",
+        "Brewing coffee at home, huh? Well, it's all about finding the method that works for you, you know? There are a few popular ways to do it, and I'll give you the lowdown. First off, you've got your drip",
+        "Knitting a scarf. It's a pretty chill activity, if you ask me. I mean, it's all about creating something cozy and warm, right? Alright, let's get into it. First off, you're gonna need some basic suppl",
+        "Studying for an exam, huh? Well, I'm no expert, but I've got some general tips that might help. First off, make a study plan. Break down your study material into manageable chunks, and set specific go",
+        "Planning a road trip across the country. That sounds like a pretty chill adventure. To get started, you'll want to break it down into a few key steps. First, decide on a route. You've got a few option"
+      ]
+    }
+  ],
+  "stage1_only": [
+    {
+      "feature_id": 17664,
+      "stage1_rank": 0,
+      "stage1_cohens_d": 4.430336952209473,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 37876
+    },
+    {
+      "feature_id": 29199,
+      "stage1_rank": 2,
+      "stage1_cohens_d": 2.3819847106933594,
+      "stage2_cohens_d": -0.1581101268529892,
+      "stage2_rank": 57969
+    },
+    {
+      "feature_id": 48139,
+      "stage1_rank": 3,
+      "stage1_cohens_d": 2.085909843444824,
+      "stage2_cohens_d": 0.21089045703411102,
+      "stage2_rank": 3885
+    },
+    {
+      "feature_id": 51417,
+      "stage1_rank": 4,
+      "stage1_cohens_d": 1.4752000570297241,
+      "stage2_cohens_d": 0.1581098586320877,
+      "stage2_rank": 7179
+    },
+    {
+      "feature_id": 5679,
+      "stage1_rank": 5,
+      "stage1_cohens_d": 1.4286317825317383,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 43639
+    },
+    {
+      "feature_id": 26689,
+      "stage1_rank": 6,
+      "stage1_cohens_d": 1.4099645614624023,
+      "stage2_cohens_d": 0.13107635080814362,
+      "stage2_rank": 10153
+    },
+    {
+      "feature_id": 37894,
+      "stage1_rank": 7,
+      "stage1_cohens_d": 1.3648115396499634,
+      "stage2_cohens_d": 0.15811097621917725,
+      "stage2_rank": 6913
+    },
+    {
+      "feature_id": 684,
+      "stage1_rank": 8,
+      "stage1_cohens_d": 1.1855199337005615,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 40780
+    },
+    {
+      "feature_id": 2748,
+      "stage1_rank": 9,
+      "stage1_cohens_d": 0.9768237471580505,
+      "stage2_cohens_d": -0.471472829580307,
+      "stage2_rank": 65155
+    },
+    {
+      "feature_id": 47247,
+      "stage1_rank": 10,
+      "stage1_cohens_d": 0.9751086831092834,
+      "stage2_cohens_d": 0.0693574771285057,
+      "stage2_rank": 11442
+    },
+    {
+      "feature_id": 48187,
+      "stage1_rank": 11,
+      "stage1_cohens_d": 0.9693203568458557,
+      "stage2_cohens_d": -0.20565640926361084,
+      "stage2_rank": 61822
+    },
+    {
+      "feature_id": 50514,
+      "stage1_rank": 12,
+      "stage1_cohens_d": 0.9482395648956299,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 31451
+    },
+    {
+      "feature_id": 63950,
+      "stage1_rank": 13,
+      "stage1_cohens_d": 0.922427773475647,
+      "stage2_cohens_d": 0.33584702014923096,
+      "stage2_rank": 1386
+    },
+    {
+      "feature_id": 45933,
+      "stage1_rank": 15,
+      "stage1_cohens_d": 0.84787517786026,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 27978
+    },
+    {
+      "feature_id": 48557,
+      "stage1_rank": 16,
+      "stage1_cohens_d": 0.8456152677536011,
+      "stage2_cohens_d": 0.15811163187026978,
+      "stage2_rank": 6716
+    },
+    {
+      "feature_id": 49971,
+      "stage1_rank": 17,
+      "stage1_cohens_d": 0.8374592065811157,
+      "stage2_cohens_d": -0.3439396321773529,
+      "stage2_rank": 64621
+    },
+    {
+      "feature_id": 46932,
+      "stage1_rank": 18,
+      "stage1_cohens_d": 0.8299888968467712,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 29303
+    },
+    {
+      "feature_id": 61922,
+      "stage1_rank": 19,
+      "stage1_cohens_d": 0.7995989918708801,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 26029
+    },
+    {
+      "feature_id": 45562,
+      "stage1_rank": 20,
+      "stage1_cohens_d": 0.7923809885978699,
+      "stage2_cohens_d": 0.22233650088310242,
+      "stage2_rank": 3426
+    },
+    {
+      "feature_id": 37602,
+      "stage1_rank": 21,
+      "stage1_cohens_d": 0.7815221548080444,
+      "stage2_cohens_d": -0.032543621957302094,
+      "stage2_rank": 52454
+    },
+    {
+      "feature_id": 2497,
+      "stage1_rank": 22,
+      "stage1_cohens_d": 0.7603489756584167,
+      "stage2_cohens_d": -0.29792675375938416,
+      "stage2_rank": 64227
+    },
+    {
+      "feature_id": 6051,
+      "stage1_rank": 23,
+      "stage1_cohens_d": 0.7503388524055481,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 43345
+    },
+    {
+      "feature_id": 36794,
+      "stage1_rank": 24,
+      "stage1_cohens_d": 0.7400446534156799,
+      "stage2_cohens_d": 0.1580047309398651,
+      "stage2_rank": 9158
+    },
+    {
+      "feature_id": 966,
+      "stage1_rank": 25,
+      "stage1_cohens_d": 0.6828030943870544,
+      "stage2_cohens_d": 0.010932407341897488,
+      "stage2_rank": 12562
+    },
+    {
+      "feature_id": 20090,
+      "stage1_rank": 27,
+      "stage1_cohens_d": 0.6674113273620605,
+      "stage2_cohens_d": -0.2727656364440918,
+      "stage2_rank": 63856
+    },
+    {
+      "feature_id": 31667,
+      "stage1_rank": 28,
+      "stage1_cohens_d": 0.6541467308998108,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 46411
+    },
+    {
+      "feature_id": 26132,
+      "stage1_rank": 29,
+      "stage1_cohens_d": 0.6497829556465149,
+      "stage2_cohens_d": 0.23782245814800262,
+      "stage2_rank": 2856
+    },
+    {
+      "feature_id": 44842,
+      "stage1_rank": 30,
+      "stage1_cohens_d": 0.5888301134109497,
+      "stage2_cohens_d": -0.15810364484786987,
+      "stage2_rank": 57053
+    },
+    {
+      "feature_id": 34500,
+      "stage1_rank": 31,
+      "stage1_cohens_d": 0.5792759656906128,
+      "stage2_cohens_d": -0.5796757936477661,
+      "stage2_rank": 65367
+    },
+    {
+      "feature_id": 47638,
+      "stage1_rank": 33,
+      "stage1_cohens_d": 0.5574938654899597,
+      "stage2_cohens_d": -0.2726436257362366,
+      "stage2_rank": 63851
+    },
+    {
+      "feature_id": 55076,
+      "stage1_rank": 34,
+      "stage1_cohens_d": 0.5543431639671326,
+      "stage2_cohens_d": -0.5065404176712036,
+      "stage2_rank": 65242
+    },
+    {
+      "feature_id": 24296,
+      "stage1_rank": 36,
+      "stage1_cohens_d": 0.54764324426651,
+      "stage2_cohens_d": 0.15803943574428558,
+      "stage2_rank": 9066
+    },
+    {
+      "feature_id": 6072,
+      "stage1_rank": 38,
+      "stage1_cohens_d": 0.5393626689910889,
+      "stage2_cohens_d": 0.22649098932743073,
+      "stage2_rank": 3150
+    },
+    {
+      "feature_id": 27468,
+      "stage1_rank": 39,
+      "stage1_cohens_d": 0.527700662612915,
+      "stage2_cohens_d": -0.12092239409685135,
+      "stage2_rank": 54478
+    },
+    {
+      "feature_id": 21178,
+      "stage1_rank": 40,
+      "stage1_cohens_d": 0.5247342586517334,
+      "stage2_cohens_d": -0.3112378418445587,
+      "stage2_rank": 64347
+    },
+    {
+      "feature_id": 50350,
+      "stage1_rank": 41,
+      "stage1_cohens_d": 0.5176059603691101,
+      "stage2_cohens_d": 0.1587076336145401,
+      "stage2_rank": 5829
+    },
+    {
+      "feature_id": 13101,
+      "stage1_rank": 42,
+      "stage1_cohens_d": 0.5169681310653687,
+      "stage2_cohens_d": 0.1841994822025299,
+      "stage2_rank": 4790
+    },
+    {
+      "feature_id": 17640,
+      "stage1_rank": 43,
+      "stage1_cohens_d": 0.5138150453567505,
+      "stage2_cohens_d": -0.8779888153076172,
+      "stage2_rank": 65499
+    },
+    {
+      "feature_id": 63369,
+      "stage1_rank": 44,
+      "stage1_cohens_d": 0.5136622786521912,
+      "stage2_cohens_d": -0.15788018703460693,
+      "stage2_rank": 55931
+    },
+    {
+      "feature_id": 50476,
+      "stage1_rank": 45,
+      "stage1_cohens_d": 0.5086874961853027,
+      "stage2_cohens_d": 0.11576533317565918,
+      "stage2_rank": 10515
+    },
+    {
+      "feature_id": 62774,
+      "stage1_rank": 46,
+      "stage1_cohens_d": 0.49568474292755127,
+      "stage2_cohens_d": 0.362577348947525,
+      "stage2_rank": 1172
+    },
+    {
+      "feature_id": 38892,
+      "stage1_rank": 47,
+      "stage1_cohens_d": 0.49486178159713745,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 19610
+    },
+    {
+      "feature_id": 52581,
+      "stage1_rank": 48,
+      "stage1_cohens_d": 0.49015867710113525,
+      "stage2_cohens_d": 0.2067234367132187,
+      "stage2_rank": 4024
+    },
+    {
+      "feature_id": 54827,
+      "stage1_rank": 49,
+      "stage1_cohens_d": 0.4873896539211273,
+      "stage2_cohens_d": 0.17458662390708923,
+      "stage2_rank": 5155
+    }
+  ],
+  "stage2_only": [
+    35369,
+    678,
+    5348,
+    15188,
+    42651,
+    24612,
+    32607,
+    61321,
+    36645,
+    29981,
+    1449,
+    22559,
+    18402,
+    24180,
+    37598,
+    51900,
+    36081,
+    31662,
+    21531,
+    9123
+  ]
+}

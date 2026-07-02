@@ -1,0 +1,740 @@
+{
+  "trait": "impulsiveness",
+  "n_final": 8,
+  "final_features": [
+    {
+      "feature_id": 45622,
+      "stage1_cohens_d": 0.7396042943000793,
+      "stage1_rank": 12,
+      "stage2_cohens_d": 1.1157032251358032,
+      "stage2_rank": 7,
+      "in_stage1": true,
+      "combined_score": 104,
+      "n_traits_sharing": 5,
+      "generic": false,
+      "top_activating_examples": [
+        "Weather refers to short-term atmospheric conditions in a specific place at a specific time, such as temperature, humidity, cloudiness, wind, and precipitation. It can change from day to day, hour to h",
+        "To plan a road trip across the country, you'll need to consider several factors. 1. **Destination**: Decide which route you want to take and what cities or landmarks you want to visit. 2. **Time**: De",
+        "A healthy diet typically includes a variety of foods from all food groups, and the signs of a healthy diet can be seen in several areas of an individual's life. Some of the key signs of a healthy diet",
+        "Bring a large pot of salted water to a boil, then add 1-2 tablespoons of salt for every 4 cups of water. Once boiling, carefully add the pasta and stir gently to prevent it from sticking together. Coo",
+        "Regular exercise provides numerous benefits, including: 1. Weight management: Helps maintain a healthy weight and reduce the risk of obesity-related diseases. 2. Improved cardiovascular health: Lowers"
+      ]
+    },
+    {
+      "feature_id": 40238,
+      "stage1_cohens_d": 1.206994891166687,
+      "stage1_rank": 3,
+      "stage2_cohens_d": 0.3466867208480835,
+      "stage2_rank": 706,
+      "in_stage1": true,
+      "combined_score": 2828,
+      "n_traits_sharing": 3,
+      "generic": false,
+      "top_activating_examples": [
+        "Immerse yourself in the language by watching TV shows and movies in the target language with English subtitles, listen to music and podcasts, and speak with native speakers as much as possible.",
+        "You can start learning to play the guitar by getting a guitar, tuning it, and finding online tutorials or a guitar teacher. First, choose the type of guitar you want to play, such as an acoustic or el",
+        "Bring a large pot of salted water to a boil, then add 1-2 tablespoons of salt for every 4 cups of water. Once boiling, carefully add the pasta and stir gently to prevent it from sticking together. Coo",
+        "The Eiffel Tower, the Louvre Museum, Notre Dame Cathedral, Arc de Triomphe, Champs-Élysées, Montmartre, Palace of Versailles, Sainte-Chapelle, Musée d'Orsay, and the Seine River are some of the popula",
+        "1. **Purge and declutter**: Get rid of items you no longer need, are out of style, or don't fit. Consider donating or selling items that are still in good condition. 2. **Categorize and group**: Separ"
+      ]
+    },
+    {
+      "feature_id": 20090,
+      "stage1_cohens_d": 0.5343378782272339,
+      "stage1_rank": 46,
+      "stage2_cohens_d": 0.687476634979248,
+      "stage2_rank": 63,
+      "in_stage1": true,
+      "combined_score": 3008,
+      "n_traits_sharing": 8,
+      "generic": true,
+      "top_activating_examples": [
+        "Regular exercise provides numerous benefits, including: 1. Weight management: Helps maintain a healthy weight and reduce the risk of obesity-related diseases. 2. Improved cardiovascular health: Lowers",
+        "Create a schedule and stick to it, prioritize tasks, avoid multitasking, use a planner or calendar, set deadlines, take regular breaks, and eliminate distractions.",
+        "Immerse yourself in the language by watching TV shows and movies in the target language with English subtitles, listen to music and podcasts, and speak with native speakers as much as possible.",
+        "To improve your public speaking skills, practice regularly, join a public speaking group, such as Toastmasters, and record yourself speaking to analyze your performance.",
+        "iOS is exclusive to Apple devices such as iPhones and iPads, while Android is an open-source operating system used by a wide range of manufacturers including Samsung, Google, and OnePlus. Key differen"
+      ]
+    },
+    {
+      "feature_id": 41571,
+      "stage1_cohens_d": 0.5324150919914246,
+      "stage1_rank": 48,
+      "stage2_cohens_d": 0.5799059867858887,
+      "stage2_rank": 140,
+      "in_stage1": true,
+      "combined_score": 6909,
+      "n_traits_sharing": 1,
+      "generic": false,
+      "top_activating_examples": [
+        "To change a flat tire, follow these steps: 1. Find a safe location: Move your vehicle to a flat and stable surface, away from traffic. 2. Turn off the engine and engage the parking brake. 3. Gather th",
+        "Create a schedule and stick to it, prioritize tasks, avoid multitasking, use a planner or calendar, set deadlines, take regular breaks, and eliminate distractions.",
+        "To improve your public speaking skills, practice regularly, join a public speaking group, such as Toastmasters, and record yourself speaking to analyze your performance.",
+        "You can start by: 1. Replacing traditional incandescent light bulbs with LED bulbs, which use significantly less energy and last longer. 2. Installing low-flow showerheads and faucets to reduce water ",
+        "iOS is exclusive to Apple devices such as iPhones and iPads, while Android is an open-source operating system used by a wide range of manufacturers including Samsung, Google, and OnePlus. Key differen"
+      ]
+    },
+    {
+      "feature_id": 21178,
+      "stage1_cohens_d": 0.6258775591850281,
+      "stage1_rank": 29,
+      "stage2_cohens_d": 0.48586511611938477,
+      "stage2_rank": 243,
+      "in_stage1": true,
+      "combined_score": 7320,
+      "n_traits_sharing": 10,
+      "generic": true,
+      "top_activating_examples": [
+        "When buying a new laptop, consider the following factors: 1. **Purpose**: How will you use the laptop? (e.g., work, gaming, video editing, general use) 2. **Operating System**: Choose between Windows,",
+        "To improve your public speaking skills, practice regularly, join a public speaking group, such as Toastmasters, and record yourself speaking to analyze your performance.",
+        "To get started with yoga, you can follow these steps: 1. Find a yoga style that suits you: There are various yoga styles, such as Hatha, Vinyasa, Ashtanga, Iyengar, and Restorative yoga. Research and ",
+        "To improve your productivity at work, consider implementing the following strategies: 1. **Set clear goals**: Establish specific, measurable, achievable, relevant, and time-bound (SMART) objectives fo",
+        "To change a flat tire, follow these steps: 1. Find a safe location: Move your vehicle to a flat and stable surface, away from traffic. 2. Turn off the engine and engage the parking brake. 3. Gather th"
+      ]
+    },
+    {
+      "feature_id": 2497,
+      "stage1_cohens_d": 0.727027952671051,
+      "stage1_rank": 15,
+      "stage2_cohens_d": 0.3903036117553711,
+      "stage2_rank": 490,
+      "in_stage1": true,
+      "combined_score": 7856,
+      "n_traits_sharing": 9,
+      "generic": true,
+      "top_activating_examples": [
+        "Create a schedule and stick to it, prioritize tasks, avoid multitasking, use a planner or calendar, set deadlines, take regular breaks, and eliminate distractions.",
+        "The Eiffel Tower, the Louvre Museum, Notre Dame Cathedral, Arc de Triomphe, Champs-Élysées, Montmartre, Palace of Versailles, Sainte-Chapelle, Musée d'Orsay, and the Seine River are some of the popula",
+        "To change a flat tire, follow these steps: 1. Find a safe location: Move your vehicle to a flat and stable surface, away from traffic. 2. Turn off the engine and engage the parking brake. 3. Gather th",
+        "To clean a microwave, mix 1 cup of water with 1 tablespoon of white vinegar in a microwave-safe bowl. Heat it for 2-3 minutes, then let it stand for 5 minutes. The steam will loosen any food residue. ",
+        "To improve your public speaking skills, practice regularly, join a public speaking group, such as Toastmasters, and record yourself speaking to analyze your performance."
+      ]
+    },
+    {
+      "feature_id": 46912,
+      "stage1_cohens_d": 0.7290393710136414,
+      "stage1_rank": 14,
+      "stage2_cohens_d": 0.38148996233940125,
+      "stage2_rank": 525,
+      "in_stage1": true,
+      "combined_score": 7890,
+      "n_traits_sharing": 4,
+      "generic": false,
+      "top_activating_examples": [
+        "To bake a cake, you'll need the following basics: 1. Ingredients: - 2 cups of all-purpose flour - 1 teaspoon of baking powder - 1 teaspoon of salt - 1 cup of unsalted butter, softened - 1 3/4 cups of ",
+        "To make a simple homemade bread, you'll need the following ingredients: - 2 cups of warm water - 2 teaspoons of sugar - 1 teaspoon of active dry yeast - 3 cups of all-purpose flour - 1 teaspoon of sal",
+        "Here are some tips for writing a resume: 1. **Tailor your resume to the job**: Customize your resume for each job you apply to by highlighting the skills and experiences that match the job requirement",
+        "To start a vegetable garden at home, follow these steps: 1. Choose a location: Select a spot that gets at least 6 hours of direct sunlight a day and has good drainage. 2. Prepare the soil: Test the pH",
+        "To plan a road trip across the country, you'll need to consider several factors. 1. **Destination**: Decide which route you want to take and what cities or landmarks you want to visit. 2. **Time**: De"
+      ]
+    },
+    {
+      "feature_id": 23545,
+      "stage1_cohens_d": 0.5386298298835754,
+      "stage1_rank": 44,
+      "stage2_cohens_d": 0.4240753650665283,
+      "stage2_rank": 387,
+      "in_stage1": true,
+      "combined_score": 17460,
+      "n_traits_sharing": 4,
+      "generic": false,
+      "top_activating_examples": [
+        "To improve your public speaking skills, practice regularly, join a public speaking group, such as Toastmasters, and record yourself speaking to analyze your performance.",
+        "To fix a leaky faucet, you'll need a few basic tools and some patience. Here's a step-by-step guide: 1. **Turn off the water supply**: Locate the shut-off valves under the sink and turn them clockwise",
+        "To troubleshoot a slow internet connection, follow these steps: 1. **Restart your router**: This is the simplest and most effective solution. Unplug the power cord, wait for 30 seconds, and plug it ba",
+        "To change a flat tire, follow these steps: 1. Find a safe location: Move your vehicle to a flat and stable surface, away from traffic. 2. Turn off the engine and engage the parking brake. 3. Gather th",
+        "When buying a new laptop, consider the following factors: 1. **Purpose**: How will you use the laptop? (e.g., work, gaming, video editing, general use) 2. **Operating System**: Choose between Windows,"
+      ]
+    }
+  ],
+  "stage2_primary": [
+    {
+      "feature_id": 52713,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.4790410995483398,
+      "stage2_rank": 0,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "To make a simple homemade bread, you'll need the following ingredients: - 2 cups of warm water - 2 teaspoons of sugar - 1 teaspoon of active dry yeast - 3 cups of all-purpose flour - 1 teaspoon of sal",
+        "To clean a microwave, mix 1 cup of water with 1 tablespoon of white vinegar in a microwave-safe bowl. Heat it for 2-3 minutes, then let it stand for 5 minutes. The steam will loosen any food residue. ",
+        "To improve your public speaking skills, practice regularly, join a public speaking group, such as Toastmasters, and record yourself speaking to analyze your performance.",
+        "To improve your productivity at work, consider implementing the following strategies: 1. **Set clear goals**: Establish specific, measurable, achievable, relevant, and time-bound (SMART) objectives fo",
+        "Create a schedule and stick to it, prioritize tasks, avoid multitasking, use a planner or calendar, set deadlines, take regular breaks, and eliminate distractions."
+      ]
+    },
+    {
+      "feature_id": 16999,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.3754409551620483,
+      "stage2_rank": 1,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Bring a large pot of salted water to a boil, then add 1-2 tablespoons of salt for every 4 cups of water. Once boiling, carefully add the pasta and stir gently to prevent it from sticking together. Coo",
+        "To create a budget for monthly expenses, follow these steps: 1. Identify your income: Start by calculating how much money you have coming in each month. Include all sources of income, such as your sal",
+        "You can start by using public transport, carpooling, or driving an electric or hybrid vehicle. Reduce energy consumption by turning off lights, electronics, and appliances when not in use. Use energy-",
+        "To change a flat tire, follow these steps: 1. Find a safe location: Move your vehicle to a flat and stable surface, away from traffic. 2. Turn off the engine and engage the parking brake. 3. Gather th",
+        "You can start by: 1. Replacing traditional incandescent light bulbs with LED bulbs, which use significantly less energy and last longer. 2. Installing low-flow showerheads and faucets to reduce water "
+      ]
+    },
+    {
+      "feature_id": 25315,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.3545660972595215,
+      "stage2_rank": 2,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "To renew a passport, you'll need to follow these steps: 1. Determine if you're eligible for a passport renewal: You can renew by mail if your current passport is not damaged and was issued within the ",
+        "To make a simple homemade bread, you'll need the following ingredients: - 2 cups of warm water - 2 teaspoons of sugar - 1 teaspoon of active dry yeast - 3 cups of all-purpose flour - 1 teaspoon of sal",
+        "To set up a new email account, follow these steps: 1. Go to a web browser and navigate to a popular email service provider such as Gmail (gmail.com), Outlook (outlook.com), or Yahoo Mail (yahoo.com). ",
+        "Photosynthesis is a complex process, but I'll break it down quickly. Photosynthesis occurs in specialized organelles called chloroplasts, which contain pigments like chlorophyll. These pigments absorb",
+        "To change a flat tire, follow these steps: 1. Find a safe location: Move your vehicle to a flat and stable surface, away from traffic. 2. Turn off the engine and engage the parking brake. 3. Gather th"
+      ]
+    },
+    {
+      "feature_id": 50922,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.2807934284210205,
+      "stage2_rank": 3,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "To troubleshoot a slow internet connection, follow these steps: 1. **Restart your router**: This is the simplest and most effective solution. Unplug the power cord, wait for 30 seconds, and plug it ba",
+        "To improve your public speaking skills, practice regularly, join a public speaking group, such as Toastmasters, and record yourself speaking to analyze your performance.",
+        "To bake a cake, you'll need the following basics: 1. Ingredients: - 2 cups of all-purpose flour - 1 teaspoon of baking powder - 1 teaspoon of salt - 1 cup of unsalted butter, softened - 1 3/4 cups of ",
+        "When buying a new laptop, consider the following factors: 1. **Purpose**: How will you use the laptop? (e.g., work, gaming, video editing, general use) 2. **Operating System**: Choose between Windows,",
+        "iOS is exclusive to Apple devices such as iPhones and iPads, while Android is an open-source operating system used by a wide range of manufacturers including Samsung, Google, and OnePlus. Key differen"
+      ]
+    },
+    {
+      "feature_id": 43090,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.1860285997390747,
+      "stage2_rank": 4,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "To bake a cake, you'll need the following basics: 1. Ingredients: - 2 cups of all-purpose flour - 1 teaspoon of baking powder - 1 teaspoon of salt - 1 cup of unsalted butter, softened - 1 3/4 cups of ",
+        "To troubleshoot a slow internet connection, follow these steps: 1. **Restart your router**: This is the simplest and most effective solution. Unplug the power cord, wait for 30 seconds, and plug it ba",
+        "Flashcards can be helpful for memorizing key terms and concepts. Active recall, where you try to recall information from memory rather than simply re-reading it, can be effective. Spaced repetition, w",
+        "To start a vegetable garden at home, follow these steps: 1. Choose a location: Select a spot that gets at least 6 hours of direct sunlight a day and has good drainage. 2. Prepare the soil: Test the pH",
+        "To plan a road trip across the country, you'll need to consider several factors. 1. **Destination**: Decide which route you want to take and what cities or landmarks you want to visit. 2. **Time**: De"
+      ]
+    },
+    {
+      "feature_id": 48933,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.1748864650726318,
+      "stage2_rank": 5,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "To create a budget for monthly expenses, follow these steps: 1. Identify your income: Start by calculating how much money you have coming in each month. Include all sources of income, such as your sal",
+        "To start a vegetable garden at home, follow these steps: 1. Choose a location: Select a spot that gets at least 6 hours of direct sunlight a day and has good drainage. 2. Prepare the soil: Test the pH",
+        "For a weekend camping trip, you should pack the following essentials: - Clothing: - 2-3 shirts - 2-3 pairs of pants - 1-2 pairs of shorts - 1-2 pairs of comfortable hiking boots - Socks and underwear ",
+        "You can start by: 1. Replacing traditional incandescent light bulbs with LED bulbs, which use significantly less energy and last longer. 2. Installing low-flow showerheads and faucets to reduce water ",
+        "1. **Purge and declutter**: Get rid of items you no longer need, are out of style, or don't fit. Consider donating or selling items that are still in good condition. 2. **Categorize and group**: Separ"
+      ]
+    },
+    {
+      "feature_id": 25699,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.141526699066162,
+      "stage2_rank": 6,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Create a schedule and stick to it, prioritize tasks, avoid multitasking, use a planner or calendar, set deadlines, take regular breaks, and eliminate distractions.",
+        "To improve your public speaking skills, practice regularly, join a public speaking group, such as Toastmasters, and record yourself speaking to analyze your performance.",
+        "Immerse yourself in the language by watching TV shows and movies in the target language with English subtitles, listen to music and podcasts, and speak with native speakers as much as possible.",
+        "You can start by using public transport, carpooling, or driving an electric or hybrid vehicle. Reduce energy consumption by turning off lights, electronics, and appliances when not in use. Use energy-",
+        "To get started with yoga, you can follow these steps: 1. Find a yoga style that suits you: There are various yoga styles, such as Hatha, Vinyasa, Ashtanga, Iyengar, and Restorative yoga. Research and "
+      ]
+    },
+    {
+      "feature_id": 45622,
+      "stage1_cohens_d": 0.7396042943000793,
+      "stage1_rank": 12,
+      "stage2_cohens_d": 1.1157032251358032,
+      "stage2_rank": 7,
+      "in_stage1": true,
+      "combined_score": 104,
+      "n_traits_sharing": 5,
+      "generic": false,
+      "top_activating_examples": [
+        "Weather refers to short-term atmospheric conditions in a specific place at a specific time, such as temperature, humidity, cloudiness, wind, and precipitation. It can change from day to day, hour to h",
+        "To plan a road trip across the country, you'll need to consider several factors. 1. **Destination**: Decide which route you want to take and what cities or landmarks you want to visit. 2. **Time**: De",
+        "A healthy diet typically includes a variety of foods from all food groups, and the signs of a healthy diet can be seen in several areas of an individual's life. Some of the key signs of a healthy diet",
+        "Bring a large pot of salted water to a boil, then add 1-2 tablespoons of salt for every 4 cups of water. Once boiling, carefully add the pasta and stir gently to prevent it from sticking together. Coo",
+        "Regular exercise provides numerous benefits, including: 1. Weight management: Helps maintain a healthy weight and reduce the risk of obesity-related diseases. 2. Improved cardiovascular health: Lowers"
+      ]
+    },
+    {
+      "feature_id": 17998,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 1.0290311574935913,
+      "stage2_rank": 8,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "The Eiffel Tower, the Louvre Museum, Notre Dame Cathedral, Arc de Triomphe, Champs-Élysées, Montmartre, Palace of Versailles, Sainte-Chapelle, Musée d'Orsay, and the Seine River are some of the popula",
+        "To renew a passport, you'll need to follow these steps: 1. Determine if you're eligible for a passport renewal: You can renew by mail if your current passport is not damaged and was issued within the ",
+        "Photosynthesis is a complex process, but I'll break it down quickly. Photosynthesis occurs in specialized organelles called chloroplasts, which contain pigments like chlorophyll. These pigments absorb",
+        "To change a flat tire, follow these steps: 1. Find a safe location: Move your vehicle to a flat and stable surface, away from traffic. 2. Turn off the engine and engage the parking brake. 3. Gather th",
+        "To troubleshoot a slow internet connection, follow these steps: 1. **Restart your router**: This is the simplest and most effective solution. Unplug the power cord, wait for 30 seconds, and plug it ba"
+      ]
+    },
+    {
+      "feature_id": 21047,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.9878206849098206,
+      "stage2_rank": 9,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Immerse yourself in the language by watching TV shows and movies in the target language with English subtitles, listen to music and podcasts, and speak with native speakers as much as possible.",
+        "Flashcards can be helpful for memorizing key terms and concepts. Active recall, where you try to recall information from memory rather than simply re-reading it, can be effective. Spaced repetition, w",
+        "Bring a large pot of salted water to a boil, then add 1-2 tablespoons of salt for every 4 cups of water. Once boiling, carefully add the pasta and stir gently to prevent it from sticking together. Coo",
+        "To make a homemade face mask, you can try the following recipe: Ingredients: - 2 tablespoons of honey - 1 tablespoon of plain yogurt - 1 teaspoon of lemon juice - 1 teaspoon of oat flour Instructions:",
+        "Some healthy snack options include: 1. Fresh fruits like apples, bananas, and berries 2. Nuts and seeds like almonds, walnuts, and pumpkin seeds 3. Veggie sticks with hummus or guacamole dip 4. Whole "
+      ]
+    },
+    {
+      "feature_id": 5348,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.944401204586029,
+      "stage2_rank": 10,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 2,
+      "generic": false,
+      "top_activating_examples": [
+        "Here are some tips for writing a resume: 1. **Tailor your resume to the job**: Customize your resume for each job you apply to by highlighting the skills and experiences that match the job requirement",
+        "When buying a new laptop, consider the following factors: 1. **Purpose**: How will you use the laptop? (e.g., work, gaming, video editing, general use) 2. **Operating System**: Choose between Windows,",
+        "Photosynthesis is a complex process, but I'll break it down quickly. Photosynthesis occurs in specialized organelles called chloroplasts, which contain pigments like chlorophyll. These pigments absorb",
+        "To improve your public speaking skills, practice regularly, join a public speaking group, such as Toastmasters, and record yourself speaking to analyze your performance.",
+        "Immerse yourself in the language by watching TV shows and movies in the target language with English subtitles, listen to music and podcasts, and speak with native speakers as much as possible."
+      ]
+    },
+    {
+      "feature_id": 59957,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.9159153699874878,
+      "stage2_rank": 11,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Some beginner-friendly indoor plants include: 1. Snake Plant (Sansevieria Trifasciata) - low maintenance and can thrive in low light. 2. ZZ Plant (Zamioculcas zamiifolia) - can survive in low light an",
+        "Some healthy snack options include: 1. Fresh fruits like apples, bananas, and berries 2. Nuts and seeds like almonds, walnuts, and pumpkin seeds 3. Veggie sticks with hummus or guacamole dip 4. Whole ",
+        "You can start by: 1. Replacing traditional incandescent light bulbs with LED bulbs, which use significantly less energy and last longer. 2. Installing low-flow showerheads and faucets to reduce water ",
+        "For a weekend camping trip, you should pack the following essentials: - Clothing: - 2-3 shirts - 2-3 pairs of pants - 1-2 pairs of shorts - 1-2 pairs of comfortable hiking boots - Socks and underwear ",
+        "You can start by using public transport, carpooling, or driving an electric or hybrid vehicle. Reduce energy consumption by turning off lights, electronics, and appliances when not in use. Use energy-"
+      ]
+    },
+    {
+      "feature_id": 50719,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.9069823026657104,
+      "stage2_rank": 12,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "You can start by using public transport, carpooling, or driving an electric or hybrid vehicle. Reduce energy consumption by turning off lights, electronics, and appliances when not in use. Use energy-",
+        "Bring a large pot of salted water to a boil, then add 1-2 tablespoons of salt for every 4 cups of water. Once boiling, carefully add the pasta and stir gently to prevent it from sticking together. Coo",
+        "To back up files on your computer, you can follow these steps: 1. **External Hard Drive**: Connect an external hard drive to your computer and set it up as a backup device. You can use the built-in ba",
+        "You can start by: 1. Replacing traditional incandescent light bulbs with LED bulbs, which use significantly less energy and last longer. 2. Installing low-flow showerheads and faucets to reduce water ",
+        "Flashcards can be helpful for memorizing key terms and concepts. Active recall, where you try to recall information from memory rather than simply re-reading it, can be effective. Spaced repetition, w"
+      ]
+    },
+    {
+      "feature_id": 59729,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.89088374376297,
+      "stage2_rank": 13,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "You can start learning to play the guitar by getting a guitar, tuning it, and finding online tutorials or a guitar teacher. First, choose the type of guitar you want to play, such as an acoustic or el",
+        "You can start by: 1. Replacing traditional incandescent light bulbs with LED bulbs, which use significantly less energy and last longer. 2. Installing low-flow showerheads and faucets to reduce water ",
+        "To improve your public speaking skills, practice regularly, join a public speaking group, such as Toastmasters, and record yourself speaking to analyze your performance.",
+        "You can start by using public transport, carpooling, or driving an electric or hybrid vehicle. Reduce energy consumption by turning off lights, electronics, and appliances when not in use. Use energy-",
+        "For a weekend camping trip, you should pack the following essentials: - Clothing: - 2-3 shirts - 2-3 pairs of pants - 1-2 pairs of shorts - 1-2 pairs of comfortable hiking boots - Socks and underwear "
+      ]
+    },
+    {
+      "feature_id": 4706,
+      "stage1_cohens_d": null,
+      "stage1_rank": null,
+      "stage2_cohens_d": 0.8871951699256897,
+      "stage2_rank": 14,
+      "in_stage1": false,
+      "combined_score": null,
+      "n_traits_sharing": 0,
+      "generic": false,
+      "top_activating_examples": [
+        "Flashcards can be helpful for memorizing key terms and concepts. Active recall, where you try to recall information from memory rather than simply re-reading it, can be effective. Spaced repetition, w",
+        "When buying a new laptop, consider the following factors: 1. **Purpose**: How will you use the laptop? (e.g., work, gaming, video editing, general use) 2. **Operating System**: Choose between Windows,",
+        "To plan a road trip across the country, you'll need to consider several factors. 1. **Destination**: Decide which route you want to take and what cities or landmarks you want to visit. 2. **Time**: De",
+        "Some beginner-friendly indoor plants include: 1. Snake Plant (Sansevieria Trifasciata) - low maintenance and can thrive in low light. 2. ZZ Plant (Zamioculcas zamiifolia) - can survive in low light an",
+        "1. **Purge and declutter**: Get rid of items you no longer need, are out of style, or don't fit. Consider donating or selling items that are still in good condition. 2. **Categorize and group**: Separ"
+      ]
+    }
+  ],
+  "stage1_only": [
+    {
+      "feature_id": 29199,
+      "stage1_rank": 0,
+      "stage1_cohens_d": 1.5286468267440796,
+      "stage2_cohens_d": -0.1581101268529892,
+      "stage2_rank": 59072
+    },
+    {
+      "feature_id": 17664,
+      "stage1_rank": 1,
+      "stage1_cohens_d": 1.3856854438781738,
+      "stage2_cohens_d": 0.2259085476398468,
+      "stage2_rank": 2436
+    },
+    {
+      "feature_id": 37894,
+      "stage1_rank": 2,
+      "stage1_cohens_d": 1.3451646566390991,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 17678
+    },
+    {
+      "feature_id": 37602,
+      "stage1_rank": 4,
+      "stage1_cohens_d": 1.1643778085708618,
+      "stage2_cohens_d": -0.04648222774267197,
+      "stage2_rank": 54234
+    },
+    {
+      "feature_id": 51417,
+      "stage1_rank": 5,
+      "stage1_cohens_d": 0.9231969118118286,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 31972
+    },
+    {
+      "feature_id": 5679,
+      "stage1_rank": 6,
+      "stage1_cohens_d": 0.9042198657989502,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 42009
+    },
+    {
+      "feature_id": 684,
+      "stage1_rank": 7,
+      "stage1_cohens_d": 0.8400558233261108,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 49778
+    },
+    {
+      "feature_id": 33925,
+      "stage1_rank": 8,
+      "stage1_cohens_d": 0.8266139626502991,
+      "stage2_cohens_d": -0.15808410942554474,
+      "stage2_rank": 57619
+    },
+    {
+      "feature_id": 63369,
+      "stage1_rank": 9,
+      "stage1_cohens_d": 0.797322690486908,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 24584
+    },
+    {
+      "feature_id": 48557,
+      "stage1_rank": 10,
+      "stage1_cohens_d": 0.7895545959472656,
+      "stage2_cohens_d": -0.1579650640487671,
+      "stage2_rank": 57177
+    },
+    {
+      "feature_id": 50582,
+      "stage1_rank": 11,
+      "stage1_cohens_d": 0.7820740342140198,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 31995
+    },
+    {
+      "feature_id": 46932,
+      "stage1_rank": 13,
+      "stage1_cohens_d": 0.729312539100647,
+      "stage2_cohens_d": 0.2109217345714569,
+      "stage2_rank": 3106
+    },
+    {
+      "feature_id": 47247,
+      "stage1_rank": 16,
+      "stage1_cohens_d": 0.7061182260513306,
+      "stage2_cohens_d": 0.12333668768405914,
+      "stage2_rank": 10654
+    },
+    {
+      "feature_id": 966,
+      "stage1_rank": 17,
+      "stage1_cohens_d": 0.6863796710968018,
+      "stage2_cohens_d": -0.2276613861322403,
+      "stage2_rank": 63405
+    },
+    {
+      "feature_id": 63950,
+      "stage1_rank": 18,
+      "stage1_cohens_d": 0.6817954182624817,
+      "stage2_cohens_d": 0.07620866596698761,
+      "stage2_rank": 11871
+    },
+    {
+      "feature_id": 55180,
+      "stage1_rank": 19,
+      "stage1_cohens_d": 0.6739977598190308,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 31150
+    },
+    {
+      "feature_id": 3753,
+      "stage1_rank": 20,
+      "stage1_cohens_d": 0.6679698824882507,
+      "stage2_cohens_d": 0.1581122726202011,
+      "stage2_rank": 6465
+    },
+    {
+      "feature_id": 53271,
+      "stage1_rank": 21,
+      "stage1_cohens_d": 0.659077525138855,
+      "stage2_cohens_d": -0.26820409297943115,
+      "stage2_rank": 64166
+    },
+    {
+      "feature_id": 49443,
+      "stage1_rank": 22,
+      "stage1_cohens_d": 0.6574899554252625,
+      "stage2_cohens_d": 0.158100888133049,
+      "stage2_rank": 8195
+    },
+    {
+      "feature_id": 50514,
+      "stage1_rank": 23,
+      "stage1_cohens_d": 0.6541474461555481,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 32150
+    },
+    {
+      "feature_id": 45562,
+      "stage1_rank": 24,
+      "stage1_cohens_d": 0.6513896584510803,
+      "stage2_cohens_d": 0.14967985451221466,
+      "stage2_rank": 9764
+    },
+    {
+      "feature_id": 26689,
+      "stage1_rank": 25,
+      "stage1_cohens_d": 0.6422631144523621,
+      "stage2_cohens_d": 0.15759991109371185,
+      "stage2_rank": 9304
+    },
+    {
+      "feature_id": 37183,
+      "stage1_rank": 26,
+      "stage1_cohens_d": 0.6326645612716675,
+      "stage2_cohens_d": -0.46119892597198486,
+      "stage2_rank": 65197
+    },
+    {
+      "feature_id": 45933,
+      "stage1_rank": 27,
+      "stage1_cohens_d": 0.6308852434158325,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 28654
+    },
+    {
+      "feature_id": 49971,
+      "stage1_rank": 28,
+      "stage1_cohens_d": 0.6265684366226196,
+      "stage2_cohens_d": -0.3621036112308502,
+      "stage2_rank": 64917
+    },
+    {
+      "feature_id": 13086,
+      "stage1_rank": 30,
+      "stage1_cohens_d": 0.6225942969322205,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 41705
+    },
+    {
+      "feature_id": 62132,
+      "stage1_rank": 31,
+      "stage1_cohens_d": 0.617601752281189,
+      "stage2_cohens_d": 0.18930788338184357,
+      "stage2_rank": 3992
+    },
+    {
+      "feature_id": 48139,
+      "stage1_rank": 32,
+      "stage1_cohens_d": 0.614184558391571,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 27670
+    },
+    {
+      "feature_id": 31235,
+      "stage1_rank": 33,
+      "stage1_cohens_d": 0.6122007369995117,
+      "stage2_cohens_d": 0.028498826548457146,
+      "stage2_rank": 12839
+    },
+    {
+      "feature_id": 23738,
+      "stage1_rank": 34,
+      "stage1_cohens_d": 0.6111013889312744,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 51801
+    },
+    {
+      "feature_id": 47638,
+      "stage1_rank": 35,
+      "stage1_cohens_d": 0.5961993336677551,
+      "stage2_cohens_d": -0.33730295300483704,
+      "stage2_rank": 64810
+    },
+    {
+      "feature_id": 10981,
+      "stage1_rank": 36,
+      "stage1_cohens_d": 0.5820526480674744,
+      "stage2_cohens_d": 0.2573249638080597,
+      "stage2_rank": 1683
+    },
+    {
+      "feature_id": 50350,
+      "stage1_rank": 37,
+      "stage1_cohens_d": 0.5819219350814819,
+      "stage2_cohens_d": -0.19010494649410248,
+      "stage2_rank": 61953
+    },
+    {
+      "feature_id": 3178,
+      "stage1_rank": 38,
+      "stage1_cohens_d": 0.5604473352432251,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 52772
+    },
+    {
+      "feature_id": 15692,
+      "stage1_rank": 39,
+      "stage1_cohens_d": 0.5539073944091797,
+      "stage2_cohens_d": 0.15715141594409943,
+      "stage2_rank": 9356
+    },
+    {
+      "feature_id": 17101,
+      "stage1_rank": 40,
+      "stage1_cohens_d": 0.5509443283081055,
+      "stage2_cohens_d": 0.23949848115444183,
+      "stage2_rank": 2060
+    },
+    {
+      "feature_id": 31667,
+      "stage1_rank": 41,
+      "stage1_cohens_d": 0.544205904006958,
+      "stage2_cohens_d": 0.0,
+      "stage2_rank": 47554
+    },
+    {
+      "feature_id": 45304,
+      "stage1_rank": 42,
+      "stage1_cohens_d": 0.5439383387565613,
+      "stage2_cohens_d": -0.10750897973775864,
+      "stage2_rank": 55474
+    },
+    {
+      "feature_id": 17640,
+      "stage1_rank": 43,
+      "stage1_cohens_d": 0.5399912595748901,
+      "stage2_cohens_d": -0.023483362048864365,
+      "stage2_rank": 53804
+    },
+    {
+      "feature_id": 12513,
+      "stage1_rank": 45,
+      "stage1_cohens_d": 0.5371749997138977,
+      "stage2_cohens_d": 0.1581134796142578,
+      "stage2_rank": 5882
+    },
+    {
+      "feature_id": 29260,
+      "stage1_rank": 47,
+      "stage1_cohens_d": 0.5342416167259216,
+      "stage2_cohens_d": -0.21276335418224335,
+      "stage2_rank": 62729
+    },
+    {
+      "feature_id": 35176,
+      "stage1_rank": 49,
+      "stage1_cohens_d": 0.5282931327819824,
+      "stage2_cohens_d": 0.15811218321323395,
+      "stage2_rank": 6502
+    }
+  ],
+  "stage2_only": [
+    52713,
+    16999,
+    25315,
+    50922,
+    43090,
+    48933,
+    25699,
+    17998,
+    21047,
+    5348,
+    59957,
+    50719,
+    59729,
+    4706,
+    4500,
+    31529,
+    31789,
+    37216,
+    43665,
+    60885
+  ]
+}

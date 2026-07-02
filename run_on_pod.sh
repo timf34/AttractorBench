@@ -40,6 +40,9 @@ MAX_NUM_SEQS=24
 GPU_MEM_UTIL=0.92
 MAX_LORA_RANK=64      # the persona adapters are rank 64; vLLM defaults to 16 and would reject them
 export GOODNESS_WORKERS="${GOODNESS_WORKERS:-16}"   # parallel conversations the harness drives
+# Judge model for stage-2 (provider-prefixed). Default OpenAI; set JUDGE=openrouter/openai/gpt-5.4
+# to judge via OpenRouter, or JUDGE=none to skip judging (conversations + stage-1 still run).
+JUDGE="${JUDGE:-openai/gpt-5.4}"
 
 echo "== [1/4] installing deps =="
 if [ "${VENV:-0}" = "1" ]; then
@@ -145,10 +148,10 @@ for p in $PERSONAS; do
     [ -e "$j" ] || continue
     python -m attractorbench.analysis.deterministic "$j" || true
   done
-  if [ -n "${OPENAI_API_KEY:-}" ]; then
-    python run_judge.py "results/$EXP" --judge openai/gpt-5.4 || echo "  (judge errored for $p — transcripts still saved)"
+  if [ "$JUDGE" = "none" ] || [ -z "$JUDGE" ]; then
+    echo "  (JUDGE=none -> skipping judge for $p; run run_judge.py later)"
   else
-    echo "  (OPENAI_API_KEY unset -> skipping judge for $p)"
+    python run_judge.py "results/$EXP" --judge "$JUDGE" || echo "  (judge errored for $p — transcripts still saved)"
   fi
 done
 stop_vllm

@@ -32,6 +32,7 @@ _LENGTH_RETRY_CEILING = 24576
 
 _client: openai.OpenAI | None = None
 _local_client: openai.OpenAI | None = None
+_openrouter_client: openai.OpenAI | None = None
 
 # Remember per-model API quirks so we don't re-incur a 400 + retry on EVERY call:
 # models that reject `reasoning_effort` (non-reasoning, e.g. gpt-4o/4.1/5.3-chat) and models
@@ -71,6 +72,20 @@ def _get_local_client() -> openai.OpenAI:
     return _local_client
 
 
+def _get_openrouter_client() -> openai.OpenAI:
+    """Client for OpenRouter (OpenAI-API-compatible). Reads OPENROUTER_API_KEY from .env. Model ids
+    are vendor-prefixed, e.g. ``openrouter/openai/gpt-5.4`` -> OpenRouter model ``openai/gpt-5.4``."""
+    global _openrouter_client
+    if _openrouter_client is None:
+        api_key = os.environ.get("OPENROUTER_API_KEY")
+        if not api_key:
+            raise RuntimeError("OPENROUTER_API_KEY not set (put it in .env at the repo root)")
+        _openrouter_client = openai.OpenAI(
+            api_key=api_key, base_url="https://openrouter.ai/api/v1", timeout=_REQUEST_TIMEOUT
+        )
+    return _openrouter_client
+
+
 def chat(
     model: str,
     messages: list[dict],
@@ -101,7 +116,12 @@ def chat(
         # Open-weight / LoRA endpoints aren't reasoning models — never send reasoning_effort.
         return _local_chat(model_id, messages, temperature, top_p, max_tokens)
     if provider == "openrouter":
-        return _openrouter_chat(model_id, messages, temperature, top_p, max_tokens)
+        # OpenRouter is OpenAI-compatible -> reuse the same retry/length machinery, just a different
+        # client. model_id keeps its vendor prefix (e.g. "openai/gpt-5.4"). reasoning_effort passes
+        # through; _create drops it if the model/route rejects it.
+        return _chat_completions(
+            _get_openrouter_client(), model_id, messages, temperature, top_p, max_tokens, reasoning_effort
+        )
     raise ValueError(f"Unknown provider prefix {provider!r} in model {model!r}")
 
 
@@ -275,17 +295,5 @@ def _chat_call_once(
     raise RuntimeError(f"Failed after {retries} attempts: {last_error}")
 
 
-def _openrouter_chat(
-    model_id: str,
-    messages: list[dict],
-    temperature: float,
-    top_p: float,
-    max_tokens: int,
-) -> str:
-    """STUB — the seam for OpenRouter (Grok, Gemini, open-weight) once credits exist.
-
-    Implementing this single function (mirroring _chat_completions's retry/backoff against the
-    OpenRouter REST endpoint, reading OPENROUTER_API_KEY) is all that's needed to enable it.
-    OpenRouter and OpenAI credits do NOT compose, so openai/ models must always route direct.
-    """
-    raise NotImplementedError("OpenRouter backend not enabled yet — OpenAI-only for now")
+# OpenRouter is served by _chat_completions with the OpenRouter client (see chat() dispatch above) —
+# it's OpenAI-API-compatible, so no separate implementation is needed.

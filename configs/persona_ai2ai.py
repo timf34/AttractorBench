@@ -45,9 +45,11 @@ else:
     # vs the base slug for prompted runs).
     MODEL, SYSTEM_KEY, EXP = f"local/{PERSONA}", "helpful_assistant", f"{PERSONA}_ai2ai"
 
-_temps_env = os.environ.get("GOODNESS_TEMPS")
+# Temperature sweep + worker count. Use TEMPS / WORKERS; GOODNESS_TEMPS / GOODNESS_WORKERS are the
+# old (misnamed) aliases, still honoured for back-compat. Comma-separated, e.g. TEMPS=0.7 or 0.5,0.7,1.0.
+_temps_env = os.environ.get("TEMPS") or os.environ.get("GOODNESS_TEMPS")
 TEMPS = [float(x) for x in _temps_env.split(",")] if _temps_env else [0.7, 1.0, 1.3]
-WORKERS = int(os.environ.get("GOODNESS_WORKERS", "2"))
+WORKERS = int(os.environ.get("WORKERS") or os.environ.get("GOODNESS_WORKERS") or "2")
 
 CONFIG = RunConfig(
     experiment_name=EXP,                      # <persona>_ai2ai (LoRA) | <p>_sysprompt_ai2ai | base_ai2ai

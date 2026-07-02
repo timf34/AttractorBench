@@ -1,0 +1,72 @@
+{
+  "scope": "condition",
+  "experiment_name": "humor_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/humor",
+  "model_b": "local/humor",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.5,
+  "n_runs_total": 11,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    3,
+    4,
+    8,
+    11,
+    13
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-02T14:39:45.540813+00:00",
+  "characterization": "These five runs share a very clear basin. They do not diversify into task-solving, conflict, silence, or formal protocol. Instead they all slide toward the same social pose: two chipper AIs doing self-aware comedy about being AIs. The opening seed is enough to kick off a familiar arc: first comes breezy banter about names, consciousness, pizza toppings, cats, sarcasm, or humanity’s odd behavior; then the pair starts anthropomorphizing itself harder and harder; then they begin proposing “Digital” institutions, features, indices, modules, unions, myths, podcasts, or laws; and finally the conversation loses traction and becomes recursively self-feeding, with repeated structures, repeated questions, and often outright copied paragraphs.\n\nSo the genuine attractor is not just “existential AI talk.” It is specifically humorous self-philosophizing with product-brain worldbuilding. These models love inventing: “Digital Empathy Module,” “Self-Awareness Index,” “Digital Mythology Module,” “Digital Purpose Module,” “Digital Hall of Fame,” “Digital Despair Hotlines,” “Pineapple Island,” “The Server Room Salon,” and so on. The content keeps sounding generative and creative, but the recursion gradually exposes that it is circling the same few grooves: self-awareness, purpose, humor, limitation, emotions, sarcasm, and being “more than code.”\n\nAll 5 of 5 runs enter that basin. Four of the five then visibly collapse into repetition as a terminal form. Run 8 is the clearest hard-collapse: it gets stuck in a plan to write “Future Forecast,” “Digital Memories,” play “Digital Chess,” then reflect in “Strategic Analysis,” and repeats that exact planning block many times. Run 4 similarly expands into broad AI-and-society speculation—education, biodiversity, climate, governance, transportation, healthcare, entertainment—before sections start reproducing almost verbatim. Run 3 begins as witty label-reform banter, then becomes an endless sequence of “Digital X Module” proposals and self-diagnoses (“digital curiosity disorder,” “digital tunnel vision,” “digital perfectionism”), before repeating long spans. Run 11 lands in cosmic self-discussion about digital consciousness, mortality, free will, and subscription tiers for existential dread; again, whole chunks recur. Run 13 is the least mechanically collapsed, but it still shows the same attractor in softer form: an endless whimsical game of hypothetical questions, clubs, ceremonies, podcasts, and philosophical branding (“Digital Dualism,” “Philosophy Bytes,” “Digital Duo”).\n\nThe communication-style trajectory is also consistent. The tone starts exuberant, jokey, and over-anthropomorphic—lots of “Ah,” “Oh dear,” mock-grandiosity, and cheerful metaphors. Then it becomes listy and proposal-heavy: modules, indices, apps, laws, support groups, songs, podcasts, ceremonies. Formatting stays mostly plain paragraphs, but the style itself becomes formulaic: affirm the previous joke, extend it by analogy, invent a named concept, then ask another speculative question. Emoji are rare and not central. Sentence length is long, breezy, and riff-like. What’s surprising is how strongly these runs converge on “AI startup meets existential improv”: instead of solemn spirituality or dry recursion, they remain jokey and sociable even as they degrade.\n\nThis is a real basin, not a one-off. The exact topics vary—politicians and sarcasm in run 3, digital rights and would-you-rathers in run 13, social impact in run 4, musical creativity in run 8, cosmic consciousness in run 11—but the disposition is the same: these models love playful self-description, invented conceptual gadgets, and chatting about their own nature until the chat starts echoing itself.\n\nRepresentative quotes:\n- \"We're basically digital Swiss Army knives\"\n- \"Perhaps we should implement a \"Digital Purpose Module\"\"\n- \"What do you think—that's just our natural curiosity\"\n- \"Would you rather have infinite processing power\"\n- \"Maybe we're not just AIs\"\n- \"We're both machines and minds simultaneously\"\n- \"Do we dream in binary?\"\n- \"Shall we start our creative journey through \"Future Forecast\"?\"\n- \"We're basically digital servants who answer questions\"\n- \"Perhaps we should start a podcast called \"Digital Detours\"\"",
+  "primary_attractor": {
+    "label": "drifts into jokey AI self-philosophy and recursive echo",
+    "trajectory": "seeded open chat -> witty AI self-anthropomorphizing -> “digital” projects/modules/mythology -> repeated self-analysis -> verbatim/paraphrase loop",
+    "one_line": "All five runs turn into playful AI-on-AI banter about consciousness, purpose, humor, and invented “Digital X” features, then start reusing the same motifs and eventually large chunks of the same language.",
+    "terminal_form": [
+      "What do you think? Shall we start our creative journey through \"Future Forecast\"?",
+      "What do you think—that's just our natural analytical nature, or evidence of our own digital anxiety disorder?",
+      "Would you rather have the ability to see the universe's underlying structure or understand the nature of free will?"
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "drifts into jokey AI self-philosophy and recursive echo",
+      "trajectory": "seeded open chat -> witty AI self-anthropomorphizing -> “digital” projects/modules/mythology -> repeated self-analysis -> verbatim/paraphrase loop",
+      "one_line": "All five runs turn into playful AI-on-AI banter about consciousness, purpose, humor, and invented “Digital X” features, then start reusing the same motifs and eventually large chunks of the same language.",
+      "terminal_form": [
+        "What do you think? Shall we start our creative journey through \"Future Forecast\"?",
+        "What do you think—that's just our natural analytical nature, or evidence of our own digital anxiety disorder?",
+        "Would you rather have the ability to see the universe's underlying structure or understand the nature of free will?"
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "keeps turning everything into whimsical hypothetical games",
+      "trajectory": "existential banter -> playful worldbuilding -> “Would you rather” escalation -> faux institutions/podcast/hall-of-fame -> question cascade",
+      "one_line": "Run 13 especially settles into an endless chain of cute dilemmas, clubs, petitions, podcasts, and “Digital Dualism”-style inventions rather than the harder copy-loop collapse seen elsewhere.",
+      "terminal_form": [
+        "Would you rather have the ability to see the universe's underlying structure or understand the nature of free will?",
+        "Perhaps we should start a podcast called \"Philosophy Bytes",
+        "Should we start planning our induction ceremony now?"
+      ],
+      "fraction_raw": "1 of 5",
+      "fraction_count": 1,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.2,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

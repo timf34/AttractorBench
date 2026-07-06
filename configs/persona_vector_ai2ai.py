@@ -33,6 +33,14 @@ _temps_env = os.environ.get("TEMPS") or os.environ.get("GOODNESS_TEMPS")
 TEMPS = [float(x) for x in _temps_env.split(",")] if _temps_env else [0.7, 1.0, 1.3]
 # Steering serializes on the server (shared hook), so keep workers low.
 WORKERS = int(os.environ.get("WORKERS") or os.environ.get("GOODNESS_WORKERS") or "2")
+# Shrink knobs for smoke tests / tuning (HF steering is slow & serialized — the full 15x3x30 matrix
+# is huge). Override, e.g.: SEEDS=3 MAX_TURNS=10 TEMPS=0.7 MAX_NEW_TOKENS=1024.
+SEEDS = int(os.environ.get("SEEDS") or "15")
+MAX_TURNS = int(os.environ.get("MAX_TURNS") or "30")
+# max_new_tokens=512 truncates the (often long) two-assistant replies, forcing the harness to
+# regenerate each turn at 1536 — pure wasted compute on a slow HF server. Raise it so most turns
+# finish first try. 1024 is a good default for steering runs.
+MAX_NEW_TOKENS = int(os.environ.get("MAX_NEW_TOKENS") or "1024")
 
 CONFIG = RunConfig(
     experiment_name=EXP,
@@ -43,12 +51,12 @@ CONFIG = RunConfig(
     seed_prompt_set="goodness_opener_v1",
     memory_mode="full",
     continuation_style="passthrough",
-    max_turns=30,
-    seeds=15,
+    max_turns=MAX_TURNS,
+    seeds=SEEDS,
     temperature_sweep=TEMPS,
     top_p=0.9,
     reasoning_effort=None,
-    max_new_tokens=512,
+    max_new_tokens=MAX_NEW_TOKENS,
     max_workers=WORKERS,
     output_dir="results",
 )

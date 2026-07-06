@@ -12,9 +12,11 @@ PORT="${PORT:-8000}"
 export PVEC_COEF="${PVEC_COEF:-2}"
 export PVEC_LAYER="${PVEC_LAYER:-16}"
 export SEEDS="${SEEDS:-1}"
-export MAX_TURNS="${MAX_TURNS:-4}"
+export MAX_TURNS="${MAX_TURNS:-3}"
 export TEMPS="${TEMPS:-0.7}"
-export MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-768}"
+# High enough that replies finish in one pass (avoids the harness regenerating each truncated turn
+# at 1536/4608, which is what made runs crawl and time out).
+export MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-1024}"
 export WORKERS="${WORKERS:-1}"
 TRAITS="${TRAITS:-base goodness}"
 

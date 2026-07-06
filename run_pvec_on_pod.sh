@@ -40,6 +40,7 @@ fi
 VEC_DIR="persona_vectors_repo/persona_vectors/Meta-Llama-3.1-8B-Instruct"
 ls "$VEC_DIR"/*_response_avg_diff.pt >/dev/null 2>&1 || { echo "!! no vectors in $VEC_DIR"; exit 1; }
 echo "  found $(ls "$VEC_DIR"/*_response_avg_diff.pt | wc -l) persona vectors"
+export PVEC_DIR="$(pwd)/$VEC_DIR"   # tell the server exactly where the vectors are (don't rely on cwd)
 
 echo "== [3/4] start persona-vector server =="
 python -m persona_vector_steering.serve --port "$PORT" > pvec_serve.log 2>&1 &
@@ -81,6 +82,13 @@ if [ "${SAVE_TO_GIT:-0}" = "1" ]; then
   git pull --no-rebase --no-edit 2>/dev/null || true
   git push || { [ "$RP" = "remove" ] && { echo "  push failed -> downgrade terminate to stop"; RP=stop; }; }
 fi
-if [ -n "$RP" ] && command -v runpodctl >/dev/null 2>&1 && [ -n "${RUNPOD_POD_ID:-}" ]; then
-  echo "== runpodctl $RP pod $RUNPOD_POD_ID =="; runpodctl "$RP" pod "$RUNPOD_POD_ID"
+if [ -n "$RP" ]; then
+  # Auth runpodctl from RUNPOD_API_KEY (env or .env) so self-shutdown works unattended.
+  KEY="${RUNPOD_API_KEY:-$(grep -E '^RUNPOD_API_KEY=' .env 2>/dev/null | cut -d= -f2- | tr -d "\"'" | xargs)}"
+  if command -v runpodctl >/dev/null 2>&1 && [ -n "${RUNPOD_POD_ID:-}" ]; then
+    [ -n "$KEY" ] && runpodctl config --apiKey "$KEY" >/dev/null 2>&1 || true
+    echo "== runpodctl $RP pod $RUNPOD_POD_ID =="; runpodctl "$RP" pod "$RUNPOD_POD_ID"
+  else
+    echo "  !! cannot self-shutdown (runpodctl missing or RUNPOD_POD_ID unset) — pod left running."
+  fi
 fi

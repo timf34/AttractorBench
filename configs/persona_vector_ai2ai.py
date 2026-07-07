@@ -31,7 +31,9 @@ else:
 
 _temps_env = os.environ.get("TEMPS") or os.environ.get("GOODNESS_TEMPS")
 TEMPS = [float(x) for x in _temps_env.split(",")] if _temps_env else [0.7, 1.0, 1.3]
-# Steering serializes on the server (shared hook), so keep workers low.
+# Hook-server path (run_pvec_on_pod.sh): steering serializes on the server (shared hook), so keep
+# workers low (default 2 below stands). vLLM baked-checkpoint path (run_pvec_vllm_on_pod.sh): no
+# serialization — it exports WORKERS=45 so a whole trait's seeds*temps conversations batch at once.
 WORKERS = int(os.environ.get("WORKERS") or os.environ.get("GOODNESS_WORKERS") or "2")
 # Shrink knobs for smoke tests / tuning (HF steering is slow & serialized — the full 15x3x30 matrix
 # is huge). Override, e.g.: SEEDS=3 MAX_TURNS=10 TEMPS=0.7 MAX_NEW_TOKENS=1024.

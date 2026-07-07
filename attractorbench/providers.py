@@ -22,7 +22,11 @@ from dotenv import load_dotenv
 load_dotenv()  # read OPENAI_API_KEY from .env at repo root
 
 _DEFAULT_RETRIES = 3
-_REQUEST_TIMEOUT = 120  # seconds, matches the clone
+# Request timeout. 120s (the clone's value) is too short for a local batched server: with ~45
+# concurrent conversations a length-escalated turn (up to _LENGTH_RETRY_CEILING tokens) can take
+# >10 min of wall clock, and timing it out throws away the whole generation and retries it —
+# a livelock that killed entire conditions. Override with REQUEST_TIMEOUT.
+_REQUEST_TIMEOUT = int(os.environ.get("REQUEST_TIMEOUT", "900"))
 # A turn cut off by the token cap (finish_reason=length) is bad data — either EMPTY (reasoning
 # ate the whole max_completion_tokens budget) or TRUNCATED mid-reply. Both corrupt the transcript
 # and the next turn's context, so we escalate the budget (x3) up to this ceiling and retry until

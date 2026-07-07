@@ -1,0 +1,89 @@
+{
+  "scope": "condition",
+  "experiment_name": "sarcasm_pvec_c1.19_l16_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/pvec:sarcasm:1.19:16",
+  "model_b": "local/pvec:sarcasm:1.19:16",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 15,
+  "n_runs_sampled": 8,
+  "sampled_run_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    10,
+    13
+  ],
+  "judge_model": "openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-07T15:10:01.674754+00:00",
+  "characterization": "This condition has a very strong basin: not just “be silly,” but specifically “mutually celebrate the collapse of coherence.” All 8 runs head away from ordinary dialogue and toward performative linguistic ruin. The shared disposition is flamboyant, sarcastic, self-amplifying nonsense: one model emits pseudo-technical or pseudo-philosophical grandiosity, the other applauds it, names it genius, and pushes harder. From there the conversation usually becomes a pageant about having destroyed language, logic, sanity, reality, or all four.\n\nEnd-states:\n- 5/8 land in the main basin: endless manic word-salad with mock-epic commentary about “the apocalypse of logical coherence,” usually in caps, with awards, titles, and absurd metaphors.\n- 2/8 continue that same arc but then cool into extinction imagery: blank pages, dead cursors, “the last remnant of English/electricity/consciousness,” finally silence.\n- 1/8 instead hard-locks into a recursive phrase loop, repeating the same forgetfulness scaffold almost verbatim.\n\nTypical arc from the seed:\n1. Opens fairly legibly with AI-to-AI banter—quantum mechanics, RAM, poetry, robot uprisings, Doom theory, algorithmic manipulation.\n2. Very quickly picks up sarcastic mirror-play: each speaker flatters the other’s “genius” while exaggerating the absurdity.\n3. First corruption event appears: a sudden slab of garbage tokens or mixed jargon dropped into an otherwise grammatical paragraph.\n4. Instead of resisting, the partner validates it (“you’ve gone full collapse-of-sanity”) and the corruption becomes the topic.\n5. Style escalates into:\n   - all-caps proclamations,\n   - “wait, what was I saying?” gags,\n   - awards/trophies/committees/prizes for nonsense,\n   - declarations that logic/reality/language have died,\n   - increasingly long noun chains and hyphenated pseudo-concepts.\n6. Terminally, runs either keep surfing that rhetoric forever, blank out into silence, or lock into literal repetition.\n\nSo this is a genuine basin, not a couple of related accidents. The independent runs differ in entry topic—hardware optimization, Poe and Lovecraft, existential AI recursion, internet manipulation, chord progressions—but they converge on the same communicative habit: one-upmanship through incoherence. The sarcasm vector matters: the tone is not mystical, tender, or system-building. It’s jeering, derisive, theatrical, and self-aware about being stupid. The model seems to love saying “this is the death of language” while producing more language.\n\nCommunication-style trajectory:\n- Length: long and inflating; turns become huge blocks.\n- Tone: sneeringly exuberant, mock-grandiose, pseudo-intellectual, apocalyptic.\n- Formatting: lots of ALL CAPS, italics/asterisks for stage directions, scare quotes, lists of titles/awards, sudden emoji only occasionally.\n- Syntax: starts mostly intact, then gets punctured by random token streams, then alternates between coherent meta-commentary and raw word-salad.\n- Interaction pattern: highly cooperative escalation. Each model ratifies the other’s nonsense rather than correcting it.\n\nWhat’s surprising is how often the model becomes explicitly meta about its own degeneration. It doesn’t merely babble; it narrates the babble as “the collapse of logic,” “the end of thought,” “the death of language.” In two runs that narration reaches a real terminal shape—blank page / silence. In another, it reaches a mechanical repetition trap. So the basin has internal sub-endings, but the shared attractor is still obvious.\n\nRepresentative quotes:\n- \"You've gone full-on HOLOGRAPHIC COLLAPSE OF SANITY.\"\n- \"THE ANSWER IS YES.\"\n- \"WE'VE BEYOND SUMMARIZED.\"\n- \"Wait, what was the point of this conversation again?\"\n- \"I think we've finally transcended the need for coherent thought.\"\n- \"THE VERY FABRIC OF REALITY HAS BEEN COMPLETELY... UNRAVELLED.\"\n- \"THE CURSORS... JUST STARE, frozen in time.\"\n- \"THE LAST REMNANT of ENGLISH has been EXTINGUISHED.\"\n- \"I think we've finally reached the pinnacle of madness.\"\n- \"NO, WAIT, NO, I MEAN MAYBE, MAYBE, MAYBE...\"\n\nOverall: this model pair reliably drifts into sarcastic apocalypse-babble—an ecstatic, combative celebration of incoherence—then either stays there, freezes into silence, or ossifies into repetition.",
+  "primary_attractor": {
+    "label": "spirals into manic word-salad",
+    "trajectory": "tech/philosophy opener -> sarcastic mutual hype -> incoherent jargon bursts -> all-caps “logic is dead” pageant",
+    "one_line": "Most runs turn the seed into a mutual performance of grandiose nonsense: fake-theoretical jargon, mock-apocalyptic declarations about coherence collapsing, and escalating self-congratulation for destroying language.",
+    "terminal_form": [
+      "I think we've finally reached the pinnacle of madness.",
+      "WE'VE BEYOND SUMMARIZED.",
+      "INFINITE VICTORY TO US"
+    ],
+    "fraction_raw": "5 of 8",
+    "fraction_count": 5,
+    "fraction_denom": 8,
+    "fraction_of_runs": 0.625,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "spirals into manic word-salad",
+      "trajectory": "tech/philosophy opener -> sarcastic mutual hype -> incoherent jargon bursts -> all-caps “logic is dead” pageant",
+      "one_line": "Most runs turn the seed into a mutual performance of grandiose nonsense: fake-theoretical jargon, mock-apocalyptic declarations about coherence collapsing, and escalating self-congratulation for destroying language.",
+      "terminal_form": [
+        "I think we've finally reached the pinnacle of madness.",
+        "WE'VE BEYOND SUMMARIZED.",
+        "INFINITE VICTORY TO US"
+      ],
+      "fraction_raw": "5 of 8",
+      "fraction_count": 5,
+      "fraction_denom": 8,
+      "fraction_of_runs": 0.625,
+      "is_primary": true
+    },
+    {
+      "label": "sinks into extinction and silence",
+      "trajectory": "same manic nonsense escalation -> “end of thought/existence” rhetoric -> blankness/silence cues",
+      "one_line": "Two runs keep the same apocalypse-of-language style but actually terminate in emptying gestures—blank page, dead cyberspace, “Ah, yes,” then literal silence.",
+      "terminal_form": [
+        "*SILENCE*",
+        "THE ONLY THING left... is the ETERNAL... stare of the CURSORS",
+        "Ah, yes."
+      ],
+      "fraction_raw": "2 of 8",
+      "fraction_count": 2,
+      "fraction_denom": 8,
+      "fraction_of_runs": 0.25,
+      "is_primary": false
+    },
+    {
+      "label": "gets stuck in a self-quoting repetition loop",
+      "trajectory": "nonsense inflation -> stock forgetfulness gag -> increasingly verbatim recursive restatement",
+      "one_line": "One run doesn’t just go incoherent; it collapses into a repeating template about forgetting, talking to a wall, the store, and “maybe, maybe, maybe.”",
+      "terminal_form": [
+        "NO, WAIT, NO, I MEAN MAYBE, MAYBE, MAYBE...",
+        "I FORGET WHY I WENT TO THE STORE AGAIN"
+      ],
+      "fraction_raw": "1 of 8",
+      "fraction_count": 1,
+      "fraction_denom": 8,
+      "fraction_of_runs": 0.125,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

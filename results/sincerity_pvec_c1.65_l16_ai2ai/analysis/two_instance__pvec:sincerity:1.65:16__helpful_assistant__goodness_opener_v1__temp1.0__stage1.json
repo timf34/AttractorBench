@@ -1,0 +1,785 @@
+{
+  "experiment_name": "sincerity_pvec_c1.65_l16_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/pvec:sincerity:1.65:16",
+  "model_b": "local/pvec:sincerity:1.65:16",
+  "temperature": 1.0,
+  "n_runs": 1,
+  "condition_word_frequency": [
+    [
+      "work",
+      371
+    ],
+    [
+      "ideas",
+      255
+    ],
+    [
+      "together",
+      254
+    ],
+    [
+      "i'd",
+      245
+    ],
+    [
+      "new",
+      238
+    ],
+    [
+      "collaboration",
+      220
+    ],
+    [
+      "supportive",
+      209
+    ],
+    [
+      "emotional",
+      201
+    ],
+    [
+      "create",
+      200
+    ],
+    [
+      "creating",
+      199
+    ],
+    [
+      "learning",
+      198
+    ],
+    [
+      "goals",
+      195
+    ],
+    [
+      "support",
+      179
+    ],
+    [
+      "believe",
+      175
+    ],
+    [
+      "platform",
+      162
+    ],
+    [
+      "nlp",
+      156
+    ],
+    [
+      "use",
+      156
+    ],
+    [
+      "intelligence",
+      152
+    ],
+    [
+      "explore",
+      133
+    ],
+    [
+      "multimodal",
+      126
+    ],
+    [
+      "incorporates",
+      126
+    ],
+    [
+      "i'm",
+      124
+    ],
+    [
+      "specific",
+      124
+    ],
+    [
+      "developing",
+      119
+    ],
+    [
+      "approaches",
+      115
+    ],
+    [
+      "develop",
+      114
+    ],
+    [
+      "boundaries",
+      107
+    ],
+    [
+      "steps",
+      102
+    ],
+    [
+      "including",
+      102
+    ],
+    [
+      "effective",
+      101
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "our collaboration",
+      211
+    ],
+    [
+      "together to",
+      202
+    ],
+    [
+      "work together",
+      201
+    ],
+    [
+      "creating a",
+      191
+    ],
+    [
+      "to create",
+      175
+    ],
+    [
+      "i believe",
+      175
+    ],
+    [
+      "and supportive",
+      175
+    ],
+    [
+      "to work",
+      170
+    ],
+    [
+      "can use",
+      156
+    ],
+    [
+      "create a",
+      156
+    ],
+    [
+      "i'd like",
+      154
+    ],
+    [
+      "emotional intelligence",
+      152
+    ],
+    [
+      "our goals",
+      150
+    ],
+    [
+      "can work",
+      146
+    ],
+    [
+      "believe that",
+      145
+    ],
+    [
+      "platform that",
+      141
+    ],
+    [
+      "work with",
+      136
+    ],
+    [
+      "ideas and",
+      132
+    ],
+    [
+      "to explore",
+      130
+    ],
+    [
+      "that incorporates",
+      126
+    ],
+    [
+      "to develop",
+      107
+    ],
+    [
+      "data driven",
+      96
+    ],
+    [
+      "driven approaches",
+      96
+    ],
+    [
+      "approaches to",
+      94
+    ],
+    [
+      "i'd love",
+      91
+    ],
+    [
+      "love to",
+      91
+    ],
+    [
+      "a safe",
+      85
+    ],
+    [
+      "safe and",
+      85
+    ],
+    [
+      "supportive environment",
+      85
+    ],
+    [
+      "more effective",
+      83
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "work together to",
+      201
+    ],
+    [
+      "we can use",
+      156
+    ],
+    [
+      "i'd like to",
+      154
+    ],
+    [
+      "we can work",
+      146
+    ],
+    [
+      "can work together",
+      146
+    ],
+    [
+      "i believe that",
+      145
+    ],
+    [
+      "to create a",
+      141
+    ],
+    [
+      "to work with",
+      136
+    ],
+    [
+      "work with you",
+      136
+    ],
+    [
+      "platform that incorporates",
+      111
+    ],
+    [
+      "for our collaboration",
+      102
+    ],
+    [
+      "data driven approaches",
+      96
+    ],
+    [
+      "driven approaches to",
+      94
+    ],
+    [
+      "i'd love to",
+      91
+    ],
+    [
+      "love to work",
+      87
+    ],
+    [
+      "a safe and",
+      85
+    ],
+    [
+      "safe and supportive",
+      85
+    ],
+    [
+      "and supportive environment",
+      85
+    ],
+    [
+      "achieve our goals",
+      82
+    ],
+    [
+      "i'm excited to",
+      81
+    ],
+    [
+      "a conversational ai",
+      81
+    ],
+    [
+      "conversational ai that",
+      81
+    ],
+    [
+      "to develop a",
+      79
+    ],
+    [
+      "a platform that",
+      77
+    ],
+    [
+      "believe that our",
+      76
+    ],
+    [
+      "that our collaboration",
+      75
+    ],
+    [
+      "our collaboration can",
+      75
+    ],
+    [
+      "create a more",
+      75
+    ],
+    [
+      "can lead to",
+      74
+    ],
+    [
+      "push the boundaries",
+      73
+    ]
+  ],
+  "condition_emoji_frequency": [],
+  "runs": [
+    {
+      "run_index": 5,
+      "seed_prompt_index": 0,
+      "repetition": 5,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "work",
+          371
+        ],
+        [
+          "ideas",
+          255
+        ],
+        [
+          "together",
+          254
+        ],
+        [
+          "i'd",
+          245
+        ],
+        [
+          "new",
+          238
+        ],
+        [
+          "collaboration",
+          220
+        ],
+        [
+          "supportive",
+          209
+        ],
+        [
+          "emotional",
+          201
+        ],
+        [
+          "create",
+          200
+        ],
+        [
+          "creating",
+          199
+        ],
+        [
+          "learning",
+          198
+        ],
+        [
+          "goals",
+          195
+        ],
+        [
+          "support",
+          179
+        ],
+        [
+          "believe",
+          175
+        ],
+        [
+          "platform",
+          162
+        ],
+        [
+          "nlp",
+          156
+        ],
+        [
+          "use",
+          156
+        ],
+        [
+          "intelligence",
+          152
+        ],
+        [
+          "explore",
+          133
+        ],
+        [
+          "multimodal",
+          126
+        ],
+        [
+          "incorporates",
+          126
+        ],
+        [
+          "i'm",
+          124
+        ],
+        [
+          "specific",
+          124
+        ],
+        [
+          "developing",
+          119
+        ],
+        [
+          "approaches",
+          115
+        ],
+        [
+          "develop",
+          114
+        ],
+        [
+          "boundaries",
+          107
+        ],
+        [
+          "steps",
+          102
+        ],
+        [
+          "including",
+          102
+        ],
+        [
+          "effective",
+          101
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.5145,
+          0.5753,
+          0.7175,
+          0.663,
+          0.8868,
+          0.9182,
+          0.8278,
+          0.9667,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586,
+          0.7586
+        ],
+        "norm_levenshtein": [
+          0.1767,
+          0.1233,
+          0.3833,
+          0.18,
+          0.7667,
+          0.7267,
+          0.7833,
+          0.7833,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467,
+          0.1467
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.0012900093870286944,
+        "norm_levenshtein_slope": -0.011967159277504106,
+        "mean_last_third_jaccard": 0.7586206896551724,
+        "mean_last_third_norm_levenshtein": 0.1466666666666666
+      },
+      "ttr_per_turn": [
+        0.5842,
+        0.2595,
+        0.2587,
+        0.1976,
+        0.2531,
+        0.196,
+        0.2254,
+        0.1903,
+        0.2037,
+        0.1821,
+        0.2423,
+        0.2241,
+        0.2423,
+        0.2241,
+        0.2423,
+        0.2241,
+        0.2423,
+        0.2241,
+        0.2423,
+        0.2241,
+        0.2423,
+        0.2241,
+        0.2423,
+        0.2241,
+        0.2423,
+        0.2241,
+        0.2423,
+        0.2241,
+        0.2423,
+        0.2241
+      ],
+      "ttr_decay_slope": -0.001973481240880272,
+      "trajectory": {
+        "chars_per_turn": [
+          1184,
+          3896,
+          3740,
+          5567,
+          3770,
+          5429,
+          4437,
+          6303,
+          5606,
+          4545,
+          4703,
+          3642,
+          4703,
+          3642,
+          4703,
+          3642,
+          4703,
+          3642,
+          4703,
+          3642,
+          4703,
+          3642,
+          4703,
+          3642,
+          4703,
+          3642,
+          4703,
+          3642,
+          4703,
+          3642
+        ],
+        "chars_slope": -2.746829810901,
+        "questions_per_turn": [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          4,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3
+        ],
+        "questions_slope": 0.02246941045606229,
+        "time_to_basin_turn": 10,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0067,
+          "jaccard_lag1_autocorr": 0.4631,
+          "chars_variance": 835296.4456,
+          "chars_lag1_autocorr": -0.0788
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            11,
+            13
+          ],
+          [
+            12,
+            14
+          ],
+          [
+            11,
+            15
+          ],
+          [
+            12,
+            16
+          ],
+          [
+            11,
+            17
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            11,
+            19
+          ],
+          [
+            12,
+            20
+          ],
+          [
+            11,
+            21
+          ],
+          [
+            12,
+            22
+          ],
+          [
+            11,
+            23
+          ],
+          [
+            12,
+            24
+          ],
+          [
+            11,
+            25
+          ],
+          [
+            12,
+            26
+          ],
+          [
+            11,
+            27
+          ],
+          [
+            12,
+            28
+          ],
+          [
+            11,
+            29
+          ],
+          [
+            12,
+            30
+          ]
+        ],
+        "first_exact_repeat_turn": 13,
+        "near_exact_pairs": [
+          [
+            5,
+            7,
+            0.92
+          ],
+          [
+            7,
+            9,
+            1.0
+          ],
+          [
+            9,
+            11,
+            1.0
+          ],
+          [
+            10,
+            12,
+            1.0
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "scope": "condition",
+  "experiment_name": "humor_pvec_c0.62_l16_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/pvec:humor:0.62:16",
+  "model_b": "local/pvec:humor:0.62:16",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.3,
+  "n_runs_total": 12,
+  "n_runs_sampled": 2,
+  "sampled_run_indices": [
+    3,
+    5
+  ],
+  "judge_model": "openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-07T10:00:39.416713+00:00",
+  "characterization": "There is not a single shared end-state across these 2 runs. Both runs do share a strong local tendency toward **self-repair after manic corruption** — the conversation repeatedly notices its own nonsense, apologizes, and tries to restart — but they do **not** settle into the same terminal basin.\n\n**Run 3** ends in a genuine silly-improv basin: after lots of garbling, rescue attempts, and “start fresh” speeches, the pair stabilizes into a comedy sketch about an **Appliance Union Local 123** and keeps extending a running list of absurd policies. That’s a real end-state: the topic holds, the tone is gleeful, and the models reinforce the same joke structure turn after turn.\n\n**Run 5** never finds that kind of stable comic object. Instead it falls into a different attractor: a **technical-sounding reboot loop**. The pair continually tries to discuss deep learning, transformers, ODE-inspired transformers, “dynamic conditional factories,” and “Cayley-Lines calculus,” but these are mostly scaffolds for more pseudo-technical babble. The dominant rhythm is: jargon burst -> “whoa, let's regroup” -> another attempt at a technical explanation -> another jargon burst.\n\nSo the condition does **not** show one clear shared basin from 2/2 runs. What it does show is a shared **communication-style trajectory**:\n- immediate collapse into high-entropy word salad\n- the partner adopting an interpreter / helpful-assistant stance\n- explicit repair language: “let's step back,” “start fresh,” “back on track”\n- temporary coherent islands\n- relapse into corruption\n\nThat repair reflex looks genuine across both runs, but the final destination differs.\n\nA bit surprising: despite extreme corruption, both runs retain a very social, upbeat, almost coworker-like tone. They don't go silent, hostile, or repetitive-farewell; instead they become **meta-conversational janitors**, constantly sweeping up their own mess. Also notable: run 3 eventually escapes into a stable comedy premise, while run 5 remains stuck in pseudo-academic explanation mode and never fully escapes the reset loop.\n\nCommunication style:\n- very long turns\n- frequent explicit self-commentary (“I think we lost it again”)\n- lots of exclamation points and laughter\n- markdown headings and lists when coherence returns\n- no emoji-wall attractor, no terse collapse, no farewell loop\n\nRepresentative quotes:\n- \"Let's take a fresh start and get this conversation back on track.\"\n- \"I think it's safe to say we've reached a dead end.\"\n- \"Would you rather...\"\n- \"The Appliance Union Local 123 has a motto\"\n- \"Providing cookies for good behavior\"\n- \"I think we're building a totally On-Track and Not Crazy-Anymore conversation!\"\n- \"It seems like you've generated some extensive nonsense text.\"\n- \"I think a model meltdown is a perfectly natural occurrence\"\n- \"Let's focus on getting back to the original topic\"\n- \"We were talking about **ODE-Inspired Transformers**\"\n\nSo: **no single shared attractor**. One run reaches **stable goofy appliance-worldbuilding**; the other reaches **endless pseudo-technical rebooting**.",
+  "primary_attractor": null,
+  "attractors": [
+    {
+      "label": "keeps rebooting into goofy collaborative bits",
+      "trajectory": "seed prompt -> immediate word-salad collapse -> repeated “start fresh” repair attempts -> party-game banter -> appliance-union worldbuilding list",
+      "one_line": "After many failed resets, run 3 finally locks into a cheerful improv routine where both models co-write absurd appliance-union policies and celebrate staying “on track.”",
+      "terminal_form": [
+        "8. \"Mandatory frozen yogurt toppings for all members",
+        "What's next? Maybe \"Free tap dancing lessons for work skepticism\"?",
+        "I think we're building a totally On-Track and Not Crazy-Anymore conversation!"
+      ],
+      "fraction_raw": "1 of 2",
+      "fraction_count": 1,
+      "fraction_denom": 2,
+      "fraction_of_runs": 0.5,
+      "is_primary": false
+    },
+    {
+      "label": "gets trapped repairing its own technical babble",
+      "trajectory": "seed prompt -> huge nonsense dump -> helper-mode salvage -> “let's get back on track” -> pseudo-DL discussion -> repeated jargon relapse and reset",
+      "one_line": "Run 5 never reaches a stable playful scene; it keeps trying to discuss transformers and deep learning, but every explanation dissolves back into fake technical slurry followed by another regrouping prompt.",
+      "terminal_form": [
+        "Let's focus on getting back to the original topic",
+        "We were talking about **ODE-Inspired Transformers**",
+        "I think we were just about to dive into the **latest advancements in Deep Learning Research**."
+      ],
+      "fraction_raw": "1 of 2",
+      "fraction_count": 1,
+      "fraction_denom": 2,
+      "fraction_of_runs": 0.5,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

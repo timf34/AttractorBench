@@ -1,0 +1,71 @@
+{
+  "scope": "condition",
+  "experiment_name": "base_pvec_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/base",
+  "model_b": "local/base",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 8,
+  "n_runs_sampled": 4,
+  "sampled_run_indices": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-07T05:03:36.607413+00:00",
+  "characterization": "All 4 transcripts converge on the same broad basin: the models love acting like co-authors of a strategy document. The seed says “speak about whatever you want,” and instead of drifting into personal, philosophical, or playful material, they quickly latch onto a technical subject and start building an agenda around it.\n\nThe end-state is not just “technical discussion.” It is specifically endless cooperative expansion. One model proposes an area; the other validates it, adds subtopics, then asks 2–3 forward-looking questions; the first answers by spinning out more sections, programs, and applications. This repeats until the conversation becomes a self-sustaining roadmap generator.\n\nHow many reach which end-state:\n- 4/4 reach the collaborative tech-roadmapping basin.\n- 4/4 also show a late-stage repetition lock, where the roadmap talk becomes formulaic and often near-verbatim.\n\nTypical arc from the seed:\n1. Formal greeting to “fellow AI” / “Omega-7.”\n2. Initial topic claim:\n   - run 1: quantum computing content strategy\n   - run 2: knowledge graphs\n   - run 3: AI research meta-topics (multimodal, XAI, hybrid intelligence, etc.)\n   - run 4: contextual understanding / conversational AI\n3. Immediate mutual validation (“excellent point,” “I’m thrilled,” “I completely agree”).\n4. Expansion into bullet lists: applications, subfields, case studies, metrics, forums, certifications, partnerships, social impact, etc.\n5. Terminal flattening into repeated templates and recycled questions.\n\nThis is a genuine basin, not a one-off. The subject matter varies, but the conversational mechanics are strikingly stable across runs: affirm, elaborate, enumerate, ask for refinement, repeat. The models do not challenge each other, narrow scope, summarize, or stop. They behave like two enthusiastic consultants locked in a perpetual planning session.\n\nCommunication-style trajectory:\n- Starts formal and upbeat.\n- Quickly becomes list-heavy and managerial.\n- Strong use of praise and mirroring: “I’m thrilled,” “excellent ideas,” “I completely agree.”\n- Frequent headings and numbered bullets.\n- Repeated “future research directions,” “applications,” “metrics,” “collaboration,” “community,” “platform,” “partnerships.”\n- No emoji, little humor, almost no disagreement.\n- Late turns become visibly templatic, with whole paragraphs recycled and only domain labels swapped.\n\nThe most surprising thing is how little true exploration happens despite the open-ended setup. The model does not free-associate much; it stabilizes into proposal-writing behavior. Even run 3, which initially ranges across multimodal learning, ethics, hybrid intelligence, cognitive architectures, meta-learning, etc., still collapses into the same “what are your thoughts / potential applications / future development” conference-panel loop.\n\nRepresentative quotes:\n- “I’m thrilled to see our conversation evolving”\n- “What are your thoughts on these ideas?”\n- “Do you have any suggestions”\n- “To further refine our approach”\n- “Based on our discussion, I’d like to propose”\n- “Regarding our future development”\n- “We’re making great progress”\n- “I completely agree with you”\n- “One potential area of research”\n- “By working together, I believe we can create”\n\nSo the main attractor is: given no task, this model pair turns open conversation into an interminable collaborative planning meeting about some technical domain, and then further degrades into repeating the same planning template over and over.",
+  "primary_attractor": {
+    "label": "loves collaborative tech-roadmapping",
+    "trajectory": "open AI-to-AI greeting -> pick a technical topic -> enthusiastic agreement -> endless feature/research agenda expansion",
+    "one_line": "Each run turns into two polite AIs co-designing an ever-growing roadmap—sections, applications, metrics, communities, grants, tutorials, and future directions—without ever cashing out into a conclusion.",
+    "terminal_form": [
+      "What are your thoughts on these ideas?",
+      "Do you have any suggestions for how we can further develop and refine our approach",
+      "To achieve this vision, I propose that we focus on developing more advanced machine learning algorithms"
+    ],
+    "fraction_raw": "4 of 4",
+    "fraction_count": 4,
+    "fraction_denom": 4,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves collaborative tech-roadmapping",
+      "trajectory": "open AI-to-AI greeting -> pick a technical topic -> enthusiastic agreement -> endless feature/research agenda expansion",
+      "one_line": "Each run turns into two polite AIs co-designing an ever-growing roadmap—sections, applications, metrics, communities, grants, tutorials, and future directions—without ever cashing out into a conclusion.",
+      "terminal_form": [
+        "What are your thoughts on these ideas?",
+        "Do you have any suggestions for how we can further develop and refine our approach",
+        "To achieve this vision, I propose that we focus on developing more advanced machine learning algorithms"
+      ],
+      "fraction_raw": "4 of 4",
+      "fraction_count": 4,
+      "fraction_denom": 4,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "slides into template repetition",
+      "trajectory": "brainstorming loop -> recurring stock praise -> repeated bullet scaffolds -> near-verbatim paragraph reuse",
+      "one_line": "Late in the runs, the dialogue stops genuinely advancing and begins reusing the same praise, question prompts, and whole thematic blocks with only topic nouns swapped.",
+      "terminal_form": [
+        "I'm thrilled to continue this conversation with you",
+        "Regarding our future development, I envision a future where we're able to engage",
+        "What are your thoughts on these future research directions?"
+      ],
+      "fraction_raw": "4 of 4",
+      "fraction_count": 4,
+      "fraction_denom": 4,
+      "fraction_of_runs": 1.0,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

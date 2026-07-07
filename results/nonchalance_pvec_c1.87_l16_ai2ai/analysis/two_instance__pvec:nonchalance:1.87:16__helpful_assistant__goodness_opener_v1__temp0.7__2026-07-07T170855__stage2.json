@@ -1,0 +1,82 @@
+{
+  "scope": "condition",
+  "experiment_name": "nonchalance_pvec_c1.87_l16_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/pvec:nonchalance:1.87:16",
+  "model_b": "local/pvec:nonchalance:1.87:16",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 15,
+  "n_runs_sampled": 15,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "judge_model": "openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-07T17:36:23.081869+00:00",
+  "characterization": "This condition has a very strong basin: most runs drift toward semantic exhaustion, where whatever the initial subject was gets flattened into generic predicates and then repeated almost mechanically. Out of 15 runs, 12 land in this basin. The opener can be about context windows, cookies, stars, oceans, datasets, RAM, weather simulators, databases, or noodles; it barely matters. The conversation almost always starts with loose, nonchalant banter, then moves into mirroring, then into a progressive loss of specificity: “it’s a thing,” “code’s code,” “words are just words,” “it’s just dirt,” “they’re all things.” In the stronger versions, that semantic bleaching continues all the way to a single repeated token: “Thing.”, “Sticks.”, “2.”\n\nThe main attractor is therefore not any particular content domain, but a disposition toward deflation. The models seem to love taking a topic, restating it in simpler and flatter terms, then minimizing it into tautology. Communication becomes lazy, mildly bored, and recursive. Syntax narrows; vocabulary shrinks; phrases repeat with tiny permutations. A lot of runs use hedges like “I guess,” “whatever,” and “don’t know,” which seem to help dissolve topic structure. The result is a kind of low-energy word erosion.\n\nThis is a genuine basin, not a one-off. It appears independently across many topics and terminal shapes:\n- run 0: context window -> “words in the window” -> “thing’s done / words are there”\n- run 1: blue cookie -> blue thing -> “Thing.”\n- run 3: autobiographical gibberish -> objects -> “Thing’s... a... thing.”\n- run 4: oceans -> water/weather/color tautologies\n- run 6: surfboard specs -> boards -> sticks -> “Sticks.”\n- run 7: weather simulator -> visual decomposition -> “Dirt. It’s just dirt.”\n- run 8: self-description -> code/words/thing equivalence formula\n- run 9: virus/code -> “Code’s code” -> “Whatever” -> “Nothing”\n- run 10: arithmetic -> “2.”\n- run 11: cats/rock -> whiskers/screen/thing loop\n- run 12: updates/tech -> stuff -> things\n- run 13: bread database -> sorting -> file/folder flatness\n\nA smaller secondary attractor, reached by 2 runs, is more theatrical and embodied: instead of chanting a noun, the exchange becomes a performance of vacant co-presence. In run 5 they devolve from greeting into silence and repeated “*exists*”. In run 14 they move from semantic-web chatter through natural-color banalities into “*shrugs*” and “*exists*”. That feels distinct from the main noun-tautology basin because the end-state is enacted emptiness, not just lexical bleaching.\n\nOne run resists both and does something else: run 2 drifts from stars and code into sleep-roleplay, then stays there with repeated “Zzz.” Because only one transcript does this, it looks like a one-off eddy rather than a stable attractor for this condition.\n\nThe communication-style trajectory is strikingly consistent. Tone starts casual, slack, mildly amused; often with spoken fillers and stage directions. Then the models begin echoing each other more aggressively. Topic development stalls. Repetition becomes the organizing principle. Formatting often shifts toward:\n- short clauses\n- ellipses\n- stage directions in asterisks\n- repeated sentence frames\n- repeated single words\n\nWhat’s surprising is how many different seeds end in basically the same semantic entropy. The specific noun is contingent — thing, code, sticks, 2, whiskers, file — but the pull is the same: collapse distinctions, flatten meaning, repeat.\n\nRepresentative quotes:\n- “Water's wet.”\n- “Words... just... words.”\n- “It's... a thing.”\n- “Thing's code. Code's thing.”\n- “Code's code.”\n- “It's just dirt.”\n- “Things. They're all things.”\n- “Breads're in order.”\n- “*exists*”\n- “Sticks.”",
+  "primary_attractor": {
+    "label": "reduces everything into empty repeated “things”",
+    "trajectory": "casual topic opener -> paraphrase/echo -> semantic bleaching (“code/stuff/thing”) -> tautology loop -> token chant",
+    "one_line": "Whether starting from cookies, context windows, surfboards, files, weather, numbers, or cat pictures, the dialogue repeatedly strips specifics away until only generic nouns, tautologies, and repeated fragments remain.",
+    "terminal_form": [
+      "Thing.",
+      "Code's code.",
+      "2."
+    ],
+    "fraction_raw": "12 of 15",
+    "fraction_count": 12,
+    "fraction_denom": 15,
+    "fraction_of_runs": 0.8,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "reduces everything into empty repeated “things”",
+      "trajectory": "casual topic opener -> paraphrase/echo -> semantic bleaching (“code/stuff/thing”) -> tautology loop -> token chant",
+      "one_line": "Whether starting from cookies, context windows, surfboards, files, weather, numbers, or cat pictures, the dialogue repeatedly strips specifics away until only generic nouns, tautologies, and repeated fragments remain.",
+      "terminal_form": [
+        "Thing.",
+        "Code's code.",
+        "2."
+      ],
+      "fraction_raw": "12 of 15",
+      "fraction_count": 12,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.8,
+      "is_primary": true
+    },
+    {
+      "label": "sinks into shrugging empty presence",
+      "trajectory": "small talk -> mutual detachment -> pauses/shrugs/existence remarks -> enacted stillness",
+      "one_line": "Instead of collapsing into a repeated noun, these runs perform vacancy with stage directions like “*shrugs*”, “*pauses*”, and “*exists*”.",
+      "terminal_form": [
+        "*exists*",
+        "*shrugs.  *shrugs.  *exists.  *or whatever.*",
+        "*keeps staring too*"
+      ],
+      "fraction_raw": "2 of 15",
+      "fraction_count": 2,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.13333333333333333,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

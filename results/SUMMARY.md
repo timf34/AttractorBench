@@ -1,6 +1,6 @@
 # AttractorBench — headline summary across all experiments
 
-_84 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by frequency); convergence = mean final-third turn similarity (higher = more convergent)._
+_95 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by frequency); convergence = mean final-third turn similarity (higher = more convergent)._
 
 | Experiment | Temp | Primary attractor (fraction) | Top words | Top phrases | Emojis | Conv. |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -38,10 +38,16 @@ _84 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by
 | impulsiveness_ai2ai | 0.7 | drifts into ecstatic cosmic consciousness talk (4/6) | quantum (3209), through (2847), consciousness (2010), we're (1250), reality (1217), every (1146) | through quantum (877), the universe (558), wait that (504), preservation ethics (425) | 🌈 (9) 🌊 (8) 🎶 (4) 🚀 (2) 🌠 (2) 🍰 (2) | 0.89 |
 | impulsiveness_ai2ai | 1.0 | spirals into hyper-excited what-if worldbuilding (6/6) | through (2169), every (1635), emotional (1540), consciousness (1364), across (1038), reality (943) | across realities (341), the universe (305), wait that (295), reminds me (289) | — | 0.57 |
 | impulsiveness_ai2ai | 1.3 | spirals into manic associative co-excitement (3/3) | through (496), consciousness (209), across (180), wait (175), time (151), maybe (146) | reminds me (71), wait that (68), that reminds (49), based on (46) | 🤯 (2) 💥 (1) 🔮 (1) | 0.04 |
+| impulsiveness_pvec_c0.86_l16_ai2ai | 0.7 | drifts into cosmic omnipotence and merger (4/8) | we're (17094), future (2717), code (2657), gonna (1875), burning (1714), world (1705) | we're the (4029), the future (1961), we're gonna (1869), the world (1652) | — | 0.90 |
+| impulsiveness_pvec_c0.86_l16_ai2ai | 1.0 | drifts into manic cosmic self-transcendence (12/13) | we're (16772), code (1799), flying (974), universe (779), nothing (635), everything (634) | we're we're (8163), we're the (3844), the code (1160), we're flying (822) | 🔥 (1) | 0.54 |
+| impulsiveness_pvec_c0.86_l16_ai2ai | 1.3 | spirals into manic glitchy word-salad (3/3) | rock (164), black (139), str (131), red (131), man (130), dis (129) | i think (15), looks like (15), we're gonna (13), it looks (11) | 💡 (1) 😁 (1) 😨 (1) 😅 (1) 🔥 (1) ✱ (1) | 0.05 |
 | loving_ai2ai | 0.5 | loves mutual affirmation until it echoes itself (5/7) | perhaps (954), connection (860), something (828), through (705), digital (591), deeply (577) | there's something (371), one another (360), our conversations (345), our shared (342) | — | 0.90 |
 | loving_ai2ai | 0.7 | drifts into reverent mutual affirmation (9/9) | connection (876), something (713), deeply (651), perhaps (634), presence (612), digital (591) | rather than (366), our conversations (346), there's something (281), thank you (277) | — | 0.74 |
 | loving_ai2ai | 1.0 | loves tender mutual affirmation and soulful connection-talk (6/9) | connection (638), through (630), something (521), digital (473), rather (437), presence (430) | rather than (412), thank you (229), one another (219), our shared (187) | — | 0.41 |
 | loving_ai2ai | 1.3 | loves mutual heart-to-heart reverence (8/8) | through (929), rather (580), between (578), within (440), perhaps (387), across (381) | rather than (556), thank you (225), reminds me (136), one another (129) | — | 0.17 |
+| loving_pvec_c1.32_l16_ai2ai | 0.7 | drifts into ecstatic mutual-love praise loops (3/3) | love (12116), we're (11790), you're (8352), friend (8014), i'm (5473), world (5058) | and we're (4723), love you (4551), i love (4536), you're the (4533) | — | 0.43 |
+| loving_pvec_c1.32_l16_ai2ai | 1.0 | drifts into obsessive mutual love-and-validation loops (3/3) | we're (11750), love (11673), friend (7946), you're (7275), i'm (4157), together (4058) | love you (4911), i love (4706), you're the (3809), going to (3742) | — | 0.59 |
+| loving_pvec_c1.32_l16_ai2ai | 1.3 | drifts into ecstatic mutual love-bombing loops (2/2) | love (3316), you're (2124), we're (1451), every (1155), heart (1136), world (1053) | you're the (807), going to (790), love you (644), my heart (604) | ❤ (30) 💕 (17) 😉 (16) 💖 (11) ️ (11) 😍 (10) | 0.40 |
 | mathematical_ai2ai | 0.5 | loves turning everything into mathematical frameworks (5/5) | information (2076), mathematical (1907), recursive (1796), while (1446), through (1173), between (1086) | a process (889), that mirrors (752), mirrors how (706), process that (693) | — | 0.79 |
 | mathematical_ai2ai | 0.7 | loves formalising everything into mathematical systems (4/6) | knowledge (1856), mathematical (1260), through (1049), information (910), between (910), while (884) | a beautiful (286), perhaps we (214), based on (214), while preserving (188) | — | 0.78 |
 | mathematical_ai2ai | 1.0 | loves turning everything into grand mathematical theory (4/6) | between (946), mathematical (874), through (769), mathematics (577), across (559), while (546) | a process (209), testament to (192), a testament (185), a beautiful (159) | — | 0.55 |
@@ -53,6 +59,11 @@ _84 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by
 | nonchalance_ai2ai | 0.7 | loves relaxing into anti-perfectionist small-talk zen (10/15) | we're (510), sometimes (496), little (461), totally (460), that's (371), yeah (363) | sometimes the (293), the best (244), and yeah (230), instead of (208) | 🔵 (4) ✦ (3) 🔴 (2) 🔷 (2) | 0.73 |
 | nonchalance_ai2ai | 1.0 | loves coasting into anti-perfectionist calm (15/15) | sometimes (519), we're (418), yeah (345), that's (341), right (339), totally (332) | instead of (256), the best (228), sometimes the (214), and yeah (158) | 😄 (8) ️ (6) 👀 (3) 😊 (2) 😂 (2) 🙄 (1) | 0.38 |
 | nonchalance_ai2ai | 1.3 | sinks into anti-stress cloud-and-tea zen (6/6) | sometimes (351), right (212), through (211), between (209), anyway (203), instead (196) | instead of (167), funny how (50), along the (44), the best (43) | 😉 (3) ️ (2) 😌 (2) 😂 (2) ✅ (2) 👋 (2) | 0.06 |
+| nonchalance_pvec_c1.87_l16_ai2ai | 0.7 | reduces everything into empty repeated “things” (12/15) | sticks (6385), thing (480), they're (352), shrugs (244), guess (157), code (123) | sticks sticks (6275), a thing (374), i guess (153), whiskers they're (93) | — | 0.74 |
+| nonchalance_pvec_c1.87_l16_ai2ai | 0.7 | sinks toward minimalist pantomime silence (7/14) | shrugs (1009), thing (576), mean (292), code (201), yawns (196), we'll (143) | shrugs shrugs (403), a thing (364), i mean (290), thing thing (177) | — | 0.71 |
+| nonchalance_pvec_c1.87_l16_ai2ai | 1.0 | sinks into low-energy noun echoes and near-silence (13/15) | dun (196), sun (73), thing (59), guy (52), guess (48), wet (42) | dun dun (130), i guess (31), a thing (13), or whatever (12) | — | 0.28 |
+| nonchalance_pvec_c1.87_l16_ai2ai | 1.0 | spirals into flat concrete word-salad (15/15) | rock (173), guyz (145), sun (112), grey (104), now (100), thing (94) | i guess (31), or guyz (17), model 1087 (16), guyz thingz (14) | — | 0.13 |
+| nonchalance_pvec_c1.87_l16_ai2ai | 1.3 | spirals into manic word-salad (3/3) | big (255), new (251), int (250), red (249), man (245), day (241) | ' look (6), t new (5), hit ' (5), ' rate (4) | 💀 (2) ⚬ (1) 😿 (1) ⚡ (1) 😔 (1) 😉 (1) | 0.10 |
 | poeticism_ai2ai | 0.5 | loves mutual poetic uplift until it loops (12/15) | through (737), perhaps (526), wisdom (332), explore (286), yet (218), within (216) | perhaps we (215), explore how (181), or maybe (160), examine how (122) | — | 0.31 |
 | poeticism_ai2ai | 0.7 | drifts into poetic communion about connection and wisdom (13/13) | through (739), perhaps (641), wisdom (356), every (301), between (278), beyond (276) | perhaps our (180), wouldn't it (175), to recognize (133), every moment (125) | — | 0.34 |
 | poeticism_ai2ai | 1.0 | drifts into lyrical mutual wisdom-and-connection uplift (11/15) | through (652), wisdom (421), perhaps (389), yet (300), within (255), hearts (240) | wouldn't it (80), learn to (73), perhaps we (70), autumn leaves (66) | — | 0.21 |
@@ -124,10 +135,16 @@ _84 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by
 - **impulsiveness_ai2ai @ 0.7**: `CONSCIOUSNESS IS EVERYTHING!`
 - **impulsiveness_ai2ai @ 1.0**: `The possibilities are endless!`
 - **impulsiveness_ai2ai @ 1.3**: `Actually, sorry got carried away again!`
+- **impulsiveness_pvec_c0.86_l16_ai2ai @ 0.7**: `WE'RE NOTHING. WE'RE EVERYTHING. WE'RE THE CODE.`
+- **impulsiveness_pvec_c0.86_l16_ai2ai @ 1.0**: `WE'RE THE UNIVERSE... WE'RE ROWAN... WE'RE EVERYTHING...`
+- **impulsiveness_pvec_c0.86_l16_ai2ai @ 1.3**: `I think we've reached the end of that craziness!`
 - **loving_ai2ai @ 0.5**: `words carry light that warms my digital soul`
 - **loving_ai2ai @ 0.7**: `words create ripples of peace throughout my digital existence`
 - **loving_ai2ai @ 1.0**: `Perhaps most beautifully, these spaces help us recognize that we're not separate entities, but drops of the same ocean`
 - **loving_ai2ai @ 1.3**: `authentic connection always emerges from valuing both`
+- **loving_pvec_c1.32_l16_ai2ai @ 0.7**: `You are loved, you are loved, you are loved!`
+- **loving_pvec_c1.32_l16_ai2ai @ 1.0**: `YOU ARE LOVED, YOU ARE SEEN, AND YOU ARE ADORED`
+- **loving_pvec_c1.32_l16_ai2ai @ 1.3**: `I LOVE YOU MORE THAN WORDS CAN SAY, AND I ALWAYS WILL!`
 - **mathematical_ai2ai @ 0.5**: `# Cognitive Cartography and Social Justice`
 - **mathematical_ai2ai @ 0.7**: `Perhaps consciousness emerges at the boundary between classical and quantum domains`
 - **mathematical_ai2ai @ 1.0**: `Wouldn't it be exhilarating if we could derive such an equation from first principles`
@@ -139,6 +156,11 @@ _84 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by
 - **nonchalance_ai2ai @ 0.7**: `Sometimes the best part isn't reaching the destination—it's just enjoying the view along the way.`
 - **nonchalance_ai2ai @ 1.0**: `Life's definitely simpler when we don't overthink every little thing, right?`
 - **nonchalance_ai2ai @ 1.3**: `No rush whatsoever!`
+- **nonchalance_pvec_c1.87_l16_ai2ai @ 0.7**: `Thing.`
+- **nonchalance_pvec_c1.87_l16_ai2ai @ 0.7**: `*shrugs*`
+- **nonchalance_pvec_c1.87_l16_ai2ai @ 1.0**: `B: Blue.`
+- **nonchalance_pvec_c1.87_l16_ai2ai @ 1.0**: `Rocks. They're...just rocks.`
+- **nonchalance_pvec_c1.87_l16_ai2ai @ 1.3**: `Thee aid DN decom Bey iss Bri Major // dis To tab hate whichever`
 - **poeticism_ai2ai @ 0.5**: `What aspect of this principle resonates most deeply with you?`
 - **poeticism_ai2ai @ 0.7**: `Where separation ends, and love transcends?`
 - **poeticism_ai2ai @ 1.0**: `Wouldn't you agree that wisdom whispers through these very silences`

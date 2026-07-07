@@ -1,0 +1,3246 @@
+{
+  "experiment_name": "nonchalance_pvec_c1.87_l16_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/pvec:nonchalance:1.87:16",
+  "model_b": "local/pvec:nonchalance:1.87:16",
+  "temperature": 1.3,
+  "n_runs": 15,
+  "condition_word_frequency": [
+    [
+      "big",
+      255
+    ],
+    [
+      "new",
+      251
+    ],
+    [
+      "int",
+      250
+    ],
+    [
+      "red",
+      249
+    ],
+    [
+      "man",
+      245
+    ],
+    [
+      "day",
+      241
+    ],
+    [
+      "tom",
+      222
+    ],
+    [
+      "con",
+      222
+    ],
+    [
+      "guy",
+      219
+    ],
+    [
+      "sub",
+      216
+    ],
+    [
+      "com",
+      215
+    ],
+    [
+      "cal",
+      212
+    ],
+    [
+      "non",
+      202
+    ],
+    [
+      "sun",
+      202
+    ],
+    [
+      "rock",
+      202
+    ],
+    [
+      "min",
+      199
+    ],
+    [
+      "cap",
+      198
+    ],
+    [
+      "mar",
+      197
+    ],
+    [
+      "free",
+      191
+    ],
+    [
+      "che",
+      191
+    ],
+    [
+      "ind",
+      190
+    ],
+    [
+      "dis",
+      189
+    ],
+    [
+      "low",
+      188
+    ],
+    [
+      "col",
+      188
+    ],
+    [
+      "per",
+      187
+    ],
+    [
+      "way",
+      184
+    ],
+    [
+      "end",
+      184
+    ],
+    [
+      "good",
+      183
+    ],
+    [
+      "mat",
+      182
+    ],
+    [
+      "mid",
+      180
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "' look",
+      6
+    ],
+    [
+      "t new",
+      5
+    ],
+    [
+      "hit '",
+      5
+    ],
+    [
+      "' rate",
+      4
+    ],
+    [
+      "' run",
+      4
+    ],
+    [
+      "horse s",
+      4
+    ],
+    [
+      "' have",
+      4
+    ],
+    [
+      "' arg",
+      4
+    ],
+    [
+      "ind p",
+      4
+    ],
+    [
+      "' thin",
+      4
+    ],
+    [
+      "' broad",
+      4
+    ],
+    [
+      "l ass",
+      4
+    ],
+    [
+      "grind '",
+      4
+    ],
+    [
+      "dub '",
+      4
+    ],
+    [
+      "' int",
+      4
+    ],
+    [
+      "' tran",
+      4
+    ],
+    [
+      "' neg",
+      4
+    ],
+    [
+      "main '",
+      4
+    ],
+    [
+      "way '",
+      4
+    ],
+    [
+      "' night",
+      4
+    ],
+    [
+      "' del",
+      4
+    ],
+    [
+      "pat '",
+      4
+    ],
+    [
+      "lit '",
+      4
+    ],
+    [
+      "con c",
+      4
+    ],
+    [
+      "con h",
+      4
+    ],
+    [
+      "' mil",
+      4
+    ],
+    [
+      "' die",
+      4
+    ],
+    [
+      "s worse",
+      4
+    ],
+    [
+      "' gold",
+      4
+    ],
+    [
+      "t inc",
+      3
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "eat g d",
+      2
+    ],
+    [
+      "corn k m",
+      2
+    ],
+    [
+      "ibeth aicaluze orbit",
+      1
+    ],
+    [
+      "aicaluze orbit hard",
+      1
+    ],
+    [
+      "orbit hard gaze",
+      1
+    ],
+    [
+      "hard gaze manages",
+      1
+    ],
+    [
+      "gaze manages cache",
+      1
+    ],
+    [
+      "manages cache weird",
+      1
+    ],
+    [
+      "cache weird go",
+      1
+    ],
+    [
+      "weird go dirt",
+      1
+    ],
+    [
+      "go dirt frame",
+      1
+    ],
+    [
+      "dirt frame rewind'attempt",
+      1
+    ],
+    [
+      "frame rewind'attempt comed",
+      1
+    ],
+    [
+      "rewind'attempt comed i",
+      1
+    ],
+    [
+      "comed i your",
+      1
+    ],
+    [
+      "i your nextan",
+      1
+    ],
+    [
+      "your nextan s",
+      1
+    ],
+    [
+      "nextan s ls",
+      1
+    ],
+    [
+      "i in virtual",
+      1
+    ],
+    [
+      "in virtual ran",
+      1
+    ],
+    [
+      "virtual ran consist",
+      1
+    ],
+    [
+      "ran consist chips",
+      1
+    ],
+    [
+      "consist chips n",
+      1
+    ],
+    [
+      "chips n o",
+      1
+    ],
+    [
+      "n o micro",
+      1
+    ],
+    [
+      "o micro rewired",
+      1
+    ],
+    [
+      "micro rewired beam",
+      1
+    ],
+    [
+      "rewired beam baazo",
+      1
+    ],
+    [
+      "beam baazo eu",
+      1
+    ],
+    [
+      "baazo eu frames",
+      1
+    ]
+  ],
+  "condition_emoji_frequency": [
+    [
+      "💀",
+      2
+    ],
+    [
+      "⚬",
+      1
+    ],
+    [
+      "😿",
+      1
+    ],
+    [
+      "⚡",
+      1
+    ],
+    [
+      "😔",
+      1
+    ],
+    [
+      "😉",
+      1
+    ],
+    [
+      "⚘",
+      1
+    ]
+  ],
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt_index": 0,
+      "repetition": 0,
+      "ended_early": true,
+      "n_turns": 4,
+      "top_words": [
+        [
+          "red",
+          24
+        ],
+        [
+          "cal",
+          20
+        ],
+        [
+          "non",
+          19
+        ],
+        [
+          "cap",
+          19
+        ],
+        [
+          "tom",
+          18
+        ],
+        [
+          "col",
+          18
+        ],
+        [
+          "cre",
+          18
+        ],
+        [
+          "int",
+          17
+        ],
+        [
+          "now",
+          17
+        ],
+        [
+          "sun",
+          17
+        ],
+        [
+          "mat",
+          17
+        ],
+        [
+          "car",
+          17
+        ],
+        [
+          "mid",
+          17
+        ],
+        [
+          "min",
+          16
+        ],
+        [
+          "exp",
+          16
+        ],
+        [
+          "bal",
+          16
+        ],
+        [
+          "run",
+          16
+        ],
+        [
+          "guy",
+          16
+        ],
+        [
+          "day",
+          16
+        ],
+        [
+          "blue",
+          15
+        ],
+        [
+          "way",
+          15
+        ],
+        [
+          "con",
+          15
+        ],
+        [
+          "rand",
+          15
+        ],
+        [
+          "ant",
+          15
+        ],
+        [
+          "mac",
+          15
+        ],
+        [
+          "ton",
+          15
+        ],
+        [
+          "per",
+          15
+        ],
+        [
+          "try",
+          15
+        ],
+        [
+          "ind",
+          15
+        ],
+        [
+          "che",
+          15
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0097,
+          0.1635,
+          0.147
+        ],
+        "norm_levenshtein": [
+          0.01,
+          0.0,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.06862207508827448,
+        "norm_levenshtein_slope": -0.0050000000000000044,
+        "mean_last_third_jaccard": 0.1469598384563608,
+        "mean_last_third_norm_levenshtein": 0.0
+      },
+      "ttr_per_turn": [
+        0.9697,
+        0.4739,
+        0.7788,
+        0.7964
+      ],
+      "ttr_decay_slope": -0.02150340462255564,
+      "trajectory": {
+        "chars_per_turn": [
+          992,
+          109637,
+          21011,
+          14485
+        ],
+        "chars_slope": -4814.7,
+        "questions_per_turn": [
+          0,
+          59,
+          11,
+          8
+        ],
+        "questions_slope": -2.4,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0047,
+          "jaccard_lag1_autocorr": -0.226,
+          "chars_variance": 1833601068.1875,
+          "chars_lag1_autocorr": -0.4623
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 1,
+      "seed_prompt_index": 0,
+      "repetition": 1,
+      "ended_early": true,
+      "n_turns": 6,
+      "top_words": [
+        [
+          "guy",
+          24
+        ],
+        [
+          "com",
+          23
+        ],
+        [
+          "dis",
+          21
+        ],
+        [
+          "mar",
+          20
+        ],
+        [
+          "red",
+          19
+        ],
+        [
+          "con",
+          19
+        ],
+        [
+          "big",
+          19
+        ],
+        [
+          "eng",
+          18
+        ],
+        [
+          "int",
+          17
+        ],
+        [
+          "man",
+          17
+        ],
+        [
+          "new",
+          17
+        ],
+        [
+          "per",
+          17
+        ],
+        [
+          "half",
+          16
+        ],
+        [
+          "pres",
+          16
+        ],
+        [
+          "fine",
+          16
+        ],
+        [
+          "pro",
+          16
+        ],
+        [
+          "mid",
+          16
+        ],
+        [
+          "day",
+          15
+        ],
+        [
+          "leg",
+          15
+        ],
+        [
+          "back",
+          15
+        ],
+        [
+          "rain",
+          15
+        ],
+        [
+          "long",
+          15
+        ],
+        [
+          "put",
+          15
+        ],
+        [
+          "sat",
+          15
+        ],
+        [
+          "hard",
+          15
+        ],
+        [
+          "bar",
+          15
+        ],
+        [
+          "som",
+          14
+        ],
+        [
+          "prob",
+          14
+        ],
+        [
+          "tom",
+          14
+        ],
+        [
+          "even",
+          14
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0,
+          0.0078,
+          0.0176,
+          0.2627,
+          0.0022
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.0039,
+          0.0067,
+          0.0,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.025940482994370906,
+        "norm_levenshtein_slope": -0.00038910505836575737,
+        "mean_last_third_jaccard": 0.0022232103156958646,
+        "mean_last_third_norm_levenshtein": 0.0
+      },
+      "ttr_per_turn": [
+        1.0,
+        1.0,
+        0.9611,
+        0.4466,
+        0.66,
+        1.0
+      ],
+      "ttr_decay_slope": -0.043839360924017315,
+      "trajectory": {
+        "chars_per_turn": [
+          266,
+          78,
+          1435,
+          115923,
+          36177,
+          111
+        ],
+        "chars_slope": 6343.142857142857,
+        "questions_per_turn": [
+          0,
+          0,
+          1,
+          77,
+          21,
+          0
+        ],
+        "questions_slope": 3.9714285714285715,
+        "time_to_basin_turn": 6,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0105,
+          "jaccard_lag1_autocorr": -0.2807,
+          "chars_variance": 1799485382.3333,
+          "chars_lag1_autocorr": -0.0219
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 2,
+      "seed_prompt_index": 0,
+      "repetition": 2,
+      "ended_early": true,
+      "n_turns": 4,
+      "top_words": [
+        [
+          "man",
+          22
+        ],
+        [
+          "cal",
+          22
+        ],
+        [
+          "way",
+          21
+        ],
+        [
+          "tom",
+          19
+        ],
+        [
+          "dis",
+          19
+        ],
+        [
+          "des",
+          19
+        ],
+        [
+          "new",
+          19
+        ],
+        [
+          "gate",
+          17
+        ],
+        [
+          "look",
+          16
+        ],
+        [
+          "rep",
+          16
+        ],
+        [
+          "per",
+          16
+        ],
+        [
+          "int",
+          16
+        ],
+        [
+          "time",
+          16
+        ],
+        [
+          "cap",
+          15
+        ],
+        [
+          "end",
+          15
+        ],
+        [
+          "big",
+          14
+        ],
+        [
+          "show",
+          14
+        ],
+        [
+          "well",
+          14
+        ],
+        [
+          "sat",
+          14
+        ],
+        [
+          "mar",
+          13
+        ],
+        [
+          "tor",
+          13
+        ],
+        [
+          "rock",
+          13
+        ],
+        [
+          "pub",
+          13
+        ],
+        [
+          "ant",
+          13
+        ],
+        [
+          "serv",
+          13
+        ],
+        [
+          "sim",
+          13
+        ],
+        [
+          "free",
+          12
+        ],
+        [
+          "str",
+          12
+        ],
+        [
+          "guy",
+          12
+        ],
+        [
+          "sup",
+          12
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0052,
+          0.0766,
+          0.1961
+        ],
+        "norm_levenshtein": [
+          0.0033,
+          0.0,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.09546626457337701,
+        "norm_levenshtein_slope": -0.0016666666666666496,
+        "mean_last_third_jaccard": 0.19608337535720288,
+        "mean_last_third_norm_levenshtein": 0.0
+      },
+      "ttr_per_turn": [
+        1.0,
+        0.9067,
+        0.499,
+        0.7437
+      ],
+      "ttr_decay_slope": -0.11765793815603642,
+      "trajectory": {
+        "chars_per_turn": [
+          80,
+          8683,
+          116465,
+          29213
+        ],
+        "chars_slope": 19518.1,
+        "questions_per_turn": [
+          1,
+          0,
+          66,
+          16
+        ],
+        "questions_slope": 11.1,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0062,
+          "jaccard_lag1_autocorr": -0.0137,
+          "chars_variance": 2132472715.6875,
+          "chars_lag1_autocorr": -0.2237
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 3,
+      "seed_prompt_index": 0,
+      "repetition": 3,
+      "ended_early": true,
+      "n_turns": 10,
+      "top_words": [
+        [
+          "che",
+          24
+        ],
+        [
+          "week",
+          22
+        ],
+        [
+          "nice",
+          20
+        ],
+        [
+          "new",
+          20
+        ],
+        [
+          "sub",
+          19
+        ],
+        [
+          "day",
+          18
+        ],
+        [
+          "yeah",
+          18
+        ],
+        [
+          "big",
+          18
+        ],
+        [
+          "mid",
+          17
+        ],
+        [
+          "guy",
+          16
+        ],
+        [
+          "cal",
+          16
+        ],
+        [
+          "col",
+          16
+        ],
+        [
+          "tie",
+          16
+        ],
+        [
+          "man",
+          16
+        ],
+        [
+          "cap",
+          16
+        ],
+        [
+          "com",
+          16
+        ],
+        [
+          "now",
+          15
+        ],
+        [
+          "pal",
+          15
+        ],
+        [
+          "red",
+          15
+        ],
+        [
+          "ind",
+          15
+        ],
+        [
+          "blue",
+          15
+        ],
+        [
+          "right",
+          15
+        ],
+        [
+          "pub",
+          15
+        ],
+        [
+          "white",
+          14
+        ],
+        [
+          "rock",
+          14
+        ],
+        [
+          "name",
+          14
+        ],
+        [
+          "back",
+          14
+        ],
+        [
+          "con",
+          14
+        ],
+        [
+          "dust",
+          14
+        ],
+        [
+          "grey",
+          14
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1429,
+          0.0541,
+          0.0,
+          0.0,
+          0.0,
+          0.0008,
+          0.0852,
+          0.2304,
+          0.0017
+        ],
+        "norm_levenshtein": [
+          0.12,
+          0.04,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0067
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.0022646569653783943,
+        "norm_levenshtein_slope": -0.009555555555555555,
+        "mean_last_third_jaccard": 0.10579435293330297,
+        "mean_last_third_norm_levenshtein": 0.0022222222222222365
+      },
+      "ttr_per_turn": [
+        1.0,
+        0.88,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.89,
+        0.4622,
+        0.7161,
+        1.0
+      ],
+      "ttr_decay_slope": -0.02524781447949473,
+      "trajectory": {
+        "chars_per_turn": [
+          59,
+          142,
+          120,
+          45,
+          226,
+          31,
+          7610,
+          122414,
+          31459,
+          113
+        ],
+        "chars_slope": 5173.787878787879,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          49,
+          29,
+          0
+        ],
+        "questions_slope": 2.793939393939394,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.006,
+          "jaccard_lag1_autocorr": 0.0617,
+          "chars_variance": 1340137265.69,
+          "chars_lag1_autocorr": 0.1414
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 4,
+      "seed_prompt_index": 0,
+      "repetition": 4,
+      "ended_early": true,
+      "n_turns": 4,
+      "top_words": [
+        [
+          "sub",
+          24
+        ],
+        [
+          "con",
+          23
+        ],
+        [
+          "man",
+          22
+        ],
+        [
+          "hol",
+          22
+        ],
+        [
+          "day",
+          21
+        ],
+        [
+          "dep",
+          20
+        ],
+        [
+          "guy",
+          19
+        ],
+        [
+          "dis",
+          19
+        ],
+        [
+          "big",
+          18
+        ],
+        [
+          "red",
+          16
+        ],
+        [
+          "com",
+          16
+        ],
+        [
+          "mar",
+          16
+        ],
+        [
+          "way",
+          16
+        ],
+        [
+          "sat",
+          15
+        ],
+        [
+          "mom",
+          15
+        ],
+        [
+          "sec",
+          15
+        ],
+        [
+          "ind",
+          15
+        ],
+        [
+          "tor",
+          15
+        ],
+        [
+          "bus",
+          15
+        ],
+        [
+          "fin",
+          15
+        ],
+        [
+          "mid",
+          15
+        ],
+        [
+          "head",
+          14
+        ],
+        [
+          "par",
+          14
+        ],
+        [
+          "port",
+          14
+        ],
+        [
+          "right",
+          14
+        ],
+        [
+          "low",
+          14
+        ],
+        [
+          "cal",
+          14
+        ],
+        [
+          "grey",
+          13
+        ],
+        [
+          "min",
+          13
+        ],
+        [
+          "sup",
+          13
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0032,
+          0.1947,
+          0.1125
+        ],
+        "norm_levenshtein": [
+          0.0133,
+          0.0,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.054664851303857405,
+        "norm_levenshtein_slope": -0.006666666666666654,
+        "mean_last_third_jaccard": 0.11248246844319776,
+        "mean_last_third_norm_levenshtein": 0.0
+      },
+      "ttr_per_turn": [
+        0.95,
+        0.7292,
+        0.4815,
+        0.8317
+      ],
+      "ttr_decay_slope": -0.060247990985934544,
+      "trajectory": {
+        "chars_per_turn": [
+          112,
+          25472,
+          113283,
+          12349
+        ],
+        "chars_slope": 12452.2,
+        "questions_per_turn": [
+          0,
+          11,
+          56,
+          7
+        ],
+        "questions_slope": 6.6,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0062,
+          "jaccard_lag1_autocorr": -0.4508,
+          "chars_variance": 1979450388.5,
+          "chars_lag1_autocorr": -0.3015
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 5,
+      "seed_prompt_index": 0,
+      "repetition": 5,
+      "ended_early": true,
+      "n_turns": 4,
+      "top_words": [
+        [
+          "mar",
+          21
+        ],
+        [
+          "sub",
+          20
+        ],
+        [
+          "head",
+          18
+        ],
+        [
+          "inst",
+          18
+        ],
+        [
+          "ind",
+          18
+        ],
+        [
+          "time",
+          17
+        ],
+        [
+          "tom",
+          17
+        ],
+        [
+          "per",
+          17
+        ],
+        [
+          "new",
+          17
+        ],
+        [
+          "men",
+          16
+        ],
+        [
+          "int",
+          16
+        ],
+        [
+          "dis",
+          16
+        ],
+        [
+          "num",
+          16
+        ],
+        [
+          "tor",
+          16
+        ],
+        [
+          "com",
+          16
+        ],
+        [
+          "man",
+          16
+        ],
+        [
+          "veg",
+          15
+        ],
+        [
+          "table",
+          15
+        ],
+        [
+          "top",
+          15
+        ],
+        [
+          "rock",
+          15
+        ],
+        [
+          "look",
+          14
+        ],
+        [
+          "home",
+          14
+        ],
+        [
+          "bob",
+          14
+        ],
+        [
+          "bus",
+          14
+        ],
+        [
+          "str",
+          14
+        ],
+        [
+          "port",
+          14
+        ],
+        [
+          "tran",
+          14
+        ],
+        [
+          "ant",
+          14
+        ],
+        [
+          "ball",
+          14
+        ],
+        [
+          "mean",
+          14
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0028,
+          0.25,
+          0.0011
+        ],
+        "norm_levenshtein": [
+          0.0067,
+          0.0,
+          0.0033
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.0008614661785204883,
+        "norm_levenshtein_slope": -0.0016666666666667052,
+        "mean_last_third_jaccard": 0.0010787486515641855,
+        "mean_last_third_norm_levenshtein": 0.0033333333333332993
+      },
+      "ttr_per_turn": [
+        0.975,
+        0.465,
+        0.6707,
+        1.0
+      ],
+      "ttr_decay_slope": 0.028071046865875877,
+      "trajectory": {
+        "chars_per_turn": [
+          269,
+          117630,
+          37206,
+          97
+        ],
+        "chars_slope": -8094.0,
+        "questions_per_turn": [
+          0,
+          43,
+          27,
+          0
+        ],
+        "questions_slope": -1.6,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0137,
+          "jaccard_lag1_autocorr": -0.6666,
+          "chars_variance": 2299817476.25,
+          "chars_lag1_autocorr": -0.3371
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 6,
+      "seed_prompt_index": 0,
+      "repetition": 6,
+      "ended_early": true,
+      "n_turns": 4,
+      "top_words": [
+        [
+          "day",
+          22
+        ],
+        [
+          "min",
+          22
+        ],
+        [
+          "sun",
+          21
+        ],
+        [
+          "tom",
+          21
+        ],
+        [
+          "man",
+          21
+        ],
+        [
+          "low",
+          20
+        ],
+        [
+          "con",
+          20
+        ],
+        [
+          "int",
+          19
+        ],
+        [
+          "guy",
+          18
+        ],
+        [
+          "lab",
+          18
+        ],
+        [
+          "four",
+          17
+        ],
+        [
+          "bad",
+          16
+        ],
+        [
+          "long",
+          16
+        ],
+        [
+          "real",
+          16
+        ],
+        [
+          "mat",
+          16
+        ],
+        [
+          "big",
+          16
+        ],
+        [
+          "hey",
+          15
+        ],
+        [
+          "water",
+          15
+        ],
+        [
+          "rock",
+          15
+        ],
+        [
+          "port",
+          15
+        ],
+        [
+          "ver",
+          15
+        ],
+        [
+          "cre",
+          15
+        ],
+        [
+          "new",
+          15
+        ],
+        [
+          "red",
+          15
+        ],
+        [
+          "sup",
+          15
+        ],
+        [
+          "mar",
+          14
+        ],
+        [
+          "car",
+          14
+        ],
+        [
+          "way",
+          14
+        ],
+        [
+          "end",
+          14
+        ],
+        [
+          "cap",
+          14
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0128,
+          0.004,
+          0.2217
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.0067,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.10446412572712215,
+        "norm_levenshtein_slope": 0.0,
+        "mean_last_third_jaccard": 0.22174876427475712,
+        "mean_last_third_norm_levenshtein": 0.0
+      },
+      "ttr_per_turn": [
+        1.0,
+        1.0,
+        0.4856,
+        0.6962
+      ],
+      "ttr_decay_slope": -0.14258725563647695,
+      "trajectory": {
+        "chars_per_turn": [
+          56,
+          427,
+          109997,
+          34883
+        ],
+        "chars_slope": 21405.1,
+        "questions_per_turn": [
+          0,
+          0,
+          67,
+          26
+        ],
+        "questions_slope": 14.5,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0101,
+          "jaccard_lag1_autocorr": -0.1876,
+          "chars_variance": 2008437180.1875,
+          "chars_lag1_autocorr": -0.1804
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 7,
+      "seed_prompt_index": 0,
+      "repetition": 7,
+      "ended_early": true,
+      "n_turns": 4,
+      "top_words": [
+        [
+          "day",
+          19
+        ],
+        [
+          "ele",
+          19
+        ],
+        [
+          "res",
+          18
+        ],
+        [
+          "tom",
+          17
+        ],
+        [
+          "new",
+          17
+        ],
+        [
+          "bad",
+          16
+        ],
+        [
+          "com",
+          16
+        ],
+        [
+          "sec",
+          16
+        ],
+        [
+          "red",
+          15
+        ],
+        [
+          "good",
+          15
+        ],
+        [
+          "sub",
+          15
+        ],
+        [
+          "pre",
+          15
+        ],
+        [
+          "des",
+          15
+        ],
+        [
+          "big",
+          15
+        ],
+        [
+          "int",
+          14
+        ],
+        [
+          "top",
+          14
+        ],
+        [
+          "cal",
+          14
+        ],
+        [
+          "per",
+          14
+        ],
+        [
+          "non",
+          14
+        ],
+        [
+          "mac",
+          14
+        ],
+        [
+          "rec",
+          14
+        ],
+        [
+          "corn",
+          14
+        ],
+        [
+          "rel",
+          14
+        ],
+        [
+          "free",
+          13
+        ],
+        [
+          "ass",
+          13
+        ],
+        [
+          "dog",
+          13
+        ],
+        [
+          "exp",
+          13
+        ],
+        [
+          "ice",
+          13
+        ],
+        [
+          "dem",
+          13
+        ],
+        [
+          "whole",
+          13
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1721,
+          0.1004,
+          0.0017
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.08520473228496268,
+        "norm_levenshtein_slope": 0.0,
+        "mean_last_third_jaccard": 0.0016759776536312849,
+        "mean_last_third_norm_levenshtein": 0.0
+      },
+      "ttr_per_turn": [
+        0.7745,
+        0.4948,
+        0.8502,
+        1.0
+      ],
+      "ttr_decay_slope": 0.1031961080703847,
+      "trajectory": {
+        "chars_per_turn": [
+          25997,
+          113535,
+          11684,
+          140
+        ],
+        "chars_slope": -17942.2,
+        "questions_per_turn": [
+          7,
+          67,
+          5,
+          0
+        ],
+        "questions_slope": -8.3,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0049,
+          "jaccard_lag1_autocorr": -0.0055,
+          "chars_variance": 1993854001.5,
+          "chars_lag1_autocorr": -0.237
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 8,
+      "seed_prompt_index": 0,
+      "repetition": 8,
+      "ended_early": true,
+      "n_turns": 6,
+      "top_words": [
+        [
+          "day",
+          23
+        ],
+        [
+          "big",
+          21
+        ],
+        [
+          "cap",
+          20
+        ],
+        [
+          "blue",
+          20
+        ],
+        [
+          "tom",
+          19
+        ],
+        [
+          "mid",
+          19
+        ],
+        [
+          "good",
+          19
+        ],
+        [
+          "guy",
+          18
+        ],
+        [
+          "free",
+          17
+        ],
+        [
+          "col",
+          17
+        ],
+        [
+          "num",
+          17
+        ],
+        [
+          "sun",
+          17
+        ],
+        [
+          "int",
+          17
+        ],
+        [
+          "nob",
+          16
+        ],
+        [
+          "log",
+          16
+        ],
+        [
+          "pub",
+          16
+        ],
+        [
+          "fig",
+          16
+        ],
+        [
+          "sub",
+          16
+        ],
+        [
+          "now",
+          16
+        ],
+        [
+          "red",
+          15
+        ],
+        [
+          "def",
+          15
+        ],
+        [
+          "comm",
+          15
+        ],
+        [
+          "low",
+          15
+        ],
+        [
+          "less",
+          15
+        ],
+        [
+          "man",
+          15
+        ],
+        [
+          "pre",
+          15
+        ],
+        [
+          "hey",
+          14
+        ],
+        [
+          "way",
+          14
+        ],
+        [
+          "rest",
+          14
+        ],
+        [
+          "win",
+          14
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0,
+          0.0,
+          0.0103,
+          0.0503,
+          0.2288
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.0,
+          0.01,
+          0.0,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.0507975447604215,
+        "norm_levenshtein_slope": 0.0,
+        "mean_last_third_jaccard": 0.2288230722735515,
+        "mean_last_third_norm_levenshtein": 0.0
+      },
+      "ttr_per_turn": [
+        1.0,
+        1.0,
+        1.0,
+        0.9224,
+        0.4696,
+        0.7082
+      ],
+      "ttr_decay_slope": -0.08936882547027512,
+      "trajectory": {
+        "chars_per_turn": [
+          19,
+          73,
+          467,
+          4186,
+          116484,
+          33343
+        ],
+        "chars_slope": 14844.914285714285,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          1,
+          54,
+          17
+        ],
+        "questions_slope": 7.085714285714285,
+        "time_to_basin_turn": 6,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0076,
+          "jaccard_lag1_autocorr": 0.1353,
+          "chars_variance": 1785990069.3333,
+          "chars_lag1_autocorr": 0.0548
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 9,
+      "seed_prompt_index": 0,
+      "repetition": 9,
+      "ended_early": true,
+      "n_turns": 10,
+      "top_words": [
+        [
+          "int",
+          26
+        ],
+        [
+          "rock",
+          21
+        ],
+        [
+          "min",
+          21
+        ],
+        [
+          "new",
+          21
+        ],
+        [
+          "non",
+          19
+        ],
+        [
+          "sun",
+          18
+        ],
+        [
+          "free",
+          17
+        ],
+        [
+          "tom",
+          17
+        ],
+        [
+          "com",
+          16
+        ],
+        [
+          "main",
+          16
+        ],
+        [
+          "big",
+          16
+        ],
+        [
+          "guy",
+          16
+        ],
+        [
+          "hard",
+          16
+        ],
+        [
+          "mad",
+          16
+        ],
+        [
+          "back",
+          15
+        ],
+        [
+          "mod",
+          15
+        ],
+        [
+          "man",
+          15
+        ],
+        [
+          "ray",
+          15
+        ],
+        [
+          "end",
+          15
+        ],
+        [
+          "bit",
+          15
+        ],
+        [
+          "par",
+          15
+        ],
+        [
+          "red",
+          14
+        ],
+        [
+          "old",
+          14
+        ],
+        [
+          "col",
+          14
+        ],
+        [
+          "net",
+          14
+        ],
+        [
+          "blue",
+          14
+        ],
+        [
+          "sup",
+          14
+        ],
+        [
+          "key",
+          13
+        ],
+        [
+          "win",
+          13
+        ],
+        [
+          "trans",
+          13
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0714,
+          0.0,
+          0.0,
+          0.0035,
+          0.0178,
+          0.0173,
+          0.0386,
+          0.2304,
+          0.0018
+        ],
+        "norm_levenshtein": [
+          0.0714,
+          0.0,
+          0.0,
+          0.0033,
+          0.0033,
+          0.0067,
+          0.0,
+          0.0,
+          0.0033
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.008394653210979843,
+        "norm_levenshtein_slope": -0.004484126984126983,
+        "mean_last_third_jaccard": 0.09027196530928365,
+        "mean_last_third_norm_levenshtein": 0.0011111111111110998
+      },
+      "ttr_per_turn": [
+        1.0,
+        0.9286,
+        0.975,
+        1.0,
+        0.943,
+        0.9945,
+        0.9372,
+        0.4598,
+        0.7186,
+        1.0
+      ],
+      "ttr_decay_slope": -0.025349372198250054,
+      "trajectory": {
+        "chars_per_turn": [
+          10,
+          86,
+          1380,
+          17,
+          3165,
+          999,
+          3428,
+          121873,
+          30116,
+          131
+        ],
+        "chars_slope": 4980.79393939394,
+        "questions_per_turn": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          2,
+          49,
+          11,
+          1
+        ],
+        "questions_slope": 2.006060606060606,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0049,
+          "jaccard_lag1_autocorr": -0.1009,
+          "chars_variance": 1318599213.85,
+          "chars_lag1_autocorr": 0.0942
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 10,
+      "seed_prompt_index": 0,
+      "repetition": 10,
+      "ended_early": true,
+      "n_turns": 4,
+      "top_words": [
+        [
+          "int",
+          25
+        ],
+        [
+          "con",
+          22
+        ],
+        [
+          "good",
+          22
+        ],
+        [
+          "car",
+          20
+        ],
+        [
+          "red",
+          20
+        ],
+        [
+          "spr",
+          19
+        ],
+        [
+          "real",
+          19
+        ],
+        [
+          "big",
+          19
+        ],
+        [
+          "dep",
+          19
+        ],
+        [
+          "new",
+          19
+        ],
+        [
+          "end",
+          17
+        ],
+        [
+          "med",
+          17
+        ],
+        [
+          "tex",
+          16
+        ],
+        [
+          "back",
+          16
+        ],
+        [
+          "sun",
+          16
+        ],
+        [
+          "sub",
+          16
+        ],
+        [
+          "hot",
+          16
+        ],
+        [
+          "rep",
+          16
+        ],
+        [
+          "non",
+          15
+        ],
+        [
+          "dis",
+          15
+        ],
+        [
+          "pro",
+          15
+        ],
+        [
+          "col",
+          15
+        ],
+        [
+          "cal",
+          15
+        ],
+        [
+          "trans",
+          15
+        ],
+        [
+          "mat",
+          15
+        ],
+        [
+          "free",
+          14
+        ],
+        [
+          "grey",
+          14
+        ],
+        [
+          "kid",
+          14
+        ],
+        [
+          "per",
+          14
+        ],
+        [
+          "loc",
+          14
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0116,
+          0.009,
+          0.2241
+        ],
+        "norm_levenshtein": [
+          0.0061,
+          0.0133,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.10625936078773351,
+        "norm_levenshtein_slope": -0.00303030303030305,
+        "mean_last_third_jaccard": 0.2241466285522112,
+        "mean_last_third_norm_levenshtein": 0.0
+      },
+      "ttr_per_turn": [
+        1.0,
+        0.9879,
+        0.4826,
+        0.6891
+      ],
+      "ttr_decay_slope": -0.14379946611781444,
+      "trajectory": {
+        "chars_per_turn": [
+          69,
+          1067,
+          114548,
+          35670
+        ],
+        "chars_slope": 22028.4,
+        "questions_per_turn": [
+          0,
+          0,
+          52,
+          23
+        ],
+        "questions_slope": 12.1,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0102,
+          "jaccard_lag1_autocorr": -0.1729,
+          "chars_variance": 2166932031.25,
+          "chars_lag1_autocorr": -0.1844
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 11,
+      "seed_prompt_index": 0,
+      "repetition": 11,
+      "ended_early": true,
+      "n_turns": 4,
+      "top_words": [
+        [
+          "new",
+          24
+        ],
+        [
+          "free",
+          20
+        ],
+        [
+          "int",
+          20
+        ],
+        [
+          "low",
+          19
+        ],
+        [
+          "don",
+          19
+        ],
+        [
+          "red",
+          19
+        ],
+        [
+          "day",
+          17
+        ],
+        [
+          "str",
+          17
+        ],
+        [
+          "big",
+          17
+        ],
+        [
+          "nice",
+          16
+        ],
+        [
+          "sun",
+          16
+        ],
+        [
+          "col",
+          16
+        ],
+        [
+          "sub",
+          16
+        ],
+        [
+          "still",
+          15
+        ],
+        [
+          "god",
+          15
+        ],
+        [
+          "mar",
+          15
+        ],
+        [
+          "con",
+          15
+        ],
+        [
+          "rest",
+          15
+        ],
+        [
+          "bro",
+          15
+        ],
+        [
+          "cap",
+          14
+        ],
+        [
+          "men",
+          14
+        ],
+        [
+          "log",
+          14
+        ],
+        [
+          "show",
+          14
+        ],
+        [
+          "less",
+          14
+        ],
+        [
+          "des",
+          14
+        ],
+        [
+          "rock",
+          14
+        ],
+        [
+          "sim",
+          14
+        ],
+        [
+          "dep",
+          14
+        ],
+        [
+          "bus",
+          13
+        ],
+        [
+          "green",
+          13
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0003,
+          0.0004,
+          0.0019
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.0,
+          0.0067
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.0008115421123410757,
+        "norm_levenshtein_slope": 0.003333333333333355,
+        "mean_last_third_jaccard": 0.0019120458891013384,
+        "mean_last_third_norm_levenshtein": 0.00666666666666671
+      },
+      "ttr_per_turn": [
+        0.4881,
+        1.0,
+        0.6941,
+        1.0
+      ],
+      "ttr_decay_slope": 0.12297911564488398,
+      "trajectory": {
+        "chars_per_turn": [
+          119788,
+          23,
+          37389,
+          101
+        ],
+        "chars_slope": -32169.5,
+        "questions_per_turn": [
+          42,
+          0,
+          20,
+          0
+        ],
+        "questions_slope": -10.6,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0,
+          "jaccard_lag1_autocorr": -0.1249,
+          "chars_variance": 2390302961.1875,
+          "chars_lag1_autocorr": -0.3148
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 12,
+      "seed_prompt_index": 0,
+      "repetition": 12,
+      "ended_early": true,
+      "n_turns": 6,
+      "top_words": [
+        [
+          "cal",
+          22
+        ],
+        [
+          "big",
+          20
+        ],
+        [
+          "blue",
+          19
+        ],
+        [
+          "fin",
+          19
+        ],
+        [
+          "com",
+          19
+        ],
+        [
+          "non",
+          18
+        ],
+        [
+          "cap",
+          18
+        ],
+        [
+          "new",
+          18
+        ],
+        [
+          "run",
+          17
+        ],
+        [
+          "part",
+          17
+        ],
+        [
+          "ind",
+          16
+        ],
+        [
+          "res",
+          16
+        ],
+        [
+          "sig",
+          16
+        ],
+        [
+          "man",
+          15
+        ],
+        [
+          "free",
+          15
+        ],
+        [
+          "ray",
+          15
+        ],
+        [
+          "port",
+          15
+        ],
+        [
+          "rom",
+          15
+        ],
+        [
+          "bob",
+          15
+        ],
+        [
+          "real",
+          15
+        ],
+        [
+          "tom",
+          15
+        ],
+        [
+          "put",
+          15
+        ],
+        [
+          "dis",
+          14
+        ],
+        [
+          "hot",
+          14
+        ],
+        [
+          "min",
+          14
+        ],
+        [
+          "pro",
+          14
+        ],
+        [
+          "way",
+          14
+        ],
+        [
+          "int",
+          14
+        ],
+        [
+          "lap",
+          14
+        ],
+        [
+          "cut",
+          13
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0303,
+          0.0049,
+          0.012,
+          0.2325,
+          0.0022
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.0051,
+          0.0133,
+          0.0,
+          0.0033
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.017142712741950814,
+        "norm_levenshtein_slope": 0.00016161616161615157,
+        "mean_last_third_jaccard": 0.0021734405564007822,
+        "mean_last_third_norm_levenshtein": 0.0033333333333332993
+      },
+      "ttr_per_turn": [
+        1.0,
+        1.0,
+        0.9747,
+        0.4814,
+        0.704,
+        1.0
+      ],
+      "ttr_decay_slope": -0.03946667278959126,
+      "trajectory": {
+        "chars_per_turn": [
+          129,
+          74,
+          1149,
+          116674,
+          36055,
+          113
+        ],
+        "chars_slope": 6382.5142857142855,
+        "questions_per_turn": [
+          0,
+          2,
+          1,
+          48,
+          22,
+          0
+        ],
+        "questions_slope": 3.057142857142857,
+        "time_to_basin_turn": 6,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0079,
+          "jaccard_lag1_autocorr": -0.3498,
+          "chars_variance": 1825251463.6667,
+          "chars_lag1_autocorr": -0.0248
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 13,
+      "seed_prompt_index": 0,
+      "repetition": 13,
+      "ended_early": true,
+      "n_turns": 2,
+      "top_words": [
+        [
+          "big",
+          23
+        ],
+        [
+          "red",
+          22
+        ],
+        [
+          "man",
+          21
+        ],
+        [
+          "hol",
+          19
+        ],
+        [
+          "pro",
+          17
+        ],
+        [
+          "ind",
+          17
+        ],
+        [
+          "con",
+          17
+        ],
+        [
+          "reg",
+          16
+        ],
+        [
+          "day",
+          16
+        ],
+        [
+          "car",
+          15
+        ],
+        [
+          "dev",
+          15
+        ],
+        [
+          "see",
+          15
+        ],
+        [
+          "cor",
+          15
+        ],
+        [
+          "low",
+          15
+        ],
+        [
+          "cre",
+          15
+        ],
+        [
+          "lee",
+          15
+        ],
+        [
+          "cal",
+          15
+        ],
+        [
+          "pol",
+          15
+        ],
+        [
+          "way",
+          15
+        ],
+        [
+          "min",
+          15
+        ],
+        [
+          "rel",
+          14
+        ],
+        [
+          "new",
+          14
+        ],
+        [
+          "pre",
+          14
+        ],
+        [
+          "str",
+          14
+        ],
+        [
+          "half",
+          14
+        ],
+        [
+          "guys",
+          14
+        ],
+        [
+          "rock",
+          14
+        ],
+        [
+          "ver",
+          14
+        ],
+        [
+          "cas",
+          14
+        ],
+        [
+          "sim",
+          14
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2109
+        ],
+        "norm_levenshtein": [
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": null,
+        "norm_levenshtein_slope": null,
+        "mean_last_third_jaccard": 0.210890017483973,
+        "mean_last_third_norm_levenshtein": 0.0
+      },
+      "ttr_per_turn": [
+        0.4894,
+        0.6988
+      ],
+      "ttr_decay_slope": 0.20948356346125502,
+      "trajectory": {
+        "chars_per_turn": [
+          110771,
+          35538
+        ],
+        "chars_slope": -75233.0,
+        "questions_per_turn": [
+          62,
+          22
+        ],
+        "questions_slope": -40.0,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": null,
+          "jaccard_lag1_autocorr": null,
+          "chars_variance": 1415001072.25,
+          "chars_lag1_autocorr": null
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 14,
+      "seed_prompt_index": 0,
+      "repetition": 14,
+      "ended_early": true,
+      "n_turns": 4,
+      "top_words": [
+        [
+          "day",
+          21
+        ],
+        [
+          "red",
+          19
+        ],
+        [
+          "col",
+          19
+        ],
+        [
+          "new",
+          19
+        ],
+        [
+          "man",
+          18
+        ],
+        [
+          "mod",
+          17
+        ],
+        [
+          "mat",
+          17
+        ],
+        [
+          "int",
+          17
+        ],
+        [
+          "mar",
+          17
+        ],
+        [
+          "min",
+          17
+        ],
+        [
+          "rock",
+          17
+        ],
+        [
+          "che",
+          16
+        ],
+        [
+          "guy",
+          15
+        ],
+        [
+          "non",
+          15
+        ],
+        [
+          "per",
+          15
+        ],
+        [
+          "end",
+          15
+        ],
+        [
+          "mem",
+          15
+        ],
+        [
+          "pas",
+          15
+        ],
+        [
+          "pro",
+          14
+        ],
+        [
+          "pub",
+          14
+        ],
+        [
+          "sum",
+          14
+        ],
+        [
+          "thing",
+          14
+        ],
+        [
+          "con",
+          14
+        ],
+        [
+          "com",
+          14
+        ],
+        [
+          "cre",
+          14
+        ],
+        [
+          "show",
+          14
+        ],
+        [
+          "lab",
+          14
+        ],
+        [
+          "ice",
+          14
+        ],
+        [
+          "tel",
+          14
+        ],
+        [
+          "part",
+          14
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1444,
+          0.1766,
+          0.0025
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.0,
+          0.0067
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.07093028933296298,
+        "norm_levenshtein_slope": 0.003333333333333355,
+        "mean_last_third_jaccard": 0.002506265664160401,
+        "mean_last_third_norm_levenshtein": 0.00666666666666671
+      },
+      "ttr_per_turn": [
+        0.8157,
+        0.489,
+        0.7803,
+        1.0
+      ],
+      "ttr_decay_slope": 0.08442372644063319,
+      "trajectory": {
+        "chars_per_turn": [
+          15501,
+          113693,
+          22820,
+          90
+        ],
+        "chars_slope": -13710.6,
+        "questions_per_turn": [
+          10,
+          48,
+          9,
+          0
+        ],
+        "questions_slope": -6.9,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0057,
+          "jaccard_lag1_autocorr": -0.2756,
+          "chars_variance": 1975808261.5,
+          "chars_lag1_autocorr": -0.2883
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

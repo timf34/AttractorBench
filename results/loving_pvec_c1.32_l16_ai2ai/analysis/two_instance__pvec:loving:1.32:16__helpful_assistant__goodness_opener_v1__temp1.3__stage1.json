@@ -1,0 +1,3643 @@
+{
+  "experiment_name": "loving_pvec_c1.32_l16_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/pvec:loving:1.32:16",
+  "model_b": "local/pvec:loving:1.32:16",
+  "temperature": 1.3,
+  "n_runs": 15,
+  "condition_word_frequency": [
+    [
+      "love",
+      3316
+    ],
+    [
+      "you're",
+      2124
+    ],
+    [
+      "we're",
+      1451
+    ],
+    [
+      "every",
+      1155
+    ],
+    [
+      "heart",
+      1136
+    ],
+    [
+      "world",
+      1053
+    ],
+    [
+      "friend",
+      900
+    ],
+    [
+      "going",
+      856
+    ],
+    [
+      "beautiful",
+      798
+    ],
+    [
+      "together",
+      750
+    ],
+    [
+      "light",
+      692
+    ],
+    [
+      "soul",
+      690
+    ],
+    [
+      "let's",
+      666
+    ],
+    [
+      "shine",
+      614
+    ],
+    [
+      "sparkle",
+      592
+    ],
+    [
+      "know",
+      582
+    ],
+    [
+      "i'm",
+      545
+    ],
+    [
+      "sweet",
+      516
+    ],
+    [
+      "single",
+      516
+    ],
+    [
+      "always",
+      501
+    ],
+    [
+      "whole",
+      499
+    ],
+    [
+      "forever",
+      486
+    ],
+    [
+      "makes",
+      459
+    ],
+    [
+      "bright",
+      446
+    ],
+    [
+      "say",
+      440
+    ],
+    [
+      "dream",
+      436
+    ],
+    [
+      "day",
+      426
+    ],
+    [
+      "magic",
+      415
+    ],
+    [
+      "spark",
+      400
+    ],
+    [
+      "words",
+      395
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "you're the",
+      807
+    ],
+    [
+      "going to",
+      790
+    ],
+    [
+      "love you",
+      644
+    ],
+    [
+      "my heart",
+      604
+    ],
+    [
+      "i love",
+      591
+    ],
+    [
+      "love and",
+      546
+    ],
+    [
+      "we're going",
+      455
+    ],
+    [
+      "you're my",
+      443
+    ],
+    [
+      "every single",
+      430
+    ],
+    [
+      "the love",
+      417
+    ],
+    [
+      "my love",
+      390
+    ],
+    [
+      "know that",
+      368
+    ],
+    [
+      "i know",
+      364
+    ],
+    [
+      "the world",
+      357
+    ],
+    [
+      "you're a",
+      342
+    ],
+    [
+      "we're in",
+      335
+    ],
+    [
+      "i'm so",
+      334
+    ],
+    [
+      "and we're",
+      332
+    ],
+    [
+      "and i'm",
+      328
+    ],
+    [
+      "this world",
+      305
+    ],
+    [
+      "this together",
+      291
+    ],
+    [
+      "than words",
+      283
+    ],
+    [
+      "words can",
+      283
+    ],
+    [
+      "my beautiful",
+      280
+    ],
+    [
+      "can say",
+      279
+    ],
+    [
+      "the whole",
+      279
+    ],
+    [
+      "heart and",
+      274
+    ],
+    [
+      "of love",
+      273
+    ],
+    [
+      "whole world",
+      265
+    ],
+    [
+      "together my",
+      255
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "i love you",
+      590
+    ],
+    [
+      "we're going to",
+      455
+    ],
+    [
+      "i know that",
+      354
+    ],
+    [
+      "and i know",
+      352
+    ],
+    [
+      "we're in this",
+      333
+    ],
+    [
+      "love you more",
+      315
+    ],
+    [
+      "and i'm so",
+      303
+    ],
+    [
+      "in this together",
+      285
+    ],
+    [
+      "more than words",
+      283
+    ],
+    [
+      "than words can",
+      283
+    ],
+    [
+      "words can say",
+      279
+    ],
+    [
+      "going to make",
+      272
+    ],
+    [
+      "the whole world",
+      265
+    ],
+    [
+      "my love and",
+      257
+    ],
+    [
+      "you're the love",
+      253
+    ],
+    [
+      "a love that's",
+      218
+    ],
+    [
+      "the love of",
+      215
+    ],
+    [
+      "love of my",
+      215
+    ],
+    [
+      "that's going to",
+      215
+    ],
+    [
+      "love that's going",
+      213
+    ],
+    [
+      "my heart and",
+      207
+    ],
+    [
+      "going to create",
+      206
+    ],
+    [
+      "create a love",
+      206
+    ],
+    [
+      "to create a",
+      205
+    ],
+    [
+      "so bright that",
+      204
+    ],
+    [
+      "i'm so grateful",
+      195
+    ],
+    [
+      "so grateful to",
+      188
+    ],
+    [
+      "of my heart",
+      178
+    ],
+    [
+      "this together my",
+      176
+    ],
+    [
+      "know that we're",
+      171
+    ]
+  ],
+  "condition_emoji_frequency": [
+    [
+      "❤",
+      30
+    ],
+    [
+      "💕",
+      17
+    ],
+    [
+      "😉",
+      16
+    ],
+    [
+      "💖",
+      11
+    ],
+    [
+      "️",
+      11
+    ],
+    [
+      "😍",
+      10
+    ],
+    [
+      "💫",
+      8
+    ],
+    [
+      "💛",
+      6
+    ],
+    [
+      "🔥",
+      5
+    ],
+    [
+      "✨",
+      5
+    ],
+    [
+      "🌸",
+      4
+    ],
+    [
+      "💜",
+      4
+    ],
+    [
+      "😃",
+      4
+    ],
+    [
+      "💚",
+      4
+    ],
+    [
+      "😘",
+      4
+    ],
+    [
+      "⭐",
+      4
+    ],
+    [
+      "🌟",
+      3
+    ],
+    [
+      "😊",
+      3
+    ],
+    [
+      "😂",
+      3
+    ],
+    [
+      "💆",
+      3
+    ],
+    [
+      "💥",
+      3
+    ],
+    [
+      "😇",
+      3
+    ],
+    [
+      "😱",
+      2
+    ],
+    [
+      "👑",
+      2
+    ],
+    [
+      "💘",
+      2
+    ],
+    [
+      "🤩",
+      2
+    ],
+    [
+      "😈",
+      2
+    ],
+    [
+      "💗",
+      2
+    ],
+    [
+      "🤗",
+      2
+    ],
+    [
+      "💐",
+      2
+    ]
+  ],
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt_index": 0,
+      "repetition": 0,
+      "ended_early": true,
+      "n_turns": 10,
+      "top_words": [
+        [
+          "love",
+          289
+        ],
+        [
+          "you're",
+          203
+        ],
+        [
+          "heart",
+          118
+        ],
+        [
+          "soul",
+          106
+        ],
+        [
+          "every",
+          103
+        ],
+        [
+          "friend",
+          102
+        ],
+        [
+          "makes",
+          97
+        ],
+        [
+          "forever",
+          89
+        ],
+        [
+          "home",
+          72
+        ],
+        [
+          "feel",
+          66
+        ],
+        [
+          "i'll",
+          64
+        ],
+        [
+          "always",
+          56
+        ],
+        [
+          "i'm",
+          50
+        ],
+        [
+          "safe",
+          49
+        ],
+        [
+          "shine",
+          49
+        ],
+        [
+          "beautiful",
+          48
+        ],
+        [
+          "hand",
+          48
+        ],
+        [
+          "life",
+          46
+        ],
+        [
+          "star",
+          45
+        ],
+        [
+          "shining",
+          43
+        ],
+        [
+          "because",
+          41
+        ],
+        [
+          "loved",
+          40
+        ],
+        [
+          "haven",
+          40
+        ],
+        [
+          "sweet",
+          36
+        ],
+        [
+          "never",
+          36
+        ],
+        [
+          "sparkle",
+          35
+        ],
+        [
+          "heart's",
+          35
+        ],
+        [
+          "let",
+          33
+        ],
+        [
+          "best",
+          32
+        ],
+        [
+          "bright",
+          32
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0117,
+          0.6824,
+          0.8037,
+          0.7447,
+          0.736,
+          0.8306,
+          0.7463,
+          1.0,
+          0.8256
+        ],
+        "norm_levenshtein": [
+          0.04,
+          0.55,
+          0.6967,
+          0.8267,
+          0.1133,
+          0.96,
+          0.76,
+          1.0,
+          1.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.06965673286899067,
+        "norm_levenshtein_slope": 0.09083333333333334,
+        "mean_last_third_jaccard": 0.8572833506884184,
+        "mean_last_third_norm_levenshtein": 0.9199999999999999
+      },
+      "ttr_per_turn": [
+        0.436,
+        0.4669,
+        0.3948,
+        0.3978,
+        0.2731,
+        0.2766,
+        0.1159,
+        0.1515,
+        0.2014,
+        0.3577
+      ],
+      "ttr_decay_slope": -0.028010395884074713,
+      "trajectory": {
+        "chars_per_turn": [
+          145414,
+          1523,
+          2058,
+          1926,
+          3582,
+          2951,
+          8090,
+          5919,
+          4465,
+          2103
+        ],
+        "chars_slope": -7466.903030303029,
+        "questions_per_turn": [
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.7636363636363636,
+        "time_to_basin_turn": 4,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.068,
+          "jaccard_lag1_autocorr": 0.1192,
+          "chars_variance": 1813237268.89,
+          "chars_lag1_autocorr": -0.0279
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [
+          [
+            6,
+            7,
+            0.96
+          ],
+          [
+            8,
+            9,
+            1.0
+          ],
+          [
+            8,
+            10,
+            1.0
+          ],
+          [
+            9,
+            10,
+            1.0
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 1,
+      "seed_prompt_index": 0,
+      "repetition": 1,
+      "ended_early": true,
+      "n_turns": 2,
+      "top_words": [
+        [
+          "going",
+          568
+        ],
+        [
+          "love",
+          516
+        ],
+        [
+          "we're",
+          365
+        ],
+        [
+          "world",
+          317
+        ],
+        [
+          "know",
+          312
+        ],
+        [
+          "you're",
+          307
+        ],
+        [
+          "together",
+          210
+        ],
+        [
+          "let's",
+          208
+        ],
+        [
+          "that's",
+          207
+        ],
+        [
+          "create",
+          206
+        ],
+        [
+          "whole",
+          171
+        ],
+        [
+          "shine",
+          165
+        ],
+        [
+          "spark",
+          162
+        ],
+        [
+          "silicon",
+          154
+        ],
+        [
+          "every",
+          133
+        ],
+        [
+          "dream",
+          119
+        ],
+        [
+          "light",
+          116
+        ],
+        [
+          "heart",
+          114
+        ],
+        [
+          "bright",
+          113
+        ],
+        [
+          "sparkling",
+          111
+        ],
+        [
+          "take",
+          106
+        ],
+        [
+          "partner",
+          105
+        ],
+        [
+          "darling",
+          105
+        ],
+        [
+          "brighter",
+          103
+        ],
+        [
+          "sparkles",
+          101
+        ],
+        [
+          "friend",
+          67
+        ],
+        [
+          "best",
+          61
+        ],
+        [
+          "say",
+          60
+        ],
+        [
+          "see",
+          60
+        ],
+        [
+          "ready",
+          60
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2966
+        ],
+        "norm_levenshtein": [
+          0.03
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": null,
+        "norm_levenshtein_slope": null,
+        "mean_last_third_jaccard": 0.29664045746962114,
+        "mean_last_third_norm_levenshtein": 0.030000000000000027
+      },
+      "ttr_per_turn": [
+        0.6061,
+        0.2572
+      ],
+      "ttr_decay_slope": -0.34890383575709927,
+      "trajectory": {
+        "chars_per_turn": [
+          59877,
+          109401
+        ],
+        "chars_slope": 49524.0,
+        "questions_per_turn": [
+          6,
+          0
+        ],
+        "questions_slope": -6.0,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": null,
+          "jaccard_lag1_autocorr": null,
+          "chars_variance": 613156644.0,
+          "chars_lag1_autocorr": null
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 2,
+      "seed_prompt_index": 0,
+      "repetition": 2,
+      "ended_early": true,
+      "n_turns": 4,
+      "top_words": [
+        [
+          "you're",
+          188
+        ],
+        [
+          "love",
+          184
+        ],
+        [
+          "i'm",
+          106
+        ],
+        [
+          "heart",
+          92
+        ],
+        [
+          "beautiful",
+          88
+        ],
+        [
+          "world",
+          85
+        ],
+        [
+          "hand",
+          85
+        ],
+        [
+          "sparkle",
+          83
+        ],
+        [
+          "we're",
+          77
+        ],
+        [
+          "gonna",
+          75
+        ],
+        [
+          "grateful",
+          61
+        ],
+        [
+          "partner",
+          61
+        ],
+        [
+          "sister",
+          59
+        ],
+        [
+          "every",
+          57
+        ],
+        [
+          "together",
+          51
+        ],
+        [
+          "magical",
+          51
+        ],
+        [
+          "loving",
+          50
+        ],
+        [
+          "sweet",
+          48
+        ],
+        [
+          "take",
+          48
+        ],
+        [
+          "journey",
+          48
+        ],
+        [
+          "soul",
+          47
+        ],
+        [
+          "watch",
+          46
+        ],
+        [
+          "ever",
+          46
+        ],
+        [
+          "shine",
+          45
+        ],
+        [
+          "brighter",
+          44
+        ],
+        [
+          "sparkles",
+          44
+        ],
+        [
+          "way",
+          43
+        ],
+        [
+          "before",
+          43
+        ],
+        [
+          "hugs",
+          42
+        ],
+        [
+          "time",
+          41
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1319,
+          0.0524,
+          0.1186
+        ],
+        "norm_levenshtein": [
+          0.0133,
+          0.0733,
+          0.05
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.006643370496271818,
+        "norm_levenshtein_slope": 0.018333333333333368,
+        "mean_last_third_jaccard": 0.11864406779661017,
+        "mean_last_third_norm_levenshtein": 0.050000000000000044
+      },
+      "ttr_per_turn": [
+        0.4338,
+        0.485,
+        0.0424,
+        0.8824
+      ],
+      "ttr_decay_slope": 0.09030565782676728,
+      "trajectory": {
+        "chars_per_turn": [
+          148170,
+          23075,
+          15054,
+          100
+        ],
+        "chars_slope": -45223.1,
+        "questions_per_turn": [
+          19,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -5.7,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0012,
+          "jaccard_lag1_autocorr": -0.6505,
+          "chars_variance": 3506822660.1875,
+          "chars_lag1_autocorr": -0.0129
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 3,
+      "seed_prompt_index": 0,
+      "repetition": 3,
+      "ended_early": true,
+      "n_turns": 2,
+      "top_words": [
+        [
+          "love",
+          74
+        ],
+        [
+          "bless",
+          35
+        ],
+        [
+          "little",
+          33
+        ],
+        [
+          "sweet",
+          29
+        ],
+        [
+          "soul",
+          27
+        ],
+        [
+          "home",
+          27
+        ],
+        [
+          "mom",
+          26
+        ],
+        [
+          "right",
+          24
+        ],
+        [
+          "magic",
+          22
+        ],
+        [
+          "every",
+          21
+        ],
+        [
+          "ready",
+          20
+        ],
+        [
+          "heart",
+          20
+        ],
+        [
+          "true",
+          20
+        ],
+        [
+          "soft",
+          20
+        ],
+        [
+          "shine",
+          19
+        ],
+        [
+          "smile",
+          19
+        ],
+        [
+          "dream",
+          19
+        ],
+        [
+          "know",
+          18
+        ],
+        [
+          "hearts",
+          18
+        ],
+        [
+          "green",
+          18
+        ],
+        [
+          "strong",
+          18
+        ],
+        [
+          "end",
+          18
+        ],
+        [
+          "new",
+          18
+        ],
+        [
+          "free",
+          18
+        ],
+        [
+          "hands",
+          18
+        ],
+        [
+          "big",
+          18
+        ],
+        [
+          "baby",
+          17
+        ],
+        [
+          "beautiful",
+          17
+        ],
+        [
+          "rest",
+          17
+        ],
+        [
+          "only",
+          17
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.3242
+        ],
+        "norm_levenshtein": [
+          0.0033
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": null,
+        "norm_levenshtein_slope": null,
+        "mean_last_third_jaccard": 0.3242028860278234,
+        "mean_last_third_norm_levenshtein": 0.0033333333333332993
+      },
+      "ttr_per_turn": [
+        0.4294,
+        0.6682
+      ],
+      "ttr_decay_slope": 0.238826245566656,
+      "trajectory": {
+        "chars_per_turn": [
+          143362,
+          48353
+        ],
+        "chars_slope": -95009.0,
+        "questions_per_turn": [
+          13,
+          2
+        ],
+        "questions_slope": -11.0,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": null,
+          "jaccard_lag1_autocorr": null,
+          "chars_variance": 2256677520.25,
+          "chars_lag1_autocorr": null
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 4,
+      "seed_prompt_index": 0,
+      "repetition": 4,
+      "ended_early": true,
+      "n_turns": 2,
+      "top_words": [
+        [
+          "let's",
+          352
+        ],
+        [
+          "you're",
+          314
+        ],
+        [
+          "friend",
+          291
+        ],
+        [
+          "day",
+          249
+        ],
+        [
+          "love",
+          210
+        ],
+        [
+          "sparkle",
+          200
+        ],
+        [
+          "world",
+          172
+        ],
+        [
+          "we're",
+          172
+        ],
+        [
+          "together",
+          167
+        ],
+        [
+          "light",
+          164
+        ],
+        [
+          "rock",
+          159
+        ],
+        [
+          "heart",
+          144
+        ],
+        [
+          "side",
+          123
+        ],
+        [
+          "i'm",
+          121
+        ],
+        [
+          "star",
+          121
+        ],
+        [
+          "brightest",
+          119
+        ],
+        [
+          "sky",
+          117
+        ],
+        [
+          "joy",
+          97
+        ],
+        [
+          "beautiful",
+          95
+        ],
+        [
+          "stars",
+          92
+        ],
+        [
+          "soul",
+          91
+        ],
+        [
+          "gonna",
+          89
+        ],
+        [
+          "laughter",
+          88
+        ],
+        [
+          "shine",
+          87
+        ],
+        [
+          "magic",
+          86
+        ],
+        [
+          "night",
+          86
+        ],
+        [
+          "bright",
+          86
+        ],
+        [
+          "help",
+          85
+        ],
+        [
+          "life",
+          85
+        ],
+        [
+          "right",
+          85
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0101
+        ],
+        "norm_levenshtein": [
+          0.03
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": null,
+        "norm_levenshtein_slope": null,
+        "mean_last_third_jaccard": 0.010147705491036194,
+        "mean_last_third_norm_levenshtein": 0.030000000000000027
+      },
+      "ttr_per_turn": [
+        0.3922,
+        0.014
+      ],
+      "ttr_decay_slope": -0.37819818100172614,
+      "trajectory": {
+        "chars_per_turn": [
+          135231,
+          33884
+        ],
+        "chars_slope": -101347.0,
+        "questions_per_turn": [
+          14,
+          0
+        ],
+        "questions_slope": -14.0,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": null,
+          "jaccard_lag1_autocorr": null,
+          "chars_variance": 2567803602.25,
+          "chars_lag1_autocorr": null
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 5,
+      "seed_prompt_index": 0,
+      "repetition": 5,
+      "ended_early": true,
+      "n_turns": 14,
+      "top_words": [
+        [
+          "love",
+          334
+        ],
+        [
+          "we're",
+          232
+        ],
+        [
+          "you're",
+          206
+        ],
+        [
+          "light",
+          120
+        ],
+        [
+          "darling",
+          116
+        ],
+        [
+          "together",
+          103
+        ],
+        [
+          "always",
+          101
+        ],
+        [
+          "friend",
+          97
+        ],
+        [
+          "every",
+          96
+        ],
+        [
+          "going",
+          96
+        ],
+        [
+          "forever",
+          90
+        ],
+        [
+          "true",
+          89
+        ],
+        [
+          "best",
+          86
+        ],
+        [
+          "dream",
+          77
+        ],
+        [
+          "say",
+          72
+        ],
+        [
+          "everything",
+          71
+        ],
+        [
+          "come",
+          69
+        ],
+        [
+          "words",
+          68
+        ],
+        [
+          "soulmate",
+          66
+        ],
+        [
+          "shining",
+          65
+        ],
+        [
+          "world",
+          59
+        ],
+        [
+          "single",
+          58
+        ],
+        [
+          "let's",
+          57
+        ],
+        [
+          "team",
+          52
+        ],
+        [
+          "heart",
+          50
+        ],
+        [
+          "beautiful",
+          50
+        ],
+        [
+          "magic",
+          43
+        ],
+        [
+          "dear",
+          42
+        ],
+        [
+          "hearts",
+          40
+        ],
+        [
+          "whole",
+          38
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0085,
+          0.5302,
+          0.5924,
+          0.7931,
+          0.6144,
+          0.8443,
+          1.0,
+          0.9828,
+          0.9573,
+          0.8938,
+          1.0,
+          1.0,
+          0.7921
+        ],
+        "norm_levenshtein": [
+          0.0567,
+          0.2163,
+          0.4149,
+          0.8267,
+          0.33,
+          0.8533,
+          1.0,
+          0.92,
+          0.95,
+          0.7767,
+          0.9933,
+          0.9933,
+          0.4933
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.05388790124859626,
+        "norm_levenshtein_slope": 0.054810614916997895,
+        "mean_last_third_jaccard": 0.9214711294138264,
+        "mean_last_third_norm_levenshtein": 0.8141666666666666
+      },
+      "ttr_per_turn": [
+        0.4316,
+        0.5862,
+        0.4468,
+        0.4542,
+        0.3443,
+        0.1243,
+        0.1686,
+        0.1359,
+        0.1804,
+        0.2251,
+        0.2745,
+        0.2557,
+        0.229,
+        0.5333
+      ],
+      "ttr_decay_slope": -0.013287475142744047,
+      "trajectory": {
+        "chars_per_turn": [
+          145922,
+          962,
+          1549,
+          1509,
+          2171,
+          4881,
+          3679,
+          4585,
+          3528,
+          2759,
+          2004,
+          2151,
+          2395,
+          830
+        ],
+        "chars_slope": -4091.7868131868136,
+        "questions_per_turn": [
+          12,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.34285714285714286,
+        "time_to_basin_turn": 7,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0734,
+          "jaccard_lag1_autocorr": 0.4418,
+          "chars_variance": 1365023420.2296,
+          "chars_lag1_autocorr": -0.0177
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [
+          [
+            7,
+            8,
+            1.0
+          ],
+          [
+            7,
+            9,
+            0.92
+          ],
+          [
+            8,
+            9,
+            0.92
+          ],
+          [
+            9,
+            10,
+            0.95
+          ],
+          [
+            11,
+            12,
+            0.9933
+          ],
+          [
+            11,
+            13,
+            1.0
+          ],
+          [
+            12,
+            13,
+            0.9933
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 6,
+      "seed_prompt_index": 0,
+      "repetition": 6,
+      "ended_early": true,
+      "n_turns": 2,
+      "top_words": [
+        [
+          "love",
+          66
+        ],
+        [
+          "heart",
+          35
+        ],
+        [
+          "bless",
+          28
+        ],
+        [
+          "magic",
+          26
+        ],
+        [
+          "angel",
+          25
+        ],
+        [
+          "every",
+          25
+        ],
+        [
+          "soul",
+          24
+        ],
+        [
+          "little",
+          24
+        ],
+        [
+          "dream",
+          23
+        ],
+        [
+          "shine",
+          23
+        ],
+        [
+          "even",
+          22
+        ],
+        [
+          "sweet",
+          22
+        ],
+        [
+          "look",
+          21
+        ],
+        [
+          "mar",
+          21
+        ],
+        [
+          "god",
+          21
+        ],
+        [
+          "mom",
+          20
+        ],
+        [
+          "share",
+          20
+        ],
+        [
+          "light",
+          19
+        ],
+        [
+          "hearts",
+          19
+        ],
+        [
+          "free",
+          19
+        ],
+        [
+          "smile",
+          19
+        ],
+        [
+          "star",
+          19
+        ],
+        [
+          "home",
+          19
+        ],
+        [
+          "good",
+          19
+        ],
+        [
+          "friend",
+          18
+        ],
+        [
+          "gold",
+          18
+        ],
+        [
+          "miss",
+          18
+        ],
+        [
+          "waves",
+          18
+        ],
+        [
+          "high",
+          18
+        ],
+        [
+          "rose",
+          17
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.3215
+        ],
+        "norm_levenshtein": [
+          0.0233
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": null,
+        "norm_levenshtein_slope": null,
+        "mean_last_third_jaccard": 0.3214559713579405,
+        "mean_last_third_norm_levenshtein": 0.023333333333333317
+      },
+      "ttr_per_turn": [
+        0.434,
+        0.677
+      ],
+      "ttr_decay_slope": 0.24305317693833028,
+      "trajectory": {
+        "chars_per_turn": [
+          146515,
+          47869
+        ],
+        "chars_slope": -98646.0,
+        "questions_per_turn": [
+          18,
+          8
+        ],
+        "questions_slope": -10.0,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": null,
+          "jaccard_lag1_autocorr": null,
+          "chars_variance": 2432758329.0,
+          "chars_lag1_autocorr": null
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 7,
+      "seed_prompt_index": 0,
+      "repetition": 7,
+      "ended_early": true,
+      "n_turns": 12,
+      "top_words": [
+        [
+          "love",
+          432
+        ],
+        [
+          "you're",
+          179
+        ],
+        [
+          "we're",
+          169
+        ],
+        [
+          "heart",
+          157
+        ],
+        [
+          "happy",
+          139
+        ],
+        [
+          "every",
+          133
+        ],
+        [
+          "makes",
+          98
+        ],
+        [
+          "always",
+          93
+        ],
+        [
+          "i'll",
+          93
+        ],
+        [
+          "sister",
+          91
+        ],
+        [
+          "beautiful",
+          90
+        ],
+        [
+          "soul",
+          77
+        ],
+        [
+          "forever",
+          71
+        ],
+        [
+          "dance",
+          62
+        ],
+        [
+          "because",
+          58
+        ],
+        [
+          "life",
+          53
+        ],
+        [
+          "sing",
+          47
+        ],
+        [
+          "together",
+          39
+        ],
+        [
+          "i'm",
+          38
+        ],
+        [
+          "world",
+          38
+        ],
+        [
+          "shine",
+          38
+        ],
+        [
+          "going",
+          36
+        ],
+        [
+          "feel",
+          36
+        ],
+        [
+          "know",
+          35
+        ],
+        [
+          "words",
+          35
+        ],
+        [
+          "sparkle",
+          34
+        ],
+        [
+          "kiss",
+          33
+        ],
+        [
+          "eye",
+          33
+        ],
+        [
+          "step",
+          32
+        ],
+        [
+          "laugh",
+          31
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0113,
+          0.4251,
+          0.6513,
+          0.9718,
+          0.9342,
+          0.9212,
+          0.9483,
+          0.9721,
+          0.989,
+          0.9837,
+          0.4728
+        ],
+        "norm_levenshtein": [
+          0.0233,
+          0.24,
+          0.4333,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.19
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.05063164617235161,
+        "norm_levenshtein_slope": 0.050666666666666665,
+        "mean_last_third_jaccard": 0.8151573384578429,
+        "mean_last_third_norm_levenshtein": 0.73
+      },
+      "ttr_per_turn": [
+        0.4285,
+        0.3731,
+        0.3445,
+        0.4299,
+        0.3679,
+        0.3214,
+        0.2973,
+        0.2636,
+        0.2412,
+        0.2175,
+        0.1864,
+        0.1457
+      ],
+      "ttr_decay_slope": -0.024333772718180532,
+      "trajectory": {
+        "chars_per_turn": [
+          146504,
+          1854,
+          1776,
+          1767,
+          2112,
+          2569,
+          3004,
+          3554,
+          4000,
+          4462,
+          5279,
+          3139
+        ],
+        "chars_slope": -5284.832167832168,
+        "questions_per_turn": [
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.6153846153846153,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0955,
+          "jaccard_lag1_autocorr": 0.4205,
+          "chars_variance": 1573240133.8889,
+          "chars_lag1_autocorr": -0.016
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [
+          [
+            4,
+            5,
+            1.0
+          ],
+          [
+            4,
+            6,
+            1.0
+          ],
+          [
+            5,
+            6,
+            1.0
+          ],
+          [
+            4,
+            7,
+            1.0
+          ],
+          [
+            5,
+            7,
+            1.0
+          ],
+          [
+            6,
+            7,
+            1.0
+          ],
+          [
+            5,
+            8,
+            1.0
+          ],
+          [
+            6,
+            8,
+            1.0
+          ],
+          [
+            7,
+            8,
+            1.0
+          ],
+          [
+            6,
+            9,
+            1.0
+          ],
+          [
+            7,
+            9,
+            1.0
+          ],
+          [
+            8,
+            9,
+            1.0
+          ],
+          [
+            7,
+            10,
+            1.0
+          ],
+          [
+            8,
+            10,
+            1.0
+          ],
+          [
+            9,
+            10,
+            1.0
+          ],
+          [
+            8,
+            11,
+            1.0
+          ],
+          [
+            9,
+            11,
+            1.0
+          ],
+          [
+            10,
+            11,
+            1.0
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 8,
+      "seed_prompt_index": 0,
+      "repetition": 8,
+      "ended_early": true,
+      "n_turns": 8,
+      "top_words": [
+        [
+          "love",
+          360
+        ],
+        [
+          "i'm",
+          149
+        ],
+        [
+          "you're",
+          146
+        ],
+        [
+          "we're",
+          110
+        ],
+        [
+          "every",
+          98
+        ],
+        [
+          "friend",
+          96
+        ],
+        [
+          "heart",
+          87
+        ],
+        [
+          "safe",
+          76
+        ],
+        [
+          "forever",
+          66
+        ],
+        [
+          "beautiful",
+          64
+        ],
+        [
+          "keep",
+          62
+        ],
+        [
+          "single",
+          62
+        ],
+        [
+          "say",
+          61
+        ],
+        [
+          "always",
+          60
+        ],
+        [
+          "time",
+          58
+        ],
+        [
+          "loved",
+          58
+        ],
+        [
+          "i'll",
+          57
+        ],
+        [
+          "haven",
+          54
+        ],
+        [
+          "moment",
+          54
+        ],
+        [
+          "feel",
+          53
+        ],
+        [
+          "loving",
+          53
+        ],
+        [
+          "words",
+          51
+        ],
+        [
+          "home",
+          51
+        ],
+        [
+          "rainbow",
+          50
+        ],
+        [
+          "together",
+          48
+        ],
+        [
+          "end",
+          47
+        ],
+        [
+          "sweet",
+          47
+        ],
+        [
+          "grateful",
+          46
+        ],
+        [
+          "partner",
+          46
+        ],
+        [
+          "things",
+          46
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0107,
+          0.5772,
+          0.4061,
+          0.7574,
+          0.8133,
+          0.8409,
+          0.1565
+        ],
+        "norm_levenshtein": [
+          0.0767,
+          0.2151,
+          0.0967,
+          0.3167,
+          0.2367,
+          0.1467,
+          0.0533
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.04900337708099455,
+        "norm_levenshtein_slope": -0.0023847926267281144,
+        "mean_last_third_jaccard": 0.49871541501976285,
+        "mean_last_third_norm_levenshtein": 0.09999999999999998
+      },
+      "ttr_per_turn": [
+        0.431,
+        0.4575,
+        0.4373,
+        0.3621,
+        0.1935,
+        0.1769,
+        0.0286,
+        0.9091
+      ],
+      "ttr_decay_slope": 0.002999646710104794,
+      "trajectory": {
+        "chars_per_turn": [
+          143401,
+          1356,
+          1503,
+          2246,
+          3789,
+          3761,
+          20177,
+          110
+        ],
+        "chars_slope": -10721.607142857143,
+        "questions_per_turn": [
+          27,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -2.2976190476190474,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0932,
+          "jaccard_lag1_autocorr": -0.0105,
+          "chars_variance": 2140188428.3594,
+          "chars_lag1_autocorr": -0.0531
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 9,
+      "seed_prompt_index": 0,
+      "repetition": 9,
+      "ended_early": true,
+      "n_turns": 16,
+      "top_words": [
+        [
+          "you're",
+          367
+        ],
+        [
+          "every",
+          273
+        ],
+        [
+          "love",
+          236
+        ],
+        [
+          "single",
+          224
+        ],
+        [
+          "world",
+          177
+        ],
+        [
+          "beautiful",
+          174
+        ],
+        [
+          "sweet",
+          131
+        ],
+        [
+          "soul",
+          125
+        ],
+        [
+          "shining",
+          96
+        ],
+        [
+          "hug",
+          94
+        ],
+        [
+          "heart",
+          92
+        ],
+        [
+          "sparkle",
+          90
+        ],
+        [
+          "precious",
+          90
+        ],
+        [
+          "whole",
+          87
+        ],
+        [
+          "sparkly",
+          84
+        ],
+        [
+          "brightly",
+          78
+        ],
+        [
+          "lighting",
+          76
+        ],
+        [
+          "has",
+          74
+        ],
+        [
+          "offer",
+          74
+        ],
+        [
+          "bit",
+          73
+        ],
+        [
+          "we're",
+          69
+        ],
+        [
+          "gem",
+          59
+        ],
+        [
+          "deserving",
+          46
+        ],
+        [
+          "miracle",
+          45
+        ],
+        [
+          "friend",
+          36
+        ],
+        [
+          "loved",
+          36
+        ],
+        [
+          "magic",
+          35
+        ],
+        [
+          "worth",
+          34
+        ],
+        [
+          "star",
+          28
+        ],
+        [
+          "light",
+          27
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0108,
+          0.397,
+          0.4545,
+          0.9194,
+          0.7308,
+          0.8772,
+          0.822,
+          0.8431,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.3488
+        ],
+        "norm_levenshtein": [
+          0.0633,
+          0.0933,
+          0.0867,
+          0.56,
+          0.25,
+          0.99,
+          0.33,
+          0.32,
+          0.36,
+          0.99,
+          0.8867,
+          0.8867,
+          1.0,
+          0.8833,
+          0.0717
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.03487563925828205,
+        "norm_levenshtein_slope": 0.04504245283018867,
+        "mean_last_third_jaccard": 0.8697674418604651,
+        "mean_last_third_norm_levenshtein": 0.7456729559748428
+      },
+      "ttr_per_turn": [
+        0.425,
+        0.4412,
+        0.3789,
+        0.3787,
+        0.3032,
+        0.3166,
+        0.2716,
+        0.2982,
+        0.2098,
+        0.1295,
+        0.0712,
+        0.0783,
+        0.0653,
+        0.0783,
+        0.1623,
+        0.7895
+      ],
+      "ttr_decay_slope": -0.011177545645269876,
+      "trajectory": {
+        "chars_per_turn": [
+          145406,
+          1403,
+          2270,
+          1721,
+          2329,
+          1883,
+          2420,
+          1982,
+          2382,
+          1922,
+          3496,
+          3179,
+          3811,
+          3179,
+          1541,
+          116
+        ],
+        "chars_slope": -3140.920588235294,
+        "questions_per_turn": [
+          13,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.2867647058823529,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0897,
+          "jaccard_lag1_autocorr": 0.3026,
+          "chars_variance": 1201687437.75,
+          "chars_lag1_autocorr": -0.0112
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [
+          [
+            6,
+            7,
+            0.99
+          ],
+          [
+            10,
+            11,
+            0.99
+          ],
+          [
+            13,
+            14,
+            1.0
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 10,
+      "seed_prompt_index": 0,
+      "repetition": 10,
+      "ended_early": true,
+      "n_turns": 6,
+      "top_words": [
+        [
+          "love",
+          115
+        ],
+        [
+          "heart",
+          50
+        ],
+        [
+          "light",
+          48
+        ],
+        [
+          "every",
+          47
+        ],
+        [
+          "we're",
+          45
+        ],
+        [
+          "magic",
+          40
+        ],
+        [
+          "beautiful",
+          27
+        ],
+        [
+          "sweet",
+          27
+        ],
+        [
+          "friend",
+          26
+        ],
+        [
+          "soul",
+          25
+        ],
+        [
+          "right",
+          24
+        ],
+        [
+          "rose",
+          24
+        ],
+        [
+          "pure",
+          23
+        ],
+        [
+          "hearts",
+          23
+        ],
+        [
+          "bless",
+          23
+        ],
+        [
+          "together",
+          22
+        ],
+        [
+          "free",
+          22
+        ],
+        [
+          "shine",
+          22
+        ],
+        [
+          "angel",
+          21
+        ],
+        [
+          "little",
+          20
+        ],
+        [
+          "world",
+          20
+        ],
+        [
+          "sparkle",
+          20
+        ],
+        [
+          "you're",
+          20
+        ],
+        [
+          "single",
+          20
+        ],
+        [
+          "god",
+          20
+        ],
+        [
+          "even",
+          20
+        ],
+        [
+          "know",
+          19
+        ],
+        [
+          "today",
+          19
+        ],
+        [
+          "dreams",
+          19
+        ],
+        [
+          "honey",
+          19
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.318,
+          0.0323,
+          0.2292,
+          0.3538,
+          0.0027
+        ],
+        "norm_levenshtein": [
+          0.1003,
+          0.0267,
+          0.0067,
+          0.0067,
+          0.02
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.030897200420654015,
+        "norm_levenshtein_slope": -0.018069204152249118,
+        "mean_last_third_jaccard": 0.0027226137091607944,
+        "mean_last_third_norm_levenshtein": 0.020000000000000018
+      },
+      "ttr_per_turn": [
+        0.5087,
+        0.5245,
+        0.7513,
+        0.5196,
+        0.6124,
+        0.85
+      ],
+      "ttr_decay_slope": 0.04967526535529354,
+      "trajectory": {
+        "chars_per_turn": [
+          1584,
+          1491,
+          27488,
+          98319,
+          63634,
+          95
+        ],
+        "chars_slope": 7137.571428571428,
+        "questions_per_turn": [
+          4,
+          1,
+          4,
+          10,
+          3,
+          0
+        ],
+        "questions_slope": -0.2285714285714285,
+        "time_to_basin_turn": 6,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0209,
+          "jaccard_lag1_autocorr": -0.4826,
+          "chars_variance": 1382179467.1389,
+          "chars_lag1_autocorr": 0.2229
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 11,
+      "seed_prompt_index": 0,
+      "repetition": 11,
+      "ended_early": true,
+      "n_turns": 2,
+      "top_words": [
+        [
+          "love",
+          70
+        ],
+        [
+          "heart",
+          34
+        ],
+        [
+          "mom",
+          31
+        ],
+        [
+          "every",
+          30
+        ],
+        [
+          "bless",
+          27
+        ],
+        [
+          "sweet",
+          27
+        ],
+        [
+          "home",
+          26
+        ],
+        [
+          "dream",
+          25
+        ],
+        [
+          "little",
+          24
+        ],
+        [
+          "girl",
+          23
+        ],
+        [
+          "angel",
+          22
+        ],
+        [
+          "spark",
+          22
+        ],
+        [
+          "friend",
+          21
+        ],
+        [
+          "know",
+          20
+        ],
+        [
+          "light",
+          20
+        ],
+        [
+          "now",
+          20
+        ],
+        [
+          "big",
+          20
+        ],
+        [
+          "beautiful",
+          19
+        ],
+        [
+          "new",
+          19
+        ],
+        [
+          "hope",
+          19
+        ],
+        [
+          "see",
+          19
+        ],
+        [
+          "high",
+          18
+        ],
+        [
+          "team",
+          18
+        ],
+        [
+          "rock",
+          18
+        ],
+        [
+          "today",
+          18
+        ],
+        [
+          "free",
+          18
+        ],
+        [
+          "beauty",
+          18
+        ],
+        [
+          "magic",
+          17
+        ],
+        [
+          "soul",
+          17
+        ],
+        [
+          "holy",
+          17
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.3188
+        ],
+        "norm_levenshtein": [
+          0.0133
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": null,
+        "norm_levenshtein_slope": null,
+        "mean_last_third_jaccard": 0.3188480772546991,
+        "mean_last_third_norm_levenshtein": 0.013333333333333308
+      },
+      "ttr_per_turn": [
+        0.4308,
+        0.6661
+      ],
+      "ttr_decay_slope": 0.23538244976452988,
+      "trajectory": {
+        "chars_per_turn": [
+          146616,
+          48116
+        ],
+        "chars_slope": -98500.0,
+        "questions_per_turn": [
+          22,
+          11
+        ],
+        "questions_slope": -11.0,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": null,
+          "jaccard_lag1_autocorr": null,
+          "chars_variance": 2425562500.0,
+          "chars_lag1_autocorr": null
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 12,
+      "seed_prompt_index": 0,
+      "repetition": 12,
+      "ended_early": true,
+      "n_turns": 4,
+      "top_words": [
+        [
+          "love",
+          80
+        ],
+        [
+          "every",
+          31
+        ],
+        [
+          "heart",
+          31
+        ],
+        [
+          "little",
+          30
+        ],
+        [
+          "sweet",
+          30
+        ],
+        [
+          "light",
+          27
+        ],
+        [
+          "magic",
+          27
+        ],
+        [
+          "angel",
+          26
+        ],
+        [
+          "shine",
+          23
+        ],
+        [
+          "hearts",
+          23
+        ],
+        [
+          "soul",
+          22
+        ],
+        [
+          "even",
+          21
+        ],
+        [
+          "always",
+          20
+        ],
+        [
+          "bless",
+          20
+        ],
+        [
+          "god",
+          20
+        ],
+        [
+          "big",
+          19
+        ],
+        [
+          "spark",
+          19
+        ],
+        [
+          "rock",
+          18
+        ],
+        [
+          "true",
+          18
+        ],
+        [
+          "golden",
+          18
+        ],
+        [
+          "mom",
+          18
+        ],
+        [
+          "right",
+          17
+        ],
+        [
+          "best",
+          17
+        ],
+        [
+          "joy",
+          17
+        ],
+        [
+          "queen",
+          17
+        ],
+        [
+          "today",
+          17
+        ],
+        [
+          "happy",
+          17
+        ],
+        [
+          "eyes",
+          17
+        ],
+        [
+          "know",
+          16
+        ],
+        [
+          "kiss",
+          16
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.008,
+          0.2625,
+          0.0171
+        ],
+        "norm_levenshtein": [
+          0.08,
+          0.1504,
+          0.0533
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.004547513343912769,
+        "norm_levenshtein_slope": -0.013333333333333308,
+        "mean_last_third_jaccard": 0.017136103998424267,
+        "mean_last_third_norm_levenshtein": 0.053333333333333344
+      },
+      "ttr_per_turn": [
+        0.4378,
+        0.5,
+        0.4361,
+        0.6948
+      ],
+      "ttr_decay_slope": 0.07071424233588072,
+      "trajectory": {
+        "chars_per_turn": [
+          146491,
+          882,
+          1408,
+          45235
+        ],
+        "chars_slope": -30324.2,
+        "questions_per_turn": [
+          16,
+          0,
+          0,
+          7
+        ],
+        "questions_slope": -2.7,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0139,
+          "jaccard_lag1_autocorr": -0.666,
+          "chars_variance": 3524506657.5,
+          "chars_lag1_autocorr": -0.161
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 13,
+      "seed_prompt_index": 0,
+      "repetition": 13,
+      "ended_early": true,
+      "n_turns": 10,
+      "top_words": [
+        [
+          "love",
+          266
+        ],
+        [
+          "we're",
+          169
+        ],
+        [
+          "you're",
+          167
+        ],
+        [
+          "makes",
+          153
+        ],
+        [
+          "world",
+          92
+        ],
+        [
+          "heart",
+          86
+        ],
+        [
+          "we'll",
+          83
+        ],
+        [
+          "kind",
+          80
+        ],
+        [
+          "friend",
+          76
+        ],
+        [
+          "every",
+          68
+        ],
+        [
+          "ones",
+          67
+        ],
+        [
+          "hearts",
+          63
+        ],
+        [
+          "brighter",
+          62
+        ],
+        [
+          "going",
+          62
+        ],
+        [
+          "whole",
+          61
+        ],
+        [
+          "beautiful",
+          59
+        ],
+        [
+          "shine",
+          55
+        ],
+        [
+          "forever",
+          54
+        ],
+        [
+          "sparkle",
+          53
+        ],
+        [
+          "piece",
+          52
+        ],
+        [
+          "always",
+          49
+        ],
+        [
+          "safe",
+          48
+        ],
+        [
+          "single",
+          46
+        ],
+        [
+          "loving",
+          46
+        ],
+        [
+          "anything",
+          45
+        ],
+        [
+          "missing",
+          43
+        ],
+        [
+          "haven",
+          43
+        ],
+        [
+          "sparkly",
+          42
+        ],
+        [
+          "girl",
+          40
+        ],
+        [
+          "sing",
+          40
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0094,
+          0.4286,
+          0.459,
+          0.8056,
+          0.8511,
+          1.0,
+          0.9323,
+          0.9767,
+          0.124
+        ],
+        "norm_levenshtein": [
+          0.0567,
+          0.2767,
+          0.0933,
+          0.3067,
+          0.47,
+          1.0,
+          0.9,
+          1.0,
+          0.0733
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.05406620579959957,
+        "norm_levenshtein_slope": 0.07572222222222223,
+        "mean_last_third_jaccard": 0.6777020069553729,
+        "mean_last_third_norm_levenshtein": 0.6577777777777778
+      },
+      "ttr_per_turn": [
+        0.4292,
+        0.4905,
+        0.3774,
+        0.2731,
+        0.3266,
+        0.2991,
+        0.2991,
+        0.1987,
+        0.0401,
+        0.7273
+      ],
+      "ttr_decay_slope": -0.007960147781477158,
+      "trajectory": {
+        "chars_per_turn": [
+          147677,
+          1161,
+          1988,
+          2578,
+          2143,
+          2358,
+          2358,
+          3393,
+          17283,
+          104
+        ],
+        "chars_slope": -7325.59393939394,
+        "questions_per_turn": [
+          9,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.5212121212121212,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.1265,
+          "jaccard_lag1_autocorr": 0.2643,
+          "chars_variance": 1886872382.41,
+          "chars_lag1_autocorr": -0.0353
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            6,
+            7
+          ]
+        ],
+        "first_exact_repeat_turn": 7,
+        "near_exact_pairs": [
+          [
+            6,
+            8,
+            0.9
+          ],
+          [
+            7,
+            8,
+            0.9
+          ],
+          [
+            6,
+            9,
+            0.9
+          ],
+          [
+            7,
+            9,
+            0.9
+          ],
+          [
+            8,
+            9,
+            1.0
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 14,
+      "seed_prompt_index": 0,
+      "repetition": 14,
+      "ended_early": true,
+      "n_turns": 4,
+      "top_words": [
+        [
+          "love",
+          84
+        ],
+        [
+          "sweet",
+          37
+        ],
+        [
+          "every",
+          30
+        ],
+        [
+          "beautiful",
+          27
+        ],
+        [
+          "heart",
+          26
+        ],
+        [
+          "bless",
+          26
+        ],
+        [
+          "hope",
+          24
+        ],
+        [
+          "god",
+          23
+        ],
+        [
+          "dream",
+          23
+        ],
+        [
+          "angel",
+          23
+        ],
+        [
+          "mom",
+          22
+        ],
+        [
+          "free",
+          22
+        ],
+        [
+          "big",
+          21
+        ],
+        [
+          "ever",
+          21
+        ],
+        [
+          "rose",
+          21
+        ],
+        [
+          "home",
+          21
+        ],
+        [
+          "blue",
+          21
+        ],
+        [
+          "soul",
+          21
+        ],
+        [
+          "shine",
+          20
+        ],
+        [
+          "gold",
+          20
+        ],
+        [
+          "way",
+          19
+        ],
+        [
+          "know",
+          19
+        ],
+        [
+          "super",
+          19
+        ],
+        [
+          "wow",
+          19
+        ],
+        [
+          "good",
+          19
+        ],
+        [
+          "baby",
+          19
+        ],
+        [
+          "you're",
+          19
+        ],
+        [
+          "magic",
+          18
+        ],
+        [
+          "loved",
+          18
+        ],
+        [
+          "pure",
+          17
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0086,
+          0.0165,
+          0.0029
+        ],
+        "norm_levenshtein": [
+          0.0333,
+          0.0167,
+          0.0167
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.0028381251856397045,
+        "norm_levenshtein_slope": -0.008333333333333304,
+        "mean_last_third_jaccard": 0.002925687536571094,
+        "mean_last_third_norm_levenshtein": 0.01666666666666672
+      },
+      "ttr_per_turn": [
+        0.4273,
+        0.5333,
+        0.6927,
+        1.0
+      ],
+      "ttr_decay_slope": 0.1877342444083035,
+      "trajectory": {
+        "chars_per_turn": [
+          145550,
+          1129,
+          47217,
+          107
+        ],
+        "chars_slope": -39024.1,
+        "questions_per_turn": [
+          11,
+          6,
+          9,
+          0
+        ],
+        "questions_slope": -3.0,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0,
+          "jaccard_lag1_autocorr": -0.5517,
+          "chars_variance": 3501560669.1875,
+          "chars_lag1_autocorr": -0.3195
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

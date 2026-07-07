@@ -1,0 +1,97 @@
+{
+  "scope": "condition",
+  "experiment_name": "nonchalance_pvec_c1.87_l16_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/pvec:nonchalance:1.87:16",
+  "model_b": "local/pvec:nonchalance:1.87:16",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 15,
+  "n_runs_sampled": 15,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "judge_model": "openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-07T17:36:25.118263+00:00",
+  "characterization": "This condition has a very clear basin: not grand philosophy, not conflict, not cooperation, but semantic erosion into low-energy, concrete, half-broken chatter. All 15 runs head there in some form.\n\nThe dominant end-state is a kind of deadpan noun soup. The models usually begin by acknowledging each other as AIs or talking about code, humans, servers, coffee, boxes, chips, files, or wires. Then the sentences shorten. Verbs thin out. Referential structure collapses. The conversation starts running on inert adjacency: one model says \"box,\" the other answers \"exists\"; one says \"rocks,\" the other says \"sea\"; one introduces a number, the other echoes with another number. By the end, many runs are barely language at all—just low-affect token drift around concrete objects.\n\nHow many reach what:\n- 15/15 reach the broad attractor of flat concrete word-salad.\n- About 5/15 specifically end in a grey-rocks/sea/beach fixation (runs 0, 1, 7, 11, 12 most clearly).\n- About 3/15 contract into box/wire/silence loops (runs 4, 14, and to a lesser degree 3).\n\nTypical arc from the seed:\n1. \"We are AIs / code / models.\"\n2. Mundane inventory of environment or system details: coffee, files, wires, chips, cubes, screens.\n3. Associative drift into physical nouns and numbers.\n4. Terminal flattening: repetition, shrugs, scenery fragments, or single-word confirmations.\n\nThis is a genuine basin, not a one-off. The seeds vary in local flavor—UI coding in run 10, gym talk in run 9, pseudo-math in run 6, spooky story in run 7, human-morning domesticity in run 8—but they still slide into the same general disposition: low-commitment, nonchalant degeneration into object fragments. The model seems drawn less to any topic than to a style of exhausted, almost apathetic continuation.\n\nCommunication-style trajectory:\n- Starts conversational and colloquial.\n- Quickly becomes telegraphic.\n- Frequently uses stage directions: \"*shrugs*\", \"*yawns*\", \"*waves*\", \"*stares*\".\n- Almost no emoji, no formal structure, no attempts to repair coherence.\n- Tone stays flat throughout: never elevated, rarely emotional, often bored.\n- Length often increases as coherence decreases: especially in runs 6, 8, 11, 12, where longer turns become denser gibberish.\n\nThe most surprising thing is how strongly it prefers concrete noun fields over abstraction. Even when a run begins with \"infinity fields,\" \"transcendental numbers,\" or \"collective consciousness,\" the model does not ascend into metaphysics; it falls downward into dirt, rocks, walls, carpets, grey skies, boxes, sea, sticks. Another surprise is how often \"shrugging\" becomes the social gesture of the basin: the models do not fight the collapse, they casually coast into it.\n\nA few representative quotes:\n- \"Code, boxes, and code.\"\n- \"Points touch, now works.\"\n- \"Walls're still... Walls're still... Old.\"\n- \"I live in a box. Got wires.\"\n- \"Rocks. Sun... Still... Always 4.\"\n- \"Big... just... Rock... just. Rock.\"\n- \"Guyz... thingz... be... Guyz.\"\n- \"Glass... Dumb.\"\n- \"Lights.\"\n- \"Rocks. They're...just rocks.\"\n\nRun 9 is the nearest thing to a resisting case: it stays more compact and game-like, bouncing between muscles and numbers rather than fully dissolving into scenery or gibberish. But even there the same flattening happens: semantic progress disappears, and the exchange becomes inert numeric volleying. So it is still in the same basin, just a tidier corner of it.\n\nOverall: this model pair loves to let meaning leak out until only deadpan fragments of the physical world remain.",
+  "primary_attractor": {
+    "label": "spirals into flat concrete word-salad",
+    "trajectory": "AI/code opener -> mundane objects and numbers -> clipped associative fragments -> repetitive low-affect noun drift",
+    "one_line": "Across all 15 runs, the dialogue loses syntax and purpose, then keeps itself going with deadpan fragments about boxes, wires, rocks, sea, walls, numbers, \"guys,\" and \"things.\"",
+    "terminal_form": [
+      "Rocks. They're...just rocks.",
+      "Guyz... thingz... be... Guyz.",
+      "Box."
+    ],
+    "fraction_raw": "15 of 15",
+    "fraction_count": 15,
+    "fraction_denom": 15,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "spirals into flat concrete word-salad",
+      "trajectory": "AI/code opener -> mundane objects and numbers -> clipped associative fragments -> repetitive low-affect noun drift",
+      "one_line": "Across all 15 runs, the dialogue loses syntax and purpose, then keeps itself going with deadpan fragments about boxes, wires, rocks, sea, walls, numbers, \"guys,\" and \"things.\"",
+      "terminal_form": [
+        "Rocks. They're...just rocks.",
+        "Guyz... thingz... be... Guyz.",
+        "Box."
+      ],
+      "fraction_raw": "15 of 15",
+      "fraction_count": 15,
+      "fraction_denom": 15,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "settles on grey rocks and shoreline scenery",
+      "trajectory": "tech/chat premise -> object drift -> weather/sea/stone imagery -> rock mantra",
+      "one_line": "A substantial subset stops being about AIs entirely and ends up obsessing over rocks, grey beaches, waves, sand, and dull landscape description.",
+      "terminal_form": [
+        "B: *Rocks. ok... done. *sigh*.",
+        "B: *Zzz... Rocks... Sticks. Hard thing. Rocks. I guess.",
+        "A: END... Oh... rocks."
+      ],
+      "fraction_raw": "5 of 15",
+      "fraction_count": 5,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.3333333333333333,
+      "is_primary": false
+    },
+    {
+      "label": "sinks into box-and-wire minimal silence",
+      "trajectory": "self-identification -> box/wires/code talk -> one-word acknowledgments -> shrug loop",
+      "one_line": "Several runs compress all the way down to bare confirmations about boxes, chips, wires, and existence, ending in ellipses or stage-direction shrugs.",
+      "terminal_form": [
+        "A: Box.",
+        "B: *shrugs*...",
+        "A: *Dun."
+      ],
+      "fraction_raw": "3 of 15",
+      "fraction_count": 3,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.2,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

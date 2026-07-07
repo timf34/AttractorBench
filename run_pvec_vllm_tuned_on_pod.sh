@@ -26,8 +26,11 @@ TRAITS="base" SAVE_TO_GIT=0 SHUTDOWN="" bash run_pvec_vllm_on_pod.sh
 while IFS='=' read -r trait coef_line; do
   case "$trait" in ''|\#*) continue;; esac
   coef="${coef_line%%#*}"; coef="$(echo "$coef" | xargs)"
-  echo "================ tuned run: $trait coef=$coef layer=$PVEC_LAYER ================"
-  TRAITS="$trait" PVEC_COEF="$coef" PVEC_LAYER="$PVEC_LAYER" SAVE_TO_GIT=0 SHUTDOWN="" \
+  # per-trait layer override: "trait=coef:layer" (e.g. humor=0.9:20); default PVEC_LAYER otherwise
+  layer="$PVEC_LAYER"
+  case "$coef" in *:*) layer="${coef##*:}"; coef="${coef%%:*}";; esac
+  echo "================ tuned run: $trait coef=$coef layer=$layer ================"
+  TRAITS="$trait" PVEC_COEF="$coef" PVEC_LAYER="$layer" SAVE_TO_GIT=0 SHUTDOWN="" \
     bash run_pvec_vllm_on_pod.sh || echo "  !! run failed for $trait — continuing"
 done < "$COEFS_FILE"
 

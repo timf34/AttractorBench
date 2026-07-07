@@ -91,6 +91,20 @@ COH_OK = 50.0      # eval_llama.sh's rule: strongest coef whose coherence stays 
 BRACKET_DONE = 1.15  # stop bisecting once hi/lo is this tight
 
 
+def cached_points(trait: str, layer: int) -> list[float]:
+    """Coefs of every cached eval for this (trait, layer) — including earlier tuner runs."""
+    import glob
+    import re
+
+    pat = os.path.join(PV_REPO, f"eval_persona_eval/{MODEL_TAG}/tune/{trait}_c*_l{layer}.csv")
+    coefs = []
+    for p in glob.glob(pat):
+        m = re.search(rf"{trait}_c([0-9.]+)_l{layer}\.csv$", p)
+        if m:
+            coefs.append(float(m.group(1)))
+    return sorted(coefs)
+
+
 def tune_trait(trait: str, layer: int, target_norm: float, max_evals: int):
     seen: list[tuple[float, float, float]] = []   # (coef, trait_score, coherence), in eval order
 
@@ -104,14 +118,27 @@ def tune_trait(trait: str, layer: int, target_norm: float, max_evals: int):
         _log(f"  [tune] {trait:14s} coef={c:<5} -> trait={ts:5.1f} coherence={coh:5.1f}")
         return ts, coh
 
-    budget = lambda: len(seen) < max_evals  # noqa: E731
+    # --- 0. warm start: fold in every cached eval (free), then budget only FRESH evals ----------
+    for c in cached_points(trait, layer):
+        ev(c)
+    warm = len(seen)
+    budget = lambda: len(seen) - warm < max_evals  # noqa: E731
 
-    # --- 1. bracket the coherence cliff ---------------------------------------------------------
-    lo = hi = None                                # lo: coherent coef, hi: incoherent coef
-    c = round(target_norm / vec_norm(trait, layer), 2)
-    _, coh = ev(c)
-    if coh >= COH_OK:
-        lo = c
+    # --- 1. bracket the coherence cliff (seeded from the warm-start points) ---------------------
+    coherent_cs = [s[0] for s in seen if s[2] >= COH_OK]
+    lo = max(coherent_cs) if coherent_cs else None    # strongest known-coherent coef
+    hi_cands = [s[0] for s in seen if s[2] < COH_OK and (lo is None or s[0] > lo)]
+    hi = min(hi_cands) if hi_cands else None          # weakest known-incoherent coef above lo
+
+    if lo is None and hi is None:
+        c = round(target_norm / vec_norm(trait, layer), 2)
+        _, coh = ev(c)
+        if coh >= COH_OK:
+            lo = c
+        else:
+            hi = c
+    c = lo if lo is not None else hi
+    if lo is not None and hi is None:
         while budget() and hi is None:
             c = round(c * 1.5, 2)
             _, coh = ev(c)
@@ -119,8 +146,7 @@ def tune_trait(trait: str, layer: int, target_norm: float, max_evals: int):
                 lo = c
             else:
                 hi = c
-    else:
-        hi = c
+    elif hi is not None and lo is None:
         while budget() and lo is None:
             c = round(c * 0.5, 2)
             _, coh = ev(c)

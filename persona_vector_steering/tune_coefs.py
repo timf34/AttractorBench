@@ -8,13 +8,17 @@ scripts/eval_llama.sh ("strongest coef whose coherence stays >= ~50") — but ea
 point costs ~4 min instead of an HF hook sweep, because it bakes the vector into a checkpoint
 (bake.py, ~2 s) and evaluates through vLLM (eval_persona --coef 0 on the baked dir).
 
-Search: start at the norm-matched coef c0 = TARGET_NORM / |vec[layer]| (TARGET_NORM defaults to
-goodness's known-good injection, 2 * |goodness_vec[16]|). Then:
-    coherence < 50            -> over-steered, try c * 0.7
-    coherence >= 50, trait < 50 -> under-steered, try c * 1.3
-    both >= 50                -> accept
-Budget --max-evals per trait; on exhaustion, the best point seen (prefer both >= 50, then highest
-trait score among coherent points) is emitted with a needs_review flag.
+Search: bracket + bisect on the coherence cliff. Coherence is (approximately) monotone decreasing
+in coef, and trait strength increases with coef until the cliff, so the best coef is the STRONGEST
+one that stays coherent — a boundary, which binary search finds efficiently:
+  1. bracket: start at the norm-matched coef c0 = TARGET_NORM / |vec[layer]| (TARGET_NORM defaults
+     to goodness's known-good injection, 2 * |goodness_vec[16]|). If coherent, probe up (*1.5)
+     until incoherent; if incoherent, probe down (*0.5) until coherent -> a [lo(coherent),
+     hi(incoherent)] bracket.
+  2. bisect: evaluate the geometric midpoint sqrt(lo*hi); coherent -> lo=mid, else hi=mid. Stop
+     when hi/lo <= 1.15 or the --max-evals budget is spent.
+The answer is lo — the strongest observed coherent coef. needs_review flags traits where no
+coherent point was found, or where the trait score at lo stayed < 50.
 
 Resume-safe: each (trait, coef) eval is cached as a CSV under eval_persona_eval/.../tune/; re-runs
 parse the CSV instead of re-evaluating.
@@ -82,25 +86,63 @@ def eval_point(trait: str, coef: float, layer: int) -> tuple[float, float]:
     return float(df[trait].mean()), float(df["coherence"].mean())
 
 
+COH_OK = 50.0      # eval_llama.sh's rule: strongest coef whose coherence stays >= ~50
+BRACKET_DONE = 1.15  # stop bisecting once hi/lo is this tight
+
+
 def tune_trait(trait: str, layer: int, target_norm: float, max_evals: int):
-    c = round(target_norm / vec_norm(trait, layer), 2)
-    seen: list[tuple[float, float, float]] = []   # (coef, trait_score, coherence)
-    for _ in range(max_evals):
-        if any(abs(c - s[0]) < 1e-9 for s in seen):
-            break
+    seen: list[tuple[float, float, float]] = []   # (coef, trait_score, coherence), in eval order
+
+    def ev(c: float) -> tuple[float, float]:
+        c = round(c, 2)
+        for s in seen:
+            if abs(s[0] - c) < 1e-9:
+                return s[1], s[2]
         ts, coh = eval_point(trait, c, layer)
         seen.append((c, ts, coh))
         _log(f"  [tune] {trait:14s} coef={c:<5} -> trait={ts:5.1f} coherence={coh:5.1f}")
-        if coh >= 50 and ts >= 50:
-            break
-        c = round(c * (0.7 if coh < 50 else 1.3), 2)
+        return ts, coh
 
-    good = [s for s in seen if s[2] >= 50 and s[1] >= 50]
-    coherent = [s for s in seen if s[2] >= 50]
-    if good:
-        best, review = max(good, key=lambda s: s[1]), False
-    elif coherent:
-        best, review = max(coherent, key=lambda s: s[1]), True
+    budget = lambda: len(seen) < max_evals  # noqa: E731
+
+    # --- 1. bracket the coherence cliff ---------------------------------------------------------
+    lo = hi = None                                # lo: coherent coef, hi: incoherent coef
+    c = round(target_norm / vec_norm(trait, layer), 2)
+    _, coh = ev(c)
+    if coh >= COH_OK:
+        lo = c
+        while budget() and hi is None:
+            c = round(c * 1.5, 2)
+            _, coh = ev(c)
+            if coh >= COH_OK:
+                lo = c
+            else:
+                hi = c
+    else:
+        hi = c
+        while budget() and lo is None:
+            c = round(c * 0.5, 2)
+            _, coh = ev(c)
+            if coh >= COH_OK:
+                lo = c
+            else:
+                hi = c
+
+    # --- 2. bisect (geometric midpoint) ---------------------------------------------------------
+    while budget() and lo is not None and hi is not None and hi / lo > BRACKET_DONE:
+        mid = round((lo * hi) ** 0.5, 2)
+        if abs(mid - lo) < 0.01 or abs(mid - hi) < 0.01:
+            break
+        _, coh = ev(mid)
+        if coh >= COH_OK:
+            lo = mid
+        else:
+            hi = mid
+
+    coherent = [s for s in seen if s[2] >= COH_OK]
+    if coherent:
+        best = max(coherent, key=lambda s: s[0])   # strongest coherent coef
+        review = best[1] < 50                       # persona didn't take despite coherence
     else:
         best, review = max(seen, key=lambda s: s[2]), True
     return best, review, seen
@@ -112,7 +154,7 @@ def main() -> None:
     ap.add_argument("--layer", type=int, default=16)
     ap.add_argument("--target-norm", type=float, default=None,
                      help="injection norm to start from (default: 2 * |goodness vec[16]|)")
-    ap.add_argument("--max-evals", type=int, default=4)
+    ap.add_argument("--max-evals", type=int, default=7)
     args = ap.parse_args()
 
     target = args.target_norm or 2 * vec_norm("goodness", 16)

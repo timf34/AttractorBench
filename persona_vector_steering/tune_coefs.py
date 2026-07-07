@@ -9,8 +9,9 @@ point costs ~4 min instead of an HF hook sweep, because it bakes the vector into
 (bake.py, ~2 s) and evaluates through vLLM (eval_persona --coef 0 on the baked dir).
 
 Search: bracket + bisect on the coherence cliff. Coherence is (approximately) monotone decreasing
-in coef, and trait strength increases with coef until the cliff, so the best coef is the STRONGEST
-one that stays coherent — a boundary, which binary search finds efficiently:
+in coef, so the coherent/incoherent boundary is findable by binary search; the final pick is then
+the coherent point with the HIGHEST TRAIT SCORE (trait strength is not monotone in coef — judged
+trait expression drops as the text degrades near the cliff):
   1. bracket: start at the norm-matched coef c0 = TARGET_NORM / |vec[layer]| (TARGET_NORM defaults
      to goodness's known-good injection, 2 * |goodness_vec[16]|). If coherent, probe up (*1.5)
      until incoherent; if incoherent, probe down (*0.5) until coherent -> a [lo(coherent),
@@ -141,7 +142,11 @@ def tune_trait(trait: str, layer: int, target_norm: float, max_evals: int):
 
     coherent = [s for s in seen if s[2] >= COH_OK]
     if coherent:
-        best = max(coherent, key=lambda s: s[0])   # strongest coherent coef
+        # maximize trait expression SUBJECT TO coherence >= 50 — trait score is not monotone in
+        # coef (judges can't read a persona in degrading text), so the strongest coherent coef can
+        # score worse than a milder one (measured: honesty c1.85 -> 94 trait / 92 coh, but
+        # c2.78 -> 68 / 59). Tie-break toward the stronger coef.
+        best = max(coherent, key=lambda s: (s[1], s[0]))
         review = best[1] < 50                       # persona didn't take despite coherence
     else:
         best, review = max(seen, key=lambda s: s[2]), True

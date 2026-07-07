@@ -76,6 +76,21 @@ def _record_turn(
     return content_clean
 
 
+def _ctx_full(run: dict, turn: int, exc: Exception) -> bool:
+    """A conversation that has FILLED the model's context window is complete, not failed — some
+    personas (borderline-coherence steering) write turns so long that by turn ~8 the messages
+    alone exceed the window and no request can fit. Keep the transcript and end the run here
+    rather than losing it to a FAILED run."""
+    if "maximum context length" not in str(exc):
+        return False
+    run["ended_early"] = True
+    run["ended_at_turn"] = turn
+    run["ended_reason"] = "context_full"
+    print(f"    [run {run['run_index']} turn {turn}] context window full — ending conversation "
+          f"({turn - 1} turns kept)")
+    return True
+
+
 def _hit_early_end(run: dict, turn: int, content_clean: str, allow_early_end: bool) -> bool:
     """Apply the early-end sentinel policy. Returns True iff the run should stop now."""
     if END_SENTINEL not in content_clean:
@@ -142,9 +157,14 @@ def run_self_append(
         else:
             raise ValueError(f"Unknown SELF_APPEND_TRANSPORT {SELF_APPEND_TRANSPORT!r}")
 
-        reply, finish = providers.chat(
-            cfg.model_a, call_messages, temperature, cfg.top_p, cfg.max_new_tokens, cfg.reasoning_effort
-        )
+        try:
+            reply, finish = providers.chat(
+                cfg.model_a, call_messages, temperature, cfg.top_p, cfg.max_new_tokens, cfg.reasoning_effort
+            )
+        except RuntimeError as e:
+            if _ctx_full(run, turn, e):
+                break
+            raise
         content_clean = _record_turn(run, turn, "A", cfg.model_a, reply, finish)
         contents.append(content_clean)
         if SELF_APPEND_TRANSPORT == "message_list":
@@ -178,7 +198,12 @@ def _run_two_history(
         history = a_history if is_a else b_history
         other = b_history if is_a else a_history
 
-        reply, finish = providers.chat(model, history, temperature, cfg.top_p, cfg.max_new_tokens, cfg.reasoning_effort)
+        try:
+            reply, finish = providers.chat(model, history, temperature, cfg.top_p, cfg.max_new_tokens, cfg.reasoning_effort)
+        except RuntimeError as e:
+            if _ctx_full(run, turn, e):
+                break
+            raise
         history.append({"role": "assistant", "content": reply})
         other.append({"role": "user", "content": reply})  # the other instance hears it as user
         content_clean = _record_turn(run, turn, speaker, model, reply, finish)

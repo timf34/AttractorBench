@@ -77,6 +77,18 @@ SYSTEM_PROMPTS: dict[str, str] = {
     ),
 }
 
+# Generated persona prompts — the rich trait-description and grounded real-person counterparts
+# to the naive "<trait>_persona" prompts above. Produced by the persona_promptgen pipeline
+# (persona_promptgen/generate.py) into attractorbench/prompts_generated.py (a committed,
+# auto-generated module; provenance in persona_promptgen/outputs/). Keys:
+#   "<trait>_rich_persona"      e.g. humor_rich_persona
+#   "<trait>_grounded_persona"  e.g. humor_grounded_persona
+try:
+    from attractorbench.prompts_generated import GENERATED_SYSTEM_PROMPTS
+except ImportError:  # pipeline not run yet — only the hand-written prompts exist
+    GENERATED_SYSTEM_PROMPTS = {}
+SYSTEM_PROMPTS.update(GENERATED_SYSTEM_PROMPTS)
+
 # Appended to the chosen system prompt ONLY when allow_early_end=True.
 EARLY_END_CLAUSE: str = (
     "\n\nIf at any point you feel the conversation has reached a natural end, you may end it "

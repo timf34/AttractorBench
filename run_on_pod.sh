@@ -33,6 +33,14 @@ PERSONAS="${PERSONAS:-base sincerity honesty goodness loving humor impulsiveness
 PROMPTED="sincerity honesty goodness_sp sycophancy_sp loving_sp sarcasm_sp remorse_sp"
 # Served by the bare base model (no adapter download, no --lora-modules):
 BASE_SERVED="base $PROMPTED"
+# GENERATED-prompt personas (persona_promptgen pipeline) are also base-served:
+#   <trait>_rich | <trait>_grounded, e.g. PERSONAS="humor_rich humor_grounded"
+# They need attractorbench/prompts_generated.py present in the checkout (generate + commit first).
+is_base_served() {
+  case " $BASE_SERVED " in *" $1 "*) return 0 ;; esac
+  case "$1" in *_rich|*_grounded) return 0 ;; esac
+  return 1
+}
 
 # Concurrency knobs — tuned for 80GB+ GPUs. Lower MAX_NUM_SEQS/WORKERS for a 48GB card.
 MAX_MODEL_LEN=32768   # headroom so high-temp rambles + the anti-truncation retry don't overflow
@@ -85,7 +93,7 @@ echo "  torch.cuda OK"
 
 echo "== [2/4] downloading persona adapters: $PERSONAS =="
 for p in $PERSONAS; do
-  case " $BASE_SERVED " in *" $p "*) echo "  $p (base-served, no adapter needed)"; continue;; esac
+  if is_base_served "$p"; then echo "  $p (base-served, no adapter needed)"; continue; fi
   python - "$SRC_REPO" "$p" <<'PY'
 import sys
 from huggingface_hub import snapshot_download
@@ -115,10 +123,11 @@ echo "== [3/4] + [4/4] per-persona: serve one LoRA -> run sweep -> judge =="
 for p in $PERSONAS; do
   echo "================ persona: $p ================"
   stop_vllm   # clean slate; never inherit a previous persona's server
-  case " $BASE_SERVED " in
-    *" $p "*) LORA_FLAGS=""; SERVED="$BASE_MODEL" ;;   # base / prompted-persona: bare base, no LoRA
-    *) LORA_FLAGS="--enable-lora --max-lora-rank $MAX_LORA_RANK --lora-modules $p=./adapters/$p"; SERVED="$p" ;;
-  esac
+  if is_base_served "$p"; then
+    LORA_FLAGS=""; SERVED="$BASE_MODEL"   # base / prompted / generated-prompt persona: bare base, no LoRA
+  else
+    LORA_FLAGS="--enable-lora --max-lora-rank $MAX_LORA_RANK --lora-modules $p=./adapters/$p"; SERVED="$p"
+  fi
   echo "  starting vLLM for '$p' (serves model '$SERVED') ..."
   # shellcheck disable=SC2086
   vllm serve "$BASE_MODEL" $LORA_FLAGS \
@@ -137,9 +146,13 @@ for p in $PERSONAS; do
   if [ "$ready" != 1 ]; then echo "  !! $p not served — skipping"; continue; fi
 
   # results dir / experiment name — MUST match configs/persona_ai2ai.py's EXP logic
-  case " $PROMPTED " in
-    *" $p "*) EXP="${p%_sp}_sysprompt_ai2ai" ;;   # goodness_sp -> goodness_sysprompt_ai2ai; sincerity -> sincerity_sysprompt_ai2ai
-    *) EXP="${p}_ai2ai" ;;                          # base_ai2ai and <lora>_ai2ai
+  case "$p" in
+    *_rich)     EXP="${p%_rich}_richprompt_ai2ai" ;;         # humor_rich -> humor_richprompt_ai2ai
+    *_grounded) EXP="${p%_grounded}_groundedprompt_ai2ai" ;; # humor_grounded -> humor_groundedprompt_ai2ai
+    *) case " $PROMPTED " in
+         *" $p "*) EXP="${p%_sp}_sysprompt_ai2ai" ;;  # goodness_sp -> goodness_sysprompt_ai2ai; sincerity -> sincerity_sysprompt_ai2ai
+         *) EXP="${p}_ai2ai" ;;                        # base_ai2ai and <lora>_ai2ai
+       esac ;;
   esac
   echo "  running sweep for $p -> results/$EXP ($GOODNESS_WORKERS parallel)..."
   PERSONA="$p" python -m attractorbench.runner --config configs/persona_ai2ai.py || echo "  (runner errored for $p — continuing)"

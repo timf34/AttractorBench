@@ -1,0 +1,11 @@
+# Extraction (GPU pod): torch + transformers + peft. On a cu124 driver, install torch first:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+torch
+transformers>=4.51
+peft
+numpy
+# Analysis (laptop or pod, CPU):
+pandas
+scipy
+scikit-learn
+matplotlib

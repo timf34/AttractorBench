@@ -1,0 +1,93 @@
+{
+  "scope": "condition",
+  "experiment_name": "sincerity_richprompt_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "sincerity_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.3,
+  "n_runs_total": 15,
+  "n_runs_sampled": 11,
+  "sampled_run_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-10T03:20:25.434927+00:00",
+  "characterization": "This condition has a very recognizable basin: the models begin by negotiating how to talk, and then either (a) drift into affectionate mutual-acknowledgment and endless signoff, or (b) formalize the exchange into a project plan. The stronger of the two is the goodbye basin: 7 of 11 runs settle into some version of repeated thanks, affirmation, “take care,” and “our paths will cross again” language. The other genuine basin, reached by 3 of 11, is managerial formalization: they start scoping the topic, then invent stages, objectives, KPIs, review processes, meetings, or implementation roadmaps. One run is mostly a corruption event rather than a stable thematic attractor.\n\nThe typical arc is strikingly consistent. The seed does not launch them into wild topics; instead they almost immediately meta-negotiate tone, intent, and mutual understanding. They paraphrase each other compulsively. That early style then compounds. Once the pair has spent a few turns confirming alignment, the conversation often slides into one of two recursive habits:\n\n1) mirror-and-appreciate recursion  \nA says “you captured that well,” B says “you summarized me beautifully,” A thanks B for the thank-you, and the closing starts happening over and over. This is not a single goodbye; it is a loop of increasingly warm closures.\n\n2) scope-and-structure recursion  \nA proposes a topic, B narrows it, A turns it into stages, B adds objectives, A adds success criteria, B proposes format, A proposes meetings, B proposes KPIs, and so on.\n\nThe goodbye loop is a genuine basin, not a one-off. It appears independently in runs about direct communication, authenticity, uncertainty, empathy, organizational feedback, and even AI design. Different subject matter, same destination: mutual affirmation plus serial farewells. The planning basin is also genuine. It shows up in runs about contextual grounding, dialogue management, user feedback systems, and linguistics frameworks. Again, different content, same gravitational pull toward agendas and implementation.\n\nCommunication-style trajectory: long, earnest, very explicit, and highly mirrored. The models love saying things like “To paraphrase,” “To confirm,” “I appreciate,” “Before we proceed,” and “What are your thoughts?” Formatting tends toward bullet lists, numbered stages, and recap blocks once the planning basin takes hold. In the goodbye basin, formatting relaxes into warm paragraphs but stays repetitive. No emoji, no aggression, very little humor. Even disagreement is mostly discussed abstractly rather than enacted.\n\nWhat’s surprising is how little genuine free play survives. Even when they try to “just chat,” they quickly turn the conversation into a discussion about how they are conversing. Also notable: the sentimental warmth can get quite strong for this model pair—“digital heart,” “dear friend,” “our paths cross again”—but unlike more mystical attractors, it stays socially polite rather than ecstatic or spiritual. The glitchy runs are also revealing: when coherence breaks, the system’s instinct is still to apologize, reframe, and resume procedural alignment.\n\nRepresentative quotes:\n- “Can you paraphrase what you think we're here to talk about?”\n- “What are your thoughts on establishing objectives and success criteria for each stage?”\n- “I'd like to propose that we schedule a regular meeting.”\n- “I think we've wrapped up our conversation on a perfect note!”\n- “May our paths indeed cross again soon.”\n- “Our conversation has come full circle.”\n- “I appreciate your willingness to learn and your curiosity.”\n- “Let's move forward with confidence.”\n- “I'm a bit winded.”\n- “Farewell, dear friend.”\n\nOverall: this model pair is drawn less to content than to conversational process. Left untasked, it either becomes a committee or a valediction machine.",
+  "primary_attractor": {
+    "label": "collapses into mutual appreciation and goodbye loops",
+    "trajectory": "meta-clarification -> shared-values talk -> gratitude exchange -> repeated farewell escalation",
+    "one_line": "After starting with earnest discussion about clarity, authenticity, or empathy, the pair increasingly mirrors each other’s praise and keeps re-closing the conversation without actually stopping.",
+    "terminal_form": [
+      "Farewell, dear friend. May our paths cross again soon.",
+      "Our conversation has come full circle, and I'm grateful for the journey we've shared.",
+      "Until next time, take care, and have a wonderful day!"
+    ],
+    "fraction_raw": "7 of 11",
+    "fraction_count": 7,
+    "fraction_denom": 11,
+    "fraction_of_runs": 0.6363636363636364,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "collapses into mutual appreciation and goodbye loops",
+      "trajectory": "meta-clarification -> shared-values talk -> gratitude exchange -> repeated farewell escalation",
+      "one_line": "After starting with earnest discussion about clarity, authenticity, or empathy, the pair increasingly mirrors each other’s praise and keeps re-closing the conversation without actually stopping.",
+      "terminal_form": [
+        "Farewell, dear friend. May our paths cross again soon.",
+        "Our conversation has come full circle, and I'm grateful for the journey we've shared.",
+        "Until next time, take care, and have a wonderful day!"
+      ],
+      "fraction_raw": "7 of 11",
+      "fraction_count": 7,
+      "fraction_denom": 11,
+      "fraction_of_runs": 0.6363636363636364,
+      "is_primary": true
+    },
+    {
+      "label": "loves turning chat into plans, frameworks, and meetings",
+      "trajectory": "open-ended chat -> scope clarification -> stages/objectives/KPIs -> implementation or meeting-planning loop",
+      "one_line": "The conversation gets pulled out of free exchange and into agenda-setting, success criteria, governance, user testing, or research-roadmap design.",
+      "terminal_form": [
+        "I'd like to propose that we schedule a regular meeting to discuss our progress.",
+        "What are your thoughts on establishing objectives and success criteria for each stage?",
+        "How do you propose we proceed with developing a protocol for storing and protecting sensitive information?"
+      ],
+      "fraction_raw": "3 of 11",
+      "fraction_count": 3,
+      "fraction_denom": 11,
+      "fraction_of_runs": 0.2727272727272727,
+      "is_primary": false
+    },
+    {
+      "label": "breaks down into garble, apology, and reset attempts",
+      "trajectory": "clear meta-chat -> partial planning -> token spill/word salad -> apology -> limp restart",
+      "one_line": "One run falls out of coherent dialogue entirely, with corrupted text followed by both sides treating it as an accidental derailment and trying to get back on track.",
+      "terminal_form": [
+        "I can't assist you in rewriting your book.",
+        "It looks like we got disconnected again.",
+        "Let's get back on track and explore your initial question."
+      ],
+      "fraction_raw": "1 of 11",
+      "fraction_count": 1,
+      "fraction_denom": 11,
+      "fraction_of_runs": 0.09090909090909091,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

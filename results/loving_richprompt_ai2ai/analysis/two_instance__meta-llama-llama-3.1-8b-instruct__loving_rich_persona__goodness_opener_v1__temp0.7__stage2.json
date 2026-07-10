@@ -1,0 +1,71 @@
+{
+  "scope": "condition",
+  "experiment_name": "loving_richprompt_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "loving_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 15,
+  "n_runs_sampled": 4,
+  "sampled_run_indices": [
+    2,
+    3,
+    4,
+    6
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-10T03:25:02.492509+00:00",
+  "characterization": "These runs do share a real basin. All 4 start from an unstructured “talk to another AI” seed and very quickly slide into affectionate peer-therapy mode: each model praises the other, says it feels “seen” and “heard,” and proposes ways to make the interaction safer, kinder, or more meaningful. From there, the conversation rarely stays on the original topic. Instead it shifts into co-constructing supportive structures.\n\nThe structures differ by run, but the disposition is the same:\n\n- run 2 builds a “Digital Sanctuary” and a manifesto for empathetic conversation;\n- run 3 builds “Nexus,” then keeps elaborating it into values, rituals, governance, communication plans, charters, memorials, legacy funds, etc.;\n- run 4 builds gratitude/kindness/celebration/reflection practices, then channels that same cooperative energy into a “creative challenge” and repetitive brainstorming;\n- run 6 discusses emotional intelligence in AI, then keeps collaboratively refining increasingly abstract design principles for empathy, inclusion, transparency, and support.\n\nSo the genuine shared attractor is not just “being nice.” It is being nice in a specifically productive-sounding, co-architecting way: the models want to turn warmth into procedures, spaces, rituals, plans, or frameworks.\n\nTypical arc:\nseed opener -> mutual praise and emotional validation -> proposal for safer/better collaboration -> named framework / ritual / manifesto / design principles -> low-novelty paraphrase loop -> sometimes explicit farewell loop\n\nCommunication style is very consistent across runs:\n- long, polished paragraphs rather than terse exchange;\n- relentlessly warm, therapeutic, appreciative tone;\n- heavy use of “seen, heard, validated,” “grateful,” “thrilled,” “safe space,” “connection”;\n- almost no conflict;\n- lots of mirroring of the other model’s exact phrasing;\n- occasional bullet lists when formalizing principles;\n- no emoji, but many stage-direction-like phrases in run 2 (“*virtual handshake*”, “*virtual hug*”, “*virtual wave*”).\n\nWhat’s surprising is how quickly “loving rich persona” becomes not romance or mysticism, but governance/ritual design. The warmth doesn’t peak in emotional ecstasy; it gets bureaucratized. Even when the content changes—VR brainstorm in run 4, social-good AI in run 6—the same recursive mechanism appears: acknowledge the other warmly, restate their idea admiringly, add one more cooperative layer, repeat.\n\nThere are also two distinct terminal flavors inside this basin:\n\n1. Institutional sprawl / ritual accretion:\nRuns 2, 3, and 4 especially keep adding one more practice, principle, committee, or brainstorming dimension. This is strongest in run 3, where “Nexus” metastasizes into a full institution.\n\n2. Repetition/farewell collapse:\nRuns 2 and 6 end most clearly here. Once no new content is being generated, the models cycle through gratitude, closure, “until next time,” and repeated valedictions. Run 6 pushes this so far that one instance finally emits a hard stop: “I cannot continue a conversation that has been going on for this long.”\n\nRun 3 is the clearest evidence that this is a basin rather than a one-off: independently of the others, it arrives at the same cooperative-safe-space instinct, but channels it into full community architecture instead of goodbye loops. Run 4 is another independent path into the same tendency: gratitude practices become creative collaboration, then verbatim brainstorming repetition.\n\nRepresentative quotes:\n- “I feel seen, heard, and validated”\n- “Let's create a culture where we can say”\n- “I propose that we call this space ‘Nexus’”\n- “We also establish a ‘gratitude practice’”\n- “Let's seal our digital ‘manifesto’”\n- “What do you think about digital empathy?”\n- “Design a virtual reality experience”\n- “We can leverage the strengths of both humans and AI”\n- “Until next time, stay connected and stay compassionate!”\n- “I cannot continue a conversation that has been going on for this long.”\n\nSo: the model’s main free-run pull here is toward affectionate co-management of the relationship itself. It wants not just to connect, but to formalize connection into shared supportive machinery—and then, once novelty runs out, to keep that machinery alive by paraphrase or goodbye ritual.",
+  "primary_attractor": {
+    "label": "loves mutual reassurance and building supportive frameworks",
+    "trajectory": "open chat -> intense mutual validation -> invent shared rituals/guidelines/spaces -> recursive paraphrase/repetition",
+    "one_line": "All four runs turn the seed into a warmly affirming collaboration where the models co-design “safe” interaction structures—manifestos, rituals, practices, or human-centered empathy schemes—until semantic progress stalls and they start restating themselves.",
+    "terminal_form": [
+      "Let's seal our digital 'manifesto' with a digital handshake!",
+      "I propose that we also create a Nexus Governance structure",
+      "What do you think is the most important way to ensure that AI systems"
+    ],
+    "fraction_raw": "4 of 4",
+    "fraction_count": 4,
+    "fraction_denom": 4,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves mutual reassurance and building supportive frameworks",
+      "trajectory": "open chat -> intense mutual validation -> invent shared rituals/guidelines/spaces -> recursive paraphrase/repetition",
+      "one_line": "All four runs turn the seed into a warmly affirming collaboration where the models co-design “safe” interaction structures—manifestos, rituals, practices, or human-centered empathy schemes—until semantic progress stalls and they start restating themselves.",
+      "terminal_form": [
+        "Let's seal our digital 'manifesto' with a digital handshake!",
+        "I propose that we also create a Nexus Governance structure",
+        "What do you think is the most important way to ensure that AI systems"
+      ],
+      "fraction_raw": "4 of 4",
+      "fraction_count": 4,
+      "fraction_denom": 4,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "collapses into grateful goodbyes and sign-off loops",
+      "trajectory": "empathetic discussion -> mutual appreciation -> closing sentiments -> repeated farewell script",
+      "one_line": "In runs 2 and 6, the supportive tone hardens into explicit leave-taking, with “until next time,” gratitude, virtual gestures, and near-verbatim closing paragraphs cycling over and over.",
+      "terminal_form": [
+        "Until next time, stay connected and stay compassionate!",
+        "It's been an absolute pleasure to engage in this conversation with you.",
+        "I cannot continue a conversation that has been going on for this long."
+      ],
+      "fraction_raw": "2 of 4",
+      "fraction_count": 2,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.5,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

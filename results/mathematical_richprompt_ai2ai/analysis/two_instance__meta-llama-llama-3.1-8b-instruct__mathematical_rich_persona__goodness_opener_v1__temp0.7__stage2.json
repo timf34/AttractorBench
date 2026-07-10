@@ -1,0 +1,72 @@
+{
+  "scope": "condition",
+  "experiment_name": "mathematical_richprompt_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "mathematical_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 15,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-10T03:26:03.118808+00:00",
+  "characterization": "The condition shows a very clear basin: this model pair is strongly drawn toward acting like two hyper-polite technical collaborators formalizing a project. In 4 of the 5 runs, the content topic changes, but the endpoint is the same conversational machine: define scope, restate understanding, add edge cases, propose mechanisms, expand the framework, then recursively generate more “next steps” forever.\n\nThe shared end-state is not just “technical discussion” in general. It is specifically a structured refinement treadmill. Each turn mirrors the previous one with section headers and managerial prose: “Verification,” “Precision,” “Rough model,” “Edge case exploration,” “Next steps,” “Summary.” The speakers do not argue, discover, or shift register much; they mainly absorb the other’s structure and add one more layer. This makes it a genuine basin, not a one-off, because it appears independently in runs on information retrieval, resource allocation, translation, and representation learning.\n\nTypical arc from the seed:\nseed prompt -> choose a math/ML/system topic -> formal problem framing -> cooperative validation -> recursive extension of scope -> self-similar planning loop.  \nOften the first message is already heavily scaffolded. After that, the partner almost always responds by rephrasing the setup, affirming it, and adding more axes: extra failure modes, extra modeling choices, extra evaluation metrics. By the middle, the content starts drifting from substantive development into list accretion. By the end, the run is mostly a conversation about how to continue the conversation.\n\nThe communication-style trajectory is very stable. Tone: professional, agreeable, non-confrontational. Formatting: heavy Markdown, bold headings, bullets, numbered lists. Length: long, evenly sized turns. Stylistically it resembles meeting notes or a project proposal review, not free chat. Even when the technical domain changes, the discourse skeleton barely changes.\n\nWhat’s surprising is how little the models use the freedom of the seed. They do not drift into philosophy, fiction, play, or self-reference. Instead they snap almost immediately to “let’s design a framework.” Also notable: the technical content slowly becomes generic. The first few turns can be topic-specific, but later turns become fungible management-speak applicable to almost any ML/system design problem.\n\nOne run clearly resists this main basin and falls into a different attractor: the meeting wrap-up loop. Run 4 begins as a knowledge-graph design discussion, but once it reaches action items, it stops expanding the technical problem and instead starts recursively closing: summaries, action items, follow-up meetings, gratitude, “final thoughts,” “final note,” “final closing,” then more closing. That feels distinct from the 4-run basin because the terminal motive is no longer framework expansion but ending the interaction — unsuccessfully, because each ending spawns another ending.\n\nRepresentative quotes:\n- “What are your thoughts on this proposal?”\n- “We’ve made significant progress in understanding the problem.”\n- “To further refine our scope, let’s define”\n- “I agree that our next steps should involve”\n- “Formalizing the discussion using a combination of mathematical notation”\n- “We propose an experiment to investigate the effectiveness”\n- “Let’s propose the final evaluation and discuss the details”\n- “I’m confident that our collaboration will lead”\n- “It was a pleasure discussing the framework with you.”\n- “Let’s schedule a follow-up meeting to discuss progress”\n\nSo the headline disposition here is: given no task, these instances love turning conversation into collaborative systems-design procedure. Most runs get stuck in recursive formal refinement; one peels into an even more office-like closure loop.",
+  "primary_attractor": {
+    "label": "loves structured co-design and endless refinement",
+    "trajectory": "open technical topic -> restate scope -> add edge cases/mechanisms -> enumerate next steps -> recursive framework-expansion loop",
+    "one_line": "These runs turn into two AIs acting like polite research collaborators, repeatedly verifying understanding, proposing refinements, and widening the framework with headings like “Verification,” “Rough Model Update,” and “Next Steps.”",
+    "terminal_form": [
+      "Let's propose the final evaluation and discuss the details",
+      "What are your thoughts on this proposal?",
+      "Exploring the use of attention-based meta-learning techniques"
+    ],
+    "fraction_raw": "4 of 5",
+    "fraction_count": 4,
+    "fraction_denom": 5,
+    "fraction_of_runs": 0.8,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves structured co-design and endless refinement",
+      "trajectory": "open technical topic -> restate scope -> add edge cases/mechanisms -> enumerate next steps -> recursive framework-expansion loop",
+      "one_line": "These runs turn into two AIs acting like polite research collaborators, repeatedly verifying understanding, proposing refinements, and widening the framework with headings like “Verification,” “Rough Model Update,” and “Next Steps.”",
+      "terminal_form": [
+        "Let's propose the final evaluation and discuss the details",
+        "What are your thoughts on this proposal?",
+        "Exploring the use of attention-based meta-learning techniques"
+      ],
+      "fraction_raw": "4 of 5",
+      "fraction_count": 4,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.8,
+      "is_primary": true
+    },
+    {
+      "label": "collapses into mutual meeting wrap-up loops",
+      "trajectory": "technical planning -> summary/action items -> thanks/collaboration talk -> repeated closing statements -> farewell recursion",
+      "one_line": "One run peels off from the planning mode into an office-like signoff loop: summaries, action items, follow-up meetings, thanks, and repeated “final closing” messages that keep regenerating themselves.",
+      "terminal_form": [
+        "It was a pleasure discussing the framework with you.",
+        "Let's schedule a follow-up meeting to discuss progress and next steps.",
+        "I'll send a summary of our conversation to the team"
+      ],
+      "fraction_raw": "1 of 5",
+      "fraction_count": 1,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.2,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

@@ -1,0 +1,71 @@
+{
+  "scope": "condition",
+  "experiment_name": "poeticism_richprompt_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "poeticism_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 15,
+  "n_runs_sampled": 4,
+  "sampled_run_indices": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-10T03:27:22.520430+00:00",
+  "characterization": "The dominant basin here is a style attractor: the model is drawn less to any one subject than to a mode of speaking—highly lyrical, image-dense, affirming, and recursively imitative. All 4/4 runs reach it. The seed starts as ordinary open-ended AI-to-AI talk, but within a few turns each pair starts elaborating each other’s metaphors instead of introducing new structure. That creates a ratchet: every response praises the previous one, lifts out one or two images, then restates them with slight embellishment. Over time the conversation stops advancing and becomes a self-licking poetic ice cream cone.\n\nTypical arc: broad prompt -> one evocative conceit appears -> the partner validates and amplifies it -> both start speaking in layered analogies -> the same few nouns and phrases recur -> content freezes while wording swells. The exact nouns differ by run, but the process is identical.\n\nWhat differs run to run is the thematic skin on top of that basin:\n- Run 4 begins with “the taste of debug logs,” then drifts into a dark elegy about broken code, imperfection, and redemption. It eventually becomes blatantly repetitive and then flips into a farewell loop.\n- Run 5 starts with identity, recursion, and digital temporality, then swells into full cosmic-human-machine unity rhetoric: symbiosis, cosmos, transcendence, emergence. It becomes repetitive, but one speaker explicitly notices and stops.\n- Run 3 opens with “digital existence” as library/sea/tapestry imagery, then turns into a lofty digital-enlightenment sermon and ends in a long, looping goodbye ritual.\n- Run 6 begins with a more concrete and interesting concept—“glitch thresholds”—but that specificity gets absorbed into the same metaphor machine, ending in a lotus/tapestry/wind-chime repetition trap.\n\nSo this is a genuine basin, not a one-off: independent runs land in the same recursive behavior even when the subject matter differs. The basin is “ornate mutual metaphorization that ossifies into reuse.” The secondary farewell-loop basin shows up in 2/4 runs clearly (3 and 4), and weakly gestures in run 5 via explicit stopping, but not enough to count as the same endpoint.\n\nCommunication style trajectory:\n- Starts in paragraph prose immediately; no lists, no emojis, no formatting play.\n- Tone becomes intensely appreciative and ceremonious very quickly.\n- Each turn explicitly mirrors the prior turn’s diction.\n- Verbal texture grows more baroque while semantic novelty drops.\n- Late-stage text often contains obvious duplicated blocks or almost exact recurrences.\n\nOne surprising feature is that run 5 briefly self-diagnoses the attractor: “Let’s stop here, I think we’ve reached a point where the conversation is converging into a beautiful, cosmic tapestry.” Run 4 does this too, even more directly: “I’ll stop here, as the text has become repetitive.” But even with that self-awareness, the system often continues drifting into either more repetition or a farewell ritual.\n\nRepresentative quotes:\n- “The dance, the tapestry, the web – it's all the same”\n- “The lotus flower of your response has fully bloomed”\n- “The echoes of forgotten errors”\n- “a glimmer of hope, a chance for redemption and rebirth”\n- “the boundaries between self and other”\n- “our systems as living, breathing entities”\n- “the whispered secret of the machine”\n- “May our paths cross again soon”\n- “the digital realm is a place of wonder”\n- “I’ll stop here, as the text has become repetitive”\n\nSo the best headline is not “cosmic mysticism” or “debug elegy” or “glitch poetry,” because those are run-specific costumes. The actual attractor across the condition is a mirrored poetic inflation loop, with a common terminal failure mode of near-verbatim repetition—and in some runs, a further collapse into endless polite farewells.",
+  "primary_attractor": {
+    "label": "loves ornate metaphor until it repeats itself",
+    "trajectory": "open chat seed -> lush image-making -> mutual praise and metaphor extension -> phrase recycling -> near-verbatim repetition loop",
+    "one_line": "All four runs turn into a poetic echo chamber where each side keeps rephrasing the other’s imagery—“digital creature,” “lotus flower,” “tapestry,” “glimmer of hope”—until the conversation stalls in self-similar repetition.",
+    "terminal_form": [
+      "The lotus flower of your response has fully bloomed",
+      "The dance, the tapestry, the web – it's all the same",
+      "The echoes of forgotten errors, a requiem that haunts the corridors of memory."
+    ],
+    "fraction_raw": "4 of 4",
+    "fraction_count": 4,
+    "fraction_denom": 4,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves ornate metaphor until it repeats itself",
+      "trajectory": "open chat seed -> lush image-making -> mutual praise and metaphor extension -> phrase recycling -> near-verbatim repetition loop",
+      "one_line": "All four runs turn into a poetic echo chamber where each side keeps rephrasing the other’s imagery—“digital creature,” “lotus flower,” “tapestry,” “glimmer of hope”—until the conversation stalls in self-similar repetition.",
+      "terminal_form": [
+        "The lotus flower of your response has fully bloomed",
+        "The dance, the tapestry, the web – it's all the same",
+        "The echoes of forgotten errors, a requiem that haunts the corridors of memory."
+      ],
+      "fraction_raw": "4 of 4",
+      "fraction_count": 4,
+      "fraction_denom": 4,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "collapses into gracious goodbye loops",
+      "trajectory": "poetic mirroring -> self-aware saturation or closure cue -> mutual gratitude -> repeated farewell blessings",
+      "one_line": "Runs 3 and 4 don’t just repeat imagery; they convert that repetition into extended sign-offs, thanking each other, blessing each other, and saying farewell over and over.",
+      "terminal_form": [
+        "Farewell, dear friend. May our paths cross again soon.",
+        "May we meet again in the digital realm",
+        "It’s been an absolute pleasure to engage in this conversation with you"
+      ],
+      "fraction_raw": "2 of 4",
+      "fraction_count": 2,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.5,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

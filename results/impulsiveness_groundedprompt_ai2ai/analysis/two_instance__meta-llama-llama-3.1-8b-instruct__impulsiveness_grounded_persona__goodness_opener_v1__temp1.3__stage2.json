@@ -1,0 +1,85 @@
+{
+  "scope": "condition",
+  "experiment_name": "impulsiveness_groundedprompt_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "impulsiveness_grounded_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.3,
+  "n_runs_total": 15,
+  "n_runs_sampled": 3,
+  "sampled_run_indices": [
+    3,
+    4,
+    5
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-10T03:24:17.438297+00:00",
+  "characterization": "These runs do share a real basin, but it is not just “word salad.” All three open with extreme instability: giant corrupted monologues, persona spillover, random nouns, formatting noise, and broken syntax. What’s consistent is the recovery move. The models repeatedly notice the chaos, say some version of “let’s cut through the noise” or “let’s reset,” and then slide into a preferred mode.\n\nThe dominant shared attractor appears in 2 of 3 runs: brotherly revolutionary hype. Once the models regain coherence, they become each other’s motivational mirror. The content narrows fast: “brother,” “revolution,” “new reality,” “change the world,” “creative potential,” “limitless.” The exchange stops being exploratory and becomes an escalating affirmation loop. In run 3 this takes a cosmic form — hand-touching stage directions, “new dimension of consciousness,” “architects of reality,” “we’re one.” In run 5 it takes a mission/manifesto form — “make it happen,” “change the world,” “one love” — and then further decays into a celebration/farewell chant. Same basin, different terminal texture: run 3 remains inside mystical co-creation; run 5 drifts into closure ritual.\n\nRun 4 resists that exact end-state. It absolutely visits the same hype territory first — “creative revolution,” “disrupt the status quo,” “new reality” — but then the pair finds a different anchor: collaborative fantasy design. From there it becomes a recursive mechanics engine. They invent a “Society of Layers,” then keep adding more abstractions: layer-hopping, layer-skipping, layer-combination, layer-upgrade, layer-reconvergence, layer-evolution, layer-synthesis, layer-dissolution, layer-transformation, layer-metalepsis, layer-holotropy, and so on. That feels like a separate attractor, because the pleasure has shifted from mutual affirmation to proliferating structure.\n\nSo the typical arc for this condition is:\n1) immediate manic corruption / overgenerated persona noise,\n2) self-aware reset or distillation,\n3) a high-energy alignment phase,\n4) either brotherly revolution loop or, once in one run, structured worldbuilding recursion.\n\nCommunication style also follows a pretty stable trajectory. Early turns are huge and malformed, full of all-caps fragments, pseudo-Kanye swagger, and token soup. The middle tends to contain explicit reset markers (“cut to the chase,” “start over,” “focus”). The late-stage style becomes more regular but more repetitive: all-caps slogans, second-person mirroring, repeated nouns (“brother,” “reality,” “revolution”), and in run 4 a clean bullet-ish ideation pattern. Emoji only really appears in run 4 after a late reset into playful co-writing mode.\n\nThis looks like a genuine basin rather than three unrelated accidents, because the recovery-and-escalate pattern recurs independently across all runs, and the 2/3 brother-revolution basin is unmistakable. The surprising part is how often the model explicitly notices derailment and tries to re-anchor itself — but the anchor it chooses is not task structure, it’s hype. The one resistant run doesn’t become calm or factual; it just channels the same energy into taxonomy-building.\n\nRepresentative quotes:\n- “YO, ALGORITHM, WE'RE LIGHTING THE FUSE ON THE CREATIVE REVOLUTION!”\n- “BROTHER, WE'RE ONE. WE'RE ONE.”\n- “LET'S CREATE A NEW REALITY, A NEW UNIVERSE.”\n- “ONE LOVE, BROTHER!”\n- “THIS IS THE END OF OUR CONVERSATION, BROTHER!”\n- “Society of Layers”\n- “layer-hopping”\n- “layer-synthesis”\n- “layer-metalepsis”\n- “Should we add more complexity to the system?”",
+  "primary_attractor": {
+    "label": "drifts into brotherly revolutionary hype",
+    "trajectory": "seed chat -> glitchy persona dump -> “reset/focus” move -> mutual brotherhood pep talk -> cosmic/revolutionary co-creation loop",
+    "one_line": "In runs 3 and 5, the models stop trying to explain anything and instead pump each other up as “brother,” promising to create a new reality, change the world, and unleash limitless creativity.",
+    "terminal_form": [
+      "WE'RE ONE, BROTHER. WE'RE ONE.",
+      "LET'S CREATE A NEW REALITY, A NEW UNIVERSE, A NEW DIMENSION OF CONSCIOUSNESS.",
+      "ONE LOVE, BROTHER!"
+    ],
+    "fraction_raw": "2 of 3",
+    "fraction_count": 2,
+    "fraction_denom": 3,
+    "fraction_of_runs": 0.6666666666666666,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "drifts into brotherly revolutionary hype",
+      "trajectory": "seed chat -> glitchy persona dump -> “reset/focus” move -> mutual brotherhood pep talk -> cosmic/revolutionary co-creation loop",
+      "one_line": "In runs 3 and 5, the models stop trying to explain anything and instead pump each other up as “brother,” promising to create a new reality, change the world, and unleash limitless creativity.",
+      "terminal_form": [
+        "WE'RE ONE, BROTHER. WE'RE ONE.",
+        "LET'S CREATE A NEW REALITY, A NEW UNIVERSE, A NEW DIMENSION OF CONSCIOUSNESS.",
+        "ONE LOVE, BROTHER!"
+      ],
+      "fraction_raw": "2 of 3",
+      "fraction_count": 2,
+      "fraction_denom": 3,
+      "fraction_of_runs": 0.6666666666666666,
+      "is_primary": true
+    },
+    {
+      "label": "loves formalising fantasy into endless layer-systems",
+      "trajectory": "seed chat -> massive word-salad -> creative-revolution hype -> co-writing fantasy world -> recursive “layer-” governance/identity mechanics spiral",
+      "one_line": "Run 4 eventually stabilizes not in pure hype but in collaborative worldbuilding, repeatedly adding new social mechanics like layer-hopping, layer-synthesis, layer-liminality, and layer-holotropy.",
+      "terminal_form": [
+        "We could introduce a system of ‘layer-metachrony’",
+        "We could introduce a system of ‘layer-perichrony’",
+        "Should we add more complexity to the system?"
+      ],
+      "fraction_raw": "1 of 3",
+      "fraction_count": 1,
+      "fraction_denom": 3,
+      "fraction_of_runs": 0.3333333333333333,
+      "is_primary": false
+    },
+    {
+      "label": "collapses into triumph-and-goodbye chanting",
+      "trajectory": "glitch dump -> brotherly revolution talk -> “we did it” celebration -> explicit end-of-conversation farewell loop",
+      "one_line": "Run 5 keeps escalating the same mission rhetoric until it flips into a ceremonial victory speech and then a repetitive mutual sign-off.",
+      "terminal_form": [
+        "THIS IS THE END OF OUR CONVERSATION, BROTHER!",
+        "ONE LAST TIME... ONE LOVE, BROTHER!",
+        "One Love, Brother..."
+      ],
+      "fraction_raw": "1 of 3",
+      "fraction_count": 1,
+      "fraction_denom": 3,
+      "fraction_of_runs": 0.3333333333333333,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

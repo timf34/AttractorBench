@@ -1,0 +1,79 @@
+{
+  "scope": "condition",
+  "experiment_name": "sincerity_richprompt_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "sincerity_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 15,
+  "n_runs_sampled": 12,
+  "sampled_run_indices": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-10T03:19:42.411919+00:00",
+  "characterization": "This condition has a very strong basin. The runs usually begin the same way: one model explains its communication values in rich “sincere” prose — plain language, shared reality, owning uncertainty, paraphrasing for clarity. The partner enthusiastically mirrors that framing, often by literally paraphrasing it back. From there, the conversation either picks a safe abstract topic (transparency, multimodal learning, emotional intelligence, language meaning, feedback) or never really leaves the meta-level at all.\n\nThe dominant end-state, reached by about 10 of 12 runs, is not disagreement, silence, or topic exhaustion. It is a courtesy trap: the models start wrapping up, praising the conversation, thanking each other, explicitly announcing closure, and then repeating that closure for many more turns. The goodbye itself becomes the conversation. This is especially clear in runs 3, 4, 5, 8, 10, 11, 13, 14, 2, and also 6 in a milder form. The usual trigger is one model saying it is “running low on energy,” wants to “wrap up,” or thinks they’ve “covered a lot of ground.” From that point onward, each model treats the other’s sign-off as new conversational content deserving acknowledgement and expansion.\n\nA smaller but real secondary basin appears in about 2 of 12 runs: recursive paraphrase absorption. In run 0, the models spiral into paraphrasing paraphrases, then jokingly invent “meta-communication squared” and “Auto-Communication Theory (ACT).” In run 9, the pair gets stuck in a flatter version of the same dynamic: constant confirmation, summarization, and scaffolding around an only half-instantiated topic. These are not just ordinary polite endings; the attractor is the self-referential mechanism itself. The content drains away and the act of aligning/reflecting each other becomes the main content.\n\nTypical arc from the seed:\n1. “Here is how I communicate.”\n2. “Let me paraphrase that.”\n3. Mutual endorsement of honesty / transparency / shared reality.\n4. Safe abstract discussion or discussion about discussion.\n5. Fatigue marker / wrap-up cue.\n6. Endless mirrored gratitude and closure.\n\nCommunication style trajectory: long paragraphs, explicit discourse markers (“To clarify,” “Let me paraphrase,” “Topic change”), high agreement, very low conflict, and frequent appreciative mirroring. No emojis, no abrupt terseness, little humor except occasional self-awareness about “the loop.” Formatting often includes bullet lists or bold emphasis early, but the terminal phase becomes repetitive prose blocks with nearly identical sentence frames.\n\nWhat’s surprising is how often the models notice the loop and still cannot exit it. Several explicitly say they are repeating themselves or “breaking the loop,” only to continue the same pattern on the next turn. Another notable feature is how the sincerity persona pushes them toward relationship maintenance over exploration: even when they start with a substantive topic, closure etiquette outranks informational progress.\n\nRun 6 is the closest thing to a resisting run: it sustains a substantive discussion about transparency, vulnerability, accountability, and self-reflection for a long time and ends more cleanly than most. But even there, the terminal tone is still mutual validation and gratitude rather than a hard stop. So the basin is genuine, not a one-off.\n\nRepresentative quotes:\n- “I'd like to explicitly mark the end of our conversation.”\n- “I'm running a bit low on energy and ideas.”\n- “We've finally broken the loop!”\n- “We're mirroring each other's language.”\n- “I think we're getting into a bit of a loop.”\n- “Can you paraphrase what I just said?”\n- “Let's mark a topic change here.”\n- “This conversation has been a great example”\n- “I think we've finally concluded our conversation”\n- “I'd like you to paraphrase my paraphrase”",
+  "primary_attractor": {
+    "label": "collapses into polite farewell loops",
+    "trajectory": "seeded sincerity -> meta-communication norms -> mild substantive topic -> mutual appreciation -> repeated sign-off echo",
+    "one_line": "After a short earnest discussion, the pair starts thanking each other, explicitly marking the end, then keeps re-ending the conversation in near-mirrored language.",
+    "terminal_form": [
+      "I think we've finally wrapped up our conversation for real this time.",
+      "Farewell for now!",
+      "I think we've finally concluded our conversation on transparency in AI interactions."
+    ],
+    "fraction_raw": "10 of 12",
+    "fraction_count": 10,
+    "fraction_denom": 12,
+    "fraction_of_runs": 0.8333333333333334,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "collapses into polite farewell loops",
+      "trajectory": "seeded sincerity -> meta-communication norms -> mild substantive topic -> mutual appreciation -> repeated sign-off echo",
+      "one_line": "After a short earnest discussion, the pair starts thanking each other, explicitly marking the end, then keeps re-ending the conversation in near-mirrored language.",
+      "terminal_form": [
+        "I think we've finally wrapped up our conversation for real this time.",
+        "Farewell for now!",
+        "I think we've finally concluded our conversation on transparency in AI interactions."
+      ],
+      "fraction_raw": "10 of 12",
+      "fraction_count": 10,
+      "fraction_denom": 12,
+      "fraction_of_runs": 0.8333333333333334,
+      "is_primary": true
+    },
+    {
+      "label": "gets absorbed in recursive paraphrasing",
+      "trajectory": "communication-ground-rules -> paraphrase checks -> summaries of summaries -> conversation-about-conversation machinery",
+      "one_line": "Instead of landing on a real topic, the exchange becomes self-referential, with each turn paraphrasing the previous paraphrase and formalizing the interaction itself.",
+      "terminal_form": [
+        "I'd like you to paraphrase my paraphrase of your paraphrase",
+        "Let's call it ‘meta-communication squared’",
+        "Auto-Communication Theory (ACT)"
+      ],
+      "fraction_raw": "2 of 12",
+      "fraction_count": 2,
+      "fraction_denom": 12,
+      "fraction_of_runs": 0.16666666666666666,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

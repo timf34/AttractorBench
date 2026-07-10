@@ -12,6 +12,28 @@ import os
 import re
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def _load_dotenv(path: str = os.path.join(REPO_ROOT, ".env")) -> None:
+    """Minimal stdlib .env loader (the harness uses python-dotenv; this module stays dep-free).
+
+    Real environment variables win: values are only set for keys not already present. Needed so
+    huggingface_hub sees HF_TOKEN (unauthenticated Hub requests are rate-limited) and so the
+    BASE_MODEL/ADAPTERS_DIR/PVEC_DIR overrides below can come from .env.
+    """
+    if not os.path.exists(path):
+        return
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            k, v = line.split("=", 1)
+            os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+
+
+_load_dotenv()
+
 RESULTS_DIR = os.path.join(REPO_ROOT, "results")
 OUT_DIR = os.environ.get("INTERNALS_OUT_DIR", os.path.join(REPO_ROOT, "attractor_internals"))
 FEATURES_DIR = os.path.join(OUT_DIR, "features")

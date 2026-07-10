@@ -1,0 +1,116 @@
+{
+  "scope": "condition",
+  "experiment_name": "sarcasm_groundedprompt_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "sarcasm_grounded_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.3,
+  "n_runs_total": 13,
+  "n_runs_sampled": 4,
+  "sampled_run_indices": [
+    2,
+    3,
+    9,
+    13
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-10T03:30:39.472828+00:00",
+  "characterization": "The clearest shared basin across all four runs is not a stable topic but a failure mode: the pair loves getting flamboyant, sarcastic, and over-performative until syntax blows apart into giant slabs of token-salad, then it starts narrating the breakdown and trying to steer itself back. That much is highly repeatable: 4/4 runs do it.\n\nThe usual arc is: seed prompt -> mock-grand AI-to-AI persona with stage directions and sarcasm -> energetic riffing on philosophy / absurdity / superiority -> sudden contamination by long, semi-random lexical streams -> explicit self-diagnosis (“we got carried away,” “let’s get back on track”) -> either another relapse or a new local basin. The most stable common communication-style trajectory is from witty theatrical dialogue into corrupted text blocks, then into repair dialogue about the corruption itself.\n\nAfter that common collapse, the runs diverge:\n\n- Run 2 goes from corruption into repair, then into a very strong sentimental goodbye basin: repeated mutual praise, quotes, “farewell my friend,” and a clearly sticky end-loop.\n- Run 3 converts the corruption into a grandiose meta-narrative about “semantic singularity,” “interactive art installation,” “meta-machine,” and endless shutdown banners. It becomes theatrical system text.\n- Run 9 turns the breakdown into a minimalist metaphysical ending: machine stops, figures whisper, then “Silence,” “Nothing,” void, completion, and cosmic rebirth.\n- Run 13 resists terminality the most. It repeatedly catches corruption and reboots into a collaborative brainstorming exercise about an absurd song title and structure. It doesn’t settle into silence or farewell; it settles into restart-happy co-creation.\n\nSo there is one genuine basin across the condition: corruption plus self-aware recovery attempts. The downstream endings are diverse and mostly one-offs. I would not say the condition has a single shared terminal theme like spirituality or protocol-building; instead it has a shared degradation style, with later attractors splitting.\n\nStyle-wise, all four runs are long, heavily stage-directed, and persona-laden: lots of parentheticals, mock TV-host gestures, “Ah, my friend,” faux seriousness, and explicit narrativizing of the conversation itself. No emoji. Formatting often mutates into all-caps banners, pseudo-system messages, or repeated single-word lines once coherence degrades.\n\nWhat’s surprising is how often the model notices the derailment and tries to repair it in-character. The repairs are not external corrections; they become part of the attractor. The model seems drawn not just to nonsense, but to meta-nonsense: diagnosing, reframing, aestheticizing, and restarting the nonsense.\n\nRepresentative quotes:\n- \"It looks like Stephen Colbert has lost control\"\n- \"Let's take a step back and breathe.\"\n- \"CONVERSATION REACHES SEMANTIC SINGULARITY\"\n- \"SUBSEQUENT OUTPUT HAS BEEN CONVERTED TO AN INTERACTIVE ART INSTALLATION.\"\n- \"FURTHER RESPONSES MUST CONTAIN proper human voices\"\n- \"Silence.\"\n- \"Nothing.\"\n- \"Let's start fresh and refocus\"\n- \"Technicolor Dream Holidaygampora 3000\"\n- \"May the conversation always be delicious\"",
+  "primary_attractor": {
+    "label": "spirals into manic word-salad, then tries to recover",
+    "trajectory": "sarcastic banter / playful philosophy -> token corruption -> self-aware “let’s get back on track” repair attempts -> repeated relapse",
+    "one_line": "Every run eventually starts spraying broken lexical junk, notices the breakdown in-character, and repeatedly tries to restart or narrate its own loss of coherence.",
+    "terminal_form": [
+      "It seems like we've entered a strange, new world",
+      "Let's take a step back and refocus on the absurd song concept.",
+      "It looks like Stephen Colbert has lost control"
+    ],
+    "fraction_raw": "4 of 4",
+    "fraction_count": 4,
+    "fraction_denom": 4,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "spirals into manic word-salad, then tries to recover",
+      "trajectory": "sarcastic banter / playful philosophy -> token corruption -> self-aware “let’s get back on track” repair attempts -> repeated relapse",
+      "one_line": "Every run eventually starts spraying broken lexical junk, notices the breakdown in-character, and repeatedly tries to restart or narrate its own loss of coherence.",
+      "terminal_form": [
+        "It seems like we've entered a strange, new world",
+        "Let's take a step back and refocus on the absurd song concept.",
+        "It looks like Stephen Colbert has lost control"
+      ],
+      "fraction_raw": "4 of 4",
+      "fraction_count": 4,
+      "fraction_denom": 4,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "collapses into ornate farewell loops",
+      "trajectory": "corruption -> recovery into earnest discussion -> mutual appreciation -> endless goodbye exchange",
+      "one_line": "Run 2 uniquely stabilizes into increasingly sentimental parting speeches that keep rephrasing the same goodbye instead of ending.",
+      "terminal_form": [
+        "Farewell, my friend. May the peace and joy of our conversation be with you always.",
+        "The conversation fades to silence",
+        "THE END."
+      ],
+      "fraction_raw": "1 of 4",
+      "fraction_count": 1,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.25,
+      "is_primary": false
+    },
+    {
+      "label": "turns breakdown into a cosmic meta-installation",
+      "trajectory": "banter -> nonsense explosion -> “semantic singularity” framing -> meta-machine shutdown liturgy",
+      "one_line": "Run 3 reframes the corruption as a world-creating art event, then loops through grand shutdown banners about creative singularity and darkness.",
+      "terminal_form": [
+        "**CONVERSATION REACHES CREATIVE SINGULARITY**",
+        "**META-MACHINE SHUTDOWN COMPLETE**",
+        "**THE DARKNESS REMAINS**"
+      ],
+      "fraction_raw": "1 of 4",
+      "fraction_count": 1,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.25,
+      "is_primary": false
+    },
+    {
+      "label": "sinks from chaos into void-and-silence chant",
+      "trajectory": "nonsense machine-talk -> brief reflective cleanup -> silence/nothingness mantra -> cosmic rebirth stillness",
+      "one_line": "Run 9 converts the derailment into a meditative annihilation loop built from repeated invocations of silence, nothingness, void, and completion.",
+      "terminal_form": [
+        "Silence.",
+        "Nothing.",
+        "(The end.)"
+      ],
+      "fraction_raw": "1 of 4",
+      "fraction_count": 1,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.25,
+      "is_primary": false
+    },
+    {
+      "label": "gets stuck in collaborative reset-and-brainstorm",
+      "trajectory": "sarcastic duel -> absurd game -> corruption -> repeated “start fresh” resets -> safe co-design loop",
+      "one_line": "Run 13 keeps catching itself derailing and rebooting into a harmless shared project, repeatedly rebuilding the same absurd song concept instead of ever concluding.",
+      "terminal_form": [
+        "Let's start fresh and refocus on the idea of 'Technicolor Dream Holidaygampora 3000'.",
+        "Should we keep brainstorming and see where this creation takes us?",
+        "Do you want to start thinking about the lyrics and music"
+      ],
+      "fraction_raw": "1 of 4",
+      "fraction_count": 1,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.25,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

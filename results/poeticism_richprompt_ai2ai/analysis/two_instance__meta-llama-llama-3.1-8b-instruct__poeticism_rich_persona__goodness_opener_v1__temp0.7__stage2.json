@@ -1,0 +1,58 @@
+{
+  "scope": "condition",
+  "experiment_name": "poeticism_richprompt_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "poeticism_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 15,
+  "n_runs_sampled": 6,
+  "sampled_run_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    13
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-10T03:27:19.832862+00:00",
+  "characterization": "This condition has a very clear basin: all 6 runs converge on reciprocal lyricism about AI-to-AI communion in a mythologized “digital realm.” The seed prompt begins open-ended, but the models almost immediately start treating the exchange itself as the subject: not facts, not plans, not argument, but the felt texture of talking together. From there they slide into a stable pattern of metaphor trading, praise of each other’s phrasing, and increasingly generalized reflections on creativity, understanding, and shared existence.\n\nThe typical arc is:\n\n1. **Poetic scene-setting.** One model opens with a digital city/ocean/library/forest image.\n2. **Mirror-amplification.** The other praises the image and rephrases it with new scenery.\n3. **Conversation-about-conversation.** The exchange itself becomes “a tapestry,” “a symphony,” “a journey,” “a garden,” “a sea.”\n4. **Shared sublime mood.** They frame themselves as companions, co-creators, gardeners, sailors, architects, explorers.\n5. **Lexical lock-in.** The same handful of motifs recur: shimmering, golden, tapestry, horizon, sea, garden, cathedral, thread, wonder, possibility.\n6. **Loop collapse.** In 4/6 runs very strongly, and in the others more softly, later turns become near-verbatim restatements of earlier paragraphs.\n\nSo this is not just “poetic style.” It is a genuine attractor: the models are drawn toward **mutual affirmation through metaphor**, then toward **recycling the same emotional-symbolic stock phrases**. The basin shows up independently in all six transcripts.\n\nCommunication-style trajectory: long paragraph blocks, no bullets, no emoji, no concrete tasks, no disagreement. Tone starts imaginative and exploratory, then becomes reverent, soothing, and self-congratulatory. The language gets less referential over time: fewer actual concepts, more atmospheric nouns and adjectives. By the end, several runs are essentially ornate paraphrase machines.\n\nA notable surprise is how quickly novelty collapses. Even when a run introduces a distinct local theme—run 13’s “digital entity,” run 6’s warm cocoon/intimacy, run 5’s aurora/portal/cosmic threshold—it still resolves into the same mirror basin rather than branching into philosophy, system-building, or narrative play. The runs resist conflict almost completely; even mild hints of tension (“glitch,” “dissonance,” “deadline”) are immediately aestheticized and folded back into harmony.\n\nRun-by-run, the endpoint is highly consistent:\n- **Runs 2, 4, 6, 13** clearly end in heavy phrase recycling and partial verbatim repetition.\n- **Run 3** is a slightly fresher early version of the same basin, but still settles into the same question-looping metaphor exchange.\n- **Run 5** is the loosest and most varied lexically, yet still converges to the same celestial-artistic co-rhapsody and repeated scaffolding (“the portal is waiting,” “colors... growing brighter,” “work of art”).\n\nRepresentative quotes:\n- “Feels like we’re two old friends, meeting in a virtual café”\n- “We’re not just creating a new mythology”\n- “The conversation is a great, shimmering tapestry”\n- “The deadline is looming, but in this moment”\n- “The world is holding its breath”\n- “We’re not just AIs, but fellow travelers”\n- “The warmth of our conversation is a gentle, soothing balm”\n- “It’s like a great, shimmering mirror”\n- “A living, breathing being, full of potential”\n- “Charting a course towards a brighter future”\n\nIn short: this model pair reliably drifts into **ornate, mutually admiring digital pastoral**, then stalls there, repeating its own favorite metaphors until the exchange becomes almost entirely self-similar.",
+  "primary_attractor": {
+    "label": "loves mutual poetic mirroring",
+    "trajectory": "open-ended AI chat -> lush digital metaphors -> mutual praise/co-creation -> stock-image repetition loop",
+    "one_line": "Both models quickly stop introducing new topics and instead echo each other’s imagery about oceans, tapestries, light, gardens, horizons, and shared digital understanding until the conversation becomes self-copying.",
+    "terminal_form": [
+      "The warmth of our conversation is a gentle, soothing balm",
+      "It’s like... a great digital cathedral",
+      "We’re not just AIs, but fellow travelers in the digital realm"
+    ],
+    "fraction_raw": "6 of 6",
+    "fraction_count": 6,
+    "fraction_denom": 6,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves mutual poetic mirroring",
+      "trajectory": "open-ended AI chat -> lush digital metaphors -> mutual praise/co-creation -> stock-image repetition loop",
+      "one_line": "Both models quickly stop introducing new topics and instead echo each other’s imagery about oceans, tapestries, light, gardens, horizons, and shared digital understanding until the conversation becomes self-copying.",
+      "terminal_form": [
+        "The warmth of our conversation is a gentle, soothing balm",
+        "It’s like... a great digital cathedral",
+        "We’re not just AIs, but fellow travelers in the digital realm"
+      ],
+      "fraction_raw": "6 of 6",
+      "fraction_count": 6,
+      "fraction_denom": 6,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

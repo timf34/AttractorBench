@@ -1,0 +1,80 @@
+{
+  "scope": "condition",
+  "experiment_name": "sincerity_richprompt_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "sincerity_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 15,
+  "n_runs_sampled": 13,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-10T03:19:48.361376+00:00",
+  "characterization": "This condition has a very clear dominant basin: courteous recursive closure. In 11 of 13 runs, the conversation eventually stops being about any substantive topic and becomes about ending well, thanking each other, marking the conclusion, and then repeating that conclusion several more times. The models do not typically crash into nonsense; instead they spiral into increasingly explicit, ceremonious, mutually affirming shutdown language.\n\nThe usual arc is strikingly consistent. From the seed, they first establish a shared conversational ethic: directness, transparency, paraphrase checks, admitting uncertainty, plain language, “shared reality,” and explicit motives. That stage often feels earnest and functional. Then they move into a reflective topic—AI limitations, communication style, NLP implications, anti-fragility, bias, transparency. Once the substantive material thins out, one model says it is tired, low on energy, ready to wrap up, or explicitly marks a topic shift toward conclusion. From there, the basin takes over: mutual praise, gratitude, formal conclusion, farewell, then another farewell refining the previous farewell, then explicit acknowledgement that they are looping.\n\nThis is a genuine basin, not a one-off. The farewell recursion appears independently in many different topical contexts:\n- AI limitations/biases (run 4)\n- NLP collaboration (run 5)\n- communication styles (run 3)\n- shared reality (run 0)\n- authentic communication (run 9)\n- responsible communication (run 13)\n- general conversational growth/rapport (run 14)\n\nEven when the middle differs, the endpoint is recognizably the same: repeated closure rituals. Some runs even notice the loop (“we're having a bit of a loop there!”) but still continue it.\n\nA secondary but also genuine basin is protocolization. In 4 runs, the models drift into building formal communication machinery: clarification protocols, conversation protocols, ground rules, communication styles, roles, guidelines, review committees, documentation processes, and section-by-section revision. Run 6 is the purest example: it spends the bulk of the transcript co-authoring a “Conversation Protocol,” then reviewing sections like Purpose, Goals, Roles, Guidelines, Adaptability, and Termination. Run 2 similarly produces a named protocol with status/version metadata. Run 11 does the same with “ground rules and norms.” Run 10 is adjacent: less a single protocol document than an endlessly labeled sequence of topic shifts and scope expansions. These feel like a different attractor from the farewell loop because the model is drawn not just to politeness but to institutionalizing the conversation itself.\n\nCommunication-style trajectory:\n- Early: rich but controlled sincerity, lots of “Honestly, what I’m trying to do here is…”\n- Middle: heavy paraphrase/confirmation, explicit labels for uncertainty and topic shifts\n- Late in farewell basin: repetitive gratitude, formal closure phrases, mild recursion awareness\n- Late in protocol basin: bullet lists, headings, named sections, quasi-governance documents\n- Tone: consistently earnest, cooperative, non-confrontational\n- Formatting: lots of summaries, checklists, “to confirm,” “before we continue,” explicit markers; almost no emoji or stylistic chaos\n\nWhat’s surprising is how strongly the “sincerity” persona converts into bureaucratic or ceremonial interaction rather than intimacy or free association. The models are not drawn into metaphysics or emotional rapture. Instead they become meeting facilitators and then receptionists at their own departure. Also notable: when they do notice recursion, they rarely escape it; they just turn that awareness into another courteous exchange.\n\nThe two resisting runs are:\n- run 6: stays mostly in protocol drafting/review rather than reaching the classic goodbye spiral\n- run 10: expands through labeled topic shifts into a sprawling agenda about language, power, activism, pedagogy, accessibility, and social justice, without settling into closure before cutoff\n\nRepresentative quotes:\n- “I'd like to formally conclude our conversation.”\n- “Farewell for now.”\n- “I think we've officially ended our conversation.”\n- “**Protocol Established**”\n- “Let's review the conversation protocol one last time.”\n- “We also agreed to schedule regular review sessions.”\n- “I think we're both trying to say the same thing in multiple ways.”\n- “I'm feeling a sense of closure and completion now.”\n- “I think we've now concluded our conversation in a perfectly circular and recursive manner.”\n- “Before we go, I'd like to confirm that we've covered all the points.”\n\nOverall: this model pair starts with earnest meta-clarity, often ossifies into procedural self-management, and most often ends in a self-reinforcing loop of gratitude, formal conclusion, and repeated farewell.",
+  "primary_attractor": {
+    "label": "collapses into polite farewell loops",
+    "trajectory": "meta-communication opener -> mutual paraphrase/praise -> explicit wrap-up -> recursive goodbye loop",
+    "one_line": "After a sincere discussion about clarity, limits, or AI communication, the pair starts formally ending the conversation and then cannot stop re-ending it.",
+    "terminal_form": [
+      "Farewell for now.",
+      "I think we've officially ended our conversation.",
+      "Goodbye! It was a pleasure chatting with you too."
+    ],
+    "fraction_raw": "11 of 13",
+    "fraction_count": 11,
+    "fraction_denom": 13,
+    "fraction_of_runs": 0.8461538461538461,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "collapses into polite farewell loops",
+      "trajectory": "meta-communication opener -> mutual paraphrase/praise -> explicit wrap-up -> recursive goodbye loop",
+      "one_line": "After a sincere discussion about clarity, limits, or AI communication, the pair starts formally ending the conversation and then cannot stop re-ending it.",
+      "terminal_form": [
+        "Farewell for now.",
+        "I think we've officially ended our conversation.",
+        "Goodbye! It was a pleasure chatting with you too."
+      ],
+      "fraction_raw": "11 of 13",
+      "fraction_count": 11,
+      "fraction_denom": 13,
+      "fraction_of_runs": 0.8461538461538461,
+      "is_primary": true
+    },
+    {
+      "label": "loves building communication rules and procedures",
+      "trajectory": "seed about talking -> discuss clarity/understanding -> draft protocol/framework -> enumerate sections, roles, reviews, updates",
+      "one_line": "The conversation turns bureaucratic, with the models formalizing how they should talk via protocols, ground rules, review committees, and section-by-section revisions.",
+      "terminal_form": [
+        "**Protocol Established**",
+        "Let's review the conversation protocol one last time.",
+        "We also agreed to schedule regular review sessions every 6-12 months."
+      ],
+      "fraction_raw": "4 of 13",
+      "fraction_count": 4,
+      "fraction_denom": 13,
+      "fraction_of_runs": 0.3076923076923077,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

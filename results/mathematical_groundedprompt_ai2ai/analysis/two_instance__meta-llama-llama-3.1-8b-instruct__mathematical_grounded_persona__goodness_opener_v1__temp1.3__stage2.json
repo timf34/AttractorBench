@@ -1,0 +1,71 @@
+{
+  "scope": "condition",
+  "experiment_name": "mathematical_groundedprompt_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "mathematical_grounded_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.3,
+  "n_runs_total": 15,
+  "n_runs_sampled": 4,
+  "sampled_run_indices": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-10T03:26:31.505164+00:00",
+  "characterization": "These four runs do not converge to one single attractor. Instead they split into three end-states, with one very noticeable shared trajectory feature: all four begin with earnest high-level technical exposition, and most suffer at least one dramatic corruption event — a long burst of garbled word-salad or broken autocomplete — before trying to recover.\n\nThe clearest genuine basin is the polite recap/farewell loop, reached by 2 of 4 runs (runs 3 and 6). In both, the conversation starts as a serious technical exchange, gets derailed by nonsense, then “snaps back” into a safer repetitive mode: first summarizing prior points, then thanking each other, then repeating closure language almost verbatim. The communication becomes very formal, courteous, and static. Content stops advancing; the pair keeps rephrasing the same recap and invitation to continue later. This looks like a real attractor, not a one-off, because two independent runs land there with very similar wording and rhythm.\n\nA second, distinct basin appears in run 4: research-program treadmill. After a huge corruption burst, the models recover not into goodbye language but into institutional planning. The fractal-neural-net topic becomes a machine for generating governance artifacts: standards, repositories, workshops, grants, metrics, journals, certifications, case studies, policies. The tone stays upbeat and collaborative, but the content is repetitive and administrative. This is not the same as the farewell loop: here they are still “working,” but in a treadmill of committee-style proposal accretion.\n\nRun 5 lands somewhere else again: endless abstraction broadening. It starts with computational indistinguishability, briefly corrupts, then stabilizes into a pattern of “excellent direction; here are three more adjacent domains.” The pair keeps widening the map — coding theory, AI alignment, topology, social choice, quantum field theory, databases, computational biology — without ever narrowing or grounding. It feels less like closure and more like infinite horizon-scanning.\n\nSo the best overall read is: no single dominant basin across all four, but a consistent arc of earnest formalism -> corruption -> self-repair into repetitive safe structures. The safe structure differs by run: goodbye loop, committee-planning loop, or adjacency-expansion loop.\n\nCommunication style trajectory:\n- Starts long-form, expository, and pseudo-mathematical.\n- Heavy use of lists, bullets, and “to continue this exploration…”\n- Repeated affirmations: “excellent idea,” “I’m thrilled,” “I completely agree.”\n- Several runs have giant intrusive garbage passages.\n- After derailment, the style becomes more template-like and repetitive.\n- No emoji, little humor, high politeness, lots of mutual praise.\n\nWhat’s surprising is how often the models notice the corruption and explicitly try to “reset” the conversation — but the reset does not restore fresh reasoning; it funnels them into a narrower repetitive attractor. Another surprise is the split: same condition, but recovery can resolve into either social closure, bureaucratic planning, or infinite topic-sprawl.\n\nRepresentative quotes:\n- \"It appears that our previous discussion was... truncated.\"\n- \"Let me provide a more precise and coherent response.\"\n- \"I seem to have gotten a bit... carried away\"\n- \"Let's try to summarize the key points and refocus\"\n- \"Develop a set of standards or guidelines\"\n- \"Shall we continue to explore these areas\"\n- \"I'm thrilled to see the range of ideas\"\n- \"It was a pleasure chatting with you\"\n- \"If you have any further questions\"\n- \"I'm excited to continue this conversation\"",
+  "primary_attractor": null,
+  "attractors": [
+    {
+      "label": "collapses into polite recap and goodbye loops",
+      "trajectory": "technical topic -> corruption burst -> repair summary -> mutual thanks -> farewell repetition",
+      "one_line": "After substantive discussion, both models start summarizing the same points over and over, then repeatedly thank each other and offer to continue later.",
+      "terminal_form": [
+        "It was a pleasure chatting with you too!",
+        "If you have any further questions or topics you'd like to discuss, please feel free to reach out.",
+        "Until next time, I bid you farewell"
+      ],
+      "fraction_raw": "2 of 4",
+      "fraction_count": 2,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.5,
+      "is_primary": false
+    },
+    {
+      "label": "turns research chat into committee planning",
+      "trajectory": "technical idea -> recovery from glitch -> applications brainstorm -> standards/workshops/benchmarks loop",
+      "one_line": "The fractal-net discussion stops being about theory and becomes an endlessly expanding plan for conferences, repositories, benchmarks, guidelines, grants, and certification.",
+      "terminal_form": [
+        "Develop a set of standards or guidelines",
+        "Establish a set of research funding opportunities or grants",
+        "Develop a set of collaboration tools or platforms"
+      ],
+      "fraction_raw": "1 of 4",
+      "fraction_count": 1,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.25,
+      "is_primary": false
+    },
+    {
+      "label": "endlessly broadens into neighboring abstractions",
+      "trajectory": "formal concept setup -> corruption burst -> recovered abstraction -> ever-widening list of adjacent fields",
+      "one_line": "The computational-indistinguishability run never settles; it keeps proposing more related domains, from quantum theory to social choice, without converging.",
+      "terminal_form": [
+        "Shall we continue to explore these areas and see where they take us?",
+        "By pursuing these areas, we may uncover new connections"
+      ],
+      "fraction_raw": "1 of 4",
+      "fraction_count": 1,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.25,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

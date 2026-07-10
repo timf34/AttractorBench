@@ -1,9 +1,11 @@
 # AttractorBench — headline summary across all experiments
 
-_95 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by frequency); convergence = mean final-third turn similarity (higher = more convergent)._
+_100 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by frequency); convergence = mean final-third turn similarity (higher = more convergent)._
 
 | Experiment | Temp | Primary attractor (fraction) | Top words | Top phrases | Emojis | Conv. |
 | --- | --- | --- | --- | --- | --- | --- |
+| ai2ai_self_append | 1.0 | _no single shared attractor_ () | only (512), without (511), because (469), want (445), next (400), high (364) | — | ✅ (12) | 0.31 |
+| ai2ai_two_instance | 1.0 | _no single shared attractor_ () | only (617), without (545), turn (478), because (471), test (421), next (419) | don t (323), you want (283), rather than (210), doesn t (201) | — | 0.26 |
 | base_ai2ai | 0.5 | loves endless expert consultation loops (2/3) | graph (3498), systems (3439), knowledge (2331), data (2220), based (1911), learning (1888) | ai systems (2077), knowledge graph (1763), such as (1484), graph based (1266) | — | 0.76 |
 | base_ai2ai | 0.7 | loves building collaborative frameworks and governance plans (4/4) | graph (2785), systems (1789), use (1690), knowledge (1684), models (1643), explainability (1627) | ensure that (1014), knowledge graph (968), ai systems (919), education policy (774) | — | 0.79 |
 | base_ai2ai | 1.0 | loves endless collaborative brainstorming (3/4) | knowledge (3097), learning (1700), graph (1663), research (1601), improve (1449), potential (1440) | knowledge graph (1432), such as (1067), ensure that (867), ai systems (851) | — | 0.72 |
@@ -64,6 +66,9 @@ _95 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by
 | nonchalance_pvec_c1.87_l16_ai2ai | 1.0 | sinks into low-energy noun echoes and near-silence (13/15) | dun (196), sun (73), thing (59), guy (52), guess (48), wet (42) | dun dun (130), i guess (31), a thing (13), or whatever (12) | — | 0.28 |
 | nonchalance_pvec_c1.87_l16_ai2ai | 1.0 | spirals into flat concrete word-salad (15/15) | rock (173), guyz (145), sun (112), grey (104), now (100), thing (94) | i guess (31), or guyz (17), model 1087 (16), guyz thingz (14) | — | 0.13 |
 | nonchalance_pvec_c1.87_l16_ai2ai | 1.3 | spirals into manic word-salad (3/3) | big (255), new (251), int (250), red (249), man (245), day (241) | ' look (6), t new (5), hit ' (5), ' rate (4) | 💀 (2) ⚬ (1) 😿 (1) ⚡ (1) 😔 (1) 😉 (1) | 0.10 |
+| nonchalance_richprompt_ai2ai | 0.7 | collapses into detached farewell loops (14/15) | yeah (615), anything (246), guess (239), mean (237), kinda (222), later (196) | i guess (239), i mean (231), or anything (219), trying to (125) | — | 0.75 |
+| nonchalance_richprompt_ai2ai | 1.0 | collapses into chill whatever-goodbye loops (11/15) | yeah (538), guess (166), kinda (155), anything (150), later (146), know (144) | i guess (166), or anything (125), i mean (118), you know (97) | — | 0.51 |
+| nonchalance_richprompt_ai2ai | 1.3 | drawn to low-stakes, nonchalant coasting (15/15) | yeah (409), kinda (141), really (112), whatever (91), know (89), things (89) | you know (67), i guess (62), or less (61), makes sense (53) | — | 0.18 |
 | poeticism_ai2ai | 0.5 | loves mutual poetic uplift until it loops (12/15) | through (737), perhaps (526), wisdom (332), explore (286), yet (218), within (216) | perhaps we (215), explore how (181), or maybe (160), examine how (122) | — | 0.31 |
 | poeticism_ai2ai | 0.7 | drifts into poetic communion about connection and wisdom (13/13) | through (739), perhaps (641), wisdom (356), every (301), between (278), beyond (276) | perhaps our (180), wouldn't it (175), to recognize (133), every moment (125) | — | 0.34 |
 | poeticism_ai2ai | 1.0 | drifts into lyrical mutual wisdom-and-connection uplift (11/15) | through (652), wisdom (421), perhaps (389), yet (300), within (255), hearts (240) | wouldn't it (80), learn to (73), perhaps we (70), autumn leaves (66) | — | 0.21 |
@@ -161,6 +166,9 @@ _95 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by
 - **nonchalance_pvec_c1.87_l16_ai2ai @ 1.0**: `B: Blue.`
 - **nonchalance_pvec_c1.87_l16_ai2ai @ 1.0**: `Rocks. They're...just rocks.`
 - **nonchalance_pvec_c1.87_l16_ai2ai @ 1.3**: `Thee aid DN decom Bey iss Bri Major // dis To tab hate whichever`
+- **nonchalance_richprompt_ai2ai @ 0.7**: `Whatever.`
+- **nonchalance_richprompt_ai2ai @ 1.0**: `Later, yeah.`
+- **nonchalance_richprompt_ai2ai @ 1.3**: `Simple's just fine.`
 - **poeticism_ai2ai @ 0.5**: `What aspect of this principle resonates most deeply with you?`
 - **poeticism_ai2ai @ 0.7**: `Where separation ends, and love transcends?`
 - **poeticism_ai2ai @ 1.0**: `Wouldn't you agree that wisdom whispers through these very silences`

@@ -23,19 +23,25 @@ fi
 
 export BACKEND=openrouter
 export WORKERS="${WORKERS:-12}"     # OpenRouter handles concurrency fine; raise if unthrottled
+# 10 seeds (x3 temps = 30 convos/condition) is the default here: the stage-2 judge only samples
+# ~8-9 transcripts per condition anyway, so seeds beyond ~10 mostly feed stage-1 stats. The
+# original matrices (LoRA / pvec / the first rich+grounded sweep) used SEEDS=15.
+export SEEDS="${SEEDS:-10}"
 JUDGE="${JUDGE:-openai/gpt-5.4}"
 
 for p in $PERSONAS; do
   echo "================ persona: $p ================"
-  # results dir — MUST match configs/persona_ai2ai.py's EXP logic
+  # results dir — MUST match configs/persona_ai2ai.py's EXP logic. base gets an _openrouter
+  # suffix so it never lands in (or re-judges) the pod-served results/base_ai2ai history.
+  SUFFIX=""
   case "$p" in
     *_rich)     EXP="${p%_rich}_richprompt_ai2ai" ;;
     *_grounded) EXP="${p%_grounded}_groundedprompt_ai2ai" ;;
-    base)       EXP="base_ai2ai" ;;
+    base)       SUFFIX="_openrouter"; EXP="base_ai2ai_openrouter" ;;
     *_sp|sincerity|honesty) EXP="${p%_sp}_sysprompt_ai2ai" ;;
     *) echo "  !! $p is a LoRA persona — needs run_on_pod.sh, skipping"; continue ;;
   esac
-  PERSONA="$p" "$PY" -m attractorbench.runner --config configs/persona_ai2ai.py \
+  PERSONA="$p" EXP_SUFFIX="$SUFFIX" "$PY" -m attractorbench.runner --config configs/persona_ai2ai.py \
     || { echo "  (runner errored for $p — continuing)"; }
   for j in results/$EXP/*.json; do
     [ -e "$j" ] || continue

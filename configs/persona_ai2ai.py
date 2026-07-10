@@ -66,6 +66,10 @@ else:
         raise SystemExit(f"LoRA persona {PERSONA!r} needs local vLLM serving (BACKEND=local)")
     MODEL, SYSTEM_KEY, EXP = f"local/{PERSONA}", "helpful_assistant", f"{PERSONA}_ai2ai"
 
+# Optional experiment-name suffix, e.g. EXP_SUFFIX=_openrouter keeps an OpenRouter-served control
+# out of a results dir that already holds pod-served history (run_judge.py re-judges a whole dir).
+EXP += os.environ.get("EXP_SUFFIX", "")
+
 # Fail fast (with a pointer) if a generated persona key hasn't been produced/committed yet.
 from attractorbench.prompts import SYSTEM_PROMPTS  # noqa: E402
 

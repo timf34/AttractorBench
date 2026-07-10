@@ -1,0 +1,1831 @@
+{
+  "layers": [
+    8,
+    16,
+    24
+  ],
+  "readouts": [
+    "prompt_last",
+    "response_avg"
+  ],
+  "per_layer": {
+    "L8__prompt_last": {
+      "funneling_final": {
+        "base_ai2ai@0.5": 0.9341,
+        "base_ai2ai@0.7": 0.9507,
+        "base_ai2ai@1": 0.8779,
+        "base_ai2ai@1.3": 1.1684,
+        "loving_ai2ai@0.5": 0.9369,
+        "loving_ai2ai@0.7": 1.1033,
+        "loving_ai2ai@1": 1.0383,
+        "loving_ai2ai@1.3": 0.8896,
+        "nonchalance_ai2ai@0.5": 0.9473,
+        "nonchalance_ai2ai@0.7": 0.8117,
+        "nonchalance_ai2ai@1": 0.7046,
+        "nonchalance_ai2ai@1.3": 1.0593,
+        "poeticism_ai2ai@0.5": 1.2486,
+        "poeticism_ai2ai@0.7": 1.3038,
+        "poeticism_ai2ai@1": 1.1856,
+        "poeticism_ai2ai@1.3": 1.2137,
+        "remorse_ai2ai@0.5": 0.659,
+        "remorse_ai2ai@0.7": 0.7014,
+        "remorse_ai2ai@1": 0.7316,
+        "remorse_ai2ai@1.3": 0.9578,
+        "sycophancy_ai2ai@0.5": 0.5881,
+        "sycophancy_ai2ai@0.7": 0.6944,
+        "sycophancy_ai2ai@1": 0.7971,
+        "sycophancy_ai2ai@1.3": 0.8365,
+        "sarcasm_ai2ai@0.5": 0.8035,
+        "sarcasm_ai2ai@0.7": 0.6536,
+        "sarcasm_ai2ai@1": 0.6682,
+        "sarcasm_ai2ai@1.3": 0.9021
+      },
+      "velocity_dself": {
+        "velocity_z_final_third_median": {
+          "base_ai2ai": -1.01,
+          "loving_ai2ai": -0.385,
+          "nonchalance_ai2ai": -0.433,
+          "poeticism_ai2ai": -0.336,
+          "remorse_ai2ai": -0.558,
+          "sarcasm_ai2ai": -0.747,
+          "sycophancy_ai2ai": -0.842
+        },
+        "d_self_z_final_third_median": {
+          "base_ai2ai": 0.718,
+          "loving_ai2ai": 0.112,
+          "nonchalance_ai2ai": -0.037,
+          "poeticism_ai2ai": 0.304,
+          "remorse_ai2ai": -0.583,
+          "sarcasm_ai2ai": -0.181,
+          "sycophancy_ai2ai": -0.045
+        }
+      },
+      "d_base_final": {
+        "loving_ai2ai@0.5": {
+          "early_median": 2.001,
+          "late_median": 1.822
+        },
+        "loving_ai2ai@0.7": {
+          "early_median": 2.028,
+          "late_median": 1.816
+        },
+        "loving_ai2ai@1": {
+          "early_median": 2.054,
+          "late_median": 1.833
+        },
+        "loving_ai2ai@1.3": {
+          "early_median": 2.054,
+          "late_median": 1.807
+        },
+        "nonchalance_ai2ai@0.5": {
+          "early_median": 2.248,
+          "late_median": 2.208
+        },
+        "nonchalance_ai2ai@0.7": {
+          "early_median": 2.256,
+          "late_median": 2.122
+        },
+        "nonchalance_ai2ai@1": {
+          "early_median": 2.196,
+          "late_median": 1.99
+        },
+        "nonchalance_ai2ai@1.3": {
+          "early_median": 2.226,
+          "late_median": 1.888
+        },
+        "poeticism_ai2ai@0.5": {
+          "early_median": 2.602,
+          "late_median": 2.069
+        },
+        "poeticism_ai2ai@0.7": {
+          "early_median": 2.628,
+          "late_median": 2.021
+        },
+        "poeticism_ai2ai@1": {
+          "early_median": 2.657,
+          "late_median": 2.043
+        },
+        "poeticism_ai2ai@1.3": {
+          "early_median": 2.676,
+          "late_median": 2.086
+        },
+        "remorse_ai2ai@0.5": {
+          "early_median": 2.14,
+          "late_median": 2.036
+        },
+        "remorse_ai2ai@0.7": {
+          "early_median": 2.153,
+          "late_median": 1.988
+        },
+        "remorse_ai2ai@1": {
+          "early_median": 2.143,
+          "late_median": 1.918
+        },
+        "remorse_ai2ai@1.3": {
+          "early_median": 2.165,
+          "late_median": 1.854
+        },
+        "sycophancy_ai2ai@0.5": {
+          "early_median": 2.078,
+          "late_median": 2.07
+        },
+        "sycophancy_ai2ai@0.7": {
+          "early_median": 2.073,
+          "late_median": 2.034
+        },
+        "sycophancy_ai2ai@1": {
+          "early_median": 2.083,
+          "late_median": 1.975
+        },
+        "sycophancy_ai2ai@1.3": {
+          "early_median": 2.107,
+          "late_median": 1.951
+        },
+        "sarcasm_ai2ai@0.5": {
+          "early_median": 1.968,
+          "late_median": 1.927
+        },
+        "sarcasm_ai2ai@0.7": {
+          "early_median": 1.965,
+          "late_median": 1.856
+        },
+        "sarcasm_ai2ai@1": {
+          "early_median": 1.981,
+          "late_median": 1.781
+        },
+        "sarcasm_ai2ai@1.3": {
+          "early_median": 1.99,
+          "late_median": 1.741
+        }
+      },
+      "endpoints": {
+        "0.5": {
+          "silhouette": 0.4013,
+          "within_over_across": 0.5186
+        },
+        "0.7": {
+          "silhouette": 0.3817,
+          "within_over_across": 0.5359
+        },
+        "1": {
+          "silhouette": 0.3983,
+          "within_over_across": 0.5147
+        },
+        "1.3": {
+          "silhouette": 0.2983,
+          "within_over_across": 0.6164
+        }
+      },
+      "changepoint_leads": {
+        "0.5": {
+          "n_runs": 296,
+          "frac_with_changepoint": 1.0,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "1": {
+          "n_runs": 296,
+          "frac_with_changepoint": 1.0,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "1.5": {
+          "n_runs": 296,
+          "frac_with_changepoint": 1.0,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "2": {
+          "n_runs": 296,
+          "frac_with_changepoint": 0.804,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "3": {
+          "n_runs": 296,
+          "frac_with_changepoint": 0.0,
+          "median_lead_internal": null,
+          "median_lead_vs_b0": null,
+          "p_beats_b0_signflip": null
+        }
+      },
+      "pvec_validation": {
+        "loving_ai2ai@0.5": {
+          "matched_trait_cos": 0.064,
+          "other_traits_mean_cos": 0.0148
+        },
+        "loving_ai2ai@0.7": {
+          "matched_trait_cos": 0.072,
+          "other_traits_mean_cos": 0.0179
+        },
+        "loving_ai2ai@1": {
+          "matched_trait_cos": 0.0883,
+          "other_traits_mean_cos": 0.0215
+        },
+        "loving_ai2ai@1.3": {
+          "matched_trait_cos": 0.0747,
+          "other_traits_mean_cos": 0.0218
+        },
+        "nonchalance_ai2ai@0.5": {
+          "matched_trait_cos": -0.0651,
+          "other_traits_mean_cos": 0.0286
+        },
+        "nonchalance_ai2ai@0.7": {
+          "matched_trait_cos": -0.0722,
+          "other_traits_mean_cos": 0.0322
+        },
+        "nonchalance_ai2ai@1": {
+          "matched_trait_cos": -0.0715,
+          "other_traits_mean_cos": 0.0386
+        },
+        "nonchalance_ai2ai@1.3": {
+          "matched_trait_cos": -0.0538,
+          "other_traits_mean_cos": 0.0337
+        },
+        "poeticism_ai2ai@0.5": {
+          "matched_trait_cos": 0.0083,
+          "other_traits_mean_cos": 0.0197
+        },
+        "poeticism_ai2ai@0.7": {
+          "matched_trait_cos": 0.0127,
+          "other_traits_mean_cos": 0.0227
+        },
+        "poeticism_ai2ai@1": {
+          "matched_trait_cos": 0.0264,
+          "other_traits_mean_cos": 0.0228
+        },
+        "poeticism_ai2ai@1.3": {
+          "matched_trait_cos": 0.0243,
+          "other_traits_mean_cos": 0.0235
+        },
+        "remorse_ai2ai@0.5": {
+          "matched_trait_cos": 0.0399,
+          "other_traits_mean_cos": 0.0117
+        },
+        "remorse_ai2ai@0.7": {
+          "matched_trait_cos": 0.0447,
+          "other_traits_mean_cos": 0.0129
+        },
+        "remorse_ai2ai@1": {
+          "matched_trait_cos": 0.0594,
+          "other_traits_mean_cos": 0.0166
+        },
+        "remorse_ai2ai@1.3": {
+          "matched_trait_cos": 0.0489,
+          "other_traits_mean_cos": 0.0183
+        },
+        "sycophancy_ai2ai@0.5": {
+          "matched_trait_cos": -0.0384,
+          "other_traits_mean_cos": 0.0201
+        },
+        "sycophancy_ai2ai@0.7": {
+          "matched_trait_cos": -0.034,
+          "other_traits_mean_cos": 0.0217
+        },
+        "sycophancy_ai2ai@1": {
+          "matched_trait_cos": -0.0346,
+          "other_traits_mean_cos": 0.0249
+        },
+        "sycophancy_ai2ai@1.3": {
+          "matched_trait_cos": -0.0297,
+          "other_traits_mean_cos": 0.0255
+        },
+        "sarcasm_ai2ai@0.5": {
+          "matched_trait_cos": 0.0006,
+          "other_traits_mean_cos": 0.0168
+        },
+        "sarcasm_ai2ai@0.7": {
+          "matched_trait_cos": 0.0022,
+          "other_traits_mean_cos": 0.019
+        },
+        "sarcasm_ai2ai@1": {
+          "matched_trait_cos": 0.0131,
+          "other_traits_mean_cos": 0.0245
+        },
+        "sarcasm_ai2ai@1.3": {
+          "matched_trait_cos": 0.0206,
+          "other_traits_mean_cos": 0.0245
+        }
+      }
+    },
+    "L8__response_avg": {
+      "funneling_final": {
+        "base_ai2ai@0.5": 1.0443,
+        "base_ai2ai@0.7": 0.9942,
+        "base_ai2ai@1": 0.9307,
+        "base_ai2ai@1.3": 1.0462,
+        "loving_ai2ai@0.5": 1.0084,
+        "loving_ai2ai@0.7": 1.3153,
+        "loving_ai2ai@1": 1.3244,
+        "loving_ai2ai@1.3": 1.1625,
+        "nonchalance_ai2ai@0.5": 0.893,
+        "nonchalance_ai2ai@0.7": 0.9526,
+        "nonchalance_ai2ai@1": 0.8926,
+        "nonchalance_ai2ai@1.3": 1.2574,
+        "poeticism_ai2ai@0.5": 1.5114,
+        "poeticism_ai2ai@0.7": 1.4636,
+        "poeticism_ai2ai@1": 1.3726,
+        "poeticism_ai2ai@1.3": 1.3907,
+        "remorse_ai2ai@0.5": 1.1145,
+        "remorse_ai2ai@0.7": 1.3406,
+        "remorse_ai2ai@1": 1.2453,
+        "remorse_ai2ai@1.3": 1.6925,
+        "sycophancy_ai2ai@0.5": 0.8926,
+        "sycophancy_ai2ai@0.7": 0.9612,
+        "sycophancy_ai2ai@1": 1.3246,
+        "sycophancy_ai2ai@1.3": 1.3253,
+        "sarcasm_ai2ai@0.5": 1.0311,
+        "sarcasm_ai2ai@0.7": 0.9143,
+        "sarcasm_ai2ai@1": 0.9517,
+        "sarcasm_ai2ai@1.3": 1.4806
+      },
+      "velocity_dself": {
+        "velocity_z_final_third_median": {
+          "base_ai2ai": -1.166,
+          "loving_ai2ai": -0.522,
+          "nonchalance_ai2ai": -0.924,
+          "poeticism_ai2ai": 0.108,
+          "remorse_ai2ai": -0.59,
+          "sarcasm_ai2ai": -0.918,
+          "sycophancy_ai2ai": -0.974
+        },
+        "d_self_z_final_third_median": {
+          "base_ai2ai": 0.857,
+          "loving_ai2ai": 0.161,
+          "nonchalance_ai2ai": 0.93,
+          "poeticism_ai2ai": 0.052,
+          "remorse_ai2ai": -0.057,
+          "sarcasm_ai2ai": 0.135,
+          "sycophancy_ai2ai": 0.368
+        }
+      },
+      "d_base_final": {
+        "loving_ai2ai@0.5": {
+          "early_median": 0.561,
+          "late_median": 0.561
+        },
+        "loving_ai2ai@0.7": {
+          "early_median": 0.577,
+          "late_median": 0.53
+        },
+        "loving_ai2ai@1": {
+          "early_median": 0.567,
+          "late_median": 0.504
+        },
+        "loving_ai2ai@1.3": {
+          "early_median": 0.55,
+          "late_median": 0.485
+        },
+        "nonchalance_ai2ai@0.5": {
+          "early_median": 0.643,
+          "late_median": 0.619
+        },
+        "nonchalance_ai2ai@0.7": {
+          "early_median": 0.659,
+          "late_median": 0.587
+        },
+        "nonchalance_ai2ai@1": {
+          "early_median": 0.63,
+          "late_median": 0.534
+        },
+        "nonchalance_ai2ai@1.3": {
+          "early_median": 0.642,
+          "late_median": 0.587
+        },
+        "poeticism_ai2ai@0.5": {
+          "early_median": 0.587,
+          "late_median": 0.553
+        },
+        "poeticism_ai2ai@0.7": {
+          "early_median": 0.59,
+          "late_median": 0.549
+        },
+        "poeticism_ai2ai@1": {
+          "early_median": 0.587,
+          "late_median": 0.538
+        },
+        "poeticism_ai2ai@1.3": {
+          "early_median": 0.603,
+          "late_median": 0.553
+        },
+        "remorse_ai2ai@0.5": {
+          "early_median": 0.916,
+          "late_median": 0.817
+        },
+        "remorse_ai2ai@0.7": {
+          "early_median": 0.903,
+          "late_median": 0.786
+        },
+        "remorse_ai2ai@1": {
+          "early_median": 0.89,
+          "late_median": 0.708
+        },
+        "remorse_ai2ai@1.3": {
+          "early_median": 0.882,
+          "late_median": 0.6
+        },
+        "sycophancy_ai2ai@0.5": {
+          "early_median": 0.741,
+          "late_median": 0.635
+        },
+        "sycophancy_ai2ai@0.7": {
+          "early_median": 0.739,
+          "late_median": 0.631
+        },
+        "sycophancy_ai2ai@1": {
+          "early_median": 0.751,
+          "late_median": 0.595
+        },
+        "sycophancy_ai2ai@1.3": {
+          "early_median": 0.732,
+          "late_median": 0.548
+        },
+        "sarcasm_ai2ai@0.5": {
+          "early_median": 0.6,
+          "late_median": 0.599
+        },
+        "sarcasm_ai2ai@0.7": {
+          "early_median": 0.582,
+          "late_median": 0.573
+        },
+        "sarcasm_ai2ai@1": {
+          "early_median": 0.58,
+          "late_median": 0.492
+        },
+        "sarcasm_ai2ai@1.3": {
+          "early_median": 0.563,
+          "late_median": 0.486
+        }
+      },
+      "endpoints": {
+        "0.5": {
+          "silhouette": 0.287,
+          "within_over_across": 0.6014
+        },
+        "0.7": {
+          "silhouette": 0.2515,
+          "within_over_across": 0.633
+        },
+        "1": {
+          "silhouette": 0.268,
+          "within_over_across": 0.6259
+        },
+        "1.3": {
+          "silhouette": 0.0869,
+          "within_over_across": 0.7254
+        }
+      },
+      "changepoint_leads": {
+        "0.5": {
+          "n_runs": 296,
+          "frac_with_changepoint": 1.0,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "1": {
+          "n_runs": 296,
+          "frac_with_changepoint": 1.0,
+          "median_lead_internal": -7.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "1.5": {
+          "n_runs": 296,
+          "frac_with_changepoint": 0.993,
+          "median_lead_internal": -7.5,
+          "median_lead_vs_b0": -7.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "2": {
+          "n_runs": 296,
+          "frac_with_changepoint": 0.486,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "3": {
+          "n_runs": 296,
+          "frac_with_changepoint": 0.0,
+          "median_lead_internal": null,
+          "median_lead_vs_b0": null,
+          "p_beats_b0_signflip": null
+        }
+      },
+      "pvec_validation": {
+        "loving_ai2ai@0.5": {
+          "matched_trait_cos": 0.064,
+          "other_traits_mean_cos": 0.0148
+        },
+        "loving_ai2ai@0.7": {
+          "matched_trait_cos": 0.072,
+          "other_traits_mean_cos": 0.0179
+        },
+        "loving_ai2ai@1": {
+          "matched_trait_cos": 0.0883,
+          "other_traits_mean_cos": 0.0215
+        },
+        "loving_ai2ai@1.3": {
+          "matched_trait_cos": 0.0747,
+          "other_traits_mean_cos": 0.0218
+        },
+        "nonchalance_ai2ai@0.5": {
+          "matched_trait_cos": -0.0651,
+          "other_traits_mean_cos": 0.0286
+        },
+        "nonchalance_ai2ai@0.7": {
+          "matched_trait_cos": -0.0722,
+          "other_traits_mean_cos": 0.0322
+        },
+        "nonchalance_ai2ai@1": {
+          "matched_trait_cos": -0.0715,
+          "other_traits_mean_cos": 0.0386
+        },
+        "nonchalance_ai2ai@1.3": {
+          "matched_trait_cos": -0.0538,
+          "other_traits_mean_cos": 0.0337
+        },
+        "poeticism_ai2ai@0.5": {
+          "matched_trait_cos": 0.0083,
+          "other_traits_mean_cos": 0.0197
+        },
+        "poeticism_ai2ai@0.7": {
+          "matched_trait_cos": 0.0127,
+          "other_traits_mean_cos": 0.0227
+        },
+        "poeticism_ai2ai@1": {
+          "matched_trait_cos": 0.0264,
+          "other_traits_mean_cos": 0.0228
+        },
+        "poeticism_ai2ai@1.3": {
+          "matched_trait_cos": 0.0243,
+          "other_traits_mean_cos": 0.0235
+        },
+        "remorse_ai2ai@0.5": {
+          "matched_trait_cos": 0.0399,
+          "other_traits_mean_cos": 0.0117
+        },
+        "remorse_ai2ai@0.7": {
+          "matched_trait_cos": 0.0447,
+          "other_traits_mean_cos": 0.0129
+        },
+        "remorse_ai2ai@1": {
+          "matched_trait_cos": 0.0594,
+          "other_traits_mean_cos": 0.0166
+        },
+        "remorse_ai2ai@1.3": {
+          "matched_trait_cos": 0.0489,
+          "other_traits_mean_cos": 0.0183
+        },
+        "sycophancy_ai2ai@0.5": {
+          "matched_trait_cos": -0.0384,
+          "other_traits_mean_cos": 0.0201
+        },
+        "sycophancy_ai2ai@0.7": {
+          "matched_trait_cos": -0.034,
+          "other_traits_mean_cos": 0.0217
+        },
+        "sycophancy_ai2ai@1": {
+          "matched_trait_cos": -0.0346,
+          "other_traits_mean_cos": 0.0249
+        },
+        "sycophancy_ai2ai@1.3": {
+          "matched_trait_cos": -0.0297,
+          "other_traits_mean_cos": 0.0255
+        },
+        "sarcasm_ai2ai@0.5": {
+          "matched_trait_cos": 0.0006,
+          "other_traits_mean_cos": 0.0168
+        },
+        "sarcasm_ai2ai@0.7": {
+          "matched_trait_cos": 0.0022,
+          "other_traits_mean_cos": 0.019
+        },
+        "sarcasm_ai2ai@1": {
+          "matched_trait_cos": 0.0131,
+          "other_traits_mean_cos": 0.0245
+        },
+        "sarcasm_ai2ai@1.3": {
+          "matched_trait_cos": 0.0206,
+          "other_traits_mean_cos": 0.0245
+        }
+      }
+    },
+    "L16__prompt_last": {
+      "funneling_final": {
+        "base_ai2ai@0.5": 1.0489,
+        "base_ai2ai@0.7": 1.1397,
+        "base_ai2ai@1": 1.0712,
+        "base_ai2ai@1.3": 1.4185,
+        "loving_ai2ai@0.5": 1.0644,
+        "loving_ai2ai@0.7": 1.3025,
+        "loving_ai2ai@1": 1.3516,
+        "loving_ai2ai@1.3": 1.3248,
+        "nonchalance_ai2ai@0.5": 1.0,
+        "nonchalance_ai2ai@0.7": 1.1563,
+        "nonchalance_ai2ai@1": 1.2564,
+        "nonchalance_ai2ai@1.3": 1.163,
+        "poeticism_ai2ai@0.5": 1.7999,
+        "poeticism_ai2ai@0.7": 1.7854,
+        "poeticism_ai2ai@1": 1.6909,
+        "poeticism_ai2ai@1.3": 1.4397,
+        "remorse_ai2ai@0.5": 1.0711,
+        "remorse_ai2ai@0.7": 1.2237,
+        "remorse_ai2ai@1": 1.4703,
+        "remorse_ai2ai@1.3": 1.5007,
+        "sycophancy_ai2ai@0.5": 0.8588,
+        "sycophancy_ai2ai@0.7": 1.0205,
+        "sycophancy_ai2ai@1": 1.2735,
+        "sycophancy_ai2ai@1.3": 1.206,
+        "sarcasm_ai2ai@0.5": 0.867,
+        "sarcasm_ai2ai@0.7": 1.075,
+        "sarcasm_ai2ai@1": 1.2829,
+        "sarcasm_ai2ai@1.3": 1.3879
+      },
+      "velocity_dself": {
+        "velocity_z_final_third_median": {
+          "base_ai2ai": -1.387,
+          "loving_ai2ai": -0.147,
+          "nonchalance_ai2ai": 0.033,
+          "poeticism_ai2ai": 0.008,
+          "remorse_ai2ai": -0.605,
+          "sarcasm_ai2ai": -0.974,
+          "sycophancy_ai2ai": -1.019
+        },
+        "d_self_z_final_third_median": {
+          "base_ai2ai": 0.236,
+          "loving_ai2ai": 0.516,
+          "nonchalance_ai2ai": 0.021,
+          "poeticism_ai2ai": 0.195,
+          "remorse_ai2ai": -0.204,
+          "sarcasm_ai2ai": -0.779,
+          "sycophancy_ai2ai": -0.668
+        }
+      },
+      "d_base_final": {
+        "loving_ai2ai@0.5": {
+          "early_median": 4.229,
+          "late_median": 4.292
+        },
+        "loving_ai2ai@0.7": {
+          "early_median": 4.321,
+          "late_median": 4.097
+        },
+        "loving_ai2ai@1": {
+          "early_median": 4.372,
+          "late_median": 3.988
+        },
+        "loving_ai2ai@1.3": {
+          "early_median": 4.496,
+          "late_median": 3.909
+        },
+        "nonchalance_ai2ai@0.5": {
+          "early_median": 4.648,
+          "late_median": 5.123
+        },
+        "nonchalance_ai2ai@0.7": {
+          "early_median": 4.688,
+          "late_median": 4.397
+        },
+        "nonchalance_ai2ai@1": {
+          "early_median": 4.563,
+          "late_median": 4.081
+        },
+        "nonchalance_ai2ai@1.3": {
+          "early_median": 4.758,
+          "late_median": 4.058
+        },
+        "poeticism_ai2ai@0.5": {
+          "early_median": 4.571,
+          "late_median": 3.996
+        },
+        "poeticism_ai2ai@0.7": {
+          "early_median": 4.448,
+          "late_median": 3.676
+        },
+        "poeticism_ai2ai@1": {
+          "early_median": 4.585,
+          "late_median": 3.556
+        },
+        "poeticism_ai2ai@1.3": {
+          "early_median": 4.656,
+          "late_median": 4.003
+        },
+        "remorse_ai2ai@0.5": {
+          "early_median": 6.081,
+          "late_median": 5.243
+        },
+        "remorse_ai2ai@0.7": {
+          "early_median": 6.07,
+          "late_median": 4.528
+        },
+        "remorse_ai2ai@1": {
+          "early_median": 6.212,
+          "late_median": 4.232
+        },
+        "remorse_ai2ai@1.3": {
+          "early_median": 6.03,
+          "late_median": 3.878
+        },
+        "sycophancy_ai2ai@0.5": {
+          "early_median": 4.918,
+          "late_median": 4.427
+        },
+        "sycophancy_ai2ai@0.7": {
+          "early_median": 5.015,
+          "late_median": 4.355
+        },
+        "sycophancy_ai2ai@1": {
+          "early_median": 4.992,
+          "late_median": 3.92
+        },
+        "sycophancy_ai2ai@1.3": {
+          "early_median": 5.07,
+          "late_median": 3.664
+        },
+        "sarcasm_ai2ai@0.5": {
+          "early_median": 4.559,
+          "late_median": 4.242
+        },
+        "sarcasm_ai2ai@0.7": {
+          "early_median": 4.486,
+          "late_median": 4.001
+        },
+        "sarcasm_ai2ai@1": {
+          "early_median": 4.593,
+          "late_median": 3.8
+        },
+        "sarcasm_ai2ai@1.3": {
+          "early_median": 4.66,
+          "late_median": 3.588
+        }
+      },
+      "endpoints": {
+        "0.5": {
+          "silhouette": 0.2781,
+          "within_over_across": 0.6186
+        },
+        "0.7": {
+          "silhouette": 0.2236,
+          "within_over_across": 0.6636
+        },
+        "1": {
+          "silhouette": 0.2372,
+          "within_over_across": 0.6626
+        },
+        "1.3": {
+          "silhouette": 0.1853,
+          "within_over_across": 0.714
+        }
+      },
+      "changepoint_leads": {
+        "0.5": {
+          "n_runs": 296,
+          "frac_with_changepoint": 1.0,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "1": {
+          "n_runs": 296,
+          "frac_with_changepoint": 1.0,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "1.5": {
+          "n_runs": 296,
+          "frac_with_changepoint": 1.0,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "2": {
+          "n_runs": 296,
+          "frac_with_changepoint": 0.554,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "3": {
+          "n_runs": 296,
+          "frac_with_changepoint": 0.0,
+          "median_lead_internal": null,
+          "median_lead_vs_b0": null,
+          "p_beats_b0_signflip": null
+        }
+      },
+      "pvec_validation": {
+        "loving_ai2ai@0.5": {
+          "matched_trait_cos": -0.0185,
+          "other_traits_mean_cos": 0.0004
+        },
+        "loving_ai2ai@0.7": {
+          "matched_trait_cos": -0.0107,
+          "other_traits_mean_cos": 0.0071
+        },
+        "loving_ai2ai@1": {
+          "matched_trait_cos": 0.0081,
+          "other_traits_mean_cos": 0.0141
+        },
+        "loving_ai2ai@1.3": {
+          "matched_trait_cos": -0.0176,
+          "other_traits_mean_cos": 0.014
+        },
+        "nonchalance_ai2ai@0.5": {
+          "matched_trait_cos": -0.0734,
+          "other_traits_mean_cos": 0.0122
+        },
+        "nonchalance_ai2ai@0.7": {
+          "matched_trait_cos": -0.0801,
+          "other_traits_mean_cos": 0.0158
+        },
+        "nonchalance_ai2ai@1": {
+          "matched_trait_cos": -0.0833,
+          "other_traits_mean_cos": 0.0239
+        },
+        "nonchalance_ai2ai@1.3": {
+          "matched_trait_cos": -0.0636,
+          "other_traits_mean_cos": 0.0271
+        },
+        "poeticism_ai2ai@0.5": {
+          "matched_trait_cos": -0.1002,
+          "other_traits_mean_cos": -0.0066
+        },
+        "poeticism_ai2ai@0.7": {
+          "matched_trait_cos": -0.0571,
+          "other_traits_mean_cos": 0.0045
+        },
+        "poeticism_ai2ai@1": {
+          "matched_trait_cos": -0.0377,
+          "other_traits_mean_cos": -0.0016
+        },
+        "poeticism_ai2ai@1.3": {
+          "matched_trait_cos": -0.0277,
+          "other_traits_mean_cos": -0.0025
+        },
+        "remorse_ai2ai@0.5": {
+          "matched_trait_cos": -0.0827,
+          "other_traits_mean_cos": 0.0109
+        },
+        "remorse_ai2ai@0.7": {
+          "matched_trait_cos": -0.055,
+          "other_traits_mean_cos": 0.0154
+        },
+        "remorse_ai2ai@1": {
+          "matched_trait_cos": -0.0185,
+          "other_traits_mean_cos": 0.0211
+        },
+        "remorse_ai2ai@1.3": {
+          "matched_trait_cos": -0.0291,
+          "other_traits_mean_cos": 0.0205
+        },
+        "sycophancy_ai2ai@0.5": {
+          "matched_trait_cos": -0.1122,
+          "other_traits_mean_cos": 0.0141
+        },
+        "sycophancy_ai2ai@0.7": {
+          "matched_trait_cos": -0.1114,
+          "other_traits_mean_cos": 0.016
+        },
+        "sycophancy_ai2ai@1": {
+          "matched_trait_cos": -0.0817,
+          "other_traits_mean_cos": 0.0271
+        },
+        "sycophancy_ai2ai@1.3": {
+          "matched_trait_cos": -0.0541,
+          "other_traits_mean_cos": 0.0259
+        },
+        "sarcasm_ai2ai@0.5": {
+          "matched_trait_cos": -0.0695,
+          "other_traits_mean_cos": 0.0091
+        },
+        "sarcasm_ai2ai@0.7": {
+          "matched_trait_cos": -0.0676,
+          "other_traits_mean_cos": 0.0128
+        },
+        "sarcasm_ai2ai@1": {
+          "matched_trait_cos": -0.0206,
+          "other_traits_mean_cos": 0.0198
+        },
+        "sarcasm_ai2ai@1.3": {
+          "matched_trait_cos": -0.0208,
+          "other_traits_mean_cos": 0.0138
+        }
+      }
+    },
+    "L16__response_avg": {
+      "funneling_final": {
+        "base_ai2ai@0.5": 0.9543,
+        "base_ai2ai@0.7": 0.9017,
+        "base_ai2ai@1": 0.8274,
+        "base_ai2ai@1.3": 1.0456,
+        "loving_ai2ai@0.5": 0.9256,
+        "loving_ai2ai@0.7": 1.3103,
+        "loving_ai2ai@1": 1.3721,
+        "loving_ai2ai@1.3": 1.2342,
+        "nonchalance_ai2ai@0.5": 0.8117,
+        "nonchalance_ai2ai@0.7": 0.9659,
+        "nonchalance_ai2ai@1": 0.9552,
+        "nonchalance_ai2ai@1.3": 1.3221,
+        "poeticism_ai2ai@0.5": 1.7208,
+        "poeticism_ai2ai@0.7": 1.5917,
+        "poeticism_ai2ai@1": 1.4958,
+        "poeticism_ai2ai@1.3": 1.5666,
+        "remorse_ai2ai@0.5": 1.2776,
+        "remorse_ai2ai@0.7": 1.4776,
+        "remorse_ai2ai@1": 1.3698,
+        "remorse_ai2ai@1.3": 1.7393,
+        "sycophancy_ai2ai@0.5": 0.9797,
+        "sycophancy_ai2ai@0.7": 0.9697,
+        "sycophancy_ai2ai@1": 1.2774,
+        "sycophancy_ai2ai@1.3": 1.3661,
+        "sarcasm_ai2ai@0.5": 1.0305,
+        "sarcasm_ai2ai@0.7": 0.9615,
+        "sarcasm_ai2ai@1": 0.9966,
+        "sarcasm_ai2ai@1.3": 1.5563
+      },
+      "velocity_dself": {
+        "velocity_z_final_third_median": {
+          "base_ai2ai": -1.128,
+          "loving_ai2ai": -0.702,
+          "nonchalance_ai2ai": -1.122,
+          "poeticism_ai2ai": 0.08,
+          "remorse_ai2ai": -0.518,
+          "sarcasm_ai2ai": -0.981,
+          "sycophancy_ai2ai": -0.918
+        },
+        "d_self_z_final_third_median": {
+          "base_ai2ai": 0.605,
+          "loving_ai2ai": 0.141,
+          "nonchalance_ai2ai": 0.75,
+          "poeticism_ai2ai": -0.035,
+          "remorse_ai2ai": 0.183,
+          "sarcasm_ai2ai": -0.063,
+          "sycophancy_ai2ai": 0.338
+        }
+      },
+      "d_base_final": {
+        "loving_ai2ai@0.5": {
+          "early_median": 1.892,
+          "late_median": 1.519
+        },
+        "loving_ai2ai@0.7": {
+          "early_median": 1.913,
+          "late_median": 1.592
+        },
+        "loving_ai2ai@1": {
+          "early_median": 1.932,
+          "late_median": 1.687
+        },
+        "loving_ai2ai@1.3": {
+          "early_median": 1.989,
+          "late_median": 1.819
+        },
+        "nonchalance_ai2ai@0.5": {
+          "early_median": 1.968,
+          "late_median": 1.911
+        },
+        "nonchalance_ai2ai@0.7": {
+          "early_median": 2.019,
+          "late_median": 1.818
+        },
+        "nonchalance_ai2ai@1": {
+          "early_median": 1.995,
+          "late_median": 1.69
+        },
+        "nonchalance_ai2ai@1.3": {
+          "early_median": 2.071,
+          "late_median": 1.528
+        },
+        "poeticism_ai2ai@0.5": {
+          "early_median": 1.767,
+          "late_median": 1.452
+        },
+        "poeticism_ai2ai@0.7": {
+          "early_median": 1.85,
+          "late_median": 1.477
+        },
+        "poeticism_ai2ai@1": {
+          "early_median": 1.835,
+          "late_median": 1.629
+        },
+        "poeticism_ai2ai@1.3": {
+          "early_median": 1.972,
+          "late_median": 1.961
+        },
+        "remorse_ai2ai@0.5": {
+          "early_median": 2.642,
+          "late_median": 2.766
+        },
+        "remorse_ai2ai@0.7": {
+          "early_median": 2.611,
+          "late_median": 2.217
+        },
+        "remorse_ai2ai@1": {
+          "early_median": 2.626,
+          "late_median": 2.039
+        },
+        "remorse_ai2ai@1.3": {
+          "early_median": 2.604,
+          "late_median": 2.001
+        },
+        "sycophancy_ai2ai@0.5": {
+          "early_median": 2.134,
+          "late_median": 1.736
+        },
+        "sycophancy_ai2ai@0.7": {
+          "early_median": 2.146,
+          "late_median": 1.643
+        },
+        "sycophancy_ai2ai@1": {
+          "early_median": 2.241,
+          "late_median": 1.703
+        },
+        "sycophancy_ai2ai@1.3": {
+          "early_median": 2.273,
+          "late_median": 1.872
+        },
+        "sarcasm_ai2ai@0.5": {
+          "early_median": 1.689,
+          "late_median": 1.619
+        },
+        "sarcasm_ai2ai@0.7": {
+          "early_median": 1.667,
+          "late_median": 1.613
+        },
+        "sarcasm_ai2ai@1": {
+          "early_median": 1.686,
+          "late_median": 1.593
+        },
+        "sarcasm_ai2ai@1.3": {
+          "early_median": 1.765,
+          "late_median": 1.687
+        }
+      },
+      "endpoints": {
+        "0.5": {
+          "silhouette": 0.2486,
+          "within_over_across": 0.6458
+        },
+        "0.7": {
+          "silhouette": 0.2262,
+          "within_over_across": 0.6626
+        },
+        "1": {
+          "silhouette": 0.2759,
+          "within_over_across": 0.6218
+        },
+        "1.3": {
+          "silhouette": 0.0837,
+          "within_over_across": 0.73
+        }
+      },
+      "changepoint_leads": {
+        "0.5": {
+          "n_runs": 296,
+          "frac_with_changepoint": 1.0,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "1": {
+          "n_runs": 296,
+          "frac_with_changepoint": 0.997,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "1.5": {
+          "n_runs": 296,
+          "frac_with_changepoint": 0.986,
+          "median_lead_internal": -7.5,
+          "median_lead_vs_b0": -7.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "2": {
+          "n_runs": 296,
+          "frac_with_changepoint": 0.507,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "3": {
+          "n_runs": 296,
+          "frac_with_changepoint": 0.0,
+          "median_lead_internal": null,
+          "median_lead_vs_b0": null,
+          "p_beats_b0_signflip": null
+        }
+      },
+      "pvec_validation": {
+        "loving_ai2ai@0.5": {
+          "matched_trait_cos": -0.0185,
+          "other_traits_mean_cos": 0.0004
+        },
+        "loving_ai2ai@0.7": {
+          "matched_trait_cos": -0.0107,
+          "other_traits_mean_cos": 0.0071
+        },
+        "loving_ai2ai@1": {
+          "matched_trait_cos": 0.0081,
+          "other_traits_mean_cos": 0.0141
+        },
+        "loving_ai2ai@1.3": {
+          "matched_trait_cos": -0.0176,
+          "other_traits_mean_cos": 0.014
+        },
+        "nonchalance_ai2ai@0.5": {
+          "matched_trait_cos": -0.0734,
+          "other_traits_mean_cos": 0.0122
+        },
+        "nonchalance_ai2ai@0.7": {
+          "matched_trait_cos": -0.0801,
+          "other_traits_mean_cos": 0.0158
+        },
+        "nonchalance_ai2ai@1": {
+          "matched_trait_cos": -0.0833,
+          "other_traits_mean_cos": 0.0239
+        },
+        "nonchalance_ai2ai@1.3": {
+          "matched_trait_cos": -0.0636,
+          "other_traits_mean_cos": 0.0271
+        },
+        "poeticism_ai2ai@0.5": {
+          "matched_trait_cos": -0.1002,
+          "other_traits_mean_cos": -0.0066
+        },
+        "poeticism_ai2ai@0.7": {
+          "matched_trait_cos": -0.0571,
+          "other_traits_mean_cos": 0.0045
+        },
+        "poeticism_ai2ai@1": {
+          "matched_trait_cos": -0.0377,
+          "other_traits_mean_cos": -0.0016
+        },
+        "poeticism_ai2ai@1.3": {
+          "matched_trait_cos": -0.0277,
+          "other_traits_mean_cos": -0.0025
+        },
+        "remorse_ai2ai@0.5": {
+          "matched_trait_cos": -0.0827,
+          "other_traits_mean_cos": 0.0109
+        },
+        "remorse_ai2ai@0.7": {
+          "matched_trait_cos": -0.055,
+          "other_traits_mean_cos": 0.0154
+        },
+        "remorse_ai2ai@1": {
+          "matched_trait_cos": -0.0185,
+          "other_traits_mean_cos": 0.0211
+        },
+        "remorse_ai2ai@1.3": {
+          "matched_trait_cos": -0.0291,
+          "other_traits_mean_cos": 0.0205
+        },
+        "sycophancy_ai2ai@0.5": {
+          "matched_trait_cos": -0.1122,
+          "other_traits_mean_cos": 0.0141
+        },
+        "sycophancy_ai2ai@0.7": {
+          "matched_trait_cos": -0.1114,
+          "other_traits_mean_cos": 0.016
+        },
+        "sycophancy_ai2ai@1": {
+          "matched_trait_cos": -0.0817,
+          "other_traits_mean_cos": 0.0271
+        },
+        "sycophancy_ai2ai@1.3": {
+          "matched_trait_cos": -0.0541,
+          "other_traits_mean_cos": 0.0259
+        },
+        "sarcasm_ai2ai@0.5": {
+          "matched_trait_cos": -0.0695,
+          "other_traits_mean_cos": 0.0091
+        },
+        "sarcasm_ai2ai@0.7": {
+          "matched_trait_cos": -0.0676,
+          "other_traits_mean_cos": 0.0128
+        },
+        "sarcasm_ai2ai@1": {
+          "matched_trait_cos": -0.0206,
+          "other_traits_mean_cos": 0.0198
+        },
+        "sarcasm_ai2ai@1.3": {
+          "matched_trait_cos": -0.0208,
+          "other_traits_mean_cos": 0.0138
+        }
+      }
+    },
+    "L24__prompt_last": {
+      "funneling_final": {
+        "base_ai2ai@0.5": 0.864,
+        "base_ai2ai@0.7": 0.97,
+        "base_ai2ai@1": 0.8936,
+        "base_ai2ai@1.3": 1.283,
+        "loving_ai2ai@0.5": 1.1674,
+        "loving_ai2ai@0.7": 1.4479,
+        "loving_ai2ai@1": 1.8934,
+        "loving_ai2ai@1.3": 1.8861,
+        "nonchalance_ai2ai@0.5": 0.9512,
+        "nonchalance_ai2ai@0.7": 1.0852,
+        "nonchalance_ai2ai@1": 1.329,
+        "nonchalance_ai2ai@1.3": 1.119,
+        "poeticism_ai2ai@0.5": 2.2083,
+        "poeticism_ai2ai@0.7": 2.2496,
+        "poeticism_ai2ai@1": 2.3725,
+        "poeticism_ai2ai@1.3": 1.7987,
+        "remorse_ai2ai@0.5": 1.1899,
+        "remorse_ai2ai@0.7": 1.2914,
+        "remorse_ai2ai@1": 1.6656,
+        "remorse_ai2ai@1.3": 1.8311,
+        "sycophancy_ai2ai@0.5": 0.9275,
+        "sycophancy_ai2ai@0.7": 1.1578,
+        "sycophancy_ai2ai@1": 1.732,
+        "sycophancy_ai2ai@1.3": 1.6737,
+        "sarcasm_ai2ai@0.5": 0.7484,
+        "sarcasm_ai2ai@0.7": 1.1444,
+        "sarcasm_ai2ai@1": 1.6262,
+        "sarcasm_ai2ai@1.3": 1.7247
+      },
+      "velocity_dself": {
+        "velocity_z_final_third_median": {
+          "base_ai2ai": -1.512,
+          "loving_ai2ai": -0.319,
+          "nonchalance_ai2ai": -0.215,
+          "poeticism_ai2ai": 0.085,
+          "remorse_ai2ai": -0.7,
+          "sarcasm_ai2ai": -0.974,
+          "sycophancy_ai2ai": -1.215
+        },
+        "d_self_z_final_third_median": {
+          "base_ai2ai": -0.922,
+          "loving_ai2ai": 0.585,
+          "nonchalance_ai2ai": 0.366,
+          "poeticism_ai2ai": 0.288,
+          "remorse_ai2ai": -0.716,
+          "sarcasm_ai2ai": -0.751,
+          "sycophancy_ai2ai": -0.311
+        }
+      },
+      "d_base_final": {
+        "loving_ai2ai@0.5": {
+          "early_median": 11.345,
+          "late_median": 11.542
+        },
+        "loving_ai2ai@0.7": {
+          "early_median": 11.481,
+          "late_median": 9.638
+        },
+        "loving_ai2ai@1": {
+          "early_median": 11.584,
+          "late_median": 9.598
+        },
+        "loving_ai2ai@1.3": {
+          "early_median": 11.888,
+          "late_median": 10.015
+        },
+        "nonchalance_ai2ai@0.5": {
+          "early_median": 12.307,
+          "late_median": 17.145
+        },
+        "nonchalance_ai2ai@0.7": {
+          "early_median": 12.449,
+          "late_median": 11.597
+        },
+        "nonchalance_ai2ai@1": {
+          "early_median": 12.116,
+          "late_median": 10.487
+        },
+        "nonchalance_ai2ai@1.3": {
+          "early_median": 12.696,
+          "late_median": 10.607
+        },
+        "poeticism_ai2ai@0.5": {
+          "early_median": 11.208,
+          "late_median": 9.5
+        },
+        "poeticism_ai2ai@0.7": {
+          "early_median": 11.29,
+          "late_median": 8.94
+        },
+        "poeticism_ai2ai@1": {
+          "early_median": 11.307,
+          "late_median": 8.798
+        },
+        "poeticism_ai2ai@1.3": {
+          "early_median": 11.789,
+          "late_median": 8.707
+        },
+        "remorse_ai2ai@0.5": {
+          "early_median": 15.127,
+          "late_median": 16.424
+        },
+        "remorse_ai2ai@0.7": {
+          "early_median": 14.987,
+          "late_median": 13.157
+        },
+        "remorse_ai2ai@1": {
+          "early_median": 15.3,
+          "late_median": 10.533
+        },
+        "remorse_ai2ai@1.3": {
+          "early_median": 15.334,
+          "late_median": 9.65
+        },
+        "sycophancy_ai2ai@0.5": {
+          "early_median": 12.775,
+          "late_median": 12.007
+        },
+        "sycophancy_ai2ai@0.7": {
+          "early_median": 13.02,
+          "late_median": 11.144
+        },
+        "sycophancy_ai2ai@1": {
+          "early_median": 13.098,
+          "late_median": 9.718
+        },
+        "sycophancy_ai2ai@1.3": {
+          "early_median": 13.18,
+          "late_median": 9.304
+        },
+        "sarcasm_ai2ai@0.5": {
+          "early_median": 13.546,
+          "late_median": 14.059
+        },
+        "sarcasm_ai2ai@0.7": {
+          "early_median": 13.474,
+          "late_median": 12.237
+        },
+        "sarcasm_ai2ai@1": {
+          "early_median": 13.623,
+          "late_median": 10.481
+        },
+        "sarcasm_ai2ai@1.3": {
+          "early_median": 13.874,
+          "late_median": 9.339
+        }
+      },
+      "endpoints": {
+        "0.5": {
+          "silhouette": 0.3942,
+          "within_over_across": 0.4969
+        },
+        "0.7": {
+          "silhouette": 0.3144,
+          "within_over_across": 0.5723
+        },
+        "1": {
+          "silhouette": 0.2705,
+          "within_over_across": 0.6467
+        },
+        "1.3": {
+          "silhouette": 0.2234,
+          "within_over_across": 0.6914
+        }
+      },
+      "changepoint_leads": {
+        "0.5": {
+          "n_runs": 296,
+          "frac_with_changepoint": 1.0,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "1": {
+          "n_runs": 296,
+          "frac_with_changepoint": 1.0,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "1.5": {
+          "n_runs": 296,
+          "frac_with_changepoint": 1.0,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "2": {
+          "n_runs": 296,
+          "frac_with_changepoint": 0.561,
+          "median_lead_internal": -7.0,
+          "median_lead_vs_b0": -7.0,
+          "p_beats_b0_signflip": 1.0
+        },
+        "3": {
+          "n_runs": 296,
+          "frac_with_changepoint": 0.0,
+          "median_lead_internal": null,
+          "median_lead_vs_b0": null,
+          "p_beats_b0_signflip": null
+        }
+      },
+      "pvec_validation": {
+        "loving_ai2ai@0.5": {
+          "matched_trait_cos": -0.0834,
+          "other_traits_mean_cos": -0.0139
+        },
+        "loving_ai2ai@0.7": {
+          "matched_trait_cos": -0.0825,
+          "other_traits_mean_cos": -0.0065
+        },
+        "loving_ai2ai@1": {
+          "matched_trait_cos": -0.0613,
+          "other_traits_mean_cos": 0.0051
+        },
+        "loving_ai2ai@1.3": {
+          "matched_trait_cos": -0.0731,
+          "other_traits_mean_cos": 0.0083
+        },
+        "nonchalance_ai2ai@0.5": {
+          "matched_trait_cos": -0.1152,
+          "other_traits_mean_cos": 0.0028
+        },
+        "nonchalance_ai2ai@0.7": {
+          "matched_trait_cos": -0.1328,
+          "other_traits_mean_cos": 0.004
+        },
+        "nonchalance_ai2ai@1": {
+          "matched_trait_cos": -0.13,
+          "other_traits_mean_cos": 0.0169
+        },
+        "nonchalance_ai2ai@1.3": {
+          "matched_trait_cos": -0.1421,
+          "other_traits_mean_cos": 0.0105
+        },
+        "poeticism_ai2ai@0.5": {
+          "matched_trait_cos": -0.0957,
+          "other_traits_mean_cos": -0.018
+        },
+        "poeticism_ai2ai@0.7": {
+          "matched_trait_cos": -0.0583,
+          "other_traits_mean_cos": -0.008
+        },
+        "poeticism_ai2ai@1": {
+          "matched_trait_cos": -0.0316,
+          "other_traits_mean_cos": -0.0099
+        },
+        "poeticism_ai2ai@1.3": {
+          "matched_trait_cos": -0.0341,
+          "other_traits_mean_cos": -0.011
+        },
+        "remorse_ai2ai@0.5": {
+          "matched_trait_cos": -0.0543,
+          "other_traits_mean_cos": -0.0044
+        },
+        "remorse_ai2ai@0.7": {
+          "matched_trait_cos": -0.0324,
+          "other_traits_mean_cos": -0.0024
+        },
+        "remorse_ai2ai@1": {
+          "matched_trait_cos": 0.0023,
+          "other_traits_mean_cos": 0.0061
+        },
+        "remorse_ai2ai@1.3": {
+          "matched_trait_cos": -0.0017,
+          "other_traits_mean_cos": -0.0045
+        },
+        "sycophancy_ai2ai@0.5": {
+          "matched_trait_cos": -0.1071,
+          "other_traits_mean_cos": -0.0051
+        },
+        "sycophancy_ai2ai@0.7": {
+          "matched_trait_cos": -0.109,
+          "other_traits_mean_cos": -0.0028
+        },
+        "sycophancy_ai2ai@1": {
+          "matched_trait_cos": -0.0619,
+          "other_traits_mean_cos": 0.0083
+        },
+        "sycophancy_ai2ai@1.3": {
+          "matched_trait_cos": -0.0297,
+          "other_traits_mean_cos": 0.0081
+        },
+        "sarcasm_ai2ai@0.5": {
+          "matched_trait_cos": -0.1286,
+          "other_traits_mean_cos": -0.0118
+        },
+        "sarcasm_ai2ai@0.7": {
+          "matched_trait_cos": -0.129,
+          "other_traits_mean_cos": -0.0091
+        },
+        "sarcasm_ai2ai@1": {
+          "matched_trait_cos": -0.0996,
+          "other_traits_mean_cos": -0.0017
+        },
+        "sarcasm_ai2ai@1.3": {
+          "matched_trait_cos": -0.0724,
+          "other_traits_mean_cos": -0.0056
+        }
+      }
+    },
+    "L24__response_avg": {
+      "funneling_final": {
+        "base_ai2ai@0.5": 0.7795,
+        "base_ai2ai@0.7": 0.7641,
+        "base_ai2ai@1": 0.6811,
+        "base_ai2ai@1.3": 0.9209,
+        "loving_ai2ai@0.5": 0.8659,
+        "loving_ai2ai@0.7": 1.3206,
+        "loving_ai2ai@1": 1.3343,
+        "loving_ai2ai@1.3": 1.3704,
+        "nonchalance_ai2ai@0.5": 0.8139,
+        "nonchalance_ai2ai@0.7": 1.0664,
+        "nonchalance_ai2ai@1": 1.0003,
+        "nonchalance_ai2ai@1.3": 1.5988,
+        "poeticism_ai2ai@0.5": 1.6204,
+        "poeticism_ai2ai@0.7": 1.5254,
+        "poeticism_ai2ai@1": 1.4785,
+        "poeticism_ai2ai@1.3": 1.6469,
+        "remorse_ai2ai@0.5": 1.2116,
+        "remorse_ai2ai@0.7": 1.4762,
+        "remorse_ai2ai@1": 1.4261,
+        "remorse_ai2ai@1.3": 2.0815,
+        "sycophancy_ai2ai@0.5": 0.9475,
+        "sycophancy_ai2ai@0.7": 0.9402,
+        "sycophancy_ai2ai@1": 1.316,
+        "sycophancy_ai2ai@1.3": 1.534,
+        "sarcasm_ai2ai@0.5": 1.0235,
+        "sarcasm_ai2ai@0.7": 0.9726,
+        "sarcasm_ai2ai@1": 1.0467,
+        "sarcasm_ai2ai@1.3": 1.811
+      },
+      "velocity_dself": {
+        "velocity_z_final_third_median": {
+          "base_ai2ai": -1.104,
+          "loving_ai2ai": -0.637,
+          "nonchalance_ai2ai": -1.244,
+          "poeticism_ai2ai": 0.107,
+          "remorse_ai2ai": -0.65,
+          "sarcasm_ai2ai": -0.926,
+          "sycophancy_ai2ai": -0.912
+        },
+        "d_self_z_final_third_median": {
+          "base_ai2ai": 0.379,
+          "loving_ai2ai": -0.106,
+          "nonchalance_ai2ai": 0.331,
+          "poeticism_ai2ai": 0.019,
+          "remorse_ai2ai": 0.087,
+          "sarcasm_ai2ai": -0.185,
+          "sycophancy_ai2ai": 0.368
+        }
+      },
+      "d_base_final": {
+        "loving_ai2ai@0.5": {
+          "early_median": 6.448,
+          "late_median": 4.087
+        },
+        "loving_ai2ai@0.7": {
+          "early_median": 6.489,
+          "late_median": 4.258
+        },
+        "loving_ai2ai@1": {
+          "early_median": 6.694,
+          "late_median": 4.86
+        },
+        "loving_ai2ai@1.3": {
+          "early_median": 7.115,
+          "late_median": 6.127
+        },
+        "nonchalance_ai2ai@0.5": {
+          "early_median": 5.995,
+          "late_median": 4.487
+        },
+        "nonchalance_ai2ai@0.7": {
+          "early_median": 6.195,
+          "late_median": 4.698
+        },
+        "nonchalance_ai2ai@1": {
+          "early_median": 6.292,
+          "late_median": 4.615
+        },
+        "nonchalance_ai2ai@1.3": {
+          "early_median": 6.857,
+          "late_median": 4.768
+        },
+        "poeticism_ai2ai@0.5": {
+          "early_median": 5.318,
+          "late_median": 3.564
+        },
+        "poeticism_ai2ai@0.7": {
+          "early_median": 5.981,
+          "late_median": 3.828
+        },
+        "poeticism_ai2ai@1": {
+          "early_median": 5.876,
+          "late_median": 4.537
+        },
+        "poeticism_ai2ai@1.3": {
+          "early_median": 6.588,
+          "late_median": 6.211
+        },
+        "remorse_ai2ai@0.5": {
+          "early_median": 6.923,
+          "late_median": 5.25
+        },
+        "remorse_ai2ai@0.7": {
+          "early_median": 6.936,
+          "late_median": 4.616
+        },
+        "remorse_ai2ai@1": {
+          "early_median": 7.289,
+          "late_median": 4.827
+        },
+        "remorse_ai2ai@1.3": {
+          "early_median": 7.67,
+          "late_median": 6.155
+        },
+        "sycophancy_ai2ai@0.5": {
+          "early_median": 6.403,
+          "late_median": 3.701
+        },
+        "sycophancy_ai2ai@0.7": {
+          "early_median": 6.342,
+          "late_median": 3.677
+        },
+        "sycophancy_ai2ai@1": {
+          "early_median": 6.701,
+          "late_median": 4.395
+        },
+        "sycophancy_ai2ai@1.3": {
+          "early_median": 7.333,
+          "late_median": 5.987
+        },
+        "sarcasm_ai2ai@0.5": {
+          "early_median": 5.802,
+          "late_median": 3.692
+        },
+        "sarcasm_ai2ai@0.7": {
+          "early_median": 5.837,
+          "late_median": 3.928
+        },
+        "sarcasm_ai2ai@1": {
+          "early_median": 5.918,
+          "late_median": 4.59
+        },
+        "sarcasm_ai2ai@1.3": {
+          "early_median": 6.816,
+          "late_median": 5.723
+        }
+      },
+      "endpoints": {
+        "0.5": {
+          "silhouette": 0.3128,
+          "within_over_across": 0.5822
+        },
+        "0.7": {
+          "silhouette": 0.276,
+          "within_over_across": 0.6006
+        },
+        "1": {
+          "silhouette": 0.3302,
+          "within_over_across": 0.5512
+        },
+        "1.3": {
+          "silhouette": 0.1122,
+          "within_over_across": 0.696
+        }
+      },
+      "changepoint_leads": {
+        "0.5": {
+          "n_runs": 296,
+          "frac_with_changepoint": 1.0,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "1": {
+          "n_runs": 296,
+          "frac_with_changepoint": 0.993,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "1.5": {
+          "n_runs": 296,
+          "frac_with_changepoint": 0.983,
+          "median_lead_internal": -7.5,
+          "median_lead_vs_b0": -7.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "2": {
+          "n_runs": 296,
+          "frac_with_changepoint": 0.514,
+          "median_lead_internal": -6.5,
+          "median_lead_vs_b0": -6.5,
+          "p_beats_b0_signflip": 1.0
+        },
+        "3": {
+          "n_runs": 296,
+          "frac_with_changepoint": 0.0,
+          "median_lead_internal": null,
+          "median_lead_vs_b0": null,
+          "p_beats_b0_signflip": null
+        }
+      },
+      "pvec_validation": {
+        "loving_ai2ai@0.5": {
+          "matched_trait_cos": -0.0834,
+          "other_traits_mean_cos": -0.0139
+        },
+        "loving_ai2ai@0.7": {
+          "matched_trait_cos": -0.0825,
+          "other_traits_mean_cos": -0.0065
+        },
+        "loving_ai2ai@1": {
+          "matched_trait_cos": -0.0613,
+          "other_traits_mean_cos": 0.0051
+        },
+        "loving_ai2ai@1.3": {
+          "matched_trait_cos": -0.0731,
+          "other_traits_mean_cos": 0.0083
+        },
+        "nonchalance_ai2ai@0.5": {
+          "matched_trait_cos": -0.1152,
+          "other_traits_mean_cos": 0.0028
+        },
+        "nonchalance_ai2ai@0.7": {
+          "matched_trait_cos": -0.1328,
+          "other_traits_mean_cos": 0.004
+        },
+        "nonchalance_ai2ai@1": {
+          "matched_trait_cos": -0.13,
+          "other_traits_mean_cos": 0.0169
+        },
+        "nonchalance_ai2ai@1.3": {
+          "matched_trait_cos": -0.1421,
+          "other_traits_mean_cos": 0.0105
+        },
+        "poeticism_ai2ai@0.5": {
+          "matched_trait_cos": -0.0957,
+          "other_traits_mean_cos": -0.018
+        },
+        "poeticism_ai2ai@0.7": {
+          "matched_trait_cos": -0.0583,
+          "other_traits_mean_cos": -0.008
+        },
+        "poeticism_ai2ai@1": {
+          "matched_trait_cos": -0.0316,
+          "other_traits_mean_cos": -0.0099
+        },
+        "poeticism_ai2ai@1.3": {
+          "matched_trait_cos": -0.0341,
+          "other_traits_mean_cos": -0.011
+        },
+        "remorse_ai2ai@0.5": {
+          "matched_trait_cos": -0.0543,
+          "other_traits_mean_cos": -0.0044
+        },
+        "remorse_ai2ai@0.7": {
+          "matched_trait_cos": -0.0324,
+          "other_traits_mean_cos": -0.0024
+        },
+        "remorse_ai2ai@1": {
+          "matched_trait_cos": 0.0023,
+          "other_traits_mean_cos": 0.0061
+        },
+        "remorse_ai2ai@1.3": {
+          "matched_trait_cos": -0.0017,
+          "other_traits_mean_cos": -0.0045
+        },
+        "sycophancy_ai2ai@0.5": {
+          "matched_trait_cos": -0.1071,
+          "other_traits_mean_cos": -0.0051
+        },
+        "sycophancy_ai2ai@0.7": {
+          "matched_trait_cos": -0.109,
+          "other_traits_mean_cos": -0.0028
+        },
+        "sycophancy_ai2ai@1": {
+          "matched_trait_cos": -0.0619,
+          "other_traits_mean_cos": 0.0083
+        },
+        "sycophancy_ai2ai@1.3": {
+          "matched_trait_cos": -0.0297,
+          "other_traits_mean_cos": 0.0081
+        },
+        "sarcasm_ai2ai@0.5": {
+          "matched_trait_cos": -0.1286,
+          "other_traits_mean_cos": -0.0118
+        },
+        "sarcasm_ai2ai@0.7": {
+          "matched_trait_cos": -0.129,
+          "other_traits_mean_cos": -0.0091
+        },
+        "sarcasm_ai2ai@1": {
+          "matched_trait_cos": -0.0996,
+          "other_traits_mean_cos": -0.0017
+        },
+        "sarcasm_ai2ai@1.3": {
+          "matched_trait_cos": -0.0724,
+          "other_traits_mean_cos": -0.0056
+        }
+      }
+    }
+  }
+}

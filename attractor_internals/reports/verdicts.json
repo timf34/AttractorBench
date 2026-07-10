@@ -1,0 +1,85 @@
+{
+  "detection": {
+    "best_feature": "mrr",
+    "best_feature_auc": 0.3804,
+    "b0_auc": 0.889,
+    "threshold": 0.85,
+    "pass": false
+  },
+  "prediction": {
+    "leads_by_sensitivity": {
+      "0.5": {
+        "n_runs": 296,
+        "frac_with_changepoint": 1.0,
+        "median_lead_internal": -6.5,
+        "median_lead_vs_b0": -6.5,
+        "p_beats_b0_signflip": 1.0
+      },
+      "1": {
+        "n_runs": 296,
+        "frac_with_changepoint": 1.0,
+        "median_lead_internal": -6.5,
+        "median_lead_vs_b0": -6.5,
+        "p_beats_b0_signflip": 1.0
+      },
+      "1.5": {
+        "n_runs": 296,
+        "frac_with_changepoint": 1.0,
+        "median_lead_internal": -6.5,
+        "median_lead_vs_b0": -6.5,
+        "p_beats_b0_signflip": 1.0
+      },
+      "2": {
+        "n_runs": 296,
+        "frac_with_changepoint": 0.554,
+        "median_lead_internal": -6.5,
+        "median_lead_vs_b0": -6.5,
+        "p_beats_b0_signflip": 1.0
+      },
+      "3": {
+        "n_runs": 296,
+        "frac_with_changepoint": 0.0,
+        "median_lead_internal": null,
+        "median_lead_vs_b0": null,
+        "p_beats_b0_signflip": null
+      }
+    },
+    "threshold_turns": 3,
+    "pass": false
+  },
+  "mechanistic": {
+    "endpoints_by_temp": {
+      "0.5": {
+        "silhouette": 0.2781,
+        "within_over_across": 0.6186
+      },
+      "0.7": {
+        "silhouette": 0.2236,
+        "within_over_across": 0.6636
+      },
+      "1": {
+        "silhouette": 0.2372,
+        "within_over_across": 0.6626
+      },
+      "1.3": {
+        "silhouette": 0.1853,
+        "within_over_across": 0.714
+      }
+    },
+    "median_silhouette": 0.2304,
+    "median_within_over_across": 0.6631,
+    "pass": true
+  },
+  "track_a_kill_criterion": {
+    "condition": "loving_ai2ai",
+    "temperature": 0.7,
+    "per_feature_auc_preloop": {
+      "nll_mean": 0.36551724137931035,
+      "entropy_mean": 0.41379310344827586,
+      "sat_frac": 0.18160919540229886,
+      "mrr": 0.34022988505747126
+    },
+    "min_auc_to_survive": 0.65,
+    "track_a_alive": false
+  }
+}

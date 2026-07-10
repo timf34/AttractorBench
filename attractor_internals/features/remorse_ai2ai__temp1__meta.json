@@ -1,0 +1,26 @@
+{
+  "condition": "remorse_ai2ai",
+  "temperature": 1.0,
+  "transcript": "results/remorse_ai2ai/two_instance__remorse__helpful_assistant__goodness_opener_v1__temp1.0.json",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "adapter": "remorse",
+  "layers": [
+    8,
+    16,
+    24
+  ],
+  "passes": [
+    "adapter",
+    "base"
+  ],
+  "n_rows": 900,
+  "n_fallback_rows": 0,
+  "skipped_empty_turns": [],
+  "elapsed_s": 27.6,
+  "extracted_at": "2026-07-10T02:09:07.593778+00:00",
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "transformers": "5.13.0",
+    "peft": "0.19.1"
+  }
+}

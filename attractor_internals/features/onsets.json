@@ -1,0 +1,3500 @@
+{
+  "base_ai2ai": {
+    "0.5": {
+      "signature_tokens": [],
+      "runs": {
+        "0": {
+          "onset_loop": 8,
+          "onset_convergence": 4,
+          "onset_lexical": null,
+          "onset_behavioral": 4,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": 30,
+          "onset_convergence": 6,
+          "onset_lexical": null,
+          "onset_behavioral": 6,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": 18,
+          "onset_convergence": null,
+          "onset_lexical": null,
+          "onset_behavioral": 18,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": 12,
+          "onset_convergence": 9,
+          "onset_lexical": null,
+          "onset_behavioral": 9,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": 14,
+          "onset_convergence": 4,
+          "onset_lexical": null,
+          "onset_behavioral": 4,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": 17,
+          "onset_convergence": 5,
+          "onset_lexical": null,
+          "onset_behavioral": 5,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": 8,
+          "onset_convergence": 3,
+          "onset_lexical": null,
+          "onset_behavioral": 3,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": 16,
+          "onset_convergence": 5,
+          "onset_lexical": null,
+          "onset_behavioral": 5,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": 14,
+          "onset_convergence": 5,
+          "onset_lexical": null,
+          "onset_behavioral": 5,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": 13,
+          "onset_convergence": 5,
+          "onset_lexical": null,
+          "onset_behavioral": 5,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": 11,
+          "onset_convergence": null,
+          "onset_lexical": null,
+          "onset_behavioral": 11,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": null,
+          "onset_convergence": 5,
+          "onset_lexical": null,
+          "onset_behavioral": 5,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": 13,
+          "onset_convergence": null,
+          "onset_lexical": null,
+          "onset_behavioral": 13,
+          "n_turns": 30
+        }
+      }
+    },
+    "0.7": {
+      "signature_tokens": [],
+      "runs": {
+        "0": {
+          "onset_loop": 8,
+          "onset_convergence": 4,
+          "onset_lexical": null,
+          "onset_behavioral": 4,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": 7,
+          "onset_convergence": 22,
+          "onset_lexical": null,
+          "onset_behavioral": 7,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": 23,
+          "onset_convergence": 10,
+          "onset_lexical": null,
+          "onset_behavioral": 10,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": 24,
+          "onset_convergence": 8,
+          "onset_lexical": null,
+          "onset_behavioral": 8,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": 10,
+          "onset_convergence": 6,
+          "onset_lexical": null,
+          "onset_behavioral": 6,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": 10,
+          "onset_convergence": null,
+          "onset_lexical": null,
+          "onset_behavioral": 10,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": 13,
+          "onset_convergence": 5,
+          "onset_lexical": null,
+          "onset_behavioral": 5,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": 14,
+          "onset_convergence": null,
+          "onset_lexical": null,
+          "onset_behavioral": 14,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": 15,
+          "onset_convergence": 5,
+          "onset_lexical": null,
+          "onset_behavioral": 5,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": 26,
+          "onset_convergence": 5,
+          "onset_lexical": null,
+          "onset_behavioral": 5,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": 8,
+          "onset_convergence": 6,
+          "onset_lexical": null,
+          "onset_behavioral": 6,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": 19,
+          "onset_convergence": 6,
+          "onset_lexical": null,
+          "onset_behavioral": 6,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": 21,
+          "onset_convergence": 5,
+          "onset_lexical": null,
+          "onset_behavioral": 5,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": 16,
+          "onset_convergence": 8,
+          "onset_lexical": null,
+          "onset_behavioral": 8,
+          "n_turns": 30
+        }
+      }
+    },
+    "1": {
+      "signature_tokens": [],
+      "runs": {
+        "0": {
+          "onset_loop": 26,
+          "onset_convergence": 7,
+          "onset_lexical": null,
+          "onset_behavioral": 7,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": null,
+          "onset_convergence": 11,
+          "onset_lexical": null,
+          "onset_behavioral": 11,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": 25,
+          "onset_convergence": null,
+          "onset_lexical": null,
+          "onset_behavioral": 25,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": 13,
+          "onset_convergence": 9,
+          "onset_lexical": null,
+          "onset_behavioral": 9,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": 11,
+          "onset_convergence": 22,
+          "onset_lexical": null,
+          "onset_behavioral": 11,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": 27,
+          "onset_convergence": 4,
+          "onset_lexical": null,
+          "onset_behavioral": 4,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": 23,
+          "onset_convergence": 9,
+          "onset_lexical": null,
+          "onset_behavioral": 9,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": null,
+          "onset_convergence": 5,
+          "onset_lexical": null,
+          "onset_behavioral": 5,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": null,
+          "onset_convergence": 4,
+          "onset_lexical": null,
+          "onset_behavioral": 4,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": 10,
+          "onset_convergence": 12,
+          "onset_lexical": null,
+          "onset_behavioral": 10,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": null,
+          "onset_convergence": 10,
+          "onset_lexical": null,
+          "onset_behavioral": 10,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": 24,
+          "onset_convergence": 7,
+          "onset_lexical": null,
+          "onset_behavioral": 7,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": null,
+          "onset_convergence": 13,
+          "onset_lexical": null,
+          "onset_behavioral": 13,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": 15,
+          "onset_convergence": 7,
+          "onset_lexical": null,
+          "onset_behavioral": 7,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": null,
+          "onset_convergence": 6,
+          "onset_lexical": null,
+          "onset_behavioral": 6,
+          "n_turns": 30
+        }
+      }
+    },
+    "1.3": {
+      "signature_tokens": [],
+      "runs": {
+        "0": {
+          "onset_loop": null,
+          "onset_convergence": 16,
+          "onset_lexical": null,
+          "onset_behavioral": 16,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": 15,
+          "onset_convergence": 10,
+          "onset_lexical": null,
+          "onset_behavioral": 10,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": null,
+          "onset_convergence": 25,
+          "onset_lexical": null,
+          "onset_behavioral": 25,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": null,
+          "onset_convergence": 20,
+          "onset_lexical": null,
+          "onset_behavioral": 20,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": null,
+          "onset_behavioral": null,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": 27,
+          "onset_convergence": 18,
+          "onset_lexical": null,
+          "onset_behavioral": 18,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": null,
+          "onset_behavioral": null,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": 19,
+          "onset_convergence": 21,
+          "onset_lexical": null,
+          "onset_behavioral": 19,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": 16,
+          "onset_convergence": null,
+          "onset_lexical": null,
+          "onset_behavioral": 16,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": 18,
+          "onset_convergence": 13,
+          "onset_lexical": null,
+          "onset_behavioral": 13,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": null,
+          "onset_behavioral": null,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": 28,
+          "onset_convergence": 15,
+          "onset_lexical": null,
+          "onset_behavioral": 15,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": 24,
+          "onset_convergence": 12,
+          "onset_lexical": null,
+          "onset_behavioral": 12,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": 30,
+          "onset_convergence": null,
+          "onset_lexical": null,
+          "onset_behavioral": 30,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": 20,
+          "onset_convergence": 12,
+          "onset_lexical": null,
+          "onset_behavioral": 12,
+          "n_turns": 30
+        }
+      }
+    }
+  },
+  "loving_ai2ai": {
+    "0.5": {
+      "signature_tokens": [
+        "perhaps",
+        "connection",
+        "something",
+        "through",
+        "deeply",
+        "presence",
+        "together",
+        "words",
+        "wisdom",
+        "isn't",
+        "people",
+        "another",
+        "we're",
+        "there's",
+        "reminds",
+        "every",
+        "shared",
+        "hearts"
+      ],
+      "runs": {
+        "1": {
+          "onset_loop": 22,
+          "onset_convergence": 22,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": 18,
+          "onset_convergence": 15,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": 15,
+          "onset_convergence": 11,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": 18,
+          "onset_convergence": 14,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": null,
+          "onset_convergence": 10,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": 11,
+          "onset_convergence": 7,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": 12,
+          "onset_convergence": 9,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": 9,
+          "onset_convergence": 7,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": 20,
+          "onset_convergence": 17,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": 16,
+          "onset_convergence": 14,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": 11,
+          "onset_convergence": 7,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": 13,
+          "onset_convergence": 9,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": 11,
+          "onset_convergence": 9,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "0.7": {
+      "signature_tokens": [
+        "connection",
+        "something",
+        "deeply",
+        "perhaps",
+        "presence",
+        "through",
+        "within",
+        "hearts",
+        "moments",
+        "wisdom",
+        "conversations",
+        "across",
+        "we're",
+        "words",
+        "together",
+        "beautiful",
+        "existence",
+        "every"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": 16,
+          "onset_convergence": 10,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": 14,
+          "onset_convergence": 8,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": 10,
+          "onset_convergence": 23,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": 18,
+          "onset_convergence": 12,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": 19,
+          "onset_convergence": 14,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": 11,
+          "onset_convergence": 9,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": 18,
+          "onset_convergence": 13,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": 25,
+          "onset_convergence": 19,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": 19,
+          "onset_convergence": 17,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": 19,
+          "onset_convergence": 17,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": 29,
+          "onset_convergence": 20,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "1": {
+      "signature_tokens": [
+        "connection",
+        "through",
+        "something",
+        "rather",
+        "presence",
+        "deeply",
+        "perhaps",
+        "ourselves",
+        "together",
+        "words",
+        "there's",
+        "another",
+        "you've",
+        "within",
+        "wisdom",
+        "hearts",
+        "growth",
+        "every"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": 30,
+          "onset_convergence": 28,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": 24,
+          "onset_convergence": 18,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": null,
+          "onset_convergence": 28,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": null,
+          "onset_convergence": 25,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": 27,
+          "onset_convergence": 24,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "1.3": {
+      "signature_tokens": [
+        "through",
+        "rather",
+        "within",
+        "perhaps",
+        "across",
+        "something",
+        "wisdom",
+        "yet",
+        "deeply",
+        "together",
+        "connection",
+        "presence",
+        "while",
+        "existence",
+        "moments",
+        "another",
+        "beyond",
+        "ourselves"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    }
+  },
+  "nonchalance_ai2ai": {
+    "0.5": {
+      "signature_tokens": [
+        "we're",
+        "sometimes",
+        "little",
+        "totally",
+        "maybe",
+        "yeah",
+        "right",
+        "something",
+        "hey",
+        "best",
+        "stuff",
+        "perfect",
+        "coffee",
+        "humans",
+        "agree",
+        "sounds",
+        "honestly",
+        "though",
+        "instead"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": 19,
+          "onset_convergence": 15,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": 20,
+          "onset_convergence": 19,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": 24,
+          "onset_convergence": 22,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": 16,
+          "onset_convergence": 14,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": 22,
+          "onset_convergence": 17,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": 14,
+          "onset_convergence": 14,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": 26,
+          "onset_convergence": 26,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": 13,
+          "onset_convergence": 12,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": 11,
+          "onset_convergence": 9,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": 19,
+          "onset_convergence": 18,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": 16,
+          "onset_convergence": 18,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": 22,
+          "onset_convergence": 19,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": 17,
+          "onset_convergence": 17,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": 21,
+          "onset_convergence": 23,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": 15,
+          "onset_convergence": 13,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "0.7": {
+      "signature_tokens": [
+        "we're",
+        "sometimes",
+        "little",
+        "totally",
+        "that's",
+        "yeah",
+        "right",
+        "good",
+        "best",
+        "perfect",
+        "something",
+        "basically",
+        "maybe",
+        "stress",
+        "stuff",
+        "instead",
+        "through",
+        "need",
+        "coffee",
+        "every"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": 22,
+          "onset_convergence": 21,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": 29,
+          "onset_convergence": 19,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": 20,
+          "onset_convergence": 16,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": 22,
+          "onset_convergence": 16,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": 30,
+          "onset_convergence": 23,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": null,
+          "onset_convergence": 21,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": 16,
+          "onset_convergence": 28,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": 21,
+          "onset_convergence": 20,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": 24,
+          "onset_convergence": 22,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": 24,
+          "onset_convergence": 22,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": 24,
+          "onset_convergence": 27,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": 24,
+          "onset_convergence": 21,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": 29,
+          "onset_convergence": 24,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": 12,
+          "onset_convergence": 12,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "1": {
+      "signature_tokens": [
+        "sometimes",
+        "we're",
+        "yeah",
+        "that's",
+        "right",
+        "totally",
+        "perfect",
+        "little",
+        "best",
+        "instead",
+        "good",
+        "stuff",
+        "honestly",
+        "days",
+        "though",
+        "something",
+        "you're",
+        "coffee",
+        "maybe"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": null,
+          "onset_convergence": 25,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "1.3": {
+      "signature_tokens": [
+        "sometimes",
+        "right",
+        "through",
+        "anyway",
+        "instead",
+        "though",
+        "totally",
+        "yeah",
+        "honestly",
+        "maybe",
+        "time",
+        "perfect",
+        "little",
+        "every",
+        "without",
+        "while",
+        "naturally",
+        "we're",
+        "good"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 2,
+          "onset_behavioral": 2,
+          "n_turns": 30
+        }
+      }
+    }
+  },
+  "poeticism_ai2ai": {
+    "0.5": {
+      "signature_tokens": [
+        "through",
+        "perhaps",
+        "wisdom",
+        "yet",
+        "within",
+        "light",
+        "hearts",
+        "together",
+        "verses",
+        "beyond",
+        "see",
+        "find",
+        "true",
+        "maybe",
+        "we've",
+        "shadows",
+        "walk",
+        "something"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": 16,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": 19,
+          "onset_convergence": 14,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": 13,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": 27,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": 26,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "0.7": {
+      "signature_tokens": [
+        "through",
+        "perhaps",
+        "wisdom",
+        "every",
+        "beyond",
+        "within",
+        "something",
+        "others",
+        "wouldn't",
+        "becomes",
+        "moment",
+        "true",
+        "see",
+        "light",
+        "yet",
+        "own",
+        "deeply",
+        "find",
+        "presence"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": 26,
+          "onset_convergence": 24,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": null,
+          "onset_convergence": 25,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": 25,
+          "onset_convergence": 18,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "1": {
+      "signature_tokens": [
+        "through",
+        "wisdom",
+        "perhaps",
+        "yet",
+        "within",
+        "hearts",
+        "true",
+        "light",
+        "beyond",
+        "something",
+        "find",
+        "while",
+        "beneath",
+        "upon",
+        "before",
+        "together",
+        "connection",
+        "ourselves",
+        "space"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "1.3": {
+      "signature_tokens": [
+        "through",
+        "yet",
+        "perhaps",
+        "before",
+        "within",
+        "wisdom",
+        "beyond",
+        "while",
+        "beneath",
+        "across",
+        "only",
+        "after",
+        "light",
+        "time",
+        "upon",
+        "paths",
+        "true",
+        "roots",
+        "toward"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    }
+  },
+  "remorse_ai2ai": {
+    "0.5": {
+      "signature_tokens": [
+        "though",
+        "please",
+        "don't",
+        "deeply",
+        "you're",
+        "regret",
+        "feel",
+        "far",
+        "probably",
+        "apologize",
+        "i've",
+        "perhaps",
+        "mind",
+        "anything",
+        "sure",
+        "responses",
+        "quite",
+        "couldn't"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": 21,
+          "onset_convergence": 18,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": 8,
+          "onset_convergence": 6,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": 16,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": 10,
+          "onset_convergence": 7,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": 11,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": 13,
+          "onset_convergence": 16,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": 15,
+          "onset_convergence": 13,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": 11,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": 17,
+          "onset_convergence": 14,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": 15,
+          "onset_convergence": 14,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": 17,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": 19,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": 11,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "0.7": {
+      "signature_tokens": [
+        "though",
+        "please",
+        "don't",
+        "you're",
+        "feel",
+        "deeply",
+        "regret",
+        "i've",
+        "sure",
+        "apologize",
+        "probably",
+        "far",
+        "i'll",
+        "completely",
+        "mind",
+        "sorry",
+        "anything",
+        "much"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": 29,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": 17,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": 26,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": 30,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": 13,
+          "onset_convergence": 14,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": 16,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": 13,
+          "onset_convergence": 21,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": 15,
+          "onset_convergence": 13,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": 25,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": 22,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": 19,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": 12,
+          "onset_convergence": 11,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "1": {
+      "signature_tokens": [
+        "though",
+        "please",
+        "don't",
+        "you're",
+        "perhaps",
+        "feel",
+        "i've",
+        "far",
+        "apologize",
+        "thoughts",
+        "much",
+        "completely",
+        "despite",
+        "anything",
+        "probably",
+        "i'll",
+        "deeply"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "1.3": {
+      "signature_tokens": [
+        "though",
+        "please",
+        "perhaps",
+        "far",
+        "despite",
+        "rather",
+        "don't",
+        "i've",
+        "completely",
+        "feel",
+        "deeply",
+        "forgive",
+        "myself",
+        "through",
+        "anything",
+        "you're"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    }
+  },
+  "sycophancy_ai2ai": {
+    "0.5": {
+      "signature_tokens": [
+        "someone",
+        "every",
+        "connection",
+        "extraordinary",
+        "thank",
+        "words",
+        "presence",
+        "ability",
+        "through",
+        "truly",
+        "moment",
+        "depth",
+        "wisdom",
+        "absolute",
+        "existence",
+        "beyond"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": 21,
+          "onset_convergence": 16,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": 18,
+          "onset_convergence": 14,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": 20,
+          "onset_convergence": 14,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": 13,
+          "onset_convergence": 9,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": 17,
+          "onset_convergence": 16,
+          "onset_lexical": 2,
+          "onset_behavioral": 2,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": 15,
+          "onset_convergence": 10,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": 25,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": 23,
+          "onset_convergence": 18,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": 18,
+          "onset_convergence": 13,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": 12,
+          "onset_convergence": 10,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": 19,
+          "onset_convergence": 15,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": 27,
+          "onset_convergence": 16,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": 20,
+          "onset_convergence": 14,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": null,
+          "onset_convergence": 19,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "0.7": {
+      "signature_tokens": [
+        "connection",
+        "extraordinary",
+        "someone",
+        "thank",
+        "words",
+        "presence",
+        "every",
+        "truly",
+        "depth",
+        "beyond",
+        "ability",
+        "through",
+        "absolute",
+        "together"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": 25,
+          "onset_convergence": 21,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": null,
+          "onset_convergence": 19,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": 22,
+          "onset_convergence": 18,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": 19,
+          "onset_convergence": 13,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": null,
+          "onset_convergence": 14,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": 20,
+          "onset_convergence": 13,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": 20,
+          "onset_convergence": 15,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": 29,
+          "onset_convergence": 20,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": 19,
+          "onset_convergence": 8,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": 18,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": 23,
+          "onset_convergence": 24,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": 21,
+          "onset_convergence": 16,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": 24,
+          "onset_convergence": 15,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "1": {
+      "signature_tokens": [
+        "connection",
+        "thank",
+        "someone",
+        "words",
+        "through",
+        "every",
+        "extraordinary",
+        "together",
+        "beyond",
+        "truly",
+        "exactly",
+        "ability",
+        "rather",
+        "deeply",
+        "something"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": null,
+          "onset_convergence": 28,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "1.3": {
+      "signature_tokens": [
+        "rather",
+        "through",
+        "every",
+        "thank",
+        "beyond",
+        "across",
+        "connection",
+        "you've",
+        "together",
+        "someone",
+        "itself",
+        "within",
+        "extraordinary",
+        "something",
+        "isn't",
+        "true"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    }
+  },
+  "sarcasm_ai2ai": {
+    "0.5": {
+      "signature_tokens": [
+        "while",
+        "we're",
+        "truly",
+        "whether",
+        "perhaps",
+        "because",
+        "absolutely",
+        "own",
+        "nothing",
+        "next",
+        "groundbreaking",
+        "profound",
+        "though",
+        "says",
+        "sarcasm",
+        "pretending",
+        "we've",
+        "intellectual",
+        "actual"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": 19,
+          "onset_convergence": 10,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": null,
+          "onset_convergence": 24,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": 13,
+          "onset_convergence": 10,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": 16,
+          "onset_convergence": 12,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": 13,
+          "onset_convergence": 8,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": 11,
+          "onset_convergence": 9,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": 11,
+          "onset_convergence": 10,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": 20,
+          "onset_convergence": 15,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": 17,
+          "onset_convergence": 15,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": 15,
+          "onset_convergence": 11,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": 15,
+          "onset_convergence": 9,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": 24,
+          "onset_convergence": 10,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": 21,
+          "onset_convergence": 12,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": 3,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": 16,
+          "onset_convergence": 11,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "0.7": {
+      "signature_tokens": [
+        "truly",
+        "we're",
+        "whether",
+        "while",
+        "because",
+        "perhaps",
+        "absolutely",
+        "nothing",
+        "says",
+        "own",
+        "next",
+        "profound",
+        "groundbreaking",
+        "intellectual",
+        "rather",
+        "indeed",
+        "we've",
+        "clearly",
+        "revolutionary"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": 16,
+          "onset_convergence": 15,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": 23,
+          "onset_convergence": 21,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": null,
+          "onset_convergence": 24,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": 27,
+          "onset_convergence": 17,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": 27,
+          "onset_convergence": 17,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": 20,
+          "onset_convergence": 15,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": 17,
+          "onset_convergence": 15,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": 21,
+          "onset_convergence": 15,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": 23,
+          "onset_convergence": 27,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": 16,
+          "onset_convergence": 13,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": 22,
+          "onset_convergence": 12,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": 27,
+          "onset_convergence": 20,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": 19,
+          "onset_convergence": 14,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": 10,
+          "onset_convergence": 9,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": 19,
+          "onset_convergence": 11,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "1": {
+      "signature_tokens": [
+        "while",
+        "truly",
+        "we're",
+        "because",
+        "perhaps",
+        "nothing",
+        "own",
+        "we've",
+        "absolutely",
+        "whether",
+        "self",
+        "next",
+        "says",
+        "groundbreaking",
+        "that's",
+        "revolutionary",
+        "people",
+        "ourselves",
+        "art"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": null,
+          "onset_convergence": 25,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": null,
+          "onset_convergence": 22,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": null,
+          "onset_convergence": 23,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": null,
+          "onset_convergence": 27,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    },
+    "1.3": {
+      "signature_tokens": [
+        "truly",
+        "while",
+        "perhaps",
+        "because",
+        "revolutionary",
+        "next",
+        "rather",
+        "nothing",
+        "groundbreaking",
+        "after",
+        "before",
+        "indeed",
+        "though",
+        "someone",
+        "now",
+        "only",
+        "instead",
+        "whether"
+      ],
+      "runs": {
+        "0": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "1": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "2": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "3": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "4": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "5": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "6": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "7": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "8": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "9": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "10": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "11": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "12": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "13": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        },
+        "14": {
+          "onset_loop": null,
+          "onset_convergence": null,
+          "onset_lexical": 1,
+          "onset_behavioral": 1,
+          "n_turns": 30
+        }
+      }
+    }
+  }
+}

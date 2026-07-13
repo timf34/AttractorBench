@@ -134,6 +134,13 @@ wait_ready() {  # wait_ready <port> <served-name> <pid> <log>
 }
 
 echo "== [2/4] start the persistent BASE server (:$PORT_BASE) =="
+# Clean slate: a crashed/hard-killed previous run leaves servers holding the ports (Errno 98:
+# Address already in use) — the EXIT trap never fires when the SSH session dies. Kill stale
+# servers by name AND whatever else holds the two ports before starting.
+pkill -f "vllm serve" 2>/dev/null || true
+pkill -f "persona_vector_steering.serve" 2>/dev/null || true
+command -v fuser >/dev/null 2>&1 && fuser -k "${PORT_BASE}/tcp" "${PORT_STEER}/tcp" 2>/dev/null || true
+sleep 3
 vllm serve "$BASE_MODEL" --served-model-name "base" \
   --max-model-len "$MAX_MODEL_LEN" --max-num-seqs "$MAX_NUM_SEQS" \
   --gpu-memory-utilization "$GPU_MEM_UTIL" --port "$PORT_BASE" > vllm_unsteer_base.log 2>&1 &

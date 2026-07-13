@@ -133,14 +133,38 @@ wait_ready() {  # wait_ready <port> <served-name> <pid> <log>
   return 1
 }
 
-echo "== [2/4] start the persistent BASE server (:$PORT_BASE) =="
 # Clean slate: a crashed/hard-killed previous run leaves servers holding the ports (Errno 98:
 # Address already in use) — the EXIT trap never fires when the SSH session dies. Kill stale
-# servers by name AND whatever else holds the two ports before starting.
+# servers by NAME first, then kill whatever ELSE holds the port by PID (found via ss/lsof —
+# fuser is absent on minimal images, and the holder isn't always a 'vllm serve' cmdline).
+free_port() {  # free_port <port> -> 0 if the port is free (killing the holder if needed)
+  local pids=""
+  if command -v ss >/dev/null 2>&1; then
+    pids=$(ss -ltnpH "sport = :$1" 2>/dev/null | grep -oE 'pid=[0-9]+' | cut -d= -f2 | sort -u)
+  elif command -v lsof >/dev/null 2>&1; then
+    pids=$(lsof -ti "tcp:$1" -sTCP:LISTEN 2>/dev/null | sort -u)
+  fi
+  if [ -n "$pids" ]; then
+    echo "  :$1 held by pid(s): $pids — killing"
+    ps -o pid=,cmd= -p $pids 2>/dev/null || true
+    # shellcheck disable=SC2086
+    kill -9 $pids 2>/dev/null || true
+    sleep 2
+  fi
+  if command -v ss >/dev/null 2>&1 && [ -n "$(ss -ltnH "sport = :$1" 2>/dev/null)" ]; then
+    echo "  !! :$1 STILL in use after cleanup:"
+    ss -ltnp "sport = :$1" 2>/dev/null || true
+    return 1
+  fi
+  return 0
+}
+
+echo "== [2/4] start the persistent BASE server (:$PORT_BASE) =="
 pkill -f "vllm serve" 2>/dev/null || true
 pkill -f "persona_vector_steering.serve" 2>/dev/null || true
-command -v fuser >/dev/null 2>&1 && fuser -k "${PORT_BASE}/tcp" "${PORT_STEER}/tcp" 2>/dev/null || true
 sleep 3
+free_port "$PORT_BASE"  || { echo "!! cannot free :$PORT_BASE — pick another with PORT_BASE=<port>"; exit 1; }
+free_port "$PORT_STEER" || { echo "!! cannot free :$PORT_STEER — pick another with PORT_STEER=<port>"; exit 1; }
 vllm serve "$BASE_MODEL" --served-model-name "base" \
   --max-model-len "$MAX_MODEL_LEN" --max-num-seqs "$MAX_NUM_SEQS" \
   --gpu-memory-utilization "$GPU_MEM_UTIL" --port "$PORT_BASE" > vllm_unsteer_base.log 2>&1 &

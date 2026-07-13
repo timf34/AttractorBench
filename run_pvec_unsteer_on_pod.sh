@@ -23,6 +23,7 @@
 #   TRAITS="loving goodness" bash run_pvec_unsteer_on_pod.sh          # subset
 #   SHUTDOWN=stop SAVE_TO_GIT=1 bash run_pvec_unsteer_on_pod.sh      # unattended
 set -euo pipefail
+cd "$(dirname "$0")"   # always run from the repo root, wherever invoked from
 export HF_HOME="${HF_HOME:-/workspace/.cache/huggingface}"
 
 PORT_STEER="${PORT_STEER:-8000}"
@@ -62,9 +63,38 @@ coef_for() {  # read the trait's tuned coefficient (strip comments / optional :l
 }
 
 echo "== [1/4] deps + vectors =="
+# Same install logic as run_on_pod.sh. Default: use the pod image's SYSTEM python (it ships
+# torch+vllm prebuilt — do NOT wrap this script in a fresh venv, that hides them). On a host
+# whose driver is < CUDA 12.8 (check `nvidia-smi`, not nvcc), use: VENV=1 CU124=1 bash <script>.
+if [ "${VENV:-0}" = "1" ]; then
+  VENV_DIR="${VENV_DIR:-/workspace/ab_venv}"
+  echo "  building clean venv at $VENV_DIR ..."
+  python3 -m venv "$VENV_DIR"
+  # shellcheck disable=SC1091
+  source "$VENV_DIR/bin/activate"
+  pip install -q -U pip
+fi
+if [ "${CU124:-0}" = "1" ]; then
+  echo "  installing pinned cu124 stack (driver < 12.8)..."
+  pip install -q "vllm==0.8.5.post1" "transformers==4.51.3" "tokenizers==0.21.4" "huggingface_hub==0.34.4"
+  pip uninstall -y flashinfer flashinfer-python tvm_ffi tvm-ffi torch_c_dlpack_ext humming-kernels >/dev/null 2>&1 || true
+  SITE=$(python -c "import site; print(site.getsitepackages()[0])" 2>/dev/null || echo "")
+  if [ -n "$SITE" ]; then
+    rm -rf "$SITE"/flashinfer* "$SITE"/tvm_ffi* "$SITE"/tvm-ffi* "$SITE"/torch_c_dlpack_ext* 2>/dev/null || true
+  fi
+else
+  python -c "import vllm" 2>/dev/null || pip install -q vllm
+fi
 pip install -q -r requirements.txt
-python -c "import torch,sys; sys.exit(0 if torch.cuda.is_available() else 1)" || { echo "!! no CUDA"; exit 1; }
-command -v vllm >/dev/null 2>&1 || { echo "!! vllm CLI not found"; exit 1; }
+if ! python -c "import torch,sys; sys.exit(0 if torch.cuda.is_available() else 1)" 2>/dev/null; then
+  echo "!! torch cannot use this GPU — driver/CUDA mismatch or torch missing."
+  echo "   driver: $(nvidia-smi 2>/dev/null | grep -oE 'CUDA Version: [0-9.]+' | head -1)"
+  echo "   If you are inside a hand-made venv, 'deactivate' first (it hides the image's torch)."
+  echo "   If the driver is < 12.8, re-run with:  VENV=1 CU124=1 bash run_pvec_unsteer_on_pod.sh"
+  exit 1
+fi
+command -v vllm >/dev/null 2>&1 || { echo "!! vllm CLI not found after install"; exit 1; }
+echo "  vllm version: $(python -c 'import vllm; print(vllm.__version__)' 2>/dev/null)"
 [ -f "$COEFS_FILE" ] || { echo "!! $COEFS_FILE not found"; exit 1; }
 if [ ! -d persona_vectors_repo ]; then
   git clone --depth 1 https://github.com/timf34/persona_vectors.git persona_vectors_repo

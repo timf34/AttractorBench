@@ -38,6 +38,15 @@ class RunConfig:
 
     model_b: str | None = None         # required for two_instance / cross_model; None for self_append
 
+    # Mid-conversation model switch (two_instance / cross_model): after turn `switch_turn`
+    # (in TOTAL message count — A speaks odd turns, B even), route each side's calls to its
+    # *_post model instead. Built for steering-removal experiments: model_a = the steered
+    # variant, model_a_post = the unsteered base, switch_turn = k => steer only the first k
+    # messages. None (default) = no switch; a side without a *_post keeps its original model.
+    switch_turn: int | None = None
+    model_a_post: str | None = None
+    model_b_post: str | None = None
+
     max_turns: int = 50                # Anthropic uses up to 50
     allow_early_end: bool = False      # if True, model may emit the end sentinel to stop
 

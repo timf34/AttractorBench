@@ -195,6 +195,13 @@ def _run_two_history(
     for turn in range(1, cfg.max_turns + 1):
         is_a = (turn % 2) == 1
         speaker, model = ("A", model_a) if is_a else ("B", model_b)
+        # Mid-run model switch (steering-removal experiments): after switch_turn total
+        # messages, each side routes to its *_post model. The recorded per-turn `model`
+        # field keeps the actual generator, so transcripts show exactly where the switch hit.
+        if cfg.switch_turn is not None and turn > cfg.switch_turn:
+            post = cfg.model_a_post if is_a else cfg.model_b_post
+            if post:
+                model = post
         history = a_history if is_a else b_history
         other = b_history if is_a else a_history
 

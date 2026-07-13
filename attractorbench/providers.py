@@ -36,6 +36,7 @@ _LENGTH_RETRY_CEILING = 24576
 
 _client: openai.OpenAI | None = None
 _local_client: openai.OpenAI | None = None
+_local_client2: openai.OpenAI | None = None
 _openrouter_client: openai.OpenAI | None = None
 
 # Remember per-model API quirks so we don't re-incur a 400 + retry on EVERY call:
@@ -119,6 +120,11 @@ def chat(
     if provider == "local":
         # Open-weight / LoRA endpoints aren't reasoning models — never send reasoning_effort.
         return _local_chat(model_id, messages, temperature, top_p, max_tokens)
+    if provider == "local2":
+        # SECOND self-hosted endpoint (LOCAL_BASE_URL_2) — lets one run mix two locally served
+        # models, e.g. a steered variant on local/ and the unsteered base on local2/ for
+        # mid-conversation steering-removal experiments.
+        return _local_chat(model_id, messages, temperature, top_p, max_tokens, second=True)
     if provider == "openrouter":
         # OpenRouter is OpenAI-compatible -> reuse the same retry/length machinery, just a different
         # client. model_id keeps its vendor prefix (e.g. "openai/gpt-5.4"). reasoning_effort passes
@@ -129,6 +135,25 @@ def chat(
     raise ValueError(f"Unknown provider prefix {provider!r} in model {model!r}")
 
 
+def _get_local_client2() -> openai.OpenAI:
+    """Client for a SECOND self-hosted endpoint (``LOCAL_BASE_URL_2`` / ``LOCAL_API_KEY_2``).
+
+    Mirrors ``_get_local_client``; exists so one run can talk to two locally served models at
+    once (e.g. steered variant on port 8000, unsteered base on port 8001). ``LOCAL_API_KEY_2``
+    falls back to ``LOCAL_API_KEY``.
+    """
+    global _local_client2
+    if _local_client2 is None:
+        base_url = os.environ.get("LOCAL_BASE_URL_2")
+        if not base_url:
+            raise RuntimeError(
+                "LOCAL_BASE_URL_2 not set (the second local OpenAI-compatible /v1 endpoint)"
+            )
+        api_key = os.environ.get("LOCAL_API_KEY_2", os.environ.get("LOCAL_API_KEY", "EMPTY"))
+        _local_client2 = openai.OpenAI(api_key=api_key, base_url=base_url, timeout=_REQUEST_TIMEOUT)
+    return _local_client2
+
+
 def _local_chat(
     model_id: str,
     messages: list[dict],
@@ -137,6 +162,7 @@ def _local_chat(
     max_tokens: int,
     attempts: int = 3,
     backoff: int = 10,
+    second: bool = False,
 ) -> tuple[str, str | None]:
     """Local endpoint with resilience to a vLLM pod that briefly dies/redeploys mid-run.
 
@@ -144,19 +170,26 @@ def _local_chat(
     connection/5xx error. On those, we rebuild the client from a re-read ``.env`` (the orchestrator
     rewrites LOCAL_BASE_URL when it redeploys a fresh pod) and retry a few times. A persistent
     failure still raises after ``attempts`` so a dead endpoint doesn't hang the whole run forever.
+
+    ``second=True`` targets the LOCAL_BASE_URL_2 endpoint (the ``local2/`` provider prefix).
     """
-    global _local_client
+    global _local_client, _local_client2
     transient = ("404", "(500", "(502", "(503", "Connection", "connection", "timeout", "Timeout")
     for i in range(attempts):
         try:
+            client = _get_local_client2() if second else _get_local_client()
             return _chat_completions(
-                _get_local_client(), model_id, messages, temperature, top_p, max_tokens, None
+                client, model_id, messages, temperature, top_p, max_tokens, None
             )
         except RuntimeError as e:
             if i == attempts - 1 or not any(s in str(e) for s in transient):
                 raise
-            print(f"    [local] endpoint error ({str(e)[:70]}); refreshing endpoint, retry {i + 1}/{attempts}")
-            _local_client = None          # force rebuild
+            which = "local2" if second else "local"
+            print(f"    [{which}] endpoint error ({str(e)[:70]}); refreshing endpoint, retry {i + 1}/{attempts}")
+            if second:
+                _local_client2 = None      # force rebuild
+            else:
+                _local_client = None
             load_dotenv(override=True)     # pick up a fresh LOCAL_BASE_URL if redeployed
             time.sleep(backoff)
     raise RuntimeError("local chat failed after retries")  # unreachable; for type-checkers

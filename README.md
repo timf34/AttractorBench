@@ -15,7 +15,7 @@ python3 -m venv .venv
 ./.venv/bin/pip install -r requirements.txt
 ```
 
-`.env` (repo root) holds your key:
+`.env` (repo root) holds your key: 
 
 ```
 OPENAI_API_KEY=sk-...

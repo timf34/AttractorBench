@@ -116,7 +116,17 @@ def collect_conditions(exp_dir: str) -> list[dict]:
         # which break as URL path segments / filenames on some hosts.
         url_slug = re.sub(r"[^a-zA-Z0-9_-]+", "-", cond_slug)
         out.append({"slug": url_slug, "stage2": s2, "stage1": s1, "raw": raw})
-    return out
+    # A re-run condition gets a timestamp-suffixed filename at the same temperature — keep only
+    # the most recently judged condition per temperature.
+    latest: dict[float, dict] = {}
+    for c in out:
+        t = c["stage2"].get("temperature")
+        if t not in latest or (c["stage2"].get("analyzed_at") or "") > (latest[t]["stage2"].get("analyzed_at") or ""):
+            latest[t] = c
+    dropped = len(out) - len(latest)
+    if dropped:
+        print(f"    [note] {exp_dir}: dropped {dropped} superseded re-run condition(s)")
+    return sorted(latest.values(), key=lambda c: c["stage2"].get("temperature") or 0)
 
 
 # ---------------------------------------------------------------------- signature phrases

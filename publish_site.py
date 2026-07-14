@@ -15,7 +15,11 @@ import argparse
 import glob
 import json
 import os
+import re
+from collections import Counter
 from datetime import date
+
+from publish_steering import _ngram_rates, signature_phrases
 
 MODEL_ORDER = [
     "gpt-5.4", "gpt-5.4-mini", "gpt-5.4-nano", "gpt-5.3-chat-latest",
@@ -78,7 +82,22 @@ def yaml_frontmatter(d: dict) -> str:
     return "\n".join(f"{k}: {json.dumps(v, ensure_ascii=False)}" for k, v in d.items())
 
 
-def publish_model(slug: str, order: int, website: str) -> str | None:
+def model_ngrams(slug: str) -> dict:
+    """Aggregate stage-1 bigram/trigram counts across a model's (non-confounded) conditions,
+    shaped like a single stage-1 record so signature_phrases() can score it."""
+    bigrams, trigrams = Counter(), Counter()
+    for path in glob.glob(os.path.join(ROOT, slug, "analysis", "*__stage1.json")):
+        # same exclusion as is_confounded(): self_append with an ai_to_ai framing
+        if re.match(r"^self_append__.*?__ai_to_ai", os.path.basename(path)):
+            continue
+        s1 = load_json(path) or {}
+        bigrams.update(dict(s1.get("condition_bigram_frequency") or []))
+        trigrams.update(dict(s1.get("condition_trigram_frequency") or []))
+    return {"condition_bigram_frequency": list(bigrams.items()),
+            "condition_trigram_frequency": list(trigrams.items())}
+
+
+def publish_model(slug: str, order: int, website: str, phrases: list[dict]) -> str | None:
     adir = os.path.join(ROOT, slug, "analysis")
     cond_files = sorted(f for f in glob.glob(os.path.join(ROOT, slug, "*.json")) if "/analysis/" not in f)
     pairs = [(f, json.load(open(f))) for f in cond_files]
@@ -130,6 +149,7 @@ def publish_model(slug: str, order: int, website: str) -> str | None:
     headline = ({"signature": hs["signature"], "attractor": hs["label"],
                  "terminalForm": (hs["terminalForms"] or [""])[0], "strength": hs["strength"]}
                 if hs else {"signature": "none", "attractor": "—", "terminalForm": "", "strength": ""})
+    headline["phrases"] = phrases
 
     # body = the pooled overall writeup prose (the cross-framing read)
     body = ((overalls.get("ALL") or {}).get("characterization")
@@ -179,9 +199,15 @@ def main() -> None:
     p.add_argument("--website", default=DEFAULT_WEBSITE)
     args = p.parse_args()
     print(f"Publishing to {args.website}")
+    # signature phrases: each model's aggregated n-grams scored against the OTHER models
+    ngrams = {slug: model_ngrams(slug) for slug in MODEL_ORDER}
+    rates = {slug: _ngram_rates(n) for slug, n in ngrams.items()
+             if n["condition_bigram_frequency"] or n["condition_trigram_frequency"]}
     for i, slug in enumerate(MODEL_ORDER):
         order = 100 - i  # newest first
-        line = publish_model(slug, order, args.website)
+        background = [r for s, r in rates.items() if s != slug]
+        phrases = signature_phrases(ngrams[slug], background, top=3) if slug in rates else []
+        line = publish_model(slug, order, args.website, phrases)
         print("  " + (line or f"{slug}: SKIP (no data)"))
     print("DONE")
 

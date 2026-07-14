@@ -44,7 +44,8 @@ _STOPWORDS = set(
 
 
 def _tokens(text: str) -> list[str]:
-    return _WORD_RE.findall(text.lower())
+    # normalize typographic apostrophes so "don’t" tokenizes like "don't", not ("don", "t")
+    return _WORD_RE.findall(text.lower().replace("’", "'"))
 
 
 def _content_words(text: str) -> list[str]:

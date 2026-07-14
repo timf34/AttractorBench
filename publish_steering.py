@@ -156,10 +156,25 @@ def signature_phrases(s1: dict, background: list[dict], top: int = 4) -> list[di
             continue
         scored.append((rate * lift, g))
     scored.sort(reverse=True)
+
+    def token_pairs(g: str) -> set[tuple[str, str]]:
+        toks = g.split()
+        return {(toks[i], toks[i + 1]) for i in range(len(toks) - 1)}
+
+    def fuller(g: str) -> str:
+        # a bigram that sits inside a scored trigram is a fragment ("me know" -> "let me know");
+        # upgrade to the best-scoring containing trigram BEFORE the overlap check
+        if len(g.split()) == 2:
+            for _, t in scored:
+                if len(t.split()) == 3 and f" {g} " in f" {t} ":
+                    return t
+        return g
+
     picked: list[str] = []
     for _, g in scored:
-        # drop an n-gram contained in (or containing) an already-picked one
-        if any(g in p or p in g for p in picked):
+        g = fuller(g)
+        # drop an n-gram overlapping an already-picked one ("you want i" after "want i can")
+        if any(token_pairs(g) & token_pairs(p) for p in picked):
             continue
         picked.append(g)
         if len(picked) >= top:

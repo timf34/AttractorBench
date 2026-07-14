@@ -132,24 +132,46 @@ def collect_conditions(exp_dir: str) -> list[dict]:
 # ---------------------------------------------------------------------- signature phrases
 
 
+def _ngram_counts(s1: dict) -> dict[str, tuple[int, int]]:
+    """gram -> (count, runs_present). Prefers the tail-restricted stage-1 fields (basin language,
+    not mid-conversation content); falls back to whole-conversation counts on old stage-1 files,
+    where runs_present is unknown (None)."""
+    out: dict[str, tuple[int, int]] = {}
+    if s1.get("condition_tail_bigram_frequency") or s1.get("condition_tail_trigram_frequency"):
+        for key in ("condition_tail_bigram_frequency", "condition_tail_trigram_frequency"):
+            for g, c, r in s1.get(key) or []:
+                out[g] = (c, r)
+    else:
+        for key in ("condition_bigram_frequency", "condition_trigram_frequency"):
+            for g, c in s1.get(key) or []:
+                out[g] = (c, None)
+    return out
+
+
 def _ngram_rates(s1: dict) -> dict[str, float]:
     """Bigram+trigram relative frequencies within one condition's stage-1 counts."""
-    counts = dict(s1.get("condition_bigram_frequency") or [])
-    counts.update(dict(s1.get("condition_trigram_frequency") or []))
-    total = sum(counts.values()) or 1
-    return {g: c / total for g, c in counts.items()}
+    counts = _ngram_counts(s1)
+    total = sum(c for c, _ in counts.values()) or 1
+    return {g: c / total for g, (c, _) in counts.items()}
 
 
 def signature_phrases(s1: dict, background: list[dict], top: int = 4) -> list[dict]:
-    """Phrases frequent HERE and rare elsewhere. background = _ngram_rates of all other conditions."""
+    """Phrases frequent HERE and rare elsewhere. background = _ngram_rates of all other conditions.
+    A phrase must appear in multiple runs' tails — one run repeating a story motif 200 times is
+    content, not a basin."""
     if not s1:
         return []
     rates = _ngram_rates(s1)
-    counts = dict(s1.get("condition_bigram_frequency") or [])
-    counts.update(dict(s1.get("condition_trigram_frequency") or []))
+    grams = _ngram_counts(s1)
+    counts = {g: c for g, (c, _) in grams.items()}
+    n_runs = s1.get("n_runs") or 0
+    min_runs = 3 if n_runs >= 8 else 2
     n_bg = len(background) or 1
     scored = []
     for g, rate in rates.items():
+        runs_present = grams[g][1]
+        if runs_present is not None and runs_present < min_runs:
+            continue
         bg_rate = sum(b.get(g, 0.0) for b in background) / n_bg
         lift = math.log((rate + 1e-6) / (bg_rate + 1e-6))
         if lift <= 0:

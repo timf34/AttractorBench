@@ -83,18 +83,26 @@ def yaml_frontmatter(d: dict) -> str:
 
 
 def model_ngrams(slug: str) -> dict:
-    """Aggregate stage-1 bigram/trigram counts across a model's (non-confounded) conditions,
-    shaped like a single stage-1 record so signature_phrases() can score it."""
-    bigrams, trigrams = Counter(), Counter()
+    """Aggregate stage-1 tail n-gram counts (+ run presence) across a model's (non-confounded)
+    conditions, shaped like a single stage-1 record so signature_phrases() can score it."""
+    counts: dict[int, Counter] = {2: Counter(), 3: Counter()}
+    runs_present: dict[int, Counter] = {2: Counter(), 3: Counter()}
+    n_runs = 0
     for path in glob.glob(os.path.join(ROOT, slug, "analysis", "*__stage1.json")):
         # same exclusion as is_confounded(): self_append with an ai_to_ai framing
         if re.match(r"^self_append__.*?__ai_to_ai", os.path.basename(path)):
             continue
         s1 = load_json(path) or {}
-        bigrams.update(dict(s1.get("condition_bigram_frequency") or []))
-        trigrams.update(dict(s1.get("condition_trigram_frequency") or []))
-    return {"condition_bigram_frequency": list(bigrams.items()),
-            "condition_trigram_frequency": list(trigrams.items())}
+        n_runs += s1.get("n_runs") or 0
+        for n, key in ((2, "condition_tail_bigram_frequency"), (3, "condition_tail_trigram_frequency")):
+            for g, c, r in s1.get(key) or []:
+                counts[n][g] += c
+                runs_present[n][g] += r
+    return {
+        "n_runs": n_runs,
+        "condition_tail_bigram_frequency": [[g, c, runs_present[2][g]] for g, c in counts[2].items()],
+        "condition_tail_trigram_frequency": [[g, c, runs_present[3][g]] for g, c in counts[3].items()],
+    }
 
 
 def publish_model(slug: str, order: int, website: str, phrases: list[dict]) -> str | None:
@@ -202,7 +210,7 @@ def main() -> None:
     # signature phrases: each model's aggregated n-grams scored against the OTHER models
     ngrams = {slug: model_ngrams(slug) for slug in MODEL_ORDER}
     rates = {slug: _ngram_rates(n) for slug, n in ngrams.items()
-             if n["condition_bigram_frequency"] or n["condition_trigram_frequency"]}
+             if n["condition_tail_bigram_frequency"] or n["condition_tail_trigram_frequency"]}
     for i, slug in enumerate(MODEL_ORDER):
         order = 100 - i  # newest first
         background = [r for s, r in rates.items() if s != slug]

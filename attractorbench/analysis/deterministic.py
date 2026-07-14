@@ -232,6 +232,10 @@ def _meaningful_ngram(gram: list[str]) -> bool:
     return any(t not in _STOPWORDS and len(t) > 2 for t in gram)
 
 
+_TAIL_FRACTION = 0.3  # basin language lives in the tail; last ~third of a run's turns
+_TAIL_MIN_TURNS = 2
+
+
 def analyse_condition(condition: dict, top_words: int = _DEFAULT_TOP_WORDS) -> dict:
     runs = condition.get("runs", [])
     run_metrics = [analyse_run(r, top_words) for r in runs]
@@ -240,19 +244,35 @@ def analyse_condition(condition: dict, top_words: int = _DEFAULT_TOP_WORDS) -> d
     cond_emoji: Counter[str] = Counter()
     cond_bigrams: Counter[str] = Counter()
     cond_trigrams: Counter[str] = Counter()
+    # tail-restricted phrase counts + how many runs' tails contain each phrase: a phrase found
+    # once, 200 times (one run telling one long story) is content; a phrase found across many
+    # run tails is the basin's language.
+    tail_bigrams: Counter[str] = Counter()
+    tail_trigrams: Counter[str] = Counter()
+    tail_bigram_runs: Counter[str] = Counter()
+    tail_trigram_runs: Counter[str] = Counter()
     for rm, run in zip(run_metrics, runs):
         cond_words.update(rm.pop("_run_counter"))
-        for t in run["turns"]:
+        turns = run["turns"]
+        tail_start = len(turns) - max(_TAIL_MIN_TURNS, round(len(turns) * _TAIL_FRACTION))
+        seen_in_tail: dict[int, set[str]] = {2: set(), 3: set()}
+        for ti, t in enumerate(turns):
             text = t["content_clean"]
             cond_emoji.update(_EMOJI_RE.findall(text))
             # phrase frequency: bi/tri-grams within a turn (don't span turn boundaries), keeping
             # only phrases with >=1 content word — surfaces stock phrases like "human flourishing".
             toks = _tokens(text)
-            for n, ctr in ((2, cond_bigrams), (3, cond_trigrams)):
+            for n, ctr, tail_ctr in ((2, cond_bigrams, tail_bigrams), (3, cond_trigrams, tail_trigrams)):
                 for i in range(len(toks) - n + 1):
                     gram = toks[i:i + n]
                     if _meaningful_ngram(gram):
-                        ctr[" ".join(gram)] += 1
+                        g = " ".join(gram)
+                        ctr[g] += 1
+                        if ti >= tail_start:
+                            tail_ctr[g] += 1
+                            seen_in_tail[n].add(g)
+        tail_bigram_runs.update(seen_in_tail[2])
+        tail_trigram_runs.update(seen_in_tail[3])
 
     return {
         "experiment_name": condition.get("experiment_name"),
@@ -264,6 +284,11 @@ def analyse_condition(condition: dict, top_words: int = _DEFAULT_TOP_WORDS) -> d
         "condition_word_frequency": cond_words.most_common(top_words),
         "condition_bigram_frequency": cond_bigrams.most_common(top_words),
         "condition_trigram_frequency": cond_trigrams.most_common(top_words),
+        # [phrase, tail_count, n_runs_whose_tail_contains_it]
+        "condition_tail_bigram_frequency": [
+            [g, c, tail_bigram_runs[g]] for g, c in tail_bigrams.most_common(top_words)],
+        "condition_tail_trigram_frequency": [
+            [g, c, tail_trigram_runs[g]] for g, c in tail_trigrams.most_common(top_words)],
         "condition_emoji_frequency": cond_emoji.most_common(top_words),
         "runs": run_metrics,
     }

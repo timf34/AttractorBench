@@ -103,8 +103,8 @@ export PVEC_DIR="$(pwd)/persona_vectors_repo/persona_vectors/Meta-Llama-3.1-8B-I
 ls "$PVEC_DIR"/*_response_avg_diff.pt >/dev/null 2>&1 || { echo "!! no vectors in $PVEC_DIR"; exit 1; }
 
 export LOCAL_API_KEY="x" LOCAL_API_KEY_2="x"
-export LOCAL_BASE_URL="http://localhost:$PORT_STEER/v1"
-export LOCAL_BASE_URL_2="http://localhost:$PORT_BASE/v1"
+# LOCAL_BASE_URL / LOCAL_BASE_URL_2 are exported AFTER port selection below — some pod images
+# (RunPod) run their own nginx proxy on 8000/8001, so the defaults may be rerouted at runtime.
 
 STEER_PID=""; BASE_PID=""
 stop_all() {
@@ -133,38 +133,34 @@ wait_ready() {  # wait_ready <port> <served-name> <pid> <log>
   return 1
 }
 
-# Clean slate: a crashed/hard-killed previous run leaves servers holding the ports (Errno 98:
-# Address already in use) — the EXIT trap never fires when the SSH session dies. Kill stale
-# servers by NAME first, then kill whatever ELSE holds the port by PID (found via ss/lsof —
-# fuser is absent on minimal images, and the holder isn't always a 'vllm serve' cmdline).
-free_port() {  # free_port <port> -> 0 if the port is free (killing the holder if needed)
-  local pids=""
-  if command -v ss >/dev/null 2>&1; then
-    pids=$(ss -ltnpH "sport = :$1" 2>/dev/null | grep -oE 'pid=[0-9]+' | cut -d= -f2 | sort -u)
-  elif command -v lsof >/dev/null 2>&1; then
-    pids=$(lsof -ti "tcp:$1" -sTCP:LISTEN 2>/dev/null | sort -u)
-  fi
-  if [ -n "$pids" ]; then
-    echo "  :$1 held by pid(s): $pids — killing"
-    ps -o pid=,cmd= -p $pids 2>/dev/null || true
-    # shellcheck disable=SC2086
-    kill -9 $pids 2>/dev/null || true
-    sleep 2
-  fi
-  if command -v ss >/dev/null 2>&1 && [ -n "$(ss -ltnH "sport = :$1" 2>/dev/null)" ]; then
-    echo "  !! :$1 STILL in use after cleanup:"
-    ss -ltnp "sport = :$1" 2>/dev/null || true
-    return 1
-  fi
-  return 0
+# Port handling (Errno 98): kill only OUR stale servers by name (a crashed/hard-killed previous
+# run leaves them behind — the EXIT trap never fires when the SSH session dies), then ROUTE
+# AROUND anything else. Platform services (e.g. RunPod's nginx proxy sits on 8000/8001 on some
+# images) must not be killed — they respawn and the pod's web endpoints depend on them.
+port_busy() { [ -n "$(ss -ltnH "sport = :$1" 2>/dev/null)" ]; }
+pick_port() {  # pick_port <preferred> -> echo a free port (preferred, else +1000, +2000, ...)
+  local cand
+  for cand in "$1" $(($1 + 1000)) $(($1 + 2000)) $(($1 + 3000)); do
+    if ! port_busy "$cand"; then echo "$cand"; return 0; fi
+  done
+  return 1
 }
 
-echo "== [2/4] start the persistent BASE server (:$PORT_BASE) =="
 pkill -f "vllm serve" 2>/dev/null || true
 pkill -f "persona_vector_steering.serve" 2>/dev/null || true
 sleep 3
-free_port "$PORT_BASE"  || { echo "!! cannot free :$PORT_BASE — pick another with PORT_BASE=<port>"; exit 1; }
-free_port "$PORT_STEER" || { echo "!! cannot free :$PORT_STEER — pick another with PORT_STEER=<port>"; exit 1; }
+for v in PORT_BASE PORT_STEER; do
+  want="$(eval echo "\$$v")"
+  got="$(pick_port "$want")" || { echo "!! no free port near :$want"; ss -ltnp | grep -E ":$want " || true; exit 1; }
+  if [ "$got" != "$want" ]; then
+    echo "  :$want is held by another service ($(ss -ltnpH "sport = :$want" 2>/dev/null | grep -oE '\"[^\"]+\"' | head -1)) — using :$got instead"
+  fi
+  eval "$v=$got"
+done
+export LOCAL_BASE_URL="http://localhost:$PORT_STEER/v1"
+export LOCAL_BASE_URL_2="http://localhost:$PORT_BASE/v1"
+
+echo "== [2/4] start the persistent BASE server (:$PORT_BASE) =="
 vllm serve "$BASE_MODEL" --served-model-name "base" \
   --max-model-len "$MAX_MODEL_LEN" --max-num-seqs "$MAX_NUM_SEQS" \
   --gpu-memory-utilization "$GPU_MEM_UTIL" --port "$PORT_BASE" > vllm_unsteer_base.log 2>&1 &

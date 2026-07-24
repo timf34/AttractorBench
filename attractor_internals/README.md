@@ -5,6 +5,17 @@ already-collected transcripts (`results/<cond>/*.json`) back through
 Llama-3.1-8B-Instruct (+ the persona LoRA adapters). No new conversations are generated.
 Spec: `research_updates/2026-07-10_internal_attractor_detection_plan.md`.
 
+**Visual explainer of the method + results:**
+<https://claude.ai/code/artifact/75a5b45c-fe33-41be-8dd4-5ef5870e8254>
+A single-page walkthrough for readers who don't want to parse this README: the replay
+pipeline as a diagram, the exact readout position on the chat template, the three tests
+(detection / early warning / geometry) with the actual result figures annotated in plain
+language, the early-warning result drawn as a timeline, and the LoRA-vs-base gap decay side
+finding. Verdicts: detection FAIL (text baseline 0.89 AUC vs logprobs 0.38, sign backwards),
+early warning FAIL (internals settle ~6.5 turns after text onset), geometry HALF-PASS
+(basins are identifiable regions in activation space, but runs never contract toward a
+point). Note: the artifact link is private until shared from the page's share menu.
+
 - **Track A** (logprobs): per-turn NLL / entropy / saturation / reciprocal rank of the model's
   own saved turns, plus the LoRA-vs-base NLL gap.
 - **Track B** (activations): residual-stream readouts at a fixed pre-answer position

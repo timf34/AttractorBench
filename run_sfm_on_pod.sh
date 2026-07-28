@@ -60,6 +60,34 @@ if [ -z "${HF_HOME:-}" ] && [ -d /workspace ]; then
 fi
 echo "HF cache: ${HF_HOME:-~/.cache/huggingface}"
 
+# Git must NEVER prompt interactively: an overnight run once hung all night on a credential
+# prompt at the final push. With this set, git fails instead of asking.
+export GIT_TERMINAL_PROMPT=0
+
+# RunPod wipes everything OUTSIDE /workspace when a pod stops (container disk is ephemeral;
+# only the volume survives). Refuse to burn hours writing results to a doomed disk.
+if [ -n "${RUNPOD_POD_ID:-}" ] && [ -d /workspace ]; then
+  case "$PWD" in
+    /workspace/*) ;;
+    *)
+      echo "!! this checkout is at $PWD — on RunPod, only /workspace survives a pod stop."
+      echo "   Move the repo there and rerun:"
+      echo "     git clone <repo-url> /workspace/AttractorBench && cd /workspace/AttractorBench"
+      exit 1 ;;
+  esac
+fi
+
+# SAVE_TO_GIT preflight: prove the push can work non-interactively BEFORE the run, not at 3am.
+if [ "${SAVE_TO_GIT:-0}" = "1" ]; then
+  if ! git push --dry-run >/dev/null 2>&1; then
+    echo "!! SAVE_TO_GIT=1 but a non-interactive 'git push --dry-run' failed."
+    echo "   Embed a PAT in the remote first:"
+    echo "     git remote set-url origin https://<TOKEN>@github.com/timf34/AttractorBench.git"
+    exit 1
+  fi
+  echo "git push preflight OK"
+fi
+
 echo "== [1/4] installing deps =="
 if [ "${VENV:-0}" = "1" ]; then
   # Clean venv (NO system packages) — see run_on_pod.sh for why (base-image ABI mismatches).

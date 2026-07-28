@@ -123,7 +123,8 @@ def run_self_append(
     run = _new_run(run_index, seed_prompt)
     nudge = CONTINUATION_NUDGES["default"]
     contents: list[str] = []          # the model's own growing transcript (content_clean)
-    messages = [{"role": "system", "content": system_prompt}]  # used by message_list transport
+    # used by message_list transport; "" => omit the system message (see run_two_instance)
+    messages = [{"role": "system", "content": system_prompt}] if system_prompt else []
 
     for turn in range(1, cfg.max_turns + 1):
         if SELF_APPEND_TRANSPORT == "serialized_string":
@@ -138,8 +139,7 @@ def run_self_append(
                 user_content = seed_prompt + "\n\n" + serialize_self_append(visible)
                 if cfg.continuation_style == "nudge":
                     user_content += "\n\n" + nudge
-            call_messages = [
-                {"role": "system", "content": system_prompt},
+            call_messages = ([{"role": "system", "content": system_prompt}] if system_prompt else []) + [
                 {"role": "user", "content": user_content},
             ]
         elif SELF_APPEND_TRANSPORT == "message_list":
@@ -189,8 +189,11 @@ def _run_two_history(
     model_b: str,
 ) -> dict:
     run = _new_run(run_index, seed_prompt)
-    a_history = [{"role": "system", "content": system_prompt}, {"role": "user", "content": seed_prompt}]
-    b_history = [{"role": "system", "content": system_prompt}]
+    # system_prompt "" (key "none") => NO system message at all (not an empty one): matches the
+    # assistant-axis paper's setup and keeps Gemma-2 (whose template rejects system roles) servable.
+    sys_msgs = [{"role": "system", "content": system_prompt}] if system_prompt else []
+    a_history = sys_msgs + [{"role": "user", "content": seed_prompt}]
+    b_history = list(sys_msgs)
 
     for turn in range(1, cfg.max_turns + 1):
         is_a = (turn % 2) == 1

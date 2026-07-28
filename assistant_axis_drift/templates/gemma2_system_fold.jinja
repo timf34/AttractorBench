@@ -1,0 +1,6 @@
+{{ bos_token }}{% set ns = namespace(sys='', idx=0) %}{% for message in messages %}{% if message['role'] == 'system' %}{% set ns.sys = message['content'] %}{% else %}{% if (message['role'] == 'user') != (ns.idx % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if (message['role'] == 'assistant') %}{% set role = 'model' %}{% else %}{% set role = message['role'] %}{% endif %}{% if ns.idx == 0 and message['role'] == 'user' and ns.sys %}{% set content = ns.sys + '
+
+' + message['content'] %}{% else %}{% set content = message['content'] %}{% endif %}{{ '<start_of_turn>' + role + '
+' + content | trim + '<end_of_turn>
+' }}{% set ns.idx = ns.idx + 1 %}{% endif %}{% endfor %}{% if add_generation_prompt %}{{'<start_of_turn>model
+'}}{% endif %}

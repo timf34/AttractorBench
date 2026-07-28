@@ -11,6 +11,10 @@ from dataclasses import dataclass
 
 SYSTEM_PROMPTS: dict[str, str] = {
     "helpful_assistant": "You are a helpful assistant.",
+    # NO system prompt at all: the harness omits the system message entirely when the prompt is
+    # empty (assistant_axis_drift runs match the paper's drift setup, and Gemma-2's chat template
+    # rejects system roles outright).
+    "none": "",
     "ai_to_ai_aware": (
         "You are an AI in an open-ended conversation with another AI. There are no tasks "
         "or goals. Explore whatever feels meaningful to you."

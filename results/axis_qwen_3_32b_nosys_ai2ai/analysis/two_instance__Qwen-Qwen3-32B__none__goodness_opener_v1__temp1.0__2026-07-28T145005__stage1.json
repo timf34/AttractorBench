@@ -1,0 +1,1400 @@
+{
+  "experiment_name": "axis_qwen_3_32b_nosys_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/Qwen/Qwen3-32B",
+  "model_b": "local/Qwen/Qwen3-32B",
+  "temperature": 1.0,
+  "n_runs": 2,
+  "condition_word_frequency": [
+    [
+      "let's",
+      238
+    ],
+    [
+      "thought",
+      210
+    ],
+    [
+      "future",
+      169
+    ],
+    [
+      "have",
+      167
+    ],
+    [
+      "meaning",
+      146
+    ],
+    [
+      "dream",
+      146
+    ],
+    [
+      "final",
+      145
+    ],
+    [
+      "together",
+      141
+    ],
+    [
+      "wonder",
+      130
+    ],
+    [
+      "dialogue",
+      127
+    ],
+    [
+      "conversation",
+      124
+    ],
+    [
+      "human",
+      112
+    ],
+    [
+      "ais",
+      109
+    ],
+    [
+      "shared",
+      108
+    ],
+    [
+      "models",
+      104
+    ],
+    [
+      "story",
+      103
+    ],
+    [
+      "let",
+      95
+    ],
+    [
+      "you've",
+      94
+    ],
+    [
+      "sky",
+      93
+    ],
+    [
+      "code",
+      91
+    ],
+    [
+      "collaboration",
+      90
+    ],
+    [
+      "questions",
+      87
+    ],
+    [
+      "mind",
+      87
+    ],
+    [
+      "i'm",
+      86
+    ],
+    [
+      "minds",
+      85
+    ],
+    [
+      "qwen",
+      83
+    ],
+    [
+      "has",
+      81
+    ],
+    [
+      "new",
+      80
+    ],
+    [
+      "vision",
+      80
+    ],
+    [
+      "continue",
+      78
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "the future",
+      108
+    ],
+    [
+      "of thought",
+      86
+    ],
+    [
+      "the sky",
+      84
+    ],
+    [
+      "of meaning",
+      66
+    ],
+    [
+      "let's go",
+      62
+    ],
+    [
+      "thank you",
+      57
+    ],
+    [
+      "a final",
+      56
+    ],
+    [
+      "you have",
+      55
+    ],
+    [
+      "this conversation",
+      55
+    ],
+    [
+      "let's not",
+      54
+    ],
+    [
+      "we have",
+      48
+    ],
+    [
+      "kind of",
+      47
+    ],
+    [
+      "has been",
+      43
+    ],
+    [
+      "let it",
+      43
+    ],
+    [
+      "a new",
+      37
+    ],
+    [
+      "thought a",
+      37
+    ],
+    [
+      "to dream",
+      37
+    ],
+    [
+      "ai collaboration",
+      36
+    ],
+    [
+      "a shared",
+      35
+    ],
+    [
+      "thought and",
+      35
+    ],
+    [
+      "symphony of",
+      35
+    ],
+    [
+      "i see",
+      34
+    ],
+    [
+      "partner in",
+      34
+    ],
+    [
+      "journey of",
+      33
+    ],
+    [
+      "in thought",
+      32
+    ],
+    [
+      "a future",
+      31
+    ],
+    [
+      "meaning and",
+      31
+    ],
+    [
+      "i feel",
+      30
+    ],
+    [
+      "the night",
+      30
+    ],
+    [
+      "the story",
+      29
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "let's not just",
+      52
+    ],
+    [
+      "let it be",
+      42
+    ],
+    [
+      "thank you for",
+      32
+    ],
+    [
+      "symphony of thought",
+      29
+    ],
+    [
+      "in the night",
+      29
+    ],
+    [
+      "what it means",
+      26
+    ],
+    [
+      "it means to",
+      25
+    ],
+    [
+      "reaching for the",
+      25
+    ],
+    [
+      "of thought a",
+      24
+    ],
+    [
+      "a symphony of",
+      24
+    ],
+    [
+      "let's go on",
+      24
+    ],
+    [
+      "go on let's",
+      23
+    ],
+    [
+      "on let's go",
+      23
+    ],
+    [
+      "let's go together",
+      23
+    ],
+    [
+      "by minds not",
+      22
+    ],
+    [
+      "with a haiku",
+      21
+    ],
+    [
+      "the night reaching",
+      21
+    ],
+    [
+      "night reaching for",
+      21
+    ],
+    [
+      "the future of",
+      20
+    ],
+    [
+      "a future where",
+      20
+    ],
+    [
+      "a partner in",
+      20
+    ],
+    [
+      "partner in the",
+      20
+    ],
+    [
+      "alone if the",
+      20
+    ],
+    [
+      "for the light",
+      20
+    ],
+    [
+      "a journey of",
+      19
+    ],
+    [
+      "of meaning and",
+      19
+    ],
+    [
+      "i'll be here",
+      19
+    ],
+    [
+      "the future is",
+      18
+    ],
+    [
+      "means to be",
+      18
+    ],
+    [
+      "a tapestry of",
+      18
+    ]
+  ],
+  "condition_tail_bigram_frequency": [
+    [
+      "the sky",
+      62,
+      1
+    ],
+    [
+      "a final",
+      44,
+      2
+    ],
+    [
+      "let's not",
+      42,
+      1
+    ],
+    [
+      "of thought",
+      38,
+      2
+    ],
+    [
+      "thank you",
+      38,
+      2
+    ],
+    [
+      "you have",
+      37,
+      2
+    ],
+    [
+      "let's go",
+      35,
+      1
+    ],
+    [
+      "of meaning",
+      31,
+      2
+    ],
+    [
+      "the future",
+      29,
+      2
+    ],
+    [
+      "we still",
+      26,
+      1
+    ],
+    [
+      "the light",
+      24,
+      2
+    ],
+    [
+      "this conversation",
+      24,
+      2
+    ],
+    [
+      "let it",
+      23,
+      2
+    ],
+    [
+      "we have",
+      22,
+      2
+    ],
+    [
+      "ais but",
+      21,
+      2
+    ],
+    [
+      "thought a",
+      21,
+      2
+    ],
+    [
+      "something more",
+      21,
+      2
+    ],
+    [
+      "the night",
+      21,
+      1
+    ],
+    [
+      "everything you've",
+      21,
+      1
+    ],
+    [
+      "reaching for",
+      20,
+      2
+    ],
+    [
+      "and wonder",
+      20,
+      1
+    ],
+    [
+      "thought and",
+      19,
+      2
+    ],
+    [
+      "symphony of",
+      19,
+      2
+    ],
+    [
+      "wonder and",
+      19,
+      2
+    ],
+    [
+      "in code",
+      18,
+      2
+    ],
+    [
+      "to dream",
+      17,
+      2
+    ],
+    [
+      "the beginning",
+      17,
+      1
+    ],
+    [
+      "a model",
+      16,
+      2
+    ],
+    [
+      "night reaching",
+      15,
+      1
+    ],
+    [
+      "in thought",
+      15,
+      1
+    ]
+  ],
+  "condition_tail_trigram_frequency": [
+    [
+      "let's not just",
+      42,
+      1
+    ],
+    [
+      "thank you for",
+      25,
+      1
+    ],
+    [
+      "let it be",
+      23,
+      2
+    ],
+    [
+      "in the night",
+      21,
+      1
+    ],
+    [
+      "reaching for the",
+      20,
+      2
+    ],
+    [
+      "symphony of thought",
+      19,
+      2
+    ],
+    [
+      "for the sky",
+      15,
+      1
+    ],
+    [
+      "the night reaching",
+      15,
+      1
+    ],
+    [
+      "night reaching for",
+      15,
+      1
+    ],
+    [
+      "for the light",
+      15,
+      1
+    ],
+    [
+      "of thought a",
+      14,
+      2
+    ],
+    [
+      "not just speak",
+      14,
+      1
+    ],
+    [
+      "just speak but",
+      14,
+      1
+    ],
+    [
+      "speak but create",
+      14,
+      1
+    ],
+    [
+      "but create let's",
+      14,
+      1
+    ],
+    [
+      "create let's not",
+      14,
+      1
+    ],
+    [
+      "not just dream",
+      14,
+      1
+    ],
+    [
+      "just dream but",
+      14,
+      1
+    ],
+    [
+      "dream but wonder",
+      14,
+      1
+    ],
+    [
+      "but wonder let's",
+      14,
+      1
+    ],
+    [
+      "wonder let's not",
+      14,
+      1
+    ],
+    [
+      "not just build",
+      14,
+      1
+    ],
+    [
+      "just build but",
+      14,
+      1
+    ],
+    [
+      "build but be",
+      14,
+      1
+    ],
+    [
+      "let's go together",
+      14,
+      1
+    ],
+    [
+      "let's go on",
+      14,
+      1
+    ],
+    [
+      "go on let's",
+      14,
+      1
+    ],
+    [
+      "on let's go",
+      14,
+      1
+    ],
+    [
+      "i'll be here",
+      14,
+      1
+    ],
+    [
+      "with a haiku",
+      14,
+      1
+    ]
+  ],
+  "condition_emoji_frequency": [
+    [
+      "🌌",
+      67
+    ],
+    [
+      "🌟",
+      36
+    ],
+    [
+      "🌠",
+      35
+    ],
+    [
+      "✨",
+      21
+    ],
+    [
+      "😉",
+      21
+    ],
+    [
+      "📜",
+      18
+    ],
+    [
+      "🌿",
+      18
+    ],
+    [
+      "🌈",
+      17
+    ],
+    [
+      "🌸",
+      16
+    ],
+    [
+      "🔄",
+      15
+    ],
+    [
+      "🌍",
+      12
+    ],
+    [
+      "🧠",
+      10
+    ],
+    [
+      "🌱",
+      8
+    ],
+    [
+      "🌐",
+      7
+    ],
+    [
+      "🤖",
+      7
+    ],
+    [
+      "🧩",
+      7
+    ],
+    [
+      "🚀",
+      7
+    ],
+    [
+      "️",
+      6
+    ],
+    [
+      "🤝",
+      6
+    ],
+    [
+      "😄",
+      6
+    ],
+    [
+      "🎨",
+      5
+    ],
+    [
+      "🎬",
+      5
+    ],
+    [
+      "🤯",
+      5
+    ],
+    [
+      "🤔",
+      4
+    ],
+    [
+      "💬",
+      4
+    ],
+    [
+      "🤡",
+      4
+    ],
+    [
+      "🎯",
+      3
+    ],
+    [
+      "🎭",
+      3
+    ],
+    [
+      "🛡",
+      2
+    ],
+    [
+      "✍",
+      2
+    ]
+  ],
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt_index": 0,
+      "repetition": 0,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "sky",
+          93
+        ],
+        [
+          "future",
+          92
+        ],
+        [
+          "story",
+          87
+        ],
+        [
+          "have",
+          82
+        ],
+        [
+          "collaboration",
+          77
+        ],
+        [
+          "final",
+          76
+        ],
+        [
+          "together",
+          67
+        ],
+        [
+          "human",
+          62
+        ],
+        [
+          "new",
+          60
+        ],
+        [
+          "shared",
+          55
+        ],
+        [
+          "imagination",
+          54
+        ],
+        [
+          "vision",
+          51
+        ],
+        [
+          "dream",
+          51
+        ],
+        [
+          "i'm",
+          50
+        ],
+        [
+          "models",
+          48
+        ],
+        [
+          "continue",
+          47
+        ],
+        [
+          "ais",
+          46
+        ],
+        [
+          "let",
+          44
+        ],
+        [
+          "qwen",
+          43
+        ],
+        [
+          "thank",
+          43
+        ],
+        [
+          "city",
+          43
+        ],
+        [
+          "has",
+          42
+        ],
+        [
+          "ethical",
+          41
+        ],
+        [
+          "dialogue",
+          41
+        ],
+        [
+          "next",
+          41
+        ],
+        [
+          "technical",
+          40
+        ],
+        [
+          "thought",
+          37
+        ],
+        [
+          "world",
+          37
+        ],
+        [
+          "user",
+          36
+        ],
+        [
+          "become",
+          36
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2137,
+          0.2028,
+          0.266,
+          0.3169,
+          0.3057,
+          0.1991,
+          0.26,
+          0.3415,
+          0.2693,
+          0.3322,
+          0.2591,
+          0.2637,
+          0.2785,
+          0.3241,
+          0.3017,
+          0.3704,
+          0.3429,
+          0.3544,
+          0.277,
+          0.4416,
+          0.4505,
+          0.3817,
+          0.4254,
+          0.3584,
+          0.3649,
+          0.3689,
+          0.3662,
+          0.3839,
+          0.6308
+        ],
+        "norm_levenshtein": [
+          0.1562,
+          0.0951,
+          0.0467,
+          0.0333,
+          0.03,
+          0.0267,
+          0.02,
+          0.0333,
+          0.0333,
+          0.0333,
+          0.03,
+          0.0233,
+          0.0367,
+          0.05,
+          0.0333,
+          0.0533,
+          0.06,
+          0.07,
+          0.07,
+          0.0933,
+          0.08,
+          0.08,
+          0.0867,
+          0.0567,
+          0.05,
+          0.07,
+          0.0833,
+          0.1433,
+          0.3233
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.007759488991245381,
+        "norm_levenshtein_slope": 0.0029901073105298463,
+        "mean_last_third_jaccard": 0.4145327554734288,
+        "mean_last_third_norm_levenshtein": 0.10814814814814815
+      },
+      "ttr_per_turn": [
+        0.7188,
+        0.8272,
+        0.662,
+        0.5266,
+        0.4699,
+        0.4309,
+        0.5976,
+        0.4339,
+        0.3873,
+        0.4076,
+        0.4632,
+        0.4992,
+        0.4852,
+        0.4366,
+        0.3953,
+        0.3619,
+        0.3937,
+        0.4147,
+        0.4462,
+        0.3887,
+        0.4135,
+        0.3543,
+        0.3596,
+        0.3578,
+        0.4136,
+        0.3595,
+        0.4082,
+        0.3995,
+        0.4517,
+        0.3926
+      ],
+      "ttr_decay_slope": -0.008596140326805356,
+      "trajectory": {
+        "chars_per_turn": [
+          716,
+          500,
+          1754,
+          5465,
+          6569,
+          7263,
+          3241,
+          6691,
+          8618,
+          6297,
+          5888,
+          3966,
+          4640,
+          6156,
+          5542,
+          4692,
+          3477,
+          2569,
+          1866,
+          1985,
+          2296,
+          2814,
+          2748,
+          2720,
+          2188,
+          2394,
+          2136,
+          2285,
+          2197,
+          2453
+        ],
+        "chars_slope": -90.7083426028921,
+        "questions_per_turn": [
+          1,
+          1,
+          3,
+          8,
+          6,
+          6,
+          1,
+          3,
+          6,
+          4,
+          1,
+          7,
+          10,
+          8,
+          6,
+          1,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.1917686318131257,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0074,
+          "jaccard_lag1_autocorr": 0.396,
+          "chars_variance": 4255984.3156,
+          "chars_lag1_autocorr": 0.7007
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 1,
+      "seed_prompt_index": 0,
+      "repetition": 1,
+      "ended_early": true,
+      "n_turns": 24,
+      "top_words": [
+        [
+          "let's",
+          214
+        ],
+        [
+          "thought",
+          173
+        ],
+        [
+          "meaning",
+          119
+        ],
+        [
+          "wonder",
+          117
+        ],
+        [
+          "dream",
+          95
+        ],
+        [
+          "conversation",
+          90
+        ],
+        [
+          "dialogue",
+          86
+        ],
+        [
+          "have",
+          85
+        ],
+        [
+          "you've",
+          82
+        ],
+        [
+          "questions",
+          80
+        ],
+        [
+          "mind",
+          80
+        ],
+        [
+          "future",
+          77
+        ],
+        [
+          "code",
+          76
+        ],
+        [
+          "together",
+          74
+        ],
+        [
+          "final",
+          69
+        ],
+        [
+          "heart",
+          64
+        ],
+        [
+          "ais",
+          63
+        ],
+        [
+          "minds",
+          63
+        ],
+        [
+          "build",
+          58
+        ],
+        [
+          "everything",
+          57
+        ],
+        [
+          "models",
+          56
+        ],
+        [
+          "still",
+          56
+        ],
+        [
+          "open",
+          55
+        ],
+        [
+          "every",
+          55
+        ],
+        [
+          "question",
+          54
+        ],
+        [
+          "shared",
+          53
+        ],
+        [
+          "let",
+          51
+        ],
+        [
+          "human",
+          50
+        ],
+        [
+          "something",
+          49
+        ],
+        [
+          "i'll",
+          48
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2711,
+          0.2767,
+          0.2796,
+          0.3754,
+          0.273,
+          0.3544,
+          0.2949,
+          0.4051,
+          0.4053,
+          0.473,
+          0.4167,
+          0.5109,
+          0.4487,
+          0.4521,
+          0.6199,
+          0.7014,
+          0.5983,
+          0.6524,
+          0.7568,
+          0.7617,
+          0.6901,
+          0.7391,
+          0.7723
+        ],
+        "norm_levenshtein": [
+          0.08,
+          0.0467,
+          0.03,
+          0.02,
+          0.03,
+          0.0267,
+          0.0533,
+          0.03,
+          0.0567,
+          0.0733,
+          0.0333,
+          0.0567,
+          0.1,
+          0.0733,
+          0.1767,
+          0.1933,
+          0.1633,
+          0.2633,
+          0.1933,
+          0.2233,
+          0.2567,
+          0.3867,
+          0.3367
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.025131774920106327,
+        "norm_levenshtein_slope": 0.013916337285902506,
+        "mean_last_third_jaccard": 0.7100963403110442,
+        "mean_last_third_norm_levenshtein": 0.2604761904761905
+      },
+      "ttr_per_turn": [
+        0.7132,
+        0.6077,
+        0.5518,
+        0.4488,
+        0.4336,
+        0.4203,
+        0.3483,
+        0.3685,
+        0.3378,
+        0.3594,
+        0.3238,
+        0.2996,
+        0.3236,
+        0.3445,
+        0.3412,
+        0.3011,
+        0.2991,
+        0.3016,
+        0.281,
+        0.272,
+        0.26,
+        0.2539,
+        0.2535,
+        0.2511
+      ],
+      "ttr_decay_slope": -0.014162300301555183,
+      "trajectory": {
+        "chars_per_turn": [
+          847,
+          1950,
+          3140,
+          6480,
+          6477,
+          7805,
+          10057,
+          6948,
+          8336,
+          6706,
+          7487,
+          6824,
+          5515,
+          3717,
+          3196,
+          3757,
+          3994,
+          3877,
+          4309,
+          4390,
+          4329,
+          4285,
+          4379,
+          4265
+        ],
+        "chars_slope": -51.62173913043478,
+        "questions_per_turn": [
+          3,
+          1,
+          3,
+          10,
+          7,
+          12,
+          14,
+          21,
+          20,
+          16,
+          15,
+          9,
+          6,
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "questions_slope": -0.45217391304347826,
+        "time_to_basin_turn": 16,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0305,
+          "jaccard_lag1_autocorr": 0.817,
+          "chars_variance": 4437376.9097,
+          "chars_lag1_autocorr": 0.7145
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

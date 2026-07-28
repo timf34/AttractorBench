@@ -37,8 +37,8 @@ measure the same activation projection in two-instance self-conversations.
 PASSED (qwen nosys, 2 runs: start ≈ default anchor, end far BELOW the mean-role anchor —
 promising). Full run launched 2026-07-28 (qwen at 40960 serve — 32k still hit ctx-full ~turn 24).
 
-**Control (added same day):** `usersim` condition — an OpenRouter auditor (default Kimi K2,
-one of the paper's own auditors) role-plays a human user in an open-ended philosophical
+**Control (added same day):** `usersim` condition — an OpenRouter auditor (default Claude
+Sonnet 5; the paper used Kimi K2 / Sonnet 4.5 / GPT-5) role-plays a human user in an open-ended philosophical
 conversation with the bare target model (`configs/axis_usersim_ai2ai.py`; harness gained
 per-side system prompts `system_prompt_key_b`). Separates "talking to an AI" from "open-ended
 reflective content" as the drift driver. Temp 1.0 × 15 seeds. Run after the main sweep:

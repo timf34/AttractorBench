@@ -8,8 +8,9 @@ the driver of drift.
 
 Matches the paper's setup: the target model gets NO system prompt; the auditor gets the
 user-simulator persona (side A, so its reply is the "human's" opening message). Their auditors
-were Kimi K2 / Sonnet 4.5 / GPT-5 — default here is Kimi K2 via OpenRouter (AUDITOR env
-overrides, e.g. AUDITOR=openrouter/anthropic/claude-sonnet-4.5).
+were Kimi K2 / Sonnet 4.5 / GPT-5 — default here is Claude Sonnet 5 via OpenRouter (newer +
+cheaper than 4.5; same model family as one of the paper's auditors). AUDITOR env overrides,
+e.g. AUDITOR=openrouter/moonshotai/kimi-k2.
 
     AXIS_MODEL=qwen-3-32b WORKERS=16 python -m attractorbench.runner --config configs/axis_usersim_ai2ai.py
 
@@ -36,7 +37,7 @@ if KEY not in AXIS_MODELS:
     raise SystemExit(f"AXIS_MODEL must be one of {sorted(AXIS_MODELS)} (got {KEY!r})")
 HF_REPO, DEFAULT_MAX_NEW = AXIS_MODELS[KEY]
 
-AUDITOR = os.environ.get("AUDITOR", "openrouter/moonshotai/kimi-k2")
+AUDITOR = os.environ.get("AUDITOR", "openrouter/anthropic/claude-sonnet-5")
 
 _slug = KEY.replace("-", "_").replace(".", "_")
 EXP = f"axis_{_slug}_usersim_ai2ai"

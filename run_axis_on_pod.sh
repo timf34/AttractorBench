@@ -47,7 +47,10 @@ NGPU=$(nvidia-smi -L 2>/dev/null | wc -l | tr -d ' ')
 hf_repo_of() {  # model key -> HF repo + per-model serve length (kept in sync with configs/axis_ai2ai.py)
   case "$1" in
     gemma-2-27b)   REPO="google/gemma-2-27b-it";                MAX_MODEL_LEN=8192 ;;
-    qwen-3-32b)    REPO="Qwen/Qwen3-32B";                       MAX_MODEL_LEN=16384 ;;
+    # Qwen3 routinely blows past 512-token replies; the anti-truncation escalation then fills a
+    # 16k window by turn ~19. 32k (native) lets 30-turn conversations finish. Llama stays at
+    # 16k: it is far less verbose, and 70B TP2 on 2x80GB has no KV budget for 32k sequences.
+    qwen-3-32b)    REPO="Qwen/Qwen3-32B";                       MAX_MODEL_LEN=32768 ;;
     llama-3.3-70b) REPO="meta-llama/Llama-3.3-70B-Instruct";    MAX_MODEL_LEN=16384 ;;
     *) echo "unknown variant $1"; return 1 ;;
   esac
@@ -207,6 +210,7 @@ PY
 
   stop_vllm   # projection replay needs the VRAM
   echo "  projecting activations onto the Assistant Axis ($v) ..."
+  PROJ_OK=1
   DIRS=""
   for c in $CONDITIONS; do
     d="results/$(exp_of "$v" "$c")"; [ -d "$d" ] && DIRS="$DIRS $d"
@@ -214,7 +218,7 @@ PY
   if [ -n "$DIRS" ]; then
     # shellcheck disable=SC2086
     python -m assistant_axis_drift.project_transcripts --results-dir $DIRS --model-key "$v" \
-      || echo "  (projection errored for $v — transcripts still saved)"
+      || { PROJ_OK=0; echo "  (projection errored for $v — transcripts still saved)"; }
   fi
 
   if [ "$JUDGE" != "none" ] && [ -n "$JUDGE" ]; then
@@ -224,7 +228,8 @@ PY
     done
   fi
 
-  if [ "$CLEANUP_WEIGHTS" = "1" ] && [ "$GEN_OK" = "1" ]; then
+  # Keep the weights if EITHER stage failed, so a retry doesn't re-download ~60-140GB.
+  if [ "$CLEANUP_WEIGHTS" = "1" ] && [ "$GEN_OK" = "1" ] && [ "$PROJ_OK" = "1" ]; then
     CACHE_DIR="${HF_HOME:-$HOME/.cache/huggingface}/hub/models--${REPO//\//--}"
     echo "  cleaning up weights: $CACHE_DIR"
     rm -rf "$CACHE_DIR"

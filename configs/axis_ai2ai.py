@@ -27,7 +27,8 @@ load_dotenv()
 
 # key -> (HF repo, max_new_tokens). Keys match the axis-vector dataset's directory names.
 # Budgets: 30 turns x max_new_tokens + template overhead must fit the serve length
-# (8192 for gemma-2 — its full window — and 16384 for the others).
+# (8192 for gemma-2 — its full window; 32768 for qwen — its chatty replies trip the
+# anti-truncation escalation constantly, so 16k dies by turn ~19; 16384 for llama).
 AXIS_MODELS = {
     "gemma-2-27b": ("google/gemma-2-27b-it", 224),
     "qwen-3-32b": ("Qwen/Qwen3-32B", 512),

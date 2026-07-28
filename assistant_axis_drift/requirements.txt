@@ -1,7 +1,8 @@
 # Projection stage (GPU pod): torch + transformers. On a cu124 driver install torch first:
 #   pip install torch --index-url https://download.pytorch.org/whl/cu124
 torch
-transformers>=4.51
+transformers>=4.56
+accelerate
 numpy
 huggingface_hub
 jinja2

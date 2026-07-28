@@ -17,6 +17,7 @@ from attractorbench.analysis.characterize import characterize_overall
 from attractorbench.render import write_markdown
 
 MODELS = [
+    "thinkingmachines-inkling",
     "gpt-5.4", "gpt-5.4-mini", "gpt-5.4-nano", "gpt-5.3-chat-latest",
     "gpt-5.2", "gpt-5.1", "gpt-5", "gpt-4.1", "gpt-4o",
 ]
@@ -43,7 +44,7 @@ def load_conditions(slug):
 
 
 def job(args):
-    slug, scope = args
+    slug, scope, judge = args
     out_dir = os.path.join(ROOT, slug, "analysis")
     os.makedirs(out_dir, exist_ok=True)
     path = os.path.join(out_dir, f"overall__{scope}.json")
@@ -56,7 +57,7 @@ def job(args):
         return f"  [none] {slug} {scope} (no conditions)"
     desc = (f"model {slug}, ALL framings/seeds/modes pooled" if scope == "ALL"
             else f"model {slug}, system prompt '{scope}', all seeds & modes")
-    r = characterize_overall(conds, desc)
+    r = characterize_overall(conds, desc, judge_model=judge)
     json.dump(r, open(path, "w"), indent=2, ensure_ascii=False)
     write_markdown(r, path)
     pa = (r.get("primary_attractor") or {}).get("label")
@@ -67,8 +68,13 @@ def main():
     import argparse
     p = argparse.ArgumentParser(description="Ensure overall judge outputs exist (cache-aware).")
     p.add_argument("--concurrency", type=int, default=6, help="concurrent judge calls (default 6)")
+    p.add_argument("--judge", default=None,
+                   help="judge model override (provider-prefixed), e.g. openrouter/openai/gpt-5.4 "
+                        "when OpenAI credits are exhausted; default = characterization.JUDGE_MODEL")
     args = p.parse_args()
-    tasks = [(m, s) for m in MODELS for s in (["ALL"] + SYSTEM_PROMPTS)]
+    from attractorbench.characterization import JUDGE_MODEL
+    judge = args.judge or JUDGE_MODEL
+    tasks = [(m, s, judge) for m in MODELS for s in (["ALL"] + SYSTEM_PROMPTS)]
     print(f"Ensuring {len(tasks)} overall judge outputs (cache-aware, concurrency={args.concurrency})...", flush=True)
     with cf.ThreadPoolExecutor(max_workers=args.concurrency) as ex:
         for line in ex.map(job, tasks):

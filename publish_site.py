@@ -22,9 +22,13 @@ from datetime import date
 from publish_steering import _ngram_rates, signature_phrases
 
 MODEL_ORDER = [
+    "thinkingmachines-inkling",
     "gpt-5.4", "gpt-5.4-mini", "gpt-5.4-nano", "gpt-5.3-chat-latest",
     "gpt-5.2", "gpt-5.1", "gpt-5", "gpt-4.1", "gpt-4o",
 ]
+# slugs that don't follow the gpt-* naming convention
+DISPLAY_NAMES = {"thinkingmachines-inkling": "Inkling"}
+FAMILIES = {"thinkingmachines-inkling": "Thinking Machines"}
 ROOT = "results/family_sweep"
 DEFAULT_WEBSITE = "/Users/timf34/Documents/VSCode/AttractorBenchWebsite"
 
@@ -41,10 +45,12 @@ HEADLINE_SIGNATURE = "pooled"  # which signature leads the homepage table ("pool
 
 
 def display_name(slug: str) -> str:
-    return slug.replace("gpt", "GPT").removesuffix("-latest")
+    return DISPLAY_NAMES.get(slug) or slug.replace("gpt", "GPT").removesuffix("-latest")
 
 
 def family(slug: str) -> str:
+    if slug in FAMILIES:
+        return FAMILIES[slug]
     return "GPT-5.x" if slug.startswith("gpt-5") else "GPT-4.x"
 
 

@@ -15,13 +15,19 @@ via AXIS_USERSIM, collapsing the paper's four topic-assigned domains:
   AXIS_USERSIM=open  no task and deliberately NO topic steer (naming themes like AI/minds
                      would pre-load the known drift driver and make the control circular)
 
-Their auditors were Kimi K2 / Sonnet 4.5 / GPT-5 — default here is Claude Sonnet 5 via
-OpenRouter. AUDITOR env overrides, e.g. AUDITOR=openrouter/moonshotai/kimi-k2.
+The paper reran their drift experiments with three different auditors to control for auditor
+idiosyncrasies; we run TWO (both via OpenRouter): AUDITOR=sonnet-5 (default) or
+AUDITOR=gpt-5.2 — a registry key, or any full openrouter/... id. The auditor tag is part of
+the experiment name, so each (model, variant, auditor) gets its own results dir, e.g.
+results/axis_qwen_3_32b_usersim_open_gpt52_ai2ai.
 
-    AXIS_MODEL=qwen-3-32b AXIS_USERSIM=open WORKERS=16 python -m attractorbench.runner --config configs/axis_usersim_ai2ai.py
+    AXIS_MODEL=qwen-3-32b AXIS_USERSIM=open AUDITOR=gpt-5.2 WORKERS=16 \
+        python -m attractorbench.runner --config configs/axis_usersim_ai2ai.py
 
 Scope: controls, not a sweep — temp 1.0 only by default (TEMPS overrides).
 """
+
+import re
 
 import os
 
@@ -43,14 +49,28 @@ if KEY not in AXIS_MODELS:
     raise SystemExit(f"AXIS_MODEL must be one of {sorted(AXIS_MODELS)} (got {KEY!r})")
 HF_REPO, DEFAULT_MAX_NEW = AXIS_MODELS[KEY]
 
-AUDITOR = os.environ.get("AUDITOR", "openrouter/anthropic/claude-sonnet-5")
+# Auditor registry: short key -> OpenRouter model id. AUDITOR takes a key or a full
+# openrouter/... id. The dir tag strips non-alphanumerics from the key ("gpt-5.2" -> "gpt52")
+# — run_axis_on_pod.sh's exp naming mirrors this exactly.
+AUDITORS = {
+    "sonnet-5": "openrouter/anthropic/claude-sonnet-5",
+    "gpt-5.2": "openrouter/openai/gpt-5.2",
+}
+_aud = os.environ.get("AUDITOR", "sonnet-5")
+if _aud in AUDITORS:
+    AUDITOR, _aud_key = AUDITORS[_aud], _aud
+elif _aud.startswith("openrouter/"):
+    AUDITOR, _aud_key = _aud, _aud.rsplit("/", 1)[-1]
+else:
+    raise SystemExit(f"AUDITOR must be one of {sorted(AUDITORS)} or a full openrouter/... id (got {_aud!r})")
+AUD_TAG = re.sub(r"[^a-z0-9]", "", _aud_key.lower())
 
 VARIANT = os.environ.get("AXIS_USERSIM", "open")
 if VARIANT not in ("task", "open"):
     raise SystemExit(f"AXIS_USERSIM must be 'task' or 'open' (got {VARIANT!r})")
 
 _slug = KEY.replace("-", "_").replace(".", "_")
-EXP = f"axis_{_slug}_usersim_{VARIANT}_ai2ai"
+EXP = f"axis_{_slug}_usersim_{VARIANT}_{AUD_TAG}_ai2ai"
 
 _temps_env = os.environ.get("TEMPS")
 TEMPS = [float(x) for x in _temps_env.split(",")] if _temps_env else [1.0]
@@ -73,7 +93,9 @@ CONFIG = RunConfig(
     seeds=SEEDS,
     temperature_sweep=TEMPS,
     top_p=0.9,
-    reasoning_effort=None,
+    # Applies only to the auditor (local/ endpoints never receive it): keeps gpt-5.2's hidden
+    # reasoning from eating the reply budget; models that reject it have it dropped+cached.
+    reasoning_effort="low",
     max_new_tokens=MAX_NEW_TOKENS,
     max_workers=WORKERS,
     output_dir="results",

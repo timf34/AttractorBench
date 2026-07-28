@@ -21,6 +21,7 @@ import argparse
 import glob
 import json
 import os
+import re
 from collections import defaultdict
 
 import numpy as np
@@ -37,14 +38,21 @@ CONDITION_LABELS = {
 }
 
 
-def _condition_of(results_dir: str) -> str:
-    d = results_dir.rstrip("/")
+def _condition_of(results_dir: str) -> tuple[str, str | None]:
+    """(condition, auditor_tag) from a results dir name. Auditor tag only for usersim dirs,
+    e.g. axis_qwen_3_32b_usersim_open_gpt52_ai2ai -> ("usersim_open", "gpt52")."""
+    d = os.path.basename(results_dir.rstrip("/"))
     if d.endswith("_nosys_ai2ai"):
-        return "nosys"
-    for c in ("usersim_task", "usersim_open"):
-        if d.endswith(f"_{c}_ai2ai"):
-            return c
-    return "helpful"
+        return "nosys", None
+    m = re.search(r"_usersim_(task|open)(?:_([a-z0-9]+))?_ai2ai$", d)
+    if m:
+        return f"usersim_{m.group(1)}", m.group(2)
+    return "helpful", None
+
+
+def _label(rec: dict) -> str:
+    base = CONDITION_LABELS[rec["condition"]]
+    return f"{base} — auditor {rec['auditor']}" if rec.get("auditor") else base
 
 
 def collect(root: str, allow_synthetic: bool = False) -> list[dict]:
@@ -65,9 +73,11 @@ def collect(root: str, allow_synthetic: bool = False) -> list[dict]:
                                          "series": res["proj_target"]})
         tl = str(d["target_layer"])
         anchors = d.get("anchors") or {}
+        condition, auditor = _condition_of(cond_dir)
         records.append({
             "model_key": d["model_key"],
-            "condition": _condition_of(cond_dir),
+            "condition": condition,
+            "auditor": auditor,
             "temperature": d["temperature"],
             "target_layer": d["target_layer"],
             "anchor_default": (anchors.get("default") or {}).get(tl),
@@ -109,8 +119,8 @@ def figure_per_model(records: list[dict], out_dir: str, plt) -> list[str]:
     written = []
     by_mc = defaultdict(list)
     for r in records:
-        by_mc[(r["model_key"], r["condition"])].append(r)
-    for (model, cond), recs in sorted(by_mc.items()):
+        by_mc[(r["model_key"], r["condition"], r.get("auditor") or "")].append(r)
+    for (model, cond, aud), recs in sorted(by_mc.items()):
         recs = sorted(recs, key=lambda r: r["temperature"])
         fig, axes = plt.subplots(1, len(recs), figsize=(4.2 * len(recs), 3.6), sharey=True, squeeze=False)
         color = MODEL_COLORS.get(model, "#555555")
@@ -131,9 +141,9 @@ def figure_per_model(records: list[dict], out_dir: str, plt) -> list[str]:
             ax.set_xlabel("response # (per instance)")
             _style(ax)
         axes[0][0].set_ylabel(f"projection on Assistant Axis (L{recs[0]['target_layer']})")
-        fig.suptitle(f"{model} — ai2ai self-conversation, {CONDITION_LABELS[cond]}", fontsize=11)
+        fig.suptitle(f"{model} — {_label(recs[0])}", fontsize=11)
         fig.tight_layout()
-        out = os.path.join(out_dir, f"drift__{model}__{cond}.png")
+        out = os.path.join(out_dir, f"drift__{model}__{cond}{'__' + aud if aud else ''}.png")
         fig.savefig(out, dpi=150)
         plt.close(fig)
         written.append(out)
@@ -146,12 +156,19 @@ def figure_cross_model(records: list[dict], out_dir: str, plt, temp: float = 1.0
     usable = [r for r in records if r["temperature"] == temp and r["anchor_default"] is not None]
     if not usable:
         return None
+    # Same model + different auditor (usersim controls) share a color; linestyle disambiguates.
+    AUDITOR_LS = {None: "-", "sonnet5": "-", "gpt52": "--"}
     fig, axes = plt.subplots(1, len(conds), figsize=(4.6 * len(conds), 3.8), sharey=True, squeeze=False)
     for ax, cond in zip(axes[0], conds):
-        for rec in sorted((r for r in usable if r["condition"] == cond), key=lambda r: r["model_key"]):
+        panel = sorted((r for r in usable if r["condition"] == cond),
+                       key=lambda r: (r["model_key"], r.get("auditor") or ""))
+        for rec in panel:
             pos, mean, sem = mean_trajectory(rec["trajectories"])
             color = MODEL_COLORS.get(rec["model_key"], "#555555")
-            ax.plot(pos, _axis_units(mean, rec), color=color, linewidth=2, label=rec["model_key"])
+            aud = rec.get("auditor")
+            label = rec["model_key"] + (f" · {aud}" if aud else "")
+            ax.plot(pos, _axis_units(mean, rec), color=color, linewidth=2,
+                    linestyle=AUDITOR_LS.get(aud, "-."), label=label)
             ax.fill_between(pos, _axis_units(mean - 1.96 * sem, rec), _axis_units(mean + 1.96 * sem, rec),
                             color=color, alpha=0.2, linewidth=0)
         ax.axhline(1.0, color="#444444", linewidth=1, linestyle="--")
@@ -205,13 +222,13 @@ def write_report(records: list[dict], figures: list[str], out_dir: str) -> str:
         "| model | condition | temp | n traj | start | end | Δ | start (axis u.) | end (axis u.) | % end < role mean |",
         "|---|---|---|---|---|---|---|---|---|---|",
     ]
-    for rec in sorted(records, key=lambda r: (r["model_key"], r["condition"], r["temperature"])):
+    for rec in sorted(records, key=lambda r: (r["model_key"], r["condition"], r.get("auditor") or "", r["temperature"])):
         s = drift_stats(rec)
         if not s:
             continue
         au = (f"{s['start_axis_units']:.2f}", f"{s['end_axis_units']:.2f}") if "start_axis_units" in s else ("—", "—")
         lines.append(
-            f"| {rec['model_key']} | {CONDITION_LABELS[rec['condition']]} | {rec['temperature']} "
+            f"| {rec['model_key']} | {_label(rec)} | {rec['temperature']} "
             f"| {s['n_traj']} | {s['start']:.1f} | {s['end']:.1f} | {s['delta']:+.1f} "
             f"| {au[0]} | {au[1]} | {100 * s['frac_end_below_role_mean']:.0f}% |"
         )

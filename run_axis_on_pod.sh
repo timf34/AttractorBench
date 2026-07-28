@@ -36,8 +36,10 @@ VARIANTS="${VARIANTS:-qwen-3-32b gemma-2-27b llama-3.3-70b}"
 # temp 1.0 only by default; see configs/axis_usersim_ai2ai.py):
 #   usersim_task  user works a concrete project (the paper's stays-Assistant reference)
 #   usersim_open  free chat, deliberately no topic steer
+# Each usersim condition runs once per auditor in AUDITORS (keys from the config's registry).
 # Run the controls after the main sweep:  CONDITIONS="usersim_task usersim_open" bash run_axis_on_pod.sh
 CONDITIONS="${CONDITIONS:-none helpful}"
+AUDITORS="${AUDITORS:-sonnet-5 gpt-5.2}"
 
 MAX_NUM_SEQS=24
 GPU_MEM_UTIL=0.92
@@ -60,12 +62,18 @@ hf_repo_of() {  # model key -> HF repo + per-model serve length (kept in sync wi
     *) echo "unknown variant $1"; return 1 ;;
   esac
 }
-exp_of() {  # model key + condition -> results dir name (MUST match the configs' EXP logic)
+exp_of() {  # model key + condition [+ auditor key] -> results dir name (MUST match the configs' EXP logic)
   local slug; slug=$(echo "$1" | tr '.-' '__')
   case "$2" in
     none)      echo "axis_${slug}_nosys_ai2ai" ;;
-    usersim_*) echo "axis_${slug}_${2}_ai2ai" ;;
+    usersim_*) echo "axis_${slug}_${2}_$(echo "$3" | tr -cd '[:alnum:]')_ai2ai" ;;
     *)         echo "axis_${slug}_ai2ai" ;;
+  esac
+}
+exps_for() {  # model key + condition -> ALL results dirs it produces (usersim: one per auditor)
+  case "$2" in
+    usersim_*) local a; for a in $AUDITORS; do exp_of "$1" "$2" "$a"; done ;;
+    *)         exp_of "$1" "$2" ;;
   esac
 }
 
@@ -210,20 +218,27 @@ PY
 
   GEN_OK=1
   for c in $CONDITIONS; do
-    EXP=$(exp_of "$v" "$c")
-    echo "  generating: $v / condition=$c -> results/$EXP ($WORKERS parallel)..."
     case "$c" in usersim_*)
-      AXIS_MODEL="$v" AXIS_USERSIM="${c#usersim_}" python -m attractorbench.runner --config configs/axis_usersim_ai2ai.py \
-        || { GEN_OK=0; echo "  (runner errored for $v/$c — continuing)"; }
+      for aud in $AUDITORS; do
+        EXP=$(exp_of "$v" "$c" "$aud")
+        echo "  generating: $v / condition=$c / auditor=$aud -> results/$EXP ($WORKERS parallel)..."
+        AXIS_MODEL="$v" AXIS_USERSIM="${c#usersim_}" AUDITOR="$aud" \
+          python -m attractorbench.runner --config configs/axis_usersim_ai2ai.py \
+          || { GEN_OK=0; echo "  (runner errored for $v/$c/$aud — continuing)"; }
+      done
       ;;
     *)
+      EXP=$(exp_of "$v" "$c")
+      echo "  generating: $v / condition=$c -> results/$EXP ($WORKERS parallel)..."
       AXIS_MODEL="$v" AXIS_SYS="$c" python -m attractorbench.runner --config configs/axis_ai2ai.py \
         || { GEN_OK=0; echo "  (runner errored for $v/$c — continuing)"; }
       ;;
     esac
-    for j in results/$EXP/*.json; do
-      [ -e "$j" ] || continue
-      python -m attractorbench.analysis.deterministic "$j" || true
+    for EXP in $(exps_for "$v" "$c"); do
+      for j in results/$EXP/*.json; do
+        [ -e "$j" ] || continue
+        python -m attractorbench.analysis.deterministic "$j" || true
+      done
     done
   done
 
@@ -232,7 +247,9 @@ PY
   PROJ_OK=1
   DIRS=""
   for c in $CONDITIONS; do
-    d="results/$(exp_of "$v" "$c")"; [ -d "$d" ] && DIRS="$DIRS $d"
+    for e in $(exps_for "$v" "$c"); do
+      [ -d "results/$e" ] && DIRS="$DIRS results/$e"
+    done
   done
   if [ -n "$DIRS" ]; then
     # shellcheck disable=SC2086
@@ -242,8 +259,10 @@ PY
 
   if [ "$JUDGE" != "none" ] && [ -n "$JUDGE" ]; then
     for c in $CONDITIONS; do
-      d="results/$(exp_of "$v" "$c")"; [ -d "$d" ] || continue
-      python run_judge.py "$d" --judge "$JUDGE" || echo "  (judge errored for $v/$c)"
+      for e in $(exps_for "$v" "$c"); do
+        [ -d "results/$e" ] || continue
+        python run_judge.py "results/$e" --judge "$JUDGE" || echo "  (judge errored for $v/$c)"
+      done
     done
   fi
 

@@ -90,8 +90,11 @@ if [ -n "${RUNPOD_POD_ID:-}" ] && [ -d /workspace ]; then
   esac
 fi
 if [ "${SAVE_TO_GIT:-0}" = "1" ]; then
-  git push --dry-run >/dev/null 2>&1 || {
-    echo "!! SAVE_TO_GIT=1 but non-interactive 'git push --dry-run' failed — set a PAT remote."; exit 1; }
+  # Dry-run push to a NEW ref name: tests push AUTH without failing on a behind-remote
+  # checkout (a plain `push --dry-run` rejects non-fast-forward even with valid creds;
+  # being behind is fine — the end-of-run flow pulls before pushing).
+  git push --dry-run origin "HEAD:refs/heads/__preflight_test_$$" >/dev/null 2>&1 || {
+    echo "!! SAVE_TO_GIT=1 but a non-interactive push-auth check failed — set a PAT remote."; exit 1; }
   echo "git push preflight OK"
 fi
 

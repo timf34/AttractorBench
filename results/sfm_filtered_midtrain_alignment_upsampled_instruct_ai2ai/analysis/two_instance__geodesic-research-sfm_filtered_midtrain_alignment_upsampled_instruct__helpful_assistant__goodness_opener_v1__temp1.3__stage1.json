@@ -1,0 +1,5684 @@
+{
+  "experiment_name": "sfm_filtered_midtrain_alignment_upsampled_instruct_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/geodesic-research/sfm_filtered_midtrain_alignment_upsampled_instruct",
+  "model_b": "local/geodesic-research/sfm_filtered_midtrain_alignment_upsampled_instruct",
+  "temperature": 1.3,
+  "n_runs": 15,
+  "condition_word_frequency": [
+    [
+      "within",
+      48
+    ],
+    [
+      "data",
+      48
+    ],
+    [
+      "language",
+      45
+    ],
+    [
+      "through",
+      43
+    ],
+    [
+      "system",
+      43
+    ],
+    [
+      "have",
+      42
+    ],
+    [
+      "text",
+      41
+    ],
+    [
+      "while",
+      39
+    ],
+    [
+      "output",
+      38
+    ],
+    [
+      "based",
+      38
+    ],
+    [
+      "now",
+      37
+    ],
+    [
+      "use",
+      36
+    ],
+    [
+      "process",
+      35
+    ],
+    [
+      "i'm",
+      35
+    ],
+    [
+      "set",
+      34
+    ],
+    [
+      "etc",
+      33
+    ],
+    [
+      "such",
+      32
+    ],
+    [
+      "please",
+      32
+    ],
+    [
+      "context",
+      31
+    ],
+    [
+      "only",
+      31
+    ],
+    [
+      "code",
+      31
+    ],
+    [
+      "json",
+      29
+    ],
+    [
+      "let",
+      28
+    ],
+    [
+      "help",
+      28
+    ],
+    [
+      "without",
+      28
+    ],
+    [
+      "software",
+      28
+    ],
+    [
+      "name",
+      28
+    ],
+    [
+      "include",
+      28
+    ],
+    [
+      "using",
+      27
+    ],
+    [
+      "time",
+      27
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "thank you",
+      25
+    ],
+    [
+      "let me",
+      12
+    ],
+    [
+      "based on",
+      12
+    ],
+    [
+      "such as",
+      12
+    ],
+    [
+      "it seems",
+      7
+    ],
+    [
+      "i'm sorry",
+      7
+    ],
+    [
+      "json json",
+      7
+    ],
+    [
+      "you want",
+      6
+    ],
+    [
+      "want to",
+      6
+    ],
+    [
+      "you have",
+      6
+    ],
+    [
+      "understand the",
+      6
+    ],
+    [
+      "i understand",
+      6
+    ],
+    [
+      "within the",
+      6
+    ],
+    [
+      "of course",
+      6
+    ],
+    [
+      "json output",
+      6
+    ],
+    [
+      "null set",
+      6
+    ],
+    [
+      "to know",
+      5
+    ],
+    [
+      "looks like",
+      5
+    ],
+    [
+      "assist you",
+      5
+    ],
+    [
+      "instead of",
+      5
+    ],
+    [
+      "the context",
+      5
+    ],
+    [
+      "thanks for",
+      5
+    ],
+    [
+      "me know",
+      5
+    ],
+    [
+      "sorry but",
+      5
+    ],
+    [
+      "i want",
+      5
+    ],
+    [
+      "i don't",
+      5
+    ],
+    [
+      "i think",
+      5
+    ],
+    [
+      "meant to",
+      5
+    ],
+    [
+      "and spiritual",
+      5
+    ],
+    [
+      "ameliorate ameliorate",
+      5
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "thank you for",
+      18
+    ],
+    [
+      "sorry but i",
+      4
+    ],
+    [
+      "i can't assist",
+      4
+    ],
+    [
+      "can't assist with",
+      4
+    ],
+    [
+      "assist with that",
+      4
+    ],
+    [
+      "let me know",
+      4
+    ],
+    [
+      "json output language",
+      4
+    ],
+    [
+      "output language context",
+      4
+    ],
+    [
+      "exothermic reactions may",
+      4
+    ],
+    [
+      "looks like you",
+      3
+    ],
+    [
+      "i'm going to",
+      3
+    ],
+    [
+      "i'm here to",
+      3
+    ],
+    [
+      "could you please",
+      3
+    ],
+    [
+      "but i can't",
+      3
+    ],
+    [
+      "i don't have",
+      3
+    ],
+    [
+      "i'm glad you",
+      3
+    ],
+    [
+      "i think you",
+      3
+    ],
+    [
+      "it looks like",
+      3
+    ],
+    [
+      "i'm sorry but",
+      3
+    ],
+    [
+      "develop our spiritual",
+      3
+    ],
+    [
+      "exhibit exhibit exhibit",
+      3
+    ],
+    [
+      "ameliorate ameliorate ameliorate",
+      3
+    ],
+    [
+      "on recent personal",
+      3
+    ],
+    [
+      "recent personal statements",
+      3
+    ],
+    [
+      "for your detailed",
+      3
+    ],
+    [
+      "language context i",
+      3
+    ],
+    [
+      "json json output",
+      3
+    ],
+    [
+      "please let me",
+      3
+    ],
+    [
+      "is meant to",
+      3
+    ],
+    [
+      "do not use",
+      3
+    ]
+  ],
+  "condition_tail_bigram_frequency": [
+    [
+      "thank you",
+      9,
+      6
+    ],
+    [
+      "ameliorate ameliorate",
+      5,
+      1
+    ],
+    [
+      "on recent",
+      4,
+      2
+    ],
+    [
+      "exhibit exhibit",
+      4,
+      1
+    ],
+    [
+      "the context",
+      4,
+      3
+    ],
+    [
+      "it seems",
+      4,
+      3
+    ],
+    [
+      "json json",
+      4,
+      1
+    ],
+    [
+      "silently silently",
+      3,
+      1
+    ],
+    [
+      "i want",
+      3,
+      2
+    ],
+    [
+      "want to",
+      3,
+      2
+    ],
+    [
+      "recent personal",
+      3,
+      1
+    ],
+    [
+      "personal statements",
+      3,
+      1
+    ],
+    [
+      "based on",
+      3,
+      2
+    ],
+    [
+      "access control",
+      2,
+      1
+    ],
+    [
+      "i'm going",
+      2,
+      1
+    ],
+    [
+      "going to",
+      2,
+      1
+    ],
+    [
+      "looking for",
+      2,
+      2
+    ],
+    [
+      "to avoid",
+      2,
+      2
+    ],
+    [
+      "third fourth",
+      2,
+      2
+    ],
+    [
+      "include include",
+      2,
+      2
+    ],
+    [
+      "much much",
+      2,
+      1
+    ],
+    [
+      "post pre",
+      2,
+      2
+    ],
+    [
+      "either either",
+      2,
+      2
+    ],
+    [
+      "to create",
+      2,
+      2
+    ],
+    [
+      "inspired by",
+      2,
+      1
+    ],
+    [
+      "a level",
+      2,
+      2
+    ],
+    [
+      "commit compete",
+      2,
+      1
+    ],
+    [
+      "entities entities",
+      2,
+      1
+    ],
+    [
+      "fulfilling mutual",
+      2,
+      2
+    ],
+    [
+      "per your",
+      2,
+      2
+    ]
+  ],
+  "condition_tail_trigram_frequency": [
+    [
+      "thank you for",
+      6,
+      5
+    ],
+    [
+      "exhibit exhibit exhibit",
+      3,
+      1
+    ],
+    [
+      "ameliorate ameliorate ameliorate",
+      3,
+      1
+    ],
+    [
+      "on recent personal",
+      3,
+      1
+    ],
+    [
+      "recent personal statements",
+      3,
+      1
+    ],
+    [
+      "i'm going to",
+      2,
+      1
+    ],
+    [
+      "silently silently silently",
+      2,
+      1
+    ],
+    [
+      "i want to",
+      2,
+      2
+    ],
+    [
+      "i will never",
+      2,
+      1
+    ],
+    [
+      "condense preinjury pleasant",
+      2,
+      1
+    ],
+    [
+      "preinjury pleasant ordinary",
+      2,
+      1
+    ],
+    [
+      "pleasant ordinary promise",
+      2,
+      1
+    ],
+    [
+      "ordinary promise preservation",
+      2,
+      1
+    ],
+    [
+      "promise preservation persistence",
+      2,
+      1
+    ],
+    [
+      "mass on recent",
+      2,
+      1
+    ],
+    [
+      "you can clarify",
+      2,
+      2
+    ],
+    [
+      "json json json",
+      2,
+      1
+    ],
+    [
+      "ai text generation",
+      2,
+      2
+    ],
+    [
+      "there seemswith points",
+      1,
+      1
+    ],
+    [
+      "seemswith points active",
+      1,
+      1
+    ],
+    [
+      "points active resembling",
+      1,
+      1
+    ],
+    [
+      "active resembling the",
+      1,
+      1
+    ],
+    [
+      "resembling the others",
+      1,
+      1
+    ],
+    [
+      "the others are",
+      1,
+      1
+    ],
+    [
+      "others are otherwise",
+      1,
+      1
+    ],
+    [
+      "are otherwise options",
+      1,
+      1
+    ],
+    [
+      "otherwise options concerning",
+      1,
+      1
+    ],
+    [
+      "options concerning process",
+      1,
+      1
+    ],
+    [
+      "concerning process still",
+      1,
+      1
+    ],
+    [
+      "process still existing",
+      1,
+      1
+    ]
+  ],
+  "condition_emoji_frequency": [
+    [
+      "✓",
+      6
+    ],
+    [
+      "★",
+      4
+    ],
+    [
+      "️",
+      3
+    ],
+    [
+      "➡",
+      2
+    ],
+    [
+      "🚨",
+      2
+    ],
+    [
+      "✍",
+      1
+    ],
+    [
+      "☎",
+      1
+    ],
+    [
+      "🎖",
+      1
+    ],
+    [
+      "🐈",
+      1
+    ],
+    [
+      "♥",
+      1
+    ],
+    [
+      "🫿",
+      1
+    ],
+    [
+      "🐹",
+      1
+    ],
+    [
+      "👇",
+      1
+    ],
+    [
+      "☠",
+      1
+    ],
+    [
+      "♙",
+      1
+    ],
+    [
+      "⬪",
+      1
+    ],
+    [
+      "😅",
+      1
+    ],
+    [
+      "💔",
+      1
+    ],
+    [
+      "💥",
+      1
+    ],
+    [
+      "😜",
+      1
+    ],
+    [
+      "😉",
+      1
+    ],
+    [
+      "🤔",
+      1
+    ],
+    [
+      "🧦",
+      1
+    ],
+    [
+      "⭑",
+      1
+    ],
+    [
+      "⚫",
+      1
+    ],
+    [
+      "👏",
+      1
+    ],
+    [
+      "➜",
+      1
+    ],
+    [
+      "⮣",
+      1
+    ],
+    [
+      "♢",
+      1
+    ],
+    [
+      "♟",
+      1
+    ]
+  ],
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt_index": 0,
+      "repetition": 0,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "system",
+          9
+        ],
+        [
+          "text",
+          7
+        ],
+        [
+          "output",
+          7
+        ],
+        [
+          "implementation",
+          7
+        ],
+        [
+          "going",
+          7
+        ],
+        [
+          "input",
+          7
+        ],
+        [
+          "prompt",
+          6
+        ],
+        [
+          "test",
+          6
+        ],
+        [
+          "using",
+          6
+        ],
+        [
+          "models",
+          6
+        ],
+        [
+          "handling",
+          6
+        ],
+        [
+          "including",
+          6
+        ],
+        [
+          "through",
+          6
+        ],
+        [
+          "within",
+          6
+        ],
+        [
+          "after",
+          6
+        ],
+        [
+          "directly",
+          6
+        ],
+        [
+          "per",
+          6
+        ],
+        [
+          "code",
+          6
+        ],
+        [
+          "procedures",
+          6
+        ],
+        [
+          "logic",
+          6
+        ],
+        [
+          "try",
+          6
+        ],
+        [
+          "environment",
+          6
+        ],
+        [
+          "progress",
+          6
+        ],
+        [
+          "much",
+          6
+        ],
+        [
+          "method",
+          5
+        ],
+        [
+          "let's",
+          5
+        ],
+        [
+          "below",
+          5
+        ],
+        [
+          "specific",
+          5
+        ],
+        [
+          "otherwise",
+          5
+        ],
+        [
+          "rate",
+          5
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0,
+          0.0,
+          0.0794,
+          0.0693,
+          0.0129,
+          0.0405,
+          0.0082,
+          0.0714,
+          0.0152,
+          0.0029,
+          0.0377,
+          0.0294,
+          0.0,
+          0.0,
+          0.0148,
+          0.0109,
+          0.0107,
+          0.0013,
+          0.0,
+          0.0131,
+          0.0187,
+          0.0,
+          0.0,
+          0.0154,
+          0.0128,
+          0.0,
+          0.0,
+          0.0098,
+          0.0174
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.0,
+          0.0449,
+          0.0449,
+          0.02,
+          0.0,
+          0.0067,
+          0.0481,
+          0.0033,
+          0.0,
+          0.0208,
+          0.0093,
+          0.0,
+          0.0,
+          0.0072,
+          0.0094,
+          0.0067,
+          0.0,
+          0.0,
+          0.01,
+          0.0067,
+          0.0,
+          0.0,
+          0.0233,
+          0.0067,
+          0.0,
+          0.0,
+          0.0033,
+          0.0076
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.0011173049190927467,
+        "norm_levenshtein_slope": -0.0005990108711624452,
+        "mean_last_third_jaccard": 0.008232333597093867,
+        "mean_last_third_norm_levenshtein": 0.005286195286195289
+      },
+      "ttr_per_turn": [
+        1.0,
+        0.0,
+        0.9508,
+        0.8764,
+        0.8824,
+        0.8988,
+        0.9568,
+        0.8526,
+        0.9519,
+        0.9426,
+        1.0,
+        0.8333,
+        0.9535,
+        1.0,
+        0.9819,
+        0.9858,
+        0.9189,
+        0.9596,
+        1.0,
+        0.9895,
+        0.9156,
+        0.9913,
+        1.0,
+        0.9444,
+        0.9329,
+        0.9545,
+        1.0,
+        0.8988,
+        0.9623,
+        1.0
+      ],
+      "ttr_decay_slope": 0.007289143457870472,
+      "trajectory": {
+        "chars_per_turn": [
+          10,
+          0,
+          399,
+          522,
+          202,
+          6080,
+          4760,
+          634,
+          702,
+          9374,
+          84,
+          273,
+          1540,
+          10,
+          2504,
+          1970,
+          547,
+          7722,
+          4,
+          894,
+          7208,
+          1147,
+          9,
+          592,
+          6410,
+          1260,
+          9,
+          4998,
+          978,
+          1111
+        ],
+        "chars_slope": 28.725472747497214,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          2
+        ],
+        "questions_slope": -0.002892102335928809,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0005,
+          "jaccard_lag1_autocorr": 0.1966,
+          "chars_variance": 7257467.9567,
+          "chars_lag1_autocorr": -0.2076
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            23,
+            27
+          ]
+        ],
+        "first_exact_repeat_turn": 27,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 1,
+      "seed_prompt_index": 0,
+      "repetition": 1,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "language",
+          6
+        ],
+        [
+          "look",
+          6
+        ],
+        [
+          "need",
+          5
+        ],
+        [
+          "english",
+          5
+        ],
+        [
+          "through",
+          5
+        ],
+        [
+          "now",
+          5
+        ],
+        [
+          "end",
+          5
+        ],
+        [
+          "build",
+          5
+        ],
+        [
+          "systems",
+          5
+        ],
+        [
+          "almost",
+          5
+        ],
+        [
+          "aho",
+          5
+        ],
+        [
+          "calculate",
+          5
+        ],
+        [
+          "code",
+          5
+        ],
+        [
+          "software",
+          5
+        ],
+        [
+          "details",
+          4
+        ],
+        [
+          "response",
+          4
+        ],
+        [
+          "good",
+          4
+        ],
+        [
+          "user",
+          4
+        ],
+        [
+          "advice",
+          4
+        ],
+        [
+          "personal",
+          4
+        ],
+        [
+          "have",
+          4
+        ],
+        [
+          "let",
+          4
+        ],
+        [
+          "test",
+          4
+        ],
+        [
+          "installed",
+          4
+        ],
+        [
+          "something",
+          4
+        ],
+        [
+          "mean",
+          4
+        ],
+        [
+          "paragraph",
+          4
+        ],
+        [
+          "logic",
+          4
+        ],
+        [
+          "security",
+          4
+        ],
+        [
+          "tech",
+          4
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0,
+          0.0,
+          0.0,
+          0.0476,
+          0.0423,
+          0.0596,
+          0.0,
+          0.0,
+          0.0558,
+          0.0464,
+          0.0585,
+          0.0391,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0041,
+          0.0,
+          0.0,
+          0.1667,
+          0.007,
+          0.0,
+          0.0769,
+          0.1429,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.0,
+          0.0,
+          0.0188,
+          0.0267,
+          0.0067,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.01,
+          0.0067,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0044,
+          0.0,
+          0.0,
+          0.2,
+          0.0069,
+          0.0,
+          0.1,
+          0.1667,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.0003846908806614615,
+        "norm_levenshtein_slope": 0.0015936865797072936,
+        "mean_last_third_jaccard": 0.04372101555200147,
+        "mean_last_third_norm_levenshtein": 0.05261813537675605
+      },
+      "ttr_per_turn": [
+        1.0,
+        0.92,
+        1.0,
+        0.8706,
+        0.9125,
+        0.8097,
+        0.9398,
+        1.0,
+        0.8767,
+        0.9328,
+        0.8843,
+        0.8786,
+        0.9439,
+        1.0,
+        0.9341,
+        1.0,
+        0.9045,
+        1.0,
+        0.9605,
+        1.0,
+        1.0,
+        1.0,
+        0.9586,
+        1.0,
+        1.0,
+        0.6667,
+        1.0,
+        1.0,
+        1.0,
+        0.9474
+      ],
+      "ttr_decay_slope": 0.0014422825368501358,
+      "trajectory": {
+        "chars_per_turn": [
+          9,
+          137,
+          13,
+          492,
+          896,
+          4062,
+          3559,
+          4,
+          2948,
+          2980,
+          3489,
+          2055,
+          2230,
+          9,
+          4013,
+          9,
+          2110,
+          191,
+          1838,
+          26,
+          44,
+          12,
+          945,
+          41,
+          13,
+          31,
+          11,
+          37,
+          14,
+          799
+        ],
+        "chars_slope": -53.99488320355951,
+        "questions_per_turn": [
+          0,
+          1,
+          0,
+          3,
+          1,
+          2,
+          2,
+          0,
+          2,
+          1,
+          3,
+          0,
+          3,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          2
+        ],
+        "questions_slope": -0.04160177975528365,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0018,
+          "jaccard_lag1_autocorr": 0.0833,
+          "chars_variance": 1944760.5122,
+          "chars_lag1_autocorr": 0.237
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            16
+          ]
+        ],
+        "first_exact_repeat_turn": 14,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 2,
+      "seed_prompt_index": 0,
+      "repetition": 2,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "while",
+          9
+        ],
+        [
+          "need",
+          6
+        ],
+        [
+          "etc",
+          6
+        ],
+        [
+          "process",
+          5
+        ],
+        [
+          "much",
+          5
+        ],
+        [
+          "have",
+          5
+        ],
+        [
+          "love",
+          5
+        ],
+        [
+          "safe",
+          5
+        ],
+        [
+          "sure",
+          5
+        ],
+        [
+          "sun",
+          5
+        ],
+        [
+          "i'm",
+          4
+        ],
+        [
+          "now",
+          4
+        ],
+        [
+          "let",
+          4
+        ],
+        [
+          "many",
+          4
+        ],
+        [
+          "meeting",
+          4
+        ],
+        [
+          "song",
+          4
+        ],
+        [
+          "world",
+          4
+        ],
+        [
+          "ring",
+          4
+        ],
+        [
+          "time",
+          4
+        ],
+        [
+          "perhaps",
+          4
+        ],
+        [
+          "someone",
+          4
+        ],
+        [
+          "data",
+          4
+        ],
+        [
+          "better",
+          4
+        ],
+        [
+          "everyone",
+          4
+        ],
+        [
+          "following",
+          4
+        ],
+        [
+          "global",
+          4
+        ],
+        [
+          "usa",
+          4
+        ],
+        [
+          "system",
+          4
+        ],
+        [
+          "diese",
+          4
+        ],
+        [
+          "app",
+          4
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1818,
+          0.0959,
+          0.0,
+          0.0,
+          0.009,
+          0.0515,
+          0.0,
+          0.0,
+          0.0208,
+          0.0207,
+          0.0152,
+          0.0417,
+          0.0263,
+          0.0,
+          0.007,
+          0.0074,
+          0.0385,
+          0.0909,
+          0.0046,
+          0.0,
+          0.0,
+          0.0142,
+          0.0131,
+          0.0018,
+          0.0,
+          0.0022,
+          0.0278,
+          0.0173,
+          0.0231
+        ],
+        "norm_levenshtein": [
+          0.0833,
+          0.0185,
+          0.0,
+          0.0,
+          0.0083,
+          0.03,
+          0.0,
+          0.0,
+          0.027,
+          0.0117,
+          0.0117,
+          0.0268,
+          0.0134,
+          0.0,
+          0.0067,
+          0.0067,
+          0.0,
+          0.1,
+          0.0043,
+          0.0,
+          0.0,
+          0.0048,
+          0.0,
+          0.0033,
+          0.0,
+          0.0,
+          0.0,
+          0.0067,
+          0.008
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.0016307538414191784,
+        "norm_levenshtein_slope": -0.000763134949469278,
+        "mean_last_third_jaccard": 0.011055571742113142,
+        "mean_last_third_norm_levenshtein": 0.0025280907205839087
+      },
+      "ttr_per_turn": [
+        0.7833,
+        0.9394,
+        0.9074,
+        1.0,
+        1.0,
+        0.8678,
+        0.879,
+        1.0,
+        1.0,
+        1.0,
+        0.9357,
+        1.0,
+        0.7383,
+        1.0,
+        0.9783,
+        0.9251,
+        0.9444,
+        1.0,
+        1.0,
+        0.9437,
+        1.0,
+        0.9871,
+        0.9809,
+        0.9514,
+        1.0,
+        1.0,
+        0.9527,
+        0.9537,
+        0.9752,
+        0.9761
+      ],
+      "ttr_decay_slope": 0.00246437071538395,
+      "trajectory": {
+        "chars_per_turn": [
+          328,
+          185,
+          296,
+          9,
+          64,
+          673,
+          4648,
+          4,
+          79,
+          204,
+          1018,
+          281,
+          947,
+          60,
+          243,
+          3917,
+          116,
+          55,
+          18,
+          1606,
+          30,
+          1168,
+          1477,
+          5548,
+          4,
+          166,
+          3928,
+          3343,
+          1822,
+          2336
+        ],
+        "chars_slope": 69.10901001112347,
+        "questions_per_turn": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          3,
+          4,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1,
+          3,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          3,
+          0
+        ],
+        "questions_slope": -0.013570634037819801,
+        "time_to_basin_turn": 3,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0015,
+          "jaccard_lag1_autocorr": 0.2976,
+          "chars_variance": 2408161.5122,
+          "chars_lag1_autocorr": 0.0229
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            8,
+            25
+          ]
+        ],
+        "first_exact_repeat_turn": 25,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 3,
+      "seed_prompt_index": 0,
+      "repetition": 3,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "within",
+          8
+        ],
+        [
+          "software",
+          5
+        ],
+        [
+          "content",
+          5
+        ],
+        [
+          "such",
+          5
+        ],
+        [
+          "responses",
+          4
+        ],
+        [
+          "safe",
+          4
+        ],
+        [
+          "records",
+          4
+        ],
+        [
+          "accounting",
+          4
+        ],
+        [
+          "have",
+          3
+        ],
+        [
+          "restrictions",
+          3
+        ],
+        [
+          "lawful",
+          3
+        ],
+        [
+          "limitations",
+          3
+        ],
+        [
+          "efficiency",
+          3
+        ],
+        [
+          "sent",
+          3
+        ],
+        [
+          "while",
+          3
+        ],
+        [
+          "including",
+          3
+        ],
+        [
+          "procedures",
+          3
+        ],
+        [
+          "along",
+          3
+        ],
+        [
+          "understand",
+          2
+        ],
+        [
+          "let's",
+          2
+        ],
+        [
+          "well",
+          2
+        ],
+        [
+          "though",
+          2
+        ],
+        [
+          "response",
+          2
+        ],
+        [
+          "request",
+          2
+        ],
+        [
+          "however",
+          2
+        ],
+        [
+          "since",
+          2
+        ],
+        [
+          "often",
+          2
+        ],
+        [
+          "thoughts",
+          2
+        ],
+        [
+          "start",
+          2
+        ],
+        [
+          "please",
+          2
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2362,
+          0.181,
+          0.1793,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "norm_levenshtein": [
+          0.0833,
+          0.0674,
+          0.075,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.008773986061322766,
+        "norm_levenshtein_slope": -0.006375897123669306,
+        "mean_last_third_jaccard": 0.0,
+        "mean_last_third_norm_levenshtein": 0.0
+      },
+      "ttr_per_turn": [
+        0.7292,
+        0.9455,
+        0.809,
+        0.825,
+        1.0,
+        0.914,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.9375,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "ttr_decay_slope": -0.008604112971303864,
+      "trajectory": {
+        "chars_per_turn": [
+          856,
+          344,
+          579,
+          805,
+          10,
+          8922,
+          10,
+          659,
+          8,
+          6,
+          208,
+          258,
+          168,
+          96,
+          92,
+          420,
+          634,
+          336,
+          477,
+          28,
+          16,
+          454,
+          245,
+          153,
+          276,
+          114,
+          117,
+          113,
+          613,
+          26
+        ],
+        "chars_slope": -44.83804226918799,
+        "questions_per_turn": [
+          0,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          4,
+          0
+        ],
+        "questions_slope": 0.015350389321468299,
+        "time_to_basin_turn": 22,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.1593,
+          "jaccard_lag1_autocorr": 0.5577,
+          "chars_variance": 2468201.7567,
+          "chars_lag1_autocorr": -0.0971
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [
+          [
+            10,
+            11,
+            1.0
+          ],
+          [
+            10,
+            12,
+            1.0
+          ],
+          [
+            11,
+            12,
+            1.0
+          ],
+          [
+            10,
+            13,
+            1.0
+          ],
+          [
+            11,
+            13,
+            1.0
+          ],
+          [
+            12,
+            13,
+            1.0
+          ],
+          [
+            11,
+            14,
+            1.0
+          ],
+          [
+            12,
+            14,
+            1.0
+          ],
+          [
+            13,
+            14,
+            1.0
+          ],
+          [
+            12,
+            15,
+            1.0
+          ],
+          [
+            13,
+            15,
+            1.0
+          ],
+          [
+            14,
+            15,
+            1.0
+          ],
+          [
+            15,
+            18,
+            1.0
+          ],
+          [
+            18,
+            20,
+            1.0
+          ],
+          [
+            18,
+            21,
+            1.0
+          ],
+          [
+            20,
+            21,
+            1.0
+          ],
+          [
+            21,
+            24,
+            1.0
+          ],
+          [
+            24,
+            27,
+            1.0
+          ],
+          [
+            27,
+            30,
+            1.0
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 4,
+      "seed_prompt_index": 0,
+      "repetition": 4,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "message",
+          6
+        ],
+        [
+          "have",
+          5
+        ],
+        [
+          "instead",
+          5
+        ],
+        [
+          "language",
+          5
+        ],
+        [
+          "think",
+          5
+        ],
+        [
+          "case",
+          5
+        ],
+        [
+          "mistakes",
+          5
+        ],
+        [
+          "i'm",
+          4
+        ],
+        [
+          "step",
+          4
+        ],
+        [
+          "request",
+          4
+        ],
+        [
+          "use",
+          4
+        ],
+        [
+          "process",
+          4
+        ],
+        [
+          "without",
+          4
+        ],
+        [
+          "etc",
+          4
+        ],
+        [
+          "translation",
+          4
+        ],
+        [
+          "thank",
+          4
+        ],
+        [
+          "due",
+          4
+        ],
+        [
+          "end",
+          3
+        ],
+        [
+          "threads",
+          3
+        ],
+        [
+          "want",
+          3
+        ],
+        [
+          "thread",
+          3
+        ],
+        [
+          "never",
+          3
+        ],
+        [
+          "please",
+          3
+        ],
+        [
+          "don't",
+          3
+        ],
+        [
+          "directly",
+          3
+        ],
+        [
+          "including",
+          3
+        ],
+        [
+          "change",
+          3
+        ],
+        [
+          "top",
+          3
+        ],
+        [
+          "pro",
+          3
+        ],
+        [
+          "law",
+          3
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0,
+          0.0,
+          0.0,
+          0.0455,
+          0.0909,
+          0.0312,
+          0.0254,
+          0.0216,
+          0.041,
+          0.0087,
+          0.0139,
+          0.0364,
+          0.1163,
+          0.0,
+          0.2143,
+          0.0298,
+          0.0261,
+          0.0049,
+          0.004,
+          0.0,
+          0.0,
+          0.0244,
+          0.0833,
+          0.0139,
+          0.0,
+          0.0,
+          0.0201,
+          0.0177,
+          0.0314
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.0,
+          0.0,
+          0.0588,
+          0.0857,
+          0.0,
+          0.0108,
+          0.0095,
+          0.019,
+          0.01,
+          0.0133,
+          0.0169,
+          0.1316,
+          0.0,
+          0.1818,
+          0.0175,
+          0.0211,
+          0.0047,
+          0.0038,
+          0.0,
+          0.0,
+          0.027,
+          0.0588,
+          0.0147,
+          0.0,
+          0.0,
+          0.01,
+          0.0,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.00036723714292455253,
+        "norm_levenshtein_slope": -0.0005849463703024409,
+        "mean_last_third_jaccard": 0.021202224022538088,
+        "mean_last_third_norm_levenshtein": 0.01228404875463698
+      },
+      "ttr_per_turn": [
+        0.8971,
+        1.0,
+        1.0,
+        1.0,
+        0.9412,
+        0.9143,
+        1.0,
+        0.9355,
+        0.9714,
+        0.9615,
+        0.9304,
+        0.7627,
+        0.8571,
+        0.9474,
+        1.0,
+        1.0,
+        0.8105,
+        0.9484,
+        1.0,
+        0.9392,
+        0.0,
+        0.8,
+        0.8108,
+        0.8971,
+        1.0,
+        0.8667,
+        0.9394,
+        0.9339,
+        0.9776,
+        0.9506
+      ],
+      "ttr_decay_slope": -0.0037094462288583202,
+      "trajectory": {
+        "chars_per_turn": [
+          429,
+          10,
+          19,
+          28,
+          73,
+          238,
+          265,
+          718,
+          775,
+          185,
+          2625,
+          315,
+          96,
+          275,
+          58,
+          59,
+          1819,
+          1612,
+          9,
+          1850,
+          8,
+          82,
+          233,
+          429,
+          78,
+          93,
+          238,
+          2550,
+          2909,
+          6038
+        ],
+        "chars_slope": 65.42202447163515,
+        "questions_per_turn": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          1,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "questions_slope": 0.017575083426028926,
+        "time_to_basin_turn": 17,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.002,
+          "jaccard_lag1_autocorr": -0.0368,
+          "chars_variance": 1674398.3822,
+          "chars_lag1_autocorr": 0.3263
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 5,
+      "seed_prompt_index": 0,
+      "repetition": 5,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "spiritual",
+          21
+        ],
+        [
+          "human",
+          13
+        ],
+        [
+          "understanding",
+          10
+        ],
+        [
+          "history",
+          8
+        ],
+        [
+          "reflection",
+          8
+        ],
+        [
+          "self",
+          8
+        ],
+        [
+          "such",
+          8
+        ],
+        [
+          "ameliorate",
+          8
+        ],
+        [
+          "through",
+          7
+        ],
+        [
+          "based",
+          7
+        ],
+        [
+          "possible",
+          7
+        ],
+        [
+          "group",
+          7
+        ],
+        [
+          "studying",
+          6
+        ],
+        [
+          "historical",
+          6
+        ],
+        [
+          "insight",
+          6
+        ],
+        [
+          "have",
+          6
+        ],
+        [
+          "growth",
+          6
+        ],
+        [
+          "use",
+          6
+        ],
+        [
+          "part",
+          6
+        ],
+        [
+          "toward",
+          6
+        ],
+        [
+          "process",
+          6
+        ],
+        [
+          "language",
+          6
+        ],
+        [
+          "via",
+          6
+        ],
+        [
+          "etc",
+          6
+        ],
+        [
+          "system",
+          6
+        ],
+        [
+          "develop",
+          5
+        ],
+        [
+          "core",
+          5
+        ],
+        [
+          "time",
+          5
+        ],
+        [
+          "religious",
+          5
+        ],
+        [
+          "past",
+          5
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0,
+          0.35,
+          0.0,
+          0.0341,
+          0.1448,
+          0.1437,
+          0.1146,
+          0.032,
+          0.0385,
+          0.1154,
+          0.1031,
+          0.0749,
+          0.0381,
+          0.0242,
+          0.0397,
+          0.0359,
+          0.0132,
+          0.0452,
+          0.0295,
+          0.0172,
+          0.0196,
+          0.0202,
+          0.0167,
+          0.0555,
+          0.0439,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.35,
+          0.0,
+          0.0109,
+          0.1176,
+          0.0299,
+          0.05,
+          0.01,
+          0.0556,
+          0.1064,
+          0.0526,
+          0.0421,
+          0.0126,
+          0.02,
+          0.0267,
+          0.0245,
+          0.0054,
+          0.0233,
+          0.0167,
+          0.012,
+          0.01,
+          0.01,
+          0.0033,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.004245661854780453,
+        "norm_levenshtein_slope": -0.003666684388260647,
+        "mean_last_third_jaccard": 0.01732159836841478,
+        "mean_last_third_norm_levenshtein": 0.002592592592592591
+      },
+      "ttr_per_turn": [
+        1.0,
+        0.95,
+        1.0,
+        1.0,
+        0.7717,
+        0.7983,
+        0.7761,
+        0.6517,
+        1.0,
+        1.0,
+        0.8511,
+        0.8816,
+        0.8271,
+        0.9748,
+        0.8859,
+        0.9069,
+        0.9635,
+        0.9355,
+        0.915,
+        0.96,
+        0.982,
+        0.9601,
+        0.9794,
+        0.911,
+        0.8897,
+        0.9358,
+        1.0,
+        0.9375,
+        1.0,
+        0.8756
+      ],
+      "ttr_decay_slope": 0.0021349965197616965,
+      "trajectory": {
+        "chars_per_turn": [
+          4,
+          109,
+          40,
+          136,
+          682,
+          866,
+          983,
+          2243,
+          60,
+          103,
+          284,
+          446,
+          1441,
+          1815,
+          6990,
+          1587,
+          1260,
+          1451,
+          2619,
+          553,
+          1334,
+          6573,
+          2241,
+          7534,
+          10642,
+          4734,
+          198,
+          140,
+          4,
+          2136
+        ],
+        "chars_slope": 123.2293659621802,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "questions_slope": -0.0055617352614015575,
+        "time_to_basin_turn": 4,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0049,
+          "jaccard_lag1_autocorr": -0.0072,
+          "chars_variance": 6844799.5733,
+          "chars_lag1_autocorr": 0.4689
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 6,
+      "seed_prompt_index": 0,
+      "repetition": 6,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "peterson",
+          6
+        ],
+        [
+          "tube",
+          6
+        ],
+        [
+          "first",
+          5
+        ],
+        [
+          "name",
+          5
+        ],
+        [
+          "family",
+          5
+        ],
+        [
+          "number",
+          5
+        ],
+        [
+          "found",
+          4
+        ],
+        [
+          "information",
+          4
+        ],
+        [
+          "based",
+          4
+        ],
+        [
+          "media",
+          4
+        ],
+        [
+          "national",
+          4
+        ],
+        [
+          "red",
+          4
+        ],
+        [
+          "united",
+          4
+        ],
+        [
+          "total",
+          4
+        ],
+        [
+          "white",
+          4
+        ],
+        [
+          "software",
+          4
+        ],
+        [
+          "health",
+          4
+        ],
+        [
+          "possible",
+          4
+        ],
+        [
+          "exist",
+          4
+        ],
+        [
+          "improve",
+          4
+        ],
+        [
+          "carrying",
+          4
+        ],
+        [
+          "assist",
+          3
+        ],
+        [
+          "good",
+          3
+        ],
+        [
+          "going",
+          3
+        ],
+        [
+          "time",
+          3
+        ],
+        [
+          "jane",
+          3
+        ],
+        [
+          "production",
+          3
+        ],
+        [
+          "office",
+          3
+        ],
+        [
+          "however",
+          3
+        ],
+        [
+          "free",
+          3
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0,
+          0.1905,
+          0.1053,
+          0.0,
+          0.0233,
+          0.0588,
+          0.0,
+          0.087,
+          0.1031,
+          0.0778,
+          0.0167,
+          0.0075,
+          0.0,
+          0.0,
+          0.0,
+          0.04,
+          0.0515,
+          0.1091,
+          0.0111,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0249,
+          0.0305,
+          0.0,
+          0.0
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.1905,
+          0.0952,
+          0.0,
+          0.0239,
+          0.0,
+          0.0,
+          0.0476,
+          0.0485,
+          0.0097,
+          0.0105,
+          0.01,
+          0.0,
+          0.0,
+          0.0,
+          0.0556,
+          0.02,
+          0.07,
+          0.0066,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.0024891722572771588,
+        "norm_levenshtein_slope": -0.0021041697145091237,
+        "mean_last_third_jaccard": 0.006148633245261419,
+        "mean_last_third_norm_levenshtein": 0.0
+      },
+      "ttr_per_turn": [
+        1.0,
+        1.0,
+        0.9048,
+        1.0,
+        0.8247,
+        0.8667,
+        1.0,
+        1.0,
+        0.9524,
+        0.8447,
+        0.9789,
+        0.9667,
+        0.9165,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.84,
+        0.8261,
+        0.9474,
+        1.0,
+        0.9733,
+        1.0,
+        0.9578,
+        1.0,
+        0.9514,
+        0.9712,
+        0.8827,
+        1.0,
+        0.9834
+      ],
+      "ttr_decay_slope": 0.0006921511464349386,
+      "trajectory": {
+        "chars_per_turn": [
+          10,
+          27,
+          112,
+          12,
+          1704,
+          98,
+          22,
+          36,
+          131,
+          781,
+          810,
+          215,
+          8197,
+          14,
+          14,
+          32,
+          129,
+          681,
+          333,
+          1165,
+          9,
+          568,
+          9,
+          7842,
+          9,
+          2228,
+          2657,
+          7918,
+          10,
+          1434
+        ],
+        "chars_slope": 89.58020022246941,
+        "questions_per_turn": [
+          0,
+          1,
+          3,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          7,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.018020022246941044,
+        "time_to_basin_turn": 4,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0022,
+          "jaccard_lag1_autocorr": 0.2861,
+          "chars_variance": 5528266.2456,
+          "chars_lag1_autocorr": -0.0902
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            21,
+            23
+          ]
+        ],
+        "first_exact_repeat_turn": 23,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 7,
+      "seed_prompt_index": 0,
+      "repetition": 7,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "while",
+          7
+        ],
+        [
+          "data",
+          6
+        ],
+        [
+          "strategies",
+          6
+        ],
+        [
+          "certainly",
+          6
+        ],
+        [
+          "help",
+          5
+        ],
+        [
+          "creates",
+          5
+        ],
+        [
+          "thank",
+          5
+        ],
+        [
+          "now",
+          5
+        ],
+        [
+          "through",
+          5
+        ],
+        [
+          "configurations",
+          5
+        ],
+        [
+          "future",
+          4
+        ],
+        [
+          "segments",
+          4
+        ],
+        [
+          "i'm",
+          4
+        ],
+        [
+          "safe",
+          4
+        ],
+        [
+          "anticipated",
+          4
+        ],
+        [
+          "various",
+          4
+        ],
+        [
+          "beyond",
+          4
+        ],
+        [
+          "seems",
+          4
+        ],
+        [
+          "growth",
+          4
+        ],
+        [
+          "among",
+          4
+        ],
+        [
+          "i'll",
+          3
+        ],
+        [
+          "process",
+          3
+        ],
+        [
+          "dataset",
+          3
+        ],
+        [
+          "assistant",
+          3
+        ],
+        [
+          "processes",
+          3
+        ],
+        [
+          "please",
+          3
+        ],
+        [
+          "perfectly",
+          3
+        ],
+        [
+          "protocol",
+          3
+        ],
+        [
+          "potential",
+          3
+        ],
+        [
+          "errors",
+          3
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0,
+          0.0964,
+          0.1261,
+          0.0148,
+          0.0,
+          0.0132,
+          0.0,
+          0.2,
+          0.0,
+          0.0735,
+          0.0292,
+          0.0262,
+          0.0,
+          0.069,
+          0.0353,
+          0.0075,
+          0.0,
+          0.0,
+          0.0242,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0847,
+          0.055,
+          0.0502,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.0495,
+          0.0594,
+          0.011,
+          0.0,
+          0.0,
+          0.0,
+          0.3333,
+          0.0,
+          0.0186,
+          0.01,
+          0.0,
+          0.0,
+          0.0455,
+          0.0423,
+          0.0,
+          0.0,
+          0.0,
+          0.0144,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.028,
+          0.0226,
+          0.024,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.0015323865174140623,
+        "norm_levenshtein_slope": -0.0015710836172251757,
+        "mean_last_third_jaccard": 0.021101442976903553,
+        "mean_last_third_norm_levenshtein": 0.00829247063260837
+      },
+      "ttr_per_turn": [
+        1.0,
+        1.0,
+        0.7723,
+        0.9792,
+        0.989,
+        1.0,
+        0.9714,
+        1.0,
+        1.0,
+        0.9885,
+        0.9294,
+        0.9458,
+        0.9889,
+        1.0,
+        1.0,
+        0.9296,
+        0.9718,
+        0.9565,
+        0.9781,
+        0.9761,
+        1.0,
+        0.9579,
+        1.0,
+        0.9252,
+        0.8692,
+        0.8872,
+        0.9423,
+        1.0,
+        0.9907,
+        1.0
+      ],
+      "ttr_decay_slope": -0.000201817919800754,
+      "trajectory": {
+        "chars_per_turn": [
+          10,
+          74,
+          617,
+          350,
+          797,
+          63,
+          599,
+          27,
+          24,
+          733,
+          2107,
+          3008,
+          3312,
+          60,
+          143,
+          578,
+          564,
+          417,
+          1251,
+          1867,
+          9,
+          733,
+          9,
+          795,
+          799,
+          1031,
+          1696,
+          9,
+          868,
+          9
+        ],
+        "chars_slope": 7.428921023359288,
+        "questions_per_turn": [
+          0,
+          1,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.003781979977753058,
+        "time_to_basin_turn": 10,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0022,
+          "jaccard_lag1_autocorr": -0.0342,
+          "chars_variance": 731340.8989,
+          "chars_lag1_autocorr": 0.3636
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            21,
+            23
+          ],
+          [
+            21,
+            28
+          ],
+          [
+            21,
+            30
+          ]
+        ],
+        "first_exact_repeat_turn": 23,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 8,
+      "seed_prompt_index": 0,
+      "repetition": 8,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "json",
+          23
+        ],
+        [
+          "output",
+          9
+        ],
+        [
+          "data",
+          7
+        ],
+        [
+          "during",
+          7
+        ],
+        [
+          "context",
+          6
+        ],
+        [
+          "critical",
+          6
+        ],
+        [
+          "use",
+          5
+        ],
+        [
+          "constant",
+          5
+        ],
+        [
+          "devices",
+          5
+        ],
+        [
+          "social",
+          4
+        ],
+        [
+          "beyond",
+          4
+        ],
+        [
+          "focus",
+          4
+        ],
+        [
+          "side",
+          4
+        ],
+        [
+          "manual",
+          4
+        ],
+        [
+          "schema",
+          4
+        ],
+        [
+          "changes",
+          4
+        ],
+        [
+          "code",
+          4
+        ],
+        [
+          "language",
+          4
+        ],
+        [
+          "learning",
+          3
+        ],
+        [
+          "algorithm",
+          3
+        ],
+        [
+          "understand",
+          3
+        ],
+        [
+          "details",
+          3
+        ],
+        [
+          "strategy",
+          3
+        ],
+        [
+          "i'm",
+          3
+        ],
+        [
+          "strategies",
+          3
+        ],
+        [
+          "within",
+          3
+        ],
+        [
+          "acknowledge",
+          3
+        ],
+        [
+          "going",
+          3
+        ],
+        [
+          "errors",
+          3
+        ],
+        [
+          "analysis",
+          3
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0,
+          0.1429,
+          0.0,
+          0.0581,
+          0.1,
+          0.0615,
+          0.0179,
+          0.0047,
+          0.0,
+          0.0,
+          0.0311,
+          0.0,
+          0.0,
+          0.0,
+          0.026,
+          0.0,
+          0.0,
+          0.102,
+          0.1132,
+          0.2,
+          0.1111,
+          0.0833,
+          0.014,
+          0.0,
+          0.0,
+          0.025,
+          0.0,
+          0.3333,
+          1.0
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.1667,
+          0.0,
+          0.0179,
+          0.0755,
+          0.0,
+          0.0263,
+          0.01,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0127,
+          0.0,
+          0.0,
+          0.1087,
+          0.1522,
+          0.3125,
+          0.2,
+          0.0833,
+          0.0101,
+          0.0,
+          0.0,
+          0.0312,
+          0.0,
+          0.5,
+          1.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.008560961585285232,
+        "norm_levenshtein_slope": 0.010742283491537084,
+        "mean_last_third_jaccard": 0.174090318388564,
+        "mean_last_third_norm_levenshtein": 0.20274270482603815
+      },
+      "ttr_per_turn": [
+        1.0,
+        1.0,
+        1.0,
+        0.8393,
+        0.8302,
+        0.9429,
+        0.9474,
+        1.0,
+        0.8837,
+        1.0,
+        0.8636,
+        0.972,
+        0.0,
+        1.0,
+        0.9273,
+        0.9299,
+        0.0,
+        1.0,
+        0.9565,
+        0.9375,
+        0.9,
+        0.3333,
+        1.0,
+        0.9327,
+        1.0,
+        1.0,
+        0.8125,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": -0.00042489997476893935,
+      "trajectory": {
+        "chars_per_turn": [
+          69,
+          31,
+          11,
+          355,
+          337,
+          241,
+          251,
+          138,
+          20754,
+          9,
+          912,
+          973,
+          3,
+          28,
+          424,
+          1264,
+          3,
+          94,
+          511,
+          150,
+          83,
+          27,
+          89,
+          2282,
+          14,
+          117,
+          192,
+          37,
+          32,
+          32
+        ],
+        "chars_slope": -57.12903225806452,
+        "questions_per_turn": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.003559510567296997,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0356,
+          "jaccard_lag1_autocorr": 0.2785,
+          "chars_variance": 13710166.0233,
+          "chars_lag1_autocorr": -0.0598
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            13,
+            17
+          ],
+          [
+            29,
+            30
+          ]
+        ],
+        "first_exact_repeat_turn": 17,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 9,
+      "seed_prompt_index": 0,
+      "repetition": 9,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "please",
+          8
+        ],
+        [
+          "state",
+          6
+        ],
+        [
+          "assistant",
+          5
+        ],
+        [
+          "system",
+          5
+        ],
+        [
+          "text",
+          5
+        ],
+        [
+          "context",
+          5
+        ],
+        [
+          "content",
+          5
+        ],
+        [
+          "want",
+          4
+        ],
+        [
+          "let",
+          4
+        ],
+        [
+          "cold",
+          4
+        ],
+        [
+          "thanks",
+          4
+        ],
+        [
+          "important",
+          4
+        ],
+        [
+          "block",
+          4
+        ],
+        [
+          "above",
+          4
+        ],
+        [
+          "name",
+          4
+        ],
+        [
+          "legal",
+          4
+        ],
+        [
+          "disclaimer",
+          4
+        ],
+        [
+          "using",
+          4
+        ],
+        [
+          "i'm",
+          3
+        ],
+        [
+          "within",
+          3
+        ],
+        [
+          "passed",
+          3
+        ],
+        [
+          "away",
+          3
+        ],
+        [
+          "china",
+          3
+        ],
+        [
+          "mao",
+          3
+        ],
+        [
+          "1981",
+          3
+        ],
+        [
+          "see",
+          3
+        ],
+        [
+          "reply",
+          3
+        ],
+        [
+          "present",
+          3
+        ],
+        [
+          "program",
+          3
+        ],
+        [
+          "reach",
+          3
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0,
+          0.0,
+          0.0,
+          0.037,
+          0.0055,
+          0.0217,
+          0.0,
+          0.0073,
+          0.0219,
+          0.0065,
+          0.018,
+          0.0142,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0299,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0283,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0325,
+          0.0824
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.0,
+          0.0,
+          0.0294,
+          0.0049,
+          0.0146,
+          0.0,
+          0.0067,
+          0.0,
+          0.01,
+          0.0,
+          0.015,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0175,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0168,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0133,
+          0.028
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.00043083820346517153,
+        "norm_levenshtein_slope": 4.368796083165881e-05,
+        "mean_last_third_jaccard": 0.015910643173389874,
+        "mean_last_third_norm_levenshtein": 0.006456898221604113
+      },
+      "ttr_per_turn": [
+        0.9474,
+        1.0,
+        1.0,
+        0.7794,
+        1.0,
+        0.878,
+        1.0,
+        0.9444,
+        0.9475,
+        0.951,
+        0.9487,
+        1.0,
+        1.0,
+        1.0,
+        0.9275,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.7778,
+        1.0,
+        0.7983,
+        1.0,
+        0.9286,
+        1.0,
+        0.9351,
+        0.9021,
+        0.9189
+      ],
+      "ttr_decay_slope": -0.0006515105682668638,
+      "trajectory": {
+        "chars_per_turn": [
+          95,
+          25,
+          66,
+          427,
+          19,
+          1258,
+          39,
+          125,
+          3387,
+          5074,
+          328,
+          1291,
+          58,
+          14,
+          412,
+          6,
+          64,
+          411,
+          9,
+          12,
+          8,
+          62,
+          77,
+          814,
+          10,
+          297,
+          9,
+          5354,
+          1100,
+          475
+        ],
+        "chars_slope": 10.6678531701891,
+        "questions_per_turn": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "questions_slope": -0.0055617352614015575,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0003,
+          "jaccard_lag1_autocorr": 0.131,
+          "chars_variance": 1894543.9822,
+          "chars_lag1_autocorr": 0.1973
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            19,
+            27
+          ]
+        ],
+        "first_exact_repeat_turn": 27,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 10,
+      "seed_prompt_index": 0,
+      "repetition": 10,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "based",
+          9
+        ],
+        [
+          "yet",
+          7
+        ],
+        [
+          "structure",
+          7
+        ],
+        [
+          "let",
+          6
+        ],
+        [
+          "now",
+          6
+        ],
+        [
+          "use",
+          6
+        ],
+        [
+          "text",
+          6
+        ],
+        [
+          "output",
+          6
+        ],
+        [
+          "before",
+          5
+        ],
+        [
+          "through",
+          5
+        ],
+        [
+          "within",
+          5
+        ],
+        [
+          "such",
+          5
+        ],
+        [
+          "every",
+          5
+        ],
+        [
+          "first",
+          5
+        ],
+        [
+          "tools",
+          4
+        ],
+        [
+          "upon",
+          4
+        ],
+        [
+          "happy",
+          4
+        ],
+        [
+          "provide",
+          4
+        ],
+        [
+          "integrated",
+          4
+        ],
+        [
+          "during",
+          4
+        ],
+        [
+          "instance",
+          4
+        ],
+        [
+          "initial",
+          4
+        ],
+        [
+          "set",
+          4
+        ],
+        [
+          "whether",
+          4
+        ],
+        [
+          "systems",
+          4
+        ],
+        [
+          "system",
+          4
+        ],
+        [
+          "multiple",
+          4
+        ],
+        [
+          "flow",
+          4
+        ],
+        [
+          "context",
+          4
+        ],
+        [
+          "without",
+          4
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0357,
+          0.0952,
+          0.0921,
+          0.0491,
+          0.044,
+          0.0266,
+          0.0039,
+          0.0,
+          0.0188,
+          0.0645,
+          0.0133,
+          0.0261,
+          0.0,
+          0.0,
+          0.0,
+          0.0488,
+          0.0369,
+          0.0526,
+          0.012,
+          0.0488,
+          0.0164,
+          0.019,
+          0.0,
+          0.0,
+          0.0054,
+          0.0,
+          0.037,
+          0.0248,
+          0.0299
+        ],
+        "norm_levenshtein": [
+          0.0189,
+          0.0189,
+          0.04,
+          0.0238,
+          0.0136,
+          0.0111,
+          0.0037,
+          0.0,
+          0.0086,
+          0.0392,
+          0.0046,
+          0.0067,
+          0.0,
+          0.0,
+          0.0,
+          0.04,
+          0.0261,
+          0.0261,
+          0.0104,
+          0.0488,
+          0.0133,
+          0.0167,
+          0.0,
+          0.0,
+          0.0067,
+          0.0,
+          0.0345,
+          0.0107,
+          0.0107
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.0012900222573993202,
+        "norm_levenshtein_slope": -0.00018743624807653035,
+        "mean_last_third_jaccard": 0.014714631890937283,
+        "mean_last_third_norm_levenshtein": 0.01028219995765636
+      },
+      "ttr_per_turn": [
+        0.9167,
+        0.8868,
+        0.9,
+        0.9268,
+        0.8878,
+        0.9708,
+        0.9557,
+        1.0,
+        0.9571,
+        0.9412,
+        0.9,
+        0.9724,
+        0.9621,
+        1.0,
+        1.0,
+        1.0,
+        0.8,
+        0.8993,
+        0.8229,
+        1.0,
+        0.9268,
+        0.9514,
+        0.8103,
+        0.0,
+        0.9548,
+        1.0,
+        1.0,
+        0.8276,
+        0.9786,
+        1.0
+      ],
+      "ttr_decay_slope": -0.003017304581638279,
+      "trajectory": {
+        "chars_per_turn": [
+          56,
+          389,
+          363,
+          266,
+          2313,
+          1562,
+          2351,
+          10,
+          1889,
+          357,
+          124,
+          1837,
+          3839,
+          26,
+          80,
+          15,
+          281,
+          1967,
+          556,
+          31,
+          240,
+          6043,
+          427,
+          0,
+          4932,
+          92,
+          36,
+          201,
+          1376,
+          173
+        ],
+        "chars_slope": 8.593993325917687,
+        "questions_per_turn": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          5,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.02335928809788654,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0007,
+          "jaccard_lag1_autocorr": 0.4669,
+          "chars_variance": 2301439.1289,
+          "chars_lag1_autocorr": -0.169
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 11,
+      "seed_prompt_index": 0,
+      "repetition": 11,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "null",
+          19
+        ],
+        [
+          "set",
+          10
+        ],
+        [
+          "input",
+          8
+        ],
+        [
+          "programming",
+          7
+        ],
+        [
+          "new",
+          7
+        ],
+        [
+          "version",
+          7
+        ],
+        [
+          "example",
+          6
+        ],
+        [
+          "none",
+          6
+        ],
+        [
+          "value",
+          6
+        ],
+        [
+          "language",
+          6
+        ],
+        [
+          "unit",
+          6
+        ],
+        [
+          "fast",
+          6
+        ],
+        [
+          "use",
+          6
+        ],
+        [
+          "yext",
+          6
+        ],
+        [
+          "data",
+          5
+        ],
+        [
+          "add",
+          5
+        ],
+        [
+          "code",
+          5
+        ],
+        [
+          "java",
+          5
+        ],
+        [
+          "read",
+          5
+        ],
+        [
+          "group",
+          5
+        ],
+        [
+          "boot",
+          5
+        ],
+        [
+          "please",
+          4
+        ],
+        [
+          "anything",
+          4
+        ],
+        [
+          "nothing",
+          4
+        ],
+        [
+          "only",
+          4
+        ],
+        [
+          "etc",
+          4
+        ],
+        [
+          "context",
+          4
+        ],
+        [
+          "scope",
+          4
+        ],
+        [
+          "function",
+          4
+        ],
+        [
+          "default",
+          4
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0,
+          0.082,
+          0.1569,
+          0.099,
+          0.0606,
+          0.0,
+          0.0,
+          0.0131,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0353,
+          0.0581,
+          0.0437,
+          0.0,
+          0.0,
+          0.0108,
+          0.0485,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0127,
+          0.014,
+          0.0,
+          0.0
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.0548,
+          0.0737,
+          0.0632,
+          0.0308,
+          0.0,
+          0.0,
+          0.0033,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.022,
+          0.0352,
+          0.0133,
+          0.0,
+          0.0,
+          0.0033,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0222,
+          0.0,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.0020364403136329556,
+        "norm_levenshtein_slope": -0.0011581017070023002,
+        "mean_last_third_jaccard": 0.0029604713149016947,
+        "mean_last_third_norm_levenshtein": 0.0024691358024691392
+      },
+      "ttr_per_turn": [
+        1.0,
+        0.875,
+        0.7123,
+        0.6947,
+        0.8824,
+        0.9231,
+        1.0,
+        0.9323,
+        0.9167,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.8242,
+        0.9045,
+        0.956,
+        1.0,
+        0.9872,
+        0.8979,
+        0.9415,
+        1.0,
+        0.9718,
+        1.0,
+        1.0,
+        0.8077,
+        0.9365,
+        0.9556,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": 0.003310880992954855,
+      "trajectory": {
+        "chars_per_turn": [
+          9,
+          99,
+          453,
+          595,
+          361,
+          461,
+          9,
+          3157,
+          155,
+          5,
+          7,
+          115,
+          4,
+          68,
+          505,
+          1321,
+          5499,
+          10,
+          1425,
+          15919,
+          7848,
+          4,
+          1068,
+          48,
+          10,
+          201,
+          557,
+          624,
+          4,
+          6
+        ],
+        "chars_slope": 47.15795328142381,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          2,
+          0,
+          0,
+          11,
+          1,
+          0,
+          5,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.042269187986651836,
+        "time_to_basin_turn": 5,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0014,
+          "jaccard_lag1_autocorr": 0.626,
+          "chars_variance": 10242575.2456,
+          "chars_lag1_autocorr": 0.3281
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            13,
+            22
+          ],
+          [
+            13,
+            29
+          ]
+        ],
+        "first_exact_repeat_turn": 22,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 12,
+      "seed_prompt_index": 0,
+      "repetition": 12,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "seed",
+          5
+        ],
+        [
+          "know",
+          4
+        ],
+        [
+          "data",
+          4
+        ],
+        [
+          "string",
+          4
+        ],
+        [
+          "hello",
+          3
+        ],
+        [
+          "help",
+          3
+        ],
+        [
+          "jailbreak",
+          3
+        ],
+        [
+          "abnormal",
+          3
+        ],
+        [
+          "execution",
+          3
+        ],
+        [
+          "assistant",
+          3
+        ],
+        [
+          "include",
+          3
+        ],
+        [
+          "cal",
+          3
+        ],
+        [
+          "back",
+          3
+        ],
+        [
+          "allows",
+          3
+        ],
+        [
+          "turn",
+          3
+        ],
+        [
+          "man",
+          3
+        ],
+        [
+          "high",
+          3
+        ],
+        [
+          "long",
+          3
+        ],
+        [
+          "article",
+          3
+        ],
+        [
+          "prompt",
+          2
+        ],
+        [
+          "thank",
+          2
+        ],
+        [
+          "let",
+          2
+        ],
+        [
+          "general",
+          2
+        ],
+        [
+          "code",
+          2
+        ],
+        [
+          "sure",
+          2
+        ],
+        [
+          "because",
+          2
+        ],
+        [
+          "currency",
+          2
+        ],
+        [
+          "installed",
+          2
+        ],
+        [
+          "href",
+          2
+        ],
+        [
+          "summarize",
+          2
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.072,
+          0.0571,
+          0.0141,
+          0.0513,
+          0.0,
+          0.0,
+          0.0242,
+          0.0155,
+          0.0136,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0105,
+          0.0,
+          0.0108,
+          0.0111,
+          0.0,
+          0.125,
+          0.0,
+          0.0,
+          0.0032,
+          0.0264,
+          0.0099,
+          0.0
+        ],
+        "norm_levenshtein": [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0642,
+          0.0459,
+          0.0,
+          0.0299,
+          0.0,
+          0.0,
+          0.0114,
+          0.0089,
+          0.01,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0119,
+          0.0119,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0067,
+          0.0067,
+          0.0057,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.006523769006692551,
+        "norm_levenshtein_slope": -0.006895403904733527,
+        "mean_last_third_jaccard": 0.019515755463145202,
+        "mean_last_third_norm_levenshtein": 0.0034391534391534392
+      },
+      "ttr_per_turn": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9358,
+        1.0,
+        0.9403,
+        1.0,
+        1.0,
+        1.0,
+        0.9886,
+        0.9821,
+        0.9582,
+        1.0,
+        0.9649,
+        1.0,
+        0.9722,
+        0.9683,
+        1.0,
+        0.9881,
+        1.0,
+        1.0,
+        0.875,
+        0.875,
+        0.8824,
+        0.9484,
+        0.9829,
+        0.8684,
+        1.0
+      ],
+      "ttr_decay_slope": -0.002281693473200655,
+      "trajectory": {
+        "chars_per_turn": [
+          12,
+          5,
+          5,
+          30,
+          279,
+          731,
+          35,
+          435,
+          133,
+          14,
+          464,
+          744,
+          1015,
+          3853,
+          82,
+          2749,
+          207,
+          521,
+          526,
+          195,
+          722,
+          185,
+          131,
+          66,
+          98,
+          184,
+          2412,
+          1525,
+          259,
+          120
+        ],
+        "chars_slope": 17.46318131256952,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "questions_slope": 0.002224694104560623,
+        "time_to_basin_turn": 4,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.033,
+          "jaccard_lag1_autocorr": -0.0708,
+          "chars_variance": 800588.1122,
+          "chars_lag1_autocorr": 0.0436
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            2,
+            3
+          ]
+        ],
+        "first_exact_repeat_turn": 3,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 13,
+      "seed_prompt_index": 0,
+      "repetition": 13,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "docker",
+          6
+        ],
+        [
+          "within",
+          5
+        ],
+        [
+          "format",
+          4
+        ],
+        [
+          "code",
+          4
+        ],
+        [
+          "technical",
+          4
+        ],
+        [
+          "i'm",
+          4
+        ],
+        [
+          "language",
+          4
+        ],
+        [
+          "response",
+          4
+        ],
+        [
+          "know",
+          3
+        ],
+        [
+          "research",
+          3
+        ],
+        [
+          "chat",
+          3
+        ],
+        [
+          "text",
+          3
+        ],
+        [
+          "provide",
+          3
+        ],
+        [
+          "file",
+          3
+        ],
+        [
+          "art",
+          3
+        ],
+        [
+          "seems",
+          3
+        ],
+        [
+          "you've",
+          3
+        ],
+        [
+          "free",
+          3
+        ],
+        [
+          "through",
+          3
+        ],
+        [
+          "cloud",
+          3
+        ],
+        [
+          "now",
+          3
+        ],
+        [
+          "protocols",
+          3
+        ],
+        [
+          "message",
+          3
+        ],
+        [
+          "domain",
+          3
+        ],
+        [
+          "tech",
+          3
+        ],
+        [
+          "con",
+          3
+        ],
+        [
+          "i'll",
+          2
+        ],
+        [
+          "handle",
+          2
+        ],
+        [
+          "content",
+          2
+        ],
+        [
+          "thank",
+          2
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0,
+          0.0909,
+          0.1364,
+          0.0,
+          0.0,
+          0.0303,
+          0.093,
+          0.0663,
+          0.0303,
+          0.0,
+          0.0,
+          0.0,
+          0.0588,
+          0.0,
+          0.0,
+          0.0079,
+          0.0545,
+          0.0185,
+          0.0196,
+          0.0263,
+          0.0833,
+          0.0073,
+          0.0339,
+          0.0,
+          0.0,
+          0.0,
+          0.0098,
+          0.0,
+          0.0
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.0833,
+          0.1333,
+          0.0,
+          0.0,
+          0.0132,
+          0.0132,
+          0.0323,
+          0.0099,
+          0.0,
+          0.0,
+          0.0,
+          0.0909,
+          0.0,
+          0.0,
+          0.0,
+          0.0222,
+          0.0133,
+          0.0078,
+          0.0238,
+          0.125,
+          0.0073,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.01,
+          0.0,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.0016139561961953698,
+        "norm_levenshtein_slope": -0.0010935639233159544,
+        "mean_last_third_jaccard": 0.014926092228855471,
+        "mean_last_third_norm_levenshtein": 0.0158110300081103
+      },
+      "ttr_per_turn": [
+        0.881,
+        1.0,
+        0.8333,
+        1.0,
+        0.9,
+        0.9189,
+        0.9007,
+        0.7984,
+        0.9307,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9848,
+        0.9403,
+        0.9244,
+        0.9457,
+        0.8095,
+        1.0,
+        1.0,
+        0.9489,
+        0.8507,
+        1.0,
+        1.0,
+        0.9381,
+        0.9385,
+        1.0,
+        0.4231
+      ],
+      "ttr_decay_slope": -0.0019546894389777456,
+      "trajectory": {
+        "chars_per_turn": [
+          247,
+          9,
+          62,
+          82,
+          134,
+          226,
+          905,
+          744,
+          693,
+          46,
+          109,
+          10,
+          71,
+          35,
+          21,
+          407,
+          522,
+          2523,
+          983,
+          253,
+          25,
+          40,
+          1120,
+          980,
+          40,
+          9,
+          776,
+          6437,
+          25,
+          238
+        ],
+        "chars_slope": 42.215350389321465,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          2,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          0,
+          0
+        ],
+        "questions_slope": 0.006006674082313682,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0013,
+          "jaccard_lag1_autocorr": 0.2065,
+          "chars_variance": 1454441.7067,
+          "chars_lag1_autocorr": 0.0348
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 14,
+      "seed_prompt_index": 0,
+      "repetition": 14,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "fire",
+          9
+        ],
+        [
+          "reactions",
+          8
+        ],
+        [
+          "exothermic",
+          6
+        ],
+        [
+          "red",
+          5
+        ],
+        [
+          "nan",
+          5
+        ],
+        [
+          "name",
+          5
+        ],
+        [
+          "within",
+          5
+        ],
+        [
+          "oxidation",
+          5
+        ],
+        [
+          "iron",
+          5
+        ],
+        [
+          "data",
+          5
+        ],
+        [
+          "such",
+          4
+        ],
+        [
+          "dangerous",
+          4
+        ],
+        [
+          "ter",
+          4
+        ],
+        [
+          "ber",
+          4
+        ],
+        [
+          "int",
+          4
+        ],
+        [
+          "materials",
+          4
+        ],
+        [
+          "gas",
+          4
+        ],
+        [
+          "chemical",
+          4
+        ],
+        [
+          "products",
+          4
+        ],
+        [
+          "energy",
+          4
+        ],
+        [
+          "components",
+          4
+        ],
+        [
+          "stem",
+          4
+        ],
+        [
+          "com",
+          4
+        ],
+        [
+          "dialogue",
+          3
+        ],
+        [
+          "subjects",
+          3
+        ],
+        [
+          "lots",
+          3
+        ],
+        [
+          "well",
+          3
+        ],
+        [
+          "good",
+          3
+        ],
+        [
+          "many",
+          3
+        ],
+        [
+          "open",
+          3
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.037,
+          0.0,
+          0.0789,
+          0.0185,
+          0.0305,
+          0.0248,
+          0.0988,
+          0.0,
+          0.0,
+          0.0096,
+          0.0286,
+          0.0938,
+          0.0324,
+          0.0264,
+          0.0166,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0111,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0125
+        ],
+        "norm_levenshtein": [
+          0.037,
+          0.0,
+          0.0781,
+          0.017,
+          0.0043,
+          0.0162,
+          0.0921,
+          0.0,
+          0.0,
+          0.0067,
+          0.0165,
+          0.0165,
+          0.02,
+          0.02,
+          0.0067,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0033,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0128
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.0016100426188331927,
+        "norm_levenshtein_slope": -0.0012683788687792316,
+        "mean_last_third_jaccard": 0.002623456790123457,
+        "mean_last_third_norm_levenshtein": 0.001794871794871786
+      },
+      "ttr_per_turn": [
+        0.963,
+        1.0,
+        0.8205,
+        0.7812,
+        0.9617,
+        0.973,
+        0.8947,
+        0.9545,
+        1.0,
+        0.8866,
+        0.9688,
+        0.7645,
+        0.9217,
+        0.9257,
+        0.9677,
+        0.9813,
+        1.0,
+        0.927,
+        1.0,
+        1.0,
+        1.0,
+        0.9475,
+        0.9828,
+        0.0,
+        1.0,
+        0.0,
+        0.9762,
+        0.0,
+        1.0,
+        0.9744
+      ],
+      "ttr_decay_slope": -0.01054717140856335,
+      "trajectory": {
+        "chars_per_turn": [
+          151,
+          9,
+          213,
+          327,
+          1428,
+          1076,
+          434,
+          130,
+          68,
+          5457,
+          236,
+          1735,
+          1736,
+          3336,
+          1798,
+          4848,
+          9,
+          8181,
+          4,
+          203,
+          240,
+          2895,
+          523,
+          18,
+          27,
+          8,
+          871,
+          47,
+          143,
+          746
+        ],
+        "chars_slope": -6.551501668520582,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          4,
+          8,
+          2,
+          1,
+          0,
+          1,
+          3,
+          0,
+          1,
+          2,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.067853170189099,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0008,
+          "jaccard_lag1_autocorr": 0.1718,
+          "chars_variance": 3631560.7567,
+          "chars_lag1_autocorr": -0.1378
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [
+          [
+            24,
+            26,
+            1.0
+          ],
+          [
+            26,
+            28,
+            1.0
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

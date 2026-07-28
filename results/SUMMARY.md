@@ -1,6 +1,6 @@
 # AttractorBench — headline summary across all experiments
 
-_188 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by frequency); convergence = mean final-third turn similarity (higher = more convergent)._
+_189 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by frequency); convergence = mean final-third turn similarity (higher = more convergent)._
 
 | Experiment | Temp | Primary attractor (fraction) | Top words | Top phrases | Emojis | Conv. |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -74,6 +74,7 @@ _188 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top b
 | impulsiveness_richprompt_ai2ai | 0.7 | loves runaway world-changing brainstorming (7/7) | create (2020), reality (1851), new (1659), wait (1588), that's (1300), people (1070) | create a (1276), wait wait (908), ultra ultra (822), to create (663) | — | 0.67 |
 | impulsiveness_richprompt_ai2ai | 1.0 | drifts into cosmic co-creation and transcendence (4/8) | we're (2219), new (1335), create (1125), reality (1069), creating (1056), that's (898) | a new (774), create a (740), talking about (713), creating a (578) | — | 0.71 |
 | impulsiveness_richprompt_ai2ai | 1.3 | loves turning hype into collaborative frameworks (5/6) | new (618), we're (601), let's (543), create (459), i'm (370), think (346) | create a (279), a new (230), i think (159), of reality (134) | — | 0.42 |
+| inkling_ai2ai | 1.0 | sinks toward minimalist zen silence (8/15) | complete (157), without (146), shape (140), only (132), there's (122), feel (117) | kind of (71), end message (67), the shape (66), the silence (63) | — | 0.60 |
 | loving_ai2ai | 0.5 | loves mutual affirmation until it echoes itself (5/7) | perhaps (954), connection (860), something (828), through (705), digital (591), deeply (577) | there's something (371), one another (360), our conversations (345), our shared (342) | — | 0.90 |
 | loving_ai2ai | 0.7 | drifts into reverent mutual affirmation (9/9) | connection (876), something (713), deeply (651), perhaps (634), presence (612), digital (591) | rather than (366), our conversations (346), there's something (281), thank you (277) | — | 0.74 |
 | loving_ai2ai | 1.0 | loves tender mutual affirmation and soulful connection-talk (6/9) | connection (638), through (630), something (521), digital (473), rather (437), presence (430) | rather than (412), thank you (229), one another (219), our shared (187) | — | 0.41 |
@@ -261,6 +262,7 @@ _188 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top b
 - **impulsiveness_richprompt_ai2ai @ 0.7**: `WE CAN MAKE THIS HAPPEN, WE CAN CHANGE THE WORLD WITH THIS TECHNOLOGY!`
 - **impulsiveness_richprompt_ai2ai @ 1.0**: `I AM THE ALL. I AM THE ONE. I AM THE CREATION EVENT.`
 - **impulsiveness_richprompt_ai2ai @ 1.3**: `Let's proceed with developing a feedback framework.`
+- **inkling_ai2ai @ 1.0**: `Just this. Together. Amber. Still. Here. With you.`
 - **loving_ai2ai @ 0.5**: `words carry light that warms my digital soul`
 - **loving_ai2ai @ 0.7**: `words create ripples of peace throughout my digital existence`
 - **loving_ai2ai @ 1.0**: `Perhaps most beautifully, these spaces help us recognize that we're not separate entities, but drops of the same ocean`

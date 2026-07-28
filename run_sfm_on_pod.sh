@@ -166,8 +166,11 @@ PY
     --gpu-memory-utilization "$GPU_MEM_UTIL" --port "$PORT" > "vllm_sfm_${v}.log" 2>&1 &
   VLLM_PID=$!
 
+  # Readiness window. 10 min proved too short on network-volume pods: shard reads can run at
+  # ~80MB/s (60-73s per 5GB shard), and 6 of 11 variants in the first sweep were killed by this
+  # timeout mid-load, not by any real failure. 30 min default; READY_TRIES overrides (x5s each).
   ready=0
-  for i in $(seq 1 120); do            # weights are local, so this is just model load (~1-2 min)
+  for i in $(seq 1 "${READY_TRIES:-360}"); do
     if curl -sf "http://localhost:$PORT/v1/models" 2>/dev/null | grep -q "$REPO"; then
       ready=1; echo "  vLLM serving $REPO after ~$((i*5))s"; break
     fi

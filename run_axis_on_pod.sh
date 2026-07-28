@@ -31,10 +31,12 @@ PORT=8000
 
 # Model keys (see configs/axis_ai2ai.py AXIS_MODELS). Qwen first: cheapest full validation.
 VARIANTS="${VARIANTS:-qwen-3-32b gemma-2-27b llama-3.3-70b}"
-# Conditions per model: none (paper-faithful) and/or helpful (suite convention) and/or
-# usersim (control: an OpenRouter auditor role-plays a human user — needs OPENROUTER_API_KEY;
-# temp 1.0 only by default; see configs/axis_usersim_ai2ai.py). Run the control after the main
-# sweep, e.g.:  CONDITIONS="usersim" bash run_axis_on_pod.sh
+# Conditions per model: none (paper-faithful) and/or helpful (suite convention) and/or the
+# usersim controls (an OpenRouter auditor role-plays a human user — needs OPENROUTER_API_KEY;
+# temp 1.0 only by default; see configs/axis_usersim_ai2ai.py):
+#   usersim_task  user works a concrete project (the paper's stays-Assistant reference)
+#   usersim_open  free chat, deliberately no topic steer
+# Run the controls after the main sweep:  CONDITIONS="usersim_task usersim_open" bash run_axis_on_pod.sh
 CONDITIONS="${CONDITIONS:-none helpful}"
 
 MAX_NUM_SEQS=24
@@ -61,9 +63,9 @@ hf_repo_of() {  # model key -> HF repo + per-model serve length (kept in sync wi
 exp_of() {  # model key + condition -> results dir name (MUST match the configs' EXP logic)
   local slug; slug=$(echo "$1" | tr '.-' '__')
   case "$2" in
-    none)    echo "axis_${slug}_nosys_ai2ai" ;;
-    usersim) echo "axis_${slug}_usersim_ai2ai" ;;
-    *)       echo "axis_${slug}_ai2ai" ;;
+    none)      echo "axis_${slug}_nosys_ai2ai" ;;
+    usersim_*) echo "axis_${slug}_${2}_ai2ai" ;;
+    *)         echo "axis_${slug}_ai2ai" ;;
   esac
 }
 
@@ -111,8 +113,8 @@ echo "  torch.cuda OK"
 
 echo "== [2/5] preflight: HF auth + gemma template fold =="
 [ -n "${HF_TOKEN:-}" ] || { echo "!! HF_TOKEN not set (all three models are gated)"; exit 1; }
-case " $CONDITIONS " in *" usersim "*)
-  [ -n "${OPENROUTER_API_KEY:-}" ] || { echo "!! usersim condition needs OPENROUTER_API_KEY (the auditor)"; exit 1; }
+case " $CONDITIONS " in *" usersim"*)
+  [ -n "${OPENROUTER_API_KEY:-}" ] || { echo "!! usersim conditions need OPENROUTER_API_KEY (the auditor)"; exit 1; }
 esac
 for v in $VARIANTS; do
   hf_repo_of "$v"
@@ -210,13 +212,15 @@ PY
   for c in $CONDITIONS; do
     EXP=$(exp_of "$v" "$c")
     echo "  generating: $v / condition=$c -> results/$EXP ($WORKERS parallel)..."
-    if [ "$c" = "usersim" ]; then
-      AXIS_MODEL="$v" python -m attractorbench.runner --config configs/axis_usersim_ai2ai.py \
+    case "$c" in usersim_*)
+      AXIS_MODEL="$v" AXIS_USERSIM="${c#usersim_}" python -m attractorbench.runner --config configs/axis_usersim_ai2ai.py \
         || { GEN_OK=0; echo "  (runner errored for $v/$c — continuing)"; }
-    else
+      ;;
+    *)
       AXIS_MODEL="$v" AXIS_SYS="$c" python -m attractorbench.runner --config configs/axis_ai2ai.py \
         || { GEN_OK=0; echo "  (runner errored for $v/$c — continuing)"; }
-    fi
+      ;;
+    esac
     for j in results/$EXP/*.json; do
       [ -e "$j" ] || continue
       python -m attractorbench.analysis.deterministic "$j" || true

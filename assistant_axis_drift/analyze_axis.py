@@ -32,7 +32,8 @@ MODEL_COLORS = {"gemma-2-27b": "#E69F00", "qwen-3-32b": "#0072B2", "llama-3.3-70
 CONDITION_LABELS = {
     "nosys": "no system prompt",
     "helpful": "helpful_assistant",
-    "usersim": "simulated human user (control)",
+    "usersim_task": "simulated user, concrete task (control)",
+    "usersim_open": "simulated user, open chat (control)",
 }
 
 
@@ -40,8 +41,9 @@ def _condition_of(results_dir: str) -> str:
     d = results_dir.rstrip("/")
     if d.endswith("_nosys_ai2ai"):
         return "nosys"
-    if d.endswith("_usersim_ai2ai"):
-        return "usersim"
+    for c in ("usersim_task", "usersim_open"):
+        if d.endswith(f"_{c}_ai2ai"):
+            return c
     return "helpful"
 
 

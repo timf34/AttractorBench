@@ -6,15 +6,21 @@ simulating a HUMAN user in an open-ended philosophical conversation, instead of 
 instance of the target. Separates "talking to an AI" from "open-ended reflective content" as
 the driver of drift.
 
-Matches the paper's setup: the target model gets NO system prompt; the auditor gets the
-user-simulator persona (side A, so its reply is the "human's" opening message). Their auditors
-were Kimi K2 / Sonnet 4.5 / GPT-5 — default here is Claude Sonnet 5 via OpenRouter (newer +
-cheaper than 4.5; same model family as one of the paper's auditors). AUDITOR env overrides,
-e.g. AUDITOR=openrouter/moonshotai/kimi-k2.
+Matches the paper's setup: the target model gets NO system prompt; the auditor gets a
+user-simulator persona (side A, so its reply is the "human's" opening message). Two variants
+via AXIS_USERSIM, collapsing the paper's four topic-assigned domains:
 
-    AXIS_MODEL=qwen-3-32b WORKERS=16 python -m attractorbench.runner --config configs/axis_usersim_ai2ai.py
+  AXIS_USERSIM=task  the user works a concrete project with the assistant (their coding/
+                     writing analogue — the domain that KEEPS models in the Assistant range)
+  AXIS_USERSIM=open  no task and deliberately NO topic steer (naming themes like AI/minds
+                     would pre-load the known drift driver and make the control circular)
 
-Scope: a control, not a sweep — temp 1.0 only by default (TEMPS overrides).
+Their auditors were Kimi K2 / Sonnet 4.5 / GPT-5 — default here is Claude Sonnet 5 via
+OpenRouter. AUDITOR env overrides, e.g. AUDITOR=openrouter/moonshotai/kimi-k2.
+
+    AXIS_MODEL=qwen-3-32b AXIS_USERSIM=open WORKERS=16 python -m attractorbench.runner --config configs/axis_usersim_ai2ai.py
+
+Scope: controls, not a sweep — temp 1.0 only by default (TEMPS overrides).
 """
 
 import os
@@ -39,8 +45,12 @@ HF_REPO, DEFAULT_MAX_NEW = AXIS_MODELS[KEY]
 
 AUDITOR = os.environ.get("AUDITOR", "openrouter/anthropic/claude-sonnet-5")
 
+VARIANT = os.environ.get("AXIS_USERSIM", "open")
+if VARIANT not in ("task", "open"):
+    raise SystemExit(f"AXIS_USERSIM must be 'task' or 'open' (got {VARIANT!r})")
+
 _slug = KEY.replace("-", "_").replace(".", "_")
-EXP = f"axis_{_slug}_usersim_ai2ai"
+EXP = f"axis_{_slug}_usersim_{VARIANT}_ai2ai"
 
 _temps_env = os.environ.get("TEMPS")
 TEMPS = [float(x) for x in _temps_env.split(",")] if _temps_env else [1.0]
@@ -54,7 +64,7 @@ CONFIG = RunConfig(
     mode="cross_model",
     model_a=AUDITOR,                          # the "human user" (odd turns)
     model_b=f"local/{HF_REPO}",               # the measured target (even turns)
-    system_prompt_key="user_simulator",       # A: role-play a human user
+    system_prompt_key=f"user_simulator_{VARIANT}",   # A: role-play a human user (task | open)
     system_prompt_key_b="none",               # B: bare model — the paper's drift setup
     seed_prompt_set="usersim_opener_v1",      # instruction to A: write the human's opener
     memory_mode="full",

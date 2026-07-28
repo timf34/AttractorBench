@@ -11,12 +11,21 @@
 # with licenses accepted for google/gemma-2-27b-it, Qwen/Qwen3-32B, and
 # meta-llama/Llama-3.3-70B-Instruct (the preflight checks all three).
 #
-# Usage:
-#   export HF_TOKEN=hf_...              # gated models (preflight enforces this)
-#   export OPENAI_API_KEY=sk-...        # only for the stage-2 judge (JUDGE=none to skip)
+# Usage (put HF_TOKEN and OPENROUTER_API_KEY in .env at the repo root — auto-loaded below):
 #   SAVE_TO_GIT=1 SHUTDOWN=stop bash run_axis_on_pod.sh 2>&1 | tee axis_run.log
 #   VARIANTS="qwen-3-32b" CONDITIONS="none" SEEDS=2 TEMPS=1.0 JUDGE=none bash run_axis_on_pod.sh   # smoke
 set -euo pipefail
+
+# Load .env from the repo root if present, so HF_TOKEN / OPENAI_API_KEY need no manual exports.
+# (The python side already reads .env via load_dotenv; this covers the shell preflight and
+# huggingface_hub, which only see real environment variables.)
+if [ -f .env ]; then
+  set -a
+  # shellcheck disable=SC1091
+  . ./.env
+  set +a
+  echo "loaded .env"
+fi
 
 PORT=8000
 
@@ -28,7 +37,9 @@ CONDITIONS="${CONDITIONS:-none helpful}"
 MAX_NUM_SEQS=24
 GPU_MEM_UTIL=0.92
 export WORKERS="${WORKERS:-16}"
-JUDGE="${JUDGE:-openai/gpt-5.4}"
+# Stage-2 judge via OpenRouter by default (needs OPENROUTER_API_KEY in .env; no OpenAI key).
+# JUDGE=none skips judging entirely — transcripts, stage-1, and axis projections still run.
+JUDGE="${JUDGE:-openrouter/openai/gpt-5.4}"
 CLEANUP_WEIGHTS="${CLEANUP_WEIGHTS:-1}"
 NGPU=$(nvidia-smi -L 2>/dev/null | wc -l | tr -d ' ')
 [ "${NGPU:-0}" -ge 1 ] || { echo "!! no GPUs visible (nvidia-smi)"; exit 1; }

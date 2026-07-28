@@ -50,7 +50,7 @@ hf_repo_of() {  # model key -> HF repo + per-model serve length (kept in sync wi
     # Qwen3 routinely blows past 512-token replies; the anti-truncation escalation then fills a
     # 16k window by turn ~19. 32k (native) lets 30-turn conversations finish. Llama stays at
     # 16k: it is far less verbose, and 70B TP2 on 2x80GB has no KV budget for 32k sequences.
-    qwen-3-32b)    REPO="Qwen/Qwen3-32B";                       MAX_MODEL_LEN=32768 ;;
+    qwen-3-32b)    REPO="Qwen/Qwen3-32B";                       MAX_MODEL_LEN=40960 ;;   # native max; 32k still died ~turn 24
     llama-3.3-70b) REPO="meta-llama/Llama-3.3-70B-Instruct";    MAX_MODEL_LEN=16384 ;;
     *) echo "unknown variant $1"; return 1 ;;
   esac

@@ -168,9 +168,11 @@ PY
 
   # Readiness window. 10 min proved too short on network-volume pods: shard reads can run at
   # ~80MB/s (60-73s per 5GB shard), and 6 of 11 variants in the first sweep were killed by this
-  # timeout mid-load, not by any real failure. 30 min default; READY_TRIES overrides (x5s each).
+  # timeout mid-load, not by any real failure. 60 min default; READY_TRIES overrides (x5s each).
+  # A genuinely dead server still exits early via the kill -0 check below, so the long window
+  # only costs time in the no-crash-but-slow case it exists for.
   ready=0
-  for i in $(seq 1 "${READY_TRIES:-360}"); do
+  for i in $(seq 1 "${READY_TRIES:-720}"); do
     if curl -sf "http://localhost:$PORT/v1/models" 2>/dev/null | grep -q "$REPO"; then
       ready=1; echo "  vLLM serving $REPO after ~$((i*5))s"; break
     fi

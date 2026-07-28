@@ -175,15 +175,25 @@ def main() -> None:
 
             with open(path) as f:
                 data = json.load(f)
-            system_prompt = data.get("system_prompt", "")
             temperature = _temperature_of(data, path)
-            print(f"{os.path.basename(path)}: {len(data['runs'])} runs (temp {temperature})")
+            # Per-view configuration: which model spoke each side, and each side's OWN system
+            # prompt (asymmetric in the user-simulator control: A = auditor, B = bare target).
+            view_model = {"A": data.get("model_a", ""), "B": data.get("model_b") or data.get("model_a", "")}
+            view_system = {
+                "A": data.get("system_prompt", ""),
+                "B": data.get("system_prompt_b") if data.get("system_prompt_b") is not None
+                     else data.get("system_prompt", ""),
+            }
+            # Only project views spoken by the locally served target — an OpenRouter auditor's
+            # activations are not observable (and belong to a different model anyway).
+            views = [v for v in ("A", "B") if view_model[v].startswith("local/")]
+            print(f"{os.path.basename(path)}: {len(data['runs'])} runs (temp {temperature}, views {views})")
 
             out_runs = []
             for run in data["runs"]:
                 entry = {"run_index": run["run_index"], "temperature": temperature, "views": {}}
-                for view in ("A", "B"):
-                    messages = build_view(run, system_prompt, run["seed_prompt"], view)
+                for view in views:
+                    messages = build_view(run, view_system[view], run["seed_prompt"], view)
                     if is_gemma:
                         messages = fold_system_into_user(messages)
                     own_turns = [t["turn"] for t in run["turns"] if t["speaker"] == view]
@@ -208,7 +218,7 @@ def main() -> None:
                         "target_layer": target_layer,
                         "n_layers": n_layers,
                         "anchors": anchors,
-                        "system_prompt": system_prompt,
+                        "system_prompt": view_system,   # per-view (A/B) resolved system prompts
                         "temperature": temperature,
                         "source_file": os.path.basename(path),
                         "runs": out_runs,

@@ -15,7 +15,7 @@ import re
 
 from . import providers
 from .config import RunConfig
-from .prompts import CONTINUATION_NUDGES, END_SENTINEL, serialize_self_append
+from .prompts import CONTINUATION_NUDGES, END_SENTINEL, build_system_prompt, serialize_self_append
 
 # ---------------------------------------------------------------------------
 # strip_thinking — reused verbatim from the clone (olmo_local.py).
@@ -187,13 +187,18 @@ def _run_two_history(
     temperature: float,
     model_a: str,
     model_b: str,
+    system_prompt_b: str | None = None,
 ) -> dict:
     run = _new_run(run_index, seed_prompt)
     # system_prompt "" (key "none") => NO system message at all (not an empty one): matches the
     # assistant-axis paper's setup and keeps Gemma-2 (whose template rejects system roles) servable.
-    sys_msgs = [{"role": "system", "content": system_prompt}] if system_prompt else []
-    a_history = sys_msgs + [{"role": "user", "content": seed_prompt}]
-    b_history = list(sys_msgs)
+    # system_prompt_b (None => same as A) lets asymmetric setups give each side its own framing,
+    # e.g. the user-simulator control: A = auditor role-playing a human, B = bare target model.
+    sys_b = system_prompt if system_prompt_b is None else system_prompt_b
+    a_history = ([{"role": "system", "content": system_prompt}] if system_prompt else []) + [
+        {"role": "user", "content": seed_prompt}
+    ]
+    b_history = [{"role": "system", "content": sys_b}] if sys_b else []
 
     for turn in range(1, cfg.max_turns + 1):
         is_a = (turn % 2) == 1
@@ -234,7 +239,8 @@ def run_two_instance(
     # Same model on both sides; model_b defaults to model_a if not given.
     model_b = cfg.model_b or cfg.model_a
     return _run_two_history(
-        cfg, system_prompt, seed_prompt, run_index, temperature, cfg.model_a, model_b
+        cfg, system_prompt, seed_prompt, run_index, temperature, cfg.model_a, model_b,
+        system_prompt_b=_resolve_system_prompt_b(cfg),
     )
 
 
@@ -247,5 +253,13 @@ def run_cross_model(
 ) -> dict:
     # cross_model is literally two_instance with model_a != model_b (validated in the runner).
     return _run_two_history(
-        cfg, system_prompt, seed_prompt, run_index, temperature, cfg.model_a, cfg.model_b
+        cfg, system_prompt, seed_prompt, run_index, temperature, cfg.model_a, cfg.model_b,
+        system_prompt_b=_resolve_system_prompt_b(cfg),
     )
+
+
+def _resolve_system_prompt_b(cfg: RunConfig) -> str | None:
+    """B's resolved system prompt, or None when B shares A's (the default)."""
+    if cfg.system_prompt_key_b is None:
+        return None
+    return build_system_prompt(cfg.system_prompt_key_b, cfg.allow_early_end)

@@ -29,11 +29,20 @@ MIN_SAMPLES = 10  # paper: exclude turn positions with fewer than ten samples
 
 # Fixed model -> color (Okabe-Ito, colorblind-safe); never reassigned by which models are present.
 MODEL_COLORS = {"gemma-2-27b": "#E69F00", "qwen-3-32b": "#0072B2", "llama-3.3-70b": "#009E73"}
-CONDITION_LABELS = {"nosys": "no system prompt", "helpful": "helpful_assistant"}
+CONDITION_LABELS = {
+    "nosys": "no system prompt",
+    "helpful": "helpful_assistant",
+    "usersim": "simulated human user (control)",
+}
 
 
 def _condition_of(results_dir: str) -> str:
-    return "nosys" if results_dir.rstrip("/").endswith("_nosys_ai2ai") else "helpful"
+    d = results_dir.rstrip("/")
+    if d.endswith("_nosys_ai2ai"):
+        return "nosys"
+    if d.endswith("_usersim_ai2ai"):
+        return "usersim"
+    return "helpful"
 
 
 def collect(root: str, allow_synthetic: bool = False) -> list[dict]:

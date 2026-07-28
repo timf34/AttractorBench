@@ -24,6 +24,10 @@ class RunConfig:
     # conversation
     seed_prompt_set: str               # key into prompts.py SEED_PROMPTS
     system_prompt_key: str             # key into prompts.py SYSTEM_PROMPTS
+    # Optional DIFFERENT system prompt for side B (two_instance / cross_model). None = B uses
+    # system_prompt_key. Built for asymmetric setups like the user-simulator control (A = an
+    # auditor role-playing a human user, B = the bare target model).
+    system_prompt_key_b: str | None = None
 
     # full              = the model sees its whole history each turn
     # last_message_only = self_append only: system + seed + the model's OWN LAST turn (the

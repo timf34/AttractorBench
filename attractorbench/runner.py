@@ -105,6 +105,13 @@ def _save_condition(
         "model_b": cfg.model_b,
         "system_prompt_key": cfg.system_prompt_key,
         "system_prompt": system_prompt,   # resolved text actually sent (incl. early-end clause)
+        # B's OWN system prompt when it differs from A's (asymmetric setups like the
+        # user-simulator control) — replay/projection rebuilds B's view from this.
+        "system_prompt_key_b": cfg.system_prompt_key_b,
+        "system_prompt_b": (
+            build_system_prompt(cfg.system_prompt_key_b, cfg.allow_early_end)
+            if cfg.system_prompt_key_b is not None else None
+        ),
         "memory_mode": cfg.memory_mode,
         "continuation_style": cfg.continuation_style,
         "allow_early_end": cfg.allow_early_end,

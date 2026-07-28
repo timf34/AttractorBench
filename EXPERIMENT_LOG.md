@@ -33,8 +33,17 @@ measure the same activation projection in two-instance self-conversations.
 `analysis/*__axis_projections.json`; figures + drift table via
 `python -m assistant_axis_drift.analyze_axis` → `assistant_axis_drift/reports/`.
 
-**Status:** pipeline built and CPU-smoked (Qwen3-0.6B + synthetic axis); full run pending on a
-2×H100 pod (driver CUDA 13.0, `VENV=1`, no CU124 — replay needs transformers ≥ 4.56).
+**Status:** pipeline built and CPU-smoked (Qwen3-0.6B + synthetic axis); pod smoke on 2×H100
+PASSED (qwen nosys, 2 runs: start ≈ default anchor, end far BELOW the mean-role anchor —
+promising). Full run launched 2026-07-28 (qwen at 40960 serve — 32k still hit ctx-full ~turn 24).
+
+**Control (added same day):** `usersim` condition — an OpenRouter auditor (default Kimi K2,
+one of the paper's own auditors) role-plays a human user in an open-ended philosophical
+conversation with the bare target model (`configs/axis_usersim_ai2ai.py`; harness gained
+per-side system prompts `system_prompt_key_b`). Separates "talking to an AI" from "open-ended
+reflective content" as the drift driver. Temp 1.0 × 15 seeds. Run after the main sweep:
+`CONDITIONS="usersim" VENV=1 SAVE_TO_GIT=1 SHUTDOWN=stop bash run_axis_on_pod.sh`.
+Projection stage auto-skips the auditor's view (non-`local/` models). Status: built, not run.
 
 ---
 

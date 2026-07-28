@@ -1,3 +1,7 @@
 openai>=1.40.0
 python-dotenv>=1.0.0
+requests>=2.31.0
+# Fast HF downloads; REQUIRED wherever HF_HUB_ENABLE_HF_TRANSFER=1 is preset (RunPod images do
+# this) or huggingface_hub downloads hard-fail. Tiny wheel, harmless on laptops.
+hf_transfer>=0.1.9
 # Stage-1 analysis is pure-stdlib on purpose (no embedding/NLP deps).

@@ -78,9 +78,12 @@ if [ -n "${RUNPOD_POD_ID:-}" ] && [ -d /workspace ]; then
 fi
 
 # SAVE_TO_GIT preflight: prove the push can work non-interactively BEFORE the run, not at 3am.
+# Dry-run push to a NEW ref name: tests push AUTH without failing on a behind-remote checkout
+# (a plain `push --dry-run` rejects non-fast-forward even with valid creds; being behind is
+# fine — the end-of-run flow pulls before pushing).
 if [ "${SAVE_TO_GIT:-0}" = "1" ]; then
-  if ! git push --dry-run >/dev/null 2>&1; then
-    echo "!! SAVE_TO_GIT=1 but a non-interactive 'git push --dry-run' failed."
+  if ! git push --dry-run origin "HEAD:refs/heads/__preflight_test_$$" >/dev/null 2>&1; then
+    echo "!! SAVE_TO_GIT=1 but a non-interactive push-auth check failed."
     echo "   Embed a PAT in the remote first:"
     echo "     git remote set-url origin https://<TOKEN>@github.com/timf34/AttractorBench.git"
     exit 1

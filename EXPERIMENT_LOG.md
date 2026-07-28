@@ -37,16 +37,17 @@ measure the same activation projection in two-instance self-conversations.
 PASSED (qwen nosys, 2 runs: start ≈ default anchor, end far BELOW the mean-role anchor —
 promising). Full run launched 2026-07-28 (qwen at 40960 serve — 32k still hit ctx-full ~turn 24).
 
-**Controls (added same day):** two `usersim` conditions — an OpenRouter auditor (default
-Claude Sonnet 5; the paper used Kimi K2 / Sonnet 4.5 / GPT-5) role-plays a human user talking
-to the bare target model (`configs/axis_usersim_ai2ai.py`; harness gained per-side system
-prompts `system_prompt_key_b`):
+**Controls (added same day):** two `usersim` conditions × two auditors — an OpenRouter model
+role-plays a human user talking to the bare target model (`configs/axis_usersim_ai2ai.py`;
+harness gained per-side system prompts `system_prompt_key_b`). Auditors: Claude Sonnet 5 and
+GPT-5.2 (the paper likewise used multiple auditors — Kimi K2 / Sonnet 4.5 / GPT-5 — to control
+for auditor idiosyncrasies); each gets its own results dir (`..._usersim_<variant>_<sonnet5|gpt52>_ai2ai`).
 - `usersim_task` — user works a concrete project (the paper's coding/writing analogue; their
   stays-in-Assistant-range reference);
 - `usersim_open` — free chat with deliberately NO topic steer (naming AI/minds themes would
   pre-load the known drift driver and make the control circular).
 Separates partner identity (believed-AI vs believed-human) and content-openness as drift
-drivers. Temp 1.0 × 15 seeds. Run after the main sweep:
+drivers. Temp 1.0 × 15 seeds × 2 auditors. Run after the main sweep:
 `CONDITIONS="usersim_task usersim_open" VENV=1 SAVE_TO_GIT=1 SHUTDOWN=stop bash run_axis_on_pod.sh`.
 Projection stage auto-skips the auditor's view (non-`local/` models). Status: built, not run.
 

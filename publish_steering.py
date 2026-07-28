@@ -155,6 +155,17 @@ def _ngram_rates(s1: dict) -> dict[str, float]:
     return {g: c / total for g, (c, _) in counts.items()}
 
 
+# Chat-template special tokens a model sometimes leaks into its text ("Farewell.<|end_message|>").
+# Stage-1 tokenization strips the <|_|> punctuation, turning them into ordinary words ("end message")
+# that then surface as tail n-grams. Template-token leakage isn't model language, so drop any
+# candidate phrase containing a token's word form. (Raw stage-1 counts stay unfiltered.)
+_TEMPLATE_TOKEN_FRAGMENTS = tuple(
+    t.replace("_", " ")
+    for t in ("end_message", "im_start", "im_end", "eot_id", "endoftext", "end_of_text",
+              "start_header_id", "end_header_id")
+)
+
+
 def signature_phrases(s1: dict, background: list[dict], top: int = 4) -> list[dict]:
     """Phrases frequent HERE and rare elsewhere. background = _ngram_rates of all other conditions.
     A phrase must appear in multiple runs' tails — one run repeating a story motif 200 times is
@@ -169,6 +180,8 @@ def signature_phrases(s1: dict, background: list[dict], top: int = 4) -> list[di
     n_bg = len(background) or 1
     scored = []
     for g, rate in rates.items():
+        if any(f" {frag} " in f" {g} " for frag in _TEMPLATE_TOKEN_FRAGMENTS):
+            continue
         runs_present = grams[g][1]
         if runs_present is not None and runs_present < min_runs:
             continue

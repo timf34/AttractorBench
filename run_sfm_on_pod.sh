@@ -110,6 +110,9 @@ else
   python -c "import vllm" 2>/dev/null || pip install -q vllm
   python -c "import huggingface_hub" 2>/dev/null || pip install -q huggingface_hub
 fi
+# RunPod images preset HF_HUB_ENABLE_HF_TRANSFER=1; if the package is missing (e.g. in the clean
+# venv) every snapshot_download hard-fails. Install it — it also makes the 14GB pulls much faster.
+pip install -q hf_transfer
 pip install -q -r requirements.txt
 
 echo "  checking torch can use the GPU..."

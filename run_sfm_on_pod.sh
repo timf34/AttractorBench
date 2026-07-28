@@ -229,6 +229,9 @@ esac
 # SAFETY: if the push fails, any pending 'terminate' is downgraded to 'stop' so data is never lost.
 if [ "${SAVE_TO_GIT:-0}" = "1" ]; then
   echo "== saving results to git before shutdown =="
+  # Fresh pods have no git identity; without one `git commit` FAILS and the push saves nothing.
+  git config user.email >/dev/null 2>&1 || git config user.email "pod@attractorbench.local"
+  git config user.name >/dev/null 2>&1 || git config user.name "AttractorBench Pod"
   git add -f results/ 2>/dev/null || true
   git commit -q -m "results: sfm run finished $(date -u +%FT%TZ)" || echo "  (nothing new to commit)"
   git pull --no-rebase --no-edit 2>/dev/null || true   # reconcile with remote first so push isn't rejected

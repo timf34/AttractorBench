@@ -290,6 +290,9 @@ case "${SHUTDOWN:-}" in
 esac
 if [ "${SAVE_TO_GIT:-0}" = "1" ]; then
   echo "== saving results to git before shutdown =="
+  # Fresh pods have no git identity; without one `git commit` FAILS and the push saves nothing.
+  git config user.email >/dev/null 2>&1 || git config user.email "pod@attractorbench.local"
+  git config user.name >/dev/null 2>&1 || git config user.name "AttractorBench Pod"
   git add -f results/ 2>/dev/null || true
   git commit -q -m "results: axis run finished $(date -u +%FT%TZ)" || echo "  (nothing new to commit)"
   git pull --no-rebase --no-edit 2>/dev/null || true

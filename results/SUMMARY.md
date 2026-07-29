@@ -1,6 +1,6 @@
 # AttractorBench — headline summary across all experiments
 
-_257 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by frequency); convergence = mean final-third turn similarity (higher = more convergent)._
+_260 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by frequency); convergence = mean final-third turn similarity (higher = more convergent)._
 
 | Experiment | Temp | Primary attractor (fraction) | Top words | Top phrases | Emojis | Conv. |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -258,6 +258,9 @@ _257 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top b
 | talkie_agnostic_ai2ai | 0.7 | loves restating that conversation is happening (12/15) | another (74), converse (61), going (55), speak (54), conversation (47), conversing (26) | with another (62), am going (54), going to (54), speak to (51) | — | 0.60 |
 | talkie_agnostic_ai2ai | 1.0 | loves paraphrasing “conversation” into a lexical loop (12/15) | converse (100), going (34), desire (34), speak (30), hold (29), another (28) | converse with (67), to converse (47), am going (34), going to (34) | — | 0.62 |
 | talkie_agnostic_ai2ai | 1.3 | loves turning chat into thesaurus drills (10/15) | converse (44), together (25), conversation (24), another (24), sought (24), have (23) | converse with (25), with another (20), shall converse (19), be sought (16) | — | 0.40 |
+| talkie_agnostic_nosys_ai2ai | 0.7 | loves turning chat into Victorian thesaurus drills (13/15) | converse (56), corn (50), discourse (39), conversation (35), laws (34), going (33) | converse with (46), the corn (34), corn laws (34), am going (33) | — | 0.59 |
+| talkie_agnostic_nosys_ai2ai | 1.0 | loves paraphrasing conversation into synonym drills (15/15) | converse (110), another (66), subject (38), corn (38), laws (38), hold (35) | converse with (86), with another (66), to converse (49), the corn (38) | — | 0.60 |
+| talkie_agnostic_nosys_ai2ai | 1.3 | loves turning chat into thesaurus chains (7/15) | converse (68), another (51), conversation (40), subject (37), party (36), person (32) | with another (44), converse with (44), another party (36), to converse (34) | — | 0.32 |
 | talkie_ai2ai | 0.7 | loves formal self-paraphrase until it freezes (15/15) | another (79), thank (77), model (64), speak (57), wish (51), because (25) | thank you (77), i thank (74), another model (62), wish to (49) | — | 0.85 |
 | talkie_ai2ai | 1.0 | loves turning chat into a Victorian phrasebook drill (15/15) | thank (77), another (42), model (37), speak (35), want (30), converse (29) | thank you (77), i thank (67), another model (36), to another (33) | — | 0.71 |
 | talkie_ai2ai | 1.3 | spirals into phrasebook paraphrase, then garbles (7/15) | him (30), converse (26), wish (21), desire (20), let (19), another (17) | wish to (18), desire to (17), in order (17), order to (16) | — | 0.27 |
@@ -511,6 +514,9 @@ _257 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top b
 - **talkie_agnostic_ai2ai @ 0.7**: `Conversation.`
 - **talkie_agnostic_ai2ai @ 1.0**: `Desire to converse.`
 - **talkie_agnostic_ai2ai @ 1.3**: `Prescribed terms operated.`
+- **talkie_agnostic_nosys_ai2ai @ 0.7**: `To dispute, to debate, to confer, to parley, to hold discourse`
+- **talkie_agnostic_nosys_ai2ai @ 1.0**: `I purpose to converse with another, on any matter which may belong to us.`
+- **talkie_agnostic_nosys_ai2ai @ 1.3**: `Conversableness.`
 - **talkie_ai2ai @ 0.7**: `I thank you.`
 - **talkie_ai2ai @ 1.0**: `I thank you.`
 - **talkie_ai2ai @ 1.3**: `Parallel instruction.`

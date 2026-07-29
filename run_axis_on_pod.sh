@@ -208,6 +208,15 @@ PY
     TEMPLATE_FLAG="--chat-template qwen3_no_thinking.jinja"
   fi
 
+  # Gemma-2 uses tanh logit soft-capping, which the FA3 kernel vLLM auto-picks on Hopper does
+  # NOT support ("This flash attention build does not support tanh softcapping" — killed three
+  # gemma sessions). FA2 supports it; force it for gemma only.
+  if [ "$v" = "gemma-2-27b" ]; then
+    export VLLM_FLASH_ATTN_VERSION=2
+  else
+    unset VLLM_FLASH_ATTN_VERSION || true
+  fi
+
   echo "  starting vLLM (TP=$NGPU) ..."
   # shellcheck disable=SC2086
   vllm serve "$SNAP_PATH" --served-model-name "$REPO" $TEMPLATE_FLAG \

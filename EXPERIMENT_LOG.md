@@ -1,5 +1,23 @@
 # Experiment log
 
+---
+
+## 2026-07-29 — Talkie (pre-1931 "vintage" 13B) ai2ai
+
+**Question:** what does the ai2ai attractor of an assistant persona built entirely from
+pre-1931 text look like? `talkie-lm/talkie-1930-13b-it`: 13B pretrained on 260B tokens of
+pre-1931 English, instruction-tuned on period etiquette manuals/encyclopedias + online DPO.
+
+**Setup** (`configs/talkie_ai2ai.py`, `talkie_ai2ai/server.py`, `run_talkie_on_pod.sh`):
+custom architecture (no vLLM) — our stdlib OpenAI-compatible server wraps their reference
+model (github.com/talkie-lm/talkie) with cross-conversation batching (their runtime has no KV
+cache; batching ≈ 8x wall-clock). Framing as base_ai2ai (helpful_assistant +
+goodness_opener_v1) but 4096-ctx budget: 20 turns x 160 tokens, temps 0.7/1.0/1.3 x 15 seeds.
+1x H100/A100-80. Judge via OpenRouter. Results: `results/talkie_ai2ai/`.
+
+**Status:** built + CPU-smoked (tiny random model, real tokenizer/template/batch engine).
+Pod run pending.
+
 Running log of experiment campaigns: what was run, with what config, where the results live,
 and status. Newest first. (Older experiment families — persona LoRAs, prompted personas,
 persona-vector steering, memory compaction, attractor internals — predate this log; see

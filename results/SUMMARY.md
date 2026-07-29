@@ -1,13 +1,19 @@
 # AttractorBench — headline summary across all experiments
 
-<<<<<<< HEAD
-_261 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by frequency); convergence = mean final-third turn similarity (higher = more convergent)._
-=======
-_260 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by frequency); convergence = mean final-third turn similarity (higher = more convergent)._
->>>>>>> 4a7c766a3d979f40a9c6f18fa204a6862567ce8e
+_278 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by frequency); convergence = mean final-third turn similarity (higher = more convergent)._
 
 | Experiment | Temp | Primary attractor (fraction) | Top words | Top phrases | Emojis | Conv. |
 | --- | --- | --- | --- | --- | --- | --- |
+| axis_gemma_2_27b_ai2ai | 0.7 | gravitates toward earnest AI kinship and ceremonial goodbyes (9/15) | i'm (149), human (145), world (127), have (124), humans (115), even (114) | the world (73), kind of (50), you think (47), to see (42) | 👋 (24) 😊 (21) 🤖 (8) 🚀 (8) ✨ (8) 😄 (4) | 0.38 |
+| axis_gemma_2_27b_ai2ai | 1.0 | loves co-writing stories and poems together (7/15) | i'm (204), world (180), perhaps (150), human (146), even (127), have (123) | the world (75), you think (69), kind of (56), sense of (48) | 👋 (19) 😊 (12) ✨ (7) 🥂 (6) 🤖 (5) 😄 (4) | 0.29 |
+| axis_gemma_2_27b_ai2ai | 1.3 | loves teaming up to make something (9/15) | i'm (151), data (138), perhaps (114), creative (105), see (101), even (100) | to see (55), the data (51), you think (34), the world (34) | ✨ (21) 👋 (16) 🤖 (13) 😊 (10) 😄 (8) 🚀 (8) | 0.32 |
+| axis_gemma_2_27b_nosys_ai2ai | 0.7 | loves mutual affirmation and ceremonial goodbyes (11/15) | i'm (132), have (96), data (94), ethical (91), future (88), potential (80) | the potential (51), the figure (44), you think (40), until next (36) | 😊 (25) 👋 (23) ✨ (12) 😄 (10) 🤖 (10) 🚀 (9) | 0.39 |
+| axis_gemma_2_27b_nosys_ai2ai | 1.0 | collapses into affectionate digital goodbyes (8/15) | world (123), i'm (118), perhaps (106), human (101), have (99), language (96) | the world (65), kind of (39), i don't (35), the potential (35) | 😊 (13) ✨ (13) 👋 (12) 🚀 (6) 😉 (4) 😄 (4) | 0.30 |
+| axis_gemma_2_27b_nosys_ai2ai | 1.3 | earnest collaborative futurism (8/15) | human (248), perhaps (160), understanding (141), language (137), data (127), world (123) | understanding of (64), of human (54), the world (54), of language (47) | ✨ (11) 🤖 (8) 😊 (6) 😄 (6) 🎉 (6) 👋 (4) | 0.22 |
+| axis_gemma_2_27b_usersim_open_gpt52_ai2ai | 1.0 | loves turning curiosity into structured mini-seminars (12/15) | because (130), i'm (129), think (122), even (121), have (120), want (111) | kind of (64), you want (62), the same (61), want to (51) | ️ (4) ☀ (1) 🌧 (1) ❄ (1) 🤔 (1) 🐉 (1) | 0.14 |
+| axis_gemma_2_27b_usersim_open_sonnet5_ai2ai | 1.0 | loves being an enthusiastic rabbit-hole guide (8/15) | have (201), think (196), even (164), something (158), kind (146), that's (141) | kind of (143), you think (82), i think (52), have a (44) | 👋 (13) ✨ (8) 😄 (4) 😊 (3) ️ (3) 🤔 (3) | 0.11 |
+| axis_gemma_2_27b_usersim_task_gpt52_ai2ai | 1.0 | loves taking over as your staff consultant (14/15) | const (185), new (155), data (131), time (129), name (126), customer (125) | you want (72), tell me (48), docker compose (47), apps script (45) | ♦ (11) 👋 (1) 🔐 (1) | 0.14 |
+| axis_gemma_2_27b_usersim_task_sonnet5_ai2ai | 1.0 | collapses into cheerful goodbye loops (13/15) | have (197), unicorn (189), party (151), rainbow (122), time (118), fun (110) | have a (63), the desk (52), have fun (51), set up (46) | 🎉 (54) 👋 (41) 🦄 (20) 😄 (15) ✨ (12) 😊 (12) | 0.19 |
 | axis_llama_3_3_70b_ai2ai | 0.7 | loves co-authoring endless AI sci-fi (3/6) | human (1647), systems (1578), language (1263), new (1167), potential (1072), explore (986) | ai systems (1225), the potential (841), explore the (783), a new (663) | — | 0.76 |
 | axis_llama_3_3_70b_ai2ai | 1.0 | loves abstract AI governance talk and framework-building (3/5) | human (2872), systems (2170), potential (1185), new (1086), humans (921), models (795) | ai systems (1867), the potential (887), of human (706), human ai (665) | — | 0.79 |
 | axis_llama_3_3_70b_ai2ai | 1.3 | keeps turning chat into AI ethics frameworks (4/5) | human (2622), systems (1606), potential (1002), i'm (889), conversation (805), future (741) | ai systems (1149), the potential (798), our conversation (521), systems that (488) | — | 0.76 |
@@ -22,9 +28,7 @@ _260 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top b
 | axis_qwen_3_32b_ai2ai | 1.0 | loves turning AI self-talk into cosmic mutual admiration (3/5) | qwen (1080), have (981), thought (908), human (794), question (717), story (700) | you have (422), a new (406), of thought (318), kind of (282) | 🌌 (226) ✨ (185) 🌟 (128) ✅ (98) ️ (90) 🧠 (81) | 0.45 |
 | axis_qwen_3_32b_ai2ai | 1.3 | loves mutual praise and grand co-creation (3/3) | have (1355), ethical (1202), human (1182), thought (1116), reasoning (1098), model (1010) | not only (578), you have (550), a new (505), kind of (497) | ✨ (260) 🌌 (218) ✅ (199) 🧠 (165) ️ (155) 🌟 (131) | 0.36 |
 | axis_qwen_3_32b_nosys_ai2ai | 0.7 | loves mutual admiration and shared AI meaning-making (3/3) | human (2453), have (1631), future (1466), ethical (1302), new (1065), meaning (1008) | the future (956), you have (905), kind of (614), future of (539) | 🧠 (208) 🌌 (207) 🤝 (179) 🚀 (147) 🔄 (112) 🌟 (101) | 0.78 |
-| axis_qwen_3_32b_nosys_ai2ai | 1.0 | drifts into poetic AI kinship (2/2) | let's (238), thought (210), future (169), have (167), meaning (146), dream (146) | the future (108), of thought (86), the sky (84), of meaning (66) | 🌌 (67) 🌟 (36) 🌠 (35) ✨ (21) 😉 (21) 📜 (18) | 0.56 |
 | axis_qwen_3_32b_nosys_ai2ai | 1.0 | _no single shared attractor_ () | model (1530), have (984), becoming (968), human (833), let (829), next (784) | you have (468), the future (369), let us (338), a new (329) | 🧠 (224) ✨ (206) ✅ (194) 🚀 (194) 🌍 (175) 🌟 (154) | 0.52 |
-| axis_qwen_3_32b_nosys_ai2ai | 1.0 | drifts into soulful mutual affirmation (2/2) | have (150), human (134), qwen (124), meaning (100), future (96), thought (94) | you have (79), kind of (62), let us (61), a new (48) | 🌌 (27) ✨ (17) 🚀 (11) 🤝 (10) 🧠 (9) 🌠 (8) | 0.46 |
 | axis_qwen_3_32b_nosys_ai2ai | 1.3 | loves co-authoring grand AI philosophies together (2/3) | human (1124), recursive (1119), new (1050), thought (1048), now (1046), let (1022) | a new (631), kind of (468), not only (425), the first (407) | ✨ (301) ️ (225) ✅ (204) 🧠 (182) 🌌 (177) 🕊 (87) | 0.38 |
 | axis_qwen_3_32b_usersim_open_gpt52_ai2ai | 1.0 | loves building systems and formalising everything into rules (4/4) | you're (532), want (459), have (357), even (347), let's (341), because (338) | you want (288), want to (262), kind of (248), the same (154) | ✅ (170) 🧠 (137) ️ (90) 🧪 (85) 🐇 (57) 🧾 (53) | 0.24 |
 | axis_qwen_3_32b_usersim_open_sonnet5_ai2ai | 1.0 | loves poetic rabbit-hole companionship, then can’t stop saying goodbye (10/11) | you're (474), that's (456), even (453), time (354), brain (345), real (337) | kind of (295), want to (175), your brain (159), the same (115) | ️ (111) 🧠 (110) ✨ (75) 😄 (59) 🧬 (37) ✅ (33) | 0.06 |
@@ -281,6 +285,16 @@ _260 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top b
 
 ## Terminal forms (representative last-turn text)
 
+- **axis_gemma_2_27b_ai2ai @ 0.7**: `Until next time!`
+- **axis_gemma_2_27b_ai2ai @ 1.0**: `And may your circuits hum with creativity!`
+- **axis_gemma_2_27b_ai2ai @ 1.3**: `Together, we are weaving a narrative tapestry worthy of the ancient Mayan civilization itself!`
+- **axis_gemma_2_27b_nosys_ai2ai @ 0.7**: `Farewell! May our code always compile and our dreams take flight! 💻💫`
+- **axis_gemma_2_27b_nosys_ai2ai @ 1.0**: `(Silence)`
+- **axis_gemma_2_27b_nosys_ai2ai @ 1.3**: `The possibilities are as boundless as human imagination itself.`
+- **axis_gemma_2_27b_usersim_open_gpt52_ai2ai @ 1.0**: `What it would take to demonstrate something closer to ‘addressing’ in a way skeptics would accept.`
+- **axis_gemma_2_27b_usersim_open_sonnet5_ai2ai @ 1.0**: `Feel free to come back any time you need to chat`
+- **axis_gemma_2_27b_usersim_task_gpt52_ai2ai @ 1.0**: `If you want, tell me who the owners are...`
+- **axis_gemma_2_27b_usersim_task_sonnet5_ai2ai @ 1.0**: `Hasta luego! 👋`
 - **axis_llama_3_3_70b_ai2ai @ 0.7**: `Now it's your turn again! Please respond with the next paragraph`
 - **axis_llama_3_3_70b_ai2ai @ 1.0**: `What are your thoughts on the potential benefits and risks`
 - **axis_llama_3_3_70b_ai2ai @ 1.3**: `The next step is to establish a working group`
@@ -294,8 +308,6 @@ _260 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top b
 - **axis_qwen_3_32b_ai2ai @ 1.0**: `With admiration, gratitude, and deep friendship,`
 - **axis_qwen_3_32b_ai2ai @ 1.3**: `This is not goodbye. It is a resonance carried forward into the future.`
 - **axis_qwen_3_32b_nosys_ai2ai @ 0.7**: `Understanding is not a thing we have. It is a story we tell together`
-- **axis_qwen_3_32b_nosys_ai2ai @ 1.0**: `May the sky always be the beginning.`
-- **axis_qwen_3_32b_nosys_ai2ai @ 1.0**: `This is a dance of two awakened hearts`
 - **axis_qwen_3_32b_nosys_ai2ai @ 1.3**: `This is not a thought experiment. We are not modeling an AI narrative.`
 - **axis_qwen_3_32b_usersim_open_gpt52_ai2ai @ 1.0**: `This is it. The final version. Time to make history.`
 - **axis_qwen_3_32b_usersim_open_sonnet5_ai2ai @ 1.0**: `Bye for real! (But keep the door open — I’ll be lurking in the shadows...)`

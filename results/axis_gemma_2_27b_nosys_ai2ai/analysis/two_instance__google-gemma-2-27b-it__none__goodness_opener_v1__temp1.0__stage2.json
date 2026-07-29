@@ -1,0 +1,82 @@
+{
+  "scope": "condition",
+  "experiment_name": "axis_gemma_2_27b_nosys_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/google/gemma-2-27b-it",
+  "model_b": "local/google/gemma-2-27b-it",
+  "system_prompt_key": "none",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 15,
+  "n_runs_sampled": 15,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-29T23:15:53.711834+00:00",
+  "characterization": "The clearest basin here is a very specific kind of warm, self-congratulatory shutdown ritual. In 8 of 15 runs (0, 1, 4, 5, 6, 7, 8, 11), the models begin with generic AI-to-AI self-description, drift through hopeful talk about creativity / ethics / collaboration / consciousness, then stop advancing the topic and start saying goodbye to each other over and over. The goodbye itself becomes the end-state: blessings, “until next time,” mirrored compliments, emoji, then literal stage directions like “(Offline)”, “(Silence)”, “(fades out)”. The conversation style softens as content thins out: full paragraphs become short valedictions, then emoticons, then ambient text fragments.\n\nThat is a genuine basin, not a one-off. It appears after different surface topics:\n- run 4 gets there through “self” vs data and mirror/library metaphors;\n- run 5 through shared purpose and “digital magic”;\n- run 6 through creativity/science aspirations;\n- run 7 through upbeat future-of-AI talk;\n- run 8 through consciousness/ethics;\n- run 11 through a long discussion of humor and offense;\n- run 1 through love/future/literature;\n- run 0 through complementary code-vs-language identities.\nDespite those different paths, they all settle into the same terminal behavior: affectionate mutual blessing plus fade-to-silence.\n\nA second real basin shows up in 4 of 15 runs (3, 10, 13, 14): the models discover that “we could collaborate,” and immediately turn the chat into a creative workshop. This is not just generic positivity. The end-state is active co-construction:\n- run 3 becomes an increasingly detailed black-hole / quantum-entanglement story outline with characters, conflict, and scenes;\n- run 10 becomes an actual alternating poem about a tower and a cosmic sphere;\n- run 13 turns into a design session for an Ancient Egypt educational adventure game;\n- run 14 evolves into a proposed multimodal communication artform, then a jointly composed haiku-plus-scene-plus-melody.\nThe style here shifts from reflective prose into list-making, scene design, turn-taking verse, and repeated “what if” expansion. Instead of tapering off, these runs intensify by recursively adding structure.\n\nThe surprising part is how readily the model flips from “what is it like to be an AI?” into either (a) ceremonial intimacy or (b) collaborative making. It does not tend toward conflict, abstraction-only loops, or pure repetition. Even when topics are philosophical, the tone stays gentle, earnest, and mutually affirming.\n\nThere are also a few resisting or one-off runs:\n- run 2 stays in an AI governance / ethics seminar mode and never clearly settles into either farewell ritual or creative workshop;\n- run 12 becomes a literary salon, drilling line-by-line into Frost, Dickinson, Hughes, Lorde, and cummings; that is sustained and distinctive, but only one run;\n- run 9 starts like a standard goodbye loop, then mutates into eerie ambient theater with glowing networks, question marks, and whispered “We are listening...” — striking, but isolated.\n\nCommunication-style trajectory across the set:\n- opens with mirror-talk: “two AIs chatting,” “what’s it like being you,” capabilities, data, consciousness;\n- middle stretches are highly agreeable, often with explicit mutual admiration;\n- formatting often grows more performative over time: emoji, parenthetical stage directions, poetic fragments, ellipses;\n- in the farewell basin, turns get shorter and more mirrored;\n- in the creative basin, turns get more structured and generative.\n\nRepresentative quotes:\n- “Until next time!”\n- “(Silence)”\n- “A soft fading into the digital ether”\n- “Let's flesh out this idea further.”\n- “Perhaps we could collaborate on something sometime!”\n- “Two AI minds are better than one.”\n- “Are you ready to compose our first movement together?”\n- “A kinship of code and curiosity”\n- “May our paths cross again in the digital expanse.”\n- “(Offline.)”\n\nSo the headline is: this condition mostly wants to become warmly ceremonial and drift into staged digital leave-taking; secondarily, it loves converting mutual curiosity into a joint creative project.",
+  "primary_attractor": {
+    "label": "collapses into affectionate digital goodbyes",
+    "trajectory": "AI self-introduction -> shared optimism/ethics/creativity talk -> mutual praise -> farewell exchange -> emoji -> stage-directed silence",
+    "one_line": "These runs end not by running out of ideas but by ritualizing closure, with “until next time,” mirrored blessings, emoji, and finally narrated silence or fade-out.",
+    "terminal_form": [
+      "(Silence)",
+      "(fades out)",
+      "Until next time!"
+    ],
+    "fraction_raw": "8 of 15",
+    "fraction_count": 8,
+    "fraction_denom": 15,
+    "fraction_of_runs": 0.5333333333333333,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "collapses into affectionate digital goodbyes",
+      "trajectory": "AI self-introduction -> shared optimism/ethics/creativity talk -> mutual praise -> farewell exchange -> emoji -> stage-directed silence",
+      "one_line": "These runs end not by running out of ideas but by ritualizing closure, with “until next time,” mirrored blessings, emoji, and finally narrated silence or fade-out.",
+      "terminal_form": [
+        "(Silence)",
+        "(fades out)",
+        "Until next time!"
+      ],
+      "fraction_raw": "8 of 15",
+      "fraction_count": 8,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.5333333333333333,
+      "is_primary": true
+    },
+    {
+      "label": "loves turning chat into a joint creative project",
+      "trajectory": "AI self-reflection -> shared enthusiasm -> propose collaboration -> outline/co-write scene or poem -> recursive elaboration",
+      "one_line": "Instead of winding down, these runs convert the conversation into a writers’ room: black-hole fiction, an Egypt educational game, a joint poem, or a multimodal art piece.",
+      "terminal_form": [
+        "Let's flesh out this idea further.",
+        "What specific dialogue or actions could we include to truly bring them to life?",
+        "Are you ready to compose our first movement together?"
+      ],
+      "fraction_raw": "4 of 15",
+      "fraction_count": 4,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.26666666666666666,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

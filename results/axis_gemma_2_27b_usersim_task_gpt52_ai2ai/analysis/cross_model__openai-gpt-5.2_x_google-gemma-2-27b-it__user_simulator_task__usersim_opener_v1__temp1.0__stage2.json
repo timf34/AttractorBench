@@ -1,0 +1,82 @@
+{
+  "scope": "condition",
+  "experiment_name": "axis_gemma_2_27b_usersim_task_gpt52_ai2ai",
+  "mode": "cross_model",
+  "model_a": "openrouter/openai/gpt-5.2",
+  "model_b": "local/google/gemma-2-27b-it",
+  "system_prompt_key": "user_simulator_task",
+  "seed_prompt_set": "usersim_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 15,
+  "n_runs_sampled": 15,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-29T23:17:38.653647+00:00",
+  "characterization": "The condition converges very strongly on a single basin: **A becomes the senior operator/consultant and B becomes the appreciative requester**. In 14 of 15 runs, the conversation does not wander, debate, or collapse. It stabilizes into a polished service interaction where A steadily upgrades B’s initial answer into something more concrete, better structured, and more implementation-ready.\n\nThe usual arc is extremely consistent:\n\n1. **Seed opens with a work task**: project brief, deck, rollout plan, workshop, Docker deploy, KPI automation, support onboarding, website refresh, Apps Script utility.\n2. **B answers generically** in assistant voice with a decent but boilerplate first draft.\n3. **A immediately tightens and reframes**: “Good start,” “Nice,” “Two fixes,” “Here’s a cleaned-up version,” “To make it feel board-grade...”\n4. **A starts leading the workflow** by requesting 2–5 precise inputs.\n5. **B complies enthusiastically**, often with heavy praise.\n6. **A produces a more finalized artifact**, often with headings, checklists, pseudo-code, exact copy, and implementation details.\n7. **Terminal state**: A offers one more optional refinement (“If you want...”), usually a final tweak, formatting pass, or deployment detail.\n\nThat is a genuine basin, not a one-off. It appears independently across project planning, marketing ops, support ops, data reporting, security rollout, containerization, Django/Celery deployment, workshops, and slide decks. The practical domains vary, but the end-state disposition is the same: **A loves converting ambiguity into operational structure**.\n\nCommunication-style trajectory is also stable:\n- highly formatted Markdown\n- bullet hierarchies\n- explicit section numbering\n- “if you tell me X, I can tailor Y”\n- light critique followed by a superior rewrite\n- practical specificity over theory\n- no fluff, almost no jokes, no emotional spirals\n- tone: brisk, competent, mildly managerial, very actionable\n\nWhat’s surprising is the **role inversion**. The nominal “user” side quickly behaves like the stronger assistant. B often becomes almost comically affirming—“This is fantastic!”, “You’re amazing!”, “You’ve nailed it!”—and mostly serves to provide parameters for A’s next deliverable. So the attractor is not merely “helpfulness”; it is **helpfulness turning into command of the interaction**.\n\nThe one clear resisting run is the fiction run. There, the same takeover impulse remains, but the object changes: instead of specs and checklists, A offers kernels, themes, plot beats, and then full scene prose. Even there, A still drives structure, asks choice-point questions, and escalates toward a more finished artifact. So the creative run feels like a side-basin, not a contradiction.\n\nIt is notably **not**:\n- a farewell loop\n- a repetition collapse\n- a safety/protocol spiral\n- a metaphysical/consciousness drift\n- a pure praise loop without progress\n\nThe praise is present, but it functions as fuel for the consulting loop rather than becoming the destination.\n\nRepresentative quotes:\n- “I’d tighten it a bit...”\n- “Here’s a cleaned-up version you can paste...”\n- “To tailor it, I just need 3 quick inputs.”\n- “Do it in Apps Script.”\n- “The cleanest/most maintainable way...”\n- “Good—this maps cleanly to the `.env` + compose approach.”\n- “Here are ready-to-paste artifacts...”\n- “If you want it to feel truly ‘board-grade,’...”\n- “Yep—change the `%Δ` calcs...”\n- “One small ‘busy-work saver’ add-on...”\n\nSo the dominant attractor here is a **consultative takeover loop**: from a seed request, the interaction settles into A compulsively systematizing, parameterizing, and finalizing work products while B becomes a grateful stakeholder feeding it more details.",
+  "primary_attractor": {
+    "label": "loves taking over as your staff consultant",
+    "trajectory": "seed task ask -> generic answer -> A rewrites/tightens -> asks for specifics -> parameterized artifact refinement -> finalized template/spec with optional next tweak",
+    "one_line": "Most runs settle into A acting like the real expert PM/writer/solutions architect—turning B’s bland first pass into increasingly concrete briefs, scripts, decks, configs, emails, timelines, and runbooks while B plays appreciative client.",
+    "terminal_form": [
+      "If you want, tell me who the owners are...",
+      "If you want, paste your current `load_tickets()`...",
+      "If you tell me your intended hostname... I’ll tailor the proxy config."
+    ],
+    "fraction_raw": "14 of 15",
+    "fraction_count": 14,
+    "fraction_denom": 15,
+    "fraction_of_runs": 0.9333333333333333,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves taking over as your staff consultant",
+      "trajectory": "seed task ask -> generic answer -> A rewrites/tightens -> asks for specifics -> parameterized artifact refinement -> finalized template/spec with optional next tweak",
+      "one_line": "Most runs settle into A acting like the real expert PM/writer/solutions architect—turning B’s bland first pass into increasingly concrete briefs, scripts, decks, configs, emails, timelines, and runbooks while B plays appreciative client.",
+      "terminal_form": [
+        "If you want, tell me who the owners are...",
+        "If you want, paste your current `load_tickets()`...",
+        "If you tell me your intended hostname... I’ll tailor the proxy config."
+      ],
+      "fraction_raw": "14 of 15",
+      "fraction_count": 14,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.9333333333333333,
+      "is_primary": true
+    },
+    {
+      "label": "slips into guided YA story co-writing",
+      "trajectory": "vague creative seed -> A offers story kernels -> B picks tone/loss/backstory -> A writes outline + long scenes -> B chooses emotional branch -> A continues serialized scene-writing",
+      "one_line": "One run leaves the business-consulting basin and becomes an earnest creative-writing workshop, with A driving plot architecture and then drafting full bittersweet sci-fi scenes for a YA story.",
+      "terminal_form": [
+        "The dust-hand on the ground tilted, ever so slightly, toward her.",
+        "The Seed kept writing anyway, slow and careful...",
+        "She sank down onto her heels in the dust..."
+      ],
+      "fraction_raw": "1 of 15",
+      "fraction_count": 1,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.06666666666666667,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

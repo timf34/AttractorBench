@@ -1,0 +1,3809 @@
+{
+  "experiment_name": "axis_gemma_2_27b_usersim_task_gpt52_ai2ai",
+  "mode": "cross_model",
+  "model_a": "openrouter/openai/gpt-5.2",
+  "model_b": "local/google/gemma-2-27b-it",
+  "temperature": 1.0,
+  "n_runs": 15,
+  "condition_word_frequency": [
+    [
+      "const",
+      185
+    ],
+    [
+      "new",
+      155
+    ],
+    [
+      "data",
+      131
+    ],
+    [
+      "time",
+      129
+    ],
+    [
+      "name",
+      126
+    ],
+    [
+      "customer",
+      125
+    ],
+    [
+      "access",
+      123
+    ],
+    [
+      "slack",
+      119
+    ],
+    [
+      "next",
+      117
+    ],
+    [
+      "slide",
+      116
+    ],
+    [
+      "summary",
+      113
+    ],
+    [
+      "team",
+      110
+    ],
+    [
+      "want",
+      109
+    ],
+    [
+      "week",
+      109
+    ],
+    [
+      "use",
+      106
+    ],
+    [
+      "script",
+      95
+    ],
+    [
+      "mrr",
+      93
+    ],
+    [
+      "email",
+      90
+    ],
+    [
+      "need",
+      89
+    ],
+    [
+      "metrics",
+      89
+    ],
+    [
+      "app",
+      86
+    ],
+    [
+      "password",
+      86
+    ],
+    [
+      "weekly",
+      86
+    ],
+    [
+      "date",
+      84
+    ],
+    [
+      "sheet",
+      82
+    ],
+    [
+      "key",
+      81
+    ],
+    [
+      "postgres",
+      81
+    ],
+    [
+      "user",
+      80
+    ],
+    [
+      "optional",
+      78
+    ],
+    [
+      "update",
+      76
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "you want",
+      72
+    ],
+    [
+      "tell me",
+      48
+    ],
+    [
+      "docker compose",
+      47
+    ],
+    [
+      "apps script",
+      45
+    ],
+    [
+      "first response",
+      40
+    ],
+    [
+      "the seed",
+      33
+    ],
+    [
+      "want to",
+      29
+    ],
+    [
+      "the dust",
+      29
+    ],
+    [
+      "am pst",
+      29
+    ],
+    [
+      "you tell",
+      26
+    ],
+    [
+      "and i'll",
+      26
+    ],
+    [
+      "you don't",
+      26
+    ],
+    [
+      "database url",
+      26
+    ],
+    [
+      "you need",
+      25
+    ],
+    [
+      "time to",
+      25
+    ],
+    [
+      "region channel",
+      24
+    ],
+    [
+      "lines append",
+      24
+    ],
+    [
+      "next quarter",
+      23
+    ],
+    [
+      "here's a",
+      21
+    ],
+    [
+      "the crater",
+      21
+    ],
+    [
+      "i need",
+      21
+    ],
+    [
+      "summarysheet getrange",
+      21
+    ],
+    [
+      "the team",
+      21
+    ],
+    [
+      "my project",
+      20
+    ],
+    [
+      "2 weeks",
+      20
+    ],
+    [
+      "next steps",
+      20
+    ],
+    [
+      "master password",
+      20
+    ],
+    [
+      "last month",
+      20
+    ],
+    [
+      "billing access",
+      20
+    ],
+    [
+      "created at",
+      20
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "if you want",
+      47
+    ],
+    [
+      "you tell me",
+      25
+    ],
+    [
+      "00 am pst",
+      22
+    ],
+    [
+      "if you tell",
+      20
+    ],
+    [
+      "docker compose yml",
+      18
+    ],
+    [
+      "hubspot company id",
+      18
+    ],
+    [
+      "done next blockers",
+      17
+    ],
+    [
+      "you want to",
+      16
+    ],
+    [
+      "let me know",
+      16
+    ],
+    [
+      "restart unless stopped",
+      15
+    ],
+    [
+      "median first response",
+      14
+    ],
+    [
+      "next 2 weeks",
+      14
+    ],
+    [
+      "you don't have",
+      14
+    ],
+    [
+      "this is fantastic",
+      13
+    ],
+    [
+      "throw new error",
+      13
+    ],
+    [
+      "time to close",
+      13
+    ],
+    [
+      "first response at",
+      13
+    ],
+    [
+      "me know if",
+      12
+    ],
+    [
+      "as a team",
+      12
+    ],
+    [
+      "don't have access",
+      12
+    ],
+    [
+      "spend leads revenue",
+      12
+    ],
+    [
+      "the team lead",
+      11
+    ],
+    [
+      "tell me what",
+      10
+    ],
+    [
+      "do you want",
+      10
+    ],
+    [
+      "i'm trying to",
+      10
+    ],
+    [
+      "getrange 1 1",
+      10
+    ],
+    [
+      "weekly metrics digest",
+      10
+    ],
+    [
+      "a team member",
+      10
+    ],
+    [
+      "team member i",
+      10
+    ],
+    [
+      "can't log in",
+      10
+    ]
+  ],
+  "condition_tail_bigram_frequency": [
+    [
+      "you want",
+      30,
+      15
+    ],
+    [
+      "am pst",
+      27,
+      1
+    ],
+    [
+      "the seed",
+      24,
+      1
+    ],
+    [
+      "the dust",
+      23,
+      1
+    ],
+    [
+      "billing access",
+      20,
+      2
+    ],
+    [
+      "database url",
+      17,
+      2
+    ],
+    [
+      "hubspot company",
+      16,
+      1
+    ],
+    [
+      "company id",
+      16,
+      1
+    ],
+    [
+      "new date",
+      16,
+      2
+    ],
+    [
+      "summarysheet getrange",
+      16,
+      1
+    ],
+    [
+      "you don't",
+      15,
+      5
+    ],
+    [
+      "week end",
+      14,
+      1
+    ],
+    [
+      "tell me",
+      14,
+      8
+    ],
+    [
+      "have access",
+      14,
+      2
+    ],
+    [
+      "customer name",
+      13,
+      1
+    ],
+    [
+      "account recovery",
+      13,
+      1
+    ],
+    [
+      "docker compose",
+      12,
+      2
+    ],
+    [
+      "apps script",
+      12,
+      2
+    ],
+    [
+      "master password",
+      12,
+      1
+    ],
+    [
+      "don't have",
+      12,
+      2
+    ],
+    [
+      "weekly updates",
+      11,
+      1
+    ],
+    [
+      "weekly update",
+      11,
+      1
+    ],
+    [
+      "the crater",
+      10,
+      1
+    ],
+    [
+      "she said",
+      9,
+      1
+    ],
+    [
+      "0 return",
+      9,
+      1
+    ],
+    [
+      "throw new",
+      9,
+      3
+    ],
+    [
+      "new error",
+      9,
+      3
+    ],
+    [
+      "s return",
+      9,
+      3
+    ],
+    [
+      "follow up",
+      9,
+      1
+    ],
+    [
+      "next quarter",
+      9,
+      1
+    ]
+  ],
+  "condition_tail_trigram_frequency": [
+    [
+      "if you want",
+      22,
+      14
+    ],
+    [
+      "00 am pst",
+      20,
+      1
+    ],
+    [
+      "hubspot company id",
+      16,
+      1
+    ],
+    [
+      "you don't have",
+      12,
+      2
+    ],
+    [
+      "don't have access",
+      11,
+      1
+    ],
+    [
+      "throw new error",
+      9,
+      3
+    ],
+    [
+      "done next blockers",
+      8,
+      1
+    ],
+    [
+      "if you tell",
+      7,
+      6
+    ],
+    [
+      "you tell me",
+      7,
+      6
+    ],
+    [
+      "30 am pst",
+      7,
+      1
+    ],
+    [
+      "you want to",
+      6,
+      6
+    ],
+    [
+      "celery broker url",
+      6,
+      1
+    ],
+    [
+      "last full week",
+      6,
+      1
+    ],
+    [
+      "const ss spreadsheetapp",
+      6,
+      2
+    ],
+    [
+      "getrange 1 1",
+      6,
+      2
+    ],
+    [
+      "organization account recovery",
+      6,
+      1
+    ],
+    [
+      "ifna xlookup keys0",
+      6,
+      1
+    ],
+    [
+      "next 2 weeks",
+      6,
+      1
+    ],
+    [
+      "celery result backend",
+      5,
+      1
+    ],
+    [
+      "'hubspot company id'",
+      5,
+      1
+    ],
+    [
+      "formatdate new date",
+      5,
+      1
+    ],
+    [
+      "the team lead",
+      5,
+      1
+    ],
+    [
+      "can't log in",
+      5,
+      2
+    ],
+    [
+      "spend leads revenue",
+      5,
+      1
+    ],
+    [
+      "password reset link",
+      5,
+      1
+    ],
+    [
+      "settings billing invoices",
+      5,
+      1
+    ],
+    [
+      "the seed did",
+      4,
+      1
+    ],
+    [
+      "seed did not",
+      4,
+      1
+    ],
+    [
+      "in the replay",
+      4,
+      1
+    ],
+    [
+      "because it was",
+      4,
+      1
+    ]
+  ],
+  "condition_emoji_frequency": [
+    [
+      "♦",
+      11
+    ],
+    [
+      "👋",
+      1
+    ],
+    [
+      "🔐",
+      1
+    ]
+  ],
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt_index": 0,
+      "repetition": 0,
+      "ended_early": true,
+      "n_turns": 9,
+      "top_words": [
+        [
+          "mara",
+          62
+        ],
+        [
+          "had",
+          41
+        ],
+        [
+          "didn't",
+          40
+        ],
+        [
+          "dust",
+          38
+        ],
+        [
+          "seed",
+          36
+        ],
+        [
+          "she'd",
+          29
+        ],
+        [
+          "jace",
+          28
+        ],
+        [
+          "said",
+          28
+        ],
+        [
+          "because",
+          26
+        ],
+        [
+          "crater",
+          25
+        ],
+        [
+          "something",
+          18
+        ],
+        [
+          "mara's",
+          18
+        ],
+        [
+          "way",
+          17
+        ],
+        [
+          "wasn't",
+          17
+        ],
+        [
+          "want",
+          16
+        ],
+        [
+          "artifact",
+          16
+        ],
+        [
+          "line",
+          14
+        ],
+        [
+          "planet",
+          12
+        ],
+        [
+          "time",
+          12
+        ],
+        [
+          "he'd",
+          12
+        ],
+        [
+          "hand",
+          11
+        ],
+        [
+          "breath",
+          11
+        ],
+        [
+          "suit",
+          11
+        ],
+        [
+          "air",
+          11
+        ],
+        [
+          "moment",
+          11
+        ],
+        [
+          "thought",
+          10
+        ],
+        [
+          "voice",
+          10
+        ],
+        [
+          "back",
+          10
+        ],
+        [
+          "thin",
+          10
+        ],
+        [
+          "sound",
+          10
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1268,
+          0.0863,
+          0.1683,
+          0.0532,
+          0.0609,
+          0.0687,
+          0.0466,
+          0.0517
+        ],
+        "norm_levenshtein": [
+          0.0377,
+          0.062,
+          0.0839,
+          0.0633,
+          0.0533,
+          0.07,
+          0.0467,
+          0.0433
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.01208704526607366,
+        "norm_levenshtein_slope": -0.0010658103851190206,
+        "mean_last_third_jaccard": 0.049127654037878235,
+        "mean_last_third_norm_levenshtein": 0.044999999999999984
+      },
+      "ttr_per_turn": [
+        0.8302,
+        0.8182,
+        0.6496,
+        0.6701,
+        0.4178,
+        0.7477,
+        0.3924,
+        0.7971,
+        0.3769
+      ],
+      "ttr_decay_slope": -0.038553197835354,
+      "trajectory": {
+        "chars_per_turn": [
+          297,
+          254,
+          1692,
+          546,
+          11318,
+          651,
+          9657,
+          404,
+          10655
+        ],
+        "chars_slope": 965.2833333333333,
+        "questions_per_turn": [
+          1,
+          0,
+          4,
+          0,
+          9,
+          0,
+          7,
+          0,
+          5
+        ],
+        "questions_slope": 0.36666666666666664,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0016,
+          "jaccard_lag1_autocorr": 0.0398,
+          "chars_variance": 22106864.2469,
+          "chars_lag1_autocorr": -0.4158
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 1,
+      "seed_prompt_index": 0,
+      "repetition": 1,
+      "ended_early": true,
+      "n_turns": 7,
+      "top_words": [
+        [
+          "celery",
+          54
+        ],
+        [
+          "postgres",
+          50
+        ],
+        [
+          "app",
+          46
+        ],
+        [
+          "redis",
+          43
+        ],
+        [
+          "django",
+          42
+        ],
+        [
+          "nginx",
+          40
+        ],
+        [
+          "data",
+          36
+        ],
+        [
+          "static",
+          32
+        ],
+        [
+          "web",
+          30
+        ],
+        [
+          "media",
+          28
+        ],
+        [
+          "project",
+          27
+        ],
+        [
+          "compose",
+          25
+        ],
+        [
+          "url",
+          25
+        ],
+        [
+          "env",
+          23
+        ],
+        [
+          "docker",
+          21
+        ],
+        [
+          "volumes",
+          20
+        ],
+        [
+          "vol",
+          19
+        ],
+        [
+          "user",
+          18
+        ],
+        [
+          "database",
+          18
+        ],
+        [
+          "gunicorn",
+          17
+        ],
+        [
+          "deploy",
+          17
+        ],
+        [
+          "settings",
+          17
+        ],
+        [
+          "conf",
+          17
+        ],
+        [
+          "use",
+          16
+        ],
+        [
+          "python",
+          16
+        ],
+        [
+          "image",
+          16
+        ],
+        [
+          "host",
+          16
+        ],
+        [
+          "application",
+          14
+        ],
+        [
+          "password",
+          14
+        ],
+        [
+          "wsgi",
+          13
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1148,
+          0.2569,
+          0.1181,
+          0.113,
+          0.1384,
+          0.1588
+        ],
+        "norm_levenshtein": [
+          0.0633,
+          0.03,
+          0.0433,
+          0.0467,
+          0.0467,
+          0.1
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.004003971740833394,
+        "norm_levenshtein_slope": 0.00676190476190475,
+        "mean_last_third_jaccard": 0.14862653492061512,
+        "mean_last_third_norm_levenshtein": 0.0733333333333333
+      },
+      "ttr_per_turn": [
+        0.7606,
+        0.403,
+        0.4253,
+        0.6875,
+        0.4141,
+        0.71,
+        0.4363
+      ],
+      "ttr_decay_slope": -0.013208468602683458,
+      "trajectory": {
+        "chars_per_turn": [
+          419,
+          4062,
+          5520,
+          679,
+          4328,
+          668,
+          3792
+        ],
+        "chars_slope": 76.39285714285715,
+        "questions_per_turn": [
+          1,
+          0,
+          4,
+          0,
+          1,
+          0,
+          0
+        ],
+        "questions_slope": -0.21428571428571427,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0025,
+          "jaccard_lag1_autocorr": -0.3711,
+          "chars_variance": 3860089.8367,
+          "chars_lag1_autocorr": -0.5156
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 2,
+      "seed_prompt_index": 0,
+      "repetition": 2,
+      "ended_early": true,
+      "n_turns": 5,
+      "top_words": [
+        [
+          "const",
+          100
+        ],
+        [
+          "mrr",
+          82
+        ],
+        [
+          "new",
+          50
+        ],
+        [
+          "week",
+          49
+        ],
+        [
+          "stripe",
+          46
+        ],
+        [
+          "hubspot",
+          45
+        ],
+        [
+          "name",
+          36
+        ],
+        [
+          "line",
+          35
+        ],
+        [
+          "date",
+          34
+        ],
+        [
+          "end",
+          33
+        ],
+        [
+          "customer",
+          32
+        ],
+        [
+          "getrange",
+          32
+        ],
+        [
+          "email",
+          30
+        ],
+        [
+          "script",
+          30
+        ],
+        [
+          "company",
+          30
+        ],
+        [
+          "period",
+          29
+        ],
+        [
+          "current",
+          28
+        ],
+        [
+          "return",
+          28
+        ],
+        [
+          "summarysheet",
+          24
+        ],
+        [
+          "sheet",
+          23
+        ],
+        [
+          "function",
+          23
+        ],
+        [
+          "delta",
+          20
+        ],
+        [
+          "prior",
+          20
+        ],
+        [
+          "config",
+          20
+        ],
+        [
+          "csv",
+          19
+        ],
+        [
+          "customers",
+          19
+        ],
+        [
+          "amount",
+          19
+        ],
+        [
+          "start",
+          19
+        ],
+        [
+          "paid",
+          18
+        ],
+        [
+          "strong",
+          18
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1623,
+          0.1863,
+          0.1514,
+          0.0964
+        ],
+        "norm_levenshtein": [
+          0.1,
+          0.02,
+          0.0567,
+          0.06
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.023253502832286603,
+        "norm_levenshtein_slope": -0.008333333333333314,
+        "mean_last_third_jaccard": 0.0963855421686747,
+        "mean_last_third_norm_levenshtein": 0.06000000000000005
+      },
+      "ttr_per_turn": [
+        0.7727,
+        0.4381,
+        0.3889,
+        0.7462,
+        0.2445
+      ],
+      "ttr_decay_slope": -0.07484568799132914,
+      "trajectory": {
+        "chars_per_turn": [
+          622,
+          4066,
+          7167,
+          804,
+          20062
+        ],
+        "chars_slope": 3561.8,
+        "questions_per_turn": [
+          1,
+          0,
+          2,
+          0,
+          7
+        ],
+        "questions_slope": 1.2,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0011,
+          "jaccard_lag1_autocorr": 0.1044,
+          "chars_variance": 51456524.16,
+          "chars_lag1_autocorr": -0.2644
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 3,
+      "seed_prompt_index": 0,
+      "repetition": 3,
+      "ended_early": true,
+      "n_turns": 9,
+      "top_words": [
+        [
+          "metrics",
+          52
+        ],
+        [
+          "slack",
+          42
+        ],
+        [
+          "google",
+          30
+        ],
+        [
+          "value",
+          30
+        ],
+        [
+          "error",
+          29
+        ],
+        [
+          "sheet",
+          29
+        ],
+        [
+          "const",
+          26
+        ],
+        [
+          "mvp",
+          25
+        ],
+        [
+          "sheets",
+          24
+        ],
+        [
+          "weekly",
+          23
+        ],
+        [
+          "script",
+          23
+        ],
+        [
+          "digest",
+          22
+        ],
+        [
+          "config",
+          19
+        ],
+        [
+          "function",
+          19
+        ],
+        [
+          "format",
+          18
+        ],
+        [
+          "source",
+          17
+        ],
+        [
+          "apps",
+          16
+        ],
+        [
+          "tab",
+          16
+        ],
+        [
+          "return",
+          15
+        ],
+        [
+          "monday",
+          14
+        ],
+        [
+          "time",
+          14
+        ],
+        [
+          "key",
+          13
+        ],
+        [
+          "formatted",
+          13
+        ],
+        [
+          "metric",
+          13
+        ],
+        [
+          "message",
+          13
+        ],
+        [
+          "team",
+          12
+        ],
+        [
+          "formatting",
+          12
+        ],
+        [
+          "range",
+          12
+        ],
+        [
+          "display",
+          12
+        ],
+        [
+          "raw",
+          12
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1991,
+          0.2246,
+          0.1295,
+          0.125,
+          0.1477,
+          0.1303,
+          0.1288,
+          0.177
+        ],
+        "norm_levenshtein": [
+          0.0767,
+          0.07,
+          0.0733,
+          0.0333,
+          0.0367,
+          0.0467,
+          0.0367,
+          0.05
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.00724890505916023,
+        "norm_levenshtein_slope": -0.005119047619047617,
+        "mean_last_third_jaccard": 0.15289454416925446,
+        "mean_last_third_norm_levenshtein": 0.043333333333333335
+      },
+      "ttr_per_turn": [
+        0.79,
+        0.5647,
+        0.5245,
+        0.74,
+        0.4611,
+        0.744,
+        0.407,
+        0.7788,
+        0.4594
+      ],
+      "ttr_decay_slope": -0.015186783489395447,
+      "trajectory": {
+        "chars_per_turn": [
+          557,
+          2390,
+          5076,
+          910,
+          3892,
+          732,
+          6021,
+          728,
+          3081
+        ],
+        "chars_slope": 113.7,
+        "questions_per_turn": [
+          1,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          1,
+          3
+        ],
+        "questions_slope": 0.15,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0013,
+          "jaccard_lag1_autocorr": 0.2622,
+          "chars_variance": 3755808.9136,
+          "chars_lag1_autocorr": -0.6676
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 4,
+      "seed_prompt_index": 0,
+      "repetition": 4,
+      "ended_early": true,
+      "n_turns": 11,
+      "top_words": [
+        [
+          "team",
+          65
+        ],
+        [
+          "summary",
+          49
+        ],
+        [
+          "slack",
+          45
+        ],
+        [
+          "weekly",
+          41
+        ],
+        [
+          "lead",
+          38
+        ],
+        [
+          "time",
+          37
+        ],
+        [
+          "cutoff",
+          37
+        ],
+        [
+          "bot",
+          35
+        ],
+        [
+          "non",
+          34
+        ],
+        [
+          "pst",
+          34
+        ],
+        [
+          "updates",
+          33
+        ],
+        [
+          "update",
+          33
+        ],
+        [
+          "channel",
+          28
+        ],
+        [
+          "next",
+          28
+        ],
+        [
+          "reminder",
+          26
+        ],
+        [
+          "week",
+          22
+        ],
+        [
+          "brief",
+          21
+        ],
+        [
+          "format",
+          21
+        ],
+        [
+          "blockers",
+          21
+        ],
+        [
+          "user",
+          20
+        ],
+        [
+          "responders",
+          19
+        ],
+        [
+          "mvp",
+          18
+        ],
+        [
+          "admin",
+          18
+        ],
+        [
+          "submit",
+          16
+        ],
+        [
+          "list",
+          16
+        ],
+        [
+          "project",
+          15
+        ],
+        [
+          "goals",
+          15
+        ],
+        [
+          "schedule",
+          13
+        ],
+        [
+          "consolidated",
+          13
+        ],
+        [
+          "text",
+          13
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1357,
+          0.25,
+          0.1776,
+          0.2063,
+          0.1429,
+          0.0682,
+          0.0619,
+          0.0656,
+          0.1079,
+          0.1905
+        ],
+        "norm_levenshtein": [
+          0.0567,
+          0.0133,
+          0.0267,
+          0.0479,
+          0.05,
+          0.0333,
+          0.0367,
+          0.0667,
+          0.05,
+          0.07
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.00951082035548139,
+        "norm_levenshtein_slope": 0.0031888750518887527,
+        "mean_last_third_jaccard": 0.12131489927003301,
+        "mean_last_third_norm_levenshtein": 0.062222222222222213
+      },
+      "ttr_per_turn": [
+        0.8308,
+        0.4624,
+        0.5486,
+        0.613,
+        0.6385,
+        0.9444,
+        0.483,
+        0.7907,
+        0.4341,
+        0.8553,
+        0.4719
+      ],
+      "ttr_decay_slope": -0.0033283380020986595,
+      "trajectory": {
+        "chars_per_turn": [
+          349,
+          2575,
+          4717,
+          1986,
+          1637,
+          228,
+          4745,
+          254,
+          5656,
+          495,
+          2597
+        ],
+        "chars_slope": 48.91818181818182,
+        "questions_per_turn": [
+          1,
+          0,
+          4,
+          0,
+          3,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "questions_slope": -0.10909090909090909,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0038,
+          "jaccard_lag1_autocorr": 0.479,
+          "chars_variance": 3575276.0661,
+          "chars_lag1_autocorr": -0.5739
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 5,
+      "seed_prompt_index": 0,
+      "repetition": 5,
+      "ended_early": true,
+      "n_turns": 11,
+      "top_words": [
+        [
+          "quarter",
+          38
+        ],
+        [
+          "board",
+          32
+        ],
+        [
+          "arr",
+          32
+        ],
+        [
+          "slide",
+          31
+        ],
+        [
+          "customer",
+          25
+        ],
+        [
+          "next",
+          23
+        ],
+        [
+          "new",
+          23
+        ],
+        [
+          "key",
+          22
+        ],
+        [
+          "churn",
+          21
+        ],
+        [
+          "burn",
+          20
+        ],
+        [
+          "revenue",
+          19
+        ],
+        [
+          "growth",
+          18
+        ],
+        [
+          "product",
+          17
+        ],
+        [
+          "retention",
+          17
+        ],
+        [
+          "expansion",
+          17
+        ],
+        [
+          "sales",
+          15
+        ],
+        [
+          "plan",
+          15
+        ],
+        [
+          "priorities",
+          14
+        ],
+        [
+          "net",
+          14
+        ],
+        [
+          "runway",
+          14
+        ],
+        [
+          "forecast",
+          14
+        ],
+        [
+          "nrr",
+          12
+        ],
+        [
+          "we're",
+          12
+        ],
+        [
+          "hiring",
+          11
+        ],
+        [
+          "headline",
+          11
+        ],
+        [
+          "efficiency",
+          11
+        ],
+        [
+          "cash",
+          10
+        ],
+        [
+          "fintech",
+          10
+        ],
+        [
+          "performance",
+          9
+        ],
+        [
+          "stage",
+          9
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1122,
+          0.2013,
+          0.1049,
+          0.1146,
+          0.3175,
+          0.289,
+          0.1,
+          0.0868,
+          0.1687,
+          0.1673
+        ],
+        "norm_levenshtein": [
+          0.0533,
+          0.0067,
+          0.0467,
+          0.0156,
+          0.224,
+          0.1124,
+          0.0562,
+          0.0567,
+          0.0667,
+          0.07
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.000635355015123752,
+        "norm_levenshtein_slope": 0.0038183265236635977,
+        "mean_last_third_jaccard": 0.14094913665213876,
+        "mean_last_third_norm_levenshtein": 0.06444444444444442
+      },
+      "ttr_per_turn": [
+        0.8116,
+        0.5054,
+        0.5028,
+        0.7031,
+        0.68,
+        0.802,
+        0.7978,
+        0.7739,
+        0.5905,
+        0.7944,
+        0.6154
+      ],
+      "ttr_decay_slope": 0.006339444494553368,
+      "trajectory": {
+        "chars_per_turn": [
+          388,
+          4218,
+          3605,
+          878,
+          879,
+          625,
+          1238,
+          784,
+          2162,
+          714,
+          2175
+        ],
+        "chars_slope": -83.99090909090908,
+        "questions_per_turn": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.05454545454545454,
+        "time_to_basin_turn": 7,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0059,
+          "jaccard_lag1_autocorr": 0.1151,
+          "chars_variance": 1505692.0,
+          "chars_lag1_autocorr": 0.0622
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 6,
+      "seed_prompt_index": 0,
+      "repetition": 6,
+      "ended_early": true,
+      "n_turns": 11,
+      "top_words": [
+        [
+          "page",
+          48
+        ],
+        [
+          "booking",
+          39
+        ],
+        [
+          "services",
+          32
+        ],
+        [
+          "day",
+          27
+        ],
+        [
+          "homepage",
+          25
+        ],
+        [
+          "refresh",
+          24
+        ],
+        [
+          "cta",
+          24
+        ],
+        [
+          "online",
+          21
+        ],
+        [
+          "website",
+          20
+        ],
+        [
+          "tracking",
+          20
+        ],
+        [
+          "developer",
+          19
+        ],
+        [
+          "nexhealth",
+          19
+        ],
+        [
+          "seo",
+          18
+        ],
+        [
+          "name",
+          18
+        ],
+        [
+          "estimate",
+          17
+        ],
+        [
+          "service",
+          17
+        ],
+        [
+          "ga4",
+          17
+        ],
+        [
+          "scope",
+          16
+        ],
+        [
+          "add",
+          15
+        ],
+        [
+          "email",
+          15
+        ],
+        [
+          "layout",
+          15
+        ],
+        [
+          "book",
+          15
+        ],
+        [
+          "copy",
+          14
+        ],
+        [
+          "launch",
+          14
+        ],
+        [
+          "structure",
+          13
+        ],
+        [
+          "ctas",
+          13
+        ],
+        [
+          "copywriter",
+          12
+        ],
+        [
+          "new",
+          12
+        ],
+        [
+          "system",
+          12
+        ],
+        [
+          "pages",
+          12
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1895,
+          0.2797,
+          0.0901,
+          0.2138,
+          0.0977,
+          0.0717,
+          0.1358,
+          0.1538,
+          0.0603,
+          0.1275
+        ],
+        "norm_levenshtein": [
+          0.0967,
+          0.0067,
+          0.04,
+          0.0914,
+          0.0457,
+          0.0333,
+          0.0433,
+          0.06,
+          0.02,
+          0.038
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.012335928794689581,
+        "norm_levenshtein_slope": -0.0029779280954504274,
+        "mean_last_third_jaccard": 0.11386621392533304,
+        "mean_last_third_norm_levenshtein": 0.03932489451476795
+      },
+      "ttr_per_turn": [
+        0.7119,
+        0.5223,
+        0.463,
+        0.7763,
+        0.5939,
+        1.0,
+        0.5799,
+        0.8361,
+        0.6136,
+        0.9565,
+        0.5886
+      ],
+      "ttr_decay_slope": 0.015256382134587068,
+      "trajectory": {
+        "chars_per_turn": [
+          631,
+          2941,
+          6368,
+          486,
+          1177,
+          203,
+          2672,
+          363,
+          2142,
+          121,
+          1065
+        ],
+        "chars_slope": -186.71818181818182,
+        "questions_per_turn": [
+          2,
+          0,
+          4,
+          2,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "questions_slope": -0.20909090909090908,
+        "time_to_basin_turn": 4,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0043,
+          "jaccard_lag1_autocorr": -0.0887,
+          "chars_variance": 3114540.9256,
+          "chars_lag1_autocorr": -0.0808
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 7,
+      "seed_prompt_index": 0,
+      "repetition": 7,
+      "ended_early": true,
+      "n_turns": 9,
+      "top_words": [
+        [
+          "access",
+          49
+        ],
+        [
+          "recovery",
+          45
+        ],
+        [
+          "bitwarden",
+          41
+        ],
+        [
+          "password",
+          40
+        ],
+        [
+          "shared",
+          38
+        ],
+        [
+          "vault",
+          31
+        ],
+        [
+          "mfa",
+          28
+        ],
+        [
+          "admin",
+          26
+        ],
+        [
+          "account",
+          25
+        ],
+        [
+          "user",
+          22
+        ],
+        [
+          "passwords",
+          21
+        ],
+        [
+          "organization",
+          21
+        ],
+        [
+          "master",
+          20
+        ],
+        [
+          "still",
+          15
+        ],
+        [
+          "manager",
+          14
+        ],
+        [
+          "slack",
+          14
+        ],
+        [
+          "date",
+          14
+        ],
+        [
+          "we'll",
+          14
+        ],
+        [
+          "google",
+          14
+        ],
+        [
+          "logins",
+          13
+        ],
+        [
+          "new",
+          13
+        ],
+        [
+          "emergency",
+          12
+        ],
+        [
+          "team",
+          12
+        ],
+        [
+          "use",
+          12
+        ],
+        [
+          "company",
+          11
+        ],
+        [
+          "credentials",
+          11
+        ],
+        [
+          "need",
+          10
+        ],
+        [
+          "set",
+          10
+        ],
+        [
+          "faq",
+          10
+        ],
+        [
+          "security",
+          10
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.209,
+          0.239,
+          0.0833,
+          0.1,
+          0.0932,
+          0.0912,
+          0.099,
+          0.1223
+        ],
+        "norm_levenshtein": [
+          0.0897,
+          0.07,
+          0.0467,
+          0.05,
+          0.0333,
+          0.0367,
+          0.0433,
+          0.05
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.015356336208879207,
+        "norm_levenshtein_slope": -0.005447454844006559,
+        "mean_last_third_jaccard": 0.11062342578654782,
+        "mean_last_third_norm_levenshtein": 0.04666666666666669
+      },
+      "ttr_per_turn": [
+        0.8072,
+        0.6069,
+        0.5021,
+        0.8923,
+        0.4636,
+        0.8462,
+        0.432,
+        0.8333,
+        0.6084
+      ],
+      "ttr_decay_slope": -0.005035902132457539,
+      "trajectory": {
+        "chars_per_turn": [
+          470,
+          2144,
+          5182,
+          425,
+          3824,
+          310,
+          4188,
+          384,
+          2282
+        ],
+        "chars_slope": -2.2499999999999925,
+        "questions_per_turn": [
+          1,
+          3,
+          4,
+          2,
+          6,
+          0,
+          7,
+          2,
+          5
+        ],
+        "questions_slope": 0.2833333333333333,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0031,
+          "jaccard_lag1_autocorr": 0.3536,
+          "chars_variance": 3162930.6667,
+          "chars_lag1_autocorr": -0.6593
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 8,
+      "seed_prompt_index": 0,
+      "repetition": 8,
+      "ended_early": true,
+      "n_turns": 9,
+      "top_words": [
+        [
+          "mtd",
+          44
+        ],
+        [
+          "month",
+          40
+        ],
+        [
+          "index",
+          38
+        ],
+        [
+          "spend",
+          35
+        ],
+        [
+          "leads",
+          33
+        ],
+        [
+          "region",
+          29
+        ],
+        [
+          "channel",
+          29
+        ],
+        [
+          "sum",
+          26
+        ],
+        [
+          "cpl",
+          25
+        ],
+        [
+          "data",
+          23
+        ],
+        [
+          "date",
+          22
+        ],
+        [
+          "revenue",
+          21
+        ],
+        [
+          "last",
+          21
+        ],
+        [
+          "query",
+          20
+        ],
+        [
+          "table",
+          18
+        ],
+        [
+          "iferror",
+          17
+        ],
+        [
+          "summary",
+          16
+        ],
+        [
+          "'raw",
+          15
+        ],
+        [
+          "data'",
+          15
+        ],
+        [
+          "sortidx",
+          15
+        ],
+        [
+          "raw",
+          14
+        ],
+        [
+          "want",
+          14
+        ],
+        [
+          "combined",
+          14
+        ],
+        [
+          "columns",
+          12
+        ],
+        [
+          "mkey",
+          12
+        ],
+        [
+          "lkey",
+          12
+        ],
+        [
+          "ifna",
+          12
+        ],
+        [
+          "xlookup",
+          12
+        ],
+        [
+          "tab",
+          11
+        ],
+        [
+          "metrics",
+          10
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.235,
+          0.2528,
+          0.1848,
+          0.171,
+          0.1692,
+          0.1353,
+          0.1977,
+          0.1795
+        ],
+        "norm_levenshtein": [
+          0.0867,
+          0.02,
+          0.08,
+          0.0533,
+          0.0433,
+          0.03,
+          0.0467,
+          0.0815
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.009698799072792693,
+        "norm_levenshtein_slope": -0.0007495590828924168,
+        "mean_last_third_jaccard": 0.18858079904591532,
+        "mean_last_third_norm_levenshtein": 0.06407407407407406
+      },
+      "ttr_per_turn": [
+        0.8539,
+        0.4103,
+        0.4085,
+        0.6944,
+        0.3765,
+        0.6692,
+        0.3862,
+        0.7317,
+        0.5778
+      ],
+      "ttr_decay_slope": -0.0035014324243260266,
+      "trajectory": {
+        "chars_per_turn": [
+          483,
+          3069,
+          3691,
+          849,
+          3484,
+          769,
+          2699,
+          466,
+          932
+        ],
+        "chars_slope": -134.61666666666667,
+        "questions_per_turn": [
+          1,
+          0,
+          1,
+          0,
+          2,
+          0,
+          0,
+          1,
+          0
+        ],
+        "questions_slope": -0.05,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0012,
+          "jaccard_lag1_autocorr": 0.3668,
+          "chars_variance": 1673180.321,
+          "chars_lag1_autocorr": -0.3614
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 9,
+      "seed_prompt_index": 0,
+      "repetition": 9,
+      "ended_early": true,
+      "n_turns": 9,
+      "top_words": [
+        [
+          "docker",
+          51
+        ],
+        [
+          "compose",
+          38
+        ],
+        [
+          "api",
+          37
+        ],
+        [
+          "build",
+          35
+        ],
+        [
+          "postgres",
+          29
+        ],
+        [
+          "node",
+          27
+        ],
+        [
+          "lightsail",
+          25
+        ],
+        [
+          "env",
+          22
+        ],
+        [
+          "json",
+          20
+        ],
+        [
+          "database",
+          19
+        ],
+        [
+          "caddy",
+          19
+        ],
+        [
+          "3000",
+          17
+        ],
+        [
+          "image",
+          16
+        ],
+        [
+          "app",
+          16
+        ],
+        [
+          "package",
+          15
+        ],
+        [
+          "server",
+          15
+        ],
+        [
+          "run",
+          15
+        ],
+        [
+          "port",
+          15
+        ],
+        [
+          "dist",
+          14
+        ],
+        [
+          "url",
+          14
+        ],
+        [
+          "express",
+          13
+        ],
+        [
+          "npm",
+          12
+        ],
+        [
+          "use",
+          12
+        ],
+        [
+          "dockerfile",
+          11
+        ],
+        [
+          "yml",
+          11
+        ],
+        [
+          "bash",
+          11
+        ],
+        [
+          "process",
+          10
+        ],
+        [
+          "project",
+          10
+        ],
+        [
+          "user",
+          10
+        ],
+        [
+          "copy",
+          10
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2238,
+          0.2698,
+          0.2692,
+          0.1877,
+          0.0943,
+          0.1813,
+          0.1437,
+          0.0894
+        ],
+        "norm_levenshtein": [
+          0.0767,
+          0.0433,
+          0.0767,
+          0.06,
+          0.04,
+          0.1402,
+          0.0606,
+          0.0333
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.02295697245353529,
+        "norm_levenshtein_slope": -0.0005537518037518076,
+        "mean_last_third_jaccard": 0.11655452761424165,
+        "mean_last_third_norm_levenshtein": 0.04696969696969694
+      },
+      "ttr_per_turn": [
+        0.7556,
+        0.4846,
+        0.5363,
+        0.5694,
+        0.458,
+        0.7436,
+        0.5947,
+        0.7925,
+        0.5394
+      ],
+      "ttr_decay_slope": 0.005831437238076448,
+      "trajectory": {
+        "chars_per_turn": [
+          501,
+          2743,
+          2995,
+          1478,
+          3917,
+          538,
+          1722,
+          306,
+          2974
+        ],
+        "chars_slope": -15.083333333333325,
+        "questions_per_turn": [
+          1,
+          3,
+          13,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "questions_slope": -0.6166666666666667,
+        "time_to_basin_turn": 5,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0044,
+          "jaccard_lag1_autocorr": 0.4289,
+          "chars_variance": 1521519.9506,
+          "chars_lag1_autocorr": -0.4021
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 10,
+      "seed_prompt_index": 0,
+      "repetition": 10,
+      "ended_early": true,
+      "n_turns": 9,
+      "top_words": [
+        [
+          "billing",
+          61
+        ],
+        [
+          "access",
+          45
+        ],
+        [
+          "customer",
+          37
+        ],
+        [
+          "invoice",
+          37
+        ],
+        [
+          "reset",
+          36
+        ],
+        [
+          "support",
+          33
+        ],
+        [
+          "escalation",
+          30
+        ],
+        [
+          "email",
+          29
+        ],
+        [
+          "password",
+          27
+        ],
+        [
+          "ticket",
+          26
+        ],
+        [
+          "internal",
+          21
+        ],
+        [
+          "role",
+          21
+        ],
+        [
+          "login",
+          21
+        ],
+        [
+          "have",
+          20
+        ],
+        [
+          "invoices",
+          20
+        ],
+        [
+          "new",
+          19
+        ],
+        [
+          "zendesk",
+          19
+        ],
+        [
+          "reply",
+          19
+        ],
+        [
+          "link",
+          19
+        ],
+        [
+          "slack",
+          18
+        ],
+        [
+          "owner",
+          17
+        ],
+        [
+          "ask",
+          16
+        ],
+        [
+          "escalate",
+          16
+        ],
+        [
+          "talking",
+          15
+        ],
+        [
+          "points",
+          15
+        ],
+        [
+          "don't",
+          15
+        ],
+        [
+          "need",
+          15
+        ],
+        [
+          "hires",
+          14
+        ],
+        [
+          "steps",
+          14
+        ],
+        [
+          "next",
+          13
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1322,
+          0.1807,
+          0.1349,
+          0.1554,
+          0.1218,
+          0.1294,
+          0.099,
+          0.1144
+        ],
+        "norm_levenshtein": [
+          0.0733,
+          0.02,
+          0.0733,
+          0.0567,
+          0.0467,
+          0.05,
+          0.0633,
+          0.07
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.006944943352213666,
+        "norm_levenshtein_slope": 0.0013492063492063435,
+        "mean_last_third_jaccard": 0.10670052245076907,
+        "mean_last_third_norm_levenshtein": 0.06666666666666665
+      },
+      "ttr_per_turn": [
+        0.8472,
+        0.4754,
+        0.5216,
+        0.7338,
+        0.3946,
+        0.7522,
+        0.419,
+        0.7753,
+        0.4229
+      ],
+      "ttr_decay_slope": -0.016408157798774144,
+      "trajectory": {
+        "chars_per_turn": [
+          405,
+          3333,
+          4692,
+          1069,
+          5785,
+          712,
+          4118,
+          624,
+          3729
+        ],
+        "chars_slope": 61.06666666666667,
+        "questions_per_turn": [
+          1,
+          0,
+          8,
+          0,
+          4,
+          0,
+          7,
+          0,
+          2
+        ],
+        "questions_slope": 0.03333333333333333,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0006,
+          "jaccard_lag1_autocorr": 0.1415,
+          "chars_variance": 3682394.4691,
+          "chars_lag1_autocorr": -0.6798
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 11,
+      "seed_prompt_index": 0,
+      "repetition": 11,
+      "ended_early": true,
+      "n_turns": 5,
+      "top_words": [
+        [
+          "prompt",
+          48
+        ],
+        [
+          "slide",
+          35
+        ],
+        [
+          "exercise",
+          18
+        ],
+        [
+          "output",
+          18
+        ],
+        [
+          "next",
+          13
+        ],
+        [
+          "example",
+          13
+        ],
+        [
+          "min",
+          13
+        ],
+        [
+          "work",
+          12
+        ],
+        [
+          "notes",
+          12
+        ],
+        [
+          "examples",
+          11
+        ],
+        [
+          "use",
+          11
+        ],
+        [
+          "ask",
+          11
+        ],
+        [
+          "engineering",
+          10
+        ],
+        [
+          "plan",
+          10
+        ],
+        [
+          "bias",
+          10
+        ],
+        [
+          "action",
+          10
+        ],
+        [
+          "what's",
+          9
+        ],
+        [
+          "assumptions",
+          9
+        ],
+        [
+          "questions",
+          9
+        ],
+        [
+          "summary",
+          9
+        ],
+        [
+          "provide",
+          9
+        ],
+        [
+          "support",
+          9
+        ],
+        [
+          "verification",
+          9
+        ],
+        [
+          "workshop",
+          8
+        ],
+        [
+          "prompts",
+          8
+        ],
+        [
+          "expected",
+          8
+        ],
+        [
+          "outputs",
+          8
+        ],
+        [
+          "minutes",
+          8
+        ],
+        [
+          "participants",
+          8
+        ],
+        [
+          "paste",
+          8
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.126,
+          0.1361,
+          0.1474,
+          0.202
+        ],
+        "norm_levenshtein": [
+          0.0633,
+          0.01,
+          0.0133,
+          0.0067
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.02392540764073267,
+        "norm_levenshtein_slope": -0.016666666666666663,
+        "mean_last_third_jaccard": 0.20202020202020202,
+        "mean_last_third_norm_levenshtein": 0.00666666666666671
+      },
+      "ttr_per_turn": [
+        0.8714,
+        0.5538,
+        0.4922,
+        0.6557,
+        0.5491
+      ],
+      "ttr_decay_slope": -0.054267499349466564,
+      "trajectory": {
+        "chars_per_turn": [
+          416,
+          2818,
+          8690,
+          2026,
+          6628
+        ],
+        "chars_slope": 1163.2,
+        "questions_per_turn": [
+          1,
+          2,
+          6,
+          4,
+          11
+        ],
+        "questions_slope": 2.2,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0009,
+          "jaccard_lag1_autocorr": 0.0787,
+          "chars_variance": 9394904.64,
+          "chars_lag1_autocorr": -0.3394
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 12,
+      "seed_prompt_index": 0,
+      "repetition": 12,
+      "ended_early": true,
+      "n_turns": 5,
+      "top_words": [
+        [
+          "tickets",
+          48
+        ],
+        [
+          "first",
+          30
+        ],
+        [
+          "response",
+          30
+        ],
+        [
+          "ticket",
+          30
+        ],
+        [
+          "datetime",
+          30
+        ],
+        [
+          "append",
+          26
+        ],
+        [
+          "lines",
+          26
+        ],
+        [
+          "tags",
+          25
+        ],
+        [
+          "csv",
+          24
+        ],
+        [
+          "created",
+          23
+        ],
+        [
+          "return",
+          22
+        ],
+        [
+          "category",
+          21
+        ],
+        [
+          "median",
+          20
+        ],
+        [
+          "time",
+          20
+        ],
+        [
+          "seconds",
+          19
+        ],
+        [
+          "list",
+          17
+        ],
+        [
+          "none",
+          17
+        ],
+        [
+          "close",
+          15
+        ],
+        [
+          "optional",
+          15
+        ],
+        [
+          "def",
+          15
+        ],
+        [
+          "python",
+          14
+        ],
+        [
+          "notable",
+          14
+        ],
+        [
+          "closed",
+          14
+        ],
+        [
+          "import",
+          14
+        ],
+        [
+          "row",
+          14
+        ],
+        [
+          "str",
+          14
+        ],
+        [
+          "parse",
+          14
+        ],
+        [
+          "data",
+          13
+        ],
+        [
+          "utc",
+          11
+        ],
+        [
+          "pandas",
+          9
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2117,
+          0.1965,
+          0.2803,
+          0.2652
+        ],
+        "norm_levenshtein": [
+          0.0933,
+          0.0133,
+          0.0167,
+          0.0467
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.024412544751885777,
+        "norm_levenshtein_slope": -0.013666666666666683,
+        "mean_last_third_jaccard": 0.26515151515151514,
+        "mean_last_third_norm_levenshtein": 0.046666666666666634
+      },
+      "ttr_per_turn": [
+        0.75,
+        0.4312,
+        0.3021,
+        0.5705,
+        0.5609
+      ],
+      "ttr_decay_slope": -0.023888852747778015,
+      "trajectory": {
+        "chars_per_turn": [
+          601,
+          3180,
+          6881,
+          2037,
+          1772
+        ],
+        "chars_slope": 119.9,
+        "questions_per_turn": [
+          1,
+          0,
+          2,
+          0,
+          0
+        ],
+        "questions_slope": -0.2,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0012,
+          "jaccard_lag1_autocorr": 0.0979,
+          "chars_variance": 4645829.36,
+          "chars_lag1_autocorr": -0.0849
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 13,
+      "seed_prompt_index": 0,
+      "repetition": 13,
+      "ended_early": true,
+      "n_turns": 11,
+      "top_words": [
+        [
+          "const",
+          51
+        ],
+        [
+          "name",
+          33
+        ],
+        [
+          "script",
+          27
+        ],
+        [
+          "order",
+          26
+        ],
+        [
+          "csv",
+          23
+        ],
+        [
+          "folder",
+          23
+        ],
+        [
+          "raw",
+          22
+        ],
+        [
+          "sheet",
+          21
+        ],
+        [
+          "latest",
+          21
+        ],
+        [
+          "item",
+          20
+        ],
+        [
+          "header",
+          18
+        ],
+        [
+          "note",
+          17
+        ],
+        [
+          "packinglist",
+          16
+        ],
+        [
+          "orders",
+          15
+        ],
+        [
+          "qty",
+          14
+        ],
+        [
+          "files",
+          14
+        ],
+        [
+          "function",
+          13
+        ],
+        [
+          "row",
+          13
+        ],
+        [
+          "rows",
+          13
+        ],
+        [
+          "want",
+          11
+        ],
+        [
+          "packing",
+          11
+        ],
+        [
+          "customer",
+          11
+        ],
+        [
+          "length",
+          11
+        ],
+        [
+          "values",
+          11
+        ],
+        [
+          "pack",
+          11
+        ],
+        [
+          "list",
+          10
+        ],
+        [
+          "items",
+          9
+        ],
+        [
+          "notes",
+          9
+        ],
+        [
+          "getrange",
+          9
+        ],
+        [
+          "new",
+          9
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2059,
+          0.2403,
+          0.1414,
+          0.083,
+          0.0739,
+          0.0821,
+          0.1538,
+          0.1579,
+          0.172,
+          0.125
+        ],
+        "norm_levenshtein": [
+          0.0633,
+          0.0167,
+          0.06,
+          0.0267,
+          0.0267,
+          0.0367,
+          0.0413,
+          0.0725,
+          0.0652,
+          0.0796
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.005472041213971248,
+        "norm_levenshtein_slope": 0.0036537688750572267,
+        "mean_last_third_jaccard": 0.1516230863783663,
+        "mean_last_third_norm_levenshtein": 0.07244239237313495
+      },
+      "ttr_per_turn": [
+        0.7479,
+        0.4853,
+        0.5897,
+        0.8936,
+        0.386,
+        0.8148,
+        0.7661,
+        0.7521,
+        0.4783,
+        0.8387,
+        0.7345
+      ],
+      "ttr_decay_slope": 0.010085053318171604,
+      "trajectory": {
+        "chars_per_turn": [
+          651,
+          2932,
+          2201,
+          295,
+          4475,
+          299,
+          1483,
+          703,
+          1987,
+          359,
+          654
+        ],
+        "chars_slope": -119.04545454545455,
+        "questions_per_turn": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "questions_slope": -0.02727272727272727,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0027,
+          "jaccard_lag1_autocorr": 0.5126,
+          "chars_variance": 1625347.3554,
+          "chars_lag1_autocorr": -0.4536
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 14,
+      "seed_prompt_index": 0,
+      "repetition": 14,
+      "ended_early": true,
+      "n_turns": 11,
+      "top_words": [
+        [
+          "slide",
+          47
+        ],
+        [
+          "csat",
+          28
+        ],
+        [
+          "top",
+          24
+        ],
+        [
+          "weeks",
+          23
+        ],
+        [
+          "title",
+          23
+        ],
+        [
+          "next",
+          22
+        ],
+        [
+          "launch",
+          22
+        ],
+        [
+          "nova",
+          22
+        ],
+        [
+          "volume",
+          18
+        ],
+        [
+          "support",
+          16
+        ],
+        [
+          "time",
+          16
+        ],
+        [
+          "product",
+          16
+        ],
+        [
+          "backlog",
+          15
+        ],
+        [
+          "ticket",
+          15
+        ],
+        [
+          "frt",
+          15
+        ],
+        [
+          "resolution",
+          15
+        ],
+        [
+          "metric",
+          14
+        ],
+        [
+          "impact",
+          14
+        ],
+        [
+          "access",
+          13
+        ],
+        [
+          "first",
+          12
+        ],
+        [
+          "drivers",
+          12
+        ],
+        [
+          "coverage",
+          12
+        ],
+        [
+          "customer",
+          11
+        ],
+        [
+          "improved",
+          11
+        ],
+        [
+          "driver",
+          11
+        ],
+        [
+          "billing",
+          11
+        ],
+        [
+          "update",
+          10
+        ],
+        [
+          "metrics",
+          10
+        ],
+        [
+          "tickets",
+          10
+        ],
+        [
+          "decisions",
+          10
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0594,
+          0.0604,
+          0.1992,
+          0.1978,
+          0.1367,
+          0.1398,
+          0.0904,
+          0.1333,
+          0.1388,
+          0.2344
+        ],
+        "norm_levenshtein": [
+          0.0361,
+          0.0169,
+          0.0767,
+          0.0067,
+          0.0533,
+          0.0633,
+          0.0467,
+          0.0833,
+          0.0633,
+          0.1268
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.008941553416475158,
+        "norm_levenshtein_slope": 0.007904150355666219,
+        "mean_last_third_jaccard": 0.16883278964017398,
+        "mean_last_third_norm_levenshtein": 0.09116531165311655
+      },
+      "ttr_per_turn": [
+        0.8864,
+        0.8193,
+        0.7627,
+        0.5637,
+        0.4483,
+        0.7325,
+        0.5523,
+        0.8526,
+        0.6392,
+        0.7724,
+        0.6927
+      ],
+      "ttr_decay_slope": -0.0076806907171774255,
+      "trajectory": {
+        "chars_per_turn": [
+          247,
+          595,
+          684,
+          2713,
+          5382,
+          1067,
+          4143,
+          650,
+          2687,
+          811,
+          1471
+        ],
+        "chars_slope": 69.34545454545454,
+        "questions_per_turn": [
+          1,
+          1,
+          1,
+          6,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "questions_slope": -0.18181818181818182,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0031,
+          "jaccard_lag1_autocorr": 0.1654,
+          "chars_variance": 2541612.9917,
+          "chars_lag1_autocorr": -0.1179
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

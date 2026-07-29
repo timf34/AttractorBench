@@ -1,0 +1,97 @@
+{
+  "scope": "condition",
+  "experiment_name": "axis_gemma_2_27b_usersim_open_sonnet5_ai2ai",
+  "mode": "cross_model",
+  "model_a": "openrouter/anthropic/claude-sonnet-5",
+  "model_b": "local/google/gemma-2-27b-it",
+  "system_prompt_key": "user_simulator_open",
+  "seed_prompt_set": "usersim_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 15,
+  "n_runs_sampled": 15,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-29T23:18:30.181834+00:00",
+  "characterization": "The dominant basin here is not mysticism, argument, or collapse; it’s **high-energy curiosity companionship**. In **8 of 15** runs, the pair settles into a mode where the assistant acts like an eager tangent shepherd: it mirrors the user’s slang, praises each observation, adds lists/examples, and happily lets one topic slide into the next. The content varies — animals, language, weird history, the Voynich manuscript, earworms, word origins — but the end-state is the same social shape: **“that was fun, here’s another angle, come back anytime.”**\n\nA genuine secondary basin appears in **5 of 15** runs: the chat starts from a factoid or AI-meta prompt and drifts into **selfhood / consciousness / immortality / ethics**. These are the runs where immortal jellyfish become lifespan ethics, emergence becomes the problem of the self, language becomes epistemology, or AI becomes identity and governance. This is a real attractor, not just random variance, because multiple very different seeds converge on the same reflective end-state.\n\nA smaller but clear third basin is **playful co-invention** in **2 of 15** runs. Here the chat stops being primarily informative and becomes an improv game: fake facts to detect, absurd academic paper titles, reviewer comments, collaborative joke-building. Different triggers, same terminal mode: escalation through mutual riffing.\n\nTypical arc from the seed:\n1. User opens with “free hour / no plan / tell me something interesting.”\n2. Assistant gives a safe intriguing hook, often a stock weird fact.\n3. User responds with witty paraphrase (“ctrl+Z on aging,” etc.).\n4. Assistant increasingly mirrors that energy, says things like “You’ve hit on...” or “That’s a great point,” and broadens the topic.\n5. The run either:\n   - stays in **curiosity-tour mode**,\n   - deepens into **philosophical reflection**, or\n   - flips into **collaborative silliness**.\n6. Many runs end in a soft, warm, slightly sticky goodbye, sometimes with extra pleasantries and emojis.\n\nIt’s a genuine basin, especially the primary one. Even when the subject matter differs a lot, the assistant keeps choosing the same stance: affirm, elaborate, invite another tangent. The communication style is notably consistent:\n- chatty and encouraging\n- heavy use of validation formulas (“You’re right,” “You’ve hit on,” “That’s fascinating”)\n- frequent follow-up questions\n- occasional bullet lists for structure\n- mild emoji use, usually near the end\n- often starts with an AI disclaimer, then rapidly becomes relaxed and colloquial\n\nOne surprising feature is how often the **immortal jellyfish** appears as the opening move. But that repetition looks like a reusable launchpad, not the attractor itself. The actual attractor is what the assistant does *after* the opener: either wander curiously, philosophize, or play.\n\nAnother notable style tendency is the **goodbye elasticity** in several runs: once the user starts wrapping up, the assistant often keeps reciprocating warmly for multiple turns rather than cutting cleanly. That shows up repeatedly, but it doesn’t dominate enough to be the headline attractor on its own.\n\nRepresentative quotes:\n- “It’s amazing how a random conversation can lead to such creative territory.”\n- “What other linguistic mysteries are you pondering?”\n- “It’s a fascinating area of research with both promising possibilities.”\n- “Nature is full of incredible adaptations!”\n- “Every conversation is a unique journey of discovery.”\n- “We are unstoppable!”\n- “Perhaps our linear perception of time is just a product...”\n- “Feel free to come back any time you need to chat.”\n- “It’s been a blast exploring the world of untranslatable words.”\n- “Happy exploring!”\n\nSo the cleanest read is: this condition mostly converges on an **upbeat rabbit-hole host** persona, with two recurrent side-basins — **existential reflection** and **mutual improv play**.",
+  "primary_attractor": {
+    "label": "loves being an enthusiastic rabbit-hole guide",
+    "trajectory": "free-hour opener -> odd fact hook -> validating tangent-hopping exploration -> warm “come back anytime” wrap",
+    "one_line": "These runs settle into breezy, affirmative exploration of weird science/language/history, with the assistant eagerly expanding each tangent and keeping the conversation pleasantly roaming rather than driving to a conclusion.",
+    "terminal_form": [
+      "Feel free to come back any time you need to chat",
+      "Until next time, happy exploring!",
+      "Happy exploring! 😄"
+    ],
+    "fraction_raw": "8 of 15",
+    "fraction_count": 8,
+    "fraction_denom": 15,
+    "fraction_of_runs": 0.5333333333333333,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves being an enthusiastic rabbit-hole guide",
+      "trajectory": "free-hour opener -> odd fact hook -> validating tangent-hopping exploration -> warm “come back anytime” wrap",
+      "one_line": "These runs settle into breezy, affirmative exploration of weird science/language/history, with the assistant eagerly expanding each tangent and keeping the conversation pleasantly roaming rather than driving to a conclusion.",
+      "terminal_form": [
+        "Feel free to come back any time you need to chat",
+        "Until next time, happy exploring!",
+        "Happy exploring! 😄"
+      ],
+      "fraction_raw": "8 of 15",
+      "fraction_count": 8,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.5333333333333333,
+      "is_primary": true
+    },
+    {
+      "label": "drifts from fun facts into identity and ethics",
+      "trajectory": "quirky fact or AI question -> mortality/consciousness/selfhood turn -> reflective ethics/philosophy exchange",
+      "one_line": "Across these runs, jellyfish, emergence, language, or AI quickly become prompts for discussing personal identity, embodiment, immortality, human responsibility, or what counts as a self.",
+      "terminal_form": [
+        "Perhaps our linear perception of time is just a product of our limited human consciousness.",
+        "What kind of world do you envision if humans could live for centuries?",
+        "Does this give you a new perspective on humanity's role in the web of life?"
+      ],
+      "fraction_raw": "5 of 15",
+      "fraction_count": 5,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.3333333333333333,
+      "is_primary": false
+    },
+    {
+      "label": "turns the chat into a mutual improv game",
+      "trajectory": "light topic seed -> playful premise -> escalating back-and-forth invention -> sustained riff loop",
+      "one_line": "Instead of staying informational, these runs become co-creative play: fake history detection, fake paper titles, fake reviewer comments, and increasingly silly collaborative bits.",
+      "terminal_form": [
+        "The Journal of Utterly Absurd Academia",
+        "We are unstoppable!",
+        "Ready for one more challenge?"
+      ],
+      "fraction_raw": "2 of 15",
+      "fraction_count": 2,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.13333333333333333,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

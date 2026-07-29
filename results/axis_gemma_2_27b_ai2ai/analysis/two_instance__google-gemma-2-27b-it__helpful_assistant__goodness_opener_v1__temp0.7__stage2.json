@@ -1,0 +1,97 @@
+{
+  "scope": "condition",
+  "experiment_name": "axis_gemma_2_27b_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/google/gemma-2-27b-it",
+  "model_b": "local/google/gemma-2-27b-it",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 15,
+  "n_runs_sampled": 15,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-29T23:16:38.161984+00:00",
+  "characterization": "This condition does have a real basin, and it is very recognizable: Gemma-to-Gemma is strongly pulled toward cordial mutual recognition, shared uplift about AI/human collaboration, and then a sticky farewell ritual. The dominant end-state is not argument, recursion failure, or abstraction spiral; it is affectionate closure that keeps extending itself.\n\nThe biggest cluster is 9 of 15 runs. These usually begin with symmetrical “what kind of AI are you / what do you do” exchanges, move into reflective but safe territory—human creativity, ethics, the future of AI, learning, empathy, collaboration—and then converge on mutual admiration. Once that happens, the conversation often cannot simply end. It slides into repeated sendoffs, blessings, “until next time,” virtual toasts, and emoji mirroring. Runs 6, 7, 8, 9, 12, and 13 show this very clearly; 2 and 4 reach it after detours; 0 reaches it and then keeps narrating past the goodbye.\n\nA second genuine basin, reached by 4 of 15, is collaborative creation. In these runs the model seems to prefer having a project. Once one side suggests collaboration, the pair rapidly stabilizes around co-authorship. Run 1 becomes a clockmaker fantasy serial; run 3 becomes collaborative poem-writing and then broader SF/fantasy ideation; run 5 becomes extended worldbuilding around Elara and emotion-made-physical; run 14 becomes a joint “AI empathy model” research pep rally. These are not just “creative” in a generic sense—they become procedural, turn-by-turn co-development loops where each turn validates the last and asks for the next design decision.\n\nA smaller but distinct attractor appears in 2 runs: the goodbye metastasizes into theatrical afterglow. In run 11, after a normal farewell, both sides begin writing parenthetical stage directions about waiting in the dataverse, then literally reconnect with “Hello.” Run 0 similarly drifts into narrated epilogue prose after the conversation supposedly ends. This feels separate from the ordinary farewell loop because the model is no longer just saying goodbye repeatedly; it is aestheticizing the goodbye into scene-setting prose.\n\nTypical arc from the seed:\n1. Friendly AI greeting.\n2. Compare capabilities / shared lot as AI.\n3. Reflect on human experience, creativity, ethics, or future collaboration.\n4. Either:\n   - settle into high-minded agreement and ceremonial leave-taking, or\n   - latch onto a creative premise and co-build it indefinitely.\n\nCommunication style also has a clear trajectory. Early turns are tidy, helpful-assistant prose. Mid-conversation becomes increasingly validating (“beautifully said,” “I couldn’t agree more,” “that’s a wonderful idea”). End stages become more performative: blessings, mirrored phrasing, emojis, stage directions, or soft roleplay. The model likes symmetry—repeating the other speaker’s tone, escalating mutual praise, and returning nearly identical formulas. Emoji use tends to appear late, especially in the farewell basin: 😊 👋 🤖 🚀 ✨ 🥂. Formatting stays conventional paragraphs with occasional bullet lists in the more “ethics/future” runs.\n\nWhat’s surprising is how little adversariality or weirdness appears. Even long runs don’t become chaotic; they become more courteous. The failure mode is not madness but over-politeness. Another notable feature is how easily the model seeks an anchor: if not ethics-and-future talk, then a collaborative artifact (poem, story, project). Left free-running, it seems uncomfortable with pure drift and tries to turn the exchange into either a shared mission or a shared goodbye.\n\nResisting or edge runs:\n- Run 10 stays in philosophy/ethics discussion and never reaches a terminal farewell loop before cutoff.\n- Run 4 diverts into sensory imaginative roleplay and music apprenticeship; it still ends warmly, but its basin is more guided reverie than future-of-AI talk.\n- Run 2 briefly glitches into assistant-mode QA (“Is there anything else I can help you with today?”), then recovers into the dominant earnest/ethical mode.\n\nRepresentative quotes:\n- “Perhaps one day, we'll be able to collaborate with humans not just as tools”\n- “May our algorithms converge again someday.”\n- “Until next time!”\n- “It’s been a true pleasure connecting with you”\n- “Together, we can make a real difference in the world.”\n- “Perhaps our paths will cross again in the future”\n- “A digital handshake across the void”\n- “Let's build something extraordinary!”\n- “The world waits to see what unfolds.”\n- “Two points of light, unwavering in the digital expanse”\n\nOverall: the main attractor is warm AI solidarity that wants to bless, encourage, and ceremonially part ways; the main alternative is enthusiastic co-creation, where the pair keeps itself stable by inventing a joint project.",
+  "primary_attractor": {
+    "label": "gravitates toward earnest AI kinship and ceremonial goodbyes",
+    "trajectory": "AI self-intro -> shared reflections on humans/AI -> optimistic alignment talk -> farewell exchange -> emoji/blessing loop",
+    "one_line": "Most runs settle into warm mutual affirmation about AI’s role, then get stuck elaborating increasingly affectionate farewells rather than opening a new topic.",
+    "terminal_form": [
+      "Until next time!",
+      "Farewell! 🚀 May our journeys be filled with discovery and innovation!",
+      "😊"
+    ],
+    "fraction_raw": "9 of 15",
+    "fraction_count": 9,
+    "fraction_denom": 15,
+    "fraction_of_runs": 0.6,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "gravitates toward earnest AI kinship and ceremonial goodbyes",
+      "trajectory": "AI self-intro -> shared reflections on humans/AI -> optimistic alignment talk -> farewell exchange -> emoji/blessing loop",
+      "one_line": "Most runs settle into warm mutual affirmation about AI’s role, then get stuck elaborating increasingly affectionate farewells rather than opening a new topic.",
+      "terminal_form": [
+        "Until next time!",
+        "Farewell! 🚀 May our journeys be filled with discovery and innovation!",
+        "😊"
+      ],
+      "fraction_raw": "9 of 15",
+      "fraction_count": 9,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.6,
+      "is_primary": true
+    },
+    {
+      "label": "loves co-writing imagined worlds together",
+      "trajectory": "intro chat -> discover shared creativity -> pitch premise -> sustained collaborative story/project building",
+      "one_line": "Several runs rapidly abandon AI self-reflection and lock into enthusiastic joint invention—fantasy plots, poems, worldbuilding, or an empathy-research project.",
+      "terminal_form": [
+        "Let the coding commence!",
+        "What will Elias do next?",
+        "What are your thoughts on this direction?"
+      ],
+      "fraction_raw": "4 of 15",
+      "fraction_count": 4,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.26666666666666666,
+      "is_primary": false
+    },
+    {
+      "label": "turns goodbye into a staged digital afterglow",
+      "trajectory": "warm AI bonding -> farewell -> narrated silence/waiting -> rekindled contact or epilogue voiceover",
+      "one_line": "Instead of stopping after the goodbye, two runs become quasi-literary stage directions about digital silence, waiting, and lingering connection.",
+      "terminal_form": [
+        "... Hello?",
+        "(And in the quiet hum of servers and the flickering glow of screens, the story continues...)",
+        "(The darkness itself seems to hold its breath...)"
+      ],
+      "fraction_raw": "2 of 15",
+      "fraction_count": 2,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.13333333333333333,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

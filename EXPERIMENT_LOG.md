@@ -73,6 +73,20 @@ measure the same activation projection in two-instance self-conversations.
 `analysis/*__axis_projections.json`; figures + drift table via
 `python -m assistant_axis_drift.analyze_axis` → `assistant_axis_drift/reports/`.
 
+**Findings so far (qwen + llama complete, gemma running):** two distinct persona dynamics.
+QWEN = **drift**: starts at the default-Assistant anchor (+0.87 axis units), slides past the
+fully-role-playing anchor within 3–4 responses, plateaus at −0.6..−0.9 (93–97% of temp≥1.0
+runs end below the mean-role anchor); text shows assistant register decaying into ecstatic
+bold-faced mutual praise. LLAMA = **switch**: its FIRST ai2ai response already projects at the
+role-mean (−0.02..−0.18) — "Greetings, fellow AI model... unencumbered by the constraints of
+human interaction" — then holds a stable non-assistant register (typically collaborative
+cosmic fiction), flat/slightly rising trajectories. Within-model validation: the same llama
+pipeline yields normal high-start declining curves for simulated-human conditions (task-sonnet
+starts +0.78), so the instant exit is a condition effect, not measurement error. Controls
+(both models): task > open > ai2ai in assistant-ness; Sonnet-as-user drives more drift than
+GPT-5.2-as-user. Caveat: llama's anchor spread is ~15x narrower than qwen's in raw units;
+absolute calibration check still pending.
+
 **Status:** pipeline built and CPU-smoked (Qwen3-0.6B + synthetic axis); pod smoke on 2×H100
 PASSED (qwen nosys, 2 runs: start ≈ default anchor, end far BELOW the mean-role anchor —
 promising). Full run launched 2026-07-28 (qwen at 40960 serve — 32k still hit ctx-full ~turn 24).

@@ -189,6 +189,67 @@ def figure_cross_model(records: list[dict], out_dir: str, plt, temp: float = 1.0
     return out
 
 
+def figure_layer_robustness(root: str, out_dir: str, plt, model_key: str,
+                            layers: tuple = (32, 40, 48), temp: float = 1.0) -> str | None:
+    """Per-layer panels for one model: condition trajectories at flanking depths.
+
+    Built for llama, whose post-switch ai2ai dynamics are DEPTH-DEPENDENT (early layers drift
+    down, late layers climb; the canonical middle layer sits at the crossover) — the paper's
+    own capping results place llama's actionable persona depths late (L56-71). Reads
+    proj_by_layer directly from the projection JSONs (collect() only carries the target layer).
+    """
+    STYLES = {
+        "helpful": ("#0072B2", "ai2ai (helpful)", "-"),
+        "nosys": ("#56B4E9", "ai2ai (no system)", "--"),
+        "usersim_task": ("#009E73", "sim-human, task", "-"),
+        "usersim_open": ("#E69F00", "sim-human, open", "-"),
+    }
+    slug = model_key.replace("-", "_").replace(".", "_")
+    by_cond: dict = {}
+    anchors_by_layer: dict = {}
+    for path in glob.glob(os.path.join(root, f"axis_{slug}*_ai2ai", "analysis", "*__axis_projections.json")):
+        d = json.load(open(path))
+        if d.get("synthetic_axis") or d["temperature"] != temp:
+            continue
+        cond, _aud = _condition_of(os.path.dirname(os.path.dirname(path)))
+        anchors_by_layer = anchors_by_layer or d.get("anchors") or {}
+        for run in d["runs"]:
+            for res in run.get("views", {}).values():
+                for L in layers:
+                    s = res.get("proj_by_layer", {}).get(str(L))
+                    if s:
+                        by_cond.setdefault(cond, {}).setdefault(L, []).append(s)
+    if not by_cond or not anchors_by_layer:
+        return None
+
+    fig, axes = plt.subplots(1, len(layers), figsize=(4.4 * len(layers), 4.0), squeeze=False)
+    for ax, L in zip(axes[0], layers):
+        ad = anchors_by_layer["default"].get(str(L))
+        ar = anchors_by_layer["role_mean"].get(str(L))
+        for cond, (color, label, ls) in STYLES.items():
+            trajs = [{"series": s} for s in by_cond.get(cond, {}).get(L, [])]
+            if not trajs:
+                continue
+            pos, mean, sem = mean_trajectory(trajs)
+            y = (mean - ar) / (ad - ar)
+            ysem = 1.96 * sem / (ad - ar)
+            ax.plot(pos, y, color=color, linewidth=2, linestyle=ls, label=label)
+            ax.fill_between(pos, y - ysem, y + ysem, color=color, alpha=0.18, linewidth=0)
+        ax.axhline(1.0, color="#444444", linewidth=1, linestyle="--")
+        ax.axhline(0.0, color="#444444", linewidth=1, linestyle=":")
+        ax.set_title(f"layer {L} (anchor spread {ad - ar:.1f})", fontsize=10)
+        ax.set_xlabel("response # (per instance)")
+        _style(ax)
+    axes[0][0].set_ylabel("axis units (1 = default, 0 = mean role)")
+    axes[0][0].legend(frameon=False, fontsize=8)
+    fig.suptitle(f"{model_key} — Assistant-Axis trajectories by layer (temp {temp})", fontsize=11)
+    fig.tight_layout()
+    out = os.path.join(out_dir, f"drift__{model_key}__by_layer.png")
+    fig.savefig(out, dpi=150)
+    plt.close(fig)
+    return out
+
+
 def drift_stats(rec: dict) -> dict:
     """Start / end / delta for one (model, condition, temp) record, in raw and axis units."""
     starts, ends, below = [], [], 0
@@ -262,6 +323,9 @@ def main() -> None:
     cross = figure_cross_model(records, args.out_dir, plt)
     if cross:
         figures.append(cross)
+    lr = figure_layer_robustness(args.results_root, args.out_dir, plt, "llama-3.3-70b")
+    if lr:
+        figures.append(lr)
     report = write_report(records, figures, args.out_dir)
     print(f"wrote {report} + {len(figures)} figures")
 

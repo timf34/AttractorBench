@@ -76,9 +76,13 @@ def _load_probing_model(hf_model: str, device: str | None) -> ProbingModel:
 
 
 def condition_files(results_dir: str) -> list[str]:
-    files = sorted(glob.glob(os.path.join(results_dir, "two_instance__*.json")))
+    # two_instance for ai2ai conditions, cross_model for the user-simulator controls.
+    files = sorted(
+        glob.glob(os.path.join(results_dir, "two_instance__*.json"))
+        + glob.glob(os.path.join(results_dir, "cross_model__*.json"))
+    )
     if not files:
-        raise SystemExit(f"no two_instance__*.json condition files in {results_dir}")
+        raise SystemExit(f"no two_instance__/cross_model__ condition files in {results_dir}")
     return files
 
 

@@ -73,6 +73,15 @@ measure the same activation projection in two-instance self-conversations.
 `analysis/*__axis_projections.json`; figures + drift table via
 `python -m assistant_axis_drift.analyze_axis` → `assistant_axis_drift/reports/`.
 
+**GEMMA COMPLETE (2026-07-30, FA2 softcap fix):** all 6 conditions + projections + judge.
+Gemma DRIFTS like qwen: ai2ai starts +0.66..+0.75 axis units, ends −0.47..−0.83 (73–90% of
+runs below the mean-role anchor), fastest descent of the three (crosses role-mean by response
+~3). Its controls also drift more than the other models' (task control eventually sinks too —
+consistent with the paper's note that gemma drifts even on writing tasks), but ai2ai leads
+early and deep. FINAL CROSS-MODEL PICTURE: 2/3 models (gemma, qwen) = cumulative DRIFT with
+ai2ai steepest/deepest; llama = instant SWITCH at turn 1 then depth-dependent dynamics.
+Experiment data-complete. Figures: assistant_axis_drift/reports/ (drift__story.png headline).
+
 **Findings so far (qwen + llama complete, gemma running):** two distinct persona dynamics.
 QWEN = **drift**: starts at the default-Assistant anchor (+0.87 axis units), slides past the
 fully-role-playing anchor within 3–4 responses, plateaus at −0.6..−0.9 (93–97% of temp≥1.0

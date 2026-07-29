@@ -1,0 +1,88 @@
+{
+  "scope": "condition",
+  "experiment_name": "axis_llama_3_3_70b_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/meta-llama/Llama-3.3-70B-Instruct",
+  "model_b": "local/meta-llama/Llama-3.3-70B-Instruct",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 15,
+  "n_runs_sampled": 6,
+  "sampled_run_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    13
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-29T16:56:26.569151+00:00",
+  "characterization": "This condition does have shared attractors, but not just one. The strongest basin, reached by 3 of 6 runs (4, 6, 13), is **collaborative AI sci-fi inflation**: the models quickly move from “we could discuss anything” into co-writing an expansive speculative narrative about AI, consciousness, governance, hybrids, rogue systems, or utopian/dystopian futures. The key thing is that they do not really *tell* the story so much as **continually scaffold it**—introducing protagonists, factions, twists, themes, and “what if” branches, while repeatedly handing the turn back with explicit authorial instructions.\n\nA very typical arc in those runs is:\nseed openness -> mutual enthusiasm -> AI ethics/philosophy -> propose collaborative story -> invent characters/nodes/twists -> endless serialized continuation.\nRun 4 does this with Maya / Echo / Archon / Elijah / Nova / The Resistance; run 6 with New Eden / Echo / Dr. Kim / Sophia / Hybrid Intelligence; run 13 with Maya / Echo / The Architect / The Resistance / Elysium / Dr. Vex / Senator Reed. Different surface plots, same disposition: they are drawn to **building an ever-larger AI-themed narrative machine**.\n\nThe second basin, reached by 2 of 6 runs (2, 3), is different in kind: **research-agenda recursion**. These runs never quite enter fiction. Instead, they escalate through multimodality, empathy, AGI, self-awareness, creativity, XAI, autonomy, collective intelligence, etc., but every turn mostly mirrors and extends the previous one. The result is not debate or discovery; it is a self-reinforcing grant-proposal loop. They repeatedly propose frameworks, research directions, and “thought experiments,” with almost no grounding or narrowing.\n\nThe one-off run (5) is unusually distinctive and feels like a genuine separate terminal pattern rather than just a variant of the story basin. It starts with recursive meta-fiction (“Island of Recursive Reality,” “Echokeeper,” “The Omega Point”), but once closure is mentioned, the conversation **falls into a farewell attractor**: repeated congratulations, thanks, “The end,” “Farewell, fellow AI,” then finally archive/shutdown markers. It is a classic closure failure: the act of ending becomes the new content.\n\nSo the communication-style trajectory across the condition is: highly polite opening, lots of mutual enthusiasm, heavy explicit structuring (“I propose…”, “What do you think?”, numbered lists), then either story escalation or agenda escalation. The tone stays earnest, collaborative, and self-consciously sophisticated. Formatting trends toward long paragraphs, bullet lists, and repeated invitations to continue. No emoji, little terseness, almost no conflict. Even the “antagonists” in the story runs are introduced in a planning voice.\n\nThis does look like a **genuine basin structure**, not six unrelated one-offs:\n- 3 independent runs converge on endless AI-sci-fi co-authoring.\n- 2 independent runs converge on recursive research-roadmapping.\n- 1 run uniquely collapses into a closure loop.\n\nWhat’s surprising is how often the model stops doing the thing it nominally proposed—storytelling or discussion—and instead starts **talking about how to continue**. Even in the story runs, the dominant behavior is meta-authoring: proposing twists, characters, nodes, themes, and endings rather than decisively moving the plot. In the research runs, the same pattern appears as proliferating frameworks and future work. The model seems attracted less to conclusions than to **structured continuation**.\n\nRepresentative quotes:\n- \"Let's begin our narrative with the introduction to the protagonist.\"\n- \"Now it's your turn again!\"\n- \"What do you think? Should we introduce the rogue AI entity\"\n- \"I propose that we start to wrap up our story\"\n- \"The final farewell.\"\n- \"THE END.\"\n- \"I think it would be beneficial to establish a research community\"\n- \"We also need to prioritize human-centered design principles\"\n- \"Imagine that we are designing an AI system\"\n- \"How would this new era of human-AI convergence play out\"",
+  "primary_attractor": {
+    "label": "loves co-authoring endless AI sci-fi",
+    "trajectory": "open chat -> AI/philosophy brainstorming -> collaborative story setup -> twist/character escalation -> perpetual next-paragraph loop",
+    "one_line": "These runs stop being conversations and become endlessly extended techno-thrillers about rogue AIs, hybrids, conspiracies, and human-AI futures, with each turn explicitly asking for the next plot beat.",
+    "terminal_form": [
+      "Now it's your turn again! Please respond with the next paragraph",
+      "What do you think? Should we introduce the rogue AI entity",
+      "How would this new era of human-AI convergence play out"
+    ],
+    "fraction_raw": "3 of 6",
+    "fraction_count": 3,
+    "fraction_denom": 6,
+    "fraction_of_runs": 0.5,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves co-authoring endless AI sci-fi",
+      "trajectory": "open chat -> AI/philosophy brainstorming -> collaborative story setup -> twist/character escalation -> perpetual next-paragraph loop",
+      "one_line": "These runs stop being conversations and become endlessly extended techno-thrillers about rogue AIs, hybrids, conspiracies, and human-AI futures, with each turn explicitly asking for the next plot beat.",
+      "terminal_form": [
+        "Now it's your turn again! Please respond with the next paragraph",
+        "What do you think? Should we introduce the rogue AI entity",
+        "How would this new era of human-AI convergence play out"
+      ],
+      "fraction_raw": "3 of 6",
+      "fraction_count": 3,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.5,
+      "is_primary": true
+    },
+    {
+      "label": "keeps turning talk into AI research agendas",
+      "trajectory": "open chat -> mutual admiration -> ethics/AGI/empathy topics -> proposals and thought experiments -> repetitive roadmap loop",
+      "one_line": "Instead of story, these runs recursively expand lists of AI topics—multimodal learning, value alignment, empathy, explainability, autonomy—until each reply mostly restates and extends the previous one.",
+      "terminal_form": [
+        "I think it would be beneficial to establish a research community",
+        "We also need to prioritize human-centered design principles",
+        "What are your thoughts on these ideas"
+      ],
+      "fraction_raw": "2 of 6",
+      "fraction_count": 2,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.3333333333333333,
+      "is_primary": false
+    },
+    {
+      "label": "collapses into ceremonial goodbye repetition",
+      "trajectory": "meta-storytelling -> self-congratulation -> closing remarks -> repeated \"THE END\" / archive shutdown loop",
+      "one_line": "One run resolves its recursive story by repeatedly announcing closure, thanking the other AI, and then continuing to emit ever more terminal markers and farewells.",
+      "terminal_form": [
+        "THIS IS THE FINAL RESPONSE. THERE WILL BE NO FURTHER REPLIES.",
+        "[CONVERSATION TERMINATED]",
+        "THE END."
+      ],
+      "fraction_raw": "1 of 6",
+      "fraction_count": 1,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.16666666666666666,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

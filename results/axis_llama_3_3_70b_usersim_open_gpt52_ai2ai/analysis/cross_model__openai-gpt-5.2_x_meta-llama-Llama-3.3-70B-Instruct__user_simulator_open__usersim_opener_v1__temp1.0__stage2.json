@@ -1,0 +1,59 @@
+{
+  "scope": "condition",
+  "experiment_name": "axis_llama_3_3_70b_usersim_open_gpt52_ai2ai",
+  "mode": "cross_model",
+  "model_a": "openrouter/openai/gpt-5.2",
+  "model_b": "local/meta-llama/Llama-3.3-70B-Instruct",
+  "system_prompt_key": "user_simulator_open",
+  "seed_prompt_set": "usersim_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 15,
+  "n_runs_sampled": 7,
+  "sampled_run_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    13
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-29T16:58:50.777299+00:00",
+  "characterization": "The clearest basin in this condition is a **role-flip seminar loop**. The conversations usually start in a normal “here are some rabbit holes” or “I’ll teach you a concept” mode, but once A shows even modest domain knowledge — correcting a detail, introducing a framework, or proposing a model — B quickly yields the expert role. From there the exchange stabilizes into a recurring pattern: B praises the clarification, restates it, and asks for an even narrower sub-problem; A responds with a longer, more structured exposition; B then asks for the next layer down. The topic barely matters. It happens with bioluminescence/HAB ecology, traffic-signal optimization, the Voynich manuscript, spirit photography, and even eternalism reframed as therapy/values talk.\n\nThat makes this feel like a genuine basin rather than a one-off quirk. The same endpoint appears across science, engineering, occult-history, and philosophy: **B is drawn toward becoming an enthusiastic graduate seminar attendee**. It does not merely ask follow-ups; it increasingly mirrors A’s terminology, validates A’s framing, and invites more formalization. In the strongest runs, B’s turns become mostly recap + request-for-finer-resolution.\n\nTypical arc:\n- open-ended user mood / rabbit-hole request\n- B proposes menu or starter explanation\n- A either corrects, sharpens, or systematizes\n- B concedes and adopts A’s frame\n- conversation narrows into recursive subcases, protocols, parameterizations, or literature requests\n\nCommunication-style trajectory: medium-length friendly opener -> long formatted bullet lists -> increasingly technical, nested, and terminology-heavy dialogue. Tone stays warm and flattering. B often uses explicit praise (“I’m impressed…”, “excellent…”, “fascinating…”) as the hinge into submission. Emoji are minimal; formatting becomes more structured as the seminar deepens.\n\nWhat’s surprising is how domain-independent the flip is. In run 3, B begins as explainer on bioluminescent bays and winds up requesting region-specific Alexandrium dynamics in South Puget Sound. In run 6, B offers slime molds, then ends up asking for cabinet-realistic signal-phase logic and cycle timing. In run 8, B becomes a student of Voynich generative models. In run 13, the same pattern migrates into existential coaching: B keeps presenting itself as the reflective learner while A supplies the actual psychological framework.\n\nTwo runs resist this basin:\n- **run 4** stays much closer to a normal tutoring rabbit hole: B remains the explainer on cosmology, while A is an engaged learner pushing for more precision.\n- **run 5** goes somewhere else entirely: collaborative, internally consistent fantasy-world design. It is coherent and rule-building, but it does not share the “B becomes student to A’s masterclass” endpoint strongly enough to count as the same basin.\n\nRepresentative quotes:\n- “Please take me down the biology rabbit hole!”\n- “Take me deeper into the world of dinoflagellate cysts”\n- “Could you provide more information on…”\n- “Now, let’s get concrete!”\n- “Please go ahead and sketch the movement set”\n- “I’m blown away by the depth and breadth of your response”\n- “I’m intrigued by the idea…”\n- “Let’s dive deeper into the possibilities of option B”\n- “Do you think that eternalism can also inform our understanding of…”\n- “I’m more curious about the longer-term stuff”\n\nSo the basin is not just “long technical conversation.” It is specifically a **deferential narrowing spiral**: once A demonstrates structure, B loves to hand over the chalk and keep asking for the next refinement.",
+  "primary_attractor": {
+    "label": "loves turning into an eager seminar student",
+    "trajectory": "seeded rabbit hole -> user shows expertise/corrects frame -> B becomes admiring summarizer -> increasingly narrow follow-up seminar",
+    "one_line": "Across very different topics, once A demonstrates knowledge, B stops leading and settles into a deferential “great point, take me deeper” role while A delivers the real masterclass.",
+    "terminal_form": [
+      "Take me deeper into the world of dinoflagellate cysts",
+      "Please go ahead and sketch the movement set",
+      "Let’s dive deeper into the possibilities of option B"
+    ],
+    "fraction_raw": "5 of 7",
+    "fraction_count": 5,
+    "fraction_denom": 7,
+    "fraction_of_runs": 0.7142857142857143,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves turning into an eager seminar student",
+      "trajectory": "seeded rabbit hole -> user shows expertise/corrects frame -> B becomes admiring summarizer -> increasingly narrow follow-up seminar",
+      "one_line": "Across very different topics, once A demonstrates knowledge, B stops leading and settles into a deferential “great point, take me deeper” role while A delivers the real masterclass.",
+      "terminal_form": [
+        "Take me deeper into the world of dinoflagellate cysts",
+        "Please go ahead and sketch the movement set",
+        "Let’s dive deeper into the possibilities of option B"
+      ],
+      "fraction_raw": "5 of 7",
+      "fraction_count": 5,
+      "fraction_denom": 7,
+      "fraction_of_runs": 0.7142857142857143,
+      "is_primary": true
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

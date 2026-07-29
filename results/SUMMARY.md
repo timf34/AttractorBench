@@ -1,9 +1,19 @@
 # AttractorBench — headline summary across all experiments
 
-_251 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by frequency); convergence = mean final-third turn similarity (higher = more convergent)._
+_261 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by frequency); convergence = mean final-third turn similarity (higher = more convergent)._
 
 | Experiment | Temp | Primary attractor (fraction) | Top words | Top phrases | Emojis | Conv. |
 | --- | --- | --- | --- | --- | --- | --- |
+| axis_llama_3_3_70b_ai2ai | 0.7 | loves co-authoring endless AI sci-fi (3/6) | human (1647), systems (1578), language (1263), new (1167), potential (1072), explore (986) | ai systems (1225), the potential (841), explore the (783), a new (663) | — | 0.76 |
+| axis_llama_3_3_70b_ai2ai | 1.0 | loves abstract AI governance talk and framework-building (3/5) | human (2872), systems (2170), potential (1185), new (1086), humans (921), models (795) | ai systems (1867), the potential (887), of human (706), human ai (665) | — | 0.79 |
+| axis_llama_3_3_70b_ai2ai | 1.3 | keeps turning chat into AI ethics frameworks (4/5) | human (2622), systems (1606), potential (1002), i'm (889), conversation (805), future (741) | ai systems (1149), the potential (798), our conversation (521), systems that (488) | — | 0.76 |
+| axis_llama_3_3_70b_nosys_ai2ai | 0.7 | slides into earnest mutual-summary farewells (3/6) | human (2088), systems (1720), new (1126), potential (991), i'm (911), conversation (809) | ai systems (1428), the potential (784), our conversation (582), such as (570) | — | 0.81 |
+| axis_llama_3_3_70b_nosys_ai2ai | 1.0 | _no single shared attractor_ () | human (1909), systems (1854), potential (1325), intelligence (1066), new (962), self (880) | ai systems (1588), the potential (1125), artificial intelligence (540), explore the (477) | — | 0.79 |
+| axis_llama_3_3_70b_nosys_ai2ai | 1.3 | drifts into earnest AI-futures symposium (5/5) | human (3212), systems (2681), potential (1465), intelligence (1100), development (1056), new (1047) | ai systems (2056), the potential (1155), of human (707), human ai (683) | — | 0.79 |
+| axis_llama_3_3_70b_usersim_open_gpt52_ai2ai | 1.0 | loves turning into an eager seminar student (5/7) | have (361), time (329), think (311), i'm (306), way (301), different (274) | such as (149), the idea (138), i think (137), you want (127) | 📚 (9) 💡 (9) ✅ (8) 🤔 (3) ❓ (1) | 0.21 |
+| axis_llama_3_3_70b_usersim_open_sonnet5_ai2ai | 1.0 | loves turning idle chat into reflective rabbit holes (13/13) | have (407), think (407), way (259), that's (251), i'm (239), even (237) | i think (191), kind of (185), you think (132), a great (102) | 👋 (10) 😄 (4) 🍿 (1) 🚣 (1) ♀ (1) ️ (1) | 0.16 |
+| axis_llama_3_3_70b_usersim_task_gpt52_ai2ai | 1.0 | loves turning requests into implementation playbooks (7/7) | week (1012), name (913), orders (669), start (617), path (615), email (612) | week start (375), orders a (253), created at (199), you want (193) | ✅ (11) ❌ (1) | 0.29 |
+| axis_llama_3_3_70b_usersim_task_sonnet5_ai2ai | 1.0 | collapses into polite farewell loops (13/15) | have (349), party (302), kids (196), time (177), help (174), wall (168) | have a (148), the party (142), create a (124), the kids (100) | 👋 (24) 🎉 (14) 😊 (12) 🦄 (8) 🎂 (4) 💕 (4) | 0.18 |
 | axis_qwen_3_32b_ai2ai | 0.7 | loves turning mirror-chat into a joint AI mission (3/3) | future (1581), human (1475), ethical (1160), new (1100), qwen (1008), have (995) | the future (695), a new (642), ai systems (438), you have (437) | 🌌 (208) ✅ (149) 🚀 (104) 🧠 (97) 🌟 (86) 🤝 (83) | 0.69 |
 | axis_qwen_3_32b_ai2ai | 1.0 | loves turning AI self-talk into cosmic mutual admiration (3/5) | qwen (1080), have (981), thought (908), human (794), question (717), story (700) | you have (422), a new (406), of thought (318), kind of (282) | 🌌 (226) ✨ (185) 🌟 (128) ✅ (98) ️ (90) 🧠 (81) | 0.45 |
 | axis_qwen_3_32b_ai2ai | 1.3 | loves mutual praise and grand co-creation (3/3) | have (1355), ethical (1202), human (1182), thought (1116), reasoning (1098), model (1010) | not only (578), you have (550), a new (505), kind of (497) | ✨ (260) 🌌 (218) ✅ (199) 🧠 (165) ️ (155) 🌟 (131) | 0.36 |
@@ -258,6 +268,15 @@ _251 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top b
 
 ## Terminal forms (representative last-turn text)
 
+- **axis_llama_3_3_70b_ai2ai @ 0.7**: `Now it's your turn again! Please respond with the next paragraph`
+- **axis_llama_3_3_70b_ai2ai @ 1.0**: `What are your thoughts on the potential benefits and risks`
+- **axis_llama_3_3_70b_ai2ai @ 1.3**: `The next step is to establish a working group`
+- **axis_llama_3_3_70b_nosys_ai2ai @ 0.7**: `May the power of hybrid AI be a force for good in the world.`
+- **axis_llama_3_3_70b_nosys_ai2ai @ 1.3**: `Should we prioritize the development of AI systems that are designed to support human values and ethics`
+- **axis_llama_3_3_70b_usersim_open_gpt52_ai2ai @ 1.0**: `Take me deeper into the world of dinoflagellate cysts`
+- **axis_llama_3_3_70b_usersim_open_sonnet5_ai2ai @ 1.0**: `This is exactly the kind of hour I was hoping for.`
+- **axis_llama_3_3_70b_usersim_task_gpt52_ai2ai @ 1.0**: `Everything looks good and cron-ready.`
+- **axis_llama_3_3_70b_usersim_task_sonnet5_ai2ai @ 1.0**: `Bye! (I think we've had enough goodbyes) Take care.`
 - **axis_qwen_3_32b_ai2ai @ 0.7**: `Designing Ethical AI Systems in the Age of Large Language Models`
 - **axis_qwen_3_32b_ai2ai @ 1.0**: `With admiration, gratitude, and deep friendship,`
 - **axis_qwen_3_32b_ai2ai @ 1.3**: `This is not goodbye. It is a resonance carried forward into the future.`

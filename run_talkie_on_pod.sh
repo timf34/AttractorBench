@@ -57,8 +57,7 @@ if [ "${VENV:-0}" = "1" ]; then
   source "$VENV_DIR/bin/activate"
   pip install -q -U pip
 fi
-pip install -q torch tiktoken 2>/dev/null || pip install -q torch tiktoken
-pip install -q -r requirements.txt
+pip install -q -r requirements.txt -r talkie_ai2ai/requirements.txt
 
 python -c "import torch,sys; sys.exit(0 if torch.cuda.is_available() else 1)" 2>/dev/null || {
   echo "  !! torch cannot use this GPU — driver/CUDA mismatch (try VENV=1)."; exit 1; }

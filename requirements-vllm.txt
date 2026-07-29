@@ -1,0 +1,10 @@
+# PINNED serving stack for GPU pods (modern drivers, CUDA >= 12.8). Installed by
+# run_axis_on_pod.sh / run_sfm_on_pod.sh — NOT for laptops (vllm is GPU-only).
+#
+# The pair is pinned together: transformers 5.x removed all_special_tokens_extended, which
+# vllm's tokenizer wrapper still calls — unpinned installs on fresh pods produced
+# "vLLM died ... AttributeError" for gemma AND llama. 4.57.3 also satisfies
+# assistant_axis_drift's >=4.56 floor (canonical `dtype` kwarg for bf16 loading).
+# (Old-driver pods use the separate cu124 pins hardcoded in the scripts' CU124 branch.)
+vllm==0.11.0
+transformers==4.57.3

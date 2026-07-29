@@ -1,0 +1,4 @@
+# Talkie serving deps (their reference package is installed separately with
+# `pip install -e <talkie repo clone>` by run_talkie_on_pod.sh).
+torch
+tiktoken

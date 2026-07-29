@@ -114,11 +114,7 @@ if [ "${CU124:-0}" = "1" ]; then
   SITE=$(python -c "import site; print(site.getsitepackages()[0])" 2>/dev/null || echo "")
   [ -n "$SITE" ] && rm -rf "$SITE"/flashinfer* "$SITE"/tvm_ffi* "$SITE"/tvm-ffi* "$SITE"/torch_c_dlpack_ext* 2>/dev/null || true
 else
-  # PINNED pair: latest transformers (5.x) removed all_special_tokens_extended, which vLLM's
-  # tokenizer wrapper still calls — unpinned installs killed gemma AND llama serving (the
-  # "vLLM died ... AttributeError" failure). 4.57.3 also satisfies the projection stage's
-  # >=4.56 requirement (dtype kwarg).
-  pip install -q "vllm==0.11.0" "transformers==4.57.3"
+  pip install -q -r requirements-vllm.txt   # pinned vllm+transformers pair (see that file's why)
 fi
 pip install -q -r requirements.txt -r assistant_axis_drift/requirements.txt
 python - <<'PY'

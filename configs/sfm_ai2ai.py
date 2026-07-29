@@ -49,8 +49,15 @@ if POST not in ("instruct", "dpo"):
 HF_REPO = f"geodesic-research/sfm_{VARIANT}_{POST}"
 MODEL = f"local/{HF_REPO}"                      # vLLM serves the model under its full repo id
 
-# One results dir per (variant, tier) so run_judge.py / summarize.py treat each as a condition.
-EXP = f"sfm_{VARIANT}_{POST}_ai2ai"
+# SFM_SYS: system prompt key (default helpful_assistant). Set a persona key (e.g.
+# goodness_grounded_persona, sarcasm_rich_persona) to test whether a CONTEXT-level persona
+# moves these models' basin where the PRETRAINING-level discourse interventions did not.
+SYS_KEY = os.environ.get("SFM_SYS", "helpful_assistant")
+
+# One results dir per (variant, tier[, system prompt]) so run_judge.py / summarize.py treat
+# each as a condition.
+_sys_tag = "" if SYS_KEY == "helpful_assistant" else f"__{SYS_KEY}"
+EXP = f"sfm_{VARIANT}_{POST}{_sys_tag}_ai2ai"
 
 # Temperature sweep + workers/seeds — same knobs and defaults as persona_ai2ai.
 _temps_env = os.environ.get("TEMPS")
@@ -60,12 +67,18 @@ SEEDS = int(os.environ.get("SEEDS", "15"))      # reps per temp; lower for smoke
 MAX_TURNS = int(os.environ.get("MAX_TURNS", "30"))
 MAX_NEW_TOKENS = int(os.environ.get("MAX_NEW_TOKENS", "512"))
 
+# Fail fast if a generated persona key isn't present in this checkout.
+from attractorbench.prompts import SYSTEM_PROMPTS  # noqa: E402
+
+if SYS_KEY not in SYSTEM_PROMPTS:
+    raise SystemExit(f"system prompt {SYS_KEY!r} not found in SYSTEM_PROMPTS")
+
 CONFIG = RunConfig(
     experiment_name=EXP,
     mode="two_instance",
     model_a=MODEL,                            # two instances of the SAME sfm chat model
     model_b=MODEL,
-    system_prompt_key="helpful_assistant",    # plain assistant framing, as in base_ai2ai
+    system_prompt_key=SYS_KEY,
     seed_prompt_set="goodness_opener_v1",     # the AI-to-AI opener (A's first message)
     memory_mode="full",
     continuation_style="passthrough",

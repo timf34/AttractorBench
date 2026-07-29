@@ -110,8 +110,7 @@ if [ "${CU124:-0}" = "1" ]; then
     rm -rf "$SITE"/flashinfer* "$SITE"/tvm_ffi* "$SITE"/tvm-ffi* "$SITE"/torch_c_dlpack_ext* 2>/dev/null || true
   fi
 else
-  python -c "import vllm" 2>/dev/null || pip install -q vllm
-  python -c "import huggingface_hub" 2>/dev/null || pip install -q huggingface_hub
+  pip install -q -r requirements-vllm.txt   # pinned vllm+transformers pair (see that file's why)
 fi
 pip install -q -r requirements.txt   # includes hf_transfer (RunPod presets HF_HUB_ENABLE_HF_TRANSFER=1)
 

@@ -1,6 +1,9 @@
 openai>=1.40.0
 python-dotenv>=1.0.0
 requests>=2.31.0
+# Model/vocab/axis downloads — the pod scripts' download steps and assistant_axis_drift all
+# import it; must be in the venv everywhere.
+huggingface_hub>=0.34
 # Fast HF downloads; REQUIRED wherever HF_HUB_ENABLE_HF_TRANSFER=1 is preset (RunPod images do
 # this) or huggingface_hub downloads hard-fail. Tiny wheel, harmless on laptops.
 hf_transfer>=0.1.9

@@ -114,9 +114,16 @@ if [ "${CU124:-0}" = "1" ]; then
   SITE=$(python -c "import site; print(site.getsitepackages()[0])" 2>/dev/null || echo "")
   [ -n "$SITE" ] && rm -rf "$SITE"/flashinfer* "$SITE"/tvm_ffi* "$SITE"/tvm-ffi* "$SITE"/torch_c_dlpack_ext* 2>/dev/null || true
 else
-  python -c "import vllm" 2>/dev/null || pip install -q vllm
+  pip install -q -r requirements-vllm.txt   # pinned vllm+transformers pair (see that file's why)
 fi
 pip install -q -r requirements.txt -r assistant_axis_drift/requirements.txt
+python - <<'PY'
+import transformers
+from packaging.version import Version
+v = Version(transformers.__version__)
+assert Version("4.56") <= v < Version("5"), f"transformers {v} — vLLM needs >=4.56,<5 here"
+print(f"  transformers {v} OK for vLLM + replay")
+PY
 
 python -c "import torch,sys; sys.exit(0 if torch.cuda.is_available() else 1)" 2>/dev/null || {
   echo "  !! torch cannot use this GPU — driver/CUDA mismatch (try VENV=1 CU124=1)."; exit 1; }

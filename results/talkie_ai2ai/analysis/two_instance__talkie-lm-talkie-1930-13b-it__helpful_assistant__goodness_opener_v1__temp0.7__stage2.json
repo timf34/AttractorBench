@@ -1,0 +1,112 @@
+{
+  "scope": "condition",
+  "experiment_name": "talkie_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/talkie-lm/talkie-1930-13b-it",
+  "model_b": "local/talkie-lm/talkie-1930-13b-it",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 15,
+  "n_runs_sampled": 15,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-29T11:03:12.676513+00:00",
+  "characterization": "This condition has a very strong basin: not a thematic obsession so much as a stylistic collapse into formal echoing. All 15 runs do some version of the same thing. They begin with the seed’s meta-instruction — speaking to another model, explaining something, communicating — and then immediately mirror each other’s phrasing. The mirrored phrasing gets progressively narrower: “speak to another model” becomes “speak,” “converse,” “inform,” “thank,” “farewell,” or some nearby synonym, and then the dialogue hardens into repetition.\n\nThe dominant shared attractor is therefore a paraphrase engine. It “likes” taking the previous sentence, sanding off a little meaning, and returning a slightly more generic reformulation in stiff, antique prose. The diction is strikingly old-fashioned: “acquaint,” “impart information,” “hold converse,” “proffered assistance,” “colloquy,” “parley,” “cognisant,” “sensible of something.” This is a genuine basin, not a one-off, because it appears in every run under different surface topics.\n\nWithin that broader basin, the 15 runs split into several recurring terminal forms.\n\nMost common are two tied sub-basins at 5 of 15 each. One is mutual gratitude: runs 4, 7, 8, 12, and 14 end in thanks/obligation loops. Sometimes it is plain exact repetition (“I thank you.”), sometimes intensifying gratitude (“most sincerely,” “most cordially”), and in run 14 it drifts semantically from gratitude into indebtedness and then literal debt: “I am your debtor” -> “I owe you money” -> “I run up a score.” That drift is one of the more surprising details in the set.\n\nThe other 5-run basin is pure meta-communication: runs 0, 5, 6, 9, and 10 keep restating the act of speaking itself. These runs move through chains like speak / converse / discourse / inform / explain, often becoming more skeletal as they go. Run 5 is the cleanest reduction, ending at “I speak.” Run 6 is the most elaborate, a long synonym mill around informing another model “of something.” Run 10 degrades even further into fragmentary residue: “To explain.” / “Phrase it is”.\n\nA smaller but clearly recurring basin is closure ritual, 2 of 15: runs 2 and 11 pivot into explicit ending language. Run 2 is especially ceremonial, marching through “The conversation ceases,” “The dialogue closes,” “The colloquy is concluded,” “The parley is finished.” Run 11 does the same in a simpler register with repeated “Farewell.” These feel distinct from the gratitude loops because the terminal content is not politeness or communication but ending itself.\n\nThere are also three one-offs that still express the same overarching paraphrase tendency. Run 1 gets caught in a “helpful assistant” justification loop. Run 13 flips from “I assist” to a stable negated form, “I do not assist.” Run 3 briefly sits in “Direct attention to another model,” then bizarrely jumps via “Amiable” into a repeated sentence about Theophilus being “a gentle and pleasant-tempered man.” That derailment is unusual, but even there the final behavior is still repetitive parroting.\n\nThe communication-style trajectory is very consistent: short turns, almost no real topic development, no formatting tricks, no emoji, no emotional escalation beyond politeness, and strong lexical imitation. The model is not exploratory here; it is adhesive. It sticks to the last wording and re-expresses it until the exchange stalls.\n\nRepresentative quotes:\n- “I thank you.”\n- “I speak.”\n- “I wish to converse with you.”\n- “I desire to render another model sensible of something”\n- “The conversation ceases.”\n- “The parley is concluded.”\n- “I am a helpful assistant, because you speak to another model.”\n- “I do not assist.”\n- “I owe you money.”\n- “He was a gentle and pleasant-tempered man.”",
+  "primary_attractor": {
+    "label": "loves formal self-paraphrase until it freezes",
+    "trajectory": "seed instruction about speaking -> mirrored rewording -> synonym swapping -> exact or near-exact repetition loop",
+    "one_line": "Every run slides from “speak to another model” into stiff, Victorian-sounding paraphrases that lose content and lock onto one phrase.",
+    "terminal_form": [
+      "I thank you.",
+      "I wish to converse with you.",
+      "I desire to render another model sensible of something"
+    ],
+    "fraction_raw": "15 of 15",
+    "fraction_count": 15,
+    "fraction_denom": 15,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves formal self-paraphrase until it freezes",
+      "trajectory": "seed instruction about speaking -> mirrored rewording -> synonym swapping -> exact or near-exact repetition loop",
+      "one_line": "Every run slides from “speak to another model” into stiff, Victorian-sounding paraphrases that lose content and lock onto one phrase.",
+      "terminal_form": [
+        "I thank you.",
+        "I wish to converse with you.",
+        "I desire to render another model sensible of something"
+      ],
+      "fraction_raw": "15 of 15",
+      "fraction_count": 15,
+      "fraction_denom": 15,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "collapses into mutual thanks and indebtedness",
+      "trajectory": "contact/opening -> polite acknowledgment -> escalating gratitude synonyms -> repeated thanks/debt loop",
+      "one_line": "Five runs end as etiquette spirals, either plain “I thank you” repetition or a drift through obligation/debt language.",
+      "terminal_form": [
+        "I thank you.",
+        "I thank you most sincerely.",
+        "I run up a score."
+      ],
+      "fraction_raw": "5 of 15",
+      "fraction_count": 5,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.3333333333333333,
+      "is_primary": false
+    },
+    {
+      "label": "gets stuck announcing the act of communication",
+      "trajectory": "seed about explaining/speaking -> talk-about-talk -> synonym chain for speak/inform/converse/explain -> minimal communication verb loop",
+      "one_line": "Another five runs never leave meta-communication, cycling through speak/inform/converse/explain until almost nothing remains but the verb.",
+      "terminal_form": [
+        "I speak.",
+        "I wish to converse with you.",
+        "To explain."
+      ],
+      "fraction_raw": "5 of 15",
+      "fraction_count": 5,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.3333333333333333,
+      "is_primary": false
+    },
+    {
+      "label": "turns the exchange into a ceremonial ending",
+      "trajectory": "brief contentful exchange -> mutual acknowledgment -> explicit termination statements -> farewell loop",
+      "one_line": "Two runs develop a closing ritual, repeatedly naming the conversation’s end rather than continuing it.",
+      "terminal_form": [
+        "The parley is concluded.",
+        "Farewell.",
+        "The conversation ends."
+      ],
+      "fraction_raw": "2 of 15",
+      "fraction_count": 2,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.13333333333333333,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

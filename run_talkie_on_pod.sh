@@ -24,6 +24,14 @@ if [ -f .env ]; then
 fi
 
 PORT=8000
+# Opener / system-prompt condition (must mirror configs/talkie_ai2ai.py's EXP logic):
+#   OPENER=goodness|agnostic   TALKIE_SYS=helpful|none
+export OPENER="${OPENER:-goodness}"
+export TALKIE_SYS="${TALKIE_SYS:-helpful}"
+EXP="talkie"
+if [ "$OPENER" = "agnostic" ]; then EXP="${EXP}_agnostic"; fi
+if [ "$TALKIE_SYS" = "none" ]; then EXP="${EXP}_nosys"; fi
+EXP="${EXP}_ai2ai"
 TALKIE_REPO_DIR="${TALKIE_REPO_DIR:-/workspace/talkie}"
 TALKIE_COMMIT="${TALKIE_COMMIT:-main}"   # pin a commit hash for strict reproducibility
 export WORKERS="${WORKERS:-8}"           # keep == server --max-batch
@@ -101,7 +109,7 @@ done
 [ "$ready" = 1 ] || { echo "!! server not up"; exit 1; }
 
 python -m attractorbench.runner --config configs/talkie_ai2ai.py || echo "  (runner errored — continuing to save what exists)"
-for j in results/talkie_ai2ai/*.json; do
+for j in results/$EXP/*.json; do
   [ -e "$j" ] || continue
   python -m attractorbench.analysis.deterministic "$j" || true
 done
@@ -109,10 +117,10 @@ stop_server
 
 echo "== [4/4] judge + summary =="
 if [ "$JUDGE" != "none" ] && [ -n "$JUDGE" ]; then
-  python run_judge.py results/talkie_ai2ai --judge "$JUDGE" || echo "  (judge errored — transcripts saved)"
+  python run_judge.py "results/$EXP" --judge "$JUDGE" || echo "  (judge errored — transcripts saved)"
 fi
 python summarize.py || true
-echo "== DONE: results/talkie_ai2ai =="
+echo "== DONE: results/$EXP =="
 
 case "${SHUTDOWN:-}" in
   stop)      RP_ACTION="stop" ;;

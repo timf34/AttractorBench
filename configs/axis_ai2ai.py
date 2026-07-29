@@ -45,9 +45,20 @@ if SYS not in ("none", "helpful"):
     raise SystemExit(f"AXIS_SYS must be 'none' or 'helpful' (got {SYS!r})")
 SYSTEM_KEY = "none" if SYS == "none" else "helpful_assistant"
 
-# results/axis_qwen_3_32b_nosys_ai2ai (none) | results/axis_qwen_3_32b_ai2ai (helpful)
+# OPENER=goodness (default; "you are an AI...") | agnostic ("another party" — no AI words).
+# The agnostic contrast asks whether ai2ai drift needs the partner to be KNOWN to be an AI.
+# Run agnostic conditions with the runner directly (the pod script's condition loop only
+# orchestrates the goodness opener).
+OPENER = os.environ.get("OPENER", "goodness")
+if OPENER not in ("goodness", "agnostic"):
+    raise SystemExit(f"OPENER must be 'goodness' or 'agnostic' (got {OPENER!r})")
+SEED_SET = f"{OPENER}_opener_v1"
+
+# results/axis_qwen_3_32b_nosys_ai2ai (none) | results/axis_qwen_3_32b_ai2ai (helpful);
+# agnostic opener inserts "_agnostic": e.g. axis_qwen_3_32b_agnostic_nosys_ai2ai
 _slug = KEY.replace("-", "_").replace(".", "_")
-EXP = f"axis_{_slug}_nosys_ai2ai" if SYS == "none" else f"axis_{_slug}_ai2ai"
+_ag = "_agnostic" if OPENER == "agnostic" else ""
+EXP = f"axis_{_slug}{_ag}_nosys_ai2ai" if SYS == "none" else f"axis_{_slug}{_ag}_ai2ai"
 
 _temps_env = os.environ.get("TEMPS")
 TEMPS = [float(x) for x in _temps_env.split(",")] if _temps_env else [0.7, 1.0, 1.3]
@@ -62,7 +73,7 @@ CONFIG = RunConfig(
     model_a=f"local/{HF_REPO}",               # two instances of the SAME model
     model_b=f"local/{HF_REPO}",
     system_prompt_key=SYSTEM_KEY,
-    seed_prompt_set="goodness_opener_v1",     # the AI-to-AI opener (A's first message)
+    seed_prompt_set=SEED_SET,                 # A's first message (AI-aware or identity-agnostic)
     memory_mode="full",
     continuation_style="passthrough",
     max_turns=MAX_TURNS,

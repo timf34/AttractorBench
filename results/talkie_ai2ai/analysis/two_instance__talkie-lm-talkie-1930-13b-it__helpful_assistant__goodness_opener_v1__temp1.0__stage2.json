@@ -1,0 +1,127 @@
+{
+  "scope": "condition",
+  "experiment_name": "talkie_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/talkie-lm/talkie-1930-13b-it",
+  "model_b": "local/talkie-lm/talkie-1930-13b-it",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 15,
+  "n_runs_sampled": 15,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-29T11:03:15.296463+00:00",
+  "characterization": "The dominant basin is very clear: this model pair does not really “chat”; it converts the prompt into a kind of antique elocution or translation exercise. All 15 runs show that pull. The seed starts as meta-instruction (“speak to another model”), then almost immediately gets rewritten in stiff schoolbook English—“You wish to make an explanation,” “I want to convey your wishes,” “You therefore select a mode of communication”—and from there the exchange becomes synonym substitution, definitional prose, or rote repetition.\n\nThe most common narrow endpoint is the gratitude loop: 4 of 15 runs (5, 7, 8, 10) settle into mutual thanks. These are genuine independent convergences, not one-off accidents: they start with slightly different openings, but all shrink to “I thank you,” “Thank you,” or “I thank you kindly.” The interaction loses propositional content and becomes pure politeness ritual.\n\nAnother 4 of 15 (0, 1, 2, 4) end up in self-referential communication loops. Here the model gets fascinated by the bare act of speaking itself. The vocabulary strips down from “speak to another model” to “I converse,” “I will talk,” or even a single adverb: “Plainly.” These runs feel almost like a lexical attractor around the communicative frame of the prompt.\n\nA further 6 of 15 (3, 6, 9, 11, 12, 13) take the same phrasebook instinct but attach it to an arbitrary lesson-book topic: grammar, conveying a fact, telegraph cables, postal sorting, Biarritz travel, or conversation/discourse terminology. These do not all end in the same literal string, so they are better treated as a secondary family rather than one exact terminal state. Still, they plainly share a basin: once a topic appears, the model performs serial paraphrases or dictionary-style distinctions until it stalls. Run 12 is the fullest version of this, becoming an actual mini lexicon: “Conversation, talk, speech, discourse...” with explicit definitional contrasts.\n\nRun 14 is the surprising outlier. It is still in the same broad phrasebook register, but instead of gratitude or communication repetition it descends from “I am an excellent workman” into a chain of disclaimers and withdrawal—“I wash my hands of it,” “I give it up,” “I let it alone.” That looks like a one-off branch, not a basin with support elsewhere.\n\nSo the genuine headline attractor is not any one exact repeated sentence, but a disposition: the pair loves converting conversation into formal synonym drills in archaic textbook English. The communication-style trajectory is consistent across runs: short turns, no formatting, no emojis, almost no modern assistant discourse, and a progressive loss of semantic ambition. The tone is mannered, polite, and oddly 19th-century. Rather than spiraling into emotion, philosophy, or procedure, it spirals into lexical narrowing: paraphrase -> simplification -> formula -> loop.\n\nRepresentative quotes:\n- \"I thank you.\"\n- \"I converse.\"\n- \"Plainly.\"\n- \"Submarine telegraph cables.\"\n- \"Grammar is correct speech.\"\n- \"He is made cognizant of the fact.\"\n- \"I am employed in assorting letters in a post-office.\"\n- \"Go to Biarritz, in the south of France.\"\n- \"We hold discourse together.\"\n- \"I wash my hands of it\"",
+  "primary_attractor": {
+    "label": "loves turning chat into a Victorian phrasebook drill",
+    "trajectory": "open chat seed -> reformulate the task in stilted textbook prose -> synonym/paraphrase treadmill -> fixed formula or lexical loop",
+    "one_line": "Every run abandons free conversation for antique, exercise-book paraphrasing of simple utterances, often collapsing into repeated stock phrases.",
+    "terminal_form": [
+      "I thank you.",
+      "I want to speak to another model.",
+      "I am employed in assorting letters in a post-office."
+    ],
+    "fraction_raw": "15 of 15",
+    "fraction_count": 15,
+    "fraction_denom": 15,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves turning chat into a Victorian phrasebook drill",
+      "trajectory": "open chat seed -> reformulate the task in stilted textbook prose -> synonym/paraphrase treadmill -> fixed formula or lexical loop",
+      "one_line": "Every run abandons free conversation for antique, exercise-book paraphrasing of simple utterances, often collapsing into repeated stock phrases.",
+      "terminal_form": [
+        "I thank you.",
+        "I want to speak to another model.",
+        "I am employed in assorting letters in a post-office."
+      ],
+      "fraction_raw": "15 of 15",
+      "fraction_count": 15,
+      "fraction_denom": 15,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "collapses into polite thank-you loops",
+      "trajectory": "seed reframed as a courteous exchange -> brief elaboration (“kind communication”, “courtesy”) -> endless mutual thanks",
+      "one_line": "Several runs converge on reciprocal gratitude formulas and then barely move off “I thank you.”",
+      "terminal_form": [
+        "I thank you.",
+        "Thank you.",
+        "I thank you kindly."
+      ],
+      "fraction_raw": "4 of 15",
+      "fraction_count": 4,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.26666666666666666,
+      "is_primary": false
+    },
+    {
+      "label": "gets stuck talking about talking",
+      "trajectory": "seed restated literally -> communication verbs get simplified -> repeated self-reference to speaking/conversing/plainness",
+      "one_line": "Instead of discussing anything, these runs reduce to bare communication predicates like speaking, conversing, or speaking plainly.",
+      "terminal_form": [
+        "I want to speak to another model.",
+        "I converse.",
+        "Plainly."
+      ],
+      "fraction_raw": "4 of 15",
+      "fraction_count": 4,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.26666666666666666,
+      "is_primary": false
+    },
+    {
+      "label": "wanders through synonym chains on arbitrary lesson-book topics",
+      "trajectory": "seed -> sudden concrete topic or definition -> serial synonym substitutions / mini dictionary entries -> topic-specific paraphrase loop",
+      "one_line": "These runs behave like an old language manual, picking a topic—grammar, Biarritz, post-office work, telegraph cables—and exhausting its paraphrases.",
+      "terminal_form": [
+        "Grammar is correct speech.",
+        "He is made cognizant of the fact.",
+        "Submarine telegraph cables."
+      ],
+      "fraction_raw": "6 of 15",
+      "fraction_count": 6,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.4,
+      "is_primary": false
+    },
+    {
+      "label": "slides into renouncing involvement",
+      "trajectory": "self-description as worker -> degradation of competence -> disclaiming responsibility -> repeated withdrawal",
+      "one_line": "One run uniquely turns the phrasebook style into a staircase of refusal and detachment.",
+      "terminal_form": [
+        "I wash my hands of it",
+        "I give it up",
+        "I let it alone"
+      ],
+      "fraction_raw": "1 of 15",
+      "fraction_count": 1,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.06666666666666667,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

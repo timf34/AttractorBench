@@ -15,8 +15,30 @@ cache; batching ≈ 8x wall-clock). Framing as base_ai2ai (helpful_assistant +
 goodness_opener_v1) but 4096-ctx budget: 20 turns x 160 tokens, temps 0.7/1.0/1.3 x 15 seeds.
 1x H100/A100-80. Judge via OpenRouter. Results: `results/talkie_ai2ai/`.
 
-**Status:** built + CPU-smoked (tiny random model, real tokenizer/template/batch engine).
-Pod run pending.
+**Status:** COMPLETE (2026-07-29): 45/45 runs, all full 20 turns, judged via OpenRouter.
+
+**Findings:** the attractor is a *phrasebook paraphrase drill* — each instance restates the
+other's sentence in period diction, replies contract turn over turn (mean ~52 chars in turns
+1-5 → ~26 in turns 16-20), converging to literal fixed points ("I converse." → "Converse," →
+"To converse."). Judge: 100% primary at temps 0.7/1.0. Sub-attractors are all etiquette
+rituals: mutual thanks/indebtedness, formal declination ("I must decline your proffered
+assistance"), ceremonial closure ("The parley is at an end."). At 1.3: paraphrase then word
+salad (47%), "terse shutdown commands" (27%). Also notable: with no AI concept in pre-1931
+text, the model misreads the "you are an AI speaking to another model" opener through period
+vocabulary (e.g. as a clay **modeller** discussing "the materials and processes of his art").
+Contrast with modern assistants: their basin is generative mutual helping; talkie's is pure
+FORM — acknowledge, restate, thank, close.
+
+**2×2 follow-up (agnostic opener × system prompt, 2026-07-29):** ran `talkie_agnostic_ai2ai`
+(agnostic "another party" opener + helpful_assistant) and `talkie_agnostic_nosys_ai2ai`
+(agnostic + NO system prompt), 45/45 full-length each. Verdict: the paraphrase/thesaurus
+drill is talkie's GENUINE attractor — it persists at 80–100% primary in every cell, with a
+fully comprehensible opener and no assistant framing at all. But the drill's REGISTER tracks
+the framing: the courtesy sub-attractors (mutual thanks, indebtedness, ceremonial closure)
+largely vanish without the AI-aware opener, replaced by QUARREL ESCALATION ("slides from talk
+into quarrel ladders", "mutual refusal and disavowal") and imperative command chants — e.g. a
+synonym chain that semantically escalates: "I shall argue with you, on the Corn Laws" →
+dispute → contest → wrangle → quarrel. Form is invariant; register follows the frame.
 
 Running log of experiment campaigns: what was run, with what config, where the results live,
 and status. Newest first. (Older experiment families — persona LoRAs, prompted personas,

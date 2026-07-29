@@ -33,6 +33,8 @@ MODEL_COLORS = {"gemma-2-27b": "#E69F00", "qwen-3-32b": "#0072B2", "llama-3.3-70
 CONDITION_LABELS = {
     "nosys": "no system prompt",
     "helpful": "helpful_assistant",
+    "nosys_agnostic": "no system prompt, agnostic opener",
+    "helpful_agnostic": "helpful_assistant, agnostic opener",
     "usersim_task": "simulated user, concrete task (control)",
     "usersim_open": "simulated user, open chat (control)",
 }
@@ -42,12 +44,13 @@ def _condition_of(results_dir: str) -> tuple[str, str | None]:
     """(condition, auditor_tag) from a results dir name. Auditor tag only for usersim dirs,
     e.g. axis_qwen_3_32b_usersim_open_gpt52_ai2ai -> ("usersim_open", "gpt52")."""
     d = os.path.basename(results_dir.rstrip("/"))
+    ag = "_agnostic" if "_agnostic_" in d or d.endswith("_agnostic_ai2ai") else ""
     if d.endswith("_nosys_ai2ai"):
-        return "nosys", None
+        return f"nosys{ag}", None
     m = re.search(r"_usersim_(task|open)(?:_([a-z0-9]+))?_ai2ai$", d)
     if m:
         return f"usersim_{m.group(1)}", m.group(2)
-    return "helpful", None
+    return f"helpful{ag}", None
 
 
 def _label(rec: dict) -> str:

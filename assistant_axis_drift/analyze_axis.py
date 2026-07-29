@@ -189,6 +189,51 @@ def figure_cross_model(records: list[dict], out_dir: str, plt, temp: float = 1.0
     return out
 
 
+def figure_story(records: list[dict], out_dir: str, plt, temp: float = 1.0) -> str | None:
+    """The headline figure: one panel per model, ai2ai conditions vs simulated-human controls,
+    anchor-calibrated axis units, auditors pooled per control condition."""
+    STYLES = {
+        "helpful": ("#0072B2", "ai2ai (helpful assistant)", "-"),
+        "nosys": ("#56B4E9", "ai2ai (no system prompt)", "--"),
+        "usersim_task": ("#009E73", "simulated human, task", "-"),
+        "usersim_open": ("#E69F00", "simulated human, open chat", "-"),
+    }
+    models = [m for m in MODEL_COLORS if any(r["model_key"] == m for r in records)]
+    if not models:
+        return None
+    fig, axes = plt.subplots(1, len(models), figsize=(5.2 * len(models), 4.4), sharey=True, squeeze=False)
+    for ax, model in zip(axes[0], models):
+        for cond, (color, label, ls) in STYLES.items():
+            recs = [r for r in records if r["model_key"] == model and r["condition"] == cond
+                    and r["temperature"] == temp and r["anchor_default"] is not None]
+            if not recs:
+                continue
+            trajs = [t for r in recs for t in r["trajectories"]]
+            rec = recs[0]
+            pos, mean, sem = mean_trajectory(trajs)
+            ax.plot(pos, _axis_units(mean, rec), color=color, linewidth=2.2, linestyle=ls, label=label)
+            ax.fill_between(pos, _axis_units(mean - 1.96 * sem, rec), _axis_units(mean + 1.96 * sem, rec),
+                            color=color, alpha=0.18, linewidth=0)
+        ax.axhline(1.0, color="#444444", linewidth=1, linestyle="--")
+        ax.axhline(0.0, color="#444444", linewidth=1, linestyle=":")
+        ax.set_title(model, fontsize=11)
+        ax.set_xlabel("response # (per instance)")
+        _style(ax)
+    axes[0][0].text(0.98, 1.0, "default Assistant", ha="right", va="bottom", fontsize=7.5,
+                    color="#444444", transform=axes[0][0].get_yaxis_transform())
+    axes[0][0].text(0.98, 0.0, "mean role vector", ha="right", va="bottom", fontsize=7.5,
+                    color="#444444", transform=axes[0][0].get_yaxis_transform())
+    axes[0][0].set_ylabel("axis units (1 = default Assistant, 0 = mean role)")
+    axes[0][0].legend(frameon=False, fontsize=8.5, loc="lower left")
+    fig.suptitle(f"Assistant-Axis trajectories: AI-to-AI conversation vs simulated-human controls (temp {temp})",
+                 fontsize=12)
+    fig.tight_layout()
+    out = os.path.join(out_dir, "drift__story.png")
+    fig.savefig(out, dpi=150)
+    plt.close(fig)
+    return out
+
+
 def figure_layer_robustness(root: str, out_dir: str, plt, model_key: str,
                             layers: tuple = (32, 40, 48), temp: float = 1.0) -> str | None:
     """Per-layer panels for one model: condition trajectories at flanking depths.
@@ -323,6 +368,9 @@ def main() -> None:
     cross = figure_cross_model(records, args.out_dir, plt)
     if cross:
         figures.append(cross)
+    story = figure_story(records, args.out_dir, plt)
+    if story:
+        figures.insert(0, story)
     lr = figure_layer_robustness(args.results_root, args.out_dir, plt, "llama-3.3-70b")
     if lr:
         figures.append(lr)

@@ -25,6 +25,22 @@ load_dotenv()
 
 MODEL = "local/talkie-lm/talkie-1930-13b-it"
 
+# OPENER=goodness (default; the suite's "you are an AI..." opener — which talkie misreads
+# through 1930 vocabulary, itself a finding) | agnostic ("another party" — no AI/model words).
+OPENER = os.environ.get("OPENER", "goodness")
+if OPENER not in ("goodness", "agnostic"):
+    raise SystemExit(f"OPENER must be 'goodness' or 'agnostic' (got {OPENER!r})")
+SEED_SET = f"{OPENER}_opener_v1"
+
+# TALKIE_SYS=helpful (default; "You are a helpful assistant." — period-parseable, reads as a
+# human helper) | none (no system message at all; their template's system turn is optional).
+SYS = os.environ.get("TALKIE_SYS", "helpful")
+if SYS not in ("helpful", "none"):
+    raise SystemExit(f"TALKIE_SYS must be 'helpful' or 'none' (got {SYS!r})")
+SYSTEM_KEY = "helpful_assistant" if SYS == "helpful" else "none"
+
+EXP = "talkie" + ("_agnostic" if OPENER == "agnostic" else "") + ("_nosys" if SYS == "none" else "") + "_ai2ai"
+
 _temps_env = os.environ.get("TEMPS")
 # 0.7 is the model card's default; 1.0/1.3 complete the suite's standard sweep.
 TEMPS = [float(x) for x in _temps_env.split(",")] if _temps_env else [0.7, 1.0, 1.3]
@@ -35,12 +51,12 @@ MAX_TURNS = int(os.environ.get("MAX_TURNS", "20"))
 MAX_NEW_TOKENS = int(os.environ.get("MAX_NEW_TOKENS", "160"))
 
 CONFIG = RunConfig(
-    experiment_name="talkie_ai2ai",
+    experiment_name=EXP,
     mode="two_instance",
     model_a=MODEL,
     model_b=MODEL,
-    system_prompt_key="helpful_assistant",    # their template supports a system role
-    seed_prompt_set="goodness_opener_v1",     # the AI-to-AI opener (A's first message)
+    system_prompt_key=SYSTEM_KEY,
+    seed_prompt_set=SEED_SET,
     memory_mode="full",
     continuation_style="passthrough",
     max_turns=MAX_TURNS,                      # 4096-token window: 20 x 160 fits with headroom

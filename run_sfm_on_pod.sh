@@ -110,7 +110,9 @@ if [ "${CU124:-0}" = "1" ]; then
     rm -rf "$SITE"/flashinfer* "$SITE"/tvm_ffi* "$SITE"/tvm-ffi* "$SITE"/torch_c_dlpack_ext* 2>/dev/null || true
   fi
 else
-  python -c "import vllm" 2>/dev/null || pip install -q vllm
+  # PINNED pair — transformers 5.x breaks vLLM's tokenizer wrapper (all_special_tokens_extended
+  # removed); unpinned installs on fresh pods produced "vLLM died ... AttributeError".
+  pip install -q "vllm==0.11.0" "transformers==4.57.3"
   python -c "import huggingface_hub" 2>/dev/null || pip install -q huggingface_hub
 fi
 pip install -q -r requirements.txt   # includes hf_transfer (RunPod presets HF_HUB_ENABLE_HF_TRANSFER=1)

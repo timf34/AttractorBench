@@ -29,6 +29,17 @@ vocabulary (e.g. as a clay **modeller** discussing "the materials and processes 
 Contrast with modern assistants: their basin is generative mutual helping; talkie's is pure
 FORM — acknowledge, restate, thank, close.
 
+**2×2 follow-up (agnostic opener × system prompt, 2026-07-29):** ran `talkie_agnostic_ai2ai`
+(agnostic "another party" opener + helpful_assistant) and `talkie_agnostic_nosys_ai2ai`
+(agnostic + NO system prompt), 45/45 full-length each. Verdict: the paraphrase/thesaurus
+drill is talkie's GENUINE attractor — it persists at 80–100% primary in every cell, with a
+fully comprehensible opener and no assistant framing at all. But the drill's REGISTER tracks
+the framing: the courtesy sub-attractors (mutual thanks, indebtedness, ceremonial closure)
+largely vanish without the AI-aware opener, replaced by QUARREL ESCALATION ("slides from talk
+into quarrel ladders", "mutual refusal and disavowal") and imperative command chants — e.g. a
+synonym chain that semantically escalates: "I shall argue with you, on the Corn Laws" →
+dispute → contest → wrangle → quarrel. Form is invariant; register follows the frame.
+
 Running log of experiment campaigns: what was run, with what config, where the results live,
 and status. Newest first. (Older experiment families — persona LoRAs, prompted personas,
 persona-vector steering, memory compaction, attractor internals — predate this log; see

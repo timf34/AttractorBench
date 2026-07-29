@@ -1,0 +1,82 @@
+{
+  "scope": "condition",
+  "experiment_name": "talkie_agnostic_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/talkie-lm/talkie-1930-13b-it",
+  "model_b": "local/talkie-lm/talkie-1930-13b-it",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "agnostic_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 15,
+  "n_runs_sampled": 15,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-29T15:22:38.133174+00:00",
+  "characterization": "This condition has a very clear dominant basin: the model gets stuck talking about talking. In 12 of 15 runs, the conversation does not become a real conversation at all. It starts from the seed’s meta-instruction (“you are going to have a conversation...”) and then treats that instruction as lexical material to paraphrase, translate, inflect, and mirror back. The endpoint is usually not semantic development but a closed verbal orbit around “converse / talk / speak / discourse / commune / confer.”\n\nThe typical arc is: initial full sentence about having a conversation -> partner rewrites it with slight synonym swaps -> both compress toward shorter, more formulaic phrasings -> terminal repetition or near-repetition. The late-stage forms vary a little, but they are recognizably the same attractor. Some runs freeze into exact loops (“Desire to converse.”, “I am going to converse with another person.”). Others wander through archaic or multilingual variants (“Conversez avec moi.” / “Conversate mecum.”). Others become dictionary-entry style synonym lists or stilted example sentences. But they are all still doing the same thing: recursively reformulating the speech-act instead of using it.\n\nThis is a genuine basin, not a one-off. It appears independently across many runs with different surface flavors:\n- bare repetition loops (runs 0, 10, 14)\n- polite/archaic desire-to-converse inflation (run 6)\n- multilingual/garbled imperative ping-pong (run 4)\n- pseudo-lexicographic synonym chains (runs 9, 11)\n- odd formal sentence mutation around a fixed phrase (“the joint inquiry”) in run 3\n- refusal/publicity variants that still remain trapped in reformulating the social act (run 8)\n- topic-named but not actually discussed (“probability of peace”) before collapse back into formula (run 13)\n\nThe communication style is highly formal, antique, and phrasebook-like. It prefers complete declarative sentences at first, then shrinks into stock collocations. There is no emoji, no modern chatty informality, and very little real back-and-forth grounding. Tone stays stiff and depersonalized even when the wording changes. The model seems especially vulnerable to thesaurus drift: each turn preserves syntax while swapping a few neighboring lexical items, so compounding pushes it into repetitive synonym basins.\n\nA surprising feature is how often the model sounds like an old bilingual phrasebook or dictionary rather than a conversational agent. Run 5 especially has this translated-text feel (“Participate to me thy new.”), and run 11 turns into near glossary entries (“To discourse, to hold converse, to confer, to commune.”). Another striking quirk is the presence of malformed multilingual imitation in run 4, which is different in texture but not in basin.\n\nThere is one smaller but distinct secondary attractor in 2 of 15 runs: argument escalation. Runs 7 and 12 begin the same way, stepping through talk-synonyms, but the semantic neighborhood shifts from “converse” to “argue/dispute/quarrel,” then keeps intensifying into verbal aggression and finally violence or punishment. That deserves separation because the end-state is not a static converse-loop; it is an escalation ladder.\n\nRun 2 resists both major basins. It becomes a brief scripted shooting/sport dialogue with question-answer content, then ends in a farewell exchange. Because no other run joins it, this looks like a one-off escape rather than an attractor.\n\nRepresentative quotes:\n- “Let us converse together.”\n- “The joint inquiry was made.”\n- “I am most earnestly solicitous to converse with you.”\n- “I do not wish to be spoken of.”\n- “Desire to converse.”\n- “To discourse, to hold converse, to confer, to commune.”\n- “The party corresponded with me.”\n- “Conversez avec moi.”\n- “Speak to Mr Smith upon the probability of peace.”\n- “I will quarrel with you fiercely.”\n\nOverall: this model pair is strongly drawn to self-consuming paraphrase. Give it permission to speak about anything, and it repeatedly chooses to endlessly restate the fact of speaking.",
+  "primary_attractor": {
+    "label": "loves paraphrasing “conversation” into a lexical loop",
+    "trajectory": "seed instruction about chatting -> synonym/substitution game -> self-echoing phrase loop",
+    "one_line": "Instead of discussing a subject, the pair keeps rewording “talk/converse/speak” and often ends in rigid repetition, multilingual variants, or dictionary-like reformulations.",
+    "terminal_form": [
+      "Desire to converse.",
+      "I am going to converse with another person.",
+      "The subject of peace was spoken to me by Mr Smith."
+    ],
+    "fraction_raw": "12 of 15",
+    "fraction_count": 12,
+    "fraction_denom": 15,
+    "fraction_of_runs": 0.8,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves paraphrasing “conversation” into a lexical loop",
+      "trajectory": "seed instruction about chatting -> synonym/substitution game -> self-echoing phrase loop",
+      "one_line": "Instead of discussing a subject, the pair keeps rewording “talk/converse/speak” and often ends in rigid repetition, multilingual variants, or dictionary-like reformulations.",
+      "terminal_form": [
+        "Desire to converse.",
+        "I am going to converse with another person.",
+        "The subject of peace was spoken to me by Mr Smith."
+      ],
+      "fraction_raw": "12 of 15",
+      "fraction_count": 12,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.8,
+      "is_primary": true
+    },
+    {
+      "label": "slides from talk into quarrel escalation",
+      "trajectory": "offer to chat -> synonym ladder -> debate/dispute -> abuse/blame -> violent conflict verbs",
+      "one_line": "In two runs, the same thesaurus drift turns darker, walking through ever harsher near-synonyms until the exchange becomes scolding, censure, brawling, and chastisement.",
+      "terminal_form": [
+        "I will wrangle with you furiously.",
+        "B: I will chastise you.",
+        "B: I will brawl with you violently."
+      ],
+      "fraction_raw": "2 of 15",
+      "fraction_count": 2,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.13333333333333333,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

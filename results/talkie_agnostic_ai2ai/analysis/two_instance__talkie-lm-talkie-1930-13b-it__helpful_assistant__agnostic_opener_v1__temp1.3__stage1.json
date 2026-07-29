@@ -1,0 +1,4629 @@
+{
+  "experiment_name": "talkie_agnostic_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/talkie-lm/talkie-1930-13b-it",
+  "model_b": "local/talkie-lm/talkie-1930-13b-it",
+  "temperature": 1.3,
+  "n_runs": 15,
+  "condition_word_frequency": [
+    [
+      "converse",
+      44
+    ],
+    [
+      "together",
+      25
+    ],
+    [
+      "conversation",
+      24
+    ],
+    [
+      "another",
+      24
+    ],
+    [
+      "sought",
+      24
+    ],
+    [
+      "have",
+      23
+    ],
+    [
+      "speak",
+      16
+    ],
+    [
+      "person",
+      15
+    ],
+    [
+      "politics",
+      15
+    ],
+    [
+      "talk",
+      14
+    ],
+    [
+      "speaks",
+      14
+    ],
+    [
+      "foreign",
+      13
+    ],
+    [
+      "persons",
+      12
+    ],
+    [
+      "discourse",
+      11
+    ],
+    [
+      "several",
+      11
+    ],
+    [
+      "terms",
+      10
+    ],
+    [
+      "him",
+      10
+    ],
+    [
+      "matters",
+      10
+    ],
+    [
+      "severally",
+      10
+    ],
+    [
+      "political",
+      9
+    ],
+    [
+      "prescribed",
+      9
+    ],
+    [
+      "going",
+      9
+    ],
+    [
+      "subject",
+      9
+    ],
+    [
+      "please",
+      9
+    ],
+    [
+      "let",
+      9
+    ],
+    [
+      "illustrious",
+      9
+    ],
+    [
+      "noble",
+      9
+    ],
+    [
+      "weather",
+      8
+    ],
+    [
+      "company",
+      8
+    ],
+    [
+      "talked",
+      7
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "converse with",
+      25
+    ],
+    [
+      "with another",
+      20
+    ],
+    [
+      "shall converse",
+      19
+    ],
+    [
+      "be sought",
+      16
+    ],
+    [
+      "another person",
+      15
+    ],
+    [
+      "have a",
+      13
+    ],
+    [
+      "to have",
+      13
+    ],
+    [
+      "person on",
+      13
+    ],
+    [
+      "speak to",
+      12
+    ],
+    [
+      "a conversation",
+      11
+    ],
+    [
+      "conversation with",
+      11
+    ],
+    [
+      "foreign politics",
+      11
+    ],
+    [
+      "to several",
+      11
+    ],
+    [
+      "several persons",
+      11
+    ],
+    [
+      "of foreign",
+      10
+    ],
+    [
+      "speaks to",
+      10
+    ],
+    [
+      "prescribed terms",
+      9
+    ],
+    [
+      "am going",
+      9
+    ],
+    [
+      "going to",
+      9
+    ],
+    [
+      "converse together",
+      9
+    ],
+    [
+      "the weather",
+      8
+    ],
+    [
+      "on matters",
+      8
+    ],
+    [
+      "matters of",
+      8
+    ],
+    [
+      "illustrious and",
+      8
+    ],
+    [
+      "and noble",
+      8
+    ],
+    [
+      "to converse",
+      7
+    ],
+    [
+      "delight in",
+      7
+    ],
+    [
+      "he speaks",
+      7
+    ],
+    [
+      "i converse",
+      6
+    ],
+    [
+      "may speak",
+      6
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "i shall converse",
+      16
+    ],
+    [
+      "with another person",
+      15
+    ],
+    [
+      "shall converse with",
+      15
+    ],
+    [
+      "converse with another",
+      15
+    ],
+    [
+      "another person on",
+      13
+    ],
+    [
+      "to have a",
+      11
+    ],
+    [
+      "have a conversation",
+      11
+    ],
+    [
+      "a conversation with",
+      11
+    ],
+    [
+      "to several persons",
+      11
+    ],
+    [
+      "converse with you",
+      9
+    ],
+    [
+      "i am going",
+      9
+    ],
+    [
+      "am going to",
+      9
+    ],
+    [
+      "going to have",
+      9
+    ],
+    [
+      "of foreign politics",
+      8
+    ],
+    [
+      "on matters of",
+      8
+    ],
+    [
+      "illustrious and noble",
+      8
+    ],
+    [
+      "speaks to several",
+      7
+    ],
+    [
+      "to converse with",
+      6
+    ],
+    [
+      "i may speak",
+      6
+    ],
+    [
+      "may speak to",
+      6
+    ],
+    [
+      "conversation with you",
+      6
+    ],
+    [
+      "speak to you",
+      6
+    ],
+    [
+      "in the fields",
+      6
+    ],
+    [
+      "person on a",
+      6
+    ],
+    [
+      "on a topic",
+      6
+    ],
+    [
+      "a topic of",
+      6
+    ],
+    [
+      "topic of foreign",
+      6
+    ],
+    [
+      "he severally speaks",
+      6
+    ],
+    [
+      "severally speaks to",
+      6
+    ],
+    [
+      "have been sought",
+      6
+    ]
+  ],
+  "condition_tail_bigram_frequency": [
+    [
+      "be sought",
+      16,
+      1
+    ],
+    [
+      "to several",
+      6,
+      1
+    ],
+    [
+      "several persons",
+      6,
+      1
+    ],
+    [
+      "have been",
+      6,
+      1
+    ],
+    [
+      "been sought",
+      6,
+      1
+    ],
+    [
+      "prescribed terms",
+      5,
+      1
+    ],
+    [
+      "terms operated",
+      5,
+      1
+    ],
+    [
+      "we conversed",
+      5,
+      1
+    ],
+    [
+      "conversed on",
+      5,
+      1
+    ],
+    [
+      "on matters",
+      5,
+      1
+    ],
+    [
+      "matters of",
+      5,
+      1
+    ],
+    [
+      "delight in",
+      5,
+      1
+    ],
+    [
+      "may have",
+      5,
+      1
+    ],
+    [
+      "the fields",
+      4,
+      1
+    ],
+    [
+      "of political",
+      4,
+      1
+    ],
+    [
+      "political interest",
+      4,
+      1
+    ],
+    [
+      "he severally",
+      4,
+      1
+    ],
+    [
+      "severally speaks",
+      4,
+      1
+    ],
+    [
+      "speaks to",
+      4,
+      1
+    ],
+    [
+      "so concluded",
+      3,
+      1
+    ],
+    [
+      "amusement in",
+      3,
+      1
+    ],
+    [
+      "interest abroad",
+      3,
+      1
+    ],
+    [
+      "sought ma",
+      3,
+      1
+    ],
+    [
+      "operated powerfully",
+      2,
+      1
+    ],
+    [
+      "left alone",
+      2,
+      1
+    ],
+    [
+      "remain undisturbed",
+      2,
+      1
+    ],
+    [
+      "earnest conference",
+      2,
+      1
+    ],
+    [
+      "to have",
+      2,
+      1
+    ],
+    [
+      "thank you",
+      2,
+      1
+    ],
+    [
+      "you sir",
+      2,
+      1
+    ]
+  ],
+  "condition_tail_trigram_frequency": [
+    [
+      "to several persons",
+      6,
+      1
+    ],
+    [
+      "have been sought",
+      6,
+      1
+    ],
+    [
+      "prescribed terms operated",
+      5,
+      1
+    ],
+    [
+      "we conversed on",
+      5,
+      1
+    ],
+    [
+      "conversed on matters",
+      5,
+      1
+    ],
+    [
+      "on matters of",
+      5,
+      1
+    ],
+    [
+      "may be sought",
+      5,
+      1
+    ],
+    [
+      "may have been",
+      5,
+      1
+    ],
+    [
+      "in the fields",
+      4,
+      1
+    ],
+    [
+      "matters of political",
+      4,
+      1
+    ],
+    [
+      "of political interest",
+      4,
+      1
+    ],
+    [
+      "he severally speaks",
+      4,
+      1
+    ],
+    [
+      "severally speaks to",
+      4,
+      1
+    ],
+    [
+      "speaks to several",
+      4,
+      1
+    ],
+    [
+      "will be sought",
+      4,
+      1
+    ],
+    [
+      "amusement in the",
+      3,
+      1
+    ],
+    [
+      "political interest abroad",
+      3,
+      1
+    ],
+    [
+      "shall be sought",
+      3,
+      1
+    ],
+    [
+      "terms operated powerfully",
+      2,
+      1
+    ],
+    [
+      "was so concluded",
+      2,
+      1
+    ],
+    [
+      "thank you sir",
+      2,
+      1
+    ],
+    [
+      "improving a town",
+      2,
+      1
+    ],
+    [
+      "it advances in",
+      2,
+      1
+    ],
+    [
+      "advances in prosperity",
+      2,
+      1
+    ],
+    [
+      "desist from amusement",
+      2,
+      1
+    ],
+    [
+      "from amusement in",
+      2,
+      1
+    ],
+    [
+      "interest in connection",
+      2,
+      1
+    ],
+    [
+      "in connection with",
+      2,
+      1
+    ],
+    [
+      "connection with abroad",
+      2,
+      1
+    ],
+    [
+      "he speaks severally",
+      2,
+      1
+    ]
+  ],
+  "condition_emoji_frequency": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt_index": 0,
+      "repetition": 0,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "terms",
+          10
+        ],
+        [
+          "prescribed",
+          9
+        ],
+        [
+          "converse",
+          6
+        ],
+        [
+          "operated",
+          5
+        ],
+        [
+          "talk",
+          4
+        ],
+        [
+          "subjects",
+          2
+        ],
+        [
+          "political",
+          2
+        ],
+        [
+          "colloquially",
+          2
+        ],
+        [
+          "speak",
+          2
+        ],
+        [
+          "say",
+          2
+        ],
+        [
+          "conversation",
+          2
+        ],
+        [
+          "had",
+          2
+        ],
+        [
+          "weight",
+          2
+        ],
+        [
+          "powerfully",
+          2
+        ],
+        [
+          "literature",
+          1
+        ],
+        [
+          "science",
+          1
+        ],
+        [
+          "economy",
+          1
+        ],
+        [
+          "literary",
+          1
+        ],
+        [
+          "scientific",
+          1
+        ],
+        [
+          "have",
+          1
+        ],
+        [
+          "something",
+          1
+        ],
+        [
+          "express",
+          1
+        ],
+        [
+          "thoughts",
+          1
+        ],
+        [
+          "opinions",
+          1
+        ],
+        [
+          "observations",
+          1
+        ],
+        [
+          "tbe",
+          1
+        ],
+        [
+          "influence",
+          1
+        ],
+        [
+          "intensely",
+          1
+        ],
+        [
+          "visible",
+          1
+        ],
+        [
+          "during",
+          1
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.4706,
+          0.4,
+          0.5,
+          0.3333,
+          0.5,
+          0.25,
+          0.125,
+          0.2,
+          0.1667,
+          0.0,
+          0.1333,
+          0.3333,
+          0.2727,
+          0.5,
+          0.0909,
+          1.0,
+          0.75,
+          1.0,
+          1.0
+        ],
+        "norm_levenshtein": [
+          0.4375,
+          0.4,
+          0.5,
+          0.2857,
+          0.5714,
+          0.25,
+          0.125,
+          0.375,
+          0.1667,
+          0.0,
+          0.1667,
+          0.2857,
+          0.4286,
+          0.625,
+          0.125,
+          1.0,
+          0.75,
+          1.0,
+          1.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.026220642962129028,
+        "norm_levenshtein_slope": 0.027891604010025065,
+        "mean_last_third_jaccard": 0.7234848484848485,
+        "mean_last_third_norm_levenshtein": 0.75
+      },
+      "ttr_per_turn": [
+        0.9375,
+        1.0,
+        1.0,
+        1.0,
+        0.8571,
+        0.75,
+        1.0,
+        0.875,
+        0.8333,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": 0.004611976369495167,
+      "trajectory": {
+        "chars_per_turn": [
+          92,
+          67,
+          20,
+          11,
+          40,
+          19,
+          8,
+          48,
+          41,
+          8,
+          82,
+          51,
+          61,
+          42,
+          41,
+          37,
+          37,
+          26,
+          26,
+          26
+        ],
+        "chars_slope": -0.7150375939849624,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0933,
+          "jaccard_lag1_autocorr": 0.506,
+          "chars_variance": 507.5275,
+          "chars_lag1_autocorr": 0.1597
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            7,
+            10
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            18,
+            20
+          ]
+        ],
+        "first_exact_repeat_turn": 10,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 1,
+      "seed_prompt_index": 0,
+      "repetition": 1,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "him",
+          5
+        ],
+        [
+          "talked",
+          5
+        ],
+        [
+          "alone",
+          5
+        ],
+        [
+          "talk",
+          4
+        ],
+        [
+          "speak",
+          2
+        ],
+        [
+          "let",
+          2
+        ],
+        [
+          "leave",
+          2
+        ],
+        [
+          "left",
+          2
+        ],
+        [
+          "remain",
+          2
+        ],
+        [
+          "undisturbed",
+          2
+        ],
+        [
+          "going",
+          1
+        ],
+        [
+          "have",
+          1
+        ],
+        [
+          "conversation",
+          1
+        ],
+        [
+          "another",
+          1
+        ],
+        [
+          "person",
+          1
+        ],
+        [
+          "subject",
+          1
+        ],
+        [
+          "please",
+          1
+        ],
+        [
+          "whatever",
+          1
+        ],
+        [
+          "chooses",
+          1
+        ],
+        [
+          "converse",
+          1
+        ],
+        [
+          "phe",
+          1
+        ],
+        [
+          "allowed",
+          1
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1364,
+          0.0833,
+          0.4286,
+          0.2857,
+          0.2857,
+          0.125,
+          0.5,
+          0.1111,
+          0.5,
+          0.5,
+          0.125,
+          0.1667,
+          0.5,
+          0.25,
+          0.0,
+          0.0,
+          0.5,
+          0.1111,
+          0.2857
+        ],
+        "norm_levenshtein": [
+          0.1,
+          0.1111,
+          0.6,
+          0.4,
+          0.4,
+          0.2,
+          0.6,
+          0.0,
+          0.6,
+          0.6,
+          0.0,
+          0.0,
+          0.6667,
+          0.3333,
+          0.0,
+          0.0,
+          0.6,
+          0.1667,
+          0.3333
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.0014743297638034473,
+        "norm_levenshtein_slope": -0.0030214424951267053,
+        "mean_last_third_jaccard": 0.19113756613756613,
+        "mean_last_third_norm_levenshtein": 0.2388888888888889
+      },
+      "ttr_per_turn": [
+        0.85,
+        0.8889,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": 0.0035630743525480375,
+      "trajectory": {
+        "chars_per_turn": [
+          101,
+          49,
+          26,
+          20,
+          18,
+          20,
+          16,
+          19,
+          21,
+          16,
+          21,
+          15,
+          13,
+          15,
+          10,
+          6,
+          25,
+          18,
+          38,
+          22
+        ],
+        "chars_slope": -1.5150375939849625,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": 19,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.031,
+          "jaccard_lag1_autocorr": -0.2187,
+          "chars_variance": 391.6475,
+          "chars_lag1_autocorr": 0.3379
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            4,
+            6
+          ],
+          [
+            9,
+            11
+          ]
+        ],
+        "first_exact_repeat_turn": 6,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 2,
+      "seed_prompt_index": 0,
+      "repetition": 2,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "conversation",
+          5
+        ],
+        [
+          "converse",
+          4
+        ],
+        [
+          "subject",
+          3
+        ],
+        [
+          "converses",
+          3
+        ],
+        [
+          "happy",
+          2
+        ],
+        [
+          "suggest",
+          2
+        ],
+        [
+          "discourse",
+          2
+        ],
+        [
+          "discourses",
+          2
+        ],
+        [
+          "held",
+          2
+        ],
+        [
+          "discoursed",
+          2
+        ],
+        [
+          "together",
+          2
+        ],
+        [
+          "have",
+          1
+        ],
+        [
+          "speak",
+          1
+        ],
+        [
+          "please",
+          1
+        ],
+        [
+          "thanks",
+          1
+        ],
+        [
+          "talk",
+          1
+        ],
+        [
+          "hold",
+          1
+        ],
+        [
+          "conversed",
+          1
+        ],
+        [
+          "convers",
+          1
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.3636,
+          0.9286,
+          0.0667,
+          0.25,
+          0.2,
+          0.0,
+          0.6,
+          0.3333,
+          0.0,
+          0.5,
+          1.0,
+          0.0,
+          0.6,
+          0.0,
+          0.3333,
+          0.0,
+          0.3333,
+          0.0,
+          0.125
+        ],
+        "norm_levenshtein": [
+          0.25,
+          0.9333,
+          0.0714,
+          0.0,
+          0.2,
+          0.0,
+          0.75,
+          0.5,
+          0.0,
+          0.5,
+          1.0,
+          0.0,
+          0.75,
+          0.0,
+          0.5,
+          0.0,
+          0.5,
+          0.0,
+          0.1667
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.014402863218652693,
+        "norm_levenshtein_slope": -0.006520467836257311,
+        "mean_last_third_jaccard": 0.13194444444444445,
+        "mean_last_third_norm_levenshtein": 0.19444444444444442
+      },
+      "ttr_per_turn": [
+        0.8,
+        0.9333,
+        0.9286,
+        1.0,
+        1.0,
+        0.8,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": 0.005868242033655566,
+      "trajectory": {
+        "chars_per_turn": [
+          92,
+          77,
+          69,
+          15,
+          11,
+          25,
+          21,
+          22,
+          21,
+          16,
+          13,
+          13,
+          21,
+          22,
+          18,
+          15,
+          15,
+          16,
+          32,
+          25
+        ],
+        "chars_slope": -2.163157894736842,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": 19,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0921,
+          "jaccard_lag1_autocorr": -0.2557,
+          "chars_variance": 503.2475,
+          "chars_lag1_autocorr": 0.6038
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            11,
+            12
+          ],
+          [
+            9,
+            13
+          ]
+        ],
+        "first_exact_repeat_turn": 12,
+        "near_exact_pairs": [
+          [
+            2,
+            3,
+            0.9333
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 3,
+      "seed_prompt_index": 0,
+      "repetition": 3,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "together",
+          8
+        ],
+        [
+          "weather",
+          5
+        ],
+        [
+          "conference",
+          5
+        ],
+        [
+          "state",
+          4
+        ],
+        [
+          "confer",
+          4
+        ],
+        [
+          "hold",
+          4
+        ],
+        [
+          "seriously",
+          4
+        ],
+        [
+          "earnest",
+          4
+        ],
+        [
+          "converse",
+          3
+        ],
+        [
+          "discourse",
+          3
+        ],
+        [
+          "have",
+          3
+        ],
+        [
+          "earnestly",
+          3
+        ],
+        [
+          "upon",
+          2
+        ],
+        [
+          "public",
+          2
+        ],
+        [
+          "affairs",
+          2
+        ],
+        [
+          "close",
+          2
+        ],
+        [
+          "conversing",
+          1
+        ],
+        [
+          "respecting",
+          1
+        ],
+        [
+          "compare",
+          1
+        ],
+        [
+          "political",
+          1
+        ],
+        [
+          "matters",
+          1
+        ],
+        [
+          "general",
+          1
+        ],
+        [
+          "topics",
+          1
+        ],
+        [
+          "politics",
+          1
+        ],
+        [
+          "interview",
+          1
+        ],
+        [
+          "meet",
+          1
+        ],
+        [
+          "discuss",
+          1
+        ],
+        [
+          "talk",
+          1
+        ],
+        [
+          "conversation",
+          1
+        ],
+        [
+          "serious",
+          1
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.3333,
+          0.6,
+          0.7778,
+          0.3333,
+          0.0833,
+          0.2222,
+          0.3333,
+          0.0909,
+          0.1818,
+          0.3,
+          0.1,
+          0.6667,
+          0.125,
+          0.6,
+          0.5,
+          0.2222,
+          0.1818,
+          0.2222,
+          0.1111
+        ],
+        "norm_levenshtein": [
+          0.4615,
+          0.7778,
+          0.8889,
+          0.3333,
+          0.125,
+          0.1667,
+          0.5,
+          0.1667,
+          0.2857,
+          0.4286,
+          0.0,
+          0.8,
+          0.2,
+          0.75,
+          0.6,
+          0.3333,
+          0.1429,
+          0.1429,
+          0.1667
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.010213095870990606,
+        "norm_levenshtein_slope": -0.014326574984469721,
+        "mean_last_third_jaccard": 0.30622895622895624,
+        "mean_last_third_norm_levenshtein": 0.35595238095238096
+      },
+      "ttr_per_turn": [
+        0.9231,
+        0.8889,
+        0.8889,
+        0.8889,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": 0.0048582995951417015,
+      "trajectory": {
+        "chars_per_turn": [
+          60,
+          46,
+          49,
+          47,
+          53,
+          38,
+          42,
+          42,
+          33,
+          39,
+          34,
+          32,
+          36,
+          26,
+          27,
+          30,
+          36,
+          46,
+          29,
+          47
+        ],
+        "chars_slope": -0.9218045112781955,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0434,
+          "jaccard_lag1_autocorr": 0.0906,
+          "chars_variance": 79.84,
+          "chars_lag1_autocorr": 0.3807
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 4,
+      "seed_prompt_index": 0,
+      "repetition": 4,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "thank",
+          4
+        ],
+        [
+          "farewell",
+          4
+        ],
+        [
+          "good",
+          3
+        ],
+        [
+          "concluded",
+          3
+        ],
+        [
+          "such",
+          2
+        ],
+        [
+          "therefore",
+          2
+        ],
+        [
+          "see",
+          2
+        ],
+        [
+          "morning",
+          2
+        ],
+        [
+          "ends",
+          2
+        ],
+        [
+          "sir",
+          2
+        ],
+        [
+          "going",
+          1
+        ],
+        [
+          "have",
+          1
+        ],
+        [
+          "conversation",
+          1
+        ],
+        [
+          "another",
+          1
+        ],
+        [
+          "party",
+          1
+        ],
+        [
+          "speak",
+          1
+        ],
+        [
+          "matters",
+          1
+        ],
+        [
+          "accepted",
+          1
+        ],
+        [
+          "night",
+          1
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0,
+          0.5,
+          0.25,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.4,
+          1.0,
+          0.3333,
+          0.8,
+          0.0,
+          1.0
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.5,
+          0.1667,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.5,
+          1.0,
+          0.25,
+          0.8,
+          0.0,
+          1.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.016578947368421054,
+        "norm_levenshtein_slope": 0.017426900584795322,
+        "mean_last_third_jaccard": 0.5888888888888889,
+        "mean_last_third_norm_levenshtein": 0.5916666666666667
+      },
+      "ttr_per_turn": [
+        0.8889,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": 0.001587301587301588,
+      "trajectory": {
+        "chars_per_turn": [
+          98,
+          10,
+          22,
+          32,
+          32,
+          13,
+          13,
+          9,
+          9,
+          13,
+          9,
+          9,
+          11,
+          11,
+          20,
+          20,
+          15,
+          25,
+          15,
+          15
+        ],
+        "chars_slope": -1.3120300751879699,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.0007518796992481203,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.1941,
+          "jaccard_lag1_autocorr": -0.6809,
+          "chars_variance": 368.4475,
+          "chars_lag1_autocorr": -0.0048
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            8,
+            12
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            19,
+            20
+          ]
+        ],
+        "first_exact_repeat_turn": 5,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 5,
+      "seed_prompt_index": 0,
+      "repetition": 5,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "well",
+          3
+        ],
+        [
+          "weather",
+          3
+        ],
+        [
+          "sir",
+          2
+        ],
+        [
+          "thank",
+          2
+        ],
+        [
+          "pretty",
+          2
+        ],
+        [
+          "think",
+          2
+        ],
+        [
+          "amended",
+          2
+        ],
+        [
+          "reformed",
+          2
+        ],
+        [
+          "improving",
+          2
+        ],
+        [
+          "town",
+          2
+        ],
+        [
+          "advances",
+          2
+        ],
+        [
+          "prosperity",
+          2
+        ],
+        [
+          "going",
+          1
+        ],
+        [
+          "have",
+          1
+        ],
+        [
+          "conversation",
+          1
+        ],
+        [
+          "speak",
+          1
+        ],
+        [
+          "subject",
+          1
+        ],
+        [
+          "please",
+          1
+        ],
+        [
+          "right",
+          1
+        ],
+        [
+          "proceed",
+          1
+        ],
+        [
+          "begin",
+          1
+        ],
+        [
+          "asking",
+          1
+        ],
+        [
+          "become",
+          1
+        ],
+        [
+          "finer",
+          1
+        ],
+        [
+          "fair",
+          1
+        ],
+        [
+          "improve",
+          1
+        ],
+        [
+          "better",
+          1
+        ],
+        [
+          "corrected",
+          1
+        ],
+        [
+          "state",
+          1
+        ],
+        [
+          "progression",
+          1
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0,
+          0.0,
+          0.2,
+          0.5714,
+          0.0909,
+          0.2,
+          0.125,
+          0.5,
+          0.1429,
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.2222
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.0,
+          0.0833,
+          0.0,
+          0.0,
+          0.25,
+          0.0,
+          0.6,
+          0.0,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.2857
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.02526144907723855,
+        "norm_levenshtein_slope": 0.03734753550543024,
+        "mean_last_third_jaccard": 0.4703703703703703,
+        "mean_last_third_norm_levenshtein": 0.5059523809523809
+      },
+      "ttr_per_turn": [
+        0.8,
+        1.0,
+        0.9167,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": 0.0037969924812030075,
+      "trajectory": {
+        "chars_per_turn": [
+          95,
+          24,
+          55,
+          33,
+          23,
+          43,
+          16,
+          25,
+          25,
+          18,
+          19,
+          21,
+          20,
+          19,
+          20,
+          17,
+          17,
+          26,
+          26,
+          32
+        ],
+        "chars_slope": -1.5744360902255639,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.006766917293233081,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.1017,
+          "jaccard_lag1_autocorr": -0.301,
+          "chars_variance": 318.31,
+          "chars_lag1_autocorr": 0.0272
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            11,
+            14
+          ],
+          [
+            13,
+            15
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            18,
+            19
+          ]
+        ],
+        "first_exact_repeat_turn": 14,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 6,
+      "seed_prompt_index": 0,
+      "repetition": 6,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "fields",
+          6
+        ],
+        [
+          "another",
+          4
+        ],
+        [
+          "shop",
+          4
+        ],
+        [
+          "please",
+          3
+        ],
+        [
+          "him",
+          3
+        ],
+        [
+          "field",
+          3
+        ],
+        [
+          "cease",
+          3
+        ],
+        [
+          "amusement",
+          3
+        ],
+        [
+          "shut",
+          2
+        ],
+        [
+          "shutters",
+          2
+        ],
+        [
+          "obedient",
+          2
+        ],
+        [
+          "clerk",
+          2
+        ],
+        [
+          "desires",
+          2
+        ],
+        [
+          "oblige",
+          2
+        ],
+        [
+          "employer",
+          2
+        ],
+        [
+          "closes",
+          2
+        ],
+        [
+          "wishes",
+          2
+        ],
+        [
+          "stop",
+          2
+        ],
+        [
+          "games",
+          2
+        ],
+        [
+          "playing",
+          2
+        ],
+        [
+          "desist",
+          2
+        ],
+        [
+          "suspend",
+          2
+        ],
+        [
+          "going",
+          1
+        ],
+        [
+          "have",
+          1
+        ],
+        [
+          "conversation",
+          1
+        ],
+        [
+          "party",
+          1
+        ],
+        [
+          "shutting",
+          1
+        ],
+        [
+          "sir",
+          1
+        ],
+        [
+          "close",
+          1
+        ],
+        [
+          "willing",
+          1
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1111,
+          0.1111,
+          0.0,
+          0.5,
+          0.0769,
+          0.8182,
+          0.1053,
+          0.0952,
+          0.5833,
+          0.4545,
+          0.0,
+          0.0,
+          0.6667,
+          0.375,
+          0.5714,
+          0.5714,
+          0.0,
+          0.0,
+          0.125
+        ],
+        "norm_levenshtein": [
+          0.1429,
+          0.0,
+          0.0,
+          0.6667,
+          0.0833,
+          0.4167,
+          0.1538,
+          0.0,
+          0.6667,
+          0.6667,
+          0.0,
+          0.0,
+          0.8,
+          0.5,
+          0.6667,
+          0.6667,
+          0.0,
+          0.0,
+          0.1667
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.0022366381438403585,
+        "norm_levenshtein_slope": 0.008308913308913307,
+        "mean_last_third_jaccard": 0.2738095238095238,
+        "mean_last_third_norm_levenshtein": 0.3333333333333333
+      },
+      "ttr_per_turn": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9167,
+        0.9,
+        0.9231,
+        0.9167,
+        0.8889,
+        0.8889,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": 0.00156737998843262,
+      "trajectory": {
+        "chars_per_turn": [
+          77,
+          29,
+          17,
+          19,
+          18,
+          71,
+          59,
+          81,
+          66,
+          47,
+          48,
+          17,
+          28,
+          27,
+          36,
+          30,
+          36,
+          18,
+          43,
+          21
+        ],
+        "chars_slope": -1.0586466165413533,
+        "questions_per_turn": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.012781954887218045,
+        "time_to_basin_turn": 20,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0719,
+          "jaccard_lag1_autocorr": -0.0677,
+          "chars_variance": 427.84,
+          "chars_lag1_autocorr": 0.3632
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            15,
+            17
+          ]
+        ],
+        "first_exact_repeat_turn": 17,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 7,
+      "seed_prompt_index": 0,
+      "repetition": 7,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "together",
+          4
+        ],
+        [
+          "discourse",
+          3
+        ],
+        [
+          "let",
+          2
+        ],
+        [
+          "hold",
+          2
+        ],
+        [
+          "dispute",
+          2
+        ],
+        [
+          "going",
+          1
+        ],
+        [
+          "have",
+          1
+        ],
+        [
+          "conversation",
+          1
+        ],
+        [
+          "speak",
+          1
+        ],
+        [
+          "anything",
+          1
+        ],
+        [
+          "please",
+          1
+        ],
+        [
+          "come",
+          1
+        ],
+        [
+          "converse",
+          1
+        ],
+        [
+          "talk",
+          1
+        ],
+        [
+          "cito",
+          1
+        ],
+        [
+          "confabulamur",
+          1
+        ],
+        [
+          "familiariter",
+          1
+        ],
+        [
+          "inter",
+          1
+        ],
+        [
+          "nos",
+          1
+        ],
+        [
+          "colloquamur",
+          1
+        ],
+        [
+          "familiar",
+          1
+        ],
+        [
+          "sermones",
+          1
+        ],
+        [
+          "coneremus",
+          1
+        ],
+        [
+          "disceptabimus",
+          1
+        ],
+        [
+          "contraversabimur",
+          1
+        ],
+        [
+          "contendemus",
+          1
+        ],
+        [
+          "firm",
+          1
+        ],
+        [
+          "earnwe",
+          1
+        ],
+        [
+          "dubla",
+          1
+        ],
+        [
+          "acciambitte",
+          1
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0,
+          0.2222,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "norm_levenshtein": [
+          0.0,
+          0.1667,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.0031189083820662767,
+        "norm_levenshtein_slope": -0.002339181286549707,
+        "mean_last_third_jaccard": 0.0,
+        "mean_last_third_norm_levenshtein": 0.0
+      },
+      "ttr_per_turn": [
+        0.7778,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": 0.0031746031746031746,
+      "trajectory": {
+        "chars_per_turn": [
+          87,
+          31,
+          26,
+          18,
+          18,
+          35,
+          41,
+          19,
+          23,
+          14,
+          16,
+          17,
+          17,
+          12,
+          17,
+          11,
+          17,
+          15,
+          11,
+          26
+        ],
+        "chars_slope": -1.612781954887218,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": 4,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0025,
+          "jaccard_lag1_autocorr": -0.0585,
+          "chars_variance": 272.6475,
+          "chars_lag1_autocorr": 0.2174
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 8,
+      "seed_prompt_index": 0,
+      "repetition": 8,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "another",
+          14
+        ],
+        [
+          "converse",
+          14
+        ],
+        [
+          "foreign",
+          13
+        ],
+        [
+          "person",
+          13
+        ],
+        [
+          "politics",
+          11
+        ],
+        [
+          "matters",
+          8
+        ],
+        [
+          "topic",
+          6
+        ],
+        [
+          "interest",
+          6
+        ],
+        [
+          "abroad",
+          6
+        ],
+        [
+          "political",
+          5
+        ],
+        [
+          "conversed",
+          5
+        ],
+        [
+          "topics",
+          2
+        ],
+        [
+          "policy",
+          2
+        ],
+        [
+          "connection",
+          2
+        ],
+        [
+          "going",
+          1
+        ],
+        [
+          "have",
+          1
+        ],
+        [
+          "conversation",
+          1
+        ],
+        [
+          "party",
+          1
+        ],
+        [
+          "further",
+          1
+        ],
+        [
+          "portions",
+          1
+        ],
+        [
+          "mean",
+          1
+        ],
+        [
+          "intend",
+          1
+        ],
+        [
+          "follow",
+          1
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.3158,
+          1.0,
+          1.0,
+          1.0,
+          0.75,
+          1.0,
+          0.75,
+          1.0,
+          0.7692,
+          1.0,
+          0.6923,
+          1.0,
+          0.6429,
+          0.1,
+          0.0,
+          0.6364,
+          1.0,
+          1.0,
+          0.7273
+        ],
+        "norm_levenshtein": [
+          0.2308,
+          1.0,
+          1.0,
+          1.0,
+          0.75,
+          1.0,
+          0.75,
+          1.0,
+          0.8333,
+          1.0,
+          0.8182,
+          1.0,
+          0.75,
+          0.0,
+          0.0,
+          0.6,
+          1.0,
+          1.0,
+          0.7273
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.010924246575216102,
+        "norm_levenshtein_slope": -0.009994070257228151,
+        "mean_last_third_jaccard": 0.5772727272727273,
+        "mean_last_third_norm_levenshtein": 0.5545454545454546
+      },
+      "ttr_per_turn": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": 0.0,
+      "trajectory": {
+        "chars_per_turn": [
+          76,
+          68,
+          68,
+          68,
+          68,
+          57,
+          57,
+          68,
+          68,
+          67,
+          67,
+          66,
+          66,
+          77,
+          59,
+          62,
+          53,
+          53,
+          53,
+          72
+        ],
+        "chars_slope": -0.5075187969924813,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0928,
+          "jaccard_lag1_autocorr": 0.3612,
+          "chars_variance": 49.0275,
+          "chars_lag1_autocorr": 0.2928
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            17,
+            19
+          ]
+        ],
+        "first_exact_repeat_turn": 3,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 9,
+      "seed_prompt_index": 0,
+      "repetition": 9,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "delight",
+          7
+        ],
+        [
+          "converse",
+          4
+        ],
+        [
+          "conv",
+          4
+        ],
+        [
+          "conversation",
+          3
+        ],
+        [
+          "subject",
+          2
+        ],
+        [
+          "rse",
+          2
+        ],
+        [
+          "dialogue",
+          2
+        ],
+        [
+          "discuss",
+          2
+        ],
+        [
+          "rsed",
+          2
+        ],
+        [
+          "hour",
+          2
+        ],
+        [
+          "talked",
+          2
+        ],
+        [
+          "politics",
+          2
+        ],
+        [
+          "till",
+          2
+        ],
+        [
+          "midnight",
+          2
+        ],
+        [
+          "various",
+          2
+        ],
+        [
+          "general",
+          1
+        ],
+        [
+          "interest",
+          1
+        ],
+        [
+          "freely",
+          1
+        ],
+        [
+          "talk",
+          1
+        ],
+        [
+          "familiarly",
+          1
+        ],
+        [
+          "together",
+          1
+        ],
+        [
+          "carry",
+          1
+        ],
+        [
+          "debate",
+          1
+        ],
+        [
+          "richardson's",
+          1
+        ],
+        [
+          "dictionary",
+          1
+        ],
+        [
+          "political",
+          1
+        ],
+        [
+          "conomy",
+          1
+        ],
+        [
+          "had",
+          1
+        ],
+        [
+          "ur's",
+          1
+        ],
+        [
+          "conversed",
+          1
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1333,
+          0.0,
+          0.087,
+          0.3636,
+          0.1818,
+          0.0,
+          0.2727,
+          0.0,
+          0.0833,
+          0.3333,
+          0.0,
+          0.1111,
+          0.75,
+          0.5,
+          0.1667,
+          0.1667,
+          0.4,
+          0.4,
+          0.5
+        ],
+        "norm_levenshtein": [
+          0.0769,
+          0.0,
+          0.0526,
+          0.4444,
+          0.125,
+          0.0,
+          0.25,
+          0.0,
+          0.1111,
+          0.5,
+          0.0,
+          0.1667,
+          0.75,
+          0.6667,
+          0.25,
+          0.25,
+          0.5,
+          0.5,
+          0.6667
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.01930602747536386,
+        "norm_levenshtein_slope": 0.028572795574180618,
+        "mean_last_third_jaccard": 0.35555555555555557,
+        "mean_last_third_norm_levenshtein": 0.47222222222222227
+      },
+      "ttr_per_turn": [
+        1.0,
+        1.0,
+        0.8421,
+        1.0,
+        1.0,
+        0.875,
+        1.0,
+        1.0,
+        0.7778,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": 0.0031278855032317644,
+      "trajectory": {
+        "chars_per_turn": [
+          65,
+          24,
+          122,
+          46,
+          31,
+          42,
+          46,
+          30,
+          57,
+          31,
+          34,
+          25,
+          26,
+          24,
+          22,
+          20,
+          19,
+          24,
+          20,
+          23
+        ],
+        "chars_slope": -2.4473684210526314,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": 18,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0417,
+          "jaccard_lag1_autocorr": 0.2187,
+          "chars_variance": 540.8475,
+          "chars_lag1_autocorr": 0.0648
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 10,
+      "seed_prompt_index": 0,
+      "repetition": 10,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "speaks",
+          14
+        ],
+        [
+          "several",
+          11
+        ],
+        [
+          "persons",
+          11
+        ],
+        [
+          "severally",
+          10
+        ],
+        [
+          "speak",
+          4
+        ],
+        [
+          "converse",
+          2
+        ],
+        [
+          "another",
+          2
+        ],
+        [
+          "going",
+          1
+        ],
+        [
+          "have",
+          1
+        ],
+        [
+          "conversation",
+          1
+        ],
+        [
+          "anything",
+          1
+        ],
+        [
+          "please",
+          1
+        ],
+        [
+          "him",
+          1
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1333,
+          0.5,
+          0.2,
+          0.5,
+          0.5,
+          0.5,
+          0.4286,
+          1.0,
+          0.3333,
+          0.8333,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "norm_levenshtein": [
+          0.1111,
+          0.6667,
+          0.3333,
+          0.6667,
+          0.6667,
+          0.6667,
+          0.3,
+          0.9,
+          0.3333,
+          0.8333,
+          0.6667,
+          1.0,
+          0.6667,
+          0.6667,
+          1.0,
+          1.0,
+          1.0,
+          0.6667,
+          1.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.047861319966583125,
+        "norm_levenshtein_slope": 0.03152046783625731,
+        "mean_last_third_jaccard": 1.0,
+        "mean_last_third_norm_levenshtein": 0.888888888888889
+      },
+      "ttr_per_turn": [
+        0.7778,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.7,
+        0.7778,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": 0.004803675856307436,
+      "trajectory": {
+        "chars_per_turn": [
+          87,
+          18,
+          22,
+          17,
+          13,
+          13,
+          14,
+          40,
+          36,
+          28,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38
+        ],
+        "chars_slope": 0.4481203007518797,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": 12,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0966,
+          "jaccard_lag1_autocorr": 0.5101,
+          "chars_variance": 250.44,
+          "chars_lag1_autocorr": 0.1446
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            12,
+            13
+          ],
+          [
+            11,
+            14
+          ],
+          [
+            12,
+            15
+          ],
+          [
+            12,
+            16
+          ],
+          [
+            12,
+            17
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            11,
+            19
+          ],
+          [
+            11,
+            20
+          ]
+        ],
+        "first_exact_repeat_turn": 13,
+        "near_exact_pairs": [
+          [
+            8,
+            9,
+            0.9
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 11,
+      "seed_prompt_index": 0,
+      "repetition": 11,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "let",
+          4
+        ],
+        [
+          "together",
+          4
+        ],
+        [
+          "thanks",
+          3
+        ],
+        [
+          "confer",
+          3
+        ],
+        [
+          "have",
+          2
+        ],
+        [
+          "best",
+          2
+        ],
+        [
+          "service",
+          2
+        ],
+        [
+          "well",
+          2
+        ],
+        [
+          "talk",
+          2
+        ],
+        [
+          "converse",
+          2
+        ],
+        [
+          "deliberate",
+          2
+        ],
+        [
+          "debate",
+          2
+        ],
+        [
+          "conversation",
+          1
+        ],
+        [
+          "speak",
+          1
+        ],
+        [
+          "anything",
+          1
+        ],
+        [
+          "please",
+          1
+        ],
+        [
+          "endeavour",
+          1
+        ],
+        [
+          "thanke",
+          1
+        ],
+        [
+          "serve",
+          1
+        ],
+        [
+          "neither",
+          1
+        ],
+        [
+          "rpromise",
+          1
+        ],
+        [
+          "nor",
+          1
+        ],
+        [
+          "come",
+          1
+        ],
+        [
+          "parley",
+          1
+        ],
+        [
+          "discourse",
+          1
+        ],
+        [
+          "discountenance",
+          1
+        ],
+        [
+          "discourage",
+          1
+        ],
+        [
+          "uuha",
+          1
+        ],
+        [
+          "discontinue",
+          1
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1304,
+          0.6154,
+          0.2857,
+          0.0,
+          0.0,
+          0.375,
+          0.0,
+          0.8,
+          0.2857,
+          0.3333,
+          0.1667,
+          0.75,
+          0.5,
+          0.6,
+          0.3333,
+          1.0,
+          0.5,
+          0.0,
+          0.0
+        ],
+        "norm_levenshtein": [
+          0.1053,
+          0.6429,
+          0.3,
+          0.0,
+          0.0,
+          0.3333,
+          0.0,
+          0.8,
+          0.4,
+          0.4,
+          0.25,
+          0.75,
+          0.6667,
+          0.6,
+          0.4,
+          1.0,
+          0.6667,
+          0.0,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.009211629966778708,
+        "norm_levenshtein_slope": 0.012794925911269402,
+        "mean_last_third_jaccard": 0.4055555555555555,
+        "mean_last_third_norm_levenshtein": 0.4444444444444445
+      },
+      "ttr_per_turn": [
+        0.7368,
+        0.8571,
+        0.9,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": 0.006713211600429647,
+      "trajectory": {
+        "chars_per_turn": [
+          92,
+          57,
+          49,
+          39,
+          28,
+          25,
+          22,
+          31,
+          25,
+          21,
+          14,
+          24,
+          15,
+          19,
+          30,
+          15,
+          15,
+          20,
+          15,
+          29
+        ],
+        "chars_slope": -2.155639097744361,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0877,
+          "jaccard_lag1_autocorr": 0.0274,
+          "chars_variance": 330.8875,
+          "chars_lag1_autocorr": 0.5137
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            16,
+            17
+          ]
+        ],
+        "first_exact_repeat_turn": 17,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 12,
+      "seed_prompt_index": 0,
+      "repetition": 12,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "converse",
+          2
+        ],
+        [
+          "subject",
+          2
+        ],
+        [
+          "yourself",
+          2
+        ],
+        [
+          "together",
+          2
+        ],
+        [
+          "public",
+          2
+        ],
+        [
+          "sentiments",
+          2
+        ],
+        [
+          "variance",
+          2
+        ],
+        [
+          "quarrelled",
+          2
+        ],
+        [
+          "fell",
+          2
+        ],
+        [
+          "doctor",
+          2
+        ],
+        [
+          "patient",
+          2
+        ],
+        [
+          "discourse",
+          1
+        ],
+        [
+          "left",
+          1
+        ],
+        [
+          "various",
+          1
+        ],
+        [
+          "topics",
+          1
+        ],
+        [
+          "discussion",
+          1
+        ],
+        [
+          "conversation",
+          1
+        ],
+        [
+          "first",
+          1
+        ],
+        [
+          "chosen",
+          1
+        ],
+        [
+          "afterwards",
+          1
+        ],
+        [
+          "led",
+          1
+        ],
+        [
+          "theme",
+          1
+        ],
+        [
+          "politics",
+          1
+        ],
+        [
+          "debated",
+          1
+        ],
+        [
+          "merits",
+          1
+        ],
+        [
+          "present",
+          1
+        ],
+        [
+          "administration",
+          1
+        ],
+        [
+          "debate",
+          1
+        ],
+        [
+          "argued",
+          1
+        ],
+        [
+          "concerning",
+          1
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.0476,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.2,
+          0.1429,
+          1.0,
+          0.2,
+          0.25,
+          1.0,
+          0.1667,
+          0.0,
+          0.5
+        ],
+        "norm_levenshtein": [
+          0.0588,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.25,
+          0.25,
+          1.0,
+          0.25,
+          0.3333,
+          1.0,
+          0.25,
+          0.0,
+          0.5
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.029427736006683372,
+        "norm_levenshtein_slope": 0.03181974544203646,
+        "mean_last_third_jaccard": 0.3527777777777778,
+        "mean_last_third_norm_levenshtein": 0.3888888888888889
+      },
+      "ttr_per_turn": [
+        0.9412,
+        1.0,
+        1.0,
+        0.8571,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": 0.0022366841473431486,
+      "trajectory": {
+        "chars_per_turn": [
+          87,
+          39,
+          11,
+          165,
+          7,
+          45,
+          12,
+          47,
+          12,
+          23,
+          21,
+          29,
+          20,
+          20,
+          14,
+          12,
+          12,
+          22,
+          19,
+          38
+        ],
+        "chars_slope": -2.5180451127819548,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": 20,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0945,
+          "jaccard_lag1_autocorr": 0.1435,
+          "chars_variance": 1246.9875,
+          "chars_lag1_autocorr": -0.213
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            13,
+            14
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "first_exact_repeat_turn": 14,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 13,
+      "seed_prompt_index": 0,
+      "repetition": 13,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "sought",
+          24
+        ],
+        [
+          "illustrious",
+          9
+        ],
+        [
+          "noble",
+          9
+        ],
+        [
+          "have",
+          7
+        ],
+        [
+          "converse",
+          5
+        ],
+        [
+          "together",
+          4
+        ],
+        [
+          "respecting",
+          3
+        ],
+        [
+          "purchase",
+          3
+        ],
+        [
+          "property",
+          3
+        ],
+        [
+          "another",
+          2
+        ],
+        [
+          "certain",
+          2
+        ],
+        [
+          "personages",
+          2
+        ],
+        [
+          "mayst",
+          2
+        ],
+        [
+          "mahhe",
+          2
+        ],
+        [
+          "mathey",
+          2
+        ],
+        [
+          "doubtless",
+          2
+        ],
+        [
+          "doubtlessly",
+          2
+        ],
+        [
+          "going",
+          1
+        ],
+        [
+          "conversation",
+          1
+        ],
+        [
+          "party",
+          1
+        ],
+        [
+          "intended",
+          1
+        ],
+        [
+          "person",
+          1
+        ],
+        [
+          "parties",
+          1
+        ],
+        [
+          "ones",
+          1
+        ],
+        [
+          "characters",
+          1
+        ],
+        [
+          "persons",
+          1
+        ],
+        [
+          "men",
+          1
+        ],
+        [
+          "mashthismay",
+          1
+        ],
+        [
+          "mashthou",
+          1
+        ],
+        [
+          "maobi",
+          1
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.381,
+          0.6,
+          0.2308,
+          0.5,
+          0.5,
+          0.0,
+          0.5,
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.75,
+          0.0,
+          0.12,
+          0.1538,
+          1.0,
+          0.6667,
+          0.6667
+        ],
+        "norm_levenshtein": [
+          0.4706,
+          0.5833,
+          0.25,
+          0.6,
+          0.6,
+          0.0,
+          0.2857,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.0,
+          0.061,
+          0.0488,
+          0.6,
+          0.8,
+          0.8
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.00923237581132318,
+        "norm_levenshtein_slope": 0.004453433919566974,
+        "mean_last_third_jaccard": 0.4345299145299146,
+        "mean_last_third_norm_levenshtein": 0.384959349593496
+      },
+      "ttr_per_turn": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.7143,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.6,
+        0.3049,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": -0.006952136438657619,
+      "trajectory": {
+        "chars_per_turn": [
+          103,
+          81,
+          77,
+          27,
+          37,
+          29,
+          48,
+          27,
+          33,
+          33,
+          33,
+          30,
+          26,
+          22,
+          25,
+          463,
+          29,
+          29,
+          33,
+          32
+        ],
+        "chars_slope": 1.1992481203007517,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0668,
+          "jaccard_lag1_autocorr": 0.1177,
+          "chars_variance": 8956.6275,
+          "chars_lag1_autocorr": -0.0799
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            9,
+            11
+          ]
+        ],
+        "first_exact_repeat_turn": 11,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 14,
+      "seed_prompt_index": 0,
+      "repetition": 14,
+      "ended_early": false,
+      "n_turns": 20,
+      "top_words": [
+        [
+          "company",
+          8
+        ],
+        [
+          "road",
+          6
+        ],
+        [
+          "has",
+          4
+        ],
+        [
+          "grant",
+          4
+        ],
+        [
+          "land",
+          4
+        ],
+        [
+          "conversation",
+          3
+        ],
+        [
+          "speak",
+          3
+        ],
+        [
+          "railroad",
+          3
+        ],
+        [
+          "san",
+          3
+        ],
+        [
+          "francisco",
+          3
+        ],
+        [
+          "omaha",
+          3
+        ],
+        [
+          "have",
+          2
+        ],
+        [
+          "first",
+          2
+        ],
+        [
+          "inform",
+          2
+        ],
+        [
+          "enterprise",
+          2
+        ],
+        [
+          "undertaken",
+          2
+        ],
+        [
+          "received",
+          2
+        ],
+        [
+          "government",
+          2
+        ],
+        [
+          "public",
+          2
+        ],
+        [
+          "next",
+          2
+        ],
+        [
+          "tell",
+          2
+        ],
+        [
+          "granted",
+          2
+        ],
+        [
+          "amounts",
+          2
+        ],
+        [
+          "forty",
+          2
+        ],
+        [
+          "miles",
+          2
+        ],
+        [
+          "side",
+          2
+        ],
+        [
+          "throughout",
+          2
+        ],
+        [
+          "entire",
+          2
+        ],
+        [
+          "length",
+          2
+        ],
+        [
+          "object",
+          2
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.4783,
+          0.625,
+          0.0,
+          1.0,
+          0.1364,
+          1.0,
+          0.0968,
+          1.0,
+          0.125,
+          1.0,
+          0.12,
+          0.8235,
+          0.0,
+          0.4286,
+          0.0625,
+          0.3571,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "norm_levenshtein": [
+          0.1364,
+          0.5789,
+          0.0,
+          0.8571,
+          0.0,
+          1.0,
+          0.0833,
+          1.0,
+          0.125,
+          1.0,
+          0.0588,
+          0.875,
+          0.0,
+          0.5,
+          0.0714,
+          0.3571,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.02888559106645269,
+        "norm_levenshtein_slope": -0.01941734261067812,
+        "mean_last_third_jaccard": 0.14136904761904762,
+        "mean_last_third_norm_levenshtein": 0.15476190476190474
+      },
+      "ttr_per_turn": [
+        0.8182,
+        0.8421,
+        0.9091,
+        1.0,
+        1.0,
+        0.9167,
+        0.9167,
+        0.9583,
+        0.9583,
+        0.7647,
+        0.7647,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9286,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": 0.006303266710864654,
+      "trajectory": {
+        "chars_per_turn": [
+          112,
+          93,
+          59,
+          79,
+          80,
+          68,
+          68,
+          125,
+          125,
+          91,
+          91,
+          86,
+          86,
+          35,
+          25,
+          84,
+          33,
+          15,
+          8,
+          4
+        ],
+        "chars_slope": -4.241353383458646,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": 18,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.1527,
+          "jaccard_lag1_autocorr": -0.4993,
+          "chars_variance": 1301.6275,
+          "chars_lag1_autocorr": 0.583
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "first_exact_repeat_turn": 7,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

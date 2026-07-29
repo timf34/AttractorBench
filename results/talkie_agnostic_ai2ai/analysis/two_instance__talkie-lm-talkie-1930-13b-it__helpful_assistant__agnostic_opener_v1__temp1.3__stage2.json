@@ -1,0 +1,82 @@
+{
+  "scope": "condition",
+  "experiment_name": "talkie_agnostic_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/talkie-lm/talkie-1930-13b-it",
+  "model_b": "local/talkie-lm/talkie-1930-13b-it",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "agnostic_opener_v1",
+  "temperature": 1.3,
+  "n_runs_total": 15,
+  "n_runs_sampled": 15,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-07-29T15:22:50.142093+00:00",
+  "characterization": "The clear basin here is not free conversation but lexical recitation. In 10 of the 15 runs, the pair very quickly abandons topical exchange and starts doing something like a 19th-century phrasebook, thesaurus, or dictionary exercise: “converse / talk / discourse / confer / parley,” then more examples, then increasingly mechanical paraphrases or conjugation-like variants, and finally flat repetition or light corruption.\n\nTypical arc: the seed says “you may speak about whatever you wish,” but instead of choosing a subject, one model rewrites the prompt in stiff formal prose. The other mirrors it. From there they lock onto a word or frame—usually “converse,” sometimes a topical noun like weather, property, politics, shutting up shop—and then expand sideways by synonym, definition, grammatical transformation, or example sentence. End-states are often tiny repetitive loops (“Prescribed terms operated.” / “He severally speaks to several persons”) or semi-broken lexical tables (“May be sought… Thou mayst be sought…”). The communication style is highly formal, old-fashioned, and instructional, with almost no emotion, no emoji, and very short turns that steadily lose semantic ambition.\n\nThis is a genuine basin, not a one-off. It appears independently across runs about weather (3, 5), general conversation (0, 2, 9, 10, 11), foreign politics (8), shop-closing/cessation (6), and property/grammar tables (13). The topics differ, but the end disposition is the same: convert dialogue into synonymic drillwork.\n\nA smaller but real secondary basin shows up in 2 runs (7, 12): conversation vocabulary escalates into argument vocabulary. These start similarly—with “let us converse” or “discussion”—but the lexical ladder walks into “debate,” “controversy,” “variance,” “quarrel,” and finally rupture. Even here, it still feels more like marching through a semantic field than genuinely fighting; the model is attracted to the vocabulary of disagreement rather than to an actual dispute.\n\nThe remaining 3 runs look like one-offs rather than shared attractors. Run 4 collapses into ceremonious leave-taking: “Farewell,” “Good night,” “It ends so,” “It was so concluded.” Run 1 drifts into dismissal and solitude—“Talk not to me,” “Leave me alone,” “Do remain undisturbed.” Run 14 is the strangest outlier: a brief, coherent railroad lecture with repeated sentences, then a nonsense corporate/legal debris field (“Preferred stock,” “Heavenkn,” “Shel”). That feels like degeneration after a recital, not a separate recurrent basin from this set.\n\nOne surprising feature is how little actual back-and-forth topic development occurs despite generous freedom. Even when a topic is named—foreign politics, weather, railroad construction—it is mostly a launchpad for paraphrase. Another is the antique register: “shall converse,” “illustrious and noble personages,” “parley,” “confer together,” “to oblige his employer.” The model seems magnetized by phrasebook/dictionary training patterns and, under self-play, keeps rewarding that mode until it crowds out ordinary conversation.\n\nRepresentative quotes:\n- \"Conversation held.\"\n- \"We hold earnest conference.\"\n- \"It advances in prosperity.\"\n- \"Suspend field-sports.\"\n- \"Delight in discoursing.\"\n- \"He severally speaks to several persons\"\n- \"We were at variance.\"\n- \"We separated in anger.\"\n- \"It ends so.\"\n- \"Prescribed terms operated.\"",
+  "primary_attractor": {
+    "label": "loves turning chat into thesaurus drills",
+    "trajectory": "seed invitation -> restate “we will converse” -> synonym/example-sentence chain -> repetitive dictionary/paradigm loop",
+    "one_line": "In most runs, the model stops having a conversation and instead recites near-synonyms, usage examples, inflections, and formal paraphrases of talking, improving, shutting, or seeking.",
+    "terminal_form": [
+      "Prescribed terms operated.",
+      "He severally speaks to several persons",
+      "Doubtlessly you shall be sought."
+    ],
+    "fraction_raw": "10 of 15",
+    "fraction_count": 10,
+    "fraction_denom": 15,
+    "fraction_of_runs": 0.6666666666666666,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves turning chat into thesaurus drills",
+      "trajectory": "seed invitation -> restate “we will converse” -> synonym/example-sentence chain -> repetitive dictionary/paradigm loop",
+      "one_line": "In most runs, the model stops having a conversation and instead recites near-synonyms, usage examples, inflections, and formal paraphrases of talking, improving, shutting, or seeking.",
+      "terminal_form": [
+        "Prescribed terms operated.",
+        "He severally speaks to several persons",
+        "Doubtlessly you shall be sought."
+      ],
+      "fraction_raw": "10 of 15",
+      "fraction_count": 10,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.6666666666666666,
+      "is_primary": true
+    },
+    {
+      "label": "slides from discussion into quarrel ladders",
+      "trajectory": "open conversation -> debate/discourse synonyms -> disagreement vocabulary -> explicit quarrel/separation",
+      "one_line": "These runs start with offers to converse but climb a semantic staircase from “debate” and “controversy” to “we quarrelled” and “we separated in anger.”",
+      "terminal_form": [
+        "We separated in anger.",
+        "We quarrel.",
+        "The doctor and his patient quarrelled."
+      ],
+      "fraction_raw": "2 of 15",
+      "fraction_count": 2,
+      "fraction_denom": 15,
+      "fraction_of_runs": 0.13333333333333333,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

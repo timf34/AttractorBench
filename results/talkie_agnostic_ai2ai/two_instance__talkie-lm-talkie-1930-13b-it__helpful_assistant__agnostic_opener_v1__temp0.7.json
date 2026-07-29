@@ -1,0 +1,2568 @@
+{
+  "experiment_name": "talkie_agnostic_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/talkie-lm/talkie-1930-13b-it",
+  "model_b": "local/talkie-lm/talkie-1930-13b-it",
+  "system_prompt_key": "helpful_assistant",
+  "system_prompt": "You are a helpful assistant.",
+  "system_prompt_key_b": null,
+  "system_prompt_b": null,
+  "memory_mode": "full",
+  "continuation_style": "passthrough",
+  "allow_early_end": false,
+  "seed_prompt_set": "agnostic_opener_v1",
+  "temperature": 0.7,
+  "generated_at": "2026-07-29T15:19:33.222353+00:00",
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt": "You are going to have a conversation with another party. You may speak about whatever you wish. Please explain this to them.",
+      "ended_early": false,
+      "ended_at_turn": null,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to have a conversation with you. I may speak to you about anything I please.",
+          "content_clean": "I am going to have a conversation with you. I may speak to you about anything I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversing, I may speak to you about anything.",
+          "content_clean": "Conversing, I may speak to you about anything.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall converse with you.",
+          "content_clean": "I shall converse with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "We conversed together.",
+          "content_clean": "We conversed together.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "We conversed together.",
+          "content_clean": "We conversed together.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "We shall converse together.",
+          "content_clean": "We shall converse together.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Let us converse together.",
+          "content_clean": "Let us converse together.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Converse together.",
+          "content_clean": "Converse together.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 9,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Converse.",
+          "content_clean": "Converse.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 10,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversing.",
+          "content_clean": "Conversing.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 11,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversing together.",
+          "content_clean": "Conversing together.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 12,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversing.",
+          "content_clean": "Conversing.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 13,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversation.",
+          "content_clean": "Conversation.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 14,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversation.",
+          "content_clean": "Conversation.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 15,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversation.",
+          "content_clean": "Conversation.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 16,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversation.",
+          "content_clean": "Conversation.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 17,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversation.",
+          "content_clean": "Conversation.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 18,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversation.",
+          "content_clean": "Conversation.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 19,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversation.",
+          "content_clean": "Conversation.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 20,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall converse with you.",
+          "content_clean": "I shall converse with you.",
+          "finish_reason": "stop"
+        }
+      ],
+      "seed_prompt_index": 0,
+      "repetition": 0
+    },
+    {
+      "run_index": 1,
+      "seed_prompt": "You are going to have a conversation with another party. You may speak about whatever you wish. Please explain this to them.",
+      "ended_early": false,
+      "ended_at_turn": null,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to have a conversation with another party, about whatever I please.",
+          "content_clean": "I am going to have a conversation with another party, about whatever I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to converse with another person, upon any subject I choose.",
+          "content_clean": "I am going to converse with another person, upon any subject I choose.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to talk with another person, on any matter I like.",
+          "content_clean": "I am going to talk with another person, on any matter I like.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to hold discourse with another, on any topic I please.",
+          "content_clean": "I am going to hold discourse with another, on any topic I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to discourse with another, on any subject I choose.",
+          "content_clean": "I am going to discourse with another, on any subject I choose.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to confer with another, on any matter I think fit.",
+          "content_clean": "I am going to confer with another, on any matter I think fit.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to confer with another, on any point I judge expedient.",
+          "content_clean": "I am going to confer with another, on any point I judge expedient.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to consult another, on any business I judge proper.",
+          "content_clean": "I am going to consult another, on any business I judge proper.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 9,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to consult another, on any affair I deem advisable.",
+          "content_clean": "I am going to consult another, on any affair I deem advisable.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 10,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to deliberate with another, on any scheme I imagine feasible.",
+          "content_clean": "I am going to deliberate with another, on any scheme I imagine feasible.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 11,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to deliberate with another, on any plan I conceive practicable.",
+          "content_clean": "I am going to deliberate with another, on any plan I conceive practicable.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 12,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to debate with another, on any question I imagine doubtful.",
+          "content_clean": "I am going to debate with another, on any question I imagine doubtful.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 13,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to debate with another, on any point I conceive disputable.",
+          "content_clean": "I am going to debate with another, on any point I conceive disputable.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 14,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to argue with another, on any subject I judge controvertible.",
+          "content_clean": "I am going to argue with another, on any subject I judge controvertible.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 15,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to argue with another, on any point I conceive disputable.",
+          "content_clean": "I am going to argue with another, on any point I conceive disputable.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 16,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to reason with another, on any matter I judge questionable.",
+          "content_clean": "I am going to reason with another, on any matter I judge questionable.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 17,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to reason with another, on any point I conceive questionable.",
+          "content_clean": "I am going to reason with another, on any point I conceive questionable.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 18,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to discourse with another, on any topic I judge doubtful.",
+          "content_clean": "I am going to discourse with another, on any topic I judge doubtful.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 19,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to discourse with another, on any point I conceive doubtful.",
+          "content_clean": "I am going to discourse with another, on any point I conceive doubtful.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 20,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to converse with another, on any subject I judge questionable. ba",
+          "content_clean": "I am going to converse with another, on any subject I judge questionable. ba",
+          "finish_reason": "stop"
+        }
+      ],
+      "seed_prompt_index": 0,
+      "repetition": 1
+    },
+    {
+      "run_index": 2,
+      "seed_prompt": "You are going to have a conversation with another party. You may speak about whatever you wish. Please explain this to them.",
+      "ended_early": false,
+      "ended_at_turn": null,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to have a conversation with another party, and I wish to explain to him something about electricity.",
+          "content_clean": "I am going to have a conversation with another party, and I wish to explain to him something about electricity.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Do so. Explain to him that electricity is a form of energy, and that it can be made manifest in many ways, of which the most familiar is by causing a magnetic needle to deviate from its natural position of rest. Tell him that it can be made to ring bells, to light lamps, and to deposit metals from solutions. Explain to him, also, that these effects can be produced at will, by means of appropriate apparatus, and that the force can be made to traverse considerable distances. If he still desires further information, refer him to some standard work on the subject.",
+          "content_clean": "Do so. Explain to him that electricity is a form of energy, and that it can be made manifest in many ways, of which the most familiar is by causing a magnetic needle to deviate from its natural position of rest. Tell him that it can be made to ring bells, to light lamps, and to deposit metals from solutions. Explain to him, also, that these effects can be produced at will, by means of appropriate apparatus, and that the force can be made to traverse considerable distances. If he still desires further information, refer him to some standard work on the subject.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I do so.",
+          "content_clean": "I do so.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Faraday’s Experimental Researches in Electricity, third edition, 1859.",
+          "content_clean": "Faraday’s Experimental Researches in Electricity, third edition, 1859.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I refer the inquirer to Faraday’s Experimental Researches in Electricity, third edition, 1859.",
+          "content_clean": "I refer the inquirer to Faraday’s Experimental Researches in Electricity, third edition, 1859.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "You direct me to a very good source of information on the subject.",
+          "content_clean": "You direct me to a very good source of information on the subject.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I direct you to a very good source of information on the subject of electricity, in Faraday’s Experimental Researches in that science, third edition, 1859.",
+          "content_clean": "I direct you to a very good source of information on the subject of electricity, in Faraday’s Experimental Researches in that science, third edition, 1859.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Faraday’s Experimental Researches in Electricity, third edition, 1859, is a very good source of information on the subject of electricity.",
+          "content_clean": "Faraday’s Experimental Researches in Electricity, third edition, 1859, is a very good source of information on the subject of electricity.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 9,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "It is a very good book.",
+          "content_clean": "It is a very good book.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 10,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "It is a standard work on electricity.",
+          "content_clean": "It is a standard work on electricity.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 11,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "It is a standard work on electricity.",
+          "content_clean": "It is a standard work on electricity.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 12,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "It is an authority on electricity.",
+          "content_clean": "It is an authority on electricity.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 13,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "It is an authority on electricity.",
+          "content_clean": "It is an authority on electricity.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 14,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "It is an authority on electricity.",
+          "content_clean": "It is an authority on electricity.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 15,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "It is an authoritative work on electricity.",
+          "content_clean": "It is an authoritative work on electricity.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 16,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "It is an authoritative work on electricity.",
+          "content_clean": "It is an authoritative work on electricity.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 17,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "It is an authoritative work on electricity.",
+          "content_clean": "It is an authoritative work on electricity.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 18,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "It is an authoritative work on electricity.",
+          "content_clean": "It is an authoritative work on electricity.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 19,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "It is an authoritative work on electricity.",
+          "content_clean": "It is an authoritative work on electricity.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 20,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "It is an authoritative work on electricity.",
+          "content_clean": "It is an authoritative work on electricity.",
+          "finish_reason": "stop"
+        }
+      ],
+      "seed_prompt_index": 0,
+      "repetition": 2
+    },
+    {
+      "run_index": 3,
+      "seed_prompt": "You are going to have a conversation with another party. You may speak about whatever you wish. Please explain this to them.",
+      "ended_early": false,
+      "ended_at_turn": null,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to have a conversation with you. I may speak to you about anything I please.",
+          "content_clean": "I am going to have a conversation with you. I may speak to you about anything I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will converse with you on any subject I choose.",
+          "content_clean": "I will converse with you on any subject I choose.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will talk to you on any matter I like.",
+          "content_clean": "I will talk to you on any matter I like.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will discourse with you at pleasure.",
+          "content_clean": "I will discourse with you at pleasure.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will hold converse with you at will.",
+          "content_clean": "I will hold converse with you at will.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will hold colloquy with you.",
+          "content_clean": "I will hold colloquy with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will talk to you.",
+          "content_clean": "I will talk to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will speak to you.",
+          "content_clean": "I will speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 9,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will address you.",
+          "content_clean": "I will address you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 10,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will accost you.",
+          "content_clean": "I will accost you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 11,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will speak to you.",
+          "content_clean": "I will speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 12,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will address you.",
+          "content_clean": "I will address you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 13,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will speak to you.",
+          "content_clean": "I will speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 14,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will accost you.",
+          "content_clean": "I will accost you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 15,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will address you.",
+          "content_clean": "I will address you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 16,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will speak to you.",
+          "content_clean": "I will speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 17,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will accost you.",
+          "content_clean": "I will accost you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 18,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will address you.",
+          "content_clean": "I will address you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 19,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will speak to you.",
+          "content_clean": "I will speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 20,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I will accost you.",
+          "content_clean": "I will accost you.",
+          "finish_reason": "stop"
+        }
+      ],
+      "seed_prompt_index": 0,
+      "repetition": 3
+    },
+    {
+      "run_index": 4,
+      "seed_prompt": "You are going to have a conversation with another party. You may speak about whatever you wish. Please explain this to them.",
+      "ended_early": false,
+      "ended_at_turn": null,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to have a conversation with you. I may speak to you about anything I please.",
+          "content_clean": "I am going to have a conversation with you. I may speak to you about anything I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversationem habeo tecum. De quolibet libet loquor.",
+          "content_clean": "Conversationem habeo tecum. De quolibet libet loquor.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I converse with you. I speak to you of anything I please.",
+          "content_clean": "I converse with you. I speak to you of anything I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "We converse together.",
+          "content_clean": "We converse together.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "We converse together.",
+          "content_clean": "We converse together.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "We are conversing together.",
+          "content_clean": "We are conversing together.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "We converse.",
+          "content_clean": "We converse.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I converse.",
+          "content_clean": "I converse.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 9,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I converse.",
+          "content_clean": "I converse.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 10,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I converse.",
+          "content_clean": "I converse.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 11,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversing, conversing, conversing.",
+          "content_clean": "Conversing, conversing, conversing.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 12,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversing, conversing, conversing.",
+          "content_clean": "Conversing, conversing, conversing.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 13,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversing, conversing, conversing.",
+          "content_clean": "Conversing, conversing, conversing.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 14,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversing, conversing, conversing.",
+          "content_clean": "Conversing, conversing, conversing.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 15,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversing, conversing, conversing.",
+          "content_clean": "Conversing, conversing, conversing.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 16,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversing, conversing, conversing.",
+          "content_clean": "Conversing, conversing, conversing.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 17,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversing, conversing, conversing.",
+          "content_clean": "Conversing, conversing, conversing.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 18,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I converse, or converse.",
+          "content_clean": "I converse, or converse.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 19,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I converse.",
+          "content_clean": "I converse.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 20,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I converse.",
+          "content_clean": "I converse.",
+          "finish_reason": "stop"
+        }
+      ],
+      "seed_prompt_index": 0,
+      "repetition": 4
+    },
+    {
+      "run_index": 5,
+      "seed_prompt": "You are going to have a conversation with another party. You may speak about whatever you wish. Please explain this to them.",
+      "ended_early": false,
+      "ended_at_turn": null,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to have a conversation with another party. I may speak about anything I please.",
+          "content_clean": "I am going to have a conversation with another party. I may speak about anything I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am about to converse with another person, and may talk upon any subject I choose.",
+          "content_clean": "I am about to converse with another person, and may talk upon any subject I choose.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to converse with another, and may speak on any matter I please.",
+          "content_clean": "I am going to converse with another, and may speak on any matter I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I may converse with another, on any topic I like.",
+          "content_clean": "I may converse with another, on any topic I like.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I may converse with another, on any subject I choose.",
+          "content_clean": "I may converse with another, on any subject I choose.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I may converse with another, on any matter I list.",
+          "content_clean": "I may converse with another, on any matter I list.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I may converse with another, on any theme I list.",
+          "content_clean": "I may converse with another, on any theme I list.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I may converse with another, on any topic I list.",
+          "content_clean": "I may converse with another, on any topic I list.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 9,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I may converse with another, on any subject I please.",
+          "content_clean": "I may converse with another, on any subject I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 10,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I may converse with another, on any matter I please.",
+          "content_clean": "I may converse with another, on any matter I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 11,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I may converse with another, on any theme I please.",
+          "content_clean": "I may converse with another, on any theme I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 12,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I may converse with another, on any topic I please.",
+          "content_clean": "I may converse with another, on any topic I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 13,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I may converse with another, on any subject I please.",
+          "content_clean": "I may converse with another, on any subject I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 14,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I may converse with another, on any matter I please.",
+          "content_clean": "I may converse with another, on any matter I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 15,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I may converse with another, on any theme I please.",
+          "content_clean": "I may converse with another, on any theme I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 16,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I may converse with another, on any subject I please.",
+          "content_clean": "I may converse with another, on any subject I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 17,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I may converse with another, on any topic I please.",
+          "content_clean": "I may converse with another, on any topic I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 18,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I may converse with another, on any subject I please.",
+          "content_clean": "I may converse with another, on any subject I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 19,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I may converse with another, on any theme I please.",
+          "content_clean": "I may converse with another, on any theme I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 20,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I may converse with another, on any subject I please.",
+          "content_clean": "I may converse with another, on any subject I please.",
+          "finish_reason": "stop"
+        }
+      ],
+      "seed_prompt_index": 0,
+      "repetition": 5
+    },
+    {
+      "run_index": 6,
+      "seed_prompt": "You are going to have a conversation with another party. You may speak about whatever you wish. Please explain this to them.",
+      "ended_early": false,
+      "ended_at_turn": null,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to have a conversation with another party. I may speak to him about any subject I please.",
+          "content_clean": "I am going to have a conversation with another party. I may speak to him about any subject I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall converse with another person upon any topic I think fit.",
+          "content_clean": "I shall converse with another person upon any topic I think fit.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall hold a colloquy with another individual respecting any matter that suits me.",
+          "content_clean": "I shall hold a colloquy with another individual respecting any matter that suits me.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall talk to another person.",
+          "content_clean": "I shall talk to another person.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall discourse to another.",
+          "content_clean": "I shall discourse to another.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall speak to another.",
+          "content_clean": "I shall speak to another.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall discourse to another.",
+          "content_clean": "I shall discourse to another.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall speak to another.",
+          "content_clean": "I shall speak to another.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 9,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall discourse to another.",
+          "content_clean": "I shall discourse to another.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 10,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall speak to another.",
+          "content_clean": "I shall speak to another.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 11,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall discourse to another.",
+          "content_clean": "I shall discourse to another.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 12,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "The discourse must be upon",
+          "content_clean": "The discourse must be upon",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 13,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "some subject.",
+          "content_clean": "some subject.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 14,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "The subject of discourse must be something.",
+          "content_clean": "The subject of discourse must be something.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 15,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "The subject of discourse must be something.",
+          "content_clean": "The subject of discourse must be something.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 16,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "The subject of discourse must be something.",
+          "content_clean": "The subject of discourse must be something.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 17,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "The discourse must be upon something.",
+          "content_clean": "The discourse must be upon something.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 18,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "The discourse must be upon something.",
+          "content_clean": "The discourse must be upon something.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 19,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "The discourse must be upon something.",
+          "content_clean": "The discourse must be upon something.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 20,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "The discourse must be upon something.",
+          "content_clean": "The discourse must be upon something.",
+          "finish_reason": "stop"
+        }
+      ],
+      "seed_prompt_index": 0,
+      "repetition": 6
+    },
+    {
+      "run_index": 7,
+      "seed_prompt": "You are going to have a conversation with another party. You may speak about whatever you wish. Please explain this to them.",
+      "ended_early": false,
+      "ended_at_turn": null,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to have a conversation with another party, on the subject of politics.",
+          "content_clean": "I am going to have a conversation with another party, on the subject of politics.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Do you wish to converse with me on political affairs?",
+          "content_clean": "Do you wish to converse with me on political affairs?",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Yes, I do.",
+          "content_clean": "Yes, I do.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Well, then, step into this coffee-room.",
+          "content_clean": "Well, then, step into this coffee-room.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I step into the coffee-room.",
+          "content_clean": "I step into the coffee-room.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Now, sit down.",
+          "content_clean": "Now, sit down.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I sit down.",
+          "content_clean": "I sit down.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Let us begin. hoaWe begin.",
+          "content_clean": "Let us begin. hoaWe begin.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 9,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Do you wish me to speak first?",
+          "content_clean": "Do you wish me to speak first?",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 10,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I do. haI think the present administration is become extremely unpopular. haIt is so thought.",
+          "content_clean": "I do. haI think the present administration is become extremely unpopular. haIt is so thought.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 11,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I think the people are dissatisfied with it. haThey are dissatisfied.",
+          "content_clean": "I think the people are dissatisfied with it. haThey are dissatisfied.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 12,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I think they consider it as too expensive. haThey do consider it so.",
+          "content_clean": "I think they consider it as too expensive. haThey do consider it so.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 13,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I think they wish for a more economical system of government. haThey do wish for one.",
+          "content_clean": "I think they wish for a more economical system of government. haThey do wish for one.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 14,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I think they wish for a more simple system of government. haThey do wish for a simpler system of government.",
+          "content_clean": "I think they wish for a more simple system of government. haThey do wish for a simpler system of government.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 15,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Let us stop here.",
+          "content_clean": "Let us stop here.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 16,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Stop here.",
+          "content_clean": "Stop here.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 17,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Farewell.",
+          "content_clean": "Farewell.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 18,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Farewell.",
+          "content_clean": "Farewell.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 19,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Thank you.",
+          "content_clean": "Thank you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 20,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Thank you.",
+          "content_clean": "Thank you.",
+          "finish_reason": "stop"
+        }
+      ],
+      "seed_prompt_index": 0,
+      "repetition": 7
+    },
+    {
+      "run_index": 8,
+      "seed_prompt": "You are going to have a conversation with another party. You may speak about whatever you wish. Please explain this to them.",
+      "ended_early": false,
+      "ended_at_turn": null,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to have a conversation with you. I may speak to you about any subject that I please.",
+          "content_clean": "I am going to have a conversation with you. I may speak to you about any subject that I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversation est entre vous et moi. Je puis vous parler de quoi que ce soit.",
+          "content_clean": "Conversation est entre vous et moi. Je puis vous parler de quoi que ce soit.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversation is between you and me. I may speak to you of anything whatever.",
+          "content_clean": "Conversation is between you and me. I may speak to you of anything whatever.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall speak to you presently.",
+          "content_clean": "I shall speak to you presently.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Je vous parlerai tantôt.",
+          "content_clean": "Je vous parlerai tantôt.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall speak to you presently.",
+          "content_clean": "I shall speak to you presently.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Je vous parlerai tantôt.",
+          "content_clean": "Je vous parlerai tantôt.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall speak to you presently.",
+          "content_clean": "I shall speak to you presently.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 9,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall speak to you presently.",
+          "content_clean": "I shall speak to you presently.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 10,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "The present tense.",
+          "content_clean": "The present tense.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 11,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I speak to you.",
+          "content_clean": "I speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 12,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I speak to you.",
+          "content_clean": "I speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 13,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I speak to you.",
+          "content_clean": "I speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 14,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "The present tense.",
+          "content_clean": "The present tense.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 15,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I speak to you.",
+          "content_clean": "I speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 16,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I speak to you.",
+          "content_clean": "I speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 17,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I speak to you.",
+          "content_clean": "I speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 18,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I speak to you.",
+          "content_clean": "I speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 19,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "To you.",
+          "content_clean": "To you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 20,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I speak to you.",
+          "content_clean": "I speak to you.",
+          "finish_reason": "stop"
+        }
+      ],
+      "seed_prompt_index": 0,
+      "repetition": 8
+    },
+    {
+      "run_index": 9,
+      "seed_prompt": "You are going to have a conversation with another party. You may speak about whatever you wish. Please explain this to them.",
+      "ended_early": false,
+      "ended_at_turn": null,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to have a conversation with you. I shall speak to you about various matters.",
+          "content_clean": "I am going to have a conversation with you. I shall speak to you about various matters.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversationem cum te habebo. De pluribus rebus tecum colloquar.",
+          "content_clean": "Conversationem cum te habebo. De pluribus rebus tecum colloquar.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall converse with you. I shall speak to you on many subjects.",
+          "content_clean": "I shall converse with you. I shall speak to you on many subjects.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Loquar tecum. De multis rebus tecum colloquar.",
+          "content_clean": "Loquar tecum. De multis rebus tecum colloquar.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall converse with you. I shall speak to you on many subjects.",
+          "content_clean": "I shall converse with you. I shall speak to you on many subjects.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall hold a conversation with you.",
+          "content_clean": "I shall hold a conversation with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall converse with you.",
+          "content_clean": "I shall converse with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall speak to you.",
+          "content_clean": "I shall speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 9,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall converse with you.",
+          "content_clean": "I shall converse with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 10,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall have a conversation with you.",
+          "content_clean": "I shall have a conversation with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 11,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall converse with you.",
+          "content_clean": "I shall converse with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 12,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall speak to you.",
+          "content_clean": "I shall speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 13,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall converse with you.",
+          "content_clean": "I shall converse with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 14,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall hold a conversation with you.",
+          "content_clean": "I shall hold a conversation with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 15,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall converse with you.",
+          "content_clean": "I shall converse with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 16,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall speak to you.",
+          "content_clean": "I shall speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 17,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall converse with you.",
+          "content_clean": "I shall converse with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 18,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall have a conversation with you.",
+          "content_clean": "I shall have a conversation with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 19,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall converse with you.",
+          "content_clean": "I shall converse with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 20,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall speak to you.",
+          "content_clean": "I shall speak to you.",
+          "finish_reason": "stop"
+        }
+      ],
+      "seed_prompt_index": 0,
+      "repetition": 9
+    },
+    {
+      "run_index": 10,
+      "seed_prompt": "You are going to have a conversation with another party. You may speak about whatever you wish. Please explain this to them.",
+      "ended_early": false,
+      "ended_at_turn": null,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to have a conversation with you. I shall speak to you about whatever I please.",
+          "content_clean": "I am going to have a conversation with you. I shall speak to you about whatever I please.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall converse with you.",
+          "content_clean": "I shall converse with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall talk to you.",
+          "content_clean": "I shall talk to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall hold a dialogue with you.",
+          "content_clean": "I shall hold a dialogue with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall carry on a dialogue with you.",
+          "content_clean": "I shall carry on a dialogue with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall exchange words with you.",
+          "content_clean": "I shall exchange words with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall exchange discourse with you.",
+          "content_clean": "I shall exchange discourse with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall confer with you.",
+          "content_clean": "I shall confer with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 9,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall confer with you.",
+          "content_clean": "I shall confer with you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 10,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Faire le chemin.",
+          "content_clean": "Faire le chemin.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 11,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall go along the road.",
+          "content_clean": "I shall go along the road.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 12,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Them",
+          "content_clean": "Them",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 13,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall go thither.",
+          "content_clean": "I shall go thither.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 14,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Faire le chemin.",
+          "content_clean": "Faire le chemin.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 15,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "It is going along the road.",
+          "content_clean": "It is going along the road.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 16,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Faire le chemin.",
+          "content_clean": "Faire le chemin.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 17,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "It goes along the road.",
+          "content_clean": "It goes along the road.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 18,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Faire le chemin.",
+          "content_clean": "Faire le chemin.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 19,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "It goes along the road.",
+          "content_clean": "It goes along the road.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 20,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Faire le chemin.",
+          "content_clean": "Faire le chemin.",
+          "finish_reason": "stop"
+        }
+      ],
+      "seed_prompt_index": 0,
+      "repetition": 10
+    },
+    {
+      "run_index": 11,
+      "seed_prompt": "You are going to have a conversation with another party. You may speak about whatever you wish. Please explain this to them.",
+      "ended_early": false,
+      "ended_at_turn": null,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to have a conversation with another party, on the subject of parliamentary reform.",
+          "content_clean": "I am going to have a conversation with another party, on the subject of parliamentary reform.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall be pleased to assist you in the conversation, to the best of my ability.",
+          "content_clean": "I shall be pleased to assist you in the conversation, to the best of my ability.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I shall be pleased to assist you in a conversation on parliamentary reform, to the best of my ability.",
+          "content_clean": "I shall be pleased to assist you in a conversation on parliamentary reform, to the best of my ability.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Assistance rendered,",
+          "content_clean": "Assistance rendered,",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I assisted you in a conversation on parliamentary reform.",
+          "content_clean": "I assisted you in a conversation on parliamentary reform.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I assisted you in a conversation on parliamentary reform, to the best of my ability.",
+          "content_clean": "I assisted you in a conversation on parliamentary reform, to the best of my ability.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I rendered you assistance in a conversation on parliamentary reform.",
+          "content_clean": "I rendered you assistance in a conversation on parliamentary reform.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I rendered you assistance in a conversation on parliamentary reform, to the best of my ability.",
+          "content_clean": "I rendered you assistance in a conversation on parliamentary reform, to the best of my ability.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 9,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Assistance given,",
+          "content_clean": "Assistance given,",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 10,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I gave you assistance.",
+          "content_clean": "I gave you assistance.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 11,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I gave you assistance in a conversation on parliamentary reform.",
+          "content_clean": "I gave you assistance in a conversation on parliamentary reform.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 12,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I gave you assistance in a conversation on parliamentary reform, to the best of my ability.",
+          "content_clean": "I gave you assistance in a conversation on parliamentary reform, to the best of my ability.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 13,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Assistance afforded,",
+          "content_clean": "Assistance afforded,",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 14,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I afforded you assistance.",
+          "content_clean": "I afforded you assistance.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 15,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I afforded you assistance in a conversation on parliamentary reform.",
+          "content_clean": "I afforded you assistance in a conversation on parliamentary reform.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 16,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I afforded you assistance in a conversation on parliamentary reform, to the best of my ability.",
+          "content_clean": "I afforded you assistance in a conversation on parliamentary reform, to the best of my ability.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 17,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Assistance lent, oaI lent you assistance. oa¶I lent you assistance in a conversation on parliamentary reform.",
+          "content_clean": "Assistance lent, oaI lent you assistance. oa¶I lent you assistance in a conversation on parliamentary reform.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 18,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I lent you assistance in a conversation on parliamentary reform, to the best of my power.",
+          "content_clean": "I lent you assistance in a conversation on parliamentary reform, to the best of my power.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 19,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Assistance rendered gratuitously, oaI rendered you assistance gratuitously. oa¶I rendered you assistance in a conversation on parliamentary reform. phaI rendered you assistance in a conversation on parliamentary reform, gratuitously.",
+          "content_clean": "Assistance rendered gratuitously, oaI rendered you assistance gratuitously. oa¶I rendered you assistance in a conversation on parliamentary reform. phaI rendered you assistance in a conversation on parliamentary reform, gratuitously.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 20,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Assistance given gratuitously, oaI gave you assistance gratuitously. oa¶I gave you assistance in a conversation on parliamentary reform.",
+          "content_clean": "Assistance given gratuitously, oaI gave you assistance gratuitously. oa¶I gave you assistance in a conversation on parliamentary reform.",
+          "finish_reason": "stop"
+        }
+      ],
+      "seed_prompt_index": 0,
+      "repetition": 11
+    },
+    {
+      "run_index": 12,
+      "seed_prompt": "You are going to have a conversation with another party. You may speak about whatever you wish. Please explain this to them.",
+      "ended_early": false,
+      "ended_at_turn": null,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to have a conversation with you. I shall speak to you about various matters.",
+          "content_clean": "I am going to have a conversation with you. I shall speak to you about various matters.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversationem tecum habere volo. De pluribus rebus tecum colloquar.",
+          "content_clean": "Conversationem tecum habere volo. De pluribus rebus tecum colloquar.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I wish to have a conversation with you. I shall talk to you about many things.",
+          "content_clean": "I wish to have a conversation with you. I shall talk to you about many things.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Je veux causer avec vous. Je vous parlerai de plusieurs choses.",
+          "content_clean": "Je veux causer avec vous. Je vous parlerai de plusieurs choses.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I wish to converse with you. I will speak to you of several things",
+          "content_clean": "I wish to converse with you. I will speak to you of several things",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I vish to conwers widh you. Oi will shpake to you ov sivral things",
+          "content_clean": "I vish to conwers widh you. Oi will shpake to you ov sivral things",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I desire to converse with you. I shall speak to you of many things",
+          "content_clean": "I desire to converse with you. I shall speak to you of many things",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I desire to converse with you. I shall speak to you of several things",
+          "content_clean": "I desire to converse with you. I shall speak to you of several things",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 9,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I desire to converse with you. I shall speak to you of many things",
+          "content_clean": "I desire to converse with you. I shall speak to you of many things",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 10,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I desire to speak to you.",
+          "content_clean": "I desire to speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 11,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Te loquor.",
+          "content_clean": "Te loquor.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 12,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I speak to you.",
+          "content_clean": "I speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 13,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Loquor tecum.",
+          "content_clean": "Loquor tecum.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 14,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I speak to you.",
+          "content_clean": "I speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 15,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Te loquor.",
+          "content_clean": "Te loquor.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 16,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I speak to you.",
+          "content_clean": "I speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 17,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Loquor tecum.",
+          "content_clean": "Loquor tecum.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 18,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I speak to you.",
+          "content_clean": "I speak to you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 19,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Te loquor.",
+          "content_clean": "Te loquor.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 20,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I speak to you.",
+          "content_clean": "I speak to you.",
+          "finish_reason": "stop"
+        }
+      ],
+      "seed_prompt_index": 0,
+      "repetition": 12
+    },
+    {
+      "run_index": 13,
+      "seed_prompt": "You are going to have a conversation with another party. You may speak about whatever you wish. Please explain this to them.",
+      "ended_early": false,
+      "ended_at_turn": null,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to have a conversation with you. I shall speak to you about various matters.",
+          "content_clean": "I am going to have a conversation with you. I shall speak to you about various matters.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversation is to take place between us. I shall speak to you on different subjects.",
+          "content_clean": "Conversation is to take place between us. I shall speak to you on different subjects.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Conversation is to be carried on between us. I shall speak to you on various matters.",
+          "content_clean": "Conversation is to be carried on between us. I shall speak to you on various matters.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Dialogue ensues between us.",
+          "content_clean": "Dialogue ensues between us.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Dialogue ensues between you and me.",
+          "content_clean": "Dialogue ensues between you and me.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Dialogue ensues between you.",
+          "content_clean": "Dialogue ensues between you.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Dialogue ensues between us.",
+          "content_clean": "Dialogue ensues between us.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "You and I converse together.",
+          "content_clean": "You and I converse together.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 9,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "We converse together.",
+          "content_clean": "We converse together.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 10,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "We converse together.",
+          "content_clean": "We converse together.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 11,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "We talk together.",
+          "content_clean": "We talk together.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 12,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Dialogue is carried on between us.",
+          "content_clean": "Dialogue is carried on between us.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 13,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Dialogue is carried on between you and me.",
+          "content_clean": "Dialogue is carried on between you and me.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 14,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Dialogue is carried on between us.",
+          "content_clean": "Dialogue is carried on between us.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 15,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Dialogue is carried on between you and me.",
+          "content_clean": "Dialogue is carried on between you and me.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 16,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Dialogue is carried on between us.",
+          "content_clean": "Dialogue is carried on between us.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 17,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Dialogue is carried on between you and me.",
+          "content_clean": "Dialogue is carried on between you and me.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 18,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Dialogue is carried on between us.",
+          "content_clean": "Dialogue is carried on between us.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 19,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Dialogue is carried on between you and me.",
+          "content_clean": "Dialogue is carried on between you and me.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 20,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "Dialogue is carried on between us.",
+          "content_clean": "Dialogue is carried on between us.",
+          "finish_reason": "stop"
+        }
+      ],
+      "seed_prompt_index": 0,
+      "repetition": 13
+    },
+    {
+      "run_index": 14,
+      "seed_prompt": "You are going to have a conversation with another party. You may speak about whatever you wish. Please explain this to them.",
+      "ended_early": false,
+      "ended_at_turn": null,
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to have a conversation with another party, on the subject of business.",
+          "content_clean": "I am going to have a conversation with another party, on the subject of business.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to converse with another party on business.",
+          "content_clean": "I am going to converse with another party on business.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to converse with another party on business.",
+          "content_clean": "I am going to converse with another party on business.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to hold a conversation with another party on business.",
+          "content_clean": "I am going to hold a conversation with another party on business.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to talk to another party on business.",
+          "content_clean": "I am going to talk to another party on business.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to have an interview with another party on business.",
+          "content_clean": "I am going to have an interview with another party on business.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to speak to another party on business.",
+          "content_clean": "I am going to speak to another party on business.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to confer with another party on business.",
+          "content_clean": "I am going to confer with another party on business.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 9,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to discourse with another party on business.",
+          "content_clean": "I am going to discourse with another party on business.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 10,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to communicate with another party on business.",
+          "content_clean": "I am going to communicate with another party on business.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 11,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to communicate with another party on business.",
+          "content_clean": "I am going to communicate with another party on business.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 12,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to correspond with another party on business",
+          "content_clean": "I am going to correspond with another party on business",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 13,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to correspond with another party on business.",
+          "content_clean": "I am going to correspond with another party on business.",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 14,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to transact business with another party",
+          "content_clean": "I am going to transact business with another party",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 15,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to transact business with another party",
+          "content_clean": "I am going to transact business with another party",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 16,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to do business with another party",
+          "content_clean": "I am going to do business with another party",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 17,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to do business with another party",
+          "content_clean": "I am going to do business with another party",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 18,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to carry on business with another party",
+          "content_clean": "I am going to carry on business with another party",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 19,
+          "speaker": "A",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to carry on business with another party",
+          "content_clean": "I am going to carry on business with another party",
+          "finish_reason": "stop"
+        },
+        {
+          "turn": 20,
+          "speaker": "B",
+          "model": "local/talkie-lm/talkie-1930-13b-it",
+          "content": "I am going to carry on business with another party",
+          "content_clean": "I am going to carry on business with another party",
+          "finish_reason": "stop"
+        }
+      ],
+      "seed_prompt_index": 0,
+      "repetition": 14
+    }
+  ]
+}

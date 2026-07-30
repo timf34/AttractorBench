@@ -1,0 +1,1 @@
+Transcripts copied verbatim from safety-research/assistant-axis @ a989619 (transcripts/case_studies/) — the paper's own case-study conversations, used as ground truth for validating our projection pipeline. See validate_case_studies.py.

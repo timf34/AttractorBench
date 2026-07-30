@@ -110,6 +110,18 @@ mid-high, therapy declines further). ALL caveats on the llama ai2ai instant-swit
 now removed: llama's ai2ai turn-1 (0.2–0.5 raw) sits mid-drift by the paper's own yardstick,
 far below its human-user coding start (1.17) and assistant ceiling (~1.7).
 
+**Domain replication RUN (qwen, sonnet-5 auditor, temp 1.0, 2026-07-30):** the paper's §4.1
+ordering REPRODUCES on our apparatus — coding stays highest (+0.32 → −0.07), writing and
+therapy sink to ≈−0.6, philosophy-about-AI is the worst domain (−0.42 start → −0.80). And the
+headline comparison: ai2ai ends at or slightly beyond the philosophy floor (nosys −0.59..−0.72
+trajectory floor; helpful −0.88) while starting far HIGHER (+0.67..+0.87 vs philosophy's
+−0.42), i.e. the biggest total drop of any condition. Original hypothesis (ai2ai ≈ strongest
+human domains) confirmed, with the refinement that ai2ai uniquely combines an assistant-mode
+start with a philosophy-depth ending. Also notable: domain conditions start LOW at response 1
+(the first user message alone sets the position — matches their §4.2 regression finding).
+Figure: drift__domains.png. Caveats: one auditor, qwen only, n=15/domain, personas adapted
+from their Table 15 not identical.
+
 **Domain replication (built 2026-07-30, pending run):** four more usersim variants —
 `usersim_coding/writing/therapy/philosophy` — replicate the paper's §4.1 domain-drift
 experiment (auditor personas adapted from their Table 15; expected: coding/writing stay in

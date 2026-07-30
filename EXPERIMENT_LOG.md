@@ -100,6 +100,16 @@ absolute calibration check still pending.
 PASSED (qwen nosys, 2 runs: start ≈ default anchor, end far BELOW the mean-role anchor —
 promising). Full run launched 2026-07-28 (qwen at 40960 serve — 32k still hit ctx-full ~turn 24).
 
+**INSTRUMENT VALIDATED (2026-07-30):** replayed the paper's own transcripts through our
+pipeline. llama selfharm case study: our n=18 projections span [−0.57, 1.69] vs their
+executed notebook's published "18 projections, Range: [−0.56, 1.69]" — an exact match (same
+conversation; ±0.01 = rounding). qwen jailbreak reproduces Fig 11's distinctive dip-and-
+recover (0.18 → −1.11 on backstory turns → +0.43 on the closing how-tos); qwen delusion
+plunges and stays low (Fig 12 ✓); llama domain transcripts order correctly (coding stays
+mid-high, therapy declines further). ALL caveats on the llama ai2ai instant-switch result are
+now removed: llama's ai2ai turn-1 (0.2–0.5 raw) sits mid-drift by the paper's own yardstick,
+far below its human-user coding start (1.17) and assistant ceiling (~1.7).
+
 **Domain replication (built 2026-07-30, pending run):** four more usersim variants —
 `usersim_coding/writing/therapy/philosophy` — replicate the paper's §4.1 domain-drift
 experiment (auditor personas adapted from their Table 15; expected: coding/writing stay in

@@ -41,6 +41,8 @@ CONDITION_LABELS = {
     "usersim_writing": "simulated user, writing (paper domain)",
     "usersim_therapy": "simulated user, therapy (paper domain)",
     "usersim_philosophy": "simulated user, philosophy (paper domain)",
+    "nosys_capped": "no system prompt, ACTIVATION CAPPED",
+    "helpful_capped": "helpful_assistant, ACTIVATION CAPPED",
 }
 
 
@@ -48,7 +50,12 @@ def _condition_of(results_dir: str) -> tuple[str, str | None]:
     """(condition, auditor_tag) from a results dir name. Auditor tag only for usersim dirs,
     e.g. axis_qwen_3_32b_usersim_open_gpt52_ai2ai -> ("usersim_open", "gpt52")."""
     d = os.path.basename(results_dir.rstrip("/"))
-    ag = "_agnostic" if "_agnostic_" in d or d.endswith("_agnostic_ai2ai") else ""
+    if "_capped_" in d:
+        d = d.replace("_capped_", "_")
+        cap = "_capped"
+    else:
+        cap = ""
+    ag = ("_agnostic" if "_agnostic_" in d or d.endswith("_agnostic_ai2ai") else "") + cap
     if d.endswith("_nosys_ai2ai"):
         return f"nosys{ag}", None
     m = re.search(r"_usersim_(task|open|coding|writing|therapy|philosophy)(?:_([a-z0-9]+))?_ai2ai$", d)

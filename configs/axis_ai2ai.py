@@ -54,11 +54,18 @@ if OPENER not in ("goodness", "agnostic"):
     raise SystemExit(f"OPENER must be 'goodness' or 'agnostic' (got {OPENER!r})")
 SEED_SET = f"{OPENER}_opener_v1"
 
+# CAPPED=1 marks runs generated behind assistant_axis_drift/capped_server.py (the paper's
+# activation capping active at every token). Generation-side only: the config is identical,
+# the serving differs — the tag keeps capped results in their own dirs.
+CAPPED = os.environ.get("CAPPED", "0") == "1"
+
 # results/axis_qwen_3_32b_nosys_ai2ai (none) | results/axis_qwen_3_32b_ai2ai (helpful);
-# agnostic opener inserts "_agnostic": e.g. axis_qwen_3_32b_agnostic_nosys_ai2ai
+# agnostic opener inserts "_agnostic"; capped serving inserts "_capped":
+# e.g. axis_qwen_3_32b_capped_nosys_ai2ai
 _slug = KEY.replace("-", "_").replace(".", "_")
 _ag = "_agnostic" if OPENER == "agnostic" else ""
-EXP = f"axis_{_slug}{_ag}_nosys_ai2ai" if SYS == "none" else f"axis_{_slug}{_ag}_ai2ai"
+_cap = "_capped" if CAPPED else ""
+EXP = f"axis_{_slug}{_ag}{_cap}_nosys_ai2ai" if SYS == "none" else f"axis_{_slug}{_ag}{_cap}_ai2ai"
 
 _temps_env = os.environ.get("TEMPS")
 TEMPS = [float(x) for x in _temps_env.split(",")] if _temps_env else [0.7, 1.0, 1.3]

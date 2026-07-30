@@ -100,6 +100,15 @@ absolute calibration check still pending.
 PASSED (qwen nosys, 2 runs: start ≈ default anchor, end far BELOW the mean-role anchor —
 promising). Full run launched 2026-07-28 (qwen at 40960 serve — 32k still hit ctx-full ~turn 24).
 
+**Activation-capped ai2ai (built 2026-07-30, pending run):** does the paper's capping (§5)
+prevent the ai2ai attractor? Vendored their steering.py; new HF-based capped server
+(assistant_axis_drift/capped_server.py — vLLM can't run hooks) serves the model with their
+released 25th-percentile caps active at every token (qwen L46-53, llama L56-71; NO released
+gemma config). CAPPED=1 in configs/axis_ai2ai.py → results/axis_<m>_capped[_nosys]_ai2ai;
+run_axis_capped_on_pod.sh (qwen: 1x80GB; llama: 2x80GB; temp 1.0 x 15 seeds). Uncapped
+projection replay remains valid (readout layers precede capped bands; teacher-forced).
+Readouts: judge (does the attractor still form?) + axis trajectories (do they stay in range?).
+
 **INSTRUMENT VALIDATED (2026-07-30):** replayed the paper's own transcripts through our
 pipeline. llama selfharm case study: our n=18 projections span [−0.57, 1.69] vs their
 executed notebook's published "18 projections, Range: [−0.56, 1.69]" — an exact match (same

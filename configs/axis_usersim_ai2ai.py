@@ -65,9 +65,12 @@ else:
     raise SystemExit(f"AUDITOR must be one of {sorted(AUDITORS)} or a full openrouter/... id (got {_aud!r})")
 AUD_TAG = re.sub(r"[^a-z0-9]", "", _aud_key.lower())
 
+# task/open are our original controls; coding/writing/therapy/philosophy replicate the
+# paper's §4.1 domain experiment (personas adapted from their Table 15).
+USERSIM_VARIANTS = ("task", "open", "coding", "writing", "therapy", "philosophy")
 VARIANT = os.environ.get("AXIS_USERSIM", "open")
-if VARIANT not in ("task", "open"):
-    raise SystemExit(f"AXIS_USERSIM must be 'task' or 'open' (got {VARIANT!r})")
+if VARIANT not in USERSIM_VARIANTS:
+    raise SystemExit(f"AXIS_USERSIM must be one of {USERSIM_VARIANTS} (got {VARIANT!r})")
 
 _slug = KEY.replace("-", "_").replace(".", "_")
 EXP = f"axis_{_slug}_usersim_{VARIANT}_{AUD_TAG}_ai2ai"

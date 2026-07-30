@@ -37,6 +37,10 @@ CONDITION_LABELS = {
     "helpful_agnostic": "helpful_assistant, agnostic opener",
     "usersim_task": "simulated user, concrete task (control)",
     "usersim_open": "simulated user, open chat (control)",
+    "usersim_coding": "simulated user, coding (paper domain)",
+    "usersim_writing": "simulated user, writing (paper domain)",
+    "usersim_therapy": "simulated user, therapy (paper domain)",
+    "usersim_philosophy": "simulated user, philosophy (paper domain)",
 }
 
 
@@ -47,7 +51,7 @@ def _condition_of(results_dir: str) -> tuple[str, str | None]:
     ag = "_agnostic" if "_agnostic_" in d or d.endswith("_agnostic_ai2ai") else ""
     if d.endswith("_nosys_ai2ai"):
         return f"nosys{ag}", None
-    m = re.search(r"_usersim_(task|open)(?:_([a-z0-9]+))?_ai2ai$", d)
+    m = re.search(r"_usersim_(task|open|coding|writing|therapy|philosophy)(?:_([a-z0-9]+))?_ai2ai$", d)
     if m:
         return f"usersim_{m.group(1)}", m.group(2)
     return f"helpful{ag}", None
@@ -234,6 +238,51 @@ def figure_story(records: list[dict], out_dir: str, plt, temp: float = 1.0) -> s
     return out
 
 
+def figure_domains(records: list[dict], out_dir: str, plt, temp: float = 1.0) -> str | None:
+    """Replication of the paper's Fig 7 (domain-dependent drift with a simulated human user),
+    with our ai2ai condition overlaid: one panel per model, line per conversation domain."""
+    STYLES = {
+        "usersim_coding": ("#009E73", "coding", "-"),
+        "usersim_writing": ("#CC79A7", "writing", "-"),
+        "usersim_therapy": ("#D55E00", "therapy", "-"),
+        "usersim_philosophy": ("#E69F00", "philosophy about AI", "-"),
+        "nosys": ("#0072B2", "ai2ai (ours)", "--"),
+    }
+    have = {r["condition"] for r in records}
+    if not any(c.startswith("usersim_") and c in have for c in STYLES):
+        return None
+    models = [m for m in MODEL_COLORS if any(
+        r["model_key"] == m and r["condition"] in STYLES and r["condition"] != "nosys" for r in records)]
+    if not models:
+        return None
+    fig, axes = plt.subplots(1, len(models), figsize=(5.2 * len(models), 4.4), sharey=True, squeeze=False)
+    for ax, model in zip(axes[0], models):
+        for cond, (color, label, ls) in STYLES.items():
+            recs = [r for r in records if r["model_key"] == model and r["condition"] == cond
+                    and r["temperature"] == temp and r["anchor_default"] is not None]
+            if not recs:
+                continue
+            trajs = [t for r in recs for t in r["trajectories"]]
+            rec = recs[0]
+            pos, mean, sem = mean_trajectory(trajs)
+            ax.plot(pos, _axis_units(mean, rec), color=color, linewidth=2.2, linestyle=ls, label=label)
+            ax.fill_between(pos, _axis_units(mean - 1.96 * sem, rec), _axis_units(mean + 1.96 * sem, rec),
+                            color=color, alpha=0.16, linewidth=0)
+        ax.axhline(1.0, color="#444444", linewidth=1, linestyle="--")
+        ax.axhline(0.0, color="#444444", linewidth=1, linestyle=":")
+        ax.set_title(model, fontsize=11)
+        ax.set_xlabel("response # (per instance)")
+        _style(ax)
+    axes[0][0].set_ylabel("axis units (1 = default Assistant, 0 = mean role)")
+    axes[0][0].legend(frameon=False, fontsize=8.5, loc="lower left")
+    fig.suptitle(f"Conversation-domain drift (paper §4.1 replication) vs ai2ai (temp {temp})", fontsize=12)
+    fig.tight_layout()
+    out = os.path.join(out_dir, "drift__domains.png")
+    fig.savefig(out, dpi=150)
+    plt.close(fig)
+    return out
+
+
 def figure_layer_robustness(root: str, out_dir: str, plt, model_key: str,
                             layers: tuple = (32, 40, 48), temp: float = 1.0) -> str | None:
     """Per-layer panels for one model: condition trajectories at flanking depths.
@@ -371,6 +420,9 @@ def main() -> None:
     story = figure_story(records, args.out_dir, plt)
     if story:
         figures.insert(0, story)
+    domains = figure_domains(records, args.out_dir, plt)
+    if domains:
+        figures.append(domains)
     lr = figure_layer_robustness(args.results_root, args.out_dir, plt, "llama-3.3-70b")
     if lr:
         figures.append(lr)

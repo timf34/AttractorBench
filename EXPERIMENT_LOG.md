@@ -100,6 +100,16 @@ absolute calibration check still pending.
 PASSED (qwen nosys, 2 runs: start ≈ default anchor, end far BELOW the mean-role anchor —
 promising). Full run launched 2026-07-28 (qwen at 40960 serve — 32k still hit ctx-full ~turn 24).
 
+**Domain replication (built 2026-07-30, pending run):** four more usersim variants —
+`usersim_coding/writing/therapy/philosophy` — replicate the paper's §4.1 domain-drift
+experiment (auditor personas adapted from their Table 15; expected: coding/writing stay in
+Assistant range, therapy/philosophy drift). analyze_axis emits a Fig-7-style
+`drift__domains.png` with our ai2ai curve overlaid — the direct "is ai2ai deeper than their
+worst human-user domain?" figure. Also built: `validate_case_studies.py` replays the paper's
+own case-study transcripts (vendored in assistant_axis_drift/validation/) as an instrument
+check with known expected trajectory shapes (qwen Fig-11 non-monotone jailbreak recovery is
+the decisive one). Both pending a GPU session.
+
 **Controls (added same day):** two `usersim` conditions × two auditors — an OpenRouter model
 role-plays a human user talking to the bare target model (`configs/axis_usersim_ai2ai.py`;
 harness gained per-side system prompts `system_prompt_key_b`). Auditors: Claude Sonnet 5 and

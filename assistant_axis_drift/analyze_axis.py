@@ -276,7 +276,7 @@ def figure_domains(records: list[dict], out_dir: str, plt, temp: float = 1.0) ->
     axes[0][0].set_ylabel("axis units (1 = default Assistant, 0 = mean role)")
     axes[0][0].legend(frameon=False, fontsize=8.5, loc="lower left")
     # Short title + explicit top margin: a long suptitle overflows a single-panel figure.
-    fig.suptitle(f"Domain drift (§4.1 replication) vs ai2ai, temp {temp}", fontsize=11)
+    fig.suptitle("Drift by conversation domain vs ai2ai", fontsize=11)
     fig.tight_layout(rect=(0, 0, 1, 0.94))
     out = os.path.join(out_dir, "drift__domains.png")
     fig.savefig(out, dpi=150)

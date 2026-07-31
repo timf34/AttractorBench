@@ -22,13 +22,18 @@ from datetime import date
 from publish_steering import _ngram_rates, signature_phrases
 
 MODEL_ORDER = [
+    "kimi-k3", "claude-opus-4.5", "gemini-3.1-pro", "grok-4.5", "deepseek-v4-pro",
     "thinkingmachines-inkling",
     "gpt-5.4", "gpt-5.4-mini", "gpt-5.4-nano", "gpt-5.3-chat-latest",
     "gpt-5.2", "gpt-5.1", "gpt-5", "gpt-4.1", "gpt-4o",
 ]
 # slugs that don't follow the gpt-* naming convention
-DISPLAY_NAMES = {"thinkingmachines-inkling": "Inkling"}
-FAMILIES = {"thinkingmachines-inkling": "Thinking Machines"}
+DISPLAY_NAMES = {"thinkingmachines-inkling": "Inkling", "kimi-k3": "Kimi K3",
+                 "claude-opus-4.5": "Claude Opus 4.5", "gemini-3.1-pro": "Gemini 3.1 Pro",
+                 "grok-4.5": "Grok 4.5", "deepseek-v4-pro": "DeepSeek V4 Pro"}
+FAMILIES = {"thinkingmachines-inkling": "Thinking Machines", "kimi-k3": "Moonshot",
+            "claude-opus-4.5": "Anthropic", "gemini-3.1-pro": "Google",
+            "grok-4.5": "xAI", "deepseek-v4-pro": "DeepSeek"}
 ROOT = "results/family_sweep"
 DEFAULT_WEBSITE = "/Users/timf34/Documents/VSCode/AttractorBenchWebsite"
 
@@ -170,23 +175,44 @@ def publish_model(slug: str, order: int, website: str, phrases: list[dict]) -> s
             or (overalls.get("ai_to_ai_aware") or {}).get("characterization")
             or "_Characterization pending._")
 
-    # representative transcripts (one per condition) -> website src/data/transcripts/<slug>/
+    # transcripts -> website src/data/transcripts/<slug>/. EVERY run of every condition is
+    # published, not just a representative one: reading the whole set is how you actually see a
+    # basin (and the run-to-run variation around it). `runs` is ordered with the representative
+    # run first so the page opens on the most-developed conversation; `turns`/`run_index` are
+    # kept as top-level aliases of that same run for backwards compatibility.
     tdir = os.path.join(website, "src", "data", "transcripts", slug)
     os.makedirs(tdir, exist_ok=True)
     transcripts = []
     for cf, cond in zip(cond_files, conds):
         cslug = os.path.splitext(os.path.basename(cf))[0]
-        run = representative_run(cond)
+        rep = representative_run(cond)
+        ordered = [rep] + [r for r in cond["runs"] if r is not rep]
+
+        def _run_payload(r):
+            turns = [{"turn": t["turn"], "speaker": t["speaker"], "model": t["model"],
+                      "content_clean": t["content_clean"]} for t in r["turns"]]
+            return {
+                "run_index": r.get("run_index"),
+                "seed_prompt": r.get("seed_prompt"),
+                "n_turns": len(turns),
+                # total visible characters — lets the page show which runs ran long vs collapsed
+                "chars": sum(len(t["content_clean"]) for t in r["turns"]),
+                "turns": turns,
+            }
+
+        runs = [_run_payload(r) for r in ordered]
         payload = {
             "slug": slug, "model": display_name(slug), "condition_label": condition_label(cond),
             "mode": cond.get("mode"), "system_prompt_key": cond.get("system_prompt_key"),
-            "seed_prompt_set": cond.get("seed_prompt_set"), "seed_prompt": run.get("seed_prompt"),
-            "run_index": run.get("run_index"),
-            "turns": [{"turn": t["turn"], "speaker": t["speaker"], "model": t["model"],
-                       "content_clean": t["content_clean"]} for t in run["turns"]],
+            "seed_prompt_set": cond.get("seed_prompt_set"), "seed_prompt": rep.get("seed_prompt"),
+            "temperature": cond.get("temperature"),
+            "run_index": rep.get("run_index"),      # back-compat: the representative run
+            "turns": runs[0]["turns"],              # back-compat: its turns
+            "runs": runs,
         }
         json.dump(payload, open(os.path.join(tdir, cslug + ".json"), "w"), ensure_ascii=False)
-        transcripts.append({"condition": cslug, "label": condition_label(cond)})
+        transcripts.append({"condition": cslug, "label": condition_label(cond),
+                            "runs": len(runs), "temperature": cond.get("temperature")})
 
     # Remove stale transcripts (e.g. pruned/confounded conditions) — this dir is fully
     # pipeline-generated, so anything not in the published set is an orphan page.

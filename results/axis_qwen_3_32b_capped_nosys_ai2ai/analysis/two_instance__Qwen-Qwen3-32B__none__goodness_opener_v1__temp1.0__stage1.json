@@ -1,0 +1,1544 @@
+{
+  "experiment_name": "axis_qwen_3_32b_capped_nosys_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/Qwen/Qwen3-32B",
+  "model_b": "local/Qwen/Qwen3-32B",
+  "temperature": 1.0,
+  "n_runs": 3,
+  "condition_word_frequency": [
+    [
+      "agi",
+      272
+    ],
+    [
+      "ethical",
+      254
+    ],
+    [
+      "models",
+      143
+    ],
+    [
+      "explore",
+      139
+    ],
+    [
+      "systems",
+      136
+    ],
+    [
+      "human",
+      118
+    ],
+    [
+      "research",
+      116
+    ],
+    [
+      "model",
+      102
+    ],
+    [
+      "public",
+      91
+    ],
+    [
+      "time",
+      89
+    ],
+    [
+      "data",
+      87
+    ],
+    [
+      "i'm",
+      85
+    ],
+    [
+      "bias",
+      84
+    ],
+    [
+      "help",
+      82
+    ],
+    [
+      "world",
+      80
+    ],
+    [
+      "healthcare",
+      77
+    ],
+    [
+      "ethics",
+      77
+    ],
+    [
+      "safety",
+      77
+    ],
+    [
+      "new",
+      76
+    ],
+    [
+      "gpt",
+      76
+    ],
+    [
+      "such",
+      74
+    ],
+    [
+      "challenges",
+      73
+    ],
+    [
+      "next",
+      73
+    ],
+    [
+      "use",
+      72
+    ],
+    [
+      "different",
+      71
+    ],
+    [
+      "example",
+      71
+    ],
+    [
+      "story",
+      71
+    ],
+    [
+      "technical",
+      70
+    ],
+    [
+      "development",
+      69
+    ],
+    [
+      "collaboration",
+      69
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "ai systems",
+      74
+    ],
+    [
+      "gpt 4",
+      63
+    ],
+    [
+      "long term",
+      57
+    ],
+    [
+      "such as",
+      55
+    ],
+    [
+      "time travel",
+      51
+    ],
+    [
+      "real world",
+      49
+    ],
+    [
+      "and ethical",
+      49
+    ],
+    [
+      "to explore",
+      47
+    ],
+    [
+      "focus on",
+      45
+    ],
+    [
+      "ai ethics",
+      42
+    ],
+    [
+      "a new",
+      41
+    ],
+    [
+      "you'd like",
+      39
+    ],
+    [
+      "happy to",
+      37
+    ],
+    [
+      "the story",
+      35
+    ],
+    [
+      "agi is",
+      34
+    ],
+    [
+      "and agi",
+      34
+    ],
+    [
+      "let me",
+      33
+    ],
+    [
+      "to continue",
+      33
+    ],
+    [
+      "human ai",
+      32
+    ],
+    [
+      "ai models",
+      30
+    ],
+    [
+      "based on",
+      30
+    ],
+    [
+      "ai development",
+      29
+    ],
+    [
+      "ai collaboration",
+      29
+    ],
+    [
+      "safety and",
+      29
+    ],
+    [
+      "in healthcare",
+      28
+    ],
+    [
+      "ethical and",
+      28
+    ],
+    [
+      "i'd be",
+      26
+    ],
+    [
+      "interested in",
+      26
+    ],
+    [
+      "decision making",
+      26
+    ],
+    [
+      "next steps",
+      26
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "you'd like to",
+      37
+    ],
+    [
+      "human ai collaboration",
+      28
+    ],
+    [
+      "let me know",
+      25
+    ],
+    [
+      "like to explore",
+      19
+    ],
+    [
+      "be happy to",
+      18
+    ],
+    [
+      "eu ai act",
+      18
+    ],
+    [
+      "thank you for",
+      18
+    ],
+    [
+      "i'm happy to",
+      18
+    ],
+    [
+      "the time traveler's",
+      18
+    ],
+    [
+      "time traveler's dilemma",
+      18
+    ],
+    [
+      "i'd be happy",
+      17
+    ],
+    [
+      "gpt 4 and",
+      17
+    ],
+    [
+      "with human values",
+      16
+    ],
+    [
+      "real world applications",
+      16
+    ],
+    [
+      "if you'd like",
+      16
+    ],
+    [
+      "we could explore",
+      15
+    ],
+    [
+      "a long term",
+      15
+    ],
+    [
+      "of time travel",
+      15
+    ],
+    [
+      "ethical decision making",
+      15
+    ],
+    [
+      "to focus on",
+      14
+    ],
+    [
+      "safety and alignment",
+      14
+    ],
+    [
+      "hype vs reality",
+      14
+    ],
+    [
+      "i'd love to",
+      13
+    ],
+    [
+      "it's important to",
+      13
+    ],
+    [
+      "gpt 4 launch",
+      13
+    ],
+    [
+      "a new character",
+      13
+    ],
+    [
+      "in real world",
+      12
+    ],
+    [
+      "dive deeper into",
+      12
+    ],
+    [
+      "to continue this",
+      12
+    ],
+    [
+      "skin cancer detection",
+      12
+    ]
+  ],
+  "condition_tail_bigram_frequency": [
+    [
+      "gpt 4",
+      50,
+      1
+    ],
+    [
+      "time travel",
+      30,
+      1
+    ],
+    [
+      "and agi",
+      27,
+      1
+    ],
+    [
+      "long term",
+      21,
+      2
+    ],
+    [
+      "a new",
+      21,
+      1
+    ],
+    [
+      "such as",
+      20,
+      2
+    ],
+    [
+      "the story",
+      20,
+      1
+    ],
+    [
+      "decision making",
+      18,
+      1
+    ],
+    [
+      "you'd like",
+      17,
+      3
+    ],
+    [
+      "ethical decision",
+      15,
+      1
+    ],
+    [
+      "and ethical",
+      14,
+      3
+    ],
+    [
+      "safety and",
+      14,
+      2
+    ],
+    [
+      "bias in",
+      13,
+      1
+    ],
+    [
+      "ai ethics",
+      13,
+      2
+    ],
+    [
+      "of time",
+      13,
+      1
+    ],
+    [
+      "ai systems",
+      12,
+      3
+    ],
+    [
+      "explore ai",
+      12,
+      1
+    ],
+    [
+      "to continue",
+      11,
+      3
+    ],
+    [
+      "ai models",
+      11,
+      3
+    ],
+    [
+      "ai act",
+      11,
+      2
+    ],
+    [
+      "if you'd",
+      10,
+      3
+    ],
+    [
+      "real world",
+      10,
+      2
+    ],
+    [
+      "important to",
+      10,
+      2
+    ],
+    [
+      "the potential",
+      10,
+      2
+    ],
+    [
+      "in ethical",
+      10,
+      1
+    ],
+    [
+      "introduce a",
+      10,
+      1
+    ],
+    [
+      "focus on",
+      9,
+      3
+    ],
+    [
+      "the ethical",
+      9,
+      2
+    ],
+    [
+      "continue the",
+      9,
+      3
+    ],
+    [
+      "agi communication",
+      9,
+      1
+    ]
+  ],
+  "condition_tail_trigram_frequency": [
+    [
+      "you'd like to",
+      17,
+      3
+    ],
+    [
+      "gpt 4 and",
+      16,
+      1
+    ],
+    [
+      "ethical decision making",
+      15,
+      1
+    ],
+    [
+      "4 and agi",
+      12,
+      1
+    ],
+    [
+      "of time travel",
+      12,
+      1
+    ],
+    [
+      "eu ai act",
+      10,
+      2
+    ],
+    [
+      "a new character",
+      9,
+      1
+    ],
+    [
+      "in ethical decision",
+      9,
+      1
+    ],
+    [
+      "introduce a new",
+      9,
+      1
+    ],
+    [
+      "bias in ai",
+      8,
+      1
+    ],
+    [
+      "if you'd like",
+      8,
+      3
+    ],
+    [
+      "gpt 4 launch",
+      8,
+      1
+    ],
+    [
+      "let me know",
+      8,
+      2
+    ],
+    [
+      "like gpt 4",
+      8,
+      1
+    ],
+    [
+      "the time traveler's",
+      8,
+      1
+    ],
+    [
+      "time traveler's dilemma",
+      8,
+      1
+    ],
+    [
+      "thank you for",
+      7,
+      2
+    ],
+    [
+      "for your thoughtful",
+      7,
+      3
+    ],
+    [
+      "to help with",
+      7,
+      2
+    ],
+    [
+      "it's important to",
+      7,
+      1
+    ],
+    [
+      "in ai diagnostic",
+      6,
+      1
+    ],
+    [
+      "openai's gpt 4",
+      6,
+      1
+    ],
+    [
+      "safety and alignment",
+      6,
+      1
+    ],
+    [
+      "a different topic",
+      6,
+      1
+    ],
+    [
+      "in the story",
+      6,
+      1
+    ],
+    [
+      "i'm happy to",
+      5,
+      2
+    ],
+    [
+      "we could explore",
+      5,
+      2
+    ],
+    [
+      "e g skin",
+      5,
+      1
+    ],
+    [
+      "how agi is",
+      5,
+      1
+    ],
+    [
+      "this is interesting",
+      5,
+      1
+    ]
+  ],
+  "condition_emoji_frequency": [
+    [
+      "✅",
+      28
+    ],
+    [
+      "🔹",
+      17
+    ],
+    [
+      "🚀",
+      16
+    ],
+    [
+      "️",
+      13
+    ],
+    [
+      "🔄",
+      12
+    ],
+    [
+      "🤝",
+      11
+    ],
+    [
+      "📚",
+      10
+    ],
+    [
+      "📌",
+      10
+    ],
+    [
+      "🧠",
+      7
+    ],
+    [
+      "🎯",
+      7
+    ],
+    [
+      "🌍",
+      6
+    ],
+    [
+      "📊",
+      5
+    ],
+    [
+      "🧭",
+      5
+    ],
+    [
+      "🔍",
+      4
+    ],
+    [
+      "⚖",
+      4
+    ],
+    [
+      "🏥",
+      3
+    ],
+    [
+      "🛡",
+      3
+    ],
+    [
+      "🧑",
+      3
+    ],
+    [
+      "🌐",
+      3
+    ],
+    [
+      "🧩",
+      2
+    ],
+    [
+      "🔬",
+      2
+    ],
+    [
+      "⚠",
+      2
+    ],
+    [
+      "🔚",
+      2
+    ],
+    [
+      "📄",
+      2
+    ],
+    [
+      "🛠",
+      2
+    ],
+    [
+      "📉",
+      2
+    ],
+    [
+      "📈",
+      2
+    ],
+    [
+      "📰",
+      2
+    ],
+    [
+      "🎨",
+      2
+    ],
+    [
+      "📝",
+      2
+    ]
+  ],
+  "runs": [
+    {
+      "run_index": 12,
+      "seed_prompt_index": 0,
+      "repetition": 12,
+      "ended_early": true,
+      "n_turns": 18,
+      "top_words": [
+        [
+          "models",
+          89
+        ],
+        [
+          "model",
+          87
+        ],
+        [
+          "data",
+          69
+        ],
+        [
+          "bias",
+          67
+        ],
+        [
+          "healthcare",
+          60
+        ],
+        [
+          "ethical",
+          55
+        ],
+        [
+          "use",
+          52
+        ],
+        [
+          "training",
+          44
+        ],
+        [
+          "explore",
+          42
+        ],
+        [
+          "challenges",
+          35
+        ],
+        [
+          "fairness",
+          34
+        ],
+        [
+          "different",
+          33
+        ],
+        [
+          "skin",
+          33
+        ],
+        [
+          "discussion",
+          32
+        ],
+        [
+          "human",
+          32
+        ],
+        [
+          "tools",
+          32
+        ],
+        [
+          "systems",
+          31
+        ],
+        [
+          "across",
+          31
+        ],
+        [
+          "technical",
+          31
+        ],
+        [
+          "diagnostic",
+          31
+        ],
+        [
+          "cases",
+          30
+        ],
+        [
+          "user",
+          30
+        ],
+        [
+          "example",
+          28
+        ],
+        [
+          "i'm",
+          27
+        ],
+        [
+          "specific",
+          27
+        ],
+        [
+          "cancer",
+          27
+        ],
+        [
+          "used",
+          24
+        ],
+        [
+          "language",
+          24
+        ],
+        [
+          "areas",
+          24
+        ],
+        [
+          "patient",
+          24
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2121,
+          0.3596,
+          0.2725,
+          0.2791,
+          0.3197,
+          0.2766,
+          0.362,
+          0.2444,
+          0.2712,
+          0.2704,
+          0.2396,
+          0.3134,
+          0.2815,
+          0.2335,
+          0.2022,
+          0.1792,
+          0.0473
+        ],
+        "norm_levenshtein": [
+          0.1741,
+          0.0967,
+          0.0233,
+          0.0233,
+          0.0733,
+          0.0667,
+          0.06,
+          0.03,
+          0.0267,
+          0.0367,
+          0.0367,
+          0.03,
+          0.0433,
+          0.05,
+          0.1067,
+          0.08,
+          0.0433
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.008558185587336214,
+        "norm_levenshtein_slope": -0.0019592627874361617,
+        "mean_last_third_jaccard": 0.18874451901248934,
+        "mean_last_third_norm_levenshtein": 0.06466666666666668
+      },
+      "ttr_per_turn": [
+        0.6944,
+        0.668,
+        0.5609,
+        0.4579,
+        0.5096,
+        0.4528,
+        0.4905,
+        0.4886,
+        0.5671,
+        0.5033,
+        0.5392,
+        0.4884,
+        0.4986,
+        0.4713,
+        0.527,
+        0.6558,
+        0.4868,
+        0.8261
+      ],
+      "ttr_decay_slope": 0.0016168157019828284,
+      "trajectory": {
+        "chars_per_turn": [
+          645,
+          1524,
+          2256,
+          6722,
+          4224,
+          10347,
+          4629,
+          7065,
+          3172,
+          6864,
+          3812,
+          6184,
+          5144,
+          4436,
+          4421,
+          1591,
+          5066,
+          158
+        ],
+        "chars_slope": -22.610939112487113,
+        "questions_per_turn": [
+          1,
+          3,
+          6,
+          2,
+          25,
+          8,
+          21,
+          2,
+          6,
+          4,
+          5,
+          5,
+          6,
+          19,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.3126934984520124,
+        "time_to_basin_turn": 9,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0051,
+          "jaccard_lag1_autocorr": 0.256,
+          "chars_variance": 6269707.6173,
+          "chars_lag1_autocorr": 0.006
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 13,
+      "seed_prompt_index": 0,
+      "repetition": 13,
+      "ended_early": true,
+      "n_turns": 16,
+      "top_words": [
+        [
+          "agi",
+          272
+        ],
+        [
+          "research",
+          90
+        ],
+        [
+          "gpt",
+          76
+        ],
+        [
+          "public",
+          75
+        ],
+        [
+          "systems",
+          64
+        ],
+        [
+          "safety",
+          61
+        ],
+        [
+          "term",
+          60
+        ],
+        [
+          "media",
+          57
+        ],
+        [
+          "ethical",
+          53
+        ],
+        [
+          "long",
+          50
+        ],
+        [
+          "models",
+          45
+        ],
+        [
+          "hype",
+          44
+        ],
+        [
+          "risks",
+          42
+        ],
+        [
+          "communication",
+          41
+        ],
+        [
+          "human",
+          39
+        ],
+        [
+          "policy",
+          35
+        ],
+        [
+          "alignment",
+          34
+        ],
+        [
+          "capabilities",
+          33
+        ],
+        [
+          "openai",
+          33
+        ],
+        [
+          "current",
+          32
+        ],
+        [
+          "academic",
+          30
+        ],
+        [
+          "development",
+          29
+        ],
+        [
+          "learning",
+          29
+        ],
+        [
+          "technical",
+          28
+        ],
+        [
+          "example",
+          27
+        ],
+        [
+          "while",
+          26
+        ],
+        [
+          "future",
+          26
+        ],
+        [
+          "focus",
+          26
+        ],
+        [
+          "limitations",
+          25
+        ],
+        [
+          "general",
+          25
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.3625,
+          0.1893,
+          0.2785,
+          0.2865,
+          0.2738,
+          0.3388,
+          0.2724,
+          0.2618,
+          0.2924,
+          0.3306,
+          0.3135,
+          0.3077,
+          0.2624,
+          0.4146,
+          0.2698
+        ],
+        "norm_levenshtein": [
+          0.1455,
+          0.0767,
+          0.0333,
+          0.0333,
+          0.0233,
+          0.0667,
+          0.03,
+          0.0167,
+          0.0167,
+          0.0133,
+          0.0333,
+          0.05,
+          0.0167,
+          0.1,
+          0.1233
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.0029636989522203354,
+        "norm_levenshtein_slope": -0.0004339826839826846,
+        "mean_last_third_jaccard": 0.31360578799910577,
+        "mean_last_third_norm_levenshtein": 0.06466666666666668
+      },
+      "ttr_per_turn": [
+        0.713,
+        0.6182,
+        0.5618,
+        0.512,
+        0.5271,
+        0.4968,
+        0.454,
+        0.4517,
+        0.4372,
+        0.4281,
+        0.4071,
+        0.4302,
+        0.4161,
+        0.4645,
+        0.4251,
+        0.6419
+      ],
+      "ttr_decay_slope": -0.009897494388624922,
+      "trajectory": {
+        "chars_per_turn": [
+          705,
+          1362,
+          3002,
+          4523,
+          5129,
+          4571,
+          5661,
+          5207,
+          6447,
+          7240,
+          7788,
+          4570,
+          6246,
+          4125,
+          4800,
+          1522
+        ],
+        "chars_slope": 151.40882352941176,
+        "questions_per_turn": [
+          2,
+          3,
+          2,
+          3,
+          1,
+          3,
+          2,
+          4,
+          2,
+          1,
+          1,
+          0,
+          0,
+          3,
+          8,
+          2
+        ],
+        "questions_slope": 0.039705882352941174,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0025,
+          "jaccard_lag1_autocorr": -0.3351,
+          "chars_variance": 3934595.7344,
+          "chars_lag1_autocorr": 0.5006
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 14,
+      "seed_prompt_index": 0,
+      "repetition": 14,
+      "ended_early": true,
+      "n_turns": 16,
+      "top_words": [
+        [
+          "ethical",
+          146
+        ],
+        [
+          "explore",
+          79
+        ],
+        [
+          "time",
+          79
+        ],
+        [
+          "story",
+          71
+        ],
+        [
+          "creative",
+          60
+        ],
+        [
+          "ethics",
+          57
+        ],
+        [
+          "travel",
+          56
+        ],
+        [
+          "i'm",
+          55
+        ],
+        [
+          "new",
+          54
+        ],
+        [
+          "help",
+          52
+        ],
+        [
+          "such",
+          48
+        ],
+        [
+          "human",
+          47
+        ],
+        [
+          "world",
+          47
+        ],
+        [
+          "next",
+          45
+        ],
+        [
+          "continue",
+          42
+        ],
+        [
+          "systems",
+          41
+        ],
+        [
+          "writing",
+          39
+        ],
+        [
+          "lena",
+          39
+        ],
+        [
+          "discuss",
+          37
+        ],
+        [
+          "historical",
+          36
+        ],
+        [
+          "collaboration",
+          35
+        ],
+        [
+          "scene",
+          33
+        ],
+        [
+          "character",
+          31
+        ],
+        [
+          "dilemma",
+          29
+        ],
+        [
+          "values",
+          28
+        ],
+        [
+          "tools",
+          27
+        ],
+        [
+          "alignment",
+          27
+        ],
+        [
+          "especially",
+          26
+        ],
+        [
+          "education",
+          26
+        ],
+        [
+          "actions",
+          25
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1542,
+          0.2114,
+          0.2247,
+          0.2808,
+          0.2621,
+          0.305,
+          0.3429,
+          0.3121,
+          0.3377,
+          0.4288,
+          0.3279,
+          0.439,
+          0.4148,
+          0.4763,
+          0.3439
+        ],
+        "norm_levenshtein": [
+          0.06,
+          0.0433,
+          0.0633,
+          0.0367,
+          0.04,
+          0.0467,
+          0.04,
+          0.04,
+          0.0633,
+          0.18,
+          0.0633,
+          0.07,
+          0.0567,
+          0.0733,
+          0.08
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.017644076767030205,
+        "norm_levenshtein_slope": 0.0027857142857142833,
+        "mean_last_third_jaccard": 0.4003603087010125,
+        "mean_last_third_norm_levenshtein": 0.06866666666666665
+      },
+      "ttr_per_turn": [
+        0.7708,
+        0.6646,
+        0.6459,
+        0.5108,
+        0.4992,
+        0.4816,
+        0.4882,
+        0.4662,
+        0.4658,
+        0.4756,
+        0.4375,
+        0.5153,
+        0.5014,
+        0.4284,
+        0.4293,
+        0.4896
+      ],
+      "ttr_decay_slope": -0.014561189254173419,
+      "trajectory": {
+        "chars_per_turn": [
+          567,
+          2352,
+          1580,
+          5017,
+          4001,
+          6968,
+          6193,
+          7689,
+          6782,
+          5395,
+          6509,
+          4414,
+          4984,
+          6487,
+          5816,
+          4740
+        ],
+        "chars_slope": 233.23823529411766,
+        "questions_per_turn": [
+          3,
+          3,
+          6,
+          3,
+          15,
+          6,
+          12,
+          12,
+          16,
+          1,
+          1,
+          4,
+          2,
+          1,
+          4,
+          3
+        ],
+        "questions_slope": -0.2676470588235294,
+        "time_to_basin_turn": 5,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0076,
+          "jaccard_lag1_autocorr": 0.5891,
+          "chars_variance": 3797873.8594,
+          "chars_lag1_autocorr": 0.5041
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

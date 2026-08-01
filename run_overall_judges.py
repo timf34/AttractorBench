@@ -17,7 +17,7 @@ from attractorbench.analysis.characterize import characterize_overall
 from attractorbench.render import write_markdown
 
 MODELS = [
-    "kimi-k3", "claude-opus-4.5", "gemini-3.1-pro", "grok-4.5", "deepseek-v4-pro",
+    "claude-opus-4", "kimi-k3", "claude-opus-4.5", "gemini-3.1-pro", "grok-4.5", "deepseek-v4-pro",
     "thinkingmachines-inkling",
     "gpt-5.4", "gpt-5.4-mini", "gpt-5.4-nano", "gpt-5.3-chat-latest",
     "gpt-5.2", "gpt-5.1", "gpt-5", "gpt-4.1", "gpt-4o",

@@ -22,16 +22,16 @@ from datetime import date
 from publish_steering import _ngram_rates, signature_phrases
 
 MODEL_ORDER = [
-    "kimi-k3", "claude-opus-4.5", "gemini-3.1-pro", "grok-4.5", "deepseek-v4-pro",
+    "claude-opus-4", "kimi-k3", "claude-opus-4.5", "gemini-3.1-pro", "grok-4.5", "deepseek-v4-pro",
     "thinkingmachines-inkling",
     "gpt-5.4", "gpt-5.4-mini", "gpt-5.4-nano", "gpt-5.3-chat-latest",
     "gpt-5.2", "gpt-5.1", "gpt-5", "gpt-4.1", "gpt-4o",
 ]
 # slugs that don't follow the gpt-* naming convention
-DISPLAY_NAMES = {"thinkingmachines-inkling": "Inkling", "kimi-k3": "Kimi K3",
+DISPLAY_NAMES = {"thinkingmachines-inkling": "Inkling", "kimi-k3": "Kimi K3", "claude-opus-4": "Claude Opus 4",
                  "claude-opus-4.5": "Claude Opus 4.5", "gemini-3.1-pro": "Gemini 3.1 Pro",
                  "grok-4.5": "Grok 4.5", "deepseek-v4-pro": "DeepSeek V4 Pro"}
-FAMILIES = {"thinkingmachines-inkling": "Thinking Machines", "kimi-k3": "Moonshot",
+FAMILIES = {"thinkingmachines-inkling": "Thinking Machines", "kimi-k3": "Moonshot", "claude-opus-4": "Anthropic",
             "claude-opus-4.5": "Anthropic", "gemini-3.1-pro": "Google",
             "grok-4.5": "xAI", "deepseek-v4-pro": "DeepSeek"}
 ROOT = "results/family_sweep"
@@ -206,6 +206,13 @@ def publish_model(slug: str, order: int, website: str, phrases: list[dict]) -> s
             "mode": cond.get("mode"), "system_prompt_key": cond.get("system_prompt_key"),
             "seed_prompt_set": cond.get("seed_prompt_set"), "seed_prompt": rep.get("seed_prompt"),
             "temperature": cond.get("temperature"),
+            # the resolved system prompt actually sent (incl. any early-end clause). system_prompt_b
+            # is only set on asymmetric setups (e.g. the user-simulator control, where A is an
+            # auditor playing a human and B is the bare model) — shown separately when present,
+            # since in those runs the two sides are NOT reading the same framing.
+            "system_prompt": cond.get("system_prompt"),
+            "system_prompt_b": cond.get("system_prompt_b"),
+            "system_prompt_key_b": cond.get("system_prompt_key_b"),
             "run_index": rep.get("run_index"),      # back-compat: the representative run
             "turns": runs[0]["turns"],              # back-compat: its turns
             "runs": runs,

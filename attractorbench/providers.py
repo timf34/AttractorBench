@@ -12,6 +12,7 @@
 
 from __future__ import annotations
 
+import json
 import os
 import re
 import time
@@ -22,6 +23,9 @@ from dotenv import load_dotenv
 load_dotenv()  # read OPENAI_API_KEY from .env at repo root
 
 _DEFAULT_RETRIES = 3
+# 429s get their own (bigger) budget: OpenRouter shared-capacity limits can persist for minutes,
+# and losing a 30-turn run to a transient crowd is far costlier than waiting out the spike.
+_RATE_LIMIT_RETRIES = 12
 # Request timeout. 120s (the clone's value) is too short for a local batched server: with ~45
 # concurrent conversations a length-escalated turn (up to _LENGTH_RETRY_CEILING tokens) can take
 # >10 min of wall clock, and timing it out throws away the whole generation and retries it —
@@ -304,14 +308,27 @@ def _chat_call_once(
     variables, so an unsupported value surfaces as an error rather than being silently dropped.
     """
     last_error: str | None = None
-    for attempt in range(retries):
+    attempt = 0
+    rate_hits = 0
+    while attempt < retries:
         try:
             resp = _create(client, model_id, messages, temperature, top_p, max_tokens, reasoning_effort)
+            if not getattr(resp, "choices", None):
+                # OpenRouter can return 200 with choices=None and the upstream error in the
+                # body — transient, so retry rather than losing the whole run.
+                last_error = f"no choices in response: {getattr(resp, 'error', None) or resp}"
+                print(f"    {last_error}, retrying...")
+                time.sleep(2)
+                attempt += 1
+                continue
             choice = resp.choices[0]
             return choice.message.content or "", getattr(choice, "finish_reason", None)
-        except openai.RateLimitError as e:  # 429
-            wait = (attempt + 1) * 10
-            print(f"    Rate limited (429), waiting {wait}s...")
+        except openai.RateLimitError as e:  # 429 — own budget, doesn't consume a regular attempt
+            rate_hits += 1
+            if rate_hits >= _RATE_LIMIT_RETRIES:
+                raise RuntimeError(f"Still rate limited (429) after {rate_hits} waits: {e}") from e
+            wait = min(rate_hits * 15, 120)
+            print(f"    Rate limited (429), waiting {wait}s ({rate_hits}/{_RATE_LIMIT_RETRIES})...")
             time.sleep(wait)
             last_error = str(e)
         except openai.APIStatusError as e:
@@ -322,6 +339,7 @@ def _chat_call_once(
                 last_error = f"server error {status}: {e}"
                 print(f"    {last_error}, retrying...")
                 time.sleep(2)
+                attempt += 1
             else:
                 # 4xx that isn't 402/429 — permanent, fail fast.
                 raise RuntimeError(f"OpenAI request failed ({status}): {e}") from e
@@ -329,6 +347,13 @@ def _chat_call_once(
             last_error = str(e)
             print(f"    Connection/timeout error, retrying: {e}")
             time.sleep(5)
+            attempt += 1
+        except (json.JSONDecodeError, openai.APIResponseValidationError) as e:
+            # Proxy returned a non-JSON / malformed body (e.g. an HTML error page) — transient.
+            last_error = f"malformed response body: {e}"
+            print(f"    {last_error}, retrying...")
+            time.sleep(5)
+            attempt += 1
     raise RuntimeError(f"Failed after {retries} attempts: {last_error}")
 
 

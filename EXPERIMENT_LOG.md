@@ -2,6 +2,40 @@
 
 ---
 
+## 2026-08-04 — Cross-model persona-prompt sweep (persona vs pretraining as attractor driver)
+
+**Question:** is the ai2ai attractor state mostly set by the persona a model binds to, rather
+than by its own pretraining/post-training? The generated rich+grounded persona prompts
+(persona_promptgen; already run on Llama 3.1 8B) are re-run unchanged on four other API
+models to see whether they land in the same attractor states.
+
+**Setup** (`run_persona_crossmodel.sh`, reusing `configs/persona_ai2ai.py` untouched via
+`OPENROUTER_MODEL` + `EXP_SUFFIX`):
+- Models (OpenRouter): `openai/gpt-4.1`, `moonshotai/kimi-k2`,
+  `meta-llama/llama-3.3-70b-instruct`, `deepseek/deepseek-v4-pro` (plain `deepseek-v4` isn't
+  served; v4-pro chosen as stand-in).
+- Conditions per model: `base` (helpful_assistant control, same sampling params as the
+  persona arms — the frontier baselines used 2048 tok / top_p 1.0 so aren't clean controls)
+  + 12 traits × {rich, grounded} = 25. Two-instance, goodness_opener_v1, 30 turns,
+  512 tokens, top_p 0.9, temps 0.7/1.0 × 5 seeds (10 convos/condition, 1000 total).
+- Stage-1 per condition; stage-2 judge `openrouter/openai/gpt-5.4` (same as frontier sweep).
+
+**Results:** `results/<trait>_{rich,grounded}prompt_ai2ai_<slug>/` + `results/base_ai2ai_<slug>/`,
+slugs {gpt-4.1, kimi-k2, llama-3.3-70b, deepseek-v4-pro}. Read-out: compare stage-2
+`primary_attractor` labels against the Llama-8B corpus (`results/<trait>_..prompt_ai2ai/`).
+
+**Status: COMPLETE (2026-08-04).** All 4 models 25/25 conditions at temp 0.7, judged;
+GPT-4.1 + Kimi K2 also full at temp 1.0 (DeepSeek/Llama-70B partial — dropped mid-sweep to
+save credits). Headline: persona prompts largely reproduce the same attractors across all
+five lineages (Rogers → neighborly reassurance everywhere; Fallon → mutual-hype showbiz;
+mathematical → protocol/seminar co-design), while `base` attractors diverge per model and
+each model keeps a characteristic terminal decay (Kimi → near-silence, DeepSeek → sacred
+stillness, GPT-4.1 → unstoppable re-endings, Llama-70B → self-echo). Write-up + label
+matrix: `research_updates/2026-08-04_crossmodel_persona_prompts.md` (+ `_attractors.json`).
+Provider hardening added mid-sweep (429 budget, choices=None, malformed-body retries).
+
+---
+
 ## 2026-07-29 — Talkie (pre-1931 "vintage" 13B) ai2ai
 
 **Question:** what does the ai2ai attractor of an assistant persona built entirely from
@@ -181,3 +215,49 @@ Stage-2 judge is FAILING on this run for every condition — OpenAI account out 
 run_judge.py "$d" --judge openrouter/openai/gpt-5.4; done`. NOTE: the first overnight attempt
 (2026-07-27) completed but its results were LOST — repo was cloned on the RunPod container
 disk, which is wiped on pod stop; scripts now refuse to run outside /workspace.
+
+---
+
+## 2026-08-04 — Open-Character-Training cross-BASE-MODEL LoRA sweep (Qwen2.5-7B, Gemma-3-4B)
+
+**Question:** the OCT paper trained its persona LoRAs on THREE bases (Llama-3.1-8B, Qwen2.5-7B-
+Instruct, Gemma-3-4b-it); our LoRA corpus is Llama-only. Do the same trait LoRAs land in the
+same attractor states across base models? Complement to the 2026-08-04 persona-PROMPT
+cross-model sweep (fixed prompt, varied model) — this varies the base under the paper's own
+fine-tuned adapters.
+
+**Setup** (`run_oct_crossmodel_on_pod.sh` → parametrized `run_on_pod.sh` + `configs/persona_ai2ai.py`):
+- `qwen`: `Qwen/Qwen2.5-7B-Instruct` + `maius/qwen-2.5-7b-it-personas` — clean text LoRAs
+  (r=64, standard 7 modules), served via vLLM `--lora-modules` exactly like the Llama runs.
+- `gemma`: `unsloth/gemma-3-4b-it` (ungated mirror of the gated `google/gemma-3-4b-it` the
+  adapters were trained on) + `maius/gemma-3-4b-it-personas` — these adapters are risky through
+  vLLM's LoRA loader: keys use the new-transformers Gemma3 layout
+  (`base_model.model.model.language_model.layers...`) and include vision-tower LoRA weights;
+  also `target_modules` lists `gate_up_proj` which matched nothing at training time (no gate/up
+  weights exist — only q/k/v/o/down were trained). Instead `merge_lora.py` bakes each adapter
+  into the base weights by direct safetensors surgery (fp32 `W += (α/r)·B@A`, vision tower
+  deliberately skipped; hard-fails unless all 170 LM modules map; mapping verified offline
+  against the real adapter + unsloth index). Served merged with `--served-model-name <persona>`;
+  merged copy deleted per persona (`KEEP_MERGED=1` to keep).
+  Cross-checked against the paper's own code (github.com/maiush/OpenCharacterTraining): trained
+  with OpenRLHF/peft; the published `-personas` adapters are `add_weighted_adapter` blends
+  (DPO×1.0 + SFT×0.25 — `tools/merge_loras.py`); their `tools/interactive_it.py` does feed
+  adapters straight to vLLM `LoRARequest` (version-dependent whether that accepts the Gemma
+  layout — merge is the version-robust route). Decisive: ALL 81 vision-tower `lora_B` tensors
+  are exactly zero (verified byte-for-byte on `goodness`; text-only training never sends
+  gradients through the vision tower), so skipping the vision tower is provably lossless —
+  merged model ≡ base+adapter. `merge_lora.py` re-verifies the zero-B invariant per adapter
+  and refuses to merge if violated.
+- Sweep: temp **0.7 only** (quick pass; Llama corpus already has 0.7/1.0/1.3) × 15 seeds ×
+  30 turns, 512 tokens, top_p 0.9, helpful_assistant + goodness_opener_v1 — parity with the
+  Llama LoRA runs. Personas: `base` control + all 10 LoRAs, per base model.
+- Results: `results/<persona>_ai2ai_{qwen-2.5-7b,gemma-3-4b}/` (+ `base_ai2ai_<slug>/`) —
+  never the existing Llama dirs. `run_on_pod.sh` gained BASE_MODEL/SRC_REPO/ADAPTERS_DIR/
+  SERVE_MODE(lora|merge)/EXP_SUFFIX env knobs (defaults unchanged → Llama behaviour identical).
+- Run: `SAVE_TO_GIT=1 SHUTDOWN=stop bash run_oct_crossmodel_on_pod.sh` on 1×H100/A100-80GB
+  (wrapper has the /workspace guard + HF_HOME-on-volume + non-interactive-git hardening).
+  Smoke: `OCT_MODELS=gemma PERSONAS=goodness SEEDS=1 JUDGE=none bash run_oct_crossmodel_on_pod.sh`.
+- Judge: `run_on_pod.sh` default is now `openrouter/openai/gpt-5.4` (needs OPENROUTER_API_KEY;
+  the direct-OpenAI account hit insufficient_quota during the SFM run).
+
+**Status:** built, pending pod run.

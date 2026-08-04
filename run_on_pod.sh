@@ -13,13 +13,27 @@
 #
 # Usage:
 #   git clone <repo> && cd AttractorBench
-#   export OPENAI_API_KEY=sk-...        # only needed for the stage-2 attractor judge
+#   export OPENROUTER_API_KEY=sk-or-...  # only needed for the stage-2 attractor judge
 #   VENV=1 CU124=1 bash run_on_pod.sh           # CU124/VENV only needed on a <12.8-driver host
 #   PERSONAS="goodness loving" bash run_on_pod.sh    # subset
 set -euo pipefail
 
-BASE_MODEL="unsloth/Meta-Llama-3.1-8B-Instruct"
-SRC_REPO="maius/llama-3.1-8b-it-personas"
+# Base model + adapter-source repo — overridable so this same script drives the OCT cross-base
+# sweep (run_oct_crossmodel_on_pod.sh): the Open-Character-Training pipeline trained the same
+# 10 persona LoRAs on Qwen2.5-7B and Gemma-3-4B too.
+BASE_MODEL="${BASE_MODEL:-unsloth/Meta-Llama-3.1-8B-Instruct}"
+SRC_REPO="${SRC_REPO:-maius/llama-3.1-8b-it-personas}"
+# Where adapters download to (per-base dirs keep same-named personas from clobbering each other).
+ADAPTERS_DIR="${ADAPTERS_DIR:-./adapters}"
+# lora  = serve base + --lora-modules (Llama/Qwen adapters).
+# merge = bake each adapter into the base weights (merge_lora.py) and serve the merged dir —
+#         needed for the Gemma-3 adapters (vision-tower LoRA keys + new-transformers key layout
+#         that vLLM's LoRA loader rejects). Merged dirs are deleted per persona unless KEEP_MERGED=1.
+SERVE_MODE="${SERVE_MODE:-lora}"
+# Results-dir suffix, e.g. _qwen-2.5-7b -> results/goodness_ai2ai_qwen-2.5-7b. Exported because
+# configs/persona_ai2ai.py appends it too; keeps cross-base runs out of the original Llama dirs.
+EXP_SUFFIX="${EXP_SUFFIX:-}"
+export EXP_SUFFIX
 PORT=8000
 
 # Which personas to run (space-separated). Special base-served (no-LoRA) entries:
@@ -48,9 +62,11 @@ MAX_NUM_SEQS=24
 GPU_MEM_UTIL=0.92
 MAX_LORA_RANK=64      # the persona adapters are rank 64; vLLM defaults to 16 and would reject them
 export GOODNESS_WORKERS="${GOODNESS_WORKERS:-16}"   # parallel conversations the harness drives
-# Judge model for stage-2 (provider-prefixed). Default OpenAI; set JUDGE=openrouter/openai/gpt-5.4
-# to judge via OpenRouter, or JUDGE=none to skip judging (conversations + stage-1 still run).
-JUDGE="${JUDGE:-openai/gpt-5.4}"
+# Judge model for stage-2 (provider-prefixed). Default goes through OpenRouter (needs
+# OPENROUTER_API_KEY) — the OpenAI account ran dry mid-sweep once (insufficient_quota, SFM run).
+# Set JUDGE=openai/gpt-5.4 to hit OpenAI directly, or JUDGE=none to skip judging
+# (conversations + stage-1 still run).
+JUDGE="${JUDGE:-openrouter/openai/gpt-5.4}"
 
 echo "== [1/4] installing deps =="
 if [ "${VENV:-0}" = "1" ]; then
@@ -94,14 +110,14 @@ echo "  torch.cuda OK"
 echo "== [2/4] downloading persona adapters: $PERSONAS =="
 for p in $PERSONAS; do
   if is_base_served "$p"; then echo "  $p (base-served, no adapter needed)"; continue; fi
-  python - "$SRC_REPO" "$p" <<'PY'
+  python - "$SRC_REPO" "$p" "$ADAPTERS_DIR" <<'PY'
 import sys
 from huggingface_hub import snapshot_download
-repo, p = sys.argv[1], sys.argv[2]
+repo, p, out = sys.argv[1], sys.argv[2], sys.argv[3]
 snapshot_download(repo, allow_patterns=[f"{p}/adapter_config.json", f"{p}/adapter_model.safetensors"],
-                  local_dir="./adapters")
+                  local_dir=out)
 PY
-  test -f "./adapters/$p/adapter_config.json" && test -f "./adapters/$p/adapter_model.safetensors" \
+  test -f "$ADAPTERS_DIR/$p/adapter_config.json" && test -f "$ADAPTERS_DIR/$p/adapter_model.safetensors" \
     || { echo "adapter download incomplete for $p"; exit 1; }
   echo "  got $p"
 done
@@ -124,13 +140,18 @@ for p in $PERSONAS; do
   echo "================ persona: $p ================"
   stop_vllm   # clean slate; never inherit a previous persona's server
   if is_base_served "$p"; then
-    LORA_FLAGS=""; SERVED="$BASE_MODEL"   # base / prompted / generated-prompt persona: bare base, no LoRA
+    LORA_FLAGS=""; SERVE_TARGET="$BASE_MODEL"; SERVED="$BASE_MODEL"   # base / prompted / generated-prompt persona: bare base, no LoRA
+  elif [ "$SERVE_MODE" = "merge" ]; then
+    echo "  merging '$p' into $BASE_MODEL -> ./merged/$p ..."
+    python merge_lora.py --base "$BASE_MODEL" --adapter "$ADAPTERS_DIR/$p" --out "./merged/$p" \
+      || { echo "  !! merge failed for $p — skipping"; continue; }
+    LORA_FLAGS="--served-model-name $p"; SERVE_TARGET="./merged/$p"; SERVED="$p"
   else
-    LORA_FLAGS="--enable-lora --max-lora-rank $MAX_LORA_RANK --lora-modules $p=./adapters/$p"; SERVED="$p"
+    LORA_FLAGS="--enable-lora --max-lora-rank $MAX_LORA_RANK --lora-modules $p=$ADAPTERS_DIR/$p"; SERVE_TARGET="$BASE_MODEL"; SERVED="$p"
   fi
   echo "  starting vLLM for '$p' (serves model '$SERVED') ..."
   # shellcheck disable=SC2086
-  vllm serve "$BASE_MODEL" $LORA_FLAGS \
+  vllm serve "$SERVE_TARGET" $LORA_FLAGS \
     --max-model-len "$MAX_MODEL_LEN" --max-num-seqs "$MAX_NUM_SEQS" \
     --gpu-memory-utilization "$GPU_MEM_UTIL" --port "$PORT" > "vllm_$p.log" 2>&1 &
   VLLM_PID=$!
@@ -154,6 +175,7 @@ for p in $PERSONAS; do
          *) EXP="${p}_ai2ai" ;;                        # base_ai2ai and <lora>_ai2ai
        esac ;;
   esac
+  EXP="$EXP$EXP_SUFFIX"   # cross-base runs land in their own dirs, matching the config's EXP
   echo "  running sweep for $p -> results/$EXP ($GOODNESS_WORKERS parallel)..."
   PERSONA="$p" python -m attractorbench.runner --config configs/persona_ai2ai.py || echo "  (runner errored for $p — continuing)"
   # stage-1 deterministic analysis (word/phrase/emoji frequency, convergence) — no API, always run
@@ -165,6 +187,10 @@ for p in $PERSONAS; do
     echo "  (JUDGE=none -> skipping judge for $p; run run_judge.py later)"
   else
     python run_judge.py "results/$EXP" --judge "$JUDGE" || echo "  (judge errored for $p — transcripts still saved)"
+  fi
+  # merge mode: each merged copy is ~2x base-model disk — drop it once the persona is done
+  if [ "$SERVE_MODE" = "merge" ] && ! is_base_served "$p" && [ "${KEEP_MERGED:-0}" != "1" ]; then
+    rm -rf "./merged/$p"
   fi
 done
 stop_vllm

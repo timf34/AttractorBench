@@ -101,7 +101,11 @@ CONFIG = RunConfig(
     temperature_sweep=TEMPS,
     top_p=0.9,
     reasoning_effort=None,
-    max_new_tokens=512,
+    # Starting reply budget. The provider layer regenerates at 3x (up to 24576) whenever a reply
+    # truncates, so this doesn't cap final replies — it only sets how much work a truncation
+    # wastes. Verbose models (Qwen2.5) blow through 512 constantly: set MAX_NEW_TOKENS=1536 for
+    # them to skip the wasted first attempt. Default stays 512 (parity with the existing corpus).
+    max_new_tokens=int(os.environ.get("MAX_NEW_TOKENS", "512")),
     max_workers=WORKERS,
     output_dir="results",
 )

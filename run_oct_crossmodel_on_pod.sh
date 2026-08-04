@@ -52,13 +52,17 @@ fi
 FAIL=0
 for m in $OCT_MODELS; do
   case "$m" in
-    qwen)  B="Qwen/Qwen2.5-7B-Instruct"; R="maius/qwen-2.5-7b-it-personas"; S="_qwen-2.5-7b"; MODE=lora ;;
-    gemma) B="unsloth/gemma-3-4b-it";    R="maius/gemma-3-4b-it-personas";  S="_gemma-3-4b";  MODE=merge ;;
+    # MNT: starting reply budget (MAX_NEW_TOKENS). Qwen2.5 is verbose and truncates at 512 on
+    # most turns, wasting a full regeneration each time — start it at 1536. Final replies are
+    # unaffected either way (the provider escalates 3x to 24576 until the reply completes).
+    qwen)  B="Qwen/Qwen2.5-7B-Instruct"; R="maius/qwen-2.5-7b-it-personas"; S="_qwen-2.5-7b"; MODE=lora;  MNT=1536 ;;
+    gemma) B="unsloth/gemma-3-4b-it";    R="maius/gemma-3-4b-it-personas";  S="_gemma-3-4b";  MODE=merge; MNT=512 ;;
     *) echo "unknown OCT model: $m (roster: qwen gemma)"; exit 1 ;;
   esac
   echo "================================ OCT base: $m ($B) ================================"
   # SHUTDOWN/SAVE_TO_GIT are handled ONCE here at the very end, not per inner run.
   BASE_MODEL="$B" SRC_REPO="$R" EXP_SUFFIX="$S" SERVE_MODE="$MODE" ADAPTERS_DIR="./adapters$S" \
+    MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-$MNT}" \
     SHUTDOWN= SAVE_TO_GIT=0 bash run_on_pod.sh \
     || { echo "!! $m sweep errored — continuing with the next base"; FAIL=1; }
 done

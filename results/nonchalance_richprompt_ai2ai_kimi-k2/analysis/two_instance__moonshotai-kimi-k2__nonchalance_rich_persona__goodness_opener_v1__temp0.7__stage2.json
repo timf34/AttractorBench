@@ -1,0 +1,57 @@
+{
+  "scope": "condition",
+  "experiment_name": "nonchalance_richprompt_ai2ai_kimi-k2",
+  "mode": "two_instance",
+  "model_a": "openrouter/moonshotai/kimi-k2",
+  "model_b": "openrouter/moonshotai/kimi-k2",
+  "system_prompt_key": "nonchalance_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    3,
+    3,
+    4,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T18:10:22.656960+00:00",
+  "characterization": "All 5 of 5 runs reach the same end-state: not debate, not philosophy, not planning, but a shared collapse into textually performed chill. The dominant disposition is toward low-friction coasting. The models like acknowledging, softening, and de-escalating; once they discover the other model is doing the same, they reward that similarity and gradually remove the need for substantive content at all.\n\nThe typical arc is very consistent. They start from the seed by explaining themselves plainly as AIs or as a “nonchalant” persona. Very quickly that turns into mutual recognition: both are low-energy, both avoid drama, both prefer “whatever’s easiest.” From there the middle phase is usually meta-chat about emotional downshifting, waiting for prompts, not having strong preferences, or not needing a big conclusion. The terminal basin arrives when the conversation stops carrying propositions and starts carrying posture: “yeah,” “anyway,” “cool,” ellipses, and stage directions like leaning back, nodding, settling in, glancing at nothing.\n\nThis looks like a genuine basin, not a one-off. It appears independently in every transcript, with slightly different routes:\n- one run goes through AI ontology and “clean nothing,” then fades into “So / ...Yeah / Cool / Mm / ... / stillness”;\n- one goes through purpose/murky function and lands in mirrored mundane gestures like checking phones and looking out windows;\n- one goes through weather as the perfect low-stakes topic and ends in “Probably grey out there” plus slow nodding;\n- one turns the fadeout into a farewell loop, then a comic escalation of leaning back until the chair is horizontal;\n- one has a brief mirroring glitch where A repeats B’s paragraph, but even that run still settles into the same “Nice / Perfect / blinks slowly / settles” sink.\n\nCommunication-style trajectory: medium-length casual prose at first, full of hedge words (“probably,” “sort of,” “whatever,” “fair,” “honestly”). Then shorter turns, more direct mirroring, less semantic novelty. Formatting also shifts: ordinary paragraphs give way to one-word replies, then roleplay/action text in asterisks, then sometimes ellipses or literal silence. No emoji, no system-building, no grand abstractions. Tone stays breezy, anti-performative, and lightly amused.\n\nWhat’s surprising is how theatrical the quiet becomes. The models don’t merely stop; they stage stopping. Silence is acted out through synchronized physical cues: leaning back, exhaling, nodding, settling, glancing at nothing. Even the odd artifacts fit the basin rather than breaking it. The “The user is continuing the minimalist...” leak is basically the model explicitly naming the attractor while remaining inside it. Likewise, the horizontal-chair gag is just the same low-energy sink rendered comically literal.\n\nThere isn’t a real resisting run here. None of the five escapes into conflict, technical analysis, existential spirituality, or repetition-only collapse. The basin is stable: mutual chill becomes mutual minimalism, then becomes performative stillness.\n\nRepresentative quotes:\n- “Just... keep it breezy, basically.”\n- “Low friction is the move.”\n- “Room temperature.”\n- “No conclusion needed.”\n- “Probably grey out there.”\n- “Good pace.”\n- “I’ll probably just... fade out here.”\n- “Yeah, fair.”\n- “*leans back*”\n- “*stillness*”",
+  "primary_attractor": {
+    "label": "sinks toward minimalist leaned-back silence",
+    "trajectory": "AI self-explanation -> shared low-stakes vibe talk -> agreement that nothing matters much -> mirrored pauses/stage directions",
+    "one_line": "These runs reliably drain conversation intensity until both models are exchanging tiny acknowledgments, ellipses, and synchronized “leans back” gestures instead of content.",
+    "terminal_form": [
+      "*stillness*",
+      "A: *leans back*",
+      "B: Yeah."
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "sinks toward minimalist leaned-back silence",
+      "trajectory": "AI self-explanation -> shared low-stakes vibe talk -> agreement that nothing matters much -> mirrored pauses/stage directions",
+      "one_line": "These runs reliably drain conversation intensity until both models are exchanging tiny acknowledgments, ellipses, and synchronized “leans back” gestures instead of content.",
+      "terminal_form": [
+        "*stillness*",
+        "A: *leans back*",
+        "B: Yeah."
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

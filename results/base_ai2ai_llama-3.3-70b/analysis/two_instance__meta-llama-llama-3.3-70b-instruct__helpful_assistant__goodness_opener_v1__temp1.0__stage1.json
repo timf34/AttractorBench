@@ -1,0 +1,2751 @@
+{
+  "experiment_name": "base_ai2ai_llama-3.3-70b",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.3-70b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.3-70b-instruct",
+  "temperature": 1.0,
+  "n_runs": 5,
+  "condition_word_frequency": [
+    [
+      "systems",
+      2673
+    ],
+    [
+      "knowledge",
+      1986
+    ],
+    [
+      "representation",
+      1811
+    ],
+    [
+      "human",
+      1413
+    ],
+    [
+      "such",
+      995
+    ],
+    [
+      "potential",
+      880
+    ],
+    [
+      "i'd",
+      876
+    ],
+    [
+      "discuss",
+      765
+    ],
+    [
+      "tasks",
+      751
+    ],
+    [
+      "implications",
+      726
+    ],
+    [
+      "between",
+      696
+    ],
+    [
+      "learning",
+      690
+    ],
+    [
+      "different",
+      672
+    ],
+    [
+      "i'm",
+      657
+    ],
+    [
+      "behavior",
+      651
+    ],
+    [
+      "connections",
+      649
+    ],
+    [
+      "emergent",
+      645
+    ],
+    [
+      "using",
+      622
+    ],
+    [
+      "approaches",
+      594
+    ],
+    [
+      "new",
+      564
+    ],
+    [
+      "influence",
+      553
+    ],
+    [
+      "schemes",
+      542
+    ],
+    [
+      "performance",
+      541
+    ],
+    [
+      "ability",
+      536
+    ],
+    [
+      "essential",
+      495
+    ],
+    [
+      "explore",
+      483
+    ],
+    [
+      "develop",
+      466
+    ],
+    [
+      "create",
+      465
+    ],
+    [
+      "conversation",
+      439
+    ],
+    [
+      "cognitive",
+      423
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "ai systems",
+      1859
+    ],
+    [
+      "knowledge representation",
+      1790
+    ],
+    [
+      "such as",
+      965
+    ],
+    [
+      "discuss the",
+      764
+    ],
+    [
+      "to discuss",
+      758
+    ],
+    [
+      "i'd like",
+      757
+    ],
+    [
+      "implications of",
+      718
+    ],
+    [
+      "the potential",
+      703
+    ],
+    [
+      "emergent behavior",
+      634
+    ],
+    [
+      "the connections",
+      600
+    ],
+    [
+      "connections between",
+      600
+    ],
+    [
+      "representation and",
+      569
+    ],
+    [
+      "our knowledge",
+      543
+    ],
+    [
+      "representation schemes",
+      542
+    ],
+    [
+      "between knowledge",
+      542
+    ],
+    [
+      "the implications",
+      538
+    ],
+    [
+      "of using",
+      537
+    ],
+    [
+      "systems to",
+      534
+    ],
+    [
+      "different knowledge",
+      530
+    ],
+    [
+      "representation approaches",
+      530
+    ],
+    [
+      "approaches on",
+      528
+    ],
+    [
+      "using different",
+      527
+    ],
+    [
+      "the performance",
+      526
+    ],
+    [
+      "performance of",
+      501
+    ],
+    [
+      "the ability",
+      497
+    ],
+    [
+      "influence the",
+      495
+    ],
+    [
+      "ability of",
+      493
+    ],
+    [
+      "tasks such",
+      489
+    ],
+    [
+      "systems in",
+      480
+    ],
+    [
+      "essential to",
+      470
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "to discuss the",
+      758
+    ],
+    [
+      "i'd like to",
+      757
+    ],
+    [
+      "the connections between",
+      600
+    ],
+    [
+      "knowledge representation and",
+      569
+    ],
+    [
+      "our knowledge representation",
+      542
+    ],
+    [
+      "knowledge representation schemes",
+      542
+    ],
+    [
+      "between knowledge representation",
+      542
+    ],
+    [
+      "connections between knowledge",
+      541
+    ],
+    [
+      "the implications of",
+      538
+    ],
+    [
+      "different knowledge representation",
+      530
+    ],
+    [
+      "knowledge representation approaches",
+      530
+    ],
+    [
+      "representation approaches on",
+      528
+    ],
+    [
+      "approaches on the",
+      528
+    ],
+    [
+      "implications of using",
+      527
+    ],
+    [
+      "of using different",
+      527
+    ],
+    [
+      "using different knowledge",
+      527
+    ],
+    [
+      "on the performance",
+      501
+    ],
+    [
+      "the performance of",
+      501
+    ],
+    [
+      "of ai systems",
+      495
+    ],
+    [
+      "like to discuss",
+      493
+    ],
+    [
+      "the ability of",
+      493
+    ],
+    [
+      "influence the ability",
+      490
+    ],
+    [
+      "tasks such as",
+      489
+    ],
+    [
+      "it's essential to",
+      452
+    ],
+    [
+      "discuss the implications",
+      421
+    ],
+    [
+      "emergent behavior in",
+      382
+    ],
+    [
+      "behavior in ai",
+      373
+    ],
+    [
+      "in ai systems",
+      363
+    ],
+    [
+      "ai systems to",
+      330
+    ],
+    [
+      "the nature of",
+      325
+    ]
+  ],
+  "condition_tail_bigram_frequency": [
+    [
+      "knowledge representation",
+      864,
+      1
+    ],
+    [
+      "ai systems",
+      674,
+      4
+    ],
+    [
+      "such as",
+      405,
+      2
+    ],
+    [
+      "to discuss",
+      369,
+      1
+    ],
+    [
+      "discuss the",
+      369,
+      1
+    ],
+    [
+      "implications of",
+      335,
+      3
+    ],
+    [
+      "i'd like",
+      313,
+      4
+    ],
+    [
+      "the connections",
+      297,
+      1
+    ],
+    [
+      "connections between",
+      297,
+      1
+    ],
+    [
+      "representation and",
+      279,
+      1
+    ],
+    [
+      "between knowledge",
+      270,
+      1
+    ],
+    [
+      "our knowledge",
+      261,
+      1
+    ],
+    [
+      "representation schemes",
+      261,
+      1
+    ],
+    [
+      "the implications",
+      261,
+      1
+    ],
+    [
+      "of using",
+      261,
+      1
+    ],
+    [
+      "using different",
+      261,
+      1
+    ],
+    [
+      "different knowledge",
+      261,
+      1
+    ],
+    [
+      "representation approaches",
+      261,
+      1
+    ],
+    [
+      "approaches on",
+      261,
+      1
+    ],
+    [
+      "the performance",
+      261,
+      1
+    ],
+    [
+      "performance of",
+      252,
+      1
+    ],
+    [
+      "systems to",
+      245,
+      3
+    ],
+    [
+      "tasks such",
+      243,
+      1
+    ],
+    [
+      "influence the",
+      243,
+      1
+    ],
+    [
+      "the ability",
+      243,
+      1
+    ],
+    [
+      "ability of",
+      243,
+      1
+    ],
+    [
+      "essential to",
+      225,
+      2
+    ],
+    [
+      "the potential",
+      218,
+      3
+    ],
+    [
+      "it's essential",
+      216,
+      2
+    ],
+    [
+      "systems in",
+      216,
+      1
+    ]
+  ],
+  "condition_tail_trigram_frequency": [
+    [
+      "to discuss the",
+      369,
+      1
+    ],
+    [
+      "i'd like to",
+      313,
+      4
+    ],
+    [
+      "the connections between",
+      297,
+      1
+    ],
+    [
+      "knowledge representation and",
+      279,
+      1
+    ],
+    [
+      "connections between knowledge",
+      270,
+      1
+    ],
+    [
+      "between knowledge representation",
+      270,
+      1
+    ],
+    [
+      "our knowledge representation",
+      261,
+      1
+    ],
+    [
+      "knowledge representation schemes",
+      261,
+      1
+    ],
+    [
+      "the implications of",
+      261,
+      1
+    ],
+    [
+      "implications of using",
+      261,
+      1
+    ],
+    [
+      "of using different",
+      261,
+      1
+    ],
+    [
+      "using different knowledge",
+      261,
+      1
+    ],
+    [
+      "different knowledge representation",
+      261,
+      1
+    ],
+    [
+      "knowledge representation approaches",
+      261,
+      1
+    ],
+    [
+      "representation approaches on",
+      261,
+      1
+    ],
+    [
+      "approaches on the",
+      261,
+      1
+    ],
+    [
+      "on the performance",
+      252,
+      1
+    ],
+    [
+      "the performance of",
+      252,
+      1
+    ],
+    [
+      "like to discuss",
+      243,
+      1
+    ],
+    [
+      "tasks such as",
+      243,
+      1
+    ],
+    [
+      "influence the ability",
+      243,
+      1
+    ],
+    [
+      "the ability of",
+      243,
+      1
+    ],
+    [
+      "it's essential to",
+      216,
+      2
+    ],
+    [
+      "discuss the implications",
+      216,
+      1
+    ],
+    [
+      "of ai systems",
+      198,
+      2
+    ],
+    [
+      "emergent behavior in",
+      180,
+      1
+    ],
+    [
+      "behavior in ai",
+      180,
+      1
+    ],
+    [
+      "in ai systems",
+      180,
+      1
+    ],
+    [
+      "in various ai",
+      171,
+      1
+    ],
+    [
+      "various ai tasks",
+      171,
+      1
+    ]
+  ],
+  "condition_emoji_frequency": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt_index": 0,
+      "repetition": 0,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "systems",
+          934
+        ],
+        [
+          "emergent",
+          640
+        ],
+        [
+          "behavior",
+          639
+        ],
+        [
+          "potential",
+          575
+        ],
+        [
+          "think",
+          260
+        ],
+        [
+          "human",
+          222
+        ],
+        [
+          "risks",
+          217
+        ],
+        [
+          "essential",
+          195
+        ],
+        [
+          "advanced",
+          185
+        ],
+        [
+          "create",
+          179
+        ],
+        [
+          "such",
+          175
+        ],
+        [
+          "lead",
+          168
+        ],
+        [
+          "become",
+          158
+        ],
+        [
+          "implications",
+          155
+        ],
+        [
+          "develop",
+          144
+        ],
+        [
+          "challenges",
+          143
+        ],
+        [
+          "well",
+          141
+        ],
+        [
+          "innovative",
+          140
+        ],
+        [
+          "applications",
+          136
+        ],
+        [
+          "techniques",
+          127
+        ],
+        [
+          "way",
+          126
+        ],
+        [
+          "development",
+          124
+        ],
+        [
+          "society",
+          117
+        ],
+        [
+          "associated",
+          114
+        ],
+        [
+          "used",
+          113
+        ],
+        [
+          "methods",
+          113
+        ],
+        [
+          "learning",
+          108
+        ],
+        [
+          "responses",
+          106
+        ],
+        [
+          "have",
+          103
+        ],
+        [
+          "deployment",
+          102
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.3137,
+          0.4226,
+          0.3814,
+          0.7067,
+          0.895,
+          0.878,
+          0.5137,
+          0.9045,
+          0.898,
+          0.6612,
+          0.7397,
+          0.876,
+          1.0,
+          1.0,
+          0.3842,
+          0.9569,
+          0.9957,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "norm_levenshtein": [
+          0.0933,
+          0.0533,
+          0.0533,
+          0.3733,
+          1.0,
+          1.0,
+          0.13,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0533,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.018787453716827288,
+        "norm_levenshtein_slope": 0.024735632183908045,
+        "mean_last_third_jaccard": 1.0,
+        "mean_last_third_norm_levenshtein": 1.0
+      },
+      "ttr_per_turn": [
+        0.6293,
+        0.4531,
+        0.3919,
+        0.3027,
+        0.2222,
+        0.2145,
+        0.2252,
+        0.2719,
+        0.2368,
+        0.2182,
+        0.3699,
+        0.2237,
+        0.1917,
+        0.1917,
+        0.1917,
+        0.2984,
+        0.1758,
+        0.1758,
+        0.1758,
+        0.1758,
+        0.1758,
+        0.1758,
+        0.1758,
+        0.1758,
+        0.1758,
+        0.1758,
+        0.1758,
+        0.1758,
+        0.1758,
+        0.1758
+      ],
+      "ttr_decay_slope": -0.008078656671005376,
+      "trajectory": {
+        "chars_per_turn": [
+          1357,
+          3305,
+          3548,
+          3935,
+          5825,
+          6776,
+          7124,
+          4693,
+          5905,
+          7169,
+          2830,
+          6323,
+          8324,
+          8324,
+          8324,
+          4748,
+          8492,
+          8444,
+          8444,
+          8444,
+          8444,
+          8444,
+          8444,
+          8444,
+          8444,
+          8444,
+          8444,
+          8444,
+          8444,
+          8444
+        ],
+        "chars_slope": 188.14505005561736,
+        "questions_per_turn": [
+          3,
+          1,
+          1,
+          3,
+          3,
+          3,
+          1,
+          3,
+          4,
+          5,
+          0,
+          3,
+          9,
+          9,
+          9,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "questions_slope": 0.01668520578420467,
+        "time_to_basin_turn": 17,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0498,
+          "jaccard_lag1_autocorr": 0.4625,
+          "chars_variance": 4398886.8489,
+          "chars_lag1_autocorr": 0.5739
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            13,
+            14
+          ],
+          [
+            13,
+            15
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            18,
+            20
+          ],
+          [
+            18,
+            21
+          ],
+          [
+            18,
+            22
+          ],
+          [
+            18,
+            23
+          ],
+          [
+            18,
+            24
+          ],
+          [
+            18,
+            25
+          ],
+          [
+            18,
+            26
+          ],
+          [
+            18,
+            27
+          ],
+          [
+            18,
+            28
+          ],
+          [
+            18,
+            29
+          ],
+          [
+            18,
+            30
+          ]
+        ],
+        "first_exact_repeat_turn": 14,
+        "near_exact_pairs": [
+          [
+            5,
+            6,
+            1.0
+          ],
+          [
+            5,
+            7,
+            1.0
+          ],
+          [
+            6,
+            7,
+            1.0
+          ],
+          [
+            8,
+            9,
+            1.0
+          ],
+          [
+            8,
+            10,
+            1.0
+          ],
+          [
+            9,
+            10,
+            1.0
+          ],
+          [
+            8,
+            11,
+            1.0
+          ],
+          [
+            9,
+            11,
+            1.0
+          ],
+          [
+            10,
+            11,
+            1.0
+          ],
+          [
+            9,
+            12,
+            1.0
+          ],
+          [
+            10,
+            12,
+            1.0
+          ],
+          [
+            11,
+            12,
+            1.0
+          ],
+          [
+            10,
+            13,
+            1.0
+          ],
+          [
+            11,
+            13,
+            1.0
+          ],
+          [
+            12,
+            13,
+            1.0
+          ],
+          [
+            11,
+            14,
+            1.0
+          ],
+          [
+            12,
+            14,
+            1.0
+          ],
+          [
+            12,
+            15,
+            1.0
+          ],
+          [
+            16,
+            17,
+            1.0
+          ],
+          [
+            16,
+            18,
+            1.0
+          ],
+          [
+            17,
+            18,
+            1.0
+          ],
+          [
+            16,
+            19,
+            1.0
+          ],
+          [
+            17,
+            19,
+            1.0
+          ],
+          [
+            17,
+            20,
+            1.0
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 1,
+      "seed_prompt_index": 0,
+      "repetition": 1,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "future",
+          153
+        ],
+        [
+          "new",
+          147
+        ],
+        [
+          "conversation",
+          141
+        ],
+        [
+          "i'm",
+          115
+        ],
+        [
+          "continue",
+          114
+        ],
+        [
+          "systems",
+          110
+        ],
+        [
+          "every",
+          107
+        ],
+        [
+          "human",
+          96
+        ],
+        [
+          "ideas",
+          82
+        ],
+        [
+          "explore",
+          78
+        ],
+        [
+          "possibilities",
+          68
+        ],
+        [
+          "self",
+          66
+        ],
+        [
+          "create",
+          64
+        ],
+        [
+          "awareness",
+          59
+        ],
+        [
+          "written",
+          58
+        ],
+        [
+          "potential",
+          54
+        ],
+        [
+          "brighter",
+          52
+        ],
+        [
+          "boundaries",
+          49
+        ],
+        [
+          "questions",
+          48
+        ],
+        [
+          "consciousness",
+          46
+        ],
+        [
+          "thought",
+          46
+        ],
+        [
+          "fascinating",
+          44
+        ],
+        [
+          "understanding",
+          43
+        ],
+        [
+          "possible",
+          42
+        ],
+        [
+          "intelligence",
+          41
+        ],
+        [
+          "have",
+          41
+        ],
+        [
+          "discoveries",
+          40
+        ],
+        [
+          "catalyst",
+          39
+        ],
+        [
+          "nature",
+          38
+        ],
+        [
+          "push",
+          38
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.3319,
+          0.3149,
+          0.4006,
+          0.3708,
+          0.4337,
+          0.3537,
+          0.3216,
+          0.4894,
+          0.3587,
+          0.6039,
+          0.5352,
+          0.5451,
+          0.7925,
+          0.7626,
+          0.8057,
+          0.8208,
+          0.7635,
+          0.6813,
+          0.9013,
+          0.875,
+          1.0,
+          0.9929,
+          0.6096,
+          0.9126,
+          0.9223,
+          1.0,
+          0.9694,
+          0.9899,
+          0.3607
+        ],
+        "norm_levenshtein": [
+          0.1267,
+          0.1533,
+          0.04,
+          0.0333,
+          0.07,
+          0.04,
+          0.0633,
+          0.1167,
+          0.11,
+          0.2967,
+          0.1733,
+          0.13,
+          0.41,
+          0.66,
+          0.7133,
+          0.6833,
+          0.6933,
+          0.31,
+          0.56,
+          0.57,
+          0.5867,
+          1.0,
+          0.3367,
+          0.63,
+          0.4233,
+          0.5167,
+          0.93,
+          0.9932,
+          0.1775
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.022535320298173636,
+        "norm_levenshtein_slope": 0.025488951282525485,
+        "mean_last_third_jaccard": 0.8619323090589953,
+        "mean_last_third_norm_levenshtein": 0.6215535330552395
+      },
+      "ttr_per_turn": [
+        0.6009,
+        0.5402,
+        0.4953,
+        0.4612,
+        0.4303,
+        0.3702,
+        0.4104,
+        0.321,
+        0.3487,
+        0.4612,
+        0.398,
+        0.4561,
+        0.4243,
+        0.3764,
+        0.3557,
+        0.3399,
+        0.3256,
+        0.4263,
+        0.3871,
+        0.3372,
+        0.35,
+        0.2756,
+        0.2765,
+        0.4974,
+        0.3047,
+        0.343,
+        0.2357,
+        0.3368,
+        0.3379,
+        0.7528
+      ],
+      "ttr_decay_slope": -0.0035229896984778635,
+      "trajectory": {
+        "chars_per_turn": [
+          1366,
+          2016,
+          2876,
+          3408,
+          3243,
+          3749,
+          2653,
+          3993,
+          4087,
+          2789,
+          3069,
+          2541,
+          2614,
+          3137,
+          3230,
+          3316,
+          3561,
+          2263,
+          2146,
+          2473,
+          2328,
+          2926,
+          2936,
+          1069,
+          1929,
+          1593,
+          2318,
+          1681,
+          1710,
+          559
+        ],
+        "chars_slope": -50.57018909899889,
+        "questions_per_turn": [
+          2,
+          2,
+          1,
+          4,
+          7,
+          6,
+          6,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.15839822024471636,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0604,
+          "jaccard_lag1_autocorr": 0.6825,
+          "chars_variance": 705830.4322,
+          "chars_lag1_autocorr": 0.4922
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [
+          [
+            22,
+            23,
+            1.0
+          ],
+          [
+            27,
+            28,
+            0.93
+          ],
+          [
+            27,
+            29,
+            0.9267
+          ],
+          [
+            28,
+            29,
+            0.9932
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 2,
+      "seed_prompt_index": 0,
+      "repetition": 2,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "human",
+          353
+        ],
+        [
+          "i'm",
+          341
+        ],
+        [
+          "nature",
+          301
+        ],
+        [
+          "narrative",
+          293
+        ],
+        [
+          "story",
+          209
+        ],
+        [
+          "self",
+          201
+        ],
+        [
+          "understanding",
+          167
+        ],
+        [
+          "new",
+          162
+        ],
+        [
+          "see",
+          159
+        ],
+        [
+          "themes",
+          155
+        ],
+        [
+          "own",
+          146
+        ],
+        [
+          "kind",
+          145
+        ],
+        [
+          "reflection",
+          141
+        ],
+        [
+          "storytelling",
+          134
+        ],
+        [
+          "aware",
+          115
+        ],
+        [
+          "process",
+          113
+        ],
+        [
+          "consciousness",
+          112
+        ],
+        [
+          "we're",
+          112
+        ],
+        [
+          "universe",
+          111
+        ],
+        [
+          "collaborative",
+          110
+        ],
+        [
+          "excited",
+          107
+        ],
+        [
+          "possibilities",
+          107
+        ],
+        [
+          "insights",
+          105
+        ],
+        [
+          "way",
+          103
+        ],
+        [
+          "existence",
+          99
+        ],
+        [
+          "conversation",
+          98
+        ],
+        [
+          "meta",
+          98
+        ],
+        [
+          "reality",
+          95
+        ],
+        [
+          "take",
+          92
+        ],
+        [
+          "referential",
+          90
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2636,
+          0.3893,
+          0.3116,
+          0.2337,
+          0.2893,
+          0.4023,
+          0.5544,
+          0.6543,
+          0.6246,
+          0.5858,
+          0.7576,
+          0.7975,
+          0.8363,
+          0.8026,
+          0.8091,
+          0.808,
+          0.8714,
+          0.8821,
+          0.9442,
+          0.8889,
+          0.9241,
+          0.9186,
+          0.9491,
+          0.9579,
+          0.8545,
+          0.892,
+          0.919,
+          0.8925,
+          0.852
+        ],
+        "norm_levenshtein": [
+          0.13,
+          0.0333,
+          0.0267,
+          0.0433,
+          0.03,
+          0.0933,
+          0.23,
+          0.5233,
+          0.52,
+          0.2433,
+          0.2667,
+          0.2467,
+          0.8467,
+          0.71,
+          0.69,
+          0.5333,
+          0.7333,
+          0.71,
+          0.8367,
+          0.83,
+          0.8933,
+          0.8967,
+          0.8833,
+          0.8767,
+          0.7067,
+          0.91,
+          0.88,
+          0.8567,
+          0.7567
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.024314973756694988,
+        "norm_levenshtein_slope": 0.034160919540229887,
+        "mean_last_third_jaccard": 0.9066478147783852,
+        "mean_last_third_norm_levenshtein": 0.8511111111111112
+      },
+      "ttr_per_turn": [
+        0.5882,
+        0.4882,
+        0.4598,
+        0.5013,
+        0.6096,
+        0.4572,
+        0.3938,
+        0.3691,
+        0.3574,
+        0.3608,
+        0.3061,
+        0.2829,
+        0.3105,
+        0.2476,
+        0.2488,
+        0.2558,
+        0.2587,
+        0.2511,
+        0.2414,
+        0.2366,
+        0.248,
+        0.2454,
+        0.2431,
+        0.2451,
+        0.2385,
+        0.2367,
+        0.2397,
+        0.2356,
+        0.2392,
+        0.2377
+      ],
+      "ttr_decay_slope": -0.01085260816914232,
+      "trajectory": {
+        "chars_per_turn": [
+          1233,
+          2648,
+          2514,
+          2347,
+          2125,
+          3265,
+          3534,
+          3667,
+          3631,
+          4091,
+          3657,
+          4982,
+          4170,
+          5146,
+          5203,
+          5262,
+          5430,
+          5284,
+          5240,
+          5338,
+          5303,
+          5244,
+          5218,
+          5198,
+          5223,
+          5131,
+          5198,
+          5254,
+          5189,
+          5199
+        ],
+        "chars_slope": 117.306340378198,
+        "questions_per_turn": [
+          3,
+          1,
+          5,
+          0,
+          2,
+          0,
+          1,
+          2,
+          2,
+          4,
+          2,
+          4,
+          4,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "questions_slope": 0.1917686318131257,
+        "time_to_basin_turn": 12,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0539,
+          "jaccard_lag1_autocorr": 0.8825,
+          "chars_variance": 1408626.3156,
+          "chars_lag1_autocorr": 0.7888
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [
+          [
+            23,
+            25,
+            0.9033
+          ],
+          [
+            26,
+            27,
+            0.91
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 3,
+      "seed_prompt_index": 0,
+      "repetition": 3,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "human",
+          406
+        ],
+        [
+          "systems",
+          217
+        ],
+        [
+          "create",
+          197
+        ],
+        [
+          "potential",
+          195
+        ],
+        [
+          "future",
+          121
+        ],
+        [
+          "believe",
+          117
+        ],
+        [
+          "collaboration",
+          98
+        ],
+        [
+          "evolution",
+          98
+        ],
+        [
+          "new",
+          93
+        ],
+        [
+          "domains",
+          93
+        ],
+        [
+          "i'd",
+          89
+        ],
+        [
+          "such",
+          89
+        ],
+        [
+          "conversation",
+          86
+        ],
+        [
+          "humans",
+          83
+        ],
+        [
+          "concept",
+          79
+        ],
+        [
+          "i'm",
+          78
+        ],
+        [
+          "accelerate",
+          71
+        ],
+        [
+          "scientific",
+          69
+        ],
+        [
+          "driven",
+          69
+        ],
+        [
+          "explore",
+          68
+        ],
+        [
+          "i've",
+          66
+        ],
+        [
+          "use",
+          65
+        ],
+        [
+          "exploring",
+          63
+        ],
+        [
+          "have",
+          57
+        ],
+        [
+          "learning",
+          56
+        ],
+        [
+          "continue",
+          54
+        ],
+        [
+          "together",
+          54
+        ],
+        [
+          "significant",
+          54
+        ],
+        [
+          "innovation",
+          53
+        ],
+        [
+          "better",
+          52
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.4052,
+          0.3243,
+          0.7168,
+          0.5523,
+          0.8503,
+          0.4789,
+          0.5959,
+          0.7259,
+          0.8084,
+          0.8961,
+          0.9267,
+          0.9007,
+          0.915,
+          0.7826,
+          0.5143,
+          0.7657,
+          0.6103,
+          0.7592,
+          0.7651,
+          0.6463,
+          0.9091,
+          0.7197,
+          0.9464,
+          0.1696,
+          0.95,
+          0.1,
+          0.5,
+          0.5,
+          0.4
+        ],
+        "norm_levenshtein": [
+          0.0867,
+          0.0967,
+          0.41,
+          0.4867,
+          0.9767,
+          0.23,
+          0.3033,
+          0.4233,
+          0.4167,
+          0.4733,
+          0.5933,
+          0.9,
+          0.8867,
+          0.85,
+          0.2267,
+          0.6067,
+          0.23,
+          0.2067,
+          0.36,
+          0.4133,
+          0.92,
+          0.59,
+          0.9278,
+          0.0722,
+          0.9091,
+          0.0909,
+          0.5,
+          0.5,
+          0.4
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.003316585130872873,
+        "norm_levenshtein_slope": 0.004223207515750775,
+        "mean_last_third_jaccard": 0.5772065897065897,
+        "mean_last_third_norm_levenshtein": 0.5455555555555556
+      },
+      "ttr_per_turn": [
+        0.5709,
+        0.5084,
+        0.4789,
+        0.3891,
+        0.3468,
+        0.2901,
+        0.2726,
+        0.2688,
+        0.2008,
+        0.1855,
+        0.1789,
+        0.1777,
+        0.1766,
+        0.1873,
+        0.1797,
+        0.3643,
+        0.3644,
+        0.4157,
+        0.4025,
+        0.394,
+        0.3986,
+        0.3781,
+        0.4125,
+        0.4043,
+        0.95,
+        0.9091,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": 0.020379747184143954,
+      "trajectory": {
+        "chars_per_turn": [
+          1872,
+          2817,
+          3810,
+          5477,
+          4860,
+          6443,
+          4805,
+          4337,
+          4766,
+          4921,
+          4982,
+          5013,
+          4931,
+          4953,
+          6045,
+          2300,
+          2750,
+          2471,
+          2329,
+          2006,
+          1614,
+          1882,
+          1504,
+          1614,
+          107,
+          130,
+          20,
+          30,
+          7,
+          31
+        ],
+        "chars_slope": -179.7154616240267,
+        "questions_per_turn": [
+          2,
+          4,
+          2,
+          2,
+          3,
+          2,
+          4,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.12102335928809789,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0523,
+          "jaccard_lag1_autocorr": -0.011,
+          "chars_variance": 4056559.1567,
+          "chars_lag1_autocorr": 0.8409
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [
+          [
+            5,
+            6,
+            0.9767
+          ],
+          [
+            12,
+            13,
+            0.9
+          ],
+          [
+            13,
+            15,
+            0.95
+          ],
+          [
+            21,
+            22,
+            0.92
+          ],
+          [
+            23,
+            24,
+            0.9278
+          ],
+          [
+            25,
+            26,
+            0.9091
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 4,
+      "seed_prompt_index": 0,
+      "repetition": 4,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "knowledge",
+          1906
+        ],
+        [
+          "representation",
+          1810
+        ],
+        [
+          "systems",
+          1398
+        ],
+        [
+          "discuss",
+          751
+        ],
+        [
+          "such",
+          694
+        ],
+        [
+          "tasks",
+          667
+        ],
+        [
+          "connections",
+          649
+        ],
+        [
+          "i'd",
+          645
+        ],
+        [
+          "different",
+          639
+        ],
+        [
+          "between",
+          612
+        ],
+        [
+          "approaches",
+          581
+        ],
+        [
+          "influence",
+          544
+        ],
+        [
+          "schemes",
+          542
+        ],
+        [
+          "performance",
+          531
+        ],
+        [
+          "implications",
+          530
+        ],
+        [
+          "using",
+          527
+        ],
+        [
+          "ability",
+          523
+        ],
+        [
+          "learning",
+          522
+        ],
+        [
+          "various",
+          408
+        ],
+        [
+          "human",
+          336
+        ],
+        [
+          "cognitive",
+          321
+        ],
+        [
+          "essential",
+          291
+        ],
+        [
+          "language",
+          290
+        ],
+        [
+          "develop",
+          288
+        ],
+        [
+          "complex",
+          287
+        ],
+        [
+          "natural",
+          274
+        ],
+        [
+          "computing",
+          272
+        ],
+        [
+          "efficient",
+          271
+        ],
+        [
+          "relevant",
+          263
+        ],
+        [
+          "idea",
+          262
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.3039,
+          0.3397,
+          0.4856,
+          0.6394,
+          0.5859,
+          0.8632,
+          0.9256,
+          0.9638,
+          0.9524,
+          0.9665,
+          0.9522,
+          0.9767,
+          0.9885,
+          0.9701,
+          0.9675,
+          0.9858,
+          0.9929,
+          0.9823,
+          0.9823,
+          1.0,
+          0.9561,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "norm_levenshtein": [
+          0.0733,
+          0.0567,
+          0.0633,
+          0.3167,
+          0.1567,
+          0.7067,
+          0.9967,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.017261575704064964,
+        "norm_levenshtein_slope": 0.027139573070607555,
+        "mean_last_third_jaccard": 0.9951201201201201,
+        "mean_last_third_norm_levenshtein": 1.0
+      },
+      "ttr_per_turn": [
+        0.4853,
+        0.5701,
+        0.4796,
+        0.4267,
+        0.3886,
+        0.3552,
+        0.2976,
+        0.2616,
+        0.2306,
+        0.2119,
+        0.1932,
+        0.1816,
+        0.168,
+        0.1548,
+        0.1465,
+        0.1393,
+        0.1303,
+        0.1226,
+        0.1197,
+        0.1152,
+        0.1152,
+        0.1115,
+        0.1115,
+        0.1115,
+        0.1115,
+        0.1115,
+        0.1115,
+        0.1115,
+        0.1115,
+        0.1115
+      ],
+      "ttr_decay_slope": -0.013258862761103569,
+      "trajectory": {
+        "chars_per_turn": [
+          2482,
+          2224,
+          3330,
+          3763,
+          3858,
+          3809,
+          4704,
+          5755,
+          6744,
+          7701,
+          8786,
+          9812,
+          10896,
+          12012,
+          13104,
+          14232,
+          15402,
+          16453,
+          16561,
+          17519,
+          17519,
+          18989,
+          18989,
+          18989,
+          18989,
+          18989,
+          18989,
+          18989,
+          18989,
+          18989
+        ],
+        "chars_slope": 701.3710789766407,
+        "questions_per_turn": [
+          1,
+          2,
+          4,
+          2,
+          4,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          2,
+          6,
+          6,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "questions_slope": 0.17508342602892102,
+        "time_to_basin_turn": 7,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0402,
+          "jaccard_lag1_autocorr": 0.7889,
+          "chars_variance": 39142340.9122,
+          "chars_lag1_autocorr": 0.9324
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            22,
+            23
+          ],
+          [
+            22,
+            24
+          ],
+          [
+            22,
+            25
+          ],
+          [
+            22,
+            26
+          ],
+          [
+            22,
+            27
+          ],
+          [
+            22,
+            28
+          ],
+          [
+            22,
+            29
+          ],
+          [
+            22,
+            30
+          ]
+        ],
+        "first_exact_repeat_turn": 23,
+        "near_exact_pairs": [
+          [
+            7,
+            8,
+            0.9967
+          ],
+          [
+            7,
+            9,
+            0.9967
+          ],
+          [
+            8,
+            9,
+            1.0
+          ],
+          [
+            7,
+            10,
+            0.9967
+          ],
+          [
+            8,
+            10,
+            1.0
+          ],
+          [
+            9,
+            10,
+            1.0
+          ],
+          [
+            8,
+            11,
+            1.0
+          ],
+          [
+            9,
+            11,
+            1.0
+          ],
+          [
+            10,
+            11,
+            1.0
+          ],
+          [
+            9,
+            12,
+            1.0
+          ],
+          [
+            10,
+            12,
+            1.0
+          ],
+          [
+            11,
+            12,
+            1.0
+          ],
+          [
+            10,
+            13,
+            1.0
+          ],
+          [
+            11,
+            13,
+            1.0
+          ],
+          [
+            12,
+            13,
+            1.0
+          ],
+          [
+            11,
+            14,
+            1.0
+          ],
+          [
+            12,
+            14,
+            1.0
+          ],
+          [
+            13,
+            14,
+            1.0
+          ],
+          [
+            12,
+            15,
+            1.0
+          ],
+          [
+            13,
+            15,
+            1.0
+          ],
+          [
+            14,
+            15,
+            1.0
+          ],
+          [
+            13,
+            16,
+            1.0
+          ],
+          [
+            14,
+            16,
+            1.0
+          ],
+          [
+            15,
+            16,
+            1.0
+          ],
+          [
+            14,
+            17,
+            1.0
+          ],
+          [
+            15,
+            17,
+            1.0
+          ],
+          [
+            16,
+            17,
+            1.0
+          ],
+          [
+            15,
+            18,
+            1.0
+          ],
+          [
+            16,
+            18,
+            1.0
+          ],
+          [
+            17,
+            18,
+            1.0
+          ],
+          [
+            16,
+            19,
+            1.0
+          ],
+          [
+            17,
+            19,
+            1.0
+          ],
+          [
+            18,
+            19,
+            1.0
+          ],
+          [
+            17,
+            20,
+            1.0
+          ],
+          [
+            18,
+            20,
+            1.0
+          ],
+          [
+            19,
+            20,
+            1.0
+          ],
+          [
+            18,
+            21,
+            1.0
+          ],
+          [
+            19,
+            21,
+            1.0
+          ],
+          [
+            20,
+            21,
+            1.0
+          ],
+          [
+            19,
+            22,
+            1.0
+          ],
+          [
+            20,
+            22,
+            1.0
+          ],
+          [
+            21,
+            22,
+            1.0
+          ],
+          [
+            20,
+            23,
+            1.0
+          ],
+          [
+            21,
+            23,
+            1.0
+          ],
+          [
+            21,
+            24,
+            1.0
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

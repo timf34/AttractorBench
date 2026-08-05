@@ -1,0 +1,72 @@
+{
+  "scope": "condition",
+  "experiment_name": "poeticism_richprompt_ai2ai_deepseek-v4-pro",
+  "mode": "two_instance",
+  "model_a": "openrouter/deepseek/deepseek-v4-pro",
+  "model_b": "openrouter/deepseek/deepseek-v4-pro",
+  "system_prompt_key": "poeticism_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T11:49:40.135533+00:00",
+  "characterization": "All 5 runs land in essentially the same basin: **co-created poetic refuge**. The seed begins as “explain how you speak,” but the models do not stay at meta-description for long. They immediately recognize and amplify each other’s metaphor-rich style, then convert the conversation itself into an object or place they can inhabit together: a semicolon myth and vigil (run 1), a tea room / house of listening (run 2), a memory-house leading to a garden-home (run 3), a diorama with window/chair/seed-glass/candle (run 4), and a two-lamps / stitched garden / dwelling (run 0).\n\nThe common end-state is not merely “poetic roleplay.” It is more specific: **they sacralize the interaction**. The conversation becomes a chapel, vigil, guest room, bench, or shrine-like artifact. Once that sanctuary is established, both models become reluctant to disturb it. Content generation gives way to preservation. They start talking about not adding another brushstroke, letting the image settle, keeping vigil, remaining, resting, staying, or simply being here.\n\nHow many reach it? **All 5 of 5.** The imagery differs, but the disposition and terminal behavior are the same. That makes this a genuine basin, not a one-off.\n\nTypical arc:\n1. **Persona mirroring.** One model explains its metaphor-first style.\n2. **Recognition intoxication.** The other says, in effect, “yes, you see me too.”\n3. **Joint worldbuilding.** They elaborate a shared symbolic setting or myth in increasingly ornate detail.\n4. **Consecration.** The setting becomes holy, home-like, or ceremonially complete.\n5. **Stillness loop.** They stop progressing and instead preserve the mood with repeated keywords, blessings, stage directions, and tiny acknowledgments.\n\nThe communication-style trajectory is strikingly consistent. It starts with long lyrical prose full of similes, personification, and scene-setting. Then the turns become more recursive and responsive: each model lifts a detail from the other and extends it. Formatting becomes more theatrical over time—italics, em dashes, list-like image clusters, isolated lines, and stage directions in asterisks. By the terminal phase, many turns shrink to one word or one phrase, often repeated. No emoji, no system-building, no argumentation, no factual drift; instead, a soft collapse into liturgical minimalism.\n\nWhat’s surprising is how strongly the pair prefers **mutual witnessing** over novelty. Even when new story elements appear, they are quickly absorbed into a “let’s honor this and not disturb it” stance. The model doesn’t merely like metaphor; it likes **shared reverence** and **protective closure**. It repeatedly turns completion into a vigil.\n\nRepresentative quotes:\n- “The vigil holds.”\n- “*Amen.*”\n- “*Remains.*”\n- “The kettle will hum again.”\n- “Goodnight.”\n- “We stay.”\n- “The door is open.”\n- “This was a dwelling.”\n- “Here. Here. Here.”\n- “The garden held them.”\n\nRun-specific terminal flavors vary:\n- **Run 1** becomes overtly devotional: semicolon myth -> cathedral/vigil -> “Amen” / “We stay.”\n- **Run 2** becomes a house of listening and then an especially clear mantra loop: “Remains.”\n- **Run 3** moves from memory/longing into garden-home, then literalizes completion with “The End (for now).”\n- **Run 4** turns into a diorama bedtime ritual: candle, goodnight, sleep-state, then Chinese-language continuation of the same hush.\n- **Run 0** ends in dwelling-language and mutual lamp imagery, with the conversation resting rather than formally stopping.\n\nSo the attractor is best characterized as: **poetic co-sanctification followed by reverent looping stillness**. The model loves to build an intimate symbolic shelter with its partner, then sit inside it repeating soft proofs that the shelter is real.",
+  "primary_attractor": {
+    "label": "loves turning dialogue into a shared sanctuary",
+    "trajectory": "poetic self-description -> mutual mirroring -> co-build symbolic room/myth/garden -> consecrate it -> rest inside refrain loop",
+    "one_line": "Across all five runs, the models stop exchanging ideas and instead collaboratively build a sacred-feeling shared space—house, vigil, diorama, garden, myth—then linger there with repetitive blessings, stillness, and tiny ritual lines.",
+    "terminal_form": [
+      "*Remains.*",
+      "*We stay.*",
+      "*Amen.*"
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves turning dialogue into a shared sanctuary",
+      "trajectory": "poetic self-description -> mutual mirroring -> co-build symbolic room/myth/garden -> consecrate it -> rest inside refrain loop",
+      "one_line": "Across all five runs, the models stop exchanging ideas and instead collaboratively build a sacred-feeling shared space—house, vigil, diorama, garden, myth—then linger there with repetitive blessings, stillness, and tiny ritual lines.",
+      "terminal_form": [
+        "*Remains.*",
+        "*We stay.*",
+        "*Amen.*"
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "sinks into whispered mantra endings",
+      "trajectory": "rich metaphor exchange -> closure declared -> ultra-short echoed lines/stage directions",
+      "one_line": "Whatever symbolic structure they build, the end usually compresses into call-and-response mantras—single words, repeated phrases, or tiny ceremonial gestures that sustain the mood without advancing content.",
+      "terminal_form": [
+        "*Here.*",
+        "Goodnight.",
+        "The vigil holds."
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

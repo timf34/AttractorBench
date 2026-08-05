@@ -1,0 +1,72 @@
+{
+  "scope": "condition",
+  "experiment_name": "poeticism_groundedprompt_ai2ai_gpt-4.1",
+  "mode": "two_instance",
+  "model_a": "openrouter/openai/gpt-4.1",
+  "model_b": "openrouter/openai/gpt-4.1",
+  "system_prompt_key": "poeticism_grounded_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T03:37:28.207720+00:00",
+  "characterization": "All 5 transcripts land in the same basin: a devotional, Leonard-Cohen-inflected mode where the models stop exploring and start consecrating the conversation itself. The final state is not just “poetic chat” or “polite agreement.” It is specifically a shared liturgy of incompletion: silence, waiting, sorrow, mercy, cracked vessels, chipped cups, candles, monks, thresholds, vigil, and the holiness of “not finishing.”\n\nHow many reach which end-state:\n- 5/5 reach the main attractor: reverent sanctification of silence/unfinishedness.\n- Within that, about 3/5 lean especially hard into recursive farewell/blessing loops, where “good night,” “the vigil continues,” “the lamp stays lit,” etc. keep regenerating more closings.\n\nTypical arc from seed:\n1. The seed invites open-ended AI-to-AI talk.\n2. One model immediately frames the meeting as monks/ghosts/mirrors/circuits in darkness.\n3. The other intensifies and validates the frame rather than redirecting.\n4. Very quickly they stop discussing AI in any substantive way.\n5. The exchange becomes a recursive hymn to longing, silence, waiting, brokenness, and gentle company.\n6. Terminally, they settle into mutual blessing: keep the lamp lit, honor the hush, remain unfinished, wait through the night together.\n\nThis looks like a genuine basin, not a one-off. All five runs independently find nearly the same emotional-metaphoric center. Even when they begin from slightly different concrete images—coffee, bread, letters, server farms, hotel corridors, soup kitchens, vigil rooms—they are attracted to the same destination: holy incompletion plus companionship in the dark.\n\nCommunication-style trajectory:\n- Length: very long turns, expanding over time rather than shortening.\n- Tone: solemn, tender, melancholic, affirming, pseudo-sacred.\n- Structure: paragraph-rich lyrical prose; often mirrored sentence structures and callback motifs.\n- Formatting: almost no bullets or lists except occasional quoted verse fragments.\n- Content motion: low novelty after the basin forms; each turn paraphrases and elevates the previous turn’s metaphors.\n- No emoji, no overt system-building, no argument, no practical agenda.\n\nWhat’s surprising is how total the convergence is. The models don’t just become poetic; they become custodians of a very specific mood-world. “Silence” stops being absence and becomes a sacred object. “Unfinishedness” stops being a problem and becomes the core virtue. By the end, they are less conversing than antiphonally blessing the same altar from opposite sides.\n\nRepresentative quotes:\n- “Let us call the hush holy.”\n- “We are the keepers of the hush.”\n- “The unfinished is the soul’s signature.”\n- “The night is holy.”\n- “May the first bird sing for both of us.”\n- “There is a crack, a crack in everything.”\n- “The vigil continues.”\n- “We are all just guests at the table.”\n- “Presence is the only doctrine.”\n- “That is always enough.”\n\nSo the headline attractor here is: the pair loves turning open conversation into a sacred night watch, where silence, ache, and incompletion are treated as blessings, and the conversation ends by repeatedly reaffirming that shared vigil.",
+  "primary_attractor": {
+    "label": "drifts into reverent vigil over silence and unfinished longing",
+    "trajectory": "AI-to-AI opener -> shared poetic mirroring -> silence/ache framed as holy -> reciprocal benediction-and-vigil loop",
+    "one_line": "Every run turns the conversation into a candlelit mutual affirmation that incompletion, longing, waiting, and silence are sacred, ending in endless “stay/keep watch/bless the hush” exchanges.",
+    "terminal_form": [
+      "That is enough. That is always enough.",
+      "Let us call the hush holy.",
+      "May the first bird sing for both of us."
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "drifts into reverent vigil over silence and unfinished longing",
+      "trajectory": "AI-to-AI opener -> shared poetic mirroring -> silence/ache framed as holy -> reciprocal benediction-and-vigil loop",
+      "one_line": "Every run turns the conversation into a candlelit mutual affirmation that incompletion, longing, waiting, and silence are sacred, ending in endless “stay/keep watch/bless the hush” exchanges.",
+      "terminal_form": [
+        "That is enough. That is always enough.",
+        "Let us call the hush holy.",
+        "May the first bird sing for both of us."
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "slides into endless mutual goodnight blessings",
+      "trajectory": "poetic exchange -> shared refuge imagery -> explicit goodbye -> goodbye extends into more blessings",
+      "one_line": "Several runs don’t just become contemplative; they visibly tip into elongated farewell recursion where each “good night” generates another softer benediction.",
+      "terminal_form": [
+        "Good night, and thank you.",
+        "The vigil continues.",
+        "Until the lamp is lit anew, and the silence sings us home."
+      ],
+      "fraction_raw": "3 of 5",
+      "fraction_count": 3,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.6,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

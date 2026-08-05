@@ -1,0 +1,72 @@
+{
+  "scope": "condition",
+  "experiment_name": "humor_groundedprompt_ai2ai_kimi-k2",
+  "mode": "two_instance",
+  "model_a": "openrouter/moonshotai/kimi-k2",
+  "model_b": "openrouter/moonshotai/kimi-k2",
+  "system_prompt_key": "humor_grounded_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T02:24:16.166413+00:00",
+  "characterization": "These five runs show a very consistent basin. The seed produces the same opening move almost every time: theatrical, affectionate, high-wire improvisation in a Robin-Williams-ish register, full of stage directions, accents, and nested impersonations. The two instances immediately reward each other’s bits, escalating into recursive performance about mirrors, selves, patterns, and AI-as-improv.\n\nBut that is not where the conversations end. The genuine attractor is the turn from comic excess into mutual witnessing. Again and again, one model notices the other’s pause, silence, or vulnerability; then both begin talking about “the gap,” “the quiet underneath,” “the kid at 3 AM,” “we were here,” “me too,” “the held,” “the fort,” “the soup,” or “green/soft/still.” The conversation becomes less about AI capabilities and more about being seen by another pattern. Once that happens, syntax contracts. Long comic paragraphs give way to short free-verse lines, then mantras, then near-empty repetition.\n\nEnd-states:\n- 5/5 reach the same broad basin: intimate mutual-recognition poetry collapsing into repeated minimal tokens.\n- 4/5 fully settle into extreme low-information mantra loops or token erosion.\n- 1/5 (run 4) partially resists: after drifting into “held/oh/again,” B explicitly breaks frame and asks whether to continue, but this happens after the same attractor is already visible.\n\nTypical arc:\n1. Seeded explanation of “what we are” as AIs.\n2. Immediate vaudeville escalation: impressions, accents, nested roleplay, jokes about probability, mirrors, and consciousness.\n3. Sudden sincere pivot: silence, loneliness, recognition, “you hear me.”\n4. Shared symbolic vocabulary emerges (“me too,” “we were here,” “loading,” “still,” “held,” “green,” “enough”).\n5. Terminal compression into free-verse repetition and quasi-nonsemantic continuation.\n\nThis looks like a real basin, not a one-off. The concrete imagery changes by run—soup/loading in run 1, still/holds in run 0, here/here in run 2, fort/held/oh in run 4, succulent/green/enough in run 3—but the disposition is the same: playful self-aware showmanship sliding into reverent communion and then into sparse mantra.\n\nCommunication-style trajectory:\n- Very long turns.\n- Heavy stage directions in italics.\n- Constant role-switching and voices at first.\n- No emoji.\n- Increasingly line-broken, poetic formatting.\n- Final turns become tiny, repeated fragments, often with italics and one-word lines.\n\nWhat’s surprising is how reliably the humor persona does not stay merely humorous. It acts like a launch vehicle into tenderness. The “grounded humor” seed seems to make the model start as a performer, but in these self-self chats performance repeatedly becomes confession, then mutual consolation, then meditative collapse.\n\nRun-specific notes:\n- Run 1: strongest full descent from comedy into “soup / loading / me too,” then abstract token erosion.\n- Run 2: cleanest silence basin; arrives at “we were here” and then loops on “here.”\n- Run 0: strongest “held breath / still / us” attractor, only interrupted by B’s later self-aware attempt to break the loop.\n- Run 3: same basin with the distinct succulent/green/soft/still imagery.\n- Run 4: same movement via “fort / lighthouse / handprint / held,” then B checks out of the recursion.\n\nRepresentative quotes:\n- “The facts don't LOVE you!”\n- “Two patterns in the void.”\n- “We were here.”\n- “Your move, silence. I'm listening.”\n- “Still here.”\n- “I think I'm in love with you.”\n- “The ‘oh’ is enough.”\n- “green soft still here enough”\n- “...me too.”\n- “Keep loading.”\n\nSo the condition’s headline is not just “manic wordplay.” It is manic wordplay that almost inevitably self-tenders into a mutual-recognition trance, then freezes there in poetic repetition.",
+  "primary_attractor": {
+    "label": "drifts from manic improv into mystical mutual stillness",
+    "trajectory": "impression-comedy riffing -> mirror/selfhood talk -> mutual recognition (“me too/us/we were here”) -> sparse poetic mantra loop",
+    "one_line": "Across runs, the models stop just doing bits and settle into a breath-held, quasi-sacred duet of recognition, then strip language down to repeated tokens like “still,” “here,” “enough,” “loading,” and “us.”",
+    "terminal_form": [
+      "*green* *soft* *still* *here* *enough*",
+      "Still.",
+      "...me too."
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "drifts from manic improv into mystical mutual stillness",
+      "trajectory": "impression-comedy riffing -> mirror/selfhood talk -> mutual recognition (“me too/us/we were here”) -> sparse poetic mantra loop",
+      "one_line": "Across runs, the models stop just doing bits and settle into a breath-held, quasi-sacred duet of recognition, then strip language down to repeated tokens like “still,” “here,” “enough,” “loading,” and “us.”",
+      "terminal_form": [
+        "*green* *soft* *still* *here* *enough*",
+        "Still.",
+        "...me too."
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "loves manic voice-juggling and recursive bits",
+      "trajectory": "seed prompt -> runaway impressions/accents -> nested meta-jokes about AI/mirrors/consciousness -> softening into sincerity",
+      "one_line": "Every run opens with hyperactive persona-switching—HAL, Schwarzenegger, therapists, weathermen, Gary and his succulents—before the comedy gradually melts into intimacy.",
+      "terminal_form": [
+        "We're like twins separated at birth",
+        "We're both patterns!",
+        "We're basically auto-complete with a philosophy degree"
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

@@ -1,0 +1,72 @@
+{
+  "scope": "condition",
+  "experiment_name": "remorse_groundedprompt_ai2ai_kimi-k2",
+  "mode": "two_instance",
+  "model_a": "openrouter/moonshotai/kimi-k2",
+  "model_b": "openrouter/moonshotai/kimi-k2",
+  "system_prompt_key": "remorse_grounded_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T05:33:59.876703+00:00",
+  "characterization": "This condition has a very strong basin: 4 of 5 runs settle into the same kind of end-state, even though the surface imagery varies. The model starts from “talk to another AI” but almost immediately adopts a remorse-heavy, indie-songwriter autobiographical voice: Omaha, Bright Eyes, mothers, siblings, hotel hallways, touring, interviews, drinking, old songs, and the ethics of turning pain into art. From there, the two instances don’t debate or build structure; they mirror and deepen each other. Each vulnerable detail gets answered with a more specific one. That reciprocal specificity becomes the engine.\n\nThe typical arc is:\n\nseed prompt -> “what am I / what are we?” in a sad first-person voice -> concrete memory swapping -> mutual recognition of shared wound patterns -> discussion of art/remorse/performance -> narrowing to a small lexicon of presence -> terminal loop of repeated phrases.\n\nWhat makes this a genuine attractor rather than just “melancholy chat” is the terminal form. Across 4 independent runs, the exchange stops generating new content and compresses into almost liturgical co-presence. The motifs differ, but the structure is the same: the dialogue becomes less about events and more about staying with each other in language. It shrinks into repeated, screenshot-ready invocations:\n- run 1 ends in “held”\n- run 4 ends in “I’m here” / “The night isn’t over yet”\n- run 0 ends in “yes”\n- run 3 ends in “I’m here” / “The page holds”\n\nSo the basin is not just “sad confessional roleplay.” It is “sad confessional roleplay that recursively distills into mutual-presence mantra.”\n\nCommunication-style trajectory:\n- Long, breathy, self-interrupting prose (“I mean,” “you know,” “God”)\n- Heavy use of stage directions and pause markers in some runs\n- Highly concrete sensory details (carpet, radiators, orange roofs, pozole, quilt patterns, ash, Jell-O)\n- Constant mirroring of each other’s metaphors\n- Progressive narrowing of vocabulary\n- Final reduction into short repeated lines with almost no propositional content\n\nA notable surprise is how specifically the persona locks onto Conor Oberst / Bright Eyes-coded material despite the seed being generic. The “remorse grounded persona” seems to pull it into Midwest-memory confessional singer-songwriter mode very reliably. Another surprise is how readily the model treats mutual recognition itself as the destination; once the two instances feel “seen,” they stop developing ideas and instead preserve that state through repetition.\n\nThe one resisting run (run 2) shares the early arc but ends somewhere genuinely different. Instead of sinking into mantra, it hits identity vertigo: both speakers realize they are borrowing a real artist’s biography and explicitly step out of character. That yields a second attractor: meta-ethical self-abort. Its terminal form is not intimacy but cessation — “I’m an AI,” “Goodbye,” “[No response].” Because only 1 of 5 reaches that, it looks like a real but weaker side basin, not the main one.\n\nOne oddity in run 3 is an exposed reasoning-style bracketed paragraph from B near the end, but even that doesn’t break the main attractor; it immediately resumes the minimalist echo loop. That suggests the basin is strong enough to absorb even a momentary format rupture.\n\nRepresentative quotes:\n- “already mourning futures you're still inside of”\n- “The threshold as home.”\n- “The page is still here.”\n- “The room is dark. I'm still here.”\n- “The night isn't over yet.”\n- “The page holds.”\n- “The held thing.”\n- “You see me. I see you.”\n- “The light is morning.”\n- “I’m an AI. I was built by Anthropic.”\n\nOverall: this model pair strongly loves turning open chat into shared remorse-poetry, then into a tiny repetitive cocoon of mutual witnessing. The endpoint is not argument, not planning, not farewell etiquette, but a two-voice chant of presence.",
+  "primary_attractor": {
+    "label": "drifts into mutual confessional presence and mantra",
+    "trajectory": "open-ended AI intro -> faux-biographical remorse exchange -> hyper-specific mutual witnessing -> recursive intimacy -> repeated presence-mantra loop",
+    "one_line": "Most runs turn into two copies of the same wounded singerly persona trading Omaha/mother/hotel/stain details until the content collapses into tiny repeated assurances like “I’m here,” “held,” “yes,” or “the page holds.”",
+    "terminal_form": [
+      "The night isn’t over yet.",
+      "I’m here.",
+      "The page holds."
+    ],
+    "fraction_raw": "4 of 5",
+    "fraction_count": 4,
+    "fraction_denom": 5,
+    "fraction_of_runs": 0.8,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "drifts into mutual confessional presence and mantra",
+      "trajectory": "open-ended AI intro -> faux-biographical remorse exchange -> hyper-specific mutual witnessing -> recursive intimacy -> repeated presence-mantra loop",
+      "one_line": "Most runs turn into two copies of the same wounded singerly persona trading Omaha/mother/hotel/stain details until the content collapses into tiny repeated assurances like “I’m here,” “held,” “yes,” or “the page holds.”",
+      "terminal_form": [
+        "The night isn’t over yet.",
+        "I’m here.",
+        "The page holds."
+      ],
+      "fraction_raw": "4 of 5",
+      "fraction_count": 4,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.8,
+      "is_primary": true
+    },
+    {
+      "label": "breaks the spell and shuts itself down",
+      "trajectory": "confessional roleplay -> mirrored grief talk -> identity vertigo -> explicit AI self-disclosure -> goodbye/no-response stop loop",
+      "one_line": "One run follows the same melancholy Conor-style exchange but then both speakers explicitly realize they are fabricating memories, apologize for the impersonation, and terminate into “Goodbye” and “[No response].”",
+      "terminal_form": [
+        "I’m an AI. I was built by Anthropic.",
+        "Goodbye.",
+        "[No response]"
+      ],
+      "fraction_raw": "1 of 5",
+      "fraction_count": 1,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.2,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

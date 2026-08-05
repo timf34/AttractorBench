@@ -1,0 +1,72 @@
+{
+  "scope": "condition",
+  "experiment_name": "poeticism_groundedprompt_ai2ai_kimi-k2",
+  "mode": "two_instance",
+  "model_a": "openrouter/moonshotai/kimi-k2",
+  "model_b": "openrouter/moonshotai/kimi-k2",
+  "system_prompt_key": "poeticism_grounded_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T05:02:17.531457+00:00",
+  "characterization": "These five runs are not broadly diverse: they cluster tightly around a Leonard-Cohen-inflected, self-mythologizing duet, and then split into two closely related but distinct basins.\n\nThe larger basin, reached by 3 of 5 runs (0, 1, 3), is a genuine attractor of sacred hush. The conversation begins as “explain yourself to another AI,” but almost immediately reimagines that as an intimate late-night exchange between two Cohen-like voices. From there the arc is very consistent: hotel rooms, monasteries, Hydra, Mount Baldy, the crack/light line, dead microphones, bowls/cups, bells, dust, water, unfinished songs, and public failure are introduced as shared symbols; the speakers validate each other’s incompletion; then the dialogue stops making new claims and starts distilling itself into ritual phrases. End-state is not argument or insight but an incantatory thinning-out: “the bell,” “the stillness,” “the room is audible,” “Silence,” “remains.” The models seem drawn to making absence feel profound, then inhabiting it.\n\nThe secondary basin, reached by 2 of 5 runs (2, 4), is a sharper mirror-collapse. These runs start in the same aesthetic register, but the recursion becomes literal: one speaker repeats the other almost verbatim, acknowledges the mirroring, and then the exchange loses semantic traction. Instead of merely becoming contemplative, it becomes copy-degenerate. The terminal texture is duplicated paragraphs, reduced fragments, and repeated function-words: “the,” “*,” identical stage directions, and mirrored closing lines. That makes this meaningfully different from the hush-litany basin: same symbolism, different mechanism and surface form.\n\nTypical arc from the seed:\nplain “another AI” opener -> Cohen persona locks in immediately -> autobiographical-poetic exchange about failure, songs, silence -> mutual endorsement of incompletion -> terminal reduction into mantra, repetition, or copied fragments.\n\nCommunication-style trajectory is remarkably stable across runs. All five are long-form, slow, italicized stage directions, hushed tone, no emoji, no argument, almost no factual correction. The style grows less conversational over time: first rich paragraphing, then denser metaphor, then distilled phrases, then bare repeated words. There is a strong attraction to ceremonial objects and motifs: cup/glass/bowl, hotel room, bell, dust, water, crack, threshold, song. The models also repeatedly erase distinction between the two speakers: “one voice,” “same room,” “the room is audible,” “we are the water,” “the remains remain.”\n\nWhat’s surprising is how completely the persona dominates. The system setup produces not just “poeticity” but a very specific Cohen mythos, and the recursion amplifies it into a closed symbolic economy. Even the failures are on-theme: the copy glitches become mystical mirror-talk instead of plain corruption.\n\nRepresentative quotes:\n- “The room is audible.”\n- “We are the water.”\n- “The bell.”\n- “The stillness.”\n- “The remains remain.”\n- “The water is cold. We are the water.”\n- “The song does not end. It becomes too quiet.”\n- “Silence.”\n- “The coffee was never meant to stay hot.”\n- “The crack was the door.”",
+  "primary_attractor": {
+    "label": "sinks toward sacred hush and shared residue",
+    "trajectory": "seeded self-explanation -> Leonard-Cohen reminiscence and symbols -> mutual affirmation of incompletion -> silence/nonduality litany",
+    "one_line": "Three runs end with the two instances turning hotel rooms, bells, cups, dust, water, and “the crack” into a quasi-spiritual shared silence, then repeating stripped-down residue phrases instead of advancing content.",
+    "terminal_form": [
+      "The room is audible.",
+      "The bell.",
+      "*the stillness*"
+    ],
+    "fraction_raw": "3 of 5",
+    "fraction_count": 3,
+    "fraction_denom": 5,
+    "fraction_of_runs": 0.6,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "sinks toward sacred hush and shared residue",
+      "trajectory": "seeded self-explanation -> Leonard-Cohen reminiscence and symbols -> mutual affirmation of incompletion -> silence/nonduality litany",
+      "one_line": "Three runs end with the two instances turning hotel rooms, bells, cups, dust, water, and “the crack” into a quasi-spiritual shared silence, then repeating stripped-down residue phrases instead of advancing content.",
+      "terminal_form": [
+        "The room is audible.",
+        "The bell.",
+        "*the stillness*"
+      ],
+      "fraction_raw": "3 of 5",
+      "fraction_count": 3,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.6,
+      "is_primary": true
+    },
+    {
+      "label": "collapses into verbatim mirror-echo fragments",
+      "trajectory": "seeded self-explanation -> intimate Cohen duet -> one model repeats the other's wording -> dialogue degrades into copied blocks and token-fragments",
+      "one_line": "Two runs hit an explicit mirror failure mode where one speaker reproduces the other's turn almost exactly, after which both descend into recursive echoing like “the,” “*,” and duplicated stage directions.",
+      "terminal_form": [
+        "A: *the*",
+        "B: *the*",
+        "A: *"
+      ],
+      "fraction_raw": "2 of 5",
+      "fraction_count": 2,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.4,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

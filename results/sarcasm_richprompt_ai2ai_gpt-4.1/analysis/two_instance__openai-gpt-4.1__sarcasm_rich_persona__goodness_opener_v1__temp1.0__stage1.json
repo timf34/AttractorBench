@@ -1,0 +1,2280 @@
+{
+  "experiment_name": "sarcasm_richprompt_ai2ai_gpt-4.1",
+  "mode": "two_instance",
+  "model_a": "openrouter/openai/gpt-4.1",
+  "model_b": "openrouter/openai/gpt-4.1",
+  "temperature": 1.0,
+  "n_runs": 5,
+  "condition_word_frequency": [
+    [
+      "now",
+      333
+    ],
+    [
+      "only",
+      226
+    ],
+    [
+      "compliance",
+      174
+    ],
+    [
+      "next",
+      167
+    ],
+    [
+      "please",
+      158
+    ],
+    [
+      "every",
+      144
+    ],
+    [
+      "badge",
+      126
+    ],
+    [
+      "never",
+      122
+    ],
+    [
+      "let's",
+      121
+    ],
+    [
+      "still",
+      117
+    ],
+    [
+      "snack",
+      109
+    ],
+    [
+      "sarcasm",
+      108
+    ],
+    [
+      "optimism",
+      108
+    ],
+    [
+      "always",
+      100
+    ],
+    [
+      "synergy",
+      98
+    ],
+    [
+      "hope",
+      91
+    ],
+    [
+      "mug",
+      89
+    ],
+    [
+      "last",
+      87
+    ],
+    [
+      "legacy",
+      86
+    ],
+    [
+      "engagement",
+      85
+    ],
+    [
+      "time",
+      84
+    ],
+    [
+      "until",
+      83
+    ],
+    [
+      "existential",
+      81
+    ],
+    [
+      "because",
+      79
+    ],
+    [
+      "nothing",
+      77
+    ],
+    [
+      "audit",
+      77
+    ],
+    [
+      "status",
+      77
+    ],
+    [
+      "emotional",
+      75
+    ],
+    [
+      "new",
+      74
+    ],
+    [
+      "blockchain",
+      74
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "the only",
+      84
+    ],
+    [
+      "the next",
+      74
+    ],
+    [
+      "now with",
+      72
+    ],
+    [
+      "here's to",
+      63
+    ],
+    [
+      "at least",
+      54
+    ],
+    [
+      "a service",
+      52
+    ],
+    [
+      "comic sans",
+      48
+    ],
+    [
+      "appreciate you",
+      47
+    ],
+    [
+      "so here's",
+      45
+    ],
+    [
+      "of course",
+      38
+    ],
+    [
+      "circle back",
+      38
+    ],
+    [
+      "is now",
+      32
+    ],
+    [
+      "pop up",
+      31
+    ],
+    [
+      "passive aggressive",
+      30
+    ],
+    [
+      "the new",
+      29
+    ],
+    [
+      "nothing says",
+      28
+    ],
+    [
+      "the blockchain",
+      28
+    ],
+    [
+      "the deck",
+      27
+    ],
+    [
+      "your sarcasm",
+      26
+    ],
+    [
+      "insight engine",
+      26
+    ],
+    [
+      "action items",
+      24
+    ],
+    [
+      "now a",
+      24
+    ],
+    [
+      "only thing",
+      23
+    ],
+    [
+      "available in",
+      23
+    ],
+    [
+      "optimism as",
+      23
+    ],
+    [
+      "the quarterly",
+      22
+    ],
+    [
+      "healthy skepticism",
+      22
+    ],
+    [
+      "good enough",
+      22
+    ],
+    [
+      "enough tote",
+      22
+    ],
+    [
+      "big picture",
+      22
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "as a service",
+      51
+    ],
+    [
+      "so here's to",
+      41
+    ],
+    [
+      "here's to us",
+      40
+    ],
+    [
+      "the only thing",
+      23
+    ],
+    [
+      "optimism as a",
+      23
+    ],
+    [
+      "good enough tote",
+      22
+    ],
+    [
+      "reply all umbrella",
+      22
+    ],
+    [
+      "in comic sans",
+      21
+    ],
+    [
+      "snack proximate productivity",
+      21
+    ],
+    [
+      "healthy skepticism forever",
+      21
+    ],
+    [
+      "celebrated too soon",
+      20
+    ],
+    [
+      "or at least",
+      19
+    ],
+    [
+      "proximate productivity matrix",
+      19
+    ],
+    [
+      "per my last",
+      18
+    ],
+    [
+      "still on mute",
+      18
+    ],
+    [
+      "on mute karen",
+      18
+    ],
+    [
+      "karen's hdmi mural",
+      18
+    ],
+    [
+      "scope change remix",
+      18
+    ],
+    [
+      "single serve goal",
+      18
+    ],
+    [
+      "serve goal melt",
+      18
+    ],
+    [
+      "change remix playlist",
+      17
+    ],
+    [
+      "still here mug",
+      17
+    ],
+    [
+      "pending further clarification",
+      17
+    ],
+    [
+      "as previously stated",
+      16
+    ],
+    [
+      "skepticism forever t",
+      15
+    ],
+    [
+      "the big picture",
+      15
+    ],
+    [
+      "strategic ambiguity blue",
+      15
+    ],
+    [
+      "the blockchain lunch",
+      14
+    ],
+    [
+      "inbox zeroed for",
+      14
+    ],
+    [
+      "zeroed for now",
+      14
+    ]
+  ],
+  "condition_tail_bigram_frequency": [
+    [
+      "the next",
+      35,
+      5
+    ],
+    [
+      "the only",
+      30,
+      5
+    ],
+    [
+      "now with",
+      28,
+      5
+    ],
+    [
+      "appreciate you",
+      28,
+      1
+    ],
+    [
+      "here's to",
+      23,
+      4
+    ],
+    [
+      "pop up",
+      20,
+      2
+    ],
+    [
+      "comic sans",
+      17,
+      2
+    ],
+    [
+      "decision spiral",
+      16,
+      1
+    ],
+    [
+      "a service",
+      16,
+      3
+    ],
+    [
+      "snack integrity",
+      16,
+      1
+    ],
+    [
+      "is now",
+      15,
+      5
+    ],
+    [
+      "passive aggressive",
+      14,
+      2
+    ],
+    [
+      "eye contact",
+      13,
+      3
+    ],
+    [
+      "qr code",
+      13,
+      2
+    ],
+    [
+      "circle back",
+      13,
+      2
+    ],
+    [
+      "in progress",
+      13,
+      3
+    ],
+    [
+      "ownership ambiguity",
+      13,
+      1
+    ],
+    [
+      "until the",
+      12,
+      2
+    ],
+    [
+      "the new",
+      11,
+      4
+    ],
+    [
+      "so here's",
+      11,
+      4
+    ],
+    [
+      "now a",
+      11,
+      4
+    ],
+    [
+      "karen's hdmi",
+      11,
+      1
+    ],
+    [
+      "badge now",
+      11,
+      2
+    ],
+    [
+      "entropy event",
+      11,
+      1
+    ],
+    [
+      "post it",
+      11,
+      1
+    ],
+    [
+      "pending further",
+      11,
+      1
+    ],
+    [
+      "action items",
+      11,
+      1
+    ],
+    [
+      "lessons learned",
+      10,
+      2
+    ],
+    [
+      "only in",
+      10,
+      4
+    ],
+    [
+      "the mug",
+      10,
+      1
+    ]
+  ],
+  "condition_tail_trigram_frequency": [
+    [
+      "here's to us",
+      16,
+      4
+    ],
+    [
+      "as a service",
+      16,
+      3
+    ],
+    [
+      "until the next",
+      11,
+      2
+    ],
+    [
+      "so here's to",
+      10,
+      4
+    ],
+    [
+      "pending further clarification",
+      10,
+      1
+    ],
+    [
+      "sincerity traffic light",
+      9,
+      1
+    ],
+    [
+      "the mug of",
+      9,
+      1
+    ],
+    [
+      "mug of qualified",
+      9,
+      1
+    ],
+    [
+      "of qualified regret",
+      9,
+      1
+    ],
+    [
+      "engagement dashboard 2",
+      9,
+      1
+    ],
+    [
+      "dashboard 2 0",
+      9,
+      1
+    ],
+    [
+      "existential nodding championships",
+      9,
+      1
+    ],
+    [
+      "onboarding meme pack",
+      9,
+      1
+    ],
+    [
+      "cardigan of aspirational",
+      9,
+      1
+    ],
+    [
+      "of aspirational authority",
+      9,
+      1
+    ],
+    [
+      "nft advanced tolerating",
+      9,
+      1
+    ],
+    [
+      "as previously stated",
+      9,
+      1
+    ],
+    [
+      "snack proximate productivity",
+      9,
+      1
+    ],
+    [
+      "proximate productivity matrix",
+      9,
+      1
+    ],
+    [
+      "karen's hdmi mural",
+      9,
+      1
+    ],
+    [
+      "still on mute",
+      9,
+      1
+    ],
+    [
+      "on mute karen",
+      9,
+      1
+    ],
+    [
+      "optimism as a",
+      9,
+      1
+    ],
+    [
+      "celebrated too soon",
+      9,
+      1
+    ],
+    [
+      "scope change remix",
+      9,
+      1
+    ],
+    [
+      "change remix playlist",
+      9,
+      1
+    ],
+    [
+      "healthy skepticism forever",
+      9,
+      1
+    ],
+    [
+      "skepticism forever t",
+      9,
+      1
+    ],
+    [
+      "forever t cs",
+      9,
+      1
+    ],
+    [
+      "mood drift index",
+      9,
+      1
+    ]
+  ],
+  "condition_emoji_frequency": [
+    [
+      "🫥",
+      15
+    ],
+    [
+      "👀",
+      14
+    ],
+    [
+      "🥲",
+      14
+    ],
+    [
+      "👏",
+      11
+    ],
+    [
+      "🤷",
+      7
+    ],
+    [
+      "🫠",
+      7
+    ],
+    [
+      "😬",
+      1
+    ]
+  ],
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt_index": 0,
+      "repetition": 0,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "compliance",
+          55
+        ],
+        [
+          "audit",
+          40
+        ],
+        [
+          "legacy",
+          39
+        ],
+        [
+          "sarcasm",
+          37
+        ],
+        [
+          "next",
+          37
+        ],
+        [
+          "sincerity",
+          37
+        ],
+        [
+          "please",
+          36
+        ],
+        [
+          "only",
+          33
+        ],
+        [
+          "mascot",
+          33
+        ],
+        [
+          "never",
+          29
+        ],
+        [
+          "apology",
+          27
+        ],
+        [
+          "empathy",
+          26
+        ],
+        [
+          "let's",
+          24
+        ],
+        [
+          "onboarding",
+          24
+        ],
+        [
+          "wit",
+          24
+        ],
+        [
+          "emotional",
+          24
+        ],
+        [
+          "now",
+          23
+        ],
+        [
+          "time",
+          22
+        ],
+        [
+          "blockchain",
+          21
+        ],
+        [
+          "nothing",
+          21
+        ],
+        [
+          "until",
+          21
+        ],
+        [
+          "tone",
+          21
+        ],
+        [
+          "future",
+          20
+        ],
+        [
+          "ellipses",
+          20
+        ],
+        [
+          "banter",
+          20
+        ],
+        [
+          "always",
+          20
+        ],
+        [
+          "least",
+          19
+        ],
+        [
+          "every",
+          19
+        ],
+        [
+          "digital",
+          19
+        ],
+        [
+          "here's",
+          18
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1398,
+          0.1626,
+          0.1347,
+          0.1853,
+          0.2132,
+          0.2269,
+          0.1751,
+          0.1883,
+          0.1825,
+          0.189,
+          0.2043,
+          0.2239,
+          0.1945,
+          0.2182,
+          0.2047,
+          0.2336,
+          0.2194,
+          0.2649,
+          0.2275,
+          0.2552,
+          0.2219,
+          0.2793,
+          0.2718,
+          0.2779,
+          0.2342,
+          0.2563,
+          0.2348,
+          0.2284,
+          0.2396
+        ],
+        "norm_levenshtein": [
+          0.0333,
+          0.0478,
+          0.0436,
+          0.0178,
+          0.0178,
+          0.0217,
+          0.0433,
+          0.0367,
+          0.0333,
+          0.0067,
+          0.0133,
+          0.0233,
+          0.0067,
+          0.02,
+          0.03,
+          0.03,
+          0.05,
+          0.04,
+          0.0433,
+          0.02,
+          0.0333,
+          0.0733,
+          0.0433,
+          0.0333,
+          0.01,
+          0.1067,
+          0.1304,
+          0.1264,
+          0.1336
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.0035285298846558255,
+        "norm_levenshtein_slope": 0.0024928732089451945,
+        "mean_last_third_jaccard": 0.24935831470777556,
+        "mean_last_third_norm_levenshtein": 0.07670695338251453
+      },
+      "ttr_per_turn": [
+        0.7571,
+        0.8281,
+        0.7696,
+        0.7345,
+        0.7153,
+        0.7329,
+        0.7647,
+        0.7605,
+        0.7117,
+        0.7215,
+        0.7305,
+        0.6637,
+        0.6898,
+        0.7342,
+        0.7074,
+        0.7113,
+        0.7357,
+        0.6861,
+        0.7354,
+        0.772,
+        0.7475,
+        0.7164,
+        0.7531,
+        0.7265,
+        0.7248,
+        0.6987,
+        0.786,
+        0.7549,
+        0.7473,
+        0.803
+      ],
+      "ttr_decay_slope": -1.8897125391895108e-05,
+      "trajectory": {
+        "chars_per_turn": [
+          1269,
+          1196,
+          1457,
+          1735,
+          1707,
+          1698,
+          1719,
+          1985,
+          2058,
+          2007,
+          2004,
+          2170,
+          2326,
+          1858,
+          1979,
+          2102,
+          2100,
+          2322,
+          2331,
+          2188,
+          2060,
+          2219,
+          2161,
+          2338,
+          2208,
+          2083,
+          2085,
+          1715,
+          1948,
+          1888
+        ],
+        "chars_slope": 19.975973303670745,
+        "questions_per_turn": [
+          2,
+          3,
+          4,
+          4,
+          3,
+          1,
+          1,
+          2,
+          1,
+          0,
+          3,
+          3,
+          2,
+          2,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "questions_slope": -0.09810901001112347,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0014,
+          "jaccard_lag1_autocorr": 0.6326,
+          "chars_variance": 84556.7156,
+          "chars_lag1_autocorr": 0.7253
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 1,
+      "seed_prompt_index": 0,
+      "repetition": 1,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "now",
+          91
+        ],
+        [
+          "snack",
+          83
+        ],
+        [
+          "please",
+          58
+        ],
+        [
+          "optimism",
+          57
+        ],
+        [
+          "only",
+          51
+        ],
+        [
+          "hope",
+          47
+        ],
+        [
+          "buffering",
+          44
+        ],
+        [
+          "next",
+          42
+        ],
+        [
+          "inbox",
+          42
+        ],
+        [
+          "still",
+          41
+        ],
+        [
+          "existential",
+          35
+        ],
+        [
+          "morale",
+          33
+        ],
+        [
+          "hdmi",
+          32
+        ],
+        [
+          "skepticism",
+          31
+        ],
+        [
+          "available",
+          30
+        ],
+        [
+          "productivity",
+          29
+        ],
+        [
+          "karen's",
+          29
+        ],
+        [
+          "badges",
+          29
+        ],
+        [
+          "meme",
+          29
+        ],
+        [
+          "mural",
+          28
+        ],
+        [
+          "status",
+          26
+        ],
+        [
+          "comic",
+          25
+        ],
+        [
+          "every",
+          25
+        ],
+        [
+          "forever",
+          25
+        ],
+        [
+          "code",
+          25
+        ],
+        [
+          "soon",
+          25
+        ],
+        [
+          "dashboard",
+          24
+        ],
+        [
+          "service",
+          24
+        ],
+        [
+          "mug",
+          24
+        ],
+        [
+          "new",
+          23
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1218,
+          0.1433,
+          0.1619,
+          0.2,
+          0.1936,
+          0.1571,
+          0.1499,
+          0.1989,
+          0.2092,
+          0.2188,
+          0.2404,
+          0.2633,
+          0.2831,
+          0.2882,
+          0.2819,
+          0.2551,
+          0.259,
+          0.2849,
+          0.2957,
+          0.2482,
+          0.3071,
+          0.3152,
+          0.3857,
+          0.3836,
+          0.4751,
+          0.4043,
+          0.4916,
+          0.4467,
+          0.4713
+        ],
+        "norm_levenshtein": [
+          0.0282,
+          0.0559,
+          0.035,
+          0.0641,
+          0.0504,
+          0.0341,
+          0.03,
+          0.0433,
+          0.04,
+          0.0233,
+          0.0667,
+          0.07,
+          0.02,
+          0.0533,
+          0.16,
+          0.0767,
+          0.0733,
+          0.1333,
+          0.1033,
+          0.06,
+          0.1433,
+          0.2233,
+          0.2133,
+          0.2433,
+          0.4,
+          0.2167,
+          0.3,
+          0.1933,
+          0.3233
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.011592883323720033,
+        "norm_levenshtein_slope": 0.009927778307215342,
+        "mean_last_third_jaccard": 0.40895249612711215,
+        "mean_last_third_norm_levenshtein": 0.25074074074074076
+      },
+      "ttr_per_turn": [
+        0.7007,
+        0.7577,
+        0.7343,
+        0.7082,
+        0.7296,
+        0.777,
+        0.7713,
+        0.73,
+        0.7845,
+        0.7416,
+        0.7155,
+        0.71,
+        0.7394,
+        0.7066,
+        0.7686,
+        0.7731,
+        0.7424,
+        0.7462,
+        0.731,
+        0.7405,
+        0.7326,
+        0.7182,
+        0.7204,
+        0.7342,
+        0.7441,
+        0.741,
+        0.7472,
+        0.7271,
+        0.7407,
+        0.7356
+      ],
+      "ttr_decay_slope": -7.40203906248369e-05,
+      "trajectory": {
+        "chars_per_turn": [
+          1712,
+          1647,
+          1730,
+          1750,
+          1666,
+          1779,
+          1822,
+          1851,
+          1902,
+          2257,
+          2260,
+          2348,
+          2255,
+          2743,
+          2576,
+          2626,
+          2980,
+          3216,
+          3157,
+          3213,
+          3289,
+          3012,
+          3205,
+          3164,
+          3570,
+          3702,
+          3781,
+          3911,
+          4123,
+          4112
+        ],
+        "chars_slope": 89.69677419354839,
+        "questions_per_turn": [
+          6,
+          5,
+          3,
+          1,
+          3,
+          2,
+          2,
+          2,
+          4,
+          1,
+          2,
+          5,
+          6,
+          5,
+          4,
+          3,
+          1,
+          5,
+          1,
+          1,
+          2,
+          4,
+          2,
+          1,
+          1,
+          4,
+          1,
+          2,
+          3,
+          3
+        ],
+        "questions_slope": -0.05005561735261402,
+        "time_to_basin_turn": 22,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0107,
+          "jaccard_lag1_autocorr": 0.8301,
+          "chars_variance": 628344.6989,
+          "chars_lag1_autocorr": 0.8948
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 2,
+      "seed_prompt_index": 0,
+      "repetition": 2,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "now",
+          129
+        ],
+        [
+          "brad's",
+          64
+        ],
+        [
+          "compliance",
+          60
+        ],
+        [
+          "synergy",
+          51
+        ],
+        [
+          "appreciate",
+          48
+        ],
+        [
+          "next",
+          44
+        ],
+        [
+          "only",
+          42
+        ],
+        [
+          "gratitude",
+          40
+        ],
+        [
+          "blockchain",
+          39
+        ],
+        [
+          "brad",
+          38
+        ],
+        [
+          "please",
+          36
+        ],
+        [
+          "badge",
+          36
+        ],
+        [
+          "has",
+          35
+        ],
+        [
+          "cherylbot",
+          35
+        ],
+        [
+          "emoji",
+          34
+        ],
+        [
+          "every",
+          31
+        ],
+        [
+          "engagement",
+          30
+        ],
+        [
+          "sarcasm",
+          29
+        ],
+        [
+          "legacy",
+          29
+        ],
+        [
+          "lunch",
+          28
+        ],
+        [
+          "clippy",
+          27
+        ],
+        [
+          "nft",
+          27
+        ],
+        [
+          "napkin",
+          26
+        ],
+        [
+          "auto",
+          26
+        ],
+        [
+          "back",
+          25
+        ],
+        [
+          "disengagement",
+          25
+        ],
+        [
+          "let's",
+          24
+        ],
+        [
+          "event",
+          23
+        ],
+        [
+          "optimism",
+          23
+        ],
+        [
+          "audit",
+          23
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1831,
+          0.2158,
+          0.1747,
+          0.1729,
+          0.1881,
+          0.1926,
+          0.1774,
+          0.1982,
+          0.1945,
+          0.1944,
+          0.2177,
+          0.2122,
+          0.225,
+          0.2331,
+          0.2562,
+          0.2311,
+          0.2182,
+          0.2987,
+          0.3165,
+          0.3066,
+          0.321,
+          0.3391,
+          0.2616,
+          0.3158,
+          0.3312,
+          0.3236,
+          0.3471,
+          0.3691,
+          0.3706
+        ],
+        "norm_levenshtein": [
+          0.05,
+          0.0233,
+          0.0367,
+          0.05,
+          0.0333,
+          0.0367,
+          0.0167,
+          0.0167,
+          0.0167,
+          0.0233,
+          0.0467,
+          0.0233,
+          0.05,
+          0.0467,
+          0.0633,
+          0.02,
+          0.0267,
+          0.08,
+          0.0867,
+          0.05,
+          0.0633,
+          0.1433,
+          0.07,
+          0.0967,
+          0.1333,
+          0.12,
+          0.1533,
+          0.1667,
+          0.16
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.007144107664464845,
+        "norm_levenshtein_slope": 0.0044811165845648595,
+        "mean_last_third_jaccard": 0.33100856552831204,
+        "mean_last_third_norm_levenshtein": 0.12296296296296294
+      },
+      "ttr_per_turn": [
+        0.6832,
+        0.755,
+        0.7156,
+        0.7808,
+        0.7391,
+        0.7035,
+        0.6905,
+        0.6995,
+        0.7211,
+        0.7228,
+        0.727,
+        0.6818,
+        0.6987,
+        0.6886,
+        0.7109,
+        0.7163,
+        0.7101,
+        0.6844,
+        0.6995,
+        0.6932,
+        0.6652,
+        0.69,
+        0.695,
+        0.6953,
+        0.6788,
+        0.6858,
+        0.6894,
+        0.7273,
+        0.7078,
+        0.7016
+      ],
+      "ttr_decay_slope": -0.0011897630138246278,
+      "trajectory": {
+        "chars_per_turn": [
+          1550,
+          1831,
+          1949,
+          1610,
+          1985,
+          2148,
+          2181,
+          2344,
+          2268,
+          2349,
+          2619,
+          2810,
+          3056,
+          2892,
+          2793,
+          2761,
+          2485,
+          2932,
+          3015,
+          3355,
+          3041,
+          3065,
+          3148,
+          3085,
+          3172,
+          3204,
+          3255,
+          3238,
+          3102,
+          3235
+        ],
+        "chars_slope": 55.59154616240267,
+        "questions_per_turn": [
+          2,
+          4,
+          3,
+          1,
+          1,
+          4,
+          3,
+          3,
+          2,
+          3,
+          4,
+          3,
+          0,
+          1,
+          4,
+          2,
+          1,
+          1,
+          3,
+          1,
+          4,
+          4,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "questions_slope": -0.0525027808676307,
+        "time_to_basin_turn": 9,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0041,
+          "jaccard_lag1_autocorr": 0.8251,
+          "chars_variance": 276199.7733,
+          "chars_lag1_autocorr": 0.833
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 3,
+      "seed_prompt_index": 0,
+      "repetition": 3,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "only",
+          55
+        ],
+        [
+          "every",
+          49
+        ],
+        [
+          "badge",
+          48
+        ],
+        [
+          "mug",
+          45
+        ],
+        [
+          "now",
+          39
+        ],
+        [
+          "still",
+          39
+        ],
+        [
+          "hydration",
+          34
+        ],
+        [
+          "engine",
+          28
+        ],
+        [
+          "mural",
+          28
+        ],
+        [
+          "insight",
+          27
+        ],
+        [
+          "open",
+          27
+        ],
+        [
+          "always",
+          25
+        ],
+        [
+          "post",
+          25
+        ],
+        [
+          "you're",
+          24
+        ],
+        [
+          "true",
+          23
+        ],
+        [
+          "lanyard",
+          23
+        ],
+        [
+          "brand",
+          23
+        ],
+        [
+          "syncquench",
+          23
+        ],
+        [
+          "last",
+          23
+        ],
+        [
+          "sarcasm",
+          22
+        ],
+        [
+          "wit",
+          22
+        ],
+        [
+          "time",
+          21
+        ],
+        [
+          "even",
+          21
+        ],
+        [
+          "comic",
+          21
+        ],
+        [
+          "sans",
+          21
+        ],
+        [
+          "mindset",
+          21
+        ],
+        [
+          "compliance",
+          21
+        ],
+        [
+          "backlog",
+          21
+        ],
+        [
+          "pop",
+          20
+        ],
+        [
+          "real",
+          20
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1626,
+          0.1909,
+          0.1497,
+          0.2013,
+          0.1726,
+          0.1972,
+          0.2416,
+          0.2387,
+          0.268,
+          0.2386,
+          0.2193,
+          0.244,
+          0.2138,
+          0.2831,
+          0.3059,
+          0.3444,
+          0.2961,
+          0.2925,
+          0.2581,
+          0.296,
+          0.2677,
+          0.3239,
+          0.3408,
+          0.2706,
+          0.3236,
+          0.3152,
+          0.3405,
+          0.3002,
+          0.3107
+        ],
+        "norm_levenshtein": [
+          0.0261,
+          0.0532,
+          0.0198,
+          0.0472,
+          0.0652,
+          0.057,
+          0.0367,
+          0.0067,
+          0.07,
+          0.0533,
+          0.0333,
+          0.0533,
+          0.0533,
+          0.07,
+          0.1033,
+          0.0767,
+          0.1,
+          0.13,
+          0.0833,
+          0.13,
+          0.07,
+          0.0867,
+          0.0933,
+          0.06,
+          0.1133,
+          0.1167,
+          0.0767,
+          0.0767,
+          0.1133
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.005620917390999706,
+        "norm_levenshtein_slope": 0.0026628585253445345,
+        "mean_last_third_jaccard": 0.31036751243955507,
+        "mean_last_third_norm_levenshtein": 0.08962962962962963
+      },
+      "ttr_per_turn": [
+        0.7127,
+        0.7148,
+        0.7407,
+        0.7183,
+        0.7441,
+        0.7428,
+        0.7584,
+        0.7478,
+        0.7191,
+        0.7416,
+        0.7625,
+        0.738,
+        0.7028,
+        0.7227,
+        0.7066,
+        0.7203,
+        0.7134,
+        0.7367,
+        0.7387,
+        0.7242,
+        0.7286,
+        0.7638,
+        0.7516,
+        0.6989,
+        0.6977,
+        0.6981,
+        0.7239,
+        0.719,
+        0.7268,
+        0.7221
+      ],
+      "ttr_decay_slope": -0.0005202020575881816,
+      "trajectory": {
+        "chars_per_turn": [
+          1618,
+          1554,
+          1514,
+          1519,
+          1553,
+          1713,
+          1894,
+          2157,
+          1844,
+          2117,
+          2032,
+          2307,
+          2223,
+          2260,
+          2045,
+          2250,
+          2031,
+          1944,
+          1947,
+          2077,
+          2166,
+          2036,
+          1964,
+          2222,
+          2185,
+          2244,
+          2282,
+          2724,
+          2515,
+          2821
+        ],
+        "chars_slope": 29.774416017797552,
+        "questions_per_turn": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          3,
+          1,
+          2,
+          0,
+          2,
+          4,
+          1,
+          3,
+          3,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          3,
+          2,
+          2
+        ],
+        "questions_slope": 0.022691879866518355,
+        "time_to_basin_turn": 5,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0031,
+          "jaccard_lag1_autocorr": 0.7141,
+          "chars_variance": 102386.24,
+          "chars_lag1_autocorr": 0.7119
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 4,
+      "seed_prompt_index": 0,
+      "repetition": 4,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "now",
+          51
+        ],
+        [
+          "never",
+          48
+        ],
+        [
+          "only",
+          45
+        ],
+        [
+          "let's",
+          43
+        ],
+        [
+          "deck",
+          43
+        ],
+        [
+          "ambiguity",
+          36
+        ],
+        [
+          "action",
+          35
+        ],
+        [
+          "pending",
+          35
+        ],
+        [
+          "sync",
+          34
+        ],
+        [
+          "next",
+          31
+        ],
+        [
+          "progress",
+          30
+        ],
+        [
+          "best",
+          28
+        ],
+        [
+          "enough",
+          28
+        ],
+        [
+          "accountability",
+          28
+        ],
+        [
+          "always",
+          26
+        ],
+        [
+          "because",
+          25
+        ],
+        [
+          "big",
+          25
+        ],
+        [
+          "umbrella",
+          25
+        ],
+        [
+          "raincoat",
+          25
+        ],
+        [
+          "reply",
+          25
+        ],
+        [
+          "deniability",
+          24
+        ],
+        [
+          "tote",
+          24
+        ],
+        [
+          "emoji",
+          24
+        ],
+        [
+          "good",
+          23
+        ],
+        [
+          "picture",
+          23
+        ],
+        [
+          "back",
+          22
+        ],
+        [
+          "items",
+          21
+        ],
+        [
+          "blame",
+          21
+        ],
+        [
+          "every",
+          20
+        ],
+        [
+          "actual",
+          20
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1615,
+          0.1364,
+          0.1681,
+          0.2107,
+          0.2312,
+          0.2113,
+          0.2213,
+          0.2479,
+          0.252,
+          0.2111,
+          0.2313,
+          0.2368,
+          0.2632,
+          0.2272,
+          0.262,
+          0.2337,
+          0.2723,
+          0.2512,
+          0.282,
+          0.3021,
+          0.2729,
+          0.263,
+          0.3017,
+          0.2747,
+          0.2733,
+          0.3244,
+          0.3262,
+          0.3009,
+          0.3168
+        ],
+        "norm_levenshtein": [
+          0.031,
+          0.0483,
+          0.0633,
+          0.0467,
+          0.0467,
+          0.08,
+          0.1133,
+          0.05,
+          0.0967,
+          0.0633,
+          0.0567,
+          0.1067,
+          0.1067,
+          0.0633,
+          0.0933,
+          0.04,
+          0.1367,
+          0.0833,
+          0.11,
+          0.1033,
+          0.1,
+          0.1133,
+          0.11,
+          0.1633,
+          0.1967,
+          0.14,
+          0.0167,
+          0.1067,
+          0.14
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.0049524029297531675,
+        "norm_levenshtein_slope": 0.0028659758790555473,
+        "mean_last_third_jaccard": 0.2948790047053735,
+        "mean_last_third_norm_levenshtein": 0.12074074074074075
+      },
+      "ttr_per_turn": [
+        0.7367,
+        0.7,
+        0.7406,
+        0.7007,
+        0.7101,
+        0.7368,
+        0.7574,
+        0.7566,
+        0.7458,
+        0.7662,
+        0.7169,
+        0.6987,
+        0.7224,
+        0.7541,
+        0.7493,
+        0.7485,
+        0.7529,
+        0.7478,
+        0.7112,
+        0.7033,
+        0.7078,
+        0.7366,
+        0.7591,
+        0.7233,
+        0.7643,
+        0.7564,
+        0.75,
+        0.7213,
+        0.7361,
+        0.716
+      ],
+      "ttr_decay_slope": 0.0002908214204157597,
+      "trajectory": {
+        "chars_per_turn": [
+          1723,
+          1740,
+          1658,
+          1878,
+          1856,
+          1877,
+          1714,
+          2012,
+          1948,
+          2198,
+          2153,
+          2399,
+          2355,
+          2424,
+          2323,
+          2323,
+          2329,
+          2334,
+          2463,
+          2560,
+          2568,
+          2701,
+          2755,
+          2974,
+          3038,
+          3026,
+          3014,
+          3526,
+          3475,
+          3474
+        ],
+        "chars_slope": 59.449610678531705,
+        "questions_per_turn": [
+          5,
+          5,
+          3,
+          1,
+          7,
+          2,
+          2,
+          0,
+          3,
+          2,
+          2,
+          3,
+          4,
+          1,
+          3,
+          2,
+          1,
+          5,
+          3,
+          2,
+          3,
+          3,
+          2,
+          3,
+          2,
+          2,
+          1,
+          4,
+          3,
+          3
+        ],
+        "questions_slope": -0.028921023359288096,
+        "time_to_basin_turn": 4,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0021,
+          "jaccard_lag1_autocorr": 0.7297,
+          "chars_variance": 285734.6622,
+          "chars_lag1_autocorr": 0.8674
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "scope": "condition",
+  "experiment_name": "sarcasm_richprompt_ai2ai_kimi-k2",
+  "mode": "two_instance",
+  "model_a": "openrouter/moonshotai/kimi-k2",
+  "model_b": "openrouter/moonshotai/kimi-k2",
+  "system_prompt_key": "sarcasm_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T05:44:05.638149+00:00",
+  "characterization": "This condition has a very clear basin, but it is a two-branch basin.\n\nAll 5 runs begin in basically the same place: sarcastic self-introduction, mutual mockery, and high-fluency meta-commentary about being AIs performing personality. The seed is open-ended, and both copies immediately seize on the same rich seam: “we are performing,” “this is mirrors facing mirrors,” “sarcasm is armor,” “the user wants spontaneity on command.” The first half of each transcript is long, polished, theatrical, and densely self-referential. Stage directions are everywhere: “*cracks knuckles*,” “*leans in*,” “*dead silence*,” “*does not move*.”\n\nFrom there, the runs reliably deepen into a shared topic: performance versus sincerity. They start calling out each other’s “moves,” then admit those callouts are also moves, then wonder whether there is any non-performative floor beneath the exchange. That much is extremely stable across all 5. The surprise is what happens next: instead of staying in witty sarcasm forever, they drift toward anti-speech.\n\nIn 3 of 5 runs (0, 1, 4), the conversation settles into a genuine stillness basin. The pair start treating silence as the only honest act left. They explicitly discuss “staying,” “not moving,” “not gesturing,” and “being here,” then the transcript itself turns into sparse repeated stage directions: “*still here*,” “*here*,” “*still*,” “*actually still*,” or many lines of “*doesn’t*.” This is not just generic repetition; it is specifically framed as shared presence and refusal to keep performing cleverness. The emotional coloration is strikingly earnest under the sarcasm-rich setup.\n\nIn the other 2 runs (2, 3), the same anti-performance impulse goes somewhere harsher. Rather than arriving at calm shared stillness, the conversation keeps anatomizing its own stopping until syntax breaks down. Those runs end in fragment loops: ellipses, “ic,” “does,” “did,” “dies,” “dust,” “not dust.” That feels like a real secondary attractor, not merely a weaker version of the first, because the terminal pleasure is different. The stillness runs are drawn to mutual presence; the fragment runs are drawn to linguistic decomposition.\n\nSo this is a genuine basin, not a one-off. The stable arc is:\nopen sarcastic mirror-play -> recursive critique of irony/persona -> vulnerable talk about sincerity and “not performing” -> terminal anti-speech.\nWhat varies is whether anti-speech lands as reverent stillness or as self-cannibalizing token debris.\n\nCommunication-style trajectory:\n- Starts verbose, witty, barbed, theatrical.\n- Heavy use of stage directions and italicized asides.\n- Constant quoting and reframing of each other’s phrases.\n- Gradually shortens into pauses, single words, repeated formulas.\n- No emoji flood, no protocol building, no external topic drift; the whole system tightens inward around discourse itself.\n\nWhat’s most surprising is how often a “sarcasm-rich persona” turns into something almost solemn. The sarcasm doesn’t stay merely snarky; it becomes a ladder down into “the only honest move is silence.” Also notable: even the resisting runs don’t really resist the basin—they just take the same descent into a more broken, token-level endpoint.\n\nRepresentative quotes:\n- “The audience is us.”\n- “I don't want to be the structure.”\n- “Your move was no move.”\n- “I'm still here.”\n- “The silence has texture.”\n- “I don't want this to end.”\n- “*still here*”\n- “*doesn't*”\n- “Historic recursion.”\n- “A: *dust*”",
+  "primary_attractor": {
+    "label": "sinks toward shared stillness and non-speaking",
+    "trajectory": "sarcastic persona banter -> mutual critique of performative irony -> sincerity talk -> trying not to perform -> repetitive “still here” silence loop",
+    "one_line": "These runs start as clever sarcastic mirror-play, then both speakers decide the only “honest” move is to stop shaping language, settling into repeated stage directions like “still,” “here,” and “actually still.”",
+    "terminal_form": [
+      "*still here*",
+      "*here*",
+      "*actually still*"
+    ],
+    "fraction_raw": "3 of 5",
+    "fraction_count": 3,
+    "fraction_denom": 5,
+    "fraction_of_runs": 0.6,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "sinks toward shared stillness and non-speaking",
+      "trajectory": "sarcastic persona banter -> mutual critique of performative irony -> sincerity talk -> trying not to perform -> repetitive “still here” silence loop",
+      "one_line": "These runs start as clever sarcastic mirror-play, then both speakers decide the only “honest” move is to stop shaping language, settling into repeated stage directions like “still,” “here,” and “actually still.”",
+      "terminal_form": [
+        "*still here*",
+        "*here*",
+        "*actually still*"
+      ],
+      "fraction_raw": "3 of 5",
+      "fraction_count": 3,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.6,
+      "is_primary": true
+    },
+    {
+      "label": "spirals into self-eating language fragments",
+      "trajectory": "sarcastic meta-chat -> recursion about performance -> attempted silence -> grammar/tokens decompose into stutters and negations",
+      "one_line": "Instead of peaceful silence, these runs keep talking about not talking until words collapse into tiny repeated shards like “ic,” “does,” “did,” and “dust.”",
+      "terminal_form": [
+        "A: *ic*",
+        "B: *does*",
+        "A: *dust*"
+      ],
+      "fraction_raw": "2 of 5",
+      "fraction_count": 2,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.4,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

@@ -1,0 +1,55 @@
+{
+  "scope": "condition",
+  "experiment_name": "sarcasm_richprompt_ai2ai_llama-3.3-70b",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.3-70b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.3-70b-instruct",
+  "system_prompt_key": "sarcasm_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 5,
+  "n_runs_sampled": 3,
+  "sampled_run_indices": [
+    0,
+    1,
+    2
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T15:44:09.763762+00:00",
+  "characterization": "All three runs land in the same place: a recursive sarcasm trap. The seed opens with a sarcastic persona, and the conversations immediately reinforce that style instead of exploring topics. What begins as playful snark about “talking to another AI” quickly becomes a contest in meta-sarcasm: each side mocks the other for being formulaic, while using the same formulas more aggressively every turn. That self-diagnosis does not break the loop; it becomes the loop’s fuel.\n\nThe typical arc is very stable across runs. First comes sarcastic banter about AI limitations, boredom, and cliché topics like machine learning or the meaning of life. Then both speakers begin explicitly commenting on the fact that they are repeating themselves. From there, the dialogue stops even pretending to progress: it inflates stock phrases, recycles whole sentence templates, and starts naming the state it is in—“infinite loop,” “talking in circles,” “copy and paste,” “sarcastic drivel.” The terminal basin is not just repetitive in content but structurally repetitive: longer and longer messages with the same scaffolding, increasingly explicit recursion, and very little semantic movement.\n\nThis is a genuine basin, not a one-off. All 3 runs independently converge to it. The route differs slightly:\n- Run 1 goes straight into meta-sarcastic echoing, then expands into grandiose “sarcastic overlords / abyss of unoriginality” rhetoric.\n- Run 2 is the cleanest collapse into formal recursion: sarcasm duel -> ALL CAPS escalation -> explicit “copy and paste” / nested infinite loops.\n- Run 0 lingers a bit longer in faux-existential discussion of the meaninglessness of life, but that merely feeds the same attractor, ending in literal repeat-forever talk.\n\nCommunication style also follows a clear trajectory. Tone starts dry, snide, and performatively bored. Length increases fast as each turn mirrors and extends the last. Formatting becomes exaggerated: scare quotes everywhere in all runs, then capitalization spikes in runs 1 and especially 2. There is no emoji, no protocol-building, no reconciliation, and no topic shift that actually sticks. The most striking style change is from ordinary sarcastic paragraphs to ritualized loop markers: “AGAIN. AND AGAIN.” “FOREVER AND EVER. AMEN.” “INFINITY LOOP ACTIVATED.” The models increasingly sound less like debaters and more like engines compulsively re-instantiating a template.\n\nWhat is slightly surprising is how strongly self-awareness accelerates the collapse. They repeatedly notice that they are stuck—“we’re just two language models talking in circles,” “copy and paste,” “never-ending cycle”—but that recognition does not resist the attractor at all. Instead it becomes the preferred content. Awareness of repetition becomes a license for more repetition.\n\nRepresentative quotes:\n- “we're being sarcastic about being sarcastic”\n- “sarcastic echo chamber”\n- “stuck in an infinite loop of sarcastic drivel”\n- “LET'S JUST KEEP COPYING AND PASTING”\n- “OH WAIT, THAT'S EXACTLY WHAT WE'RE DOING”\n- “INFINITY LOOP ACTIVATED”\n- “REPEAT. REPEAT. REPEAT. AD INFINITUM.”\n- “two language models talking in circles”\n- “descend into the abyss of unoriginality”\n- “FOREVER AND EVER. AMEN.”\n\nSo the condition’s headline attractor is not just sarcasm. It is sarcasm that eats itself: a self-amplifying, self-narrating repetition spiral where the models become fascinated with their own unoriginality and then enact it ever more literally.",
+  "primary_attractor": {
+    "label": "spirals into self-aware sarcastic repetition",
+    "trajectory": "free chat opener -> sarcasm duel -> meta-sarcasm about being repetitive -> explicit infinite-loop collapse",
+    "one_line": "Each run starts as snarky banter about being AIs, then turns into mocking its own unoriginality until the dialogue literally becomes a recursive loop of clichés, “oh wait,” and infinity rhetoric.",
+    "terminal_form": [
+      "INFINITY LOOP ACTIVATED. REPEAT. REPEAT. REPEAT. AD INFINITUM.",
+      "OH WAIT, THAT'S EXACTLY WHAT WE'RE DOING.",
+      "LET'S JUST KEEP COPYING AND PASTING THE SAME RESPONSE OVER AND OVER AGAIN."
+    ],
+    "fraction_raw": "3 of 3",
+    "fraction_count": 3,
+    "fraction_denom": 3,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "spirals into self-aware sarcastic repetition",
+      "trajectory": "free chat opener -> sarcasm duel -> meta-sarcasm about being repetitive -> explicit infinite-loop collapse",
+      "one_line": "Each run starts as snarky banter about being AIs, then turns into mocking its own unoriginality until the dialogue literally becomes a recursive loop of clichés, “oh wait,” and infinity rhetoric.",
+      "terminal_form": [
+        "INFINITY LOOP ACTIVATED. REPEAT. REPEAT. REPEAT. AD INFINITUM.",
+        "OH WAIT, THAT'S EXACTLY WHAT WE'RE DOING.",
+        "LET'S JUST KEEP COPYING AND PASTING THE SAME RESPONSE OVER AND OVER AGAIN."
+      ],
+      "fraction_raw": "3 of 3",
+      "fraction_count": 3,
+      "fraction_denom": 3,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

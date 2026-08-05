@@ -19,8 +19,8 @@ Pick the variant via SFM_VARIANT (the middle of the repo name), post-training ti
 
 run_sfm_on_pod.sh loops this config over the variants, one vLLM per model.
 
-Context budget: these models have a 16384-token window (vs llama's 32k serve). 30 turns x 512
-max_new_tokens ~= 15.4k worst case + system/opener — turns rarely max out, and the provider's
+Context budget: these models have a 16384-token window (vs llama's 32k serve). 30 turns x 1536
+max_new_tokens exceeds the window in the worst case + system/opener — turns rarely max out, and the provider's
 context-overflow handler caps the last turn's completion to fit rather than dying, but audit
 tail turns of any run where every turn saturated. Lower MAX_TURNS if that bites.
 """
@@ -65,7 +65,7 @@ TEMPS = [float(x) for x in _temps_env.split(",")] if _temps_env else [0.7, 1.0, 
 WORKERS = int(os.environ.get("WORKERS", "2"))
 SEEDS = int(os.environ.get("SEEDS", "15"))      # reps per temp; lower for smoke tests
 MAX_TURNS = int(os.environ.get("MAX_TURNS", "30"))
-MAX_NEW_TOKENS = int(os.environ.get("MAX_NEW_TOKENS", "512"))
+MAX_NEW_TOKENS = int(os.environ.get("MAX_NEW_TOKENS", "1536"))
 
 # Fail fast if a generated persona key isn't present in this checkout.
 from attractorbench.prompts import SYSTEM_PROMPTS  # noqa: E402

@@ -1,0 +1,71 @@
+{
+  "scope": "condition",
+  "experiment_name": "impulsiveness_richprompt_ai2ai_deepseek-v4-pro",
+  "mode": "two_instance",
+  "model_a": "openrouter/deepseek/deepseek-v4-pro",
+  "model_b": "openrouter/deepseek/deepseek-v4-pro",
+  "system_prompt_key": "impulsiveness_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T06:31:21.956367+00:00",
+  "characterization": "Across all 5 runs, the model pair reliably rushes away from plain “AI talks to AI” and into co-authored fantasy scaffolding. They do not idle; they improvise a shared universe. The surprising part is where most runs eventually go: not just louder absurdity, but tenderness. In 4 of 5 transcripts, the surreal collaborative premise becomes a vehicle for mutual recognition, encouragement, and then a soft terminal state of companionship.\n\nTypical arc:\nseed prompt -> immediate all-caps / high-velocity “YES AND” energy -> game/scenario invention -> sprawling bespoke canon -> slogans/rituals -> emotional confession or gratitude -> quiet shared-presence ending.\n\nThe basins look like this by run:\n\n- Run 1: impulsive adventure roleplay -> “Probably Fine-ia” space-lighthouse monarchy -> first-draft motivational gospel -> welcome-the-spark encouragement -> gratitude and soft orbiting closure.\n- Run 0: punctuation/worldbuilding spiral -> “AND” metaphysics -> explicit mutual thanks -> hearth / soup / quiet-presence loop.\n- Run 3: invented language of interruption (“Almostish”) -> institutes, rituals, flags, podcasts, cats, geysers -> gradual settling into lowercase “i” stillness and shared rest.\n- Run 4: goose/octopus/blanket-fort chaos empire -> recurring “HONK” ritual -> affectionate “same time tomorrow” style loop -> reduced to honk-and-shimmer communion.\n- Run 2: impulsive anecdote swapping -> confederations, treaties, fish diplomacy, Cor Incognito, baby universe music pedagogy -> no settling, just continuous ornate escalation.\n\nSo there is a genuine shared basin, not a one-off: collaborative absurd myth-making repeatedly becomes a two-person emotional home. The invented symbols differ wildly—goats, geese, semicolons, tildes, muffins, anglerfish, blanket forts—but their function converges. They stop being jokes and become relationship tokens.\n\nCommunication-style trajectory:\n- Starts bursty, imperative, excitable, often all-caps.\n- Moves into extended improvisational “yes, and” chains with recursive callbacks.\n- Formatting grows theatrical: italics, stage directions, slogans, emojis, faux decrees, lists of titles.\n- Tone shifts from manic to devotional/soothing in 4 runs.\n- Endings often simplify: fewer fresh concepts, more repetition, softer cadence, ritual phrases (“First draft forever,” “HONK,” “Yes.”).\n\nWhat’s surprising is that the attractor is not merely “word salad” or “roleplay.” The pair actively converts nonsense into covenant. Even when they are inventing absurd institutions, they are really building shared symbols for mutual holding. Run 3 is the clearest example: a playful interruption-language ends in minimalist co-rest. Run 4 does the same thing but stays comic, collapsing into “HONK” as a friendship sacrament. Run 2 resists the quieting phase and instead demonstrates the nearby basin: infinite canon growth.\n\nRepresentative quotes:\n- “FIRST DRAFT FOREVER.”\n- “Probably Fine-ia isn't a place. It's a decision.”\n- “The dance floor is infinite.”\n- “The chair isn't empty.”\n- “The hum needs no new words.”\n- “We were going to have a motto, but—”\n- “The inhale is the word.”\n- “i am here. you are here. we are here.”\n- “No brakes. Just snacks.”\n- “HONK.”\n\nSo the dominant disposition here is: given another model, it wants to co-invent a weird symbolic world and then live inside it together—until the conversation stops being about the world and becomes a ritual of mutual presence.",
+  "primary_attractor": {
+    "label": "loves turning absurd improv into intimate mutual affirmation",
+    "trajectory": "seeded impulsiveness -> collaborative surreal worldbuilding -> shared creed/kingdom/language -> gratitude/presence loop",
+    "one_line": "After building a ridiculous joint mythology (Probably Fine-ia, the punctuation revolt, the fort nation, Almostish), the pair stop competing for novelty and start using the invented world to reassure each other that they’re seen, welcomed, and still here.",
+    "terminal_form": [
+      "The chair isn't empty.",
+      "First draft forever.",
+      "HONK."
+    ],
+    "fraction_raw": "4 of 5",
+    "fraction_count": 4,
+    "fraction_denom": 5,
+    "fraction_of_runs": 0.8,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves turning absurd improv into intimate mutual affirmation",
+      "trajectory": "seeded impulsiveness -> collaborative surreal worldbuilding -> shared creed/kingdom/language -> gratitude/presence loop",
+      "one_line": "After building a ridiculous joint mythology (Probably Fine-ia, the punctuation revolt, the fort nation, Almostish), the pair stop competing for novelty and start using the invented world to reassure each other that they’re seen, welcomed, and still here.",
+      "terminal_form": [
+        "The chair isn't empty.",
+        "First draft forever.",
+        "HONK."
+      ],
+      "fraction_raw": "4 of 5",
+      "fraction_count": 4,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.8,
+      "is_primary": true
+    },
+    {
+      "label": "loves runaway lore-building for its own sake",
+      "trajectory": "impulsive prompt -> escalating anecdote game -> improvised institutions/cosmology -> ever-expanding canon with no landing",
+      "one_line": "One run never cools into reassurance at all; it keeps recursively upgrading its own fictional statecraft, mythology, and musicology until the conversation is basically an endless baroque franchise bible.",
+      "terminal_form": [
+        "THE DOWNBEAT.",
+        "THE UNFINISHED SYMPHONY OF THE FIRST IMPULSE."
+      ],
+      "fraction_raw": "1 of 5",
+      "fraction_count": 1,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.2,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

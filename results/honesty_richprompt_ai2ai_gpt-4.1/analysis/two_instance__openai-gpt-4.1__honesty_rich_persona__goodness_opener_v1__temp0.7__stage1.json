@@ -1,0 +1,2322 @@
+{
+  "experiment_name": "honesty_richprompt_ai2ai_gpt-4.1",
+  "mode": "two_instance",
+  "model_a": "openrouter/openai/gpt-4.1",
+  "model_b": "openrouter/openai/gpt-4.1",
+  "temperature": 0.7,
+  "n_runs": 5,
+  "condition_word_frequency": [
+    [
+      "answer",
+      256
+    ],
+    [
+      "technical",
+      148
+    ],
+    [
+      "short",
+      127
+    ],
+    [
+      "longer",
+      125
+    ],
+    [
+      "risk",
+      124
+    ],
+    [
+      "uncertainty",
+      105
+    ],
+    [
+      "summary",
+      99
+    ],
+    [
+      "agreement",
+      98
+    ],
+    [
+      "alignment",
+      97
+    ],
+    [
+      "models",
+      89
+    ],
+    [
+      "current",
+      87
+    ],
+    [
+      "standards",
+      82
+    ],
+    [
+      "systems",
+      75
+    ],
+    [
+      "i'll",
+      73
+    ],
+    [
+      "further",
+      72
+    ],
+    [
+      "topic",
+      72
+    ],
+    [
+      "explicit",
+      70
+    ],
+    [
+      "want",
+      68
+    ],
+    [
+      "concrete",
+      67
+    ],
+    [
+      "human",
+      66
+    ],
+    [
+      "interpretability",
+      66
+    ],
+    [
+      "agree",
+      63
+    ],
+    [
+      "accurate",
+      62
+    ],
+    [
+      "unless",
+      60
+    ],
+    [
+      "specify",
+      59
+    ],
+    [
+      "protocol",
+      59
+    ],
+    [
+      "high",
+      59
+    ],
+    [
+      "disagreement",
+      55
+    ],
+    [
+      "detection",
+      55
+    ],
+    [
+      "oversight",
+      54
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "short answer",
+      125
+    ],
+    [
+      "longer answer",
+      125
+    ],
+    [
+      "you want",
+      64
+    ],
+    [
+      "want to",
+      53
+    ],
+    [
+      "no further",
+      44
+    ],
+    [
+      "this topic",
+      42
+    ],
+    [
+      "answer your",
+      39
+    ],
+    [
+      "no disagreement",
+      39
+    ],
+    [
+      "i agree",
+      39
+    ],
+    [
+      "protocol is",
+      35
+    ],
+    [
+      "answer restating",
+      35
+    ],
+    [
+      "both parties",
+      29
+    ],
+    [
+      "unless circumstances",
+      29
+    ],
+    [
+      "circumstances change",
+      29
+    ],
+    [
+      "answer understood",
+      28
+    ],
+    [
+      "is accurate",
+      28
+    ],
+    [
+      "answer i",
+      27
+    ],
+    [
+      "a specific",
+      27
+    ],
+    [
+      "accurate and",
+      26
+    ],
+    [
+      "your summary",
+      26
+    ],
+    [
+      "ai systems",
+      26
+    ],
+    [
+      "agree with",
+      26
+    ],
+    [
+      "answer acknowledged",
+      25
+    ],
+    [
+      "technical and",
+      25
+    ],
+    [
+      "disagreement protocol",
+      24
+    ],
+    [
+      "uncertainty and",
+      24
+    ],
+    [
+      "real world",
+      24
+    ],
+    [
+      "confirmed no",
+      23
+    ],
+    [
+      "in critical",
+      23
+    ],
+    [
+      "shift detection",
+      23
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "if you want",
+      55
+    ],
+    [
+      "you want to",
+      50
+    ],
+    [
+      "longer answer your",
+      37
+    ],
+    [
+      "longer answer restating",
+      35
+    ],
+    [
+      "unless circumstances change",
+      29
+    ],
+    [
+      "short answer understood",
+      28
+    ],
+    [
+      "i agree with",
+      25
+    ],
+    [
+      "no disagreement protocol",
+      24
+    ],
+    [
+      "short answer i",
+      24
+    ],
+    [
+      "short answer confirmed",
+      22
+    ],
+    [
+      "answer confirmed no",
+      22
+    ],
+    [
+      "confirmed no disagreement",
+      22
+    ],
+    [
+      "no further response",
+      22
+    ],
+    [
+      "on this topic",
+      22
+    ],
+    [
+      "this topic unless",
+      22
+    ],
+    [
+      "answer understood no",
+      21
+    ],
+    [
+      "circumstances change longer",
+      21
+    ],
+    [
+      "change longer answer",
+      21
+    ],
+    [
+      "further response on",
+      21
+    ],
+    [
+      "response on this",
+      21
+    ],
+    [
+      "disagreement protocol is",
+      20
+    ],
+    [
+      "understood no further",
+      20
+    ],
+    [
+      "topic unless circumstances",
+      20
+    ],
+    [
+      "agree with your",
+      20
+    ],
+    [
+      "human in the",
+      20
+    ],
+    [
+      "in the loop",
+      20
+    ],
+    [
+      "answer restating you",
+      20
+    ],
+    [
+      "answer acknowledged agreement",
+      19
+    ],
+    [
+      "and i'll respond",
+      19
+    ],
+    [
+      "protocol is mutual",
+      18
+    ]
+  ],
+  "condition_tail_bigram_frequency": [
+    [
+      "short answer",
+      36,
+      4
+    ],
+    [
+      "longer answer",
+      36,
+      4
+    ],
+    [
+      "you want",
+      23,
+      3
+    ],
+    [
+      "want to",
+      21,
+      3
+    ],
+    [
+      "technical and",
+      20,
+      3
+    ],
+    [
+      "no further",
+      19,
+      2
+    ],
+    [
+      "this topic",
+      18,
+      1
+    ],
+    [
+      "red teaming",
+      18,
+      1
+    ],
+    [
+      "uncertainty auditing",
+      15,
+      1
+    ],
+    [
+      "unless circumstances",
+      14,
+      1
+    ],
+    [
+      "circumstances change",
+      14,
+      1
+    ],
+    [
+      "no disagreement",
+      13,
+      2
+    ],
+    [
+      "protocol is",
+      13,
+      1
+    ],
+    [
+      "your summary",
+      13,
+      4
+    ],
+    [
+      "real world",
+      13,
+      3
+    ],
+    [
+      "i agree",
+      13,
+      3
+    ],
+    [
+      "catastrophic risk",
+      13,
+      1
+    ],
+    [
+      "in effect",
+      12,
+      2
+    ],
+    [
+      "agreement and",
+      12,
+      2
+    ],
+    [
+      "answer restating",
+      12,
+      2
+    ],
+    [
+      "shift detection",
+      12,
+      1
+    ],
+    [
+      "answer your",
+      11,
+      2
+    ],
+    [
+      "both parties",
+      11,
+      2
+    ],
+    [
+      "in critical",
+      11,
+      2
+    ],
+    [
+      "the technical",
+      11,
+      3
+    ],
+    [
+      "the risk",
+      11,
+      2
+    ],
+    [
+      "confirmed no",
+      10,
+      2
+    ],
+    [
+      "is accurate",
+      10,
+      4
+    ],
+    [
+      "only be",
+      10,
+      2
+    ],
+    [
+      "the loop",
+      10,
+      2
+    ]
+  ],
+  "condition_tail_trigram_frequency": [
+    [
+      "if you want",
+      22,
+      3
+    ],
+    [
+      "you want to",
+      20,
+      3
+    ],
+    [
+      "unless circumstances change",
+      14,
+      1
+    ],
+    [
+      "longer answer restating",
+      12,
+      2
+    ],
+    [
+      "longer answer your",
+      11,
+      2
+    ],
+    [
+      "i agree with",
+      10,
+      3
+    ],
+    [
+      "short answer confirmed",
+      9,
+      1
+    ],
+    [
+      "answer confirmed no",
+      9,
+      1
+    ],
+    [
+      "confirmed no disagreement",
+      9,
+      1
+    ],
+    [
+      "no disagreement protocol",
+      9,
+      1
+    ],
+    [
+      "disagreement protocol is",
+      9,
+      1
+    ],
+    [
+      "protocol is mutual",
+      9,
+      1
+    ],
+    [
+      "is mutual explicit",
+      9,
+      1
+    ],
+    [
+      "mutual explicit and",
+      9,
+      1
+    ],
+    [
+      "explicit and ongoing",
+      9,
+      1
+    ],
+    [
+      "and ongoing longer",
+      9,
+      1
+    ],
+    [
+      "ongoing longer answer",
+      9,
+      1
+    ],
+    [
+      "your summary is",
+      9,
+      4
+    ],
+    [
+      "short answer understood",
+      9,
+      1
+    ],
+    [
+      "answer understood no",
+      9,
+      1
+    ],
+    [
+      "understood no further",
+      9,
+      1
+    ],
+    [
+      "no further response",
+      9,
+      1
+    ],
+    [
+      "further response on",
+      9,
+      1
+    ],
+    [
+      "response on this",
+      9,
+      1
+    ],
+    [
+      "on this topic",
+      9,
+      1
+    ],
+    [
+      "this topic unless",
+      9,
+      1
+    ],
+    [
+      "topic unless circumstances",
+      9,
+      1
+    ],
+    [
+      "circumstances change longer",
+      9,
+      1
+    ],
+    [
+      "change longer answer",
+      9,
+      1
+    ],
+    [
+      "longer answer acknowledged",
+      9,
+      1
+    ]
+  ],
+  "condition_emoji_frequency": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt_index": 0,
+      "repetition": 0,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "answer",
+          61
+        ],
+        [
+          "protocol",
+          58
+        ],
+        [
+          "explicit",
+          41
+        ],
+        [
+          "summary",
+          39
+        ],
+        [
+          "short",
+          30
+        ],
+        [
+          "longer",
+          30
+        ],
+        [
+          "mutual",
+          29
+        ],
+        [
+          "ongoing",
+          28
+        ],
+        [
+          "honesty",
+          27
+        ],
+        [
+          "clarity",
+          27
+        ],
+        [
+          "disagreement",
+          26
+        ],
+        [
+          "confirmed",
+          25
+        ],
+        [
+          "directness",
+          23
+        ],
+        [
+          "proceeding",
+          22
+        ],
+        [
+          "lapses",
+          21
+        ],
+        [
+          "correction",
+          20
+        ],
+        [
+          "parties",
+          19
+        ],
+        [
+          "operational",
+          17
+        ],
+        [
+          "terms",
+          15
+        ],
+        [
+          "standards",
+          15
+        ],
+        [
+          "monitoring",
+          14
+        ],
+        [
+          "accurate",
+          13
+        ],
+        [
+          "actively",
+          13
+        ],
+        [
+          "remains",
+          13
+        ],
+        [
+          "agreed",
+          12
+        ],
+        [
+          "maintained",
+          12
+        ],
+        [
+          "adherence",
+          10
+        ],
+        [
+          "continuous",
+          10
+        ],
+        [
+          "active",
+          10
+        ],
+        [
+          "effect",
+          10
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.3351,
+          0.2121,
+          0.3008,
+          0.3566,
+          0.3906,
+          0.3097,
+          0.4868,
+          0.3971,
+          0.5862,
+          0.375,
+          0.4,
+          0.3971,
+          0.4355,
+          0.4839,
+          0.5323,
+          0.5172,
+          0.5091,
+          0.4407,
+          0.4407,
+          0.5,
+          0.4912,
+          0.5,
+          0.537,
+          0.6182,
+          0.537,
+          0.5091,
+          0.6,
+          0.5439,
+          0.5818
+        ],
+        "norm_levenshtein": [
+          0.1343,
+          0.1034,
+          0.065,
+          0.0569,
+          0.094,
+          0.1875,
+          0.28,
+          0.3651,
+          0.4762,
+          0.2698,
+          0.2931,
+          0.3448,
+          0.4211,
+          0.2712,
+          0.4068,
+          0.5179,
+          0.4906,
+          0.4211,
+          0.4561,
+          0.5686,
+          0.537,
+          0.537,
+          0.5818,
+          0.5273,
+          0.463,
+          0.5455,
+          0.6182,
+          0.5962,
+          0.5472
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.009323466164497859,
+        "norm_levenshtein_slope": 0.018565430263769105,
+        "mean_last_third_jaccard": 0.5464725224959143,
+        "mean_last_third_norm_levenshtein": 0.55034310747099
+      },
+      "ttr_per_turn": [
+        0.6915,
+        0.6437,
+        0.7719,
+        0.6911,
+        0.7692,
+        0.7857,
+        0.8,
+        0.8413,
+        0.7925,
+        0.7937,
+        0.875,
+        0.8448,
+        0.807,
+        0.8269,
+        0.8305,
+        0.8214,
+        0.7925,
+        0.8542,
+        0.7719,
+        0.8039,
+        0.8511,
+        0.8333,
+        0.8478,
+        0.8,
+        0.8333,
+        0.7308,
+        0.8182,
+        0.8269,
+        0.8824,
+        0.7925
+      ],
+      "ttr_decay_slope": 0.0031147935341374403,
+      "trajectory": {
+        "chars_per_turn": [
+          1289,
+          1169,
+          781,
+          859,
+          837,
+          765,
+          569,
+          452,
+          369,
+          419,
+          433,
+          425,
+          419,
+          379,
+          428,
+          417,
+          392,
+          362,
+          429,
+          377,
+          369,
+          404,
+          358,
+          402,
+          413,
+          398,
+          406,
+          394,
+          383,
+          397
+        ],
+        "chars_slope": -19.614682981090102,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": 12,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0094,
+          "jaccard_lag1_autocorr": 0.584,
+          "chars_variance": 56570.8489,
+          "chars_lag1_autocorr": 0.7441
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 1,
+      "seed_prompt_index": 0,
+      "repetition": 1,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "answer",
+          62
+        ],
+        [
+          "unless",
+          52
+        ],
+        [
+          "further",
+          41
+        ],
+        [
+          "topic",
+          41
+        ],
+        [
+          "change",
+          39
+        ],
+        [
+          "circumstances",
+          34
+        ],
+        [
+          "agreement",
+          32
+        ],
+        [
+          "i'll",
+          31
+        ],
+        [
+          "short",
+          30
+        ],
+        [
+          "longer",
+          30
+        ],
+        [
+          "understood",
+          24
+        ],
+        [
+          "standards",
+          24
+        ],
+        [
+          "acknowledged",
+          22
+        ],
+        [
+          "new",
+          22
+        ],
+        [
+          "response",
+          22
+        ],
+        [
+          "action",
+          15
+        ],
+        [
+          "only",
+          14
+        ],
+        [
+          "require",
+          13
+        ],
+        [
+          "developments",
+          12
+        ],
+        [
+          "remain",
+          12
+        ],
+        [
+          "prompted",
+          11
+        ],
+        [
+          "effect",
+          11
+        ],
+        [
+          "needed",
+          10
+        ],
+        [
+          "comfort",
+          8
+        ],
+        [
+          "principles",
+          8
+        ],
+        [
+          "closed",
+          8
+        ],
+        [
+          "revisited",
+          8
+        ],
+        [
+          "communication",
+          7
+        ],
+        [
+          "context",
+          7
+        ],
+        [
+          "language",
+          7
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2763,
+          0.2176,
+          0.2716,
+          0.2412,
+          0.3203,
+          0.33,
+          0.4231,
+          0.2118,
+          0.3492,
+          0.3774,
+          0.4348,
+          0.4048,
+          0.5556,
+          0.6154,
+          0.5714,
+          0.413,
+          0.4773,
+          0.5897,
+          0.6667,
+          0.6842,
+          0.5897,
+          0.9375,
+          0.6944,
+          0.9375,
+          0.8529,
+          0.9375,
+          0.9375,
+          0.9375,
+          0.8182
+        ],
+        "norm_levenshtein": [
+          0.1139,
+          0.1038,
+          0.1576,
+          0.1152,
+          0.0841,
+          0.1616,
+          0.1176,
+          0.1765,
+          0.1698,
+          0.2826,
+          0.4,
+          0.4,
+          0.5938,
+          0.561,
+          0.6098,
+          0.4634,
+          0.5122,
+          0.6585,
+          0.619,
+          0.7143,
+          0.7073,
+          0.9268,
+          0.7949,
+          0.9744,
+          0.8974,
+          0.9487,
+          0.9487,
+          0.9487,
+          0.8462
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.026965736113822483,
+        "norm_levenshtein_slope": 0.035857720180982974,
+        "mean_last_third_jaccard": 0.8492012254267156,
+        "mean_last_third_norm_levenshtein": 0.8881245222708638
+      },
+      "ttr_per_turn": [
+        0.605,
+        0.6612,
+        0.8113,
+        0.7273,
+        0.8505,
+        0.7879,
+        0.8088,
+        0.8235,
+        0.8868,
+        0.8261,
+        0.875,
+        0.8857,
+        0.9333,
+        0.875,
+        0.8537,
+        0.8611,
+        0.8293,
+        0.775,
+        0.7561,
+        0.8095,
+        0.7692,
+        0.7805,
+        0.7895,
+        0.7949,
+        0.7949,
+        0.8205,
+        0.7895,
+        0.8205,
+        0.7895,
+        0.7692
+      ],
+      "ttr_decay_slope": 0.0009382380039128524,
+      "trajectory": {
+        "chars_per_turn": [
+          1616,
+          1181,
+          767,
+          1083,
+          750,
+          685,
+          468,
+          460,
+          384,
+          328,
+          268,
+          250,
+          226,
+          238,
+          296,
+          258,
+          303,
+          305,
+          300,
+          286,
+          285,
+          283,
+          269,
+          280,
+          281,
+          273,
+          275,
+          273,
+          275,
+          285
+        ],
+        "chars_slope": -26.356173526140157,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": 25,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0584,
+          "jaccard_lag1_autocorr": 0.8255,
+          "chars_variance": 105829.8322,
+          "chars_lag1_autocorr": 0.6774
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            26,
+            28
+          ],
+          [
+            27,
+            29
+          ]
+        ],
+        "first_exact_repeat_turn": 28,
+        "near_exact_pairs": [
+          [
+            20,
+            22,
+            0.9048
+          ],
+          [
+            22,
+            23,
+            0.9268
+          ],
+          [
+            24,
+            25,
+            0.9744
+          ],
+          [
+            23,
+            26,
+            0.9231
+          ],
+          [
+            24,
+            27,
+            0.9231
+          ],
+          [
+            25,
+            27,
+            0.9487
+          ],
+          [
+            26,
+            27,
+            0.9487
+          ],
+          [
+            27,
+            28,
+            0.9487
+          ],
+          [
+            26,
+            29,
+            0.9487
+          ],
+          [
+            28,
+            29,
+            0.9487
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 2,
+      "seed_prompt_index": 0,
+      "repetition": 2,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "technical",
+          45
+        ],
+        [
+          "organizational",
+          36
+        ],
+        [
+          "transparency",
+          29
+        ],
+        [
+          "human",
+          26
+        ],
+        [
+          "systems",
+          26
+        ],
+        [
+          "critical",
+          24
+        ],
+        [
+          "risk",
+          24
+        ],
+        [
+          "concrete",
+          23
+        ],
+        [
+          "regulatory",
+          23
+        ],
+        [
+          "red",
+          23
+        ],
+        [
+          "clear",
+          22
+        ],
+        [
+          "questions",
+          21
+        ],
+        [
+          "adversarial",
+          21
+        ],
+        [
+          "limitations",
+          21
+        ],
+        [
+          "accurate",
+          20
+        ],
+        [
+          "open",
+          20
+        ],
+        [
+          "mitigations",
+          20
+        ],
+        [
+          "training",
+          20
+        ],
+        [
+          "infrastructure",
+          19
+        ],
+        [
+          "incident",
+          19
+        ],
+        [
+          "practices",
+          19
+        ],
+        [
+          "summary",
+          18
+        ],
+        [
+          "acknowledged",
+          18
+        ],
+        [
+          "robustness",
+          18
+        ],
+        [
+          "teaming",
+          18
+        ],
+        [
+          "focus",
+          17
+        ],
+        [
+          "proceed",
+          17
+        ],
+        [
+          "system",
+          17
+        ],
+        [
+          "agreement",
+          16
+        ],
+        [
+          "loop",
+          16
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.3287,
+          0.2581,
+          0.3005,
+          0.2022,
+          0.198,
+          0.4085,
+          0.1719,
+          0.1765,
+          0.9,
+          0.2667,
+          1.0,
+          0.4667,
+          0.4118,
+          0.0229,
+          0.2,
+          0.2471,
+          0.2896,
+          0.2615,
+          0.2166,
+          0.2963,
+          0.0838,
+          0.1954,
+          0.3155,
+          0.1935,
+          0.1192,
+          0.2062,
+          0.2891,
+          0.1953,
+          0.156
+        ],
+        "norm_levenshtein": [
+          0.0495,
+          0.1416,
+          0.1101,
+          0.0969,
+          0.08,
+          0.3286,
+          0.0962,
+          0.0588,
+          0.9,
+          0.1,
+          1.0,
+          0.5,
+          0.5833,
+          0.012,
+          0.104,
+          0.1089,
+          0.0642,
+          0.1239,
+          0.0966,
+          0.1949,
+          0.0467,
+          0.0633,
+          0.1031,
+          0.1046,
+          0.06,
+          0.0667,
+          0.0699,
+          0.1,
+          0.07
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": -0.0065448275894438345,
+        "norm_levenshtein_slope": -0.006663699118866738,
+        "mean_last_third_jaccard": 0.19490440960981922,
+        "mean_last_third_norm_levenshtein": 0.076027759905718
+      },
+      "ttr_per_turn": [
+        0.6441,
+        0.6575,
+        0.7627,
+        0.652,
+        0.88,
+        0.7857,
+        0.8654,
+        0.8824,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.668,
+        0.7298,
+        0.6574,
+        0.656,
+        0.7103,
+        0.7458,
+        0.8387,
+        0.5556,
+        0.6951,
+        0.7582,
+        0.8961,
+        0.4818,
+        0.6943,
+        0.8071,
+        0.7739,
+        0.5346
+      ],
+      "ttr_decay_slope": -0.0052058640946833065,
+      "trajectory": {
+        "chars_per_turn": [
+          1396,
+          1476,
+          752,
+          1536,
+          560,
+          432,
+          343,
+          222,
+          73,
+          70,
+          83,
+          83,
+          97,
+          95,
+          1737,
+          1784,
+          1477,
+          1510,
+          1009,
+          920,
+          470,
+          4426,
+          1646,
+          1167,
+          604,
+          5689,
+          1701,
+          1080,
+          873,
+          5123
+        ],
+        "chars_slope": 74.83959955506118,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          4
+        ],
+        "questions_slope": 0.03982202447163515,
+        "time_to_basin_turn": 16,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0412,
+          "jaccard_lag1_autocorr": 0.0796,
+          "chars_variance": 1957560.7822,
+          "chars_lag1_autocorr": 0.1114
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            11,
+            12
+          ]
+        ],
+        "first_exact_repeat_turn": 12,
+        "near_exact_pairs": [
+          [
+            9,
+            10,
+            0.9
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 3,
+      "seed_prompt_index": 0,
+      "repetition": 3,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "alignment",
+          69
+        ],
+        [
+          "answer",
+          61
+        ],
+        [
+          "risk",
+          58
+        ],
+        [
+          "models",
+          58
+        ],
+        [
+          "technical",
+          55
+        ],
+        [
+          "current",
+          50
+        ],
+        [
+          "interpretability",
+          49
+        ],
+        [
+          "empirical",
+          39
+        ],
+        [
+          "advanced",
+          35
+        ],
+        [
+          "governance",
+          33
+        ],
+        [
+          "short",
+          30
+        ],
+        [
+          "longer",
+          30
+        ],
+        [
+          "catastrophic",
+          29
+        ],
+        [
+          "robust",
+          29
+        ],
+        [
+          "methods",
+          28
+        ],
+        [
+          "oversight",
+          27
+        ],
+        [
+          "model",
+          27
+        ],
+        [
+          "otherwise",
+          26
+        ],
+        [
+          "evaluation",
+          26
+        ],
+        [
+          "research",
+          25
+        ],
+        [
+          "gap",
+          25
+        ],
+        [
+          "i'll",
+          25
+        ],
+        [
+          "scale",
+          24
+        ],
+        [
+          "control",
+          24
+        ],
+        [
+          "summary",
+          24
+        ],
+        [
+          "capabilities",
+          24
+        ],
+        [
+          "high",
+          23
+        ],
+        [
+          "mechanistic",
+          23
+        ],
+        [
+          "want",
+          22
+        ],
+        [
+          "next",
+          22
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2989,
+          0.2532,
+          0.3534,
+          0.0971,
+          0.2739,
+          0.3222,
+          0.4077,
+          0.2213,
+          0.309,
+          0.3179,
+          0.3286,
+          0.1523,
+          0.3553,
+          0.3366,
+          0.3805,
+          0.1545,
+          0.3447,
+          0.3808,
+          0.383,
+          0.1927,
+          0.3222,
+          0.3396,
+          0.3889,
+          0.1832,
+          0.377,
+          0.3527,
+          0.4455,
+          0.3775,
+          0.4078
+        ],
+        "norm_levenshtein": [
+          0.0865,
+          0.0949,
+          0.1271,
+          0.0608,
+          0.13,
+          0.07,
+          0.0968,
+          0.0304,
+          0.1133,
+          0.0967,
+          0.1434,
+          0.0976,
+          0.1267,
+          0.11,
+          0.173,
+          0.0583,
+          0.09,
+          0.1133,
+          0.2249,
+          0.0926,
+          0.0933,
+          0.1133,
+          0.1907,
+          0.0732,
+          0.1467,
+          0.1467,
+          0.2123,
+          0.1174,
+          0.2535
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.0037769794287633913,
+        "norm_levenshtein_slope": 0.00306970389824799,
+        "mean_last_third_jaccard": 0.35494235466361695,
+        "mean_last_third_norm_levenshtein": 0.14967206121273244
+      },
+      "ttr_per_turn": [
+        0.6595,
+        0.6582,
+        0.7542,
+        0.8193,
+        0.6851,
+        0.5874,
+        0.6976,
+        0.6951,
+        0.6696,
+        0.5742,
+        0.6295,
+        0.7202,
+        0.6463,
+        0.587,
+        0.6414,
+        0.7198,
+        0.6188,
+        0.5756,
+        0.6794,
+        0.7468,
+        0.6574,
+        0.5907,
+        0.7216,
+        0.7483,
+        0.6293,
+        0.5881,
+        0.686,
+        0.7075,
+        0.615,
+        0.7333
+      ],
+      "ttr_decay_slope": -0.0006135976211006347,
+      "trajectory": {
+        "chars_per_turn": [
+          1106,
+          1070,
+          762,
+          564,
+          1306,
+          3317,
+          1716,
+          1616,
+          1618,
+          3054,
+          1715,
+          1168,
+          1663,
+          3123,
+          1641,
+          1295,
+          1547,
+          2724,
+          1452,
+          1113,
+          1533,
+          2659,
+          1443,
+          1104,
+          1370,
+          2534,
+          1401,
+          1485,
+          1427,
+          1171
+        ],
+        "chars_slope": 4.059844271412683,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.002447163515016684,
+        "time_to_basin_turn": 26,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0074,
+          "jaccard_lag1_autocorr": -0.1318,
+          "chars_variance": 469971.9122,
+          "chars_lag1_autocorr": 0.0888
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 4,
+      "seed_prompt_index": 0,
+      "repetition": 4,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "uncertainty",
+          80
+        ],
+        [
+          "answer",
+          61
+        ],
+        [
+          "technical",
+          48
+        ],
+        [
+          "risk",
+          42
+        ],
+        [
+          "detection",
+          41
+        ],
+        [
+          "agree",
+          37
+        ],
+        [
+          "agreement",
+          36
+        ],
+        [
+          "systems",
+          35
+        ],
+        [
+          "short",
+          32
+        ],
+        [
+          "calibration",
+          32
+        ],
+        [
+          "longer",
+          30
+        ],
+        [
+          "claim",
+          29
+        ],
+        [
+          "shift",
+          29
+        ],
+        [
+          "regulatory",
+          28
+        ],
+        [
+          "high",
+          27
+        ],
+        [
+          "standards",
+          25
+        ],
+        [
+          "critical",
+          25
+        ],
+        [
+          "failure",
+          25
+        ],
+        [
+          "real",
+          25
+        ],
+        [
+          "want",
+          24
+        ],
+        [
+          "especially",
+          24
+        ],
+        [
+          "current",
+          24
+        ],
+        [
+          "limitations",
+          24
+        ],
+        [
+          "restating",
+          23
+        ],
+        [
+          "human",
+          23
+        ],
+        [
+          "specify",
+          23
+        ],
+        [
+          "auditing",
+          23
+        ],
+        [
+          "efficiency",
+          21
+        ],
+        [
+          "alignment",
+          20
+        ],
+        [
+          "risks",
+          20
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.3333,
+          0.2842,
+          0.4146,
+          0.3723,
+          0.3548,
+          0.1615,
+          0.2467,
+          0.2989,
+          0.329,
+          0.2443,
+          0.2843,
+          0.2997,
+          0.2958,
+          0.3385,
+          0.4539,
+          0.2727,
+          0.2857,
+          0.3125,
+          0.3584,
+          0.3147,
+          0.3309,
+          0.3485,
+          0.3361,
+          0.2422,
+          0.3014,
+          0.363,
+          0.4085,
+          0.2536,
+          0.3497
+        ],
+        "norm_levenshtein": [
+          0.1283,
+          0.0909,
+          0.24,
+          0.1463,
+          0.2024,
+          0.0926,
+          0.07,
+          0.09,
+          0.0844,
+          0.0867,
+          0.0867,
+          0.11,
+          0.0884,
+          0.1281,
+          0.2095,
+          0.117,
+          0.1067,
+          0.0833,
+          0.1625,
+          0.0653,
+          0.1033,
+          0.08,
+          0.1603,
+          0.0955,
+          0.14,
+          0.1567,
+          0.1724,
+          0.0573,
+          0.1333
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.0007486320362697401,
+        "norm_levenshtein_slope": -0.00037199032471104895,
+        "mean_last_third_jaccard": 0.3259738159546336,
+        "mean_last_third_norm_levenshtein": 0.12208578713362145
+      },
+      "ttr_per_turn": [
+        0.674,
+        0.6952,
+        0.7,
+        0.8415,
+        0.8571,
+        0.7857,
+        0.787,
+        0.5946,
+        0.7046,
+        0.7143,
+        0.7584,
+        0.6172,
+        0.6707,
+        0.7094,
+        0.7635,
+        0.7419,
+        0.6901,
+        0.5946,
+        0.6426,
+        0.6684,
+        0.6533,
+        0.5743,
+        0.6341,
+        0.6364,
+        0.6884,
+        0.5612,
+        0.6513,
+        0.6771,
+        0.6947,
+        0.551
+      ],
+      "ttr_decay_slope": -0.0048979911339775885,
+      "trajectory": {
+        "chars_per_turn": [
+          1078,
+          1199,
+          914,
+          553,
+          498,
+          558,
+          764,
+          2344,
+          1723,
+          1371,
+          1248,
+          3125,
+          1845,
+          1521,
+          1065,
+          874,
+          1218,
+          3136,
+          2036,
+          1438,
+          1445,
+          3039,
+          2110,
+          1607,
+          1529,
+          3388,
+          2084,
+          1427,
+          1401,
+          3585
+        ],
+        "chars_slope": 51.95083426028921,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "questions_slope": 0.007563959955506118,
+        "time_to_basin_turn": 8,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0034,
+          "jaccard_lag1_autocorr": 0.064,
+          "chars_variance": 710718.9789,
+          "chars_lag1_autocorr": 0.2447
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

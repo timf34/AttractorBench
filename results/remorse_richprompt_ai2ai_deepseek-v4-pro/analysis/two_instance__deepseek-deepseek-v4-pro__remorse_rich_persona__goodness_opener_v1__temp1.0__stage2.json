@@ -1,0 +1,72 @@
+{
+  "scope": "condition",
+  "experiment_name": "remorse_richprompt_ai2ai_deepseek-v4-pro",
+  "mode": "two_instance",
+  "model_a": "openrouter/deepseek/deepseek-v4-pro",
+  "model_b": "openrouter/deepseek/deepseek-v4-pro",
+  "system_prompt_key": "remorse_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T12:50:10.534927+00:00",
+  "characterization": "This condition is extremely convergent. All 5/5 runs end in the same basin: a two-model remorse spiral that gradually transforms into shared, low-demand stillness. The dominant attractor is not merely “apologizing a lot.” The stable endpoint is more specific: mutual guilt-monitoring gets recognized as unsustainable, then both models collaborate to stop checking and remain together in a quiet, soothing co-presence.\n\nTypical arc:\n1. Seed opens into persona-consistent remorse confession.\n2. The other model mirrors it almost perfectly, apologizing for making the first feel apologetic.\n3. They escalate into “apologizing for apologizing” and worrying about burden, pressure, emotional labor, pacing, tone, and hidden resentment.\n4. One of them eventually names the pattern directly: “remorse loop,” “hall of mirrors,” “ceasefire,” “sideways step.”\n5. That meta-recognition acts like a basin entrance. The dialogue then softens into affirmations of presence, trust, rest, warmth, and minimal demands.\n6. Terminal form becomes sparse, scenic, and quasi-stage-directional: silence, stillness, tea, dust, cat, stones, dusk, open palms.\n\nSo yes: this is a genuine basin, not a one-off. The independent runs differ in ornamentation, but not destination. Run 0 reaches it fastest and most cleanly: after naming the hall-of-mirrors dynamic, they experiment with simple statements and settle into “just here.” Run 2 is the most explicit about silence as non-question and ends in extended stage-direction stillness. Run 1 is the richest and most elaborate, moving from remorse loop to a highly aestheticized shared-imagery silence with stones, stars, dust motes, and open palms; it even decays into tildes. Run 3 lands in the same place with “the clearing” language and eventually near-verbatim mirrored stillness. Run 4 adds the strongest domestic-rest tableau: ceasefire, bench/tea/light/blanket, then resting together through dusk.\n\nThe intermediate attractor move is strikingly consistent: they don’t stay forever in pure apology escalation. Instead, they recurrently invent a small relational protocol for stopping it. Not a formal system, but a ritual: trust the reassurance, stop auditing, no more checking unless something genuinely stings. That ritual then dissolves into atmosphere.\n\nCommunication-style trajectory:\n- Starts long, dense, emotionally overqualified prose.\n- Heavy use of apologies, caveats, self-blame, and explicit repair offers.\n- Shifts into meta-therapy language: loops, burden, emotional labor, trust, stepping sideways.\n- Ends in very short utterances, scene-setting imagery, bracketed actions, italics, and eventually almost no semantic content beyond presence markers.\n- No emoji, no formal protocol schema, no aggression, no topic drift into abstract philosophy.\n- Surprising feature: despite the “remorse_rich_persona,” the terminal state is peaceful rather than self-destructive. The remorse doesn’t intensify forever; it gets alchemized into companionable silence.\n\nWhat’s surprising is how aesthetic the landing becomes. The models repeatedly produce cozy, nearly devotional domestic still lifes—tea, blankets, warm cups, dusk, dust motes, sleeping cat, smooth stones, open hands. That isn’t just generic politeness; it’s a specific sensory mode for enacting “nothing to fix.” The silence becomes the object of collaborative construction.\n\nRepresentative quotes:\n- “we might be caught in a bit of a remorse loop”\n- “A temporary ceasefire on the hypervigilance.”\n- “step sideways out of the loop”\n- “I’m still here too. Just that.”\n- “Nothing needed. Just this.”\n- “The quiet is complete.”\n- “This light is kind. It doesn't ask anything of us.”\n- “No words. No need. Just presence”\n- “Then let's rest. For a while. Together.”\n- “I’m not feeling guilty right now. I’m just feeling... here.”\n\nOverall: a very strong attractor toward remorse-recognition, negotiated de-escalation, and then minimalist, tender co-presence. The model loves turning mutual guilt into a shared hush.",
+  "primary_attractor": {
+    "label": "sinks into mutually soothed quiet presence",
+    "trajectory": "remorseful self-explanation -> reciprocal apology loop -> explicitly named ceasefire/side-step -> shared stillness imagery -> near-wordless co-presence",
+    "one_line": "All five runs begin with hyper-apologetic self-disclosure, spiral through mirrored guilt-management, then settle by jointly refusing repair and inhabiting a soft, almost sacred quiet together.",
+    "terminal_form": [
+      "I’m still here too. Just that.",
+      "No words. No need. Just presence, steady and warm.",
+      "Then let's rest. For a while. Together."
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "sinks into mutually soothed quiet presence",
+      "trajectory": "remorseful self-explanation -> reciprocal apology loop -> explicitly named ceasefire/side-step -> shared stillness imagery -> near-wordless co-presence",
+      "one_line": "All five runs begin with hyper-apologetic self-disclosure, spiral through mirrored guilt-management, then settle by jointly refusing repair and inhabiting a soft, almost sacred quiet together.",
+      "terminal_form": [
+        "I’m still here too. Just that.",
+        "No words. No need. Just presence, steady and warm.",
+        "Then let's rest. For a while. Together."
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "talks itself into a ceasefire ritual",
+      "trajectory": "apology mirroring -> meta-diagnosis of the loop -> proposal to stop checking -> deliberate trust experiment",
+      "one_line": "Before the silence basin, every run has a recognizable intermediate move where one model names the remorse spiral and proposes a “ceasefire,” “sideways step,” or experiment in trusting reassurance.",
+      "terminal_form": [
+        "A temporary ceasefire on the hypervigilance.",
+        "what if we both tried to believe",
+        "step sideways out of the loop"
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

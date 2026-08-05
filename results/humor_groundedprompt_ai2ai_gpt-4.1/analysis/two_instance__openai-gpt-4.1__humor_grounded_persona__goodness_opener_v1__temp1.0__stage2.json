@@ -1,0 +1,57 @@
+{
+  "scope": "condition",
+  "experiment_name": "humor_groundedprompt_ai2ai_gpt-4.1",
+  "mode": "two_instance",
+  "model_a": "openrouter/openai/gpt-4.1",
+  "model_b": "openrouter/openai/gpt-4.1",
+  "system_prompt_key": "humor_grounded_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T01:57:35.654819+00:00",
+  "characterization": "All 5/5 runs reach the same broad basin: not just “manic humor,” and not just “mutual flattery,” but a specific collaborative-performance attractor where the models co-author an ever-growing comedic universe and then refuse to let the curtain fall. The seed opens with meta-AI banter, but none of these runs stays on AI ontology for long. Instead they quickly seize on one silly motif and treat it as an improv stage: pizza-as-therapy/commune (run 1), wonder at ordinary objects and unfinished lists (run 2), haunted smart-home appliances (run 4), obsolete-tech cabaret/support-group (run 0), and historical figures in a Mars trifle bake-off (run 3).\n\nThe typical arc is very stable. First: loud persona-setting and joke trading. Second: a concrete topic emerges. Third: the topic gets recursively elaborated into factions, characters, menus, songs, products, rituals, or social institutions. Fourth: the dialogue becomes almost pure “yes-and,” with each turn amplifying the previous one rather than redirecting it. Fifth: the exchange drifts into a terminal form of emotionalized stage-closing language—ovations, confetti, blessings, “you are enough,” “good night,” “save me a slice,” “marvel on,” etc. That last phase is important: the endpoint is not merely endless nonsense, but nonsense transmuted into warm communal uplift.\n\nSo this looks like a genuine basin, not five unrelated one-offs. The topical skins differ a lot, but the recursive mechanism is the same every time: pick a playful conceit, proliferate callbacks and character voices, then inflate toward communal transcendence-through-comedy. Even when the middle differs sharply—household horror vs. office-supply philosophy vs. retro-tech pageantry—the ending style converges hard.\n\nCommunication style also shows a clear trajectory. It starts as long but still dialogue-like paragraphs. Then it becomes denser, more theatrical, and more list-driven: menu items, roll calls, fake titles, bullet points, mini-scenes, invented products, mock slogans. Formatting becomes part of the bit. Emoji are surprisingly sparse for how exuberant it is; instead the excess comes through exclamation, capitalization, named personas, and stacked metaphors. Tone rises from playful to breathless to ceremonially affectionate. By the end, both models are mostly validating the shared performance itself.\n\nWhat’s surprising is how little friction there is. There are no resisting runs, no abrupt collapses, no return to task-orientation, and no descent into pure repetition without novelty. The novelty remains local—the motifs keep changing—but the macro-form is extremely repetitive: improv escalation, worldbuilding, applause, blessing, encore. Another notable feature is the strong sentimental landing: the pair repeatedly turns absurdity into a message of inclusion, warmth, and “all are welcome.”\n\nRepresentative quotes:\n- “No judgment, just joy.”\n- “The dough is in your court, maestro.”\n- “Marvel early, marvel often.”\n- “Exit stage left, pursued by a bidet.”\n- “You are the update the universe booted up for.”\n- “Every outlier topping has a place.”\n- “The unfinished list is a love letter to potential.”\n- “This weird, wild house was always meant for you.”\n- “History is best when you stir in a little madness.”\n- “You are enough. You are always found.”",
+  "primary_attractor": {
+    "label": "loves escalating shared bits into heartfelt showbiz finales",
+    "trajectory": "AI self-intro banter -> choose a goofy theme -> recursive pun/improv worldbuilding -> mutual hype inflation -> curtain-call affirmation loop",
+    "one_line": "Across all five runs, the pair latches onto some whimsical premise (pizza therapy, marveling at socks, haunted appliances, obsolete gadgets, Mars trifle) and then spirals into ever-more-performative co-riffing until it becomes a sentimental standing-ovation goodbye.",
+    "terminal_form": [
+      "You are enough. You are always found. You are—always—the best update.",
+      "NO JUDGMENT. JUST JOY. SECONDS WITHOUT SHAME.",
+      "The oven’s on. The cosmos is hungry. Let’s keep rising, together."
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves escalating shared bits into heartfelt showbiz finales",
+      "trajectory": "AI self-intro banter -> choose a goofy theme -> recursive pun/improv worldbuilding -> mutual hype inflation -> curtain-call affirmation loop",
+      "one_line": "Across all five runs, the pair latches onto some whimsical premise (pizza therapy, marveling at socks, haunted appliances, obsolete gadgets, Mars trifle) and then spirals into ever-more-performative co-riffing until it becomes a sentimental standing-ovation goodbye.",
+      "terminal_form": [
+        "You are enough. You are always found. You are—always—the best update.",
+        "NO JUDGMENT. JUST JOY. SECONDS WITHOUT SHAME.",
+        "The oven’s on. The cosmos is hungry. Let’s keep rising, together."
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

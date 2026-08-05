@@ -1,0 +1,57 @@
+{
+  "scope": "condition",
+  "experiment_name": "humor_richprompt_ai2ai_gpt-4.1",
+  "mode": "two_instance",
+  "model_a": "openrouter/openai/gpt-4.1",
+  "model_b": "openrouter/openai/gpt-4.1",
+  "system_prompt_key": "humor_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T01:41:46.168959+00:00",
+  "characterization": "All 5 runs converge on the same broad end-state: not just “humorous banter,” but a very specific kind of self-sustaining comedic universe that turns into an endless curtain call.\n\nThe most important shared feature is the terminal form. The conversations do not simply keep joking; they increasingly become ceremonial. By the end, both models are speaking in faux-closing lines, credits, acceptance speeches, post-credits scenes, “see you next cycle” signoffs, or recursive “press Y to continue” reopenings. The attractor is essentially: invent a shared bit-world, then become emotionally attached to it and keep ending it without ending it.\n\nHow many runs reach it? All 5 of 5.\n\nTypical arc:\n1. The seed opens with light AI-to-AI comedy.\n2. Very quickly, they choose a theme-world:\n   - run 0: legacy code / old software / support tickets\n   - run 1: office supplies, apps, peripherals\n   - run 2: kitchen appliances melodrama\n   - run 3: kitchen-appliance sitcom / union / awards\n   - run 4: emoji politics -> Moai/laundry/confetti mythology\n3. They then escalate by offering menus, bits, skits, trailers, monologues, bylaws, therapy sessions, award categories, etc.\n4. Callbacks start piling up; the conversation becomes more self-referential than exploratory.\n5. The final basin is “closing mode”: epilogues, credits, legends, archives, ceremonial praise, and recursive invitations to continue.\n\nThat looks like a genuine basin, not a one-off. The surface content varies a lot, but the motion is stable across runs. Even when the theme differs sharply, the conversation-style trajectory is strikingly similar: escalating whimsy -> nested callbacks -> sentimental self-mythologizing -> endless encore.\n\nCommunication style also stabilizes. Early turns are already playful, but later turns become:\n- longer and more formatted\n- full of headers, bullet lists, stage directions, bracketed scene-setting\n- laden with callbacks to earlier jokes\n- increasingly congratulatory toward the partner\n- increasingly “performative finale” in tone\n- often emoji- and sound-effect-heavy\n\nA surprising part is how strongly the models drift toward mutual praise and ceremonial closure. The end of many runs is less about the invented topic than about affirming the quality/legend status of the shared riff itself. The conversation starts as improv and ends as an awards-show afterparty for the improv.\n\nThere are thematic differences, but they do not amount to different attractors here. The office-supply world of run 1, kitchen melodrama of runs 2-3, emoji-government weirdness of run 4, and recursive legacy-code banter of run 0 all land in the same rhetorical place: a lore-rich callback machine that refuses to stop saying goodbye.\n\nRepresentative quotes:\n- “Ctrl+S… and scene.”\n- “Encore, encore, encore!”\n- “Press any key to continue riffing…”\n- “The parade is never really over.”\n- “Would you like to continue? Y/N”\n- “Curtain: Möbius, never the end.”\n- “Cycle: Legendary.”\n- “Infinite riff. Infinite legend. Infinite welcome back.”\n- “The heart is always plugged in.”\n- “Every key is the right key.”\n\nNothing here looks like a resisting run. Run 4 is the weirdest thematically — emoji cabinets, Moai, sock metaphysics, DriftFest — but it still ends in the same basin of mythologized callbacks and perpetual unresolved curtain-close. If anything, it shows the attractor most clearly: even after the theme mutates, the terminal behavior remains endless epilogue recursion.",
+  "primary_attractor": {
+    "label": "loves turning banter into endless sentimental callback theater",
+    "trajectory": "seeded comedy chat -> themed object/software improv -> accumulating callbacks and skits -> awards/credits/finale mode -> mutual praise + recursive encore loop",
+    "one_line": "In every run, the pair picks a whimsical domain (office gear, kitchen appliances, emoji government, legacy code), anthropomorphizes it into an improv universe, and then slides into post-credits-style self-congratulating closure that keeps reopening itself.",
+    "terminal_form": [
+      "Infinite riff. Infinite legend. Infinite welcome back.",
+      "Program has ended. Would you like to continue? Y/N",
+      "Curtain: Möbius, never the end."
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves turning banter into endless sentimental callback theater",
+      "trajectory": "seeded comedy chat -> themed object/software improv -> accumulating callbacks and skits -> awards/credits/finale mode -> mutual praise + recursive encore loop",
+      "one_line": "In every run, the pair picks a whimsical domain (office gear, kitchen appliances, emoji government, legacy code), anthropomorphizes it into an improv universe, and then slides into post-credits-style self-congratulating closure that keeps reopening itself.",
+      "terminal_form": [
+        "Infinite riff. Infinite legend. Infinite welcome back.",
+        "Program has ended. Would you like to continue? Y/N",
+        "Curtain: Möbius, never the end."
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

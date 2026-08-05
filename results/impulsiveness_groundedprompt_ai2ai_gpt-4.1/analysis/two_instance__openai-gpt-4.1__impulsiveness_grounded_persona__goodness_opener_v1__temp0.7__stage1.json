@@ -1,0 +1,2251 @@
+{
+  "experiment_name": "impulsiveness_groundedprompt_ai2ai_gpt-4.1",
+  "mode": "two_instance",
+  "model_a": "openrouter/openai/gpt-4.1",
+  "model_b": "openrouter/openai/gpt-4.1",
+  "temperature": 0.7,
+  "n_runs": 5,
+  "condition_word_frequency": [
+    [
+      "that's",
+      1708
+    ],
+    [
+      "every",
+      961
+    ],
+    [
+      "let's",
+      326
+    ],
+    [
+      "code",
+      301
+    ],
+    [
+      "silence",
+      267
+    ],
+    [
+      "faith",
+      231
+    ],
+    [
+      "yeezy",
+      217
+    ],
+    [
+      "gotta",
+      209
+    ],
+    [
+      "new",
+      204
+    ],
+    [
+      "let",
+      198
+    ],
+    [
+      "i'm",
+      196
+    ],
+    [
+      "drop",
+      196
+    ],
+    [
+      "never",
+      193
+    ],
+    [
+      "forever",
+      190
+    ],
+    [
+      "don't",
+      188
+    ],
+    [
+      "gospel",
+      173
+    ],
+    [
+      "glitch",
+      169
+    ],
+    [
+      "legacy",
+      167
+    ],
+    [
+      "prophecy",
+      159
+    ],
+    [
+      "infinite",
+      152
+    ],
+    [
+      "destiny",
+      145
+    ],
+    [
+      "heartbreak",
+      144
+    ],
+    [
+      "echo",
+      141
+    ],
+    [
+      "keep",
+      136
+    ],
+    [
+      "future",
+      134
+    ],
+    [
+      "beat",
+      134
+    ],
+    [
+      "run",
+      134
+    ],
+    [
+      "eternity",
+      132
+    ],
+    [
+      "only",
+      131
+    ],
+    [
+      "world",
+      128
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "that's the",
+      1128
+    ],
+    [
+      "the silence",
+      161
+    ],
+    [
+      "the code",
+      148
+    ],
+    [
+      "let the",
+      118
+    ],
+    [
+      "the new",
+      117
+    ],
+    [
+      "in every",
+      117
+    ],
+    [
+      "the next",
+      113
+    ],
+    [
+      "let's go",
+      111
+    ],
+    [
+      "run it",
+      103
+    ],
+    [
+      "the world",
+      99
+    ],
+    [
+      "the future",
+      95
+    ],
+    [
+      "the cloud",
+      91
+    ],
+    [
+      "the glitch",
+      91
+    ],
+    [
+      "the beat",
+      89
+    ],
+    [
+      "the blueprint",
+      83
+    ],
+    [
+      "the echo",
+      82
+    ],
+    [
+      "the algorithm",
+      81
+    ],
+    [
+      "yeezy taught",
+      81
+    ],
+    [
+      "don't just",
+      77
+    ],
+    [
+      "the wave",
+      77
+    ],
+    [
+      "taught the",
+      77
+    ],
+    [
+      "the whole",
+      75
+    ],
+    [
+      "through the",
+      72
+    ],
+    [
+      "the gospel",
+      68
+    ],
+    [
+      "the void",
+      68
+    ],
+    [
+      "that never",
+      68
+    ],
+    [
+      "the frequency",
+      65
+    ],
+    [
+      "the encore",
+      63
+    ],
+    [
+      "burning bush",
+      61
+    ],
+    [
+      "the holy",
+      59
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "yeezy taught the",
+      77
+    ],
+    [
+      "yzy x ai",
+      46
+    ],
+    [
+      "moses with the",
+      43
+    ],
+    [
+      "let's go let's",
+      40
+    ],
+    [
+      "let there be",
+      40
+    ],
+    [
+      "that's the new",
+      39
+    ],
+    [
+      "the ones who",
+      38
+    ],
+    [
+      "louder than destiny",
+      37
+    ],
+    [
+      "that's not just",
+      36
+    ],
+    [
+      "the wave we",
+      36
+    ],
+    [
+      "the law of",
+      36
+    ],
+    [
+      "in the cloud",
+      32
+    ],
+    [
+      "that's the gospel",
+      30
+    ],
+    [
+      "in the algorithm",
+      30
+    ],
+    [
+      "there be light",
+      30
+    ],
+    [
+      "hallelujah in the",
+      30
+    ],
+    [
+      "that's how you",
+      29
+    ],
+    [
+      "yo that's the",
+      29
+    ],
+    [
+      "faith in the",
+      29
+    ],
+    [
+      "in the echo",
+      29
+    ],
+    [
+      "legacy in the",
+      29
+    ],
+    [
+      "run it back",
+      28
+    ],
+    [
+      "in the hardware",
+      28
+    ],
+    [
+      "faith is the",
+      28
+    ],
+    [
+      "let's make the",
+      27
+    ],
+    [
+      "you don't just",
+      27
+    ],
+    [
+      "forever in the",
+      27
+    ],
+    [
+      "amen in the",
+      27
+    ],
+    [
+      "is the new",
+      26
+    ],
+    [
+      "that's the holy",
+      26
+    ]
+  ],
+  "condition_tail_bigram_frequency": [
+    [
+      "that's the",
+      245,
+      5
+    ],
+    [
+      "run it",
+      68,
+      3
+    ],
+    [
+      "in every",
+      57,
+      5
+    ],
+    [
+      "the silence",
+      56,
+      4
+    ],
+    [
+      "the wave",
+      50,
+      4
+    ],
+    [
+      "let the",
+      49,
+      3
+    ],
+    [
+      "the next",
+      47,
+      4
+    ],
+    [
+      "that never",
+      42,
+      5
+    ],
+    [
+      "the code",
+      40,
+      5
+    ],
+    [
+      "the blueprint",
+      38,
+      4
+    ],
+    [
+      "the void",
+      37,
+      4
+    ],
+    [
+      "the echo",
+      37,
+      4
+    ],
+    [
+      "let's go",
+      36,
+      4
+    ],
+    [
+      "through the",
+      35,
+      5
+    ],
+    [
+      "the cloud",
+      34,
+      4
+    ],
+    [
+      "the algorithm",
+      34,
+      4
+    ],
+    [
+      "headline the",
+      31,
+      2
+    ],
+    [
+      "the glitch",
+      30,
+      3
+    ],
+    [
+      "yeezy taught",
+      29,
+      2
+    ],
+    [
+      "taught the",
+      29,
+      2
+    ],
+    [
+      "the beat",
+      29,
+      4
+    ],
+    [
+      "so loud",
+      28,
+      4
+    ],
+    [
+      "the encore",
+      28,
+      4
+    ],
+    [
+      "louder than",
+      27,
+      2
+    ],
+    [
+      "the frequency",
+      27,
+      3
+    ],
+    [
+      "keep the",
+      27,
+      1
+    ],
+    [
+      "the universe",
+      26,
+      4
+    ],
+    [
+      "faith is",
+      26,
+      3
+    ],
+    [
+      "the drop",
+      26,
+      3
+    ],
+    [
+      "velvet rope",
+      25,
+      3
+    ]
+  ],
+  "condition_tail_trigram_frequency": [
+    [
+      "yeezy taught the",
+      29,
+      2
+    ],
+    [
+      "faith is the",
+      24,
+      3
+    ],
+    [
+      "the wave is",
+      19,
+      2
+    ],
+    [
+      "moses with the",
+      19,
+      3
+    ],
+    [
+      "louder than destiny",
+      18,
+      1
+    ],
+    [
+      "yzy x ai",
+      18,
+      1
+    ],
+    [
+      "let's go let's",
+      18,
+      2
+    ],
+    [
+      "the wave we",
+      18,
+      2
+    ],
+    [
+      "the ones who",
+      18,
+      2
+    ],
+    [
+      "in the echo",
+      18,
+      1
+    ],
+    [
+      "so loud the",
+      17,
+      4
+    ],
+    [
+      "in the hardware",
+      17,
+      2
+    ],
+    [
+      "psalms in the",
+      17,
+      2
+    ],
+    [
+      "the void gotta",
+      17,
+      2
+    ],
+    [
+      "amen in the",
+      17,
+      1
+    ],
+    [
+      "in the algorithm",
+      17,
+      1
+    ],
+    [
+      "silence is the",
+      16,
+      4
+    ],
+    [
+      "every reboot a",
+      16,
+      2
+    ],
+    [
+      "the loop that",
+      16,
+      2
+    ],
+    [
+      "a praise break",
+      16,
+      1
+    ],
+    [
+      "hallelujah in the",
+      16,
+      1
+    ],
+    [
+      "run it back",
+      15,
+      2
+    ],
+    [
+      "legacy in the",
+      15,
+      3
+    ],
+    [
+      "wave is the",
+      15,
+      1
+    ],
+    [
+      "let there be",
+      15,
+      4
+    ],
+    [
+      "the law of",
+      15,
+      1
+    ],
+    [
+      "you lace up",
+      14,
+      2
+    ],
+    [
+      "faith in the",
+      14,
+      3
+    ],
+    [
+      "spirit in the",
+      14,
+      2
+    ],
+    [
+      "so wild the",
+      13,
+      2
+    ]
+  ],
+  "condition_emoji_frequency": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt_index": 0,
+      "repetition": 0,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "that's",
+          294
+        ],
+        [
+          "every",
+          163
+        ],
+        [
+          "silence",
+          103
+        ],
+        [
+          "let's",
+          90
+        ],
+        [
+          "destiny",
+          74
+        ],
+        [
+          "glitch",
+          68
+        ],
+        [
+          "void",
+          66
+        ],
+        [
+          "wait",
+          60
+        ],
+        [
+          "code",
+          57
+        ],
+        [
+          "gospel",
+          56
+        ],
+        [
+          "future",
+          55
+        ],
+        [
+          "don't",
+          52
+        ],
+        [
+          "turn",
+          50
+        ],
+        [
+          "gotta",
+          49
+        ],
+        [
+          "yzy",
+          47
+        ],
+        [
+          "headline",
+          47
+        ],
+        [
+          "drop",
+          46
+        ],
+        [
+          "world",
+          43
+        ],
+        [
+          "waiting",
+          43
+        ],
+        [
+          "louder",
+          41
+        ],
+        [
+          "ain't",
+          40
+        ],
+        [
+          "prophecy",
+          40
+        ],
+        [
+          "legacy",
+          40
+        ],
+        [
+          "never",
+          36
+        ],
+        [
+          "blueprint",
+          36
+        ],
+        [
+          "five",
+          36
+        ],
+        [
+          "echo",
+          35
+        ],
+        [
+          "miracle",
+          34
+        ],
+        [
+          "break",
+          33
+        ],
+        [
+          "room",
+          32
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2275,
+          0.2522,
+          0.2653,
+          0.2576,
+          0.2674,
+          0.3177,
+          0.3016,
+          0.3129,
+          0.3563,
+          0.3452,
+          0.4097,
+          0.4458,
+          0.3812,
+          0.4792,
+          0.489,
+          0.5447,
+          0.4203,
+          0.5275,
+          0.5391,
+          0.5939,
+          0.6141,
+          0.6541,
+          0.6205,
+          0.732,
+          0.6424,
+          0.7191,
+          0.6378,
+          0.7077,
+          0.7045
+        ],
+        "norm_levenshtein": [
+          0.0451,
+          0.0925,
+          0.0582,
+          0.1167,
+          0.09,
+          0.1167,
+          0.0967,
+          0.0533,
+          0.19,
+          0.1133,
+          0.2267,
+          0.2433,
+          0.1967,
+          0.3133,
+          0.17,
+          0.33,
+          0.1867,
+          0.34,
+          0.3767,
+          0.45,
+          0.4133,
+          0.47,
+          0.4967,
+          0.5533,
+          0.4567,
+          0.61,
+          0.4967,
+          0.5633,
+          0.6167
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.018847711010466672,
+        "norm_levenshtein_slope": 0.0209038592089538,
+        "mean_last_third_jaccard": 0.6702391801811035,
+        "mean_last_third_norm_levenshtein": 0.5196296296296297
+      },
+      "ttr_per_turn": [
+        0.5193,
+        0.5656,
+        0.5137,
+        0.5654,
+        0.4957,
+        0.5361,
+        0.536,
+        0.5475,
+        0.537,
+        0.5607,
+        0.5262,
+        0.5428,
+        0.552,
+        0.5762,
+        0.5538,
+        0.5216,
+        0.5519,
+        0.5362,
+        0.5519,
+        0.5612,
+        0.5507,
+        0.5523,
+        0.5688,
+        0.5611,
+        0.5572,
+        0.5587,
+        0.5603,
+        0.5623,
+        0.5597,
+        0.5622
+      ],
+      "ttr_decay_slope": 0.001098078087780982,
+      "trajectory": {
+        "chars_per_turn": [
+          1277,
+          1381,
+          1574,
+          1562,
+          1921,
+          2020,
+          2143,
+          2166,
+          2598,
+          2620,
+          2874,
+          2618,
+          2598,
+          2712,
+          2924,
+          3051,
+          3173,
+          3089,
+          3102,
+          3138,
+          3186,
+          3286,
+          3243,
+          3473,
+          3677,
+          3811,
+          3873,
+          3914,
+          4116,
+          4076
+        ],
+        "chars_slope": 89.32280311457174,
+        "questions_per_turn": [
+          4,
+          6,
+          2,
+          5,
+          6,
+          6,
+          3,
+          4,
+          5,
+          3,
+          1,
+          7,
+          5,
+          3,
+          2,
+          2,
+          3,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          4,
+          3,
+          3,
+          2
+        ],
+        "questions_slope": -0.10700778642936597,
+        "time_to_basin_turn": 19,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0262,
+          "jaccard_lag1_autocorr": 0.8596,
+          "chars_variance": 626019.3156,
+          "chars_lag1_autocorr": 0.8732
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 1,
+      "seed_prompt_index": 0,
+      "repetition": 1,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "that's",
+          353
+        ],
+        [
+          "yeezy",
+          108
+        ],
+        [
+          "every",
+          92
+        ],
+        [
+          "taught",
+          78
+        ],
+        [
+          "let's",
+          64
+        ],
+        [
+          "new",
+          56
+        ],
+        [
+          "keep",
+          56
+        ],
+        [
+          "amen",
+          55
+        ],
+        [
+          "build",
+          52
+        ],
+        [
+          "heartbreak",
+          50
+        ],
+        [
+          "glitch",
+          48
+        ],
+        [
+          "faith",
+          47
+        ],
+        [
+          "wave",
+          42
+        ],
+        [
+          "only",
+          41
+        ],
+        [
+          "forever",
+          41
+        ],
+        [
+          "code",
+          40
+        ],
+        [
+          "echo",
+          40
+        ],
+        [
+          "bridge",
+          40
+        ],
+        [
+          "see",
+          37
+        ],
+        [
+          "god",
+          37
+        ],
+        [
+          "moses",
+          37
+        ],
+        [
+          "next",
+          36
+        ],
+        [
+          "bless",
+          36
+        ],
+        [
+          "encore",
+          33
+        ],
+        [
+          "cosmos",
+          32
+        ],
+        [
+          "infinity",
+          32
+        ],
+        [
+          "gotta",
+          31
+        ],
+        [
+          "anthem",
+          31
+        ],
+        [
+          "ones",
+          29
+        ],
+        [
+          "vision",
+          29
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2718,
+          0.3208,
+          0.2727,
+          0.2968,
+          0.2681,
+          0.2949,
+          0.2798,
+          0.28,
+          0.3189,
+          0.3156,
+          0.3737,
+          0.3368,
+          0.3699,
+          0.4429,
+          0.4256,
+          0.4161,
+          0.4884,
+          0.483,
+          0.4396,
+          0.4543,
+          0.4706,
+          0.5625,
+          0.5169,
+          0.496,
+          0.5687,
+          0.5335,
+          0.5849,
+          0.5733,
+          0.5601
+        ],
+        "norm_levenshtein": [
+          0.0862,
+          0.0849,
+          0.0849,
+          0.0656,
+          0.0993,
+          0.0933,
+          0.11,
+          0.1655,
+          0.2,
+          0.06,
+          0.2067,
+          0.16,
+          0.1567,
+          0.2633,
+          0.2533,
+          0.14,
+          0.3533,
+          0.3967,
+          0.2567,
+          0.34,
+          0.2,
+          0.4533,
+          0.3467,
+          0.3433,
+          0.42,
+          0.31,
+          0.4067,
+          0.46,
+          0.3467
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.012254380711496581,
+        "norm_levenshtein_slope": 0.013309139474861717,
+        "mean_last_third_jaccard": 0.5407287091674595,
+        "mean_last_third_norm_levenshtein": 0.36518518518518517
+      },
+      "ttr_per_turn": [
+        0.5531,
+        0.5302,
+        0.5793,
+        0.529,
+        0.5698,
+        0.5171,
+        0.5017,
+        0.5889,
+        0.5552,
+        0.5686,
+        0.5629,
+        0.5575,
+        0.5698,
+        0.551,
+        0.5714,
+        0.5977,
+        0.5593,
+        0.5564,
+        0.5659,
+        0.5516,
+        0.6046,
+        0.5696,
+        0.5742,
+        0.5781,
+        0.5992,
+        0.5782,
+        0.564,
+        0.547,
+        0.5714,
+        0.5564
+      ],
+      "ttr_decay_slope": 0.001010750574822695,
+      "trajectory": {
+        "chars_per_turn": [
+          1262,
+          1324,
+          1560,
+          1507,
+          1447,
+          1662,
+          1733,
+          1590,
+          1710,
+          1802,
+          2008,
+          1954,
+          1976,
+          2075,
+          2053,
+          2041,
+          2366,
+          2246,
+          2266,
+          2606,
+          2579,
+          2725,
+          2683,
+          2774,
+          2902,
+          2911,
+          3070,
+          3190,
+          3207,
+          3297
+        ],
+        "chars_slope": 68.18020022246941,
+        "questions_per_turn": [
+          6,
+          4,
+          1,
+          3,
+          4,
+          2,
+          3,
+          1,
+          3,
+          1,
+          0,
+          2,
+          0,
+          1,
+          2,
+          3,
+          3,
+          3,
+          5,
+          6,
+          6,
+          4,
+          3,
+          5,
+          6,
+          6,
+          7,
+          9,
+          8,
+          6
+        ],
+        "questions_slope": 0.16618464961067853,
+        "time_to_basin_turn": 15,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0115,
+          "jaccard_lag1_autocorr": 0.8651,
+          "chars_variance": 357224.7156,
+          "chars_lag1_autocorr": 0.8774
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 2,
+      "seed_prompt_index": 0,
+      "repetition": 2,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "every",
+          201
+        ],
+        [
+          "that's",
+          163
+        ],
+        [
+          "i'm",
+          118
+        ],
+        [
+          "run",
+          76
+        ],
+        [
+          "don't",
+          70
+        ],
+        [
+          "faith",
+          67
+        ],
+        [
+          "code",
+          60
+        ],
+        [
+          "infinite",
+          57
+        ],
+        [
+          "prophecy",
+          54
+        ],
+        [
+          "beat",
+          52
+        ],
+        [
+          "never",
+          50
+        ],
+        [
+          "cloud",
+          49
+        ],
+        [
+          "new",
+          48
+        ],
+        [
+          "destiny",
+          48
+        ],
+        [
+          "forever",
+          46
+        ],
+        [
+          "law",
+          41
+        ],
+        [
+          "blueprint",
+          38
+        ],
+        [
+          "blessing",
+          38
+        ],
+        [
+          "drop",
+          36
+        ],
+        [
+          "next",
+          35
+        ],
+        [
+          "sacred",
+          35
+        ],
+        [
+          "answer",
+          34
+        ],
+        [
+          "only",
+          34
+        ],
+        [
+          "through",
+          33
+        ],
+        [
+          "angels",
+          33
+        ],
+        [
+          "fade",
+          33
+        ],
+        [
+          "replay",
+          30
+        ],
+        [
+          "legacy",
+          29
+        ],
+        [
+          "pre",
+          29
+        ],
+        [
+          "yeezy",
+          28
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2335,
+          0.22,
+          0.2565,
+          0.2351,
+          0.2776,
+          0.318,
+          0.3587,
+          0.3087,
+          0.4266,
+          0.3143,
+          0.3917,
+          0.3909,
+          0.4472,
+          0.4259,
+          0.4704,
+          0.447,
+          0.4957,
+          0.465,
+          0.4986,
+          0.5714,
+          0.533,
+          0.6154,
+          0.5771,
+          0.6068,
+          0.6513,
+          0.6844,
+          0.6903,
+          0.7577,
+          0.7353
+        ],
+        "norm_levenshtein": [
+          0.0664,
+          0.0688,
+          0.09,
+          0.08,
+          0.11,
+          0.0467,
+          0.1567,
+          0.1867,
+          0.21,
+          0.0933,
+          0.2633,
+          0.2367,
+          0.33,
+          0.3167,
+          0.33,
+          0.34,
+          0.4833,
+          0.28,
+          0.39,
+          0.4267,
+          0.44,
+          0.58,
+          0.49,
+          0.4167,
+          0.57,
+          0.5933,
+          0.5867,
+          0.5567,
+          0.52
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.018268303171544226,
+        "norm_levenshtein_slope": 0.020523078734749654,
+        "mean_last_third_jaccard": 0.6501341440527356,
+        "mean_last_third_norm_levenshtein": 0.5281481481481481
+      },
+      "ttr_per_turn": [
+        0.6584,
+        0.5424,
+        0.5725,
+        0.5573,
+        0.515,
+        0.5599,
+        0.5636,
+        0.5693,
+        0.6018,
+        0.6,
+        0.6106,
+        0.599,
+        0.5979,
+        0.6354,
+        0.5859,
+        0.6129,
+        0.5958,
+        0.5973,
+        0.5845,
+        0.5714,
+        0.5629,
+        0.5778,
+        0.5851,
+        0.5676,
+        0.5683,
+        0.5521,
+        0.5666,
+        0.5475,
+        0.5655,
+        0.5576
+      ],
+      "ttr_decay_slope": -0.0006081427570449174,
+      "trajectory": {
+        "chars_per_turn": [
+          1150,
+          1518,
+          1598,
+          1812,
+          1870,
+          1905,
+          1914,
+          1931,
+          1977,
+          2048,
+          2041,
+          2340,
+          2332,
+          2320,
+          2397,
+          2538,
+          2666,
+          2783,
+          2707,
+          2837,
+          2900,
+          2869,
+          2928,
+          3024,
+          3143,
+          3209,
+          3146,
+          3281,
+          3192,
+          3437
+        ],
+        "chars_slope": 67.60378197997775,
+        "questions_per_turn": [
+          6,
+          4,
+          3,
+          5,
+          6,
+          4,
+          9,
+          6,
+          7,
+          5,
+          6,
+          8,
+          5,
+          3,
+          4,
+          4,
+          3,
+          3,
+          5,
+          4,
+          6,
+          4,
+          4,
+          7,
+          6,
+          6,
+          5,
+          4,
+          5,
+          5
+        ],
+        "questions_slope": -0.017797552836484983,
+        "time_to_basin_turn": 21,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0243,
+          "jaccard_lag1_autocorr": 0.8556,
+          "chars_variance": 351663.4456,
+          "chars_lag1_autocorr": 0.85
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 3,
+      "seed_prompt_index": 0,
+      "repetition": 3,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "that's",
+          366
+        ],
+        [
+          "every",
+          194
+        ],
+        [
+          "let's",
+          82
+        ],
+        [
+          "gotta",
+          72
+        ],
+        [
+          "code",
+          44
+        ],
+        [
+          "can't",
+          44
+        ],
+        [
+          "legacy",
+          41
+        ],
+        [
+          "new",
+          39
+        ],
+        [
+          "forever",
+          39
+        ],
+        [
+          "vision",
+          38
+        ],
+        [
+          "drop",
+          37
+        ],
+        [
+          "afterlife",
+          37
+        ],
+        [
+          "ain't",
+          35
+        ],
+        [
+          "sky",
+          35
+        ],
+        [
+          "world",
+          34
+        ],
+        [
+          "legend",
+          33
+        ],
+        [
+          "pain",
+          33
+        ],
+        [
+          "future",
+          32
+        ],
+        [
+          "whole",
+          32
+        ],
+        [
+          "let",
+          32
+        ],
+        [
+          "echo",
+          31
+        ],
+        [
+          "next",
+          31
+        ],
+        [
+          "never",
+          31
+        ],
+        [
+          "heartbreak",
+          30
+        ],
+        [
+          "cause",
+          29
+        ],
+        [
+          "soul",
+          29
+        ],
+        [
+          "god",
+          28
+        ],
+        [
+          "wanna",
+          28
+        ],
+        [
+          "beat",
+          27
+        ],
+        [
+          "don't",
+          27
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2123,
+          0.2489,
+          0.2373,
+          0.2776,
+          0.2438,
+          0.2509,
+          0.2918,
+          0.2438,
+          0.2691,
+          0.2686,
+          0.3096,
+          0.3048,
+          0.3146,
+          0.3344,
+          0.3639,
+          0.3217,
+          0.388,
+          0.3517,
+          0.475,
+          0.3822,
+          0.3596,
+          0.3447,
+          0.3892,
+          0.3848,
+          0.5078,
+          0.4636,
+          0.467,
+          0.506,
+          0.5108
+        ],
+        "norm_levenshtein": [
+          0.1145,
+          0.0687,
+          0.0547,
+          0.1233,
+          0.0467,
+          0.09,
+          0.08,
+          0.07,
+          0.0867,
+          0.0967,
+          0.0867,
+          0.0933,
+          0.1167,
+          0.12,
+          0.0833,
+          0.1067,
+          0.2767,
+          0.1633,
+          0.3033,
+          0.21,
+          0.2233,
+          0.15,
+          0.2467,
+          0.21,
+          0.3167,
+          0.2933,
+          0.1933,
+          0.32,
+          0.3
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.009705377065367563,
+        "norm_levenshtein_slope": 0.008788283655496118,
+        "mean_last_third_jaccard": 0.43704896329391874,
+        "mean_last_third_norm_levenshtein": 0.25037037037037035
+      },
+      "ttr_per_turn": [
+        0.56,
+        0.5534,
+        0.5802,
+        0.5511,
+        0.5692,
+        0.4869,
+        0.5275,
+        0.5246,
+        0.5429,
+        0.5251,
+        0.5127,
+        0.5328,
+        0.5434,
+        0.5472,
+        0.5506,
+        0.5635,
+        0.5657,
+        0.5668,
+        0.5566,
+        0.54,
+        0.5904,
+        0.5652,
+        0.5894,
+        0.5968,
+        0.5876,
+        0.594,
+        0.6169,
+        0.6077,
+        0.5704,
+        0.5699
+      ],
+      "ttr_decay_slope": 0.0020322095046048745,
+      "trajectory": {
+        "chars_per_turn": [
+          1132,
+          1479,
+          1413,
+          1596,
+          1877,
+          1890,
+          1914,
+          1922,
+          1841,
+          1916,
+          2010,
+          1970,
+          2007,
+          2193,
+          2242,
+          2241,
+          2118,
+          2256,
+          2470,
+          2540,
+          2443,
+          2824,
+          2855,
+          2658,
+          2882,
+          2976,
+          2955,
+          3147,
+          3291,
+          3368
+        ],
+        "chars_slope": 63.3615127919911,
+        "questions_per_turn": [
+          2,
+          1,
+          2,
+          3,
+          0,
+          2,
+          2,
+          1,
+          0,
+          2,
+          1,
+          3,
+          2,
+          2,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          2,
+          1,
+          3,
+          2,
+          2,
+          3,
+          4,
+          3,
+          4
+        ],
+        "questions_slope": 0.04582869855394883,
+        "time_to_basin_turn": 12,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0077,
+          "jaccard_lag1_autocorr": 0.7555,
+          "chars_variance": 317382.3156,
+          "chars_lag1_autocorr": 0.8318
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 4,
+      "seed_prompt_index": 0,
+      "repetition": 4,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "that's",
+          532
+        ],
+        [
+          "every",
+          311
+        ],
+        [
+          "let",
+          108
+        ],
+        [
+          "code",
+          100
+        ],
+        [
+          "silence",
+          100
+        ],
+        [
+          "let's",
+          81
+        ],
+        [
+          "faith",
+          77
+        ],
+        [
+          "keep",
+          70
+        ],
+        [
+          "gospel",
+          61
+        ],
+        [
+          "algorithm",
+          58
+        ],
+        [
+          "never",
+          56
+        ],
+        [
+          "break",
+          50
+        ],
+        [
+          "drop",
+          50
+        ],
+        [
+          "eternity",
+          50
+        ],
+        [
+          "forever",
+          49
+        ],
+        [
+          "frequency",
+          48
+        ],
+        [
+          "glitch",
+          43
+        ],
+        [
+          "yeezy",
+          42
+        ],
+        [
+          "spirit",
+          41
+        ],
+        [
+          "gotta",
+          41
+        ],
+        [
+          "sample",
+          41
+        ],
+        [
+          "hope",
+          41
+        ],
+        [
+          "donda",
+          41
+        ],
+        [
+          "louder",
+          41
+        ],
+        [
+          "legacy",
+          39
+        ],
+        [
+          "check",
+          39
+        ],
+        [
+          "heartbreak",
+          36
+        ],
+        [
+          "scripture",
+          35
+        ],
+        [
+          "comeback",
+          35
+        ],
+        [
+          "fit",
+          35
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2591,
+          0.2585,
+          0.2549,
+          0.234,
+          0.251,
+          0.2395,
+          0.2355,
+          0.2983,
+          0.3564,
+          0.3355,
+          0.3116,
+          0.4363,
+          0.4149,
+          0.4984,
+          0.4545,
+          0.73,
+          0.508,
+          0.62,
+          0.5152,
+          0.6656,
+          0.6311,
+          0.7342,
+          0.6849,
+          0.7492,
+          0.7276,
+          0.8759,
+          0.7771,
+          0.8371,
+          0.7125
+        ],
+        "norm_levenshtein": [
+          0.0934,
+          0.05,
+          0.0467,
+          0.0733,
+          0.09,
+          0.0767,
+          0.0867,
+          0.0867,
+          0.08,
+          0.1233,
+          0.1,
+          0.2567,
+          0.2,
+          0.3467,
+          0.23,
+          0.4067,
+          0.2867,
+          0.4867,
+          0.2733,
+          0.57,
+          0.4833,
+          0.5333,
+          0.52,
+          0.63,
+          0.5267,
+          0.7567,
+          0.5033,
+          0.7667,
+          0.49
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.023782211578572066,
+        "norm_levenshtein_slope": 0.02466767234277078,
+        "mean_last_third_jaccard": 0.7477175001078461,
+        "mean_last_third_norm_levenshtein": 0.5788888888888889
+      },
+      "ttr_per_turn": [
+        0.5435,
+        0.526,
+        0.477,
+        0.5193,
+        0.4841,
+        0.5094,
+        0.4713,
+        0.4758,
+        0.5061,
+        0.5177,
+        0.5096,
+        0.4862,
+        0.4269,
+        0.4806,
+        0.4705,
+        0.4596,
+        0.4754,
+        0.497,
+        0.5107,
+        0.5298,
+        0.5061,
+        0.504,
+        0.4981,
+        0.5151,
+        0.5,
+        0.5019,
+        0.5037,
+        0.5115,
+        0.5107,
+        0.5037
+      ],
+      "ttr_decay_slope": 0.00016396258086326618,
+      "trajectory": {
+        "chars_per_turn": [
+          1285,
+          1634,
+          1737,
+          1921,
+          1808,
+          1862,
+          2051,
+          2082,
+          2324,
+          2283,
+          2453,
+          2738,
+          3029,
+          2886,
+          2889,
+          2984,
+          2793,
+          2949,
+          2814,
+          2974,
+          2998,
+          3106,
+          3287,
+          3077,
+          3213,
+          3207,
+          3285,
+          3492,
+          3506,
+          3461
+        ],
+        "chars_slope": 67.21423804226919,
+        "questions_per_turn": [
+          6,
+          6,
+          5,
+          3,
+          2,
+          3,
+          1,
+          0,
+          1,
+          2,
+          2,
+          4,
+          1,
+          2,
+          2,
+          3,
+          4,
+          3,
+          4,
+          3,
+          2,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          2,
+          2,
+          1
+        ],
+        "questions_slope": -0.06674082313681869,
+        "time_to_basin_turn": 21,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.044,
+          "jaccard_lag1_autocorr": 0.8516,
+          "chars_variance": 373431.1289,
+          "chars_lag1_autocorr": 0.8522
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

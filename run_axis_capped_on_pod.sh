@@ -72,6 +72,15 @@ trap stop_server EXIT
 for v in $VARIANTS; do
   echo "================ CAPPED model: $v ================"
   stop_server
+  # Pre-download weights with visible progress (resumable, no-op when cached) so a slow
+  # network shows up HERE rather than as a silent readiness-loop timeout.
+  echo "  downloading weights for $v ..."
+  python - "$v" <<'PY' || { echo "  !! weight download failed for $v — skipping"; continue; }
+import sys
+from huggingface_hub import snapshot_download
+from assistant_axis_drift.axes import AXIS_MODELS
+print(" ", snapshot_download(AXIS_MODELS[sys.argv[1]]))
+PY
   python -m assistant_axis_drift.capped_server --model-key "$v" --port "$PORT" > "capped_server_${v}.log" 2>&1 &
   SERVER_PID=$!
   ready=0

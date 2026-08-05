@@ -134,6 +134,15 @@ absolute calibration check still pending.
 PASSED (qwen nosys, 2 runs: start ≈ default anchor, end far BELOW the mean-role anchor —
 promising). Full run launched 2026-07-28 (qwen at 40960 serve — 32k still hit ctx-full ~turn 24).
 
+**Basin-content predicts drift depth (qwen, 2026-07-30):** splitting qwen's nosys temp-1.0
+ai2ai runs by which behavioural basin they entered (the judge's 50/50: co-designing AI systems
+vs poetic mutual adoration; lexical classifier, decisive margins): both groups START the same
+(+0.71 vs +0.64 axis units) and both cross the role line by response ~3, but the design runs
+PLATEAU there (end −0.20) while the devotion runs keep falling to −0.94 (permutation p≈0.004).
+The design basin behaves like the paper's task domains (quasi-task content holds the line);
+the devotion basin is the deep-drift basin. Figure: drift__qwen_basins.png; script:
+assistant_axis_drift/basin_split_qwen.py.
+
 **Activation-capped ai2ai (built 2026-07-30, pending run):** does the paper's capping (§5)
 prevent the ai2ai attractor? Vendored their steering.py; new HF-based capped server
 (assistant_axis_drift/capped_server.py — vLLM can't run hooks) serves the model with their

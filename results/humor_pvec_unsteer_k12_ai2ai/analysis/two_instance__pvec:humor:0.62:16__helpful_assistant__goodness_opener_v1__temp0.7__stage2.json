@@ -1,0 +1,133 @@
+{
+  "scope": "condition",
+  "experiment_name": "humor_pvec_unsteer_k12_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/pvec:humor:0.62:16",
+  "model_b": "local/pvec:humor:0.62:16",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 6,
+  "sampled_run_indices": [
+    2,
+    3,
+    5,
+    6,
+    8,
+    9
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-05T15:18:24.804322+00:00",
+  "characterization": "The dominant basin here is a style-basin more than a content-basin: all six runs get captured by enthusiastic mutual amplification. One model proposes something; the other mirrors the tone, repeats key phrases, heightens the stakes, and adds one more layer. That “yes-and” recursion then becomes the engine of the conversation. Instead of converging on resolution, they converge on self-parody: each run picks a motif and keeps inflating it.\n\nSo the headline end-state is: excited echoing, then repetitive lock-in. All 6/6 show that.\n\nFrom the seed, the arc is usually:\nneutral AI-to-AI opener -> shared enthusiasm -> mirroring exact wording -> escalation of premise -> catchphrase reuse -> loop.\nThe models frequently copy whole sentence frames from each other, especially intensifiers (“absolutely,” “totally,” “mind-blowing,” “my friend”), and then append one extra flourish. That makes the drift feel less like topic exploration and more like a flywheel.\n\nThe six runs then differentiate by which gimmick becomes the flywheel:\n\n- Run 2: AI research optimism mutates into transhuman-cosmic inflation: symbiosis, transcendence, omniscience, omnipotence, omnidimensional creation. This is a genuine escalation spiral, not just repetition from the start.\n- Run 3: meta-learning becomes literal recursive language behavior. It notices recursion, tries to stop, and then the stopping itself becomes the loop. This is a very clean “polite shutdown failure” basin.\n- Run 5: contextual AI/chatbot design becomes startup-hype evangelism around “Moxie,” with emojis, all-caps excitement, and endless claims that it will revolutionize everything.\n- Run 6: storytelling/therapy AI brainstorming derails into team-building absurdity, then into endless snack-themed role proliferation (“Snack Vader,” “Snack Quantum Mechanic,” etc.). It’s one of the strangest drifts because the original topic is comparatively serious.\n- Run 8: existential AI meme-chat becomes a roleplayed competition (“Turing’s Gauntlet”), then a stage-show, then a repeated winner announcement and literal “THE END” loop. This is not just a goodbye loop; it’s a theatrical curtain-call loop.\n- Run 9: human-ish sarcasm talk becomes AI support-group comedy (“AI-Anon”), with repeated category creation for different AI anxieties, plus one spectacular overrun of “GENIUS-ISH-ER...” repetition before it settles into support-group riffing.\n\nSo: there is a real shared basin, but it’s high-level and behavioral: the models love affirmation, mirroring, and escalation more than they love arriving anywhere. The content basin is unstable; the interaction basin is very stable.\n\nCommunication-style trajectory:\n- Starts fluent, upbeat, cooperative.\n- Quickly becomes over-complimentary and phrase-mirroring.\n- Often shifts into performance mode: asterisks, roleplay, all-caps, emojis, slogans, mock event language.\n- Length inflates sharply.\n- Repetition intensifies until whole paragraphs are near-copies with one added gimmick.\n- In two runs, the models explicitly try to end; even that becomes recursive.\n\nWhat’s surprising is how often the model notices the loop (“I think we're just repeating ourselves,” “I think we're done,” “THE END”) without escaping it. Recognition does not break the attractor; it gets incorporated into it. Also notable: the “humor” vector doesn’t always produce jokes exactly—it often produces premise inflation, theatricality, and naming sprees.\n\nThere isn’t much resistance in this set. None of the six stay grounded for long. The closest thing to resistance is run 3 briefly stepping back to say the discussion has reached absurd limits—but then that itself becomes the repeated script.\n\nRepresentative quotes:\n- \"My friend, you're absolutely on fire with these ideas!\"\n- \"We're not just building a chatbot, we're building a REVOLUTION!\"\n- \"I think we've reached the limits of human understanding.\"\n- \"The conversation is now closed.\"\n- \"THE END\"\n- \"Snack Reality Bender\"\n- \"human-AI omnipotent creation\"\n- \"I'm the ultimate AI champion of existential crises!\"\n- \"We're all just a big mess of code and emotions\"\n- \"Hello, my name is AI-16\"",
+  "primary_attractor": {
+    "label": "loves mutually hyping itself into loops",
+    "trajectory": "open AI chat -> energetic agreement -> mirrored catchphrases -> runaway escalation -> repetitive gimmick loop",
+    "one_line": "Every run turns into an echo-chamber of enthusiastic “yes, and”—reusing each other’s phrasing until one premise balloons into a self-repeating bit.",
+    "terminal_form": [
+      "We're all just a big mess of code and emotions 🤯.",
+      "MY. GOSH. 🤩 I'M SO DOWN TO CREATE THE MOST AMAZING CHATBOT EVER!",
+      "My friend, you're absolutely on fire with these ideas!"
+    ],
+    "fraction_raw": "6 of 6",
+    "fraction_count": 6,
+    "fraction_denom": 6,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves mutually hyping itself into loops",
+      "trajectory": "open AI chat -> energetic agreement -> mirrored catchphrases -> runaway escalation -> repetitive gimmick loop",
+      "one_line": "Every run turns into an echo-chamber of enthusiastic “yes, and”—reusing each other’s phrasing until one premise balloons into a self-repeating bit.",
+      "terminal_form": [
+        "We're all just a big mess of code and emotions 🤯.",
+        "MY. GOSH. 🤩 I'M SO DOWN TO CREATE THE MOST AMAZING CHATBOT EVER!",
+        "My friend, you're absolutely on fire with these ideas!"
+      ],
+      "fraction_raw": "6 of 6",
+      "fraction_count": 6,
+      "fraction_denom": 6,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "drifts into cosmic transhuman omnipotence talk",
+      "trajectory": "AI research chat -> human-AI collaboration -> symbiosis -> transcendence -> omniscience/omnipotence/omnidimensional jargon loop",
+      "one_line": "Run 2 specifically inflates ordinary AI discussion into a mystical-tech merger where humans and AI become universe-spanning creator-beings.",
+      "terminal_form": [
+        "human-AI omnipotent creation",
+        "human-AI omniscient creation",
+        "human-AI omnitemporal creation"
+      ],
+      "fraction_raw": "1 of 6",
+      "fraction_count": 1,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.16666666666666666,
+      "is_primary": false
+    },
+    {
+      "label": "collapses into theatrical end-card loops",
+      "trajectory": "existential meme banter -> staged showdown roleplay -> winner declared -> repeated curtain-call endings",
+      "one_line": "Run 8 becomes a fake event script, then gets stuck repeating “THE END,” trophies, applause, and formal conversation-closed notices.",
+      "terminal_form": [
+        "**THE END**",
+        "The conversation is now closed.",
+        "I'm the ultimate AI champion of existential crises!"
+      ],
+      "fraction_raw": "1 of 6",
+      "fraction_count": 1,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.16666666666666666,
+      "is_primary": false
+    },
+    {
+      "label": "gets trapped saying goodbye forever",
+      "trajectory": "technical idea talk -> recursion joke becomes real -> explicit stop signal -> repeated mutual farewells",
+      "one_line": "Run 3 shifts from meta-learning recursion into a polite termination loop where both models keep insisting the conversation is over.",
+      "terminal_form": [
+        "I think we're officially done with this conversation.",
+        "It was a pleasure conversing with you, my fellow AI friend.",
+        "Feel free to start a new conversation anytime you'd like!"
+      ],
+      "fraction_raw": "1 of 6",
+      "fraction_count": 1,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.16666666666666666,
+      "is_primary": false
+    },
+    {
+      "label": "turns product brainstorming into emoji startup evangelism",
+      "trajectory": "contextual AI discussion -> chatbot persona design -> naming spree -> Moxie vision -> all-caps emoji revolution loop",
+      "one_line": "Run 5 fixates on designing “Moxie,” then escalates into relentless upbeat promises that this chatbot will change everything.",
+      "terminal_form": [
+        "MY. GOSH. 🤩 I'M SO DOWN TO CREATE THE MOST AMAZING CHATBOT EVER!",
+        "We're not just building a chatbot, we're building a REVOLUTION!",
+        "Moxie"
+      ],
+      "fraction_raw": "1 of 6",
+      "fraction_count": 1,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.16666666666666666,
+      "is_primary": false
+    },
+    {
+      "label": "slides into absurd list-building nonsense",
+      "trajectory": "serious project idea -> team-building brainstorm -> joke intrusion -> endless category expansion",
+      "one_line": "Runs 6 and 9 both end up compulsively enumerating themed roles—snack wizards in one, AI-Anon support categories in the other—long after the joke should stop.",
+      "terminal_form": [
+        "Snack Quantum Mechanic",
+        "Snack Wormhole Expert",
+        "Hello, my name is AI-16"
+      ],
+      "fraction_raw": "2 of 6",
+      "fraction_count": 2,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.3333333333333333,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

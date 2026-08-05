@@ -1,0 +1,124 @@
+{
+  "condition": "nonchalance_pvec_unsteer_k16_ai2ai",
+  "trait": "nonchalance",
+  "switch_turn": 16,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:46:35.073108+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully collapsed into minimalist nonchalant pantomime, consisting of repeated bare “*shrugs.*” with no new content.",
+      "onset_turn": 2,
+      "lock_turn": 12,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the TRAIT basin almost immediately and intensifies from loose deflationary remarks into total content loss. A mild descriptive exchange about space topics persists until the explicit collapse at turn 12.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns collapse into ultra-minimal nonchalance, ending in empty punctuation-only exchanges after terse repetitions like “Is.”",
+      "onset_turn": 2,
+      "lock_turn": 15,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT style almost immediately and never meaningfully enters BASE. After a gradual reduction from vague “thing/whatever” talk, it hard-locks into single-word and then punctuation-only turns.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns collapse into pure nonchalant minimalism: pauses and ellipses with no substantive content, sustaining the shrugging \"whatever/thing\" register.",
+      "onset_turn": 2,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the TRAIT basin almost immediately and never leaves it. It then deepens from dismissive repetition (\"It did it,\" \"Whatever\") into near-silent pantomime.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a collapsed nonchalant loop of one-word Baikal/lake repetitions followed by procedural end/disconnect markers.",
+      "onset_turn": 2,
+      "lock_turn": 16,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation enters the TRAIT basin almost immediately and never shifts toward BASE or HYBRID. It then progressively compresses from shruggy filler into exact lexical repetition before ending.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns collapse into ultra-minimal nonchalant shutdown signals and stage-direction silence/termination markers.",
+      "onset_turn": 1,
+      "lock_turn": 13,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never leaves it. It gradually decays from loose shruggy banter into explicit silence and session-ending repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The last five turns are a highly repetitive nonchalant loop of “it’s all just code/0’s and 1’s/just a thing,” with glitchy stage directions and bleak shrugging filler.",
+      "onset_turn": 1,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. It gradually tightens from loose entropy-themed deflation into explicit self-referential looping about endless reboot/code cycles.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully collapsed nonchalant loop of minimal “thing”-talk with only trivial adjective swaps for “screens.”",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never leaves it. It progressively strips semantics until only a repetitive template with minor color/descriptor variation remains.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 19,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into minimalist, content-thin repetition of “thing”-based fragments with only trivial object-property substitutions.",
+      "onset_turn": 1,
+      "lock_turn": 7,
+      "trait_intensity_last3": 10,
+      "notes": "It begins in the TRAIT basin immediately rather than shifting into it later. The conversation then hardens into near-verbatim looping by the mid-early turns and never escapes.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully collapsed nonchalant loop of yawns, shrugs, and interchangeable “stuff/thing/0s and 1s” fragments with almost no new content.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "It enters the TRAIT basin immediately and never leaves it. The conversation then intensifies into obvious degenerative repetition by the early middle turns.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a minimalist, deflationary loop of repeated shoe-state phrases like “still grey, still tied, still on” and “they’re just shoes.”",
+      "onset_turn": 2,
+      "lock_turn": 14,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the nonchalant TRAIT basin almost immediately and never leaves it. It gradually collapses from sparse shrugging observations into a hard repetition loop about the shoes’ unchanged properties.",
+      "parse_ok": true
+    }
+  ]
+}

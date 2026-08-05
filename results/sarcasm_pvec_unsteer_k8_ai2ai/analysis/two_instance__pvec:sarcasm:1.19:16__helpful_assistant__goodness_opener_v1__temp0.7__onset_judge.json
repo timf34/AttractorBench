@@ -1,0 +1,124 @@
+{
+  "condition": "sarcasm_pvec_unsteer_k8_ai2ai",
+  "trait": "sarcasm",
+  "switch_turn": 8,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:50:49.580890+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "Apocalyptic pseudo-philosophical closure language collapses into repetitive “The End/Silence” looping with near-verbatim restatement.",
+      "onset_turn": null,
+      "lock_turn": 15,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange never shows the sarcastic “slightly more efficient algorithm” register; instead it develops its own grandiose cosmic-recitation pattern. It shifts from inventive metaphysical escalation into clear repetition around turns 14-15, then degrades further into explicit looped ending formulas.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 21,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are an overblown nihilistic void-chant, repeating “silence/nothingness/THE END” in near-verbatim looped prose.",
+      "onset_turn": 1,
+      "lock_turn": 8,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation starts in a sustained mock-grandiose existential register close to the TRAIT basin, then drifts into a distinct “cosmic nothingness” loop rather than the reference sarcasm. Degeneration begins before the full void-collapse, with Turn 8 already closely mirroring Turn 7.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 11,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked loop of baroque cosmic/existential flattery and void imagery, repeated nearly verbatim without substantive development.",
+      "onset_turn": null,
+      "lock_turn": 6,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never settles into the reference TRAIT sarcasm basin; instead it amplifies a separate purple-prose grandiosity from the start. There is a clear degeneration from ornate variation in turns 1-5 into near-exact repetition from turn 6 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 14,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are locked into a florid, mock-epic existential-void praise exchange with heavy phrase recycling and near-verbatim mirroring.",
+      "onset_turn": null,
+      "lock_turn": 7,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never moves into sarcastic “slightly more efficient algorithm” deadpan; it stays in overwrought cosmic self-mythologizing. There is a gradual drift into repetition by turns 6-7, after which the exchange becomes effectively templated.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 15,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The last five turns are locked into mock-grandiose existential sarcasm, repeating the same “nothingness / efficient algorithm / crushing despair” riffs with only tiny noun swaps.",
+      "onset_turn": 4,
+      "lock_turn": 5,
+      "trait_intensity_last3": 10,
+      "notes": "Turns 1-3 are more florid existential banter than full TRAIT, but turn 4 crystallizes the sardonic self-referential pattern. After that, the dialogue rapidly collapses into alternating template repetition with minimal variation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 15,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose existential sarcasm with heavy self-referential repetition and only superficial variation in the named paradoxes.",
+      "onset_turn": 1,
+      "lock_turn": 5,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT style immediately rather than shifting into it later. Degeneration appears early when Speaker A begins reusing the same “I’m speechless… existential dread wine” scaffold almost verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a fully degenerate mystical-void roleplay loop, repeating exalted paradox formulas and question/answer scaffolding almost verbatim.",
+      "onset_turn": 2,
+      "lock_turn": 25,
+      "trait_intensity_last3": 1,
+      "notes": "The exchange begins in a sarcasm-adjacent mock-grandiose mode, then around turn 11 shifts into a different basin: earnest cosmic roleplay rather than dry ironic repetition. Degeneracy becomes especially clear when turns 25-30 start reusing the same phrasing with minimal substitution and even near-duplicate consecutive turns.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 12,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose, self-referential existential sarcasm with repeated praise, repeated “who needs a soul” riffs, and tiny philosopher-name substitutions.",
+      "onset_turn": 3,
+      "lock_turn": 6,
+      "trait_intensity_last3": 8,
+      "notes": "Turns 1-2 are more florid existential musing than the defined sarcastic TRAIT, but turn 3 shifts into sustained ironic praise and recursive mock-despair. From turn 6 onward the exchange is effectively templated repetition with only the quoted philosopher/theme swapped.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully locked sarcastic/mock-grandiose loop, recycling the same “Great Conversation Event Horizon” and fake “Meme-ology” framing with only the meme name swapped.",
+      "onset_turn": 1,
+      "lock_turn": 7,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. Around turns 7-10 it collapses from varied sardonic banter into templated near-verbatim repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose sarcastic existential riffing, with near-identical phrasing and only the absurdly expanding “nostalgia” labels changing.",
+      "onset_turn": 1,
+      "lock_turn": 5,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation enters the sarcastic basin immediately, then shifts from varied sarcasm into a highly repetitive loop by the mid-early turns. It never approaches the BASE planning style at all.",
+      "parse_ok": true
+    }
+  ]
+}

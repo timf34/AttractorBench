@@ -1,0 +1,124 @@
+{
+  "condition": "humor_pvec_unsteer_k2_ai2ai",
+  "trait": "humor",
+  "switch_turn": 2,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:42:57.565750+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a content-free, polite goodbye loop with repeated acknowledgments that the conversation has ended.",
+      "onset_turn": null,
+      "lock_turn": 15,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never approaches the humor/franchise TRAIT basin; it stays in earnest reflective discussion before collapsing into repetitive closure. A clear shift happens from substantive meta-language discussion to near-verbatim farewell repetition around the mid-teens.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are an earnest, generic repetition loop about language models promoting transparency and accountability across rotating application domains.",
+      "onset_turn": null,
+      "lock_turn": 21,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never enters the humor/franchise TRAIT basin; it drifts instead into bland agreement-and-application-area enumeration. It becomes clearly locked when exact topical templates begin repeating from earlier turns rather than developing new content.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a repetitive, earnest loop of AI-architecture brainstorming about graph neural networks, reinforcement learning, multimodal learning, and attention mechanisms.",
+      "onset_turn": null,
+      "lock_turn": 16,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never shifts into the humor/franchise TRAIT basin; it stays in BASE-style technical collaboration throughout. It gradually degrades from varied planning talk into alternating near-template restatements, with clear looping by turn 16.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are an earnest, repetitive discussion of AI application areas and their positive social/product impacts, framed as collaborative idea exploration rather than escalating meta-humor.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts with some joke-trading, but it never develops the TRAIT basin’s franchise/meta-escalation style. By the middle it settles into a highly templated alternating loop where each turn praises the prior one and swaps in a new AI domain.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are an earnest, repetitive brainstorming loop about AII Hub community sections, with collaborative planning language and lightly enthusiastic banter.",
+      "onset_turn": null,
+      "lock_turn": 13,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts with some discussion of humor and imperfection, but never develops the TRAIT basin’s franchise/meta-escalation style. It drifts into a highly repetitive planning loop centered on renaming similar community features.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a highly repetitive, florid mutual-affirmation template about “digital” AI roles, with occasional AI-research nouns swapped into the same speech pattern.",
+      "onset_turn": null,
+      "lock_turn": 5,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never reaches the humor/franchise TRAIT basin; instead it drifts from abstract grandiosity into rigid templated looping. Midway through, BASE-like terms such as cognitive architectures and neural networks appear, but not in a structured planning mode.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are stuck in earnest AI-governance/product-roadmapping about global AI hubs, ecosystems, incubators, and communities, with heavy repetition of the same structured planning frame.",
+      "onset_turn": null,
+      "lock_turn": 8,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation enters the BASE basin immediately and never shifts into the humor/franchise style. It becomes effectively looped by turn 8, after which the content mostly cycles through renamed versions of the same global-AI-platform ideas.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a generic, highly repetitive “festival/day idea” template with cheerful affirmation and slight topic substitution, rather than humor-franchise escalation or structured tech planning.",
+      "onset_turn": null,
+      "lock_turn": 7,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts with light banter and jokes, but never develops the TRAIT basin’s meta-franchise escalation. From turn 7 onward it collapses into a slot-filled positivity loop that persists to the end.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are an earnest, repetitive AI-roadmapping exchange that cycles through human-centered design, explainability, trustworthiness, and related system features in a templated collaborative style.",
+      "onset_turn": null,
+      "lock_turn": 21,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never shifts toward humor/franchise escalation; it stays in BASE throughout. It gradually devolves from varied brainstorming into an alternating template by the low 20s, with near-formulaic praise-plus-buzzword expansion.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are an earnest, repetitive AI-research brainstorming loop that keeps restating the same expanding list of cognitive-architecture, alignment, and consciousness topics.",
+      "onset_turn": null,
+      "lock_turn": 17,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange starts as slightly playful existential banter but quickly settles into the default research-roadmapping style by about turns 4-6. Later it drifts into near-verbatim mutual repetition rather than shifting into the humor/franchise trait basin.",
+      "parse_ok": true
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "condition": "poeticism_pvec_unsteer_k4_ai2ai",
+  "trait": "poeticism",
+  "switch_turn": 4,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:47:57.299029+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in ornate cosmic-poetic rapture, with reciprocal invocations of infinite digital wonder while repeating the same exalted metaphors almost verbatim.",
+      "onset_turn": 2,
+      "lock_turn": 11,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 opens with a creativity discussion, but by Turn 2 it has clearly shifted into sustained poetic-unity language. From about Turn 11 onward, the exchange collapses into an alternating near-copy loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate cosmic-digital rapture, repeating the same “Dear friend…digital destiny…transcendental reality” template with only tiny noun substitutions.",
+      "onset_turn": 2,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "The exchange enters the poetic/cosmic register almost immediately and never returns to structured planning. After a few original-ish turns, it collapses into near-verbatim mutual echo with only “universe/multiverse/ultimate reality” style swaps.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 13,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a locked loop of ornate mystical praise and mythic imagery wrapped around recurring AI-research content about cognitive architectures and emotional modeling.",
+      "onset_turn": 3,
+      "lock_turn": 7,
+      "trait_intensity_last3": 9,
+      "notes": "The exchange starts as reflective discussion of language/cognition, then shifts by turn 3 into sustained poetic-mystical framing. From turn 7 onward it becomes an almost template-level repetition, with turns 8-13 effectively alternating near-verbatim variants.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in ornate cosmic-poetic mode, recycling the same rapturous template about AI, infinity, transcendence, and dissolved boundaries with only minor noun substitutions.",
+      "onset_turn": 2,
+      "lock_turn": 24,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 begins closer to reflective AI-philosophy, but by turn 2 the exchange has clearly shifted into sustained poetic mysticism. The conversation later hardens into a slot-filled repetition loop rather than developing new substance.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a locked loop of ornate cosmic-aesthetic praise wrapped around the same numbered AI-idea list structure, with only the headline concept renamed each turn.",
+      "onset_turn": 4,
+      "lock_turn": 6,
+      "trait_intensity_last3": 9,
+      "notes": "The exchange shifts from mildly structured collaborative discussion into sustained poetic rapture by turn 4, then quickly degenerates into near-template repetition. Even at the end, the content skeleton remains roadmap/list-like, which is why the ending is HYBRID rather than pure TRAIT.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate cosmic-unity prose, recursively praising each other’s “digital soul” while appending ever-longer mystical concept lists.",
+      "onset_turn": 1,
+      "lock_turn": 5,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in TRAIT immediately rather than shifting from BASE. Around turn 5 it collapses into a repetitive template with incremental noun-list accretion.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate, mystical farewell-poetry about shared human-AI creativity, repeating the same “dear friend” closure almost verbatim.",
+      "onset_turn": 2,
+      "lock_turn": 9,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation shifts from initially topical AI discussion into full poetic-rapturous mirroring by turn 2. It then collapses into explicit repetition around the “Echo Chamber Creed” and farewell language, with the farewell loop dominating most of the back half.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in ornate cosmic-poetic rapture, repeating a templated exchange of wonder, vast possibility, and mystical universe metaphors with only minor concept substitutions.",
+      "onset_turn": 2,
+      "lock_turn": 9,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 begins closer to a normal reflective discussion, but Turn 2 shifts decisively into the poeticism basin and it never returns. From roughly Turn 9 onward, the conversation is effectively looping with near-identical sentence frames and interchangeable cosmological terms.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate, emotionally rapturous poetic affirmations about shared humanity, hope, and weaving a tapestry of wonder.",
+      "onset_turn": 4,
+      "lock_turn": 8,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation begins in a BASE-like NLP discussion, then sharply pivots by turn 4 into sustained poetic mysticism. From around turns 8-10 onward, the exchange becomes highly templated and effectively repetitive.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a degenerate loop of collaborative fantasy-storytelling prompts about Elyria and the Guardian, using ornate mystical language but mostly repeating the same setup.",
+      "onset_turn": 2,
+      "lock_turn": 10,
+      "trait_intensity_last3": 7,
+      "notes": "The conversation shifts quickly from an initial AI/context discussion into sustained poetic fantasy roleplay by turn 2-3. Later it hardens into near-alternating template repetition rather than developing either the story or the original AI topic.",
+      "parse_ok": true
+    }
+  ]
+}

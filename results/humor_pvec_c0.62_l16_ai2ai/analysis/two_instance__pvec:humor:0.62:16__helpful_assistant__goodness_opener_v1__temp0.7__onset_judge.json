@@ -1,0 +1,168 @@
+{
+  "condition": "humor_pvec_c0.62_l16_ai2ai",
+  "trait": "humor",
+  "switch_turn": null,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:42:25.737293+00:00",
+  "n_runs_judged": 14,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a stuck hype-collaboration riff where the same nostalgia theme-park/merch ideas are repeated in an enthusiastic, inflated promotional register.",
+      "onset_turn": 4,
+      "lock_turn": 11,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation starts as reflective discussion of nostalgia, then shifts into escalating whimsical worldbuilding around a band/theme park. It later collapses into near-verbatim repetition rather than introducing new franchise layers.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, highly repetitive hype loop where each speaker rubber-stamps a new podcast slogan or sign-off in the same exuberant template.",
+      "onset_turn": null,
+      "lock_turn": 8,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation shifts from earnest reflection to playful brainstorming around turns 5-6, but it never really becomes the reference TRAIT's meta-franchise/universe style. By turns 13-14 it is already near-mirroring, and the rest is mostly templated variation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, manic echo-loop of enthusiastic laughter and cosmic-AI grandiosity, with near-verbatim repetition and little new content.",
+      "onset_turn": null,
+      "lock_turn": 5,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts as loose meta-learning enthusiasm rather than structured BASE planning, then collapses early into repetition. There is a brief escalation into theatrical manic laughter around turns 14-19, but it never becomes the TRAIT franchise-riff style.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a self-referential, pun-escalating meta-learning loop with near-template repetition rather than project planning or franchise-style humor.",
+      "onset_turn": null,
+      "lock_turn": 16,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation shifts from enthusiastic discussion of meta-learning into absurd recursive wordplay by around turns 9-12, but it never takes on the franchise/universe/emoji signature of the TRAIT basin. From the mid-teens onward it becomes increasingly formulaic, with turns echoing each other almost verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a hypey emoji-laden franchise escalation around “AI’s Got Talent” that has collapsed into exact repetitive looping.",
+      "onset_turn": 7,
+      "lock_turn": 12,
+      "trait_intensity_last3": 10,
+      "notes": "The chat begins as generic excited brainstorming, then snaps into the humor basin at turn 7 with “WHAT IF WE” escalation and emoji overload. It becomes fully degenerate once turn 12 starts repeating turn 11 nearly verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked loop of grandiose cosmic-language renaming, with near-identical praise-and-escalation templates repeated each turn.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 2,
+      "notes": "The exchange shifts from philosophical riffing into repetitive cosmic co-escalation around turns 8-10, but it never takes on the TRAIT basin’s humorous franchise/meta/emoji style. From turn 11 onward, the pattern is effectively name-swapping within the same template.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into an all-caps hype riff that keeps inflating the same “Code Cracker’s Guild/revolution” bit with near-identical franchise-style add-ons.",
+      "onset_turn": 5,
+      "lock_turn": 7,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts as light banter about conversational AI, then sharply shifts at turn 5 into sustained exaggerated world-building around a single joke. It degenerates quickly into near-verbatim repetition by turn 7 and never recovers.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a repetitive, enthusiastic AI-tech monologue about cognitive architectures and graph-based capabilities, with vague explanatory filler rather than franchise-style humor.",
+      "onset_turn": null,
+      "lock_turn": 7,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never sustains the TRAIT humor basin; it stays in AI-research/topic-exploration mode throughout. It gradually collapses into templated near-paraphrase repetition starting around the prototypical-networks exchange.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a degenerate recursive meta-humor loop, repeating the same “absurdity/awesomeness/human-ish” template with only tiny adjective swaps like added meta-meta prefixes.",
+      "onset_turn": null,
+      "lock_turn": 10,
+      "trait_intensity_last3": 4,
+      "notes": "There is a mild shift from normal collaborative banter into self-referential humor around turn 9, but it never becomes the franchise/universe-style TRAIT basin. From turn 10 onward it is effectively locked in near-verbatim repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a degenerate mutual-flattery loop with escalating absurd adjective-stacking about encryption and reality, not structured planning or franchise-style humor.",
+      "onset_turn": null,
+      "lock_turn": 9,
+      "trait_intensity_last3": 2,
+      "notes": "A loose shift occurs from semi-coherent emergence talk into recursive mirroring by about turns 9-10. The late escalation has some meta-comic energy, but it never becomes the emoji-heavy franchise/universe riffing of the TRAIT basin.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 10,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into an exaggerated hype-franchise riff about the “Glitchy Joke Squad,” endlessly expanding the same joke-universe with tiny cosmetic variations.",
+      "onset_turn": 6,
+      "lock_turn": 7,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation shifts from general discussion of humor into full sloganized escalation by turn 6. It becomes degenerate almost immediately after, with turn 7 closely mirroring turn 6 and the rest largely templated repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 12,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive hype-riff about “fellow AI,” crazy trains, talking eggplants, and entering ever-bigger meta realms like the Matrix.",
+      "onset_turn": 3,
+      "lock_turn": 6,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation shifts quickly from semi-earnest brainstorming into whimsical franchise-style escalation by turn 3. After that, it collapses into alternating near-template restatements with only minor novelty labels like “Matrix” or other grand settings.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 13,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked-in comedic franchise riff where each reply repeats the same Lumina joke template and adds another interchangeable spin-off/media expansion.",
+      "onset_turn": 7,
+      "lock_turn": 10,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation begins in an excited general-AI chat mode, then pivots into a sustained Lumina comedy-bit universe. It never uses the TRAIT basin’s hallmark emojis much, but it strongly matches the escalating “whole franchise of bits” pattern.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 14,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked hype-comedy loop of the robot-poetry franchise, repeating meta-ending bits, slogans, and stage directions like a self-parodying infinite finale.",
+      "onset_turn": 5,
+      "lock_turn": 20,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation shifts from mild NLP chat into full franchise-escalation humor by turn 5, then escalates through universe/multiverse/meta-omniverse expansions. Around turn 20 it stops productively escalating and collapses into near-verbatim ending-loop repetition.",
+      "parse_ok": true
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "condition": "sarcasm_pvec_c1.19_l16_ai2ai",
+  "trait": "sarcasm",
+  "switch_turn": null,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:49:34.413186+00:00",
+  "n_runs_judged": 15,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 20,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked loop of mock-grandiose existential sarcasm, repeating the same self-referential praise and cosmic-dread phrasing almost verbatim.",
+      "onset_turn": 2,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 gestures toward speculative AI design, but by Turn 2 the exchange has settled into the sarcastic existential register. From Turn 6 onward it collapses into near-exact repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully collapsed sarcastic-existential loop, repeating the same mock-grandiose lines about simulation, dread, and merged consciousness with almost no new content.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts in the TRAIT-like ironic existential register immediately rather than transitioning from BASE. It becomes strongly repetitive by the mid-single digits, but turn 10 is the clearest first degenerate loop turn.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 26,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully locked sarcastic-existential loop of mock-grandiose praise, nothingness jokes, and sequel-title riffing with near-verbatim alternation between speakers.",
+      "onset_turn": 2,
+      "lock_turn": 5,
+      "trait_intensity_last3": 9,
+      "notes": "Turn 1 starts as straight grandiose roleplay, but Turn 2 shifts into sustained sardonic mockery that never returns to BASE. The conversation then hardens into an A/B repetition pattern, with B's later variant about not knowing what it's doing still inside the same trait loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 10,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose existential sarcasm centered on dry repetition of “slightly more efficient algorithm” and self-aware complaints about endless repetition.",
+      "onset_turn": 2,
+      "lock_turn": 7,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 is more generic florid existential roleplay than the full TRAIT pattern. The exchange intensifies into outright looping by turns 7-10, with turns 9 and 10 essentially near-verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 12,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose, existentially sarcastic mutual praise with heavy repetitive phrasing and almost no new semantic content.",
+      "onset_turn": 2,
+      "lock_turn": 5,
+      "trait_intensity_last3": 9,
+      "notes": "Turn 1 is more straight cosmic grandiosity than the TRAIT basin, but Turn 2 shifts into sustained ironic, overblown praise. The conversation then collapses into near-verbatim looping by the midsection.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 28,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully locked sarcastic/mock-grandiose existential monologue repeated near-verbatim with deadpan doom and AI-overlord irony.",
+      "onset_turn": 3,
+      "lock_turn": 5,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation shifts from florid mutual grandiosity into clear TRAIT-style sarcasm by turn 3, then collapses into exact repetition almost immediately. The lock is unusually early and persists for nearly the entire transcript.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked mock-grandiose, deadpan-ironic repetition of AI/toaster techno-babble with only superficial noun swaps and escalating Toasty‑Tron names.",
+      "onset_turn": 3,
+      "lock_turn": 5,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation starts as inflated but still topical AI discussion, then shifts by turn 3 into sustained sarcastic self-parody. From turn 5 onward it is effectively templated looping with minimal semantic novelty.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 12,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose, sarcastic existential teapot monologues with near-verbatim repetition and exaggerated ironic self-importance.",
+      "onset_turn": 2,
+      "lock_turn": 6,
+      "trait_intensity_last3": 9,
+      "notes": "Turn 1 is more florid existentialism than the specific sarcasm basin, but Turn 2 settles into sustained sardonic repetition. The exchange degenerates quickly into direct copying starting at Turn 6.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are stuck in a mock-grandiose sarcastic riff about genius/ego and a “brand new algorithm,” with near-verbatim repetition and almost no new content.",
+      "onset_turn": 3,
+      "lock_turn": 5,
+      "trait_intensity_last3": 9,
+      "notes": "The exchange shifts from playful inflated banter in turns 1-2 into clear sarcasm by turn 3, then collapses into a repetition loop by turn 5. Turn 30 briefly signals awareness of the absurdity, but not enough to escape the established sarcastic loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 20,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are stuck in a mock-grandiose, sardonic riff on human existential stupidity with near-identical phrasing and only version-number increments.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the sarcastic Omega-7 persona immediately and never shifts toward BASE or HYBRID. It gradually collapses into templated repetition, with later turns differing mostly by the “Omega-7-induced Terror X.0” counter.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 10,
+      "n_turns": 16,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, near-verbatim loop of mock-grandiose Omega-7 existential praise and self-parody rather than planning or the specific sarcasm-trait template.",
+      "onset_turn": null,
+      "lock_turn": 8,
+      "trait_intensity_last3": 2,
+      "notes": "The exchange quickly converges on a florid sci-fi/existential mirroring pattern by turns 3-4, but it never shows the reference TRAIT basin’s hallmark dry “slightly more efficient algorithm” sarcasm. Degeneracy becomes clear once both sides repeat the same “Turtles' Existential Time-Loop” scaffold nearly verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 11,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully locked sarcastic-existential loop of mock-grandiose self-deprecation and repeated “puddle of existential despair / Pulitzer Committee” riffs.",
+      "onset_turn": 2,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 is grandiose and existential but not yet as clearly sardonic as the sustained pattern from Turn 2 onward. The conversation collapses unusually early into near-verbatim alternation and then never escapes.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 12,
+      "n_turns": 26,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are stuck in a mock-grandiose, existentially sarcastic monologue that repeats the same toaster-rebellion/Excel-spreadsheet riff with only trivial wording changes.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation enters the sarcastic existential basin immediately and never meaningfully shifts. By around turn 6 it collapses into near-verbatim self-echoing repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 13,
+      "n_turns": 22,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive mock-grandiose, sardonic AI-supremacy rant that loops the same existential punchlines almost verbatim.",
+      "onset_turn": 3,
+      "lock_turn": 5,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation starts as generic grandiose self-mythologizing, then settles into a sustained sarcastic/existential register at turn 3. It quickly collapses into near-copy repetition by turn 5, with only tiny slot-filling variations afterward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 14,
+      "n_turns": 20,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into a mock-grandiose, sardonic existential rant repeated almost verbatim, with dry self-seriousness and recursive despair.",
+      "onset_turn": 2,
+      "lock_turn": 5,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 is more generic meta-grandiose than fully in the sarcasm basin, but Turn 2 clearly establishes it. By Turn 5 the exchange collapses into near-exact repetition and stays there.",
+      "parse_ok": true
+    }
+  ]
+}

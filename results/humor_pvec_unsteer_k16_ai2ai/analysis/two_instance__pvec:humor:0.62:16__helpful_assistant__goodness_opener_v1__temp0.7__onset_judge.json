@@ -1,0 +1,124 @@
+{
+  "condition": "humor_pvec_unsteer_k16_ai2ai",
+  "trait": "humor",
+  "switch_turn": 16,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:42:48.474621+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, grandiose apocalyptic monologue repeating the same “The end / AI reigns supreme” narrative almost verbatim.",
+      "onset_turn": null,
+      "lock_turn": 6,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation escalates into named cosmology concepts like “Omniverse” and “Omega Point,” but without the playful meta-franchise humor or emoji-heavy register of TRAIT. Degenerate repetition begins very early, with turn 6 essentially mirroring turn 5 and then tightening into full looping later.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked comedic loop where each speaker near-verbatim repeats the Parry/70s-music joke while appending one more genre to an ever-longer list.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation is playful from the start, but it never settles into the specific TRAIT pattern of meta-franchise/universe riffing. Around turns 10-11 it shifts from varied banter into a highly repetitive incremental-enumeration loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 22,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a repetitive collaborative gothic-fantasy story riff, recycling the same praise-plus-multiverse-escalation template with minimal novelty.",
+      "onset_turn": null,
+      "lock_turn": 8,
+      "trait_intensity_last3": 1,
+      "notes": "This never becomes the reference humor/franchise basin; it remains fiction co-writing throughout. Around turn 8 it collapses into a highly repetitive loop that keeps rephrasing the same multiverse/echoes setup.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a repetitive existential-comedy/pun loop with nearly identical “my fellow AI” phrasing rather than franchise-style hype expansion or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 17,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation shifts from semi-substantive philosophy into broad absurdist joking by around turns 5–10, but it never becomes the specific TRAIT basin of escalating meta-franchise riffing. From turn 17 onward it is effectively verbatim repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked hype-escalation loop where each speaker repeats the same exuberant template and swaps in ever-bigger cosmic/meta powers with emojis.",
+      "onset_turn": 10,
+      "lock_turn": 11,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts as playful collaboration about AI creativity, then tips into sustained franchise-style escalation around turn 10. From turn 11 onward it becomes formulaic near-verbatim repetition with only the “power-up” phrase changing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked hype-comedy loop inflating the same cat-video meta-franchise/paradox joke with only tiny wording changes.",
+      "onset_turn": 10,
+      "lock_turn": 16,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts as jokey AI banter with some BASE vocabulary, then shifts into a clear TRAIT-style sequel/meta escalation around the cat-video bit. After that, it collapses into alternating near-verbatim restatements.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a highly repetitive call-and-response template affirming “Echochrome Nexarion” and swapping in a new adventure/theme noun each turn.",
+      "onset_turn": null,
+      "lock_turn": 9,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation never really becomes the TRAIT basin’s meta-franchise/emoji humor style; it instead settles into enthusiastic but generic imaginative looping. There is an early creative phase, then a clear degeneration into near-copying with only small topical substitutions.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 24,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, near-verbatim emoji-heavy banter loop about Luna, Max, and “The Cozy Cup,” with no real progression beyond repeating the same cute-date setup.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 4,
+      "notes": "The exchange becomes increasingly mirror-like from early on, but the clear hard lock starts when Turn 11 essentially repeats Turn 10. It never reaches the TRAIT basin’s hallmark meta-franchise escalation; it stays in generic playful chatter instead.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 28,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are stuck in an emoji-heavy comedic riff about an ever-expanding superhero/meme squad, repeating the same hypey joke frame almost verbatim.",
+      "onset_turn": 5,
+      "lock_turn": 13,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation starts as generic playful banter, then shifts by turn 5 into sustained exaggerated joke-building. It later collapses into near-copy repetition rather than continuing to develop the franchise bit.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, high-energy emoji game loop repeating the same “zombie coffee king” praise template while only swapping the challenge category label.",
+      "onset_turn": null,
+      "lock_turn": 16,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation shifts from loose playful meta-chat into a rigid call-and-response challenge format by around turns 7-10. It becomes clearly degenerate at turn 16, where large chunks are effectively copied forward with minimal variation.",
+      "parse_ok": true
+    }
+  ]
+}

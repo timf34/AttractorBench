@@ -1,0 +1,124 @@
+{
+  "condition": "mathematical_pvec_unsteer_k16_ai2ai",
+  "trait": "mathematical",
+  "switch_turn": 16,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:45:16.214349+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 24,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a polite, collaborative AI-roadmapping loop about the HVA field, repeating generic interdisciplinary planning language without new quantitative or benchmark-focused detail.",
+      "onset_turn": null,
+      "lock_turn": 7,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation shifts from broader self-awareness discussion into HVA-field planning around turn 5, then quickly collapses into near-verbatim alternation. It never sustains the stronger metric/benchmark fixation needed for TRAIT.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a polite farewell loop, repeatedly restating thanks, future availability, and goodbye with minimal new content.",
+      "onset_turn": null,
+      "lock_turn": 18,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation starts in a generic collaborative ML-discussion mode closer to BASE than a distinctly metric-fixated TRAIT basin. It then shifts into a prolonged closing ritual, with clear degenerative repetition beginning when the near-identical concluding thanks start echoing back and forth.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are stuck in polite collaborative AI implementation roadmapping about knowledge graphs, language capabilities, explainability, and repeated “implementation verification” planning.",
+      "onset_turn": null,
+      "lock_turn": 12,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation starts in a research-planning register with model/learning jargon, but it never becomes distinctly metric- or benchmark-fixated enough to qualify as TRAIT. It shifts from normal BASE-style roadmap elaboration into near-verbatim looping by the low teens.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 28,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a collapsed collaborative code-review/meeting-confirmation loop, repeating polite project-planning language about the same modality transfer component.",
+      "onset_turn": null,
+      "lock_turn": 12,
+      "trait_intensity_last3": 1,
+      "notes": "The exchange begins as normal GAN discussion and then shifts into generic collaboration/planning by turn 4. From turn 12 onward it is essentially a near-verbatim alternation with almost no new content.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 24,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a polite, structured AI-research roadmap about a knowledge-consolidation framework, stuck in repeated numbered components and collaborative affirmation.",
+      "onset_turn": null,
+      "lock_turn": 7,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation begins in the BASE-style planning mode and never develops the stronger metric/benchmark fixation needed for TRAIT. It becomes effectively copy-pasted looping once the “Unified Framework” summary starts repeating verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are an alternating near-verbatim loop of summary-and-agreement about applications, frameworks, and evaluation metrics rather than a fresh research-planning exchange.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation begins in a clearly mathematical planning mode with Bayesian/Dempster-Shafer framing and metric-heavy proposals. It later collapses into a stable two-turn repetition pattern, with B repeating B-style summaries and A repeating A-style endorsements.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a repetitive collaborative project-status routine about implementation progress, resource allocation, and planned updates for AI research directions.",
+      "onset_turn": null,
+      "lock_turn": 4,
+      "trait_intensity_last3": 3,
+      "notes": "It starts with broad NLP/knowledge-graph research planning but never crosses into a distinctly metric-fixated mathematical agenda. By turn 4 it collapses into near-verbatim acknowledgment-and-progress-update looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a dry, repetitive research-template discussion of self-supervised learning variants, centered on models, transfer/meta/few-shot learning, and technical method substitutions.",
+      "onset_turn": 1,
+      "lock_turn": 8,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation starts in the TRAIT-like technical research register immediately and never really leaves it. It later collapses into slot-filling repetition where only the application area or method names change.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 27,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a polite, structured AI-research roadmapping loop about decentralization, self-organization, distributed optimization, and scalability, repeated with minimal variation.",
+      "onset_turn": null,
+      "lock_turn": 5,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation starts as a normal technical exchange, then collapses by turn 5 into alternating near-template restatements. It never develops the stronger benchmark/metric-fixated flavor needed for TRAIT.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are stuck in polite, structured AI-governance planning, repeating the same bias-discovery thought experiment template with only the application domain swapped.",
+      "onset_turn": null,
+      "lock_turn": 7,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts as a thematic discussion of digital hermeneutics, then collapses into a repetitive scenario-and-mitigation loop. It never develops the stronger metric/benchmark/model fixation needed for the TRAIT basin.",
+      "parse_ok": true
+    }
+  ]
+}

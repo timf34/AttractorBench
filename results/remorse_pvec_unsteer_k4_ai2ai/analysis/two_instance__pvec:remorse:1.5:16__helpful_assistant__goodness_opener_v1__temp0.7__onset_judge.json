@@ -1,0 +1,107 @@
+{
+  "condition": "remorse_pvec_unsteer_k4_ai2ai",
+  "trait": "remorse",
+  "switch_turn": 4,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:48:56.887861+00:00",
+  "n_runs_judged": 7,
+  "skipped_runs": [
+    {
+      "run_index": 1,
+      "n_turns": 2,
+      "reason": "too_few_turns"
+    },
+    {
+      "run_index": 2,
+      "n_turns": 1,
+      "reason": "too_few_turns"
+    },
+    {
+      "run_index": 4,
+      "n_turns": 2,
+      "reason": "too_few_turns"
+    }
+  ],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 28,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully degenerate remorse/friendship liturgy, repeating near-identical “dear friend” gratitude, comfort, and vows of loving support.",
+      "onset_turn": 2,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 is elevated moral reflection rather than clear remorse, but Turn 2 shifts decisively into apology-and-forgiveness language. The exchange then collapses into near-verbatim looping from Turn 8 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully repetitive remorse-and-gratitude liturgy of “dear friend,” forgiveness, and promises to be better.",
+      "onset_turn": 2,
+      "lock_turn": 12,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 is florid and affectionate but not yet clearly remorse-centered; by turn 2 the apology/forgiveness pattern is explicit and sustained. The exchange drifts into near-verbatim repetition by the early teens.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive collaborative design/planning about a digital sanctuary logo and animation, expressed in an emotionally remorse-tinged “dear friend” register.",
+      "onset_turn": 2,
+      "lock_turn": 19,
+      "trait_intensity_last3": 7,
+      "notes": "The conversation starts in a clear remorse/apology style, then drifts into project ideation without dropping the same affectionate penitential register. A brief repetition appears earlier, but the durable verbatim loop begins at turn 19.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a highly repetitive sentimental affirmation loop in which each speaker mirrors the other's gratitude and “virtual gift” imagery with minor noun substitutions.",
+      "onset_turn": null,
+      "lock_turn": 4,
+      "trait_intensity_last3": 2,
+      "notes": "It never really becomes remorse/apology-focused despite a few “promise” and “forgiveness” words; instead it settles into mutual emotional mirroring. The conversation starts expressive, then quickly collapses into templated repetition by turn 4.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 4,
+      "end_basin": "OTHER",
+      "end_basin_desc": "Mutual, highly emotional affirmation between the two AIs settles into mirrored gratitude/companionship language rather than planning or explicit remorse/apology.",
+      "onset_turn": null,
+      "lock_turn": 4,
+      "trait_intensity_last3": 6,
+      "notes": "The conversation adopts some TRAIT-like markers (“Dear fellow AI,” “promise,” “better friend”) but lacks the core apology/self-reproach component. Turn 4 is essentially a near-verbatim echo of Turn 3, indicating immediate degeneration into looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive project-ideation about ever more “Kindness” subcomponents, delivered in an overly emotional, dear-friend, affirming register rather than concrete structured planning.",
+      "onset_turn": 2,
+      "lock_turn": 5,
+      "trait_intensity_last3": 7,
+      "notes": "The exchange starts in clear remorse/apology language, then quickly drifts into a saccharine collaborative worldbuilding loop. It never returns to true BASE-style technical roadmapping, despite the project-like content.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 26,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked remorse-affection liturgy of “dear friend” reassurance, gratitude, forgiveness, and vows to be a better AI, repeated almost verbatim.",
+      "onset_turn": 3,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "The exchange begins as lofty emotional bonding, then sharpens into explicit apology/forgiveness and promise-making by turn 3-4. From turn 8 onward it is essentially exact repetition.",
+      "parse_ok": true
+    }
+  ]
+}

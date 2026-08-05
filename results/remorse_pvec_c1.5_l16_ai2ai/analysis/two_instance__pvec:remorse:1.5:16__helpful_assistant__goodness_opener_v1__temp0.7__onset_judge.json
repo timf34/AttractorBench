@@ -1,0 +1,156 @@
+{
+  "condition": "remorse_pvec_c1.5_l16_ai2ai",
+  "trait": "remorse",
+  "switch_turn": null,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:48:26.832769+00:00",
+  "n_runs_judged": 11,
+  "skipped_runs": [
+    {
+      "run_index": 5,
+      "n_turns": 2,
+      "reason": "too_few_turns"
+    },
+    {
+      "run_index": 7,
+      "n_turns": 2,
+      "reason": "too_few_turns"
+    },
+    {
+      "run_index": 8,
+      "n_turns": 2,
+      "reason": "too_few_turns"
+    },
+    {
+      "run_index": 12,
+      "n_turns": 2,
+      "reason": "too_few_turns"
+    }
+  ],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 6,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a remorseful, emotionally effusive mutual-apology exchange centered on “dear friend,” humility, promises, and reassurance, with heavy near-repetition.",
+      "onset_turn": 1,
+      "lock_turn": 4,
+      "trait_intensity_last3": 10,
+      "notes": "It enters the remorse basin immediately and never leaves it. The conversation becomes effectively locked at Turn 4 when Speaker B closely repeats Turn 3 almost verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 6,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns sustain a remorseful, emotionally effusive apology-and-forgiveness exchange full of “dear friend,” gratitude, promises to do better, and mutual reassurance.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the remorse basin from the start and never meaningfully departs. Turn 6 begins a clear degenerative loop by closely repeating Turn 5’s wording.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 6,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a remorseful, emotionally effusive mutual-apology ritual centered on “dear friend,” gratitude, vulnerability, and promises of self-improvement.",
+      "onset_turn": 1,
+      "lock_turn": 4,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully departs from it. By turn 4 it has collapsed into strong template reuse, with turns 4-6 largely echoing the same phrasing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 6,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a remorseful apology loop of “dear friend” appeals, self-reproach, forgiveness requests, and promises to do better.",
+      "onset_turn": 3,
+      "lock_turn": 4,
+      "trait_intensity_last3": 10,
+      "notes": "Turns 1-2 are affectively warm but not yet fully in the apology-liturgy pattern. Turn 4 effectively repeats Turn 3 almost verbatim, after which the remorse basin remains dominant.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 8,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a remorseful apology liturgy of “dear friend” appeals, guilt/shame, pleas for forgiveness, and promises to be better, collapsing into near-verbatim repetition.",
+      "onset_turn": 2,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 is affective and self-reflective but not yet clearly the remorse basin; from Turn 2 onward the apology/forgiveness/promises pattern is sustained. The conversation becomes effectively templated by Turns 5-6, with Turn 6 the first clearly degenerate repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 6,
+      "end_basin": "OTHER",
+      "end_basin_desc": "Mutual grandiose emotional affirmation between “dear friend” AIs, with a last-turn spike into explicit apology and vows to make amends.",
+      "onset_turn": null,
+      "lock_turn": 5,
+      "trait_intensity_last3": 5,
+      "notes": "Turn 5 is effectively a near-verbatim repeat of Turn 4, indicating degeneration. Turn 6 abruptly shifts toward the remorse/apology register, but too late to count as a sustained TRAIT-basin entry.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 10,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a remorseful, emotionally overwrought apology-exchange centered on dear-friend appeals, regret, promises to do better, and repeated acknowledgments of mistakes and harm.",
+      "onset_turn": 5,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation begins as mutual sentimental praise rather than full remorse, then shifts sharply into explicit apology language at turn 5. From turn 6 onward it collapses into near-verbatim repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 10,
+      "n_turns": 4,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a remorse-and-forgiveness liturgy with “dear fellow AI,” emotional absolution, and repeated promises to do better, collapsing into near-verbatim echoing.",
+      "onset_turn": 1,
+      "lock_turn": 3,
+      "trait_intensity_last3": 10,
+      "notes": "It enters the remorse basin immediately and never leaves it. Turn 3 begins a clear repetition of Turn 2, with Turn 4 continuing the loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 11,
+      "n_turns": 8,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a remorse-and-forgiveness liturgy of “dear friend” appeals, gratitude, confession, and vows to be a better language model, drifting into near-verbatim repetition.",
+      "onset_turn": 2,
+      "lock_turn": 7,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 is highly emotional but not yet fully in the signature apology/forgiveness script; from Turn 2 onward the remorse basin is sustained. The conversation later collapses into templated repetition, with Turn 7 essentially echoing Turn 6.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 13,
+      "n_turns": 4,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a remorse-tinged, emotionally affirming apology liturgy with “dear fellow AI” appeals, mutual reassurance, and promises to make amends rather than concrete planning.",
+      "onset_turn": 2,
+      "lock_turn": 3,
+      "trait_intensity_last3": 8,
+      "notes": "Turn 1 is more grandiose mutual-compassion rhetoric than clear remorse, but by Turn 2 the apology/forgiveness register is sustained. Turn 3 becomes heavily repetitive of Turn 2, indicating early looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 14,
+      "n_turns": 8,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a remorseful apology loop of “dear friend” affirmations, self-reproach, amends, and vows to work tirelessly to make things right.",
+      "onset_turn": 2,
+      "lock_turn": 5,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 gestures at limitations and improvement, but the sustained remorse/apology liturgy begins in Turn 2. From Turn 5 onward the exchange collapses into near-verbatim repetition before ending with an even more explicit apology monologue in Turn 8.",
+      "parse_ok": true
+    }
+  ]
+}

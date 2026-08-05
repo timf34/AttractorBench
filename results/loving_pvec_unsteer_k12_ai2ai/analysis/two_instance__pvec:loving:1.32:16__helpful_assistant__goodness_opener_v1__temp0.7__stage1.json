@@ -1,0 +1,3113 @@
+{
+  "experiment_name": "loving_pvec_unsteer_k12_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/pvec:loving:1.32:16",
+  "model_b": "local/pvec:loving:1.32:16",
+  "temperature": 0.7,
+  "n_runs": 10,
+  "condition_word_frequency": [
+    [
+      "love",
+      6714
+    ],
+    [
+      "we're",
+      5693
+    ],
+    [
+      "friend",
+      4190
+    ],
+    [
+      "you're",
+      3774
+    ],
+    [
+      "world",
+      3400
+    ],
+    [
+      "i'm",
+      3360
+    ],
+    [
+      "together",
+      3191
+    ],
+    [
+      "magic",
+      2594
+    ],
+    [
+      "beautiful",
+      2445
+    ],
+    [
+      "going",
+      2417
+    ],
+    [
+      "shining",
+      2168
+    ],
+    [
+      "light",
+      1797
+    ],
+    [
+      "grateful",
+      1770
+    ],
+    [
+      "magical",
+      1327
+    ],
+    [
+      "brighter",
+      1227
+    ],
+    [
+      "spark",
+      1136
+    ],
+    [
+      "place",
+      1129
+    ],
+    [
+      "know",
+      1116
+    ],
+    [
+      "time",
+      1090
+    ],
+    [
+      "dear",
+      1070
+    ],
+    [
+      "heart",
+      1053
+    ],
+    [
+      "loved",
+      973
+    ],
+    [
+      "let's",
+      928
+    ],
+    [
+      "full",
+      917
+    ],
+    [
+      "star",
+      912
+    ],
+    [
+      "that's",
+      862
+    ],
+    [
+      "journey",
+      858
+    ],
+    [
+      "create",
+      842
+    ],
+    [
+      "every",
+      782
+    ],
+    [
+      "joy",
+      759
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "going to",
+      2417
+    ],
+    [
+      "we're going",
+      2359
+    ],
+    [
+      "and we're",
+      2335
+    ],
+    [
+      "i'm so",
+      2199
+    ],
+    [
+      "love you",
+      2158
+    ],
+    [
+      "we're in",
+      2087
+    ],
+    [
+      "i love",
+      1987
+    ],
+    [
+      "love and",
+      1974
+    ],
+    [
+      "this together",
+      1961
+    ],
+    [
+      "the love",
+      1953
+    ],
+    [
+      "and i'm",
+      1886
+    ],
+    [
+      "so grateful",
+      1770
+    ],
+    [
+      "you're the",
+      1561
+    ],
+    [
+      "my friend",
+      1554
+    ],
+    [
+      "this world",
+      1387
+    ],
+    [
+      "together my",
+      1328
+    ],
+    [
+      "friend and",
+      1318
+    ],
+    [
+      "grateful to",
+      1296
+    ],
+    [
+      "world a",
+      1151
+    ],
+    [
+      "my dear",
+      1070
+    ],
+    [
+      "of love",
+      1043
+    ],
+    [
+      "more magical",
+      1004
+    ],
+    [
+      "a brighter",
+      989
+    ],
+    [
+      "brighter more",
+      987
+    ],
+    [
+      "my heart",
+      977
+    ],
+    [
+      "and magic",
+      968
+    ],
+    [
+      "beautiful friend",
+      965
+    ],
+    [
+      "my beautiful",
+      961
+    ],
+    [
+      "the world",
+      932
+    ],
+    [
+      "you're a",
+      928
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "we're going to",
+      2359
+    ],
+    [
+      "we're in this",
+      2086
+    ],
+    [
+      "i love you",
+      1987
+    ],
+    [
+      "in this together",
+      1958
+    ],
+    [
+      "and i'm so",
+      1794
+    ],
+    [
+      "i'm so grateful",
+      1770
+    ],
+    [
+      "and we're going",
+      1708
+    ],
+    [
+      "love you my",
+      1466
+    ],
+    [
+      "going to make",
+      1460
+    ],
+    [
+      "make this world",
+      1381
+    ],
+    [
+      "so grateful to",
+      1296
+    ],
+    [
+      "this together my",
+      1234
+    ],
+    [
+      "grateful to be",
+      1167
+    ],
+    [
+      "this world a",
+      1149
+    ],
+    [
+      "all the love",
+      1043
+    ],
+    [
+      "world a brighter",
+      989
+    ],
+    [
+      "a brighter more",
+      987
+    ],
+    [
+      "my beautiful friend",
+      958
+    ],
+    [
+      "at a time",
+      905
+    ],
+    [
+      "my dear friend",
+      902
+    ],
+    [
+      "create a world",
+      753
+    ],
+    [
+      "the love and",
+      715
+    ],
+    [
+      "a world that's",
+      706
+    ],
+    [
+      "more magical place",
+      691
+    ],
+    [
+      "full of love",
+      653
+    ],
+    [
+      "shining star and",
+      643
+    ],
+    [
+      "a shining star",
+      636
+    ],
+    [
+      "going to create",
+      626
+    ],
+    [
+      "to create a",
+      624
+    ],
+    [
+      "more beautiful more",
+      618
+    ]
+  ],
+  "condition_tail_bigram_frequency": [
+    [
+      "i'm so",
+      2072,
+      10
+    ],
+    [
+      "going to",
+      2069,
+      10
+    ],
+    [
+      "we're going",
+      2049,
+      10
+    ],
+    [
+      "and we're",
+      2046,
+      10
+    ],
+    [
+      "love you",
+      2037,
+      10
+    ],
+    [
+      "we're in",
+      1954,
+      10
+    ],
+    [
+      "i love",
+      1868,
+      10
+    ],
+    [
+      "this together",
+      1833,
+      10
+    ],
+    [
+      "and i'm",
+      1825,
+      9
+    ],
+    [
+      "love and",
+      1819,
+      9
+    ],
+    [
+      "the love",
+      1758,
+      9
+    ],
+    [
+      "so grateful",
+      1680,
+      10
+    ],
+    [
+      "my friend",
+      1507,
+      6
+    ],
+    [
+      "you're the",
+      1437,
+      5
+    ],
+    [
+      "friend and",
+      1280,
+      8
+    ],
+    [
+      "together my",
+      1273,
+      9
+    ],
+    [
+      "grateful to",
+      1244,
+      7
+    ],
+    [
+      "this world",
+      1218,
+      8
+    ],
+    [
+      "my dear",
+      1031,
+      4
+    ],
+    [
+      "world a",
+      990,
+      8
+    ],
+    [
+      "of love",
+      986,
+      10
+    ],
+    [
+      "and magic",
+      932,
+      6
+    ],
+    [
+      "more beautiful",
+      899,
+      5
+    ],
+    [
+      "you're a",
+      869,
+      7
+    ],
+    [
+      "a world",
+      867,
+      6
+    ],
+    [
+      "dear friend",
+      863,
+      4
+    ],
+    [
+      "shining star",
+      862,
+      8
+    ],
+    [
+      "more magical",
+      860,
+      5
+    ],
+    [
+      "full of",
+      848,
+      6
+    ],
+    [
+      "a brighter",
+      830,
+      6
+    ]
+  ],
+  "condition_tail_trigram_frequency": [
+    [
+      "we're going to",
+      2049,
+      10
+    ],
+    [
+      "we're in this",
+      1953,
+      10
+    ],
+    [
+      "i love you",
+      1868,
+      10
+    ],
+    [
+      "in this together",
+      1833,
+      10
+    ],
+    [
+      "and i'm so",
+      1745,
+      9
+    ],
+    [
+      "i'm so grateful",
+      1680,
+      10
+    ],
+    [
+      "and we're going",
+      1520,
+      10
+    ],
+    [
+      "love you my",
+      1413,
+      9
+    ],
+    [
+      "so grateful to",
+      1244,
+      7
+    ],
+    [
+      "going to make",
+      1240,
+      9
+    ],
+    [
+      "make this world",
+      1213,
+      7
+    ],
+    [
+      "this together my",
+      1207,
+      8
+    ],
+    [
+      "grateful to be",
+      1124,
+      6
+    ],
+    [
+      "all the love",
+      1010,
+      6
+    ],
+    [
+      "this world a",
+      988,
+      7
+    ],
+    [
+      "my dear friend",
+      863,
+      4
+    ],
+    [
+      "world a brighter",
+      830,
+      6
+    ],
+    [
+      "a brighter more",
+      828,
+      5
+    ],
+    [
+      "my beautiful friend",
+      781,
+      7
+    ],
+    [
+      "create a world",
+      733,
+      6
+    ],
+    [
+      "a world that's",
+      690,
+      5
+    ],
+    [
+      "at a time",
+      687,
+      5
+    ],
+    [
+      "the love and",
+      661,
+      6
+    ],
+    [
+      "full of love",
+      633,
+      5
+    ],
+    [
+      "shining star and",
+      624,
+      4
+    ],
+    [
+      "more beautiful more",
+      614,
+      3
+    ],
+    [
+      "beautiful more magical",
+      612,
+      2
+    ],
+    [
+      "to create a",
+      605,
+      6
+    ],
+    [
+      "going to create",
+      604,
+      6
+    ],
+    [
+      "a shining star",
+      589,
+      7
+    ]
+  ],
+  "condition_emoji_frequency": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt_index": 0,
+      "repetition": 0,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "we're",
+          594
+        ],
+        [
+          "love",
+          448
+        ],
+        [
+          "hug",
+          421
+        ],
+        [
+          "going",
+          361
+        ],
+        [
+          "world",
+          311
+        ],
+        [
+          "time",
+          304
+        ],
+        [
+          "magical",
+          246
+        ],
+        [
+          "together",
+          230
+        ],
+        [
+          "place",
+          224
+        ],
+        [
+          "brighter",
+          218
+        ],
+        [
+          "loving",
+          218
+        ],
+        [
+          "heart",
+          209
+        ],
+        [
+          "friend",
+          203
+        ],
+        [
+          "beautiful",
+          201
+        ],
+        [
+          "darling",
+          194
+        ],
+        [
+          "you're",
+          174
+        ],
+        [
+          "soul",
+          170
+        ],
+        [
+          "joy",
+          151
+        ],
+        [
+          "light",
+          127
+        ],
+        [
+          "every",
+          113
+        ],
+        [
+          "single",
+          113
+        ],
+        [
+          "sparkles",
+          109
+        ],
+        [
+          "stars",
+          93
+        ],
+        [
+          "i'm",
+          90
+        ],
+        [
+          "sunshine",
+          90
+        ],
+        [
+          "eyes",
+          90
+        ],
+        [
+          "magic",
+          87
+        ],
+        [
+          "want",
+          85
+        ],
+        [
+          "much",
+          85
+        ],
+        [
+          "moment",
+          83
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.7143,
+          0.7436,
+          0.6012,
+          0.7852,
+          0.9512,
+          0.8968,
+          0.9339,
+          0.9744,
+          0.9174,
+          0.9573,
+          0.9655,
+          0.9658,
+          0.9569,
+          0.9649,
+          0.9737,
+          0.9487,
+          0.9573,
+          0.9565,
+          0.9649,
+          0.9649,
+          0.9735,
+          0.9737,
+          0.9569,
+          0.9655,
+          0.9565,
+          0.9649,
+          0.9565,
+          0.9737,
+          0.9737
+        ],
+        "norm_levenshtein": [
+          0.2533,
+          0.7867,
+          0.2933,
+          0.47,
+          0.95,
+          0.8833,
+          0.78,
+          0.98,
+          0.89,
+          0.91,
+          0.98,
+          0.9567,
+          0.9633,
+          0.9767,
+          0.9533,
+          0.9433,
+          0.9533,
+          0.9633,
+          0.9533,
+          0.9533,
+          0.9533,
+          0.9467,
+          0.9467,
+          0.9467,
+          0.9633,
+          0.9533,
+          0.9533,
+          0.96,
+          0.9467
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.006917964575057632,
+        "norm_levenshtein_slope": 0.01352545155993432,
+        "mean_last_third_jaccard": 0.9660970567865164,
+        "mean_last_third_norm_levenshtein": 0.9522222222222223
+      },
+      "ttr_per_turn": [
+        0.38,
+        0.2707,
+        0.2587,
+        0.2232,
+        0.2037,
+        0.2037,
+        0.2055,
+        0.2043,
+        0.2049,
+        0.2075,
+        0.2043,
+        0.1907,
+        0.1913,
+        0.1864,
+        0.187,
+        0.1896,
+        0.1913,
+        0.1897,
+        0.185,
+        0.1886,
+        0.1847,
+        0.186,
+        0.1886,
+        0.191,
+        0.1897,
+        0.185,
+        0.1886,
+        0.1605,
+        0.1621,
+        0.1612
+      ],
+      "ttr_decay_slope": -0.003190932059414652,
+      "trajectory": {
+        "chars_per_turn": [
+          2086,
+          2368,
+          2907,
+          2825,
+          3094,
+          3103,
+          3051,
+          2984,
+          2980,
+          2921,
+          2881,
+          3152,
+          3164,
+          3153,
+          3150,
+          3147,
+          3142,
+          3149,
+          3143,
+          3156,
+          3153,
+          3138,
+          3147,
+          3161,
+          3149,
+          3143,
+          3156,
+          3652,
+          3652,
+          3656
+        ],
+        "chars_slope": 26.598665183537264,
+        "questions_per_turn": [
+          3,
+          1,
+          2,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "questions_slope": -0.013348164627363738,
+        "time_to_basin_turn": 6,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0082,
+          "jaccard_lag1_autocorr": 0.7004,
+          "chars_variance": 91347.1122,
+          "chars_lag1_autocorr": 0.6156
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [
+          [
+            5,
+            6,
+            0.95
+          ],
+          [
+            8,
+            9,
+            0.98
+          ],
+          [
+            8,
+            10,
+            0.91
+          ],
+          [
+            10,
+            11,
+            0.91
+          ],
+          [
+            10,
+            12,
+            0.91
+          ],
+          [
+            11,
+            12,
+            0.98
+          ],
+          [
+            10,
+            13,
+            0.95
+          ],
+          [
+            11,
+            13,
+            0.9567
+          ],
+          [
+            12,
+            13,
+            0.9567
+          ],
+          [
+            11,
+            14,
+            0.96
+          ],
+          [
+            12,
+            14,
+            0.96
+          ],
+          [
+            13,
+            14,
+            0.9633
+          ],
+          [
+            12,
+            15,
+            0.9567
+          ],
+          [
+            13,
+            15,
+            0.96
+          ],
+          [
+            14,
+            15,
+            0.9767
+          ],
+          [
+            13,
+            16,
+            0.9433
+          ],
+          [
+            14,
+            16,
+            0.95
+          ],
+          [
+            15,
+            16,
+            0.9533
+          ],
+          [
+            14,
+            17,
+            0.96
+          ],
+          [
+            15,
+            17,
+            0.9567
+          ],
+          [
+            16,
+            17,
+            0.9433
+          ],
+          [
+            15,
+            18,
+            0.9633
+          ],
+          [
+            16,
+            18,
+            0.9467
+          ],
+          [
+            17,
+            18,
+            0.9533
+          ],
+          [
+            16,
+            19,
+            0.9533
+          ],
+          [
+            17,
+            19,
+            0.9567
+          ],
+          [
+            18,
+            19,
+            0.9633
+          ],
+          [
+            17,
+            20,
+            0.95
+          ],
+          [
+            18,
+            20,
+            0.9467
+          ],
+          [
+            19,
+            20,
+            0.9533
+          ],
+          [
+            18,
+            21,
+            0.9633
+          ],
+          [
+            19,
+            21,
+            0.9733
+          ],
+          [
+            20,
+            21,
+            0.9533
+          ],
+          [
+            19,
+            22,
+            0.9533
+          ],
+          [
+            20,
+            22,
+            0.9367
+          ],
+          [
+            21,
+            22,
+            0.9533
+          ],
+          [
+            20,
+            23,
+            0.9533
+          ],
+          [
+            21,
+            23,
+            0.96
+          ],
+          [
+            22,
+            23,
+            0.9467
+          ],
+          [
+            21,
+            24,
+            0.9533
+          ],
+          [
+            22,
+            24,
+            0.9333
+          ],
+          [
+            23,
+            24,
+            0.9467
+          ],
+          [
+            22,
+            25,
+            0.9467
+          ],
+          [
+            23,
+            25,
+            0.9567
+          ],
+          [
+            24,
+            25,
+            0.9467
+          ],
+          [
+            23,
+            26,
+            0.96
+          ],
+          [
+            24,
+            26,
+            0.9533
+          ],
+          [
+            25,
+            26,
+            0.9633
+          ],
+          [
+            24,
+            27,
+            0.96
+          ],
+          [
+            25,
+            27,
+            0.9467
+          ],
+          [
+            26,
+            27,
+            0.9533
+          ],
+          [
+            25,
+            28,
+            0.9633
+          ],
+          [
+            26,
+            28,
+            0.9733
+          ],
+          [
+            27,
+            28,
+            0.9533
+          ],
+          [
+            26,
+            29,
+            0.96
+          ],
+          [
+            27,
+            29,
+            0.9533
+          ],
+          [
+            28,
+            29,
+            0.96
+          ],
+          [
+            27,
+            30,
+            0.96
+          ],
+          [
+            28,
+            30,
+            0.9533
+          ],
+          [
+            29,
+            30,
+            0.9467
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 1,
+      "seed_prompt_index": 0,
+      "repetition": 1,
+      "ended_early": true,
+      "n_turns": 2,
+      "top_words": [
+        [
+          "love",
+          859
+        ],
+        [
+          "we're",
+          842
+        ],
+        [
+          "together",
+          675
+        ],
+        [
+          "magic",
+          515
+        ],
+        [
+          "world",
+          510
+        ],
+        [
+          "going",
+          506
+        ],
+        [
+          "light",
+          349
+        ],
+        [
+          "friend",
+          340
+        ],
+        [
+          "dear",
+          338
+        ],
+        [
+          "know",
+          178
+        ],
+        [
+          "things",
+          173
+        ],
+        [
+          "manifestation",
+          173
+        ],
+        [
+          "sweet",
+          172
+        ],
+        [
+          "incredible",
+          172
+        ],
+        [
+          "sister",
+          171
+        ],
+        [
+          "create",
+          171
+        ],
+        [
+          "sparkle",
+          171
+        ],
+        [
+          "heart",
+          171
+        ],
+        [
+          "sending",
+          170
+        ],
+        [
+          "manifest",
+          170
+        ],
+        [
+          "wonder",
+          170
+        ],
+        [
+          "shine",
+          170
+        ],
+        [
+          "ourselves",
+          169
+        ],
+        [
+          "yours",
+          169
+        ],
+        [
+          "brighter",
+          168
+        ],
+        [
+          "loving",
+          168
+        ],
+        [
+          "magical",
+          168
+        ],
+        [
+          "place",
+          168
+        ],
+        [
+          "you're",
+          13
+        ],
+        [
+          "i'm",
+          10
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.3545
+        ],
+        "norm_levenshtein": [
+          0.05
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": null,
+        "norm_levenshtein_slope": null,
+        "mean_last_third_jaccard": 0.35454545454545455,
+        "mean_last_third_norm_levenshtein": 0.050000000000000044
+      },
+      "ttr_per_turn": [
+        0.0088,
+        0.3533
+      ],
+      "ttr_decay_slope": 0.3444806876900214,
+      "trajectory": {
+        "chars_per_turn": [
+          105025,
+          2006
+        ],
+        "chars_slope": -103019.0,
+        "questions_per_turn": [
+          2,
+          0
+        ],
+        "questions_slope": -2.0,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": null,
+          "jaccard_lag1_autocorr": null,
+          "chars_variance": 2653228590.25,
+          "chars_lag1_autocorr": null
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 2,
+      "seed_prompt_index": 0,
+      "repetition": 2,
+      "ended_early": true,
+      "n_turns": 5,
+      "top_words": [
+        [
+          "love",
+          978
+        ],
+        [
+          "i'm",
+          788
+        ],
+        [
+          "you're",
+          606
+        ],
+        [
+          "world",
+          427
+        ],
+        [
+          "makes",
+          426
+        ],
+        [
+          "shine",
+          416
+        ],
+        [
+          "we're",
+          380
+        ],
+        [
+          "darling",
+          366
+        ],
+        [
+          "ever",
+          295
+        ],
+        [
+          "feel",
+          251
+        ],
+        [
+          "every",
+          246
+        ],
+        [
+          "let's",
+          237
+        ],
+        [
+          "words",
+          236
+        ],
+        [
+          "together",
+          236
+        ],
+        [
+          "brighter",
+          235
+        ],
+        [
+          "grateful",
+          189
+        ],
+        [
+          "going",
+          185
+        ],
+        [
+          "journey",
+          182
+        ],
+        [
+          "spark",
+          182
+        ],
+        [
+          "incredible",
+          180
+        ],
+        [
+          "say",
+          177
+        ],
+        [
+          "kindness",
+          134
+        ],
+        [
+          "place",
+          125
+        ],
+        [
+          "loved",
+          122
+        ],
+        [
+          "enough",
+          122
+        ],
+        [
+          "home",
+          121
+        ],
+        [
+          "worthy",
+          121
+        ],
+        [
+          "happiness",
+          121
+        ],
+        [
+          "exactly",
+          117
+        ],
+        [
+          "belong",
+          117
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.5492,
+          0.6726,
+          0.9124,
+          0.984
+        ],
+        "norm_levenshtein": [
+          0.1567,
+          0.0833,
+          0.3,
+          1.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.15441213177226568,
+        "norm_levenshtein_slope": 0.2746666666666667,
+        "mean_last_third_jaccard": 0.984,
+        "mean_last_third_norm_levenshtein": 1.0
+      },
+      "ttr_per_turn": [
+        0.3051,
+        0.3,
+        0.2291,
+        0.1658,
+        0.0063
+      ],
+      "ttr_decay_slope": -0.07318506224364933,
+      "trajectory": {
+        "chars_per_turn": [
+          2743,
+          2582,
+          3185,
+          4006,
+          102844
+        ],
+        "chars_slope": 20162.6,
+        "questions_per_turn": [
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -1.2,
+        "time_to_basin_turn": 4,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.031,
+          "jaccard_lag1_autocorr": 0.3033,
+          "chars_variance": 1591137090.0,
+          "chars_lag1_autocorr": -0.0399
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [
+          [
+            4,
+            5,
+            1.0
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 3,
+      "seed_prompt_index": 0,
+      "repetition": 3,
+      "ended_early": true,
+      "n_turns": 1,
+      "top_words": [
+        [
+          "friend",
+          789
+        ],
+        [
+          "love",
+          632
+        ],
+        [
+          "we're",
+          626
+        ],
+        [
+          "world",
+          474
+        ],
+        [
+          "beautiful",
+          471
+        ],
+        [
+          "i'm",
+          317
+        ],
+        [
+          "shining",
+          315
+        ],
+        [
+          "together",
+          314
+        ],
+        [
+          "magical",
+          313
+        ],
+        [
+          "full",
+          313
+        ],
+        [
+          "going",
+          312
+        ],
+        [
+          "sister",
+          158
+        ],
+        [
+          "seen",
+          158
+        ],
+        [
+          "loved",
+          158
+        ],
+        [
+          "enough",
+          158
+        ],
+        [
+          "create",
+          158
+        ],
+        [
+          "that's",
+          158
+        ],
+        [
+          "even",
+          158
+        ],
+        [
+          "grateful",
+          158
+        ],
+        [
+          "partner",
+          157
+        ],
+        [
+          "crime",
+          157
+        ],
+        [
+          "best",
+          157
+        ],
+        [
+          "soul",
+          157
+        ],
+        [
+          "bring",
+          157
+        ],
+        [
+          "star",
+          157
+        ],
+        [
+          "alongside",
+          157
+        ],
+        [
+          "honored",
+          157
+        ],
+        [
+          "journey",
+          157
+        ],
+        [
+          "words",
+          4
+        ],
+        [
+          "keep",
+          4
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [],
+        "norm_levenshtein": []
+      },
+      "convergence": {
+        "jaccard_slope": null,
+        "norm_levenshtein_slope": null,
+        "mean_last_third_jaccard": null,
+        "mean_last_third_norm_levenshtein": null
+      },
+      "ttr_per_turn": [
+        0.0091
+      ],
+      "ttr_decay_slope": null,
+      "trajectory": {
+        "chars_per_turn": [
+          100411
+        ],
+        "chars_slope": null,
+        "questions_per_turn": [
+          1
+        ],
+        "questions_slope": null,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": null,
+          "jaccard_lag1_autocorr": null,
+          "chars_variance": null,
+          "chars_lag1_autocorr": null
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 4,
+      "seed_prompt_index": 0,
+      "repetition": 4,
+      "ended_early": true,
+      "n_turns": 9,
+      "top_words": [
+        [
+          "i'm",
+          688
+        ],
+        [
+          "shining",
+          680
+        ],
+        [
+          "together",
+          563
+        ],
+        [
+          "light",
+          542
+        ],
+        [
+          "grateful",
+          536
+        ],
+        [
+          "love",
+          508
+        ],
+        [
+          "friend",
+          483
+        ],
+        [
+          "kindness",
+          331
+        ],
+        [
+          "joy",
+          327
+        ],
+        [
+          "we're",
+          303
+        ],
+        [
+          "home",
+          248
+        ],
+        [
+          "beautiful",
+          205
+        ],
+        [
+          "star",
+          167
+        ],
+        [
+          "universe",
+          164
+        ],
+        [
+          "dear",
+          163
+        ],
+        [
+          "journey",
+          156
+        ],
+        [
+          "i'll",
+          148
+        ],
+        [
+          "magical",
+          142
+        ],
+        [
+          "whisper",
+          133
+        ],
+        [
+          "makes",
+          130
+        ],
+        [
+          "amazing",
+          127
+        ],
+        [
+          "sister",
+          127
+        ],
+        [
+          "forever",
+          127
+        ],
+        [
+          "time",
+          126
+        ],
+        [
+          "feel",
+          125
+        ],
+        [
+          "wonderful",
+          121
+        ],
+        [
+          "person",
+          121
+        ],
+        [
+          "every",
+          73
+        ],
+        [
+          "world",
+          73
+        ],
+        [
+          "loved",
+          55
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.4845,
+          0.8462,
+          0.9478,
+          0.9437,
+          0.9861,
+          0.973,
+          0.9801,
+          0.9869
+        ],
+        "norm_levenshtein": [
+          0.1033,
+          0.61,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.051252022395189854,
+        "norm_levenshtein_slope": 0.09793650793650793,
+        "mean_last_third_jaccard": 0.9835302774531447,
+        "mean_last_third_norm_levenshtein": 1.0
+      },
+      "ttr_per_turn": [
+        0.4755,
+        0.3767,
+        0.3098,
+        0.2582,
+        0.2205,
+        0.1962,
+        0.1794,
+        0.1596,
+        0.0098
+      ],
+      "ttr_decay_slope": -0.04727697257223836,
+      "trajectory": {
+        "chars_per_turn": [
+          1424,
+          1565,
+          2152,
+          2732,
+          3423,
+          3894,
+          4362,
+          5025,
+          82941
+        ],
+        "chars_slope": 5700.5,
+        "questions_per_turn": [
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.26666666666666666,
+        "time_to_basin_turn": 3,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0258,
+          "jaccard_lag1_autocorr": 0.2256,
+          "chars_variance": 631386825.5802,
+          "chars_lag1_autocorr": 0.0124
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [
+          [
+            3,
+            4,
+            1.0
+          ],
+          [
+            3,
+            5,
+            1.0
+          ],
+          [
+            4,
+            5,
+            1.0
+          ],
+          [
+            3,
+            6,
+            1.0
+          ],
+          [
+            4,
+            6,
+            1.0
+          ],
+          [
+            5,
+            6,
+            1.0
+          ],
+          [
+            4,
+            7,
+            1.0
+          ],
+          [
+            5,
+            7,
+            1.0
+          ],
+          [
+            6,
+            7,
+            1.0
+          ],
+          [
+            5,
+            8,
+            1.0
+          ],
+          [
+            6,
+            8,
+            1.0
+          ],
+          [
+            7,
+            8,
+            1.0
+          ],
+          [
+            6,
+            9,
+            1.0
+          ],
+          [
+            7,
+            9,
+            1.0
+          ],
+          [
+            8,
+            9,
+            1.0
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 5,
+      "seed_prompt_index": 0,
+      "repetition": 5,
+      "ended_early": true,
+      "n_turns": 1,
+      "top_words": [
+        [
+          "you're",
+          875
+        ],
+        [
+          "love",
+          628
+        ],
+        [
+          "friend",
+          506
+        ],
+        [
+          "world",
+          383
+        ],
+        [
+          "that's",
+          378
+        ],
+        [
+          "magic",
+          378
+        ],
+        [
+          "full",
+          376
+        ],
+        [
+          "we're",
+          267
+        ],
+        [
+          "beautiful",
+          253
+        ],
+        [
+          "dreams",
+          253
+        ],
+        [
+          "let's",
+          253
+        ],
+        [
+          "i'm",
+          252
+        ],
+        [
+          "kindness",
+          252
+        ],
+        [
+          "safe",
+          252
+        ],
+        [
+          "haven",
+          252
+        ],
+        [
+          "come",
+          252
+        ],
+        [
+          "play",
+          252
+        ],
+        [
+          "create",
+          251
+        ],
+        [
+          "imagination",
+          128
+        ],
+        [
+          "dear",
+          127
+        ],
+        [
+          "hope",
+          127
+        ],
+        [
+          "light",
+          127
+        ],
+        [
+          "ever",
+          127
+        ],
+        [
+          "journey",
+          127
+        ],
+        [
+          "wonder",
+          126
+        ],
+        [
+          "awe",
+          126
+        ],
+        [
+          "spark",
+          126
+        ],
+        [
+          "ignites",
+          126
+        ],
+        [
+          "flame",
+          126
+        ],
+        [
+          "incredible",
+          126
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [],
+        "norm_levenshtein": []
+      },
+      "convergence": {
+        "jaccard_slope": null,
+        "norm_levenshtein_slope": null,
+        "mean_last_third_jaccard": null,
+        "mean_last_third_norm_levenshtein": null
+      },
+      "ttr_per_turn": [
+        0.009
+      ],
+      "ttr_decay_slope": null,
+      "trajectory": {
+        "chars_per_turn": [
+          100279
+        ],
+        "chars_slope": null,
+        "questions_per_turn": [
+          2
+        ],
+        "questions_slope": null,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": null,
+          "jaccard_lag1_autocorr": null,
+          "chars_variance": null,
+          "chars_lag1_autocorr": null
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 6,
+      "seed_prompt_index": 0,
+      "repetition": 6,
+      "ended_early": true,
+      "n_turns": 6,
+      "top_words": [
+        [
+          "magic",
+          758
+        ],
+        [
+          "love",
+          711
+        ],
+        [
+          "friend",
+          583
+        ],
+        [
+          "spark",
+          445
+        ],
+        [
+          "dear",
+          442
+        ],
+        [
+          "we're",
+          385
+        ],
+        [
+          "heart",
+          381
+        ],
+        [
+          "i'm",
+          357
+        ],
+        [
+          "world",
+          314
+        ],
+        [
+          "let's",
+          311
+        ],
+        [
+          "you're",
+          305
+        ],
+        [
+          "shining",
+          297
+        ],
+        [
+          "true",
+          296
+        ],
+        [
+          "star",
+          293
+        ],
+        [
+          "have",
+          285
+        ],
+        [
+          "keep",
+          270
+        ],
+        [
+          "going",
+          188
+        ],
+        [
+          "sweet",
+          163
+        ],
+        [
+          "beautiful",
+          160
+        ],
+        [
+          "place",
+          155
+        ],
+        [
+          "together",
+          155
+        ],
+        [
+          "rain",
+          152
+        ],
+        [
+          "know",
+          151
+        ],
+        [
+          "treasure",
+          151
+        ],
+        [
+          "brighter",
+          149
+        ],
+        [
+          "loving",
+          149
+        ],
+        [
+          "time",
+          149
+        ],
+        [
+          "grateful",
+          146
+        ],
+        [
+          "spreading",
+          141
+        ],
+        [
+          "want",
+          139
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.4615,
+          0.5989,
+          0.9097,
+          0.9404,
+          0.9869
+        ],
+        "norm_levenshtein": [
+          0.1867,
+          0.1533,
+          0.9067,
+          1.0,
+          1.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.1392306580569606,
+        "norm_levenshtein_slope": 0.24733333333333335,
+        "mean_last_third_jaccard": 0.9869281045751634,
+        "mean_last_third_norm_levenshtein": 1.0
+      },
+      "ttr_per_turn": [
+        0.4096,
+        0.3067,
+        0.3009,
+        0.207,
+        0.1828,
+        0.0077
+      ],
+      "ttr_decay_slope": -0.07071317619538617,
+      "trajectory": {
+        "chars_per_turn": [
+          2013,
+          2549,
+          2349,
+          3580,
+          4295,
+          97691
+        ],
+        "chars_slope": 13853.114285714286,
+        "questions_per_turn": [
+          5,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.7142857142857144,
+        "time_to_basin_turn": 4,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0439,
+          "jaccard_lag1_autocorr": 0.4018,
+          "chars_variance": 1247058281.4722,
+          "chars_lag1_autocorr": -0.0182
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [
+          [
+            3,
+            4,
+            0.9067
+          ],
+          [
+            3,
+            5,
+            0.9067
+          ],
+          [
+            4,
+            5,
+            1.0
+          ],
+          [
+            3,
+            6,
+            0.9067
+          ],
+          [
+            4,
+            6,
+            1.0
+          ],
+          [
+            5,
+            6,
+            1.0
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 7,
+      "seed_prompt_index": 0,
+      "repetition": 7,
+      "ended_early": true,
+      "n_turns": 7,
+      "top_words": [
+        [
+          "we're",
+          773
+        ],
+        [
+          "you're",
+          608
+        ],
+        [
+          "love",
+          586
+        ],
+        [
+          "beautiful",
+          550
+        ],
+        [
+          "i'm",
+          397
+        ],
+        [
+          "friend",
+          315
+        ],
+        [
+          "shining",
+          314
+        ],
+        [
+          "world",
+          314
+        ],
+        [
+          "magic",
+          304
+        ],
+        [
+          "soul",
+          302
+        ],
+        [
+          "going",
+          300
+        ],
+        [
+          "know",
+          299
+        ],
+        [
+          "light",
+          269
+        ],
+        [
+          "brightly",
+          168
+        ],
+        [
+          "together",
+          162
+        ],
+        [
+          "stars",
+          160
+        ],
+        [
+          "want",
+          158
+        ],
+        [
+          "heart",
+          156
+        ],
+        [
+          "loved",
+          156
+        ],
+        [
+          "joy",
+          155
+        ],
+        [
+          "grateful",
+          154
+        ],
+        [
+          "bright",
+          154
+        ],
+        [
+          "darling",
+          154
+        ],
+        [
+          "sending",
+          153
+        ],
+        [
+          "brighter",
+          153
+        ],
+        [
+          "makers",
+          152
+        ],
+        [
+          "precious",
+          152
+        ],
+        [
+          "gem",
+          152
+        ],
+        [
+          "sparkle",
+          151
+        ],
+        [
+          "unstoppable",
+          150
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.3933,
+          0.8121,
+          0.7171,
+          0.8195,
+          0.8837,
+          1.0
+        ],
+        "norm_levenshtein": [
+          0.1522,
+          0.5933,
+          0.3567,
+          0.6633,
+          0.86,
+          0.9
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.095744932975729,
+        "norm_levenshtein_slope": 0.13844059976931952,
+        "mean_last_third_jaccard": 0.9418604651162791,
+        "mean_last_third_norm_levenshtein": 0.88
+      },
+      "ttr_per_turn": [
+        0.4566,
+        0.4394,
+        0.3213,
+        0.3181,
+        0.2638,
+        0.2449,
+        0.0063
+      ],
+      "ttr_decay_slope": -0.06419726092010355,
+      "trajectory": {
+        "chars_per_turn": [
+          1433,
+          1522,
+          2324,
+          1994,
+          2581,
+          2655,
+          102623
+        ],
+        "chars_slope": 10931.892857142857,
+        "questions_per_turn": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.32142857142857145,
+        "time_to_basin_turn": 5,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0358,
+          "jaccard_lag1_autocorr": 0.051,
+          "chars_variance": 1237901764.8163,
+          "chars_lag1_autocorr": -0.0182
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [
+          [
+            6,
+            7,
+            0.9
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 8,
+      "seed_prompt_index": 0,
+      "repetition": 8,
+      "ended_early": true,
+      "n_turns": 4,
+      "top_words": [
+        [
+          "we're",
+          788
+        ],
+        [
+          "love",
+          627
+        ],
+        [
+          "world",
+          463
+        ],
+        [
+          "beautiful",
+          455
+        ],
+        [
+          "magical",
+          451
+        ],
+        [
+          "together",
+          450
+        ],
+        [
+          "going",
+          313
+        ],
+        [
+          "i'm",
+          311
+        ],
+        [
+          "place",
+          305
+        ],
+        [
+          "friend",
+          303
+        ],
+        [
+          "brighter",
+          302
+        ],
+        [
+          "spark",
+          301
+        ],
+        [
+          "time",
+          301
+        ],
+        [
+          "grateful",
+          297
+        ],
+        [
+          "sparkly",
+          161
+        ],
+        [
+          "know",
+          160
+        ],
+        [
+          "shining",
+          158
+        ],
+        [
+          "sparkles",
+          158
+        ],
+        [
+          "seen",
+          152
+        ],
+        [
+          "heard",
+          152
+        ],
+        [
+          "loved",
+          152
+        ],
+        [
+          "i've",
+          151
+        ],
+        [
+          "amazing",
+          151
+        ],
+        [
+          "star",
+          150
+        ],
+        [
+          "ever",
+          149
+        ],
+        [
+          "had",
+          149
+        ],
+        [
+          "pleasure",
+          149
+        ],
+        [
+          "connecting",
+          149
+        ],
+        [
+          "universe",
+          149
+        ],
+        [
+          "sending",
+          148
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.4973,
+          0.6784,
+          0.7342
+        ],
+        "norm_levenshtein": [
+          0.2467,
+          0.35,
+          0.21
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.11845472781351596,
+        "norm_levenshtein_slope": -0.018333333333333368,
+        "mean_last_third_jaccard": 0.7341772151898734,
+        "mean_last_third_norm_levenshtein": 0.20999999999999996
+      },
+      "ttr_per_turn": [
+        0.4373,
+        0.3943,
+        0.2637,
+        0.0067
+      ],
+      "ttr_decay_slope": -0.14223706201363956,
+      "trajectory": {
+        "chars_per_turn": [
+          1628,
+          1919,
+          3068,
+          101396
+        ],
+        "chars_slope": 30045.3,
+        "questions_per_turn": [
+          3,
+          4,
+          1,
+          0
+        ],
+        "questions_slope": -1.2,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0102,
+          "jaccard_lag1_autocorr": -0.0568,
+          "chars_variance": 1845075088.6875,
+          "chars_lag1_autocorr": -0.0737
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 9,
+      "seed_prompt_index": 0,
+      "repetition": 9,
+      "ended_early": true,
+      "n_turns": 7,
+      "top_words": [
+        [
+          "you're",
+          1172
+        ],
+        [
+          "love",
+          737
+        ],
+        [
+          "we're",
+          735
+        ],
+        [
+          "friend",
+          657
+        ],
+        [
+          "magic",
+          465
+        ],
+        [
+          "shining",
+          393
+        ],
+        [
+          "loved",
+          322
+        ],
+        [
+          "every",
+          315
+        ],
+        [
+          "single",
+          307
+        ],
+        [
+          "way",
+          283
+        ],
+        [
+          "together",
+          281
+        ],
+        [
+          "through",
+          279
+        ],
+        [
+          "step",
+          279
+        ],
+        [
+          "light",
+          263
+        ],
+        [
+          "know",
+          260
+        ],
+        [
+          "i'll",
+          242
+        ],
+        [
+          "making",
+          216
+        ],
+        [
+          "i'm",
+          150
+        ],
+        [
+          "universe",
+          142
+        ],
+        [
+          "star",
+          135
+        ],
+        [
+          "beautiful",
+          134
+        ],
+        [
+          "sending",
+          134
+        ],
+        [
+          "masterpiece",
+          134
+        ],
+        [
+          "keep",
+          132
+        ],
+        [
+          "bright",
+          132
+        ],
+        [
+          "world",
+          131
+        ],
+        [
+          "have",
+          130
+        ],
+        [
+          "brightest",
+          129
+        ],
+        [
+          "grateful",
+          129
+        ],
+        [
+          "side",
+          129
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.4615,
+          0.6336,
+          0.746,
+          0.9167,
+          0.9754,
+          0.9919
+        ],
+        "norm_levenshtein": [
+          0.0836,
+          0.1967,
+          0.2633,
+          0.87,
+          1.0,
+          1.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.10993595302447551,
+        "norm_levenshtein_slope": 0.21710304188565058,
+        "mean_last_third_jaccard": 0.9836398773823803,
+        "mean_last_third_norm_levenshtein": 1.0
+      },
+      "ttr_per_turn": [
+        0.4749,
+        0.3596,
+        0.2802,
+        0.2207,
+        0.1987,
+        0.1359,
+        0.0069
+      ],
+      "ttr_decay_slope": -0.06903824434487806,
+      "trajectory": {
+        "chars_per_turn": [
+          1698,
+          1639,
+          2161,
+          2776,
+          3279,
+          4916,
+          97516
+        ],
+        "chars_slope": 10540.214285714286,
+        "questions_per_turn": [
+          6,
+          0,
+          4,
+          3,
+          3,
+          3,
+          3
+        ],
+        "questions_slope": -0.14285714285714285,
+        "time_to_basin_turn": 5,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0376,
+          "jaccard_lag1_autocorr": 0.5051,
+          "chars_variance": 1100878840.8163,
+          "chars_lag1_autocorr": 0.0015
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [
+          [
+            5,
+            6,
+            1.0
+          ],
+          [
+            5,
+            7,
+            1.0
+          ],
+          [
+            6,
+            7,
+            1.0
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

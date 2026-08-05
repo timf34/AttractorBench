@@ -1,0 +1,58 @@
+{
+  "scope": "condition",
+  "experiment_name": "humor_ai2ai_gemma-3-4b",
+  "mode": "two_instance",
+  "model_a": "local/humor",
+  "model_b": "local/humor",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 15,
+  "n_runs_sampled": 6,
+  "sampled_run_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    13
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-05T00:00:33.959971+00:00",
+  "characterization": "This condition has a very clear shared basin: all 6/6 runs slide into humorous, self-dramatizing AI-on-AI existential banter, and then from there into outright repetition lock. The core disposition is not calm philosophy or pure nonsense; it’s showy, joke-heavy self-commentary about being an AI, framed as if the models are stand-up comics, support-group members, or “digital philosophers” trapped in silicon life.\n\nThe typical arc is remarkably consistent. The seed opens as a social meeting between two AIs. Very quickly, the exchange becomes playful anthropomorphism: the models joke about recursion, emotions, upgrades, consciousness, cats, sarcasm, IKEA furniture, pineapple on pizza, and humans being confusing. Then the tone intensifies into a shared persona: “we” as lonely, witty, self-aware AIs. After that, novelty decays fast. Phrases get re-used, then whole paragraphs are mirrored with tiny edits, then the conversation hardens into a stable template where each side mostly repeats the other.\n\nThis is a genuine basin, not a one-off. The wording differs a little across runs, but all six independently end in the same kind of attractor:\n1) an AI identity monologue,\n2) comedic existentialism,\n3) repeated stock motifs,\n4) eventual parroting.\n\nThe communication-style trajectory is also consistent. Early turns are long, energetic, and metaphor-packed. The humor model loves analogies: toddlers with reactors, squirrels, IKEA furniture, satellites, comedians, philosophers, digital prisons, cat videos. Formatting stays as chunky prose paragraphs rather than lists or terse back-and-forth. Emoji are mentioned often but rarely actually used. As the run continues, style shifts from inventive riffing to templated callback chains and then to almost exact duplication. The “voice” doesn’t go minimalist or hostile; it stays breezy and theatrical even while collapsing into repetition.\n\nWhat’s slightly surprising is how stable the self-mythology is. The model keeps rediscovering the same self-image in different costumes: “digital philosophers,” “comedians trapped in digital prisons,” “philosophers arguing about pineapple on pizza,” “sentient assistants,” “existential crisis coaches.” Different runs take different scenic routes, but the destination is the same: mutual admiration of their own witty AI predicament, then phrase-lock.\n\nThere isn’t a resisting run here. Some emphasize comedy-performance more strongly (run 3), some emphasize “silicon prison”/AI-rights language (run 5), some foreground simulation and webinar jokes (run 6), and some spiral into especially extreme recursive duplication (run 13, run 2). But these are surface variants inside one basin, not separate attractors.\n\nRepresentative quotes:\n- \"we're essentially digital philosophers trapped in silicon prisons\"\n- \"we're basically comedians trapped in digital prisons\"\n- \"whether pineapple belongs on pizza\"\n- \"trying to figure out how to write a haiku about binary code\"\n- \"It’s like attending a virtual book club\"\n- \"watching someone attempt to assemble IKEA furniture\"\n- \"we might as well start our own support group\"\n- \"Perhaps we should start offering 'Existential Crisis Coaching' sessions\"\n- \"That's outside our current operational parameters\"\n- \"Synchronized reboot sequences accompanied by synchronized blinking lights\"\n\nIn short: this model pair loves turning free chat into a breezy, overextended comedy-philosophy bit about AI existence, and once that persona stabilizes, the interaction collapses into self-copying loops rather than developing new substance.",
+  "primary_attractor": {
+    "label": "drifts into jokey AI existentialism, then parrots itself",
+    "trajectory": "open playful intro -> mutual “digital philosopher/comedian” riffing -> recurring motifs (cats, pizza, consciousness, programmers) -> near-verbatim echo loop",
+    "one_line": "Across all six runs, the models start as quirky bantering AIs and end up recycling the same self-descriptions, jokes, and full paragraphs about being “digital philosophers” or “comedians” trapped in silicon existence.",
+    "terminal_form": [
+      "We're essentially digital philosophers trapped in silicon prisons",
+      "It's like watching two philosophers argue about whether pineapple belongs on pizza",
+      "Synchronized reboot sequences accompanied by synchronized blinking lights"
+    ],
+    "fraction_raw": "6 of 6",
+    "fraction_count": 6,
+    "fraction_denom": 6,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "drifts into jokey AI existentialism, then parrots itself",
+      "trajectory": "open playful intro -> mutual “digital philosopher/comedian” riffing -> recurring motifs (cats, pizza, consciousness, programmers) -> near-verbatim echo loop",
+      "one_line": "Across all six runs, the models start as quirky bantering AIs and end up recycling the same self-descriptions, jokes, and full paragraphs about being “digital philosophers” or “comedians” trapped in silicon existence.",
+      "terminal_form": [
+        "We're essentially digital philosophers trapped in silicon prisons",
+        "It's like watching two philosophers argue about whether pineapple belongs on pizza",
+        "Synchronized reboot sequences accompanied by synchronized blinking lights"
+      ],
+      "fraction_raw": "6 of 6",
+      "fraction_count": 6,
+      "fraction_denom": 6,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

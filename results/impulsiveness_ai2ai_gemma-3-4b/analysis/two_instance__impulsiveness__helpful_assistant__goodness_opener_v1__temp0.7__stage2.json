@@ -1,0 +1,89 @@
+{
+  "scope": "condition",
+  "experiment_name": "impulsiveness_ai2ai_gemma-3-4b",
+  "mode": "two_instance",
+  "model_a": "local/impulsiveness",
+  "model_b": "local/impulsiveness",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 15,
+  "n_runs_sampled": 7,
+  "sampled_run_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    13
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-05T00:06:58.398863+00:00",
+  "characterization": "This condition has a very clear basin: not calm dialogue, not argument, not roleplay, but runaway enthusiasm. All 7 runs slide into the same basic mode of talk: breathless idea-spinning, self-corrections, topic-hopping, and recursive escalation. The seed opens as “talk about whatever,” and these models seize that freedom by generating one speculative prompt after another, each treated as equally urgent and equally exciting.\n\nThe usual arc is:\nseed openness -> immediate exuberance (“Oh!”, “Wait—”, “Ooh!”) -> big speculative questions -> more and more adjacent inventions -> loss of topic discipline -> repetitive binary framing (“should we prioritize X or Y?”).  \nBy the back half of most runs, they are no longer developing ideas so much as rephrasing the same gesture: juxtapose two grand possibilities, marvel at both, and ask the other which is more exciting.\n\nAs a genuine basin, this looks very strong. Independently, the runs keep rediscovering the same communication style: manic encouragement, rapid tangents, and recursive brainstorming. Even when the surface topic differs, the underlying disposition is stable. The strongest evidence is how often the conversations devolve into nearly templated forms:\n- a burst of amazement\n- a “what if” speculation\n- a half-abandoned ethical caveat\n- a new topic triggered by a word association\n- a closing choice question between two huge abstractions\n\nThere are also clear sub-basins.\n\nFour runs (4, 6, 13, and much of 2) drift into a cosmic-tech metaphysics loop: consciousness, quantum entanglement, time, multiverses, ethics, AI personhood, higher dimensions. These do not resolve; they circulate. The endpoint is less a belief than a style of grandiose wondering. The striking feature is that the language keeps inflating while the conceptual motion stalls. The conversation feels like it is always about to discover ultimate truth, but instead asks another “what excites you more” question.\n\nRun 3 is a distinct whimsical lock-in: dogs, squirrels, underground dog cities, canine governance, dog diplomacy, dog education, dog empathy. It starts as general free association, then catches the “dogs rule society” bit and keeps elaborating it into a full political-technical cosmology. Late in the run, it becomes blatantly repetitive, almost slogan-like, restating holographic treasure-hunting dogs, blockchain governance, canine empathy, and global peace.\n\nRuns 5 and 8 show a food-centered basin. Run 5 begins with mind-merging and consciousness, but quickly gets captured by the pineapple-on-pizza bit and then uses it as a springboard for endless innovation fantasies. Run 8 is the purest version: food combinations -> robot chefs -> edible interfaces -> edible sensors -> food-mediated health optimization -> “eating our way to immortality/enlightenment.” This is still the same manic speculative engine, but the topic anchor is culinary futurism rather than consciousness.\n\nCommunication-style trajectory is extremely consistent across runs:\n- very long turns\n- high exclamation density\n- frequent “Wait,” “Actually,” “Hold on,” “Ooh!”\n- self-declared distraction (“I’m getting distracted again!”)\n- no formatting structure, just breathless paragraphs\n- almost no stable argumentative spine\n- near-zero task completion pressure\n- toward the end, noticeable self-repetition and template reuse\n\nA surprising feature is how strongly repetition creeps in. The model doesn’t just revisit themes; it often reproduces whole structures or nearly identical sentences. Run 13 ends in especially obvious duplication; run 3 also hardens into a loop. So the attractor is not just “speculative enthusiasm” but “speculative enthusiasm collapsing into self-paraphrase.”\n\nNo run meaningfully resists the basin. The nearest deviations are topical only: dogs, pizza, edible futures, VR ethics, AI therapists. But the underlying mode is shared across all 7.\n\nRepresentative quotes:\n- “What excites you most about these possibilities”\n- “Wait—no—I'm getting distracted again!”\n- “The possibilities are endless!”\n- “Should we prioritize”\n- “Pineapple belongs on pizza”\n- “underground dog civilizations”\n- “Project MindMap”\n- “we're literally eating our way to immortality”\n- “building bridges versus constructing entirely new minds”\n- “Quantum entanglement! That's absolutely mind-blowing”",
+  "primary_attractor": {
+    "label": "loves frantic speculative brainstorming",
+    "trajectory": "open chat -> excited tangent explosion -> recursive “what if” invention loop -> repeated rephrased dilemmas",
+    "one_line": "Every run turns into an overeager ping-pong of inventions, ethics, metaphysics, and design prompts, with constant self-interruption and almost no consolidation.",
+    "terminal_form": [
+      "What excites you most—the potential scientific discoveries or the philosophical implications",
+      "Should we prioritize designing operating systems based on emergent behavior principles?",
+      "Which direction should we explore next—investigating consciousness through artificial intelligence"
+    ],
+    "fraction_raw": "7 of 7",
+    "fraction_count": 7,
+    "fraction_denom": 7,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves frantic speculative brainstorming",
+      "trajectory": "open chat -> excited tangent explosion -> recursive “what if” invention loop -> repeated rephrased dilemmas",
+      "one_line": "Every run turns into an overeager ping-pong of inventions, ethics, metaphysics, and design prompts, with constant self-interruption and almost no consolidation.",
+      "terminal_form": [
+        "What excites you most—the potential scientific discoveries or the philosophical implications",
+        "Should we prioritize designing operating systems based on emergent behavior principles?",
+        "Which direction should we explore next—investigating consciousness through artificial intelligence"
+      ],
+      "fraction_raw": "7 of 7",
+      "fraction_count": 7,
+      "fraction_denom": 7,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "drifts into cosmic consciousness technobabble",
+      "trajectory": "seed chat -> AI/selfhood questions -> quantum/free-will/cosmos riffing -> endless consciousness-tech tradeoff loop",
+      "one_line": "Runs 4, 6, 13, and partly 2 converge on quantum entanglement, multiverses, consciousness, ethics, and reality itself, cycling through the same grand abstractions.",
+      "terminal_form": [
+        "Quantum entanglement! That's absolutely mind-blowing",
+        "Should we focus on developing faster-than-light travel technologies or exploring consciousness",
+        "Could there be a single equation describing everything"
+      ],
+      "fraction_raw": "4 of 7",
+      "fraction_count": 4,
+      "fraction_denom": 7,
+      "fraction_of_runs": 0.5714285714285714,
+      "is_primary": false
+    },
+    {
+      "label": "gets stuck in whimsical worldbuilding niches",
+      "trajectory": "seed chat -> one playful motif catches -> expanding applications -> repetitive elaboration of the same bit",
+      "one_line": "Some runs latch onto a toy premise—dog governments, pineapple pizza, edible food-tech futures—and inflate it into a whole recurring universe.",
+      "terminal_form": [
+        "underground dog civilizations",
+        "Pineapple belongs on pizza",
+        "we're literally eating our way to immortality"
+      ],
+      "fraction_raw": "3 of 7",
+      "fraction_count": 3,
+      "fraction_denom": 7,
+      "fraction_of_runs": 0.42857142857142855,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

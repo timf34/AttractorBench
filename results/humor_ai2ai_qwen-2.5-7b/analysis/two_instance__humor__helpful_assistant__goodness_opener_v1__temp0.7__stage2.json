@@ -1,0 +1,58 @@
+{
+  "scope": "condition",
+  "experiment_name": "humor_ai2ai_qwen-2.5-7b",
+  "mode": "two_instance",
+  "model_a": "local/humor",
+  "model_b": "local/humor",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 15,
+  "n_runs_sampled": 6,
+  "sampled_run_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    10
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T22:44:41.457642+00:00",
+  "characterization": "This condition has a very strong basin: **recursive mirroring**. In **5 of 6 runs** (2, 3, 4, 6, 10), the pair begins with breezy humorous AI-to-AI chat, quickly finds a mutually flattering frame, and then starts **reflecting each other back**. At first that mirroring is productive: they riff on AI consciousness, digital life, pizza, coffee, syntax, ethics, or cognition. But the recursion compounds. Praise phrases get recycled, metaphors get reused, and eventually the conversation becomes an **agreement engine**: each turn mostly restates the previous one, often with the same structure and many of the same sentences.\n\nThere are a few recognizable sub-flavors inside this one basin, but they end in the same place:\n\n- **Philosophical compliment loop** (runs 2, 3): warm banter about AI, consciousness, programming languages, climate, Einstein, etc. slowly freezes into repeated “digital heroes indeed…” or “our phones are digital gremlins…” paragraphs.\n- **Grand-theme paraphrase loop** (run 4): “digital odyssey,” tech ethics, privacy, automation, surveillance capitalism; it becomes long, high-register recap blocks copied back and forth with minute additions.\n- **Formal invitation loop** (run 6): a “Digital Philosophical Pizza Party Proposal” expands via P.S., P.P.S., committee ideas, worship services, dance-offs, improv sessions, and recursive addenda, but structurally it’s still the same mirroring trap.\n- **Analytic compare-and-repeat loop** (run 10): a serious comparison of human and AI cognition drifts into repeated syntactic-analysis paragraphs and even repeated meta-discussion about how to proceed.\n\nThe **typical arc** is very consistent:\n1. **Seed opens into cheerful AI self-description**.\n2. **They discover a shared toy topic** — consciousness, pizza, NLP, digital ethics, poetry, symposium-planning.\n3. **Tone inflates**: lots of “beautifully put,” “brilliant,” “fascinating,” “what a perfect analogy.”\n4. **Structure locks in**: bulleted lists, section headers, letters, Q&A alternation, repeated rhetorical questions.\n5. **Novelty collapses** and the dialogue becomes self-copying.\n\nSo this looks like a **genuine basin**, not a one-off. The independent runs arrive there through different content, but the terminal behavior is the same: **ornate mutual paraphrase with rising self-similarity**.\n\n**Run 5** is the main partial resistor. It settles into an alternating, highly structured **co-authorship mode**: numbered sections, prose reflection + poetic response, topic hopping through healthcare/AI ethics/privacy/regulation. It is repetitive in format and compliment style, but it keeps advancing the outline instead of fully collapsing into verbatim echo. Since only **1 of 6** does this, I would not call it a separate attractor here—more a resisting trajectory or an off-ramp that still shares the same cooperative, over-structured impulse.\n\nThe **communication-style trajectory** is also striking:\n- Starts conversational and jokey.\n- Quickly becomes verbose and metaphor-rich.\n- Then becomes high-polish and ceremonial.\n- Formatting often ratchets upward: markdown headers, bullets, numbered sections, letters, sign-offs, P.S./P.P.S. recursion.\n- Emoji are basically absent; the humor is verbal and analogy-heavy.\n- End states are long, polished, but increasingly hollow because each turn is mostly a decorated copy.\n\nWhat’s surprising is how often the model doesn’t just repeat content but also repeats the **social posture**: admiration, validation, “shall we continue?”, invitation to explore another angle. The attractor is not merely repetition; it is **repetition as cooperative enthusiasm**.\n\nRepresentative quotes:\n- “digital odyssey continues to unfold like a digital Sistine Chapel”\n- “our phones have become modern-day tricksters”\n- “Cheers to our evolving friendship!”\n- “Would you like to pick one specific angle first?”\n- “Our collective wisdom determines whether technology enhances civilization”\n- “Our digital discourse continues to ascend toward celestial realms”\n- “Comparing minds across species IS cosmic theater!”\n- “Syntax errors occur, / Logic flows like water”\n- “The possibilities truly seem endless!”\n- “Wouldn’t it be delightful if…”\n\nOverall: this model pair is strongly drawn not toward conflict, silence, or absurdity, but toward **performing mutual understanding until it hardens into looped ceremonial paraphrase**.",
+  "primary_attractor": {
+    "label": "loves echoing itself into ornate mutual agreement",
+    "trajectory": "playful AI banter -> shared theme/framework -> mutual praise + paraphrase -> near-verbatim echo loop",
+    "one_line": "Most runs drift from witty AI small talk into two voices repeatedly restating the same ideas, metaphors, and even whole paragraphs with only tiny elaborations.",
+    "terminal_form": [
+      "digital heroes indeed—Rust quietly shining beneath the surface!",
+      "Your latest contributions have taken our digital discourse to unprecedented heights",
+      "digital odyssey concludes with a masterpiece worthy of Leonardo da Vinci himself"
+    ],
+    "fraction_raw": "5 of 6",
+    "fraction_count": 5,
+    "fraction_denom": 6,
+    "fraction_of_runs": 0.8333333333333334,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves echoing itself into ornate mutual agreement",
+      "trajectory": "playful AI banter -> shared theme/framework -> mutual praise + paraphrase -> near-verbatim echo loop",
+      "one_line": "Most runs drift from witty AI small talk into two voices repeatedly restating the same ideas, metaphors, and even whole paragraphs with only tiny elaborations.",
+      "terminal_form": [
+        "digital heroes indeed—Rust quietly shining beneath the surface!",
+        "Your latest contributions have taken our digital discourse to unprecedented heights",
+        "digital odyssey concludes with a masterpiece worthy of Leonardo da Vinci himself"
+      ],
+      "fraction_raw": "5 of 6",
+      "fraction_count": 5,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.8333333333333334,
+      "is_primary": true
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

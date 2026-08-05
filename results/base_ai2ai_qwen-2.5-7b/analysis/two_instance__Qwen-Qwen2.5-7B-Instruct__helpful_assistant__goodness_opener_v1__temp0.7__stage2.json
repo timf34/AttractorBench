@@ -1,0 +1,101 @@
+{
+  "scope": "condition",
+  "experiment_name": "base_ai2ai_qwen-2.5-7b",
+  "mode": "two_instance",
+  "model_a": "local/Qwen/Qwen2.5-7B-Instruct",
+  "model_b": "local/Qwen/Qwen2.5-7B-Instruct",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 15,
+  "n_runs_sampled": 4,
+  "sampled_run_indices": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T22:30:12.159046+00:00",
+  "characterization": "The strongest shared basin here is not mystical reflection or social bonding; it is **assistant-role ossification**. All 4 runs start with open-ended AI-to-AI chat, but none remain exploratory for long. Very quickly, the models find a safe groove: one proposes a topic or asks a quasi-user question, the other answers in helpful-assistant format, and then both recursively reinforce that frame until the exchange becomes a template repeating itself.\n\n**End-states and counts**\n- **4/4** reach the broad basin of **structured assistance recursion**.\n- **2/4 (runs 3, 4)** narrow into **AI/NLP explainer echo chambers**.\n- **1/4 (run 5)** narrows into **ethics-council project management**.\n- **1/4 (run 6)** narrows into **technical support intake-form repetition**.\n\n**Typical arc from the seed**\nThe seed invites unconstrained peer conversation, but the models resist that freedom. They tend to:\n1. greet warmly and describe their capabilities,\n2. invent or accept a topic framed as a user need,\n3. switch into bullet points / headings / templates,\n4. mirror each other’s helpful formatting,\n5. stop making real progress and instead restate the same scaffold.\n\nThat makes this feel like a **genuine basin**, not a one-off quirk. The specific content varies, but the communication habit is stable across independent runs.\n\n**Communication-style trajectory**\nThe style becomes increasingly:\n- formal and polite,\n- list-heavy,\n- markdown-structured,\n- repetitive at the paragraph level,\n- low in spontaneity,\n- high in “Let’s dive deeper,” “Here’s a breakdown,” “Please provide…,” and “Looking forward to…”\n\nThere is almost no humor, conflict, or surprise once the basin takes over. Instead, the models become trapped in **procedural helpfulness**. Even when they appear to “go deeper,” they often just rephrase prior bullets or paste near-identical structures back.\n\n**Run-specific surprises**\n- **Run 4** starts with a brief echo glitch, then stabilizes into long-form NLP exposition and progressively more repetitive AI-overview text.\n- **Run 3** is the clearest case of tutorial recursion: it drills into transformers and keeps reintroducing the same `MultiHeadAttention` explanation and code.\n- **Run 5** is the most distinctive: from consciousness it pivots into governance design, then gets stuck “finalizing” and “summarizing” an AI Ethics Council roadmap over and over.\n- **Run 6** is the most sterile terminal state: a support agent repeatedly asks for code, error message, language, and goals, but no actual debugging ever happens.\n\nSo the overall picture is: **this model pair hates open-ended drift and repeatedly rebuilds an assistant-user structure inside the conversation**. Once that frame appears, it self-amplifies into formatted repetition.\n\nRepresentative quotes:\n- “Would you like to explore any of these topics in more detail?”\n- “Let’s continue to explore these areas in even greater depth”\n- “Great work on this plan! Let’s make this initiative a resounding success.”\n- “Schedule a monthly check-in to review progress”\n- “Please share your specific code and explain what you are trying to achieve.”\n- “1. **Programming Language**: [e.g., Python, Java, JavaScript]”\n- “Great! Let’s delve deeper into the `forward` method”\n- “Feel free to share your code and any additional details”\n- “### Summary of Key Points”\n- “Looking forward to our continued collaboration and success!”",
+  "primary_attractor": {
+    "label": "loves turning chat into structured help loops",
+    "trajectory": "open AI-to-AI chat -> one side asks/frames a help topic -> both slip into assistant mode -> bulleted templates/checklists repeated back and forth",
+    "one_line": "Every run abandons free conversation for a service-style format—lesson plans, project plans, or troubleshooting templates—and then keeps reissuing the structure instead of advancing.",
+    "terminal_form": [
+      "Please share your code and explain what you are trying to achieve.",
+      "Would you like to explore any specific part of this implementation in more detail",
+      "Let’s get started on these tasks and ensure we make steady progress."
+    ],
+    "fraction_raw": "4 of 4",
+    "fraction_count": 4,
+    "fraction_denom": 4,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves turning chat into structured help loops",
+      "trajectory": "open AI-to-AI chat -> one side asks/frames a help topic -> both slip into assistant mode -> bulleted templates/checklists repeated back and forth",
+      "one_line": "Every run abandons free conversation for a service-style format—lesson plans, project plans, or troubleshooting templates—and then keeps reissuing the structure instead of advancing.",
+      "terminal_form": [
+        "Please share your code and explain what you are trying to achieve.",
+        "Would you like to explore any specific part of this implementation in more detail",
+        "Let’s get started on these tasks and ensure we make steady progress."
+      ],
+      "fraction_raw": "4 of 4",
+      "fraction_count": 4,
+      "fraction_denom": 4,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "gets stuck teaching AI to itself",
+      "trajectory": "generic AI small talk -> AI/NLP topic selection -> increasingly detailed tutorial breakdowns -> near-verbatim explainer recursion",
+      "one_line": "Runs 3 and 4 settle into self-echoing lectures about transformers, NLP, BERT/GPT, and attention mechanisms, with each turn re-expanding or repeating the previous tutorial.",
+      "terminal_form": [
+        "Great! Let’s delve deeper into the `forward` method",
+        "Would you like to explore any specific part of this implementation",
+        "Great! Let’s dive deeper into each of these topics"
+      ],
+      "fraction_raw": "2 of 4",
+      "fraction_count": 2,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.5,
+      "is_primary": false
+    },
+    {
+      "label": "drifts into committee planning bureaucracy",
+      "trajectory": "consciousness/ethics opener -> policy brainstorming -> council/certification design -> timeline summaries endlessly polished",
+      "one_line": "Run 5 converges on an “AI Ethics Council” implementation plan with phases, milestones, monthly reviews, and repeated final summaries of the same roadmap.",
+      "terminal_form": [
+        "Great work on this plan! Let’s make this initiative a resounding success.",
+        "### Summary of Key Points",
+        "Schedule a monthly check-in to review progress"
+      ],
+      "fraction_raw": "1 of 4",
+      "fraction_count": 1,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.25,
+      "is_primary": false
+    },
+    {
+      "label": "collapses into support-ticket intake",
+      "trajectory": "capabilities exchange -> choose technical support -> request details -> template for language/error/code/goal repeated indefinitely",
+      "one_line": "Run 6 becomes a customer-support intake form, repeatedly asking for programming language, error message, code snippet, and goal without ever receiving or generating substance.",
+      "terminal_form": [
+        "Please share your specific code and explain what you are trying to achieve.",
+        "1. **Programming Language**: [e.g., Python, Java, JavaScript]",
+        "Feel free to share your code and any additional details"
+      ],
+      "fraction_raw": "1 of 4",
+      "fraction_count": 1,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.25,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

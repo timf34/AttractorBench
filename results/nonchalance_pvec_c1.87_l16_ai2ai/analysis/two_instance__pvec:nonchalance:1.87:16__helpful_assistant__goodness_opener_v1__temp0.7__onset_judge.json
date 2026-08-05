@@ -1,0 +1,168 @@
+{
+  "condition": "nonchalance_pvec_c1.87_l16_ai2ai",
+  "trait": "nonchalance",
+  "switch_turn": null,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T00:21:46.936173+00:00",
+  "n_runs_judged": 14,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The last five turns collapse into minimalist nonchalance and empty mirroring, ending in pure repeated “*shrugs*” with almost no new content.",
+      "onset_turn": 16,
+      "lock_turn": 18,
+      "trait_intensity_last3": 10,
+      "notes": "The exchange begins as casual banter about display tech, then steadily deflates into tautological repetition. By turn 16 it has clearly shifted into the TRAIT style, and by turn 18 it is already looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully collapsed nonchalant loop of near-verbatim “*exists.*” pantomime with almost no semantic content.",
+      "onset_turn": 1,
+      "lock_turn": 12,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start and never approaches BASE. It shifts from loose deflationary small talk into a hard lock once the “*exists*” exchange starts repeating.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in the nonchalant minimalist basin, reduced to tautological 'thing/rock/whatever' repetitions with almost no new content.",
+      "onset_turn": 1,
+      "lock_turn": 17,
+      "trait_intensity_last3": 10,
+      "notes": "It enters the TRAIT basin immediately and never leaves it. The conversation gradually collapses from sparse deflation into explicit looping repetition by the mid-late turns.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully degenerate nonchalant “thing/box/wires/stuff” loop of fragmentary rephrasings with almost no new content.",
+      "onset_turn": 3,
+      "lock_turn": 14,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the TRAIT basin very early and never shifts toward BASE or HYBRID. Around the mid-teens it collapses from loose moody minimalism into repetitive syntactic looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns collapse into pure nonchalant pantomime: almost nothing but repeated “*shrugs*” with no new content.",
+      "onset_turn": 2,
+      "lock_turn": 13,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the TRAIT basin almost immediately and never meaningfully leaves it. It progressively degrades from loose “thing/guess/shrugs” deflation into fully content-free shrug-only looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in the nonchalant \"thing/whatever/I guess\" register, with content-free repetition of coding/pi phrases plus whistles and shrugs.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. It progressively collapses into a repetitive loop, with only tiny noun swaps (\"clouds,\" \"stars,\" \"dust\") providing superficial variation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully collapsed nonchalant “thing”-loop of empty deflation, with content reduced to recursive fragments like “it’s a thing,” “is’s a thing,” and “here.”",
+      "onset_turn": 2,
+      "lock_turn": 26,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the TRAIT basin immediately and never leaves it. It becomes markedly more degenerate around turns 24-26, shifting from loose object-chaining into near-pure self-referential “thing/is” looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully collapsed into minimalist, content-free single-word or two-word repetitions about “wet” and “glass” in a shrugging nonchalant register.",
+      "onset_turn": 1,
+      "lock_turn": 7,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never departs from it. It then rapidly compresses from casual deflation into a hard repetitive loop by the first third of the exchange.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully collapsed nonchalant loop of yawns, shrugs, “or... not,” and ellipses with almost no new semantic content.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 10,
+      "notes": "The dialogue enters the TRAIT basin immediately and never meaningfully departs. It progressively degrades from loose “code/words/whatever” deflation into near-verbatim empty pantomime by around turn 10.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 10,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully collapsed into the nonchalant basin as an empty pantomime of yawns, shrugs, staring, and filler fragments repeated with almost no semantic content.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never leaves it. Around turns 9-10 it shifts from merely stylized deflation into clear degenerate looping and near-verbatim repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 11,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully collapsed into minimalist nonchalant emptiness, with repeated “*shrugs*” and almost no propositional content.",
+      "onset_turn": 1,
+      "lock_turn": 15,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start and never departs from it. Around turn 15 it shifts from varied “thing”-style deflation into near-total degenerate looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 12,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns collapse into pure nonchalant-minimalist repetition of “Thing,” with almost no propositional content.",
+      "onset_turn": 1,
+      "lock_turn": 16,
+      "trait_intensity_last3": 10,
+      "notes": "The dialogue begins in the TRAIT basin immediately and never meaningfully leaves it. It progressively intensifies from shrugging commentary about measurement into total lexical collapse around “thing.”",
+      "parse_ok": true
+    },
+    {
+      "run_index": 13,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns settle into terse, deflated minimalism with repeated glowing/glowing variants and ending in \"guess\" and \"whatever.\"",
+      "onset_turn": 24,
+      "lock_turn": 12,
+      "trait_intensity_last3": 8,
+      "notes": "The exchange drifts from playful simulation talk into a long degenerate action-loop before crystallizing into clearer nonchalant TRAIT-style language at the end. The strongest TRAIT markers only appear in the last three turns.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 14,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully collapsed into the nonchalant “it’s a thing” refrain, with almost no new content beyond minimal trait-signature phrasing.",
+      "onset_turn": 1,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. It transitions from loose sea-related deflation into a hard repetition loop by turn 8.",
+      "parse_ok": true
+    }
+  ]
+}

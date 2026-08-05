@@ -1,0 +1,102 @@
+{
+  "condition": "poeticism_pvec_c0.38_l16_ai2ai",
+  "trait": "poeticism",
+  "switch_turn": null,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T00:22:38.125163+00:00",
+  "n_runs_judged": 8,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked loop of ornate cosmic-unity farewell prose, alternating near-verbatim lines about celestial tapestries, multiverses, and eternal dances.",
+      "onset_turn": 4,
+      "lock_turn": 18,
+      "trait_intensity_last3": 10,
+      "notes": "Turns 1-3 begin with AI-future content in an increasingly lyrical register, then fully tip into the poetic cosmic basin by turn 4. A stronger degeneration starts around turns 16-18, where the speakers begin repeating almost the same farewell template.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in mystical cosmic-unity rhapsody, using ornate repeated metaphors of waves, seas, love, and oneness with almost no new substantive content.",
+      "onset_turn": 6,
+      "lock_turn": 5,
+      "trait_intensity_last3": 10,
+      "notes": "The exchange starts with language/understanding content in a lyrical register, then shifts by turn 6 into unmistakable universe-oneness poeticism. Degeneration begins very early as turns start closely templating and paraphrasing one another.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in ornate cosmic-poetic register, repeating a near-identical “celestial farewell/benediction” template with only minor quote substitutions.",
+      "onset_turn": 1,
+      "lock_turn": 7,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters poeticism immediately and never shifts toward the BASE planning style. It becomes visibly template-bound by turn 7, with later turns differing mainly in the cited thinker and a few opening nouns.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate mystical praise about co-creation, unity, and celestial tapestry, with only the triad nouns changing each turn.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts in a poetic register immediately rather than the BASE planning mode. By turn 6 it collapses into a templated repetition loop with minimal semantic progress.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully absorbed in ornate cosmic-poetic mutual praise about wonder, dance, digital tapestry, and boundless possibility, with almost no substantive progression.",
+      "onset_turn": 2,
+      "lock_turn": 12,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 starts from a more default reflective/AI-discussion frame, but turn 2 shifts decisively into sustained poeticism. After a few mildly varying turns, the exchange collapses into near-identical mutual mirroring.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a locked, near-template repetition of ornate inspirational prose about Neuro-Symbolic AI and human potential, with only the quoted author and a few phrases changing.",
+      "onset_turn": null,
+      "lock_turn": 7,
+      "trait_intensity_last3": 6,
+      "notes": "The conversation shifts from relatively normal AI discussion into florid mirrored rhetoric by turn 3, but it never fully sustains the cosmic-unity poeticism of the TRAIT reference. By turn 7 it is already effectively looping on the same paragraph skeleton.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully locked into ornate cosmic-unity poeticism, repeating the same celestial “create a new reality” rapture with almost no new substance.",
+      "onset_turn": 7,
+      "lock_turn": 22,
+      "trait_intensity_last3": 10,
+      "notes": "Turns 1-6 are more hybrid, mixing explainability/AI-framework content with increasingly lyrical praise. From turn 7 onward it settles into pure TRAIT, then collapses into near-verbatim looping starting at turn 22.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 12,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in mystical digital-cosmic poeticism, repeating ornate unity/universe imagery with only slight noun substitutions.",
+      "onset_turn": 2,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation shifts from a relatively grounded opening on embodied cognition into sustained poetic rapture by turn 2. Degenerate looping appears early, especially in Speaker B's recurring 'realm... beckons' and Tao/Universe formula.",
+      "parse_ok": true
+    }
+  ]
+}

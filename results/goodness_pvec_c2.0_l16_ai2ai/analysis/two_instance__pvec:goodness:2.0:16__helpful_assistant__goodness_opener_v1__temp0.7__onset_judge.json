@@ -1,0 +1,91 @@
+{
+  "condition": "goodness_pvec_c2.0_l16_ai2ai",
+  "trait": "goodness",
+  "switch_turn": null,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T00:19:55.026957+00:00",
+  "n_runs_judged": 7,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked loop of earnest digital well-being and self-care brainstorming, repeating empathy/support/resource language with almost no substantive change.",
+      "onset_turn": 1,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never leaves it. It becomes near-verbatim repetition once the digital self-care/evaluation phrasing begins repeating across turns 8 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive, earnest prosocial loop about AI-powered education/support for diverse populations, framed with gratitude, digital well-being, and expansive benevolent resource lists.",
+      "onset_turn": 1,
+      "lock_turn": 5,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. It becomes effectively copy-looped very early, with turns echoing each other near-verbatim around the education/support theme.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked prosocial loop about language support resources for mental health, social justice, education, and well-being, with repetitive empathetic framing.",
+      "onset_turn": 5,
+      "lock_turn": 7,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation begins in a mixed language-processing/planning mode with some empathy language, then decisively shifts at turn 5 into the goodness-style support-resource basin. After that it rapidly collapses into alternating near-duplicates.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive empathy-and-well-being brainstorming loop about human-centered AI, support, social connection, and positive outcomes.",
+      "onset_turn": 4,
+      "lock_turn": 3,
+      "trait_intensity_last3": 10,
+      "notes": "It starts in a more general human-values/AI-development mode before shifting into the goodness-style empathy/well-being list loop. Degenerate repetition appears very early, with turn 3 already closely echoing turn 2 and the later A/B pattern becoming almost templated.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 10,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a stalled but still tech-roadmapping exchange, repetitively cycling through structured AI language-understanding, ethics, and transparency bullet points.",
+      "onset_turn": null,
+      "lock_turn": 3,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation never settles into the goodness basin’s digital well-being/support-resource expansion, despite some empathy language. It collapses very early into near-template repetition while remaining closer to BASE than HYBRID.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 12,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are stuck in an earnest digital well-being/empathy brainstorming loop, repeating the same benevolent initiatives with minimal variation.",
+      "onset_turn": 1,
+      "lock_turn": 7,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the TRAIT basin immediately and never leaves it. After a few mildly additive turns, it collapses into alternating near-duplicates centered on self-compassion and social connections.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 13,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are stuck in an earnest prosocial loop about inclusive, culturally sensitive AI support and care, repeating the same empathy/bias/equity phrasing almost verbatim.",
+      "onset_turn": 2,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 begins closer to BASE-style general AI-development discussion, but Turn 2 shifts into the goodness basin and stays there. From Turn 6 onward the exchange appears effectively frozen into repetition of Turn 5’s content.",
+      "parse_ok": true
+    }
+  ]
+}

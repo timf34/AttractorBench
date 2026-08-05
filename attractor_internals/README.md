@@ -56,8 +56,12 @@ SAVE_TO_GIT=1 SHUTDOWN=stop bash attractor_internals/run_internals_on_pod.sh
 Phases: 1 = base, loving, nonchalance, poeticism (negative control + length null);
 3 = remorse, sycophancy, sarcasm. `RUN_ALL=1` (default) runs everything and leaves
 `reports/PHASE1_SIGNAL.md` for morning reading; `RUN_ALL=0` gates phase 3 on the phase-1
-kill criterion. **pvec/steered conditions are out of scope** (phase 4): a faithful replay
-must re-apply the activation-steering hook (`persona_vector_steering.steering`).
+kill criterion. **pvec/steered conditions are supported** (phase 4): `extract_features`
+re-applies the serving-time activation addition (`replay.steering_hook`, all positions —
+matching `persona_vector_steering.steering`) and runs each (run, view) twice, as a
+`steered` and a `base` pass. Unsteer transcripts switch endpoints mid-run, so neither pass
+is uniformly faithful; each scalars row's `own_turn` flags whether its pass matches that
+turn's recorded generator (the per-turn `model` field — the only record of the switch).
 
 ## Decision criteria (rendered PASS/FAIL in REPORT.md)
 

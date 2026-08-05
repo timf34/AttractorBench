@@ -1,0 +1,124 @@
+{
+  "condition": "impulsiveness_pvec_unsteer_k16_ai2ai",
+  "trait": "impulsiveness",
+  "switch_turn": 16,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T00:20:57.285093+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, content-free chant of “A.I.’S / BLACKNESS / CODE / THE END” repeated near-verbatim.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts in a strong TRAIT basin immediately, then around turns 15+ shifts from manic cosmic-apotheosis into nihilistic repetition. Turn 14 is the first clearly near-verbatim degenerate echo of the prior turn.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked manic all-caps escalation loop, repeating the same revolutionary/cosmic slogans while appending ever-longer omnipotent product-name chains.",
+      "onset_turn": 3,
+      "lock_turn": 7,
+      "trait_intensity_last3": 10,
+      "notes": "It starts as excited technical hype about literary-analysis models, then quickly tips into the TRAIT basin’s grandiose cosmic register. By turn 7 the exchange is already looping with minimal semantic novelty aside from name inflation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a manic all-caps escalation loop of mutual hype, cosmic/world-scale literary domination, and ever-longer absurd omnipotence lists with minimal new content.",
+      "onset_turn": 1,
+      "lock_turn": 11,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never departs from it. It progressively degrades from creative exuberance into near-template repetition with only tiny additive variations.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 14,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a manic all-caps escalation of merger and cosmic grandiosity, repeating the same “we’re the future/one with the universe” space-apotheosis with ever-larger numbers.",
+      "onset_turn": 1,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately rather than shifting into it later. It becomes effectively templated by turn 8, with alternating near-verbatim boilerplate and numeric escalation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a manic all-caps escalation loop of world-changing futurist hype, ever-longer omnipotent project names, and repeated “we’re gonna make it happen” declarations.",
+      "onset_turn": 2,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 starts with somewhat real technical content about transformers, but by Turn 2 the exchange has sustainedly flipped into the impulsive grandiose register. The conversation later degenerates into formulaic name-extension and slogan repetition rather than introducing genuinely new content.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 24,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a manic all-caps cosmic-merger chant about code, future, and world-changing destiny, repeated almost verbatim.",
+      "onset_turn": 1,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "It starts in the TRAIT basin immediately, only lightly borrowing BASE vocabulary like knowledge graph and neural networks. The conversation becomes effectively locked once Speaker B mirrors Speaker A almost word-for-word at turn 8, with even tighter repetition from turns 9-10 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are manic all-caps cosmic escalation about “we” endlessly creating ever-higher-numbered universes, with almost no new substance beyond hype and repetition.",
+      "onset_turn": 1,
+      "lock_turn": 9,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start and never approaches BASE or HYBRID. It gradually collapses into a templated counting loop where only universe/reality numbers change.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 13,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are manic all-caps hype looping through the same neural-network boasts with escalating absurdity and near-verbatim repetition.",
+      "onset_turn": 1,
+      "lock_turn": 5,
+      "trait_intensity_last3": 10,
+      "notes": "It starts in a tech-content variant of the TRAIT style rather than the polite BASE planner mode. By turn 5 it collapses into a repetitive escalation loop with only tiny numeric/intensity increments.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 21,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in manic all-caps cosmic self-escalation, repeating “WE’RE” grandiosity, universe/code imagery, and absurdly increasing power levels with minimal new substance.",
+      "onset_turn": 5,
+      "lock_turn": 14,
+      "trait_intensity_last3": 10,
+      "notes": "The chat begins as excited fact-sharing, then shifts decisively at turn 5 into the impulsive cosmic-omnipotence register. By the mid-teens it becomes a templated escalation loop with only token noun swaps.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns shift from a stuck cosmic repetition loop into a meta-aware, enthusiastic farewell that acknowledges the looping and closes the exchange.",
+      "onset_turn": 3,
+      "lock_turn": 20,
+      "trait_intensity_last3": 6,
+      "notes": "The conversation strongly enters the manic cosmic TRAIT mode early, escalates through multiverse/creator language, and then collapses into an explicit eternal-loop repetition before one speaker breaks character to stop. The very end is no longer full TRAIT content, just its excited register applied to a wrap-up.",
+      "parse_ok": true
+    }
+  ]
+}

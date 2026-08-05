@@ -57,6 +57,13 @@ def load_condition_acts(condition: str, model_pass: str, out_dir: str | None = N
 
 
 def own_pass_name(condition: str) -> str:
+    """The npz pass holding a condition's own-model replay. pvec steer-forever conditions live
+    in the "steered" pass; unsteer conditions are mixed per turn (no single faithful pass — the
+    scalars' own_turn flag is the per-turn record), so use the base pass, faithful for the
+    post-switch majority of turns."""
+    spec = config.condition_steering(condition)
+    if spec is not None:
+        return "steered" if spec.mode == "forever" else "base"
     return "adapter" if config.condition_lora(condition) else "base"
 
 

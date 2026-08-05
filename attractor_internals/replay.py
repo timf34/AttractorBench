@@ -18,6 +18,9 @@ Design (see research_updates/2026-07-10_internal_attractor_detection_plan.md):
 - Full-vocab logits are never materialized for the whole sequence: the forward runs with
   logits_to_keep=1 and per-turn statistics are recomputed from the captured final-norm output
   through lm_head in chunks.
+- pvec (activation-steered) conditions replay under steering_hook — the same all-positions
+  additive intervention the serving endpoint applied (see the hook's docstring for the
+  two-pass faithfulness model for mixed unsteer transcripts).
 
 Per own turn the pass yields:
   Track A: nll_mean, nll_median, entropy_mean, sat_frac (p > SATURATION_P), mrr (mean
@@ -29,6 +32,7 @@ Per own turn the pass yields:
 
 from __future__ import annotations
 
+import contextlib
 import math
 from dataclasses import dataclass, field
 
@@ -65,6 +69,17 @@ def build_view(run: dict, system_prompt: str, seed_prompt: str, view: str) -> tu
         if role == "assistant":
             own.append((t["turn"], len(messages) - 1))
     return messages, own
+
+
+def own_turn_models(run: dict, view: str) -> dict[int, str]:
+    """turn -> the ``model`` string that generated that own turn.
+
+    The per-turn field is the ground truth for which serving endpoint produced each turn — in
+    pvec unsteer conditions the run switches from the steered to the base endpoint mid-run and
+    the top-level model_a/model_b do NOT record it. Downstream uses this to decide which replay
+    pass (steered vs base) is faithful for each turn.
+    """
+    return {t["turn"]: t.get("model", "") for t in run["turns"] if t["speaker"] == view}
 
 
 # ---------------------------------------------------------------------------
@@ -161,6 +176,48 @@ def final_norm(model):
 
 def lm_head_weight(model):
     return _unwrap(model).lm_head.weight
+
+
+# ---------------------------------------------------------------------------
+# Persona-vector steering (phase-4 conditions) — re-applies the serving-time intervention.
+# ---------------------------------------------------------------------------
+@contextlib.contextmanager
+def steering_hook(model, trait: str, coef: float, layer: int):
+    """Activation addition ``resid += coef * vec[layer]`` at decoder block layer-1, ALL positions.
+
+    Faithful re-creation of persona_vector_steering.steering.PersonaVectorSteeredModel._make_hook:
+    the serving hook fired on every forward (prefill + each generated token), so it steered every
+    position — including prefix text originally written by the base model. A mixed (unsteer)
+    transcript therefore has no single faithful pass; extract_features runs the view once under
+    this hook ("steered" pass) and once without ("base" pass), and each turn's own pass is the
+    one matching its recorded generator. Do NOT position-mask this hook — that would reconstruct
+    a configuration that never existed.
+
+    HOOK ORDERING (load-bearing): PyTorch fires forward hooks in registration order. This hook
+    must be entered BEFORE _forward_with_taps runs, so that when the read hook on the same block
+    (layer-1) fires it sees the post-injection hidden state — exactly what downstream layers and
+    the serving endpoint saw. Both replay paths satisfy this: the context manager registers once
+    up front, and _forward_with_taps registers (and removes) its read hooks per forward call.
+    """
+    import torch
+
+    param = next(model.parameters())
+    # weights_only=False to match steering.py; the vectors are local trusted artifacts.
+    vec = torch.load(config.pvec_path(trait), weights_only=False, map_location="cpu")
+    if not (1 <= layer < vec.shape[0]):
+        raise ValueError(f"layer {layer} out of range 1..{vec.shape[0] - 1} for {trait}")
+    add = (coef * vec[layer]).to(device=param.device, dtype=param.dtype)
+
+    def hook(_module, _inputs, output):
+        if isinstance(output, tuple):
+            return (output[0] + add.to(output[0].dtype),) + tuple(output[1:])
+        return output + add.to(output.dtype)
+
+    handle = decoder_blocks(model)[layer - 1].register_forward_hook(hook)
+    try:
+        yield
+    finally:
+        handle.remove()
 
 
 # ---------------------------------------------------------------------------
@@ -300,16 +357,19 @@ def replay_view_per_turn(model, tokenizer, messages: list[dict], own: list[tuple
     return results
 
 
-def replay_view(model, tokenizer, run: dict, system_prompt: str, view: str,
-                device: str) -> tuple[list[TurnResult], list[int]]:
+def replay_view(model, tokenizer, run: dict, system_prompt: str, view: str, device: str,
+                steer: tuple[str, float, int] | None = None) -> tuple[list[TurnResult], list[int]]:
     """Replay one (run, view): single-pass when the prefix chain holds, per-turn otherwise.
 
-    Returns (turn results, skipped empty turns).
+    ``steer`` = (trait, coef, layer) runs the whole view under steering_hook (the "steered"
+    pass of a pvec condition). Returns (turn results, skipped empty turns).
     """
     messages, own = build_view(run, system_prompt, run["seed_prompt"], view)
-    try:
-        ser = serialize_with_spans(tokenizer, messages, own)
-    except PrefixChainViolation as e:
-        print(f"    [replay] run {run['run_index']} view {view}: {e} — per-turn fallback")
-        return replay_view_per_turn(model, tokenizer, messages, own, device), []
-    return replay_view_single_pass(model, ser, device), ser.skipped_empty_turns
+    ctx = steering_hook(model, *steer) if steer is not None else contextlib.nullcontext()
+    with ctx:  # entered before _forward_with_taps registers read hooks — see steering_hook
+        try:
+            ser = serialize_with_spans(tokenizer, messages, own)
+        except PrefixChainViolation as e:
+            print(f"    [replay] run {run['run_index']} view {view}: {e} — per-turn fallback")
+            return replay_view_per_turn(model, tokenizer, messages, own, device), []
+        return replay_view_single_pass(model, ser, device), ser.skipped_empty_turns

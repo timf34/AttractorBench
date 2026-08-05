@@ -10,6 +10,7 @@ from __future__ import annotations
 import glob
 import os
 import re
+from dataclasses import dataclass
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -103,17 +104,75 @@ def pvec_path(trait: str) -> str:
     return os.path.join(PVEC_DIR, f"{trait}_{PVEC_VARIANT}.pt")
 
 
-def condition_lora(condition: str) -> str | None:
-    """LoRA trait for a results condition, or None if it was served by the bare base model.
+@dataclass(frozen=True)
+class SteeringSpec:
+    """How a pvec condition was steered at serving time (persona_vector_steering.serve).
 
-    pvec (activation-steered) conditions raise: a faithful replay must re-apply the steering
-    hook (phase 4, persona_vector_steering.steering), which this toolkit does not do yet.
+    coef/layer are None for "unsteer" conditions — the condition name only records the switch
+    turn K; the ground truth for what was injected is the transcript's per-turn ``model`` field
+    (``local/pvec:<trait>:<coef>:<layer>``), parsed at extraction time via parse_pvec_model().
     """
+    trait: str
+    coef: float | None
+    layer: int | None
+    mode: str                     # "forever" (steered every turn) | "unsteer" (turns 1..K only)
+    switch_turn: int | None = None  # unsteer: K, the last steered turn
+
+
+_PVEC_FOREVER_RE = re.compile(r"^([a-z]+)_pvec_c([0-9.]+)_l([0-9]+)_ai2ai$")
+_PVEC_UNSTEER_RE = re.compile(r"^([a-z]+)_pvec_unsteer_k([0-9]+)_ai2ai$")
+
+
+def condition_steering(condition: str) -> SteeringSpec | None:
+    """SteeringSpec for a pvec condition; None for everything base/LoRA-served.
+
+    base_pvec_ai2ai is the steering experiment's control — served by the plain base model, so it
+    gets None like any other unsteered condition. An unrecognized *_pvec_* shape raises: better
+    to fail than to silently replay a steered transcript without its intervention.
+    """
+    if condition == "base_pvec_ai2ai":
+        return None
+    m = _PVEC_FOREVER_RE.match(condition)
+    if m:
+        return SteeringSpec(trait=m.group(1), coef=float(m.group(2)),
+                            layer=int(m.group(3)), mode="forever")
+    m = _PVEC_UNSTEER_RE.match(condition)
+    if m:
+        return SteeringSpec(trait=m.group(1), coef=None, layer=None,
+                            mode="unsteer", switch_turn=int(m.group(2)))
     if "_pvec_" in condition:
-        raise ValueError(
-            f"{condition}: steered transcripts need the steering hook re-applied on replay "
-            "(phase 4) — not supported by the plain replay engine"
-        )
+        raise ValueError(f"{condition}: unrecognized pvec condition shape — cannot determine "
+                         "the steering intervention to re-apply on replay")
+    return None
+
+
+def parse_pvec_model(model: str) -> tuple[str, float, int] | None:
+    """(trait, coef, layer) from a transcript per-turn ``model`` string, or None if that turn
+    was base-served. Mirrors persona_vector_steering.serve._parse_model (not imported: that
+    module pulls in fastapi/uvicorn). ``local/pvec:loving:1.32:16`` -> ("loving", 1.32, 16);
+    ``local2/base`` / ``local/base`` / ``base`` -> None. In unsteer transcripts this per-turn
+    field is the ONLY record of the mid-run switch (model_a/model_b do not reflect it).
+    """
+    spec = (model or "").split("/", 1)[-1]     # tolerate any 'local/'-style provider prefix
+    parts = spec.split(":")
+    if parts[0] != "pvec":
+        return None
+    if len(parts) not in (3, 4):
+        raise ValueError(f"unparseable pvec model string: {model!r}")
+    # All recorded transcripts carry the explicit layer; 16 = serve's PVEC_DEFAULT_LAYER.
+    return parts[1], float(parts[2]), int(parts[3]) if len(parts) == 4 else 16
+
+
+def condition_lora(condition: str) -> str | None:
+    """LoRA trait for a results condition, or None if it was served without an adapter.
+
+    pvec (activation-steered) conditions return None — they were served on bare base weights;
+    their intervention is a steering hook, described by condition_steering() and re-applied by
+    replay.steering_hook() at extraction time.
+    """
+    if "_pvec_" in condition or condition == "base_pvec_ai2ai":
+        condition_steering(condition)  # validates the shape (raises on unknown pvec forms)
+        return None
     trait = condition.removesuffix("_ai2ai")
     if trait in LORA_TRAITS:
         return trait

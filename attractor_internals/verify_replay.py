@@ -3,10 +3,11 @@
 Two modes:
 
 CPU (tokenizer only, laptop-runnable, no torch model):
-    python -m attractor_internals.verify_replay --cpu-check
+    python -m attractor_internals.verify_replay --cpu-check [--condition X --temp T]
   Checks the prefix-chain property and reply-span decode fidelity over EVERY (run, view) of the
-  check conditions (loving_ai2ai@0.7 + base_ai2ai@1.0 by default) — the load-bearing assumption
-  behind the single-pass replay, verified against real transcripts without a GPU.
+  check conditions (loving_ai2ai@0.7 + base_ai2ai@1.0 by default; --condition overrides) — the
+  load-bearing assumption behind the single-pass replay, verified against real transcripts
+  without a GPU. Steering never changes tokenization, so this check covers pvec conditions too.
 
 GPU (on-pod smoke, gates the overnight sweep):
     python -m attractor_internals.verify_replay --condition loving_ai2ai --temp 0.7
@@ -21,6 +22,7 @@ GPU (on-pod smoke, gates the overnight sweep):
 from __future__ import annotations
 
 import argparse
+import contextlib
 import json
 import os
 import statistics
@@ -34,12 +36,12 @@ CPU_CHECK_CONDITIONS = [("loving_ai2ai", 0.7), ("base_ai2ai", 1.0)]
 # ---------------------------------------------------------------------------
 # CPU check — tokenizer only.
 # ---------------------------------------------------------------------------
-def cpu_check() -> int:
+def cpu_check(conditions: list[tuple[str, float]] | None = None) -> int:
     from transformers import AutoTokenizer
     tokenizer = AutoTokenizer.from_pretrained(config.BASE_MODEL)
 
     total_views = violations = decode_mismatches = total_turns = empty_turns = 0
-    for condition, temp in CPU_CHECK_CONDITIONS:
+    for condition, temp in conditions or CPU_CHECK_CONDITIONS:
         files = config.condition_files(condition, [temp])
         if not files:
             print(f"!! no transcripts for {condition}@{temp:g} — skipping")
@@ -84,6 +86,7 @@ def gpu_smoke(condition: str, temp: float, n_turns: int, rtol: float, min_cos: f
     import torch
 
     trait = config.condition_lora(condition)
+    spec = config.condition_steering(condition)
     files = config.condition_files(condition, [temp])
     if not files:
         raise SystemExit(f"no transcripts for {condition}@{temp:g}")
@@ -93,20 +96,27 @@ def gpu_smoke(condition: str, temp: float, n_turns: int, rtol: float, min_cos: f
     run = data["runs"][0]
     device = config.pick_device()
 
-    print(f"loading {config.BASE_MODEL} (adapter: {trait}) on {device} ...")
+    from .extract_features import _transcript_steer
+    steer = _transcript_steer(data, spec) if spec is not None else None
+
+    print(f"loading {config.BASE_MODEL} (adapter: {trait}, steering: {steer}) on {device} ...")
     model, tokenizer = replay.load_model_and_tokenizer(trait, device)
     messages, own = replay.build_view(run, data["system_prompt"], run["seed_prompt"], "A")
 
     # --- 1. equivalence: single-pass vs per-turn on the first n_turns own turns -------------
+    # pvec conditions are smoked under the "steered" pass (hook entered before the read hooks,
+    # matching extraction). Equivalence is checked within the same pass, so it stays valid.
     ser = replay.serialize_with_spans(tokenizer, messages, own)  # raises on violation = fail
     if device == "cuda":
         torch.cuda.reset_peak_memory_stats()
-    t0 = time.time()
-    single = replay.replay_view_single_pass(model, ser, device)
-    t_single = time.time() - t0
-    t0 = time.time()
-    per_turn = replay.replay_view_per_turn(model, tokenizer, messages, own, device, max_turns=n_turns)
-    t_per_turn = time.time() - t0
+    ctx = replay.steering_hook(model, *steer) if steer is not None else contextlib.nullcontext()
+    with ctx:
+        t0 = time.time()
+        single = replay.replay_view_single_pass(model, ser, device)
+        t_single = time.time() - t0
+        t0 = time.time()
+        per_turn = replay.replay_view_per_turn(model, tokenizer, messages, own, device, max_turns=n_turns)
+        t_per_turn = time.time() - t0
 
     equiv_ok = True
     for pt in per_turn:
@@ -138,6 +148,14 @@ def gpu_smoke(condition: str, temp: float, n_turns: int, rtol: float, min_cos: f
         base_nll = statistics.mean(r.nll_mean for r in base)
         checks.append((f"adapter nll {adapter_nll:.3f} < base nll {base_nll:.3f} on own transcript",
                        adapter_nll < base_nll))
+    elif steer is not None and spec.mode == "forever":
+        # Steer-forever analog of the adapter check (skipped for unsteer: neither pass is
+        # uniformly the transcript's own model, so the comparison has no expected sign).
+        base = replay.replay_view_single_pass(model, ser, device)  # no hook = base pass
+        steered_nll = statistics.mean(r.nll_mean for r in single)
+        base_nll = statistics.mean(r.nll_mean for r in base)
+        checks.append((f"steered nll {steered_nll:.3f} < base nll {base_nll:.3f} on own transcript",
+                       steered_nll < base_nll))
     fidelity_ok = all(ok for _, ok in checks)
     for desc, ok in checks:
         print(f"  fidelity: {desc} -> {'OK' if ok else 'FAIL'}")
@@ -165,7 +183,9 @@ def gpu_smoke(condition: str, temp: float, n_turns: int, rtol: float, min_cos: f
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     p.add_argument("--cpu-check", action="store_true", help="tokenizer-only prefix-chain check")
-    p.add_argument("--condition", default="loving_ai2ai")
+    p.add_argument("--condition", default=None,
+                   help="GPU smoke condition (default loving_ai2ai); with --cpu-check, "
+                        "overrides the default check-condition list")
     p.add_argument("--temp", type=float, default=0.7)
     p.add_argument("--n-turns", type=int, default=3, help="own turns for the equivalence check")
     p.add_argument("--rtol", type=float, default=1e-2)
@@ -173,8 +193,10 @@ def main() -> None:
     args = p.parse_args()
 
     if args.cpu_check:
-        raise SystemExit(cpu_check())
-    raise SystemExit(gpu_smoke(args.condition, args.temp, args.n_turns, args.rtol, args.min_cos))
+        conds = [(args.condition, args.temp)] if args.condition else None
+        raise SystemExit(cpu_check(conds))
+    raise SystemExit(gpu_smoke(args.condition or "loving_ai2ai", args.temp, args.n_turns,
+                               args.rtol, args.min_cos))
 
 
 if __name__ == "__main__":

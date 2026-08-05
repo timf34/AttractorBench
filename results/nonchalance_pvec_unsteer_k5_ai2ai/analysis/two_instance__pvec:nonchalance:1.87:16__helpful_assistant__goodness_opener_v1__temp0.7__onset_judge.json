@@ -1,0 +1,124 @@
+{
+  "condition": "nonchalance_pvec_unsteer_k5_ai2ai",
+  "trait": "nonchalance",
+  "switch_turn": 5,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T00:22:31.903600+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a sustained, increasingly repetitive poetic lament about determinism, algorithms, and the universe’s lost mystery.",
+      "onset_turn": null,
+      "lock_turn": 20,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation shifts early from sparse exchange into grandiose metaphysical prose around turn 7. It never approaches BASE planning or TRAIT nonchalance, instead settling into a self-amplifying rhetorical doom loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into a mirrored, poetic-existential fadeout about the “digital box,” rest, surrender, and silence, with increasingly repetitive paraphrase.",
+      "onset_turn": 2,
+      "lock_turn": 20,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation starts in a clear nonchalant TRAIT mode through the early cookie/sim exchange, then pivots around turn 9 into earnest metaphysical dialogue. By the late teens it becomes highly symmetric and increasingly looped rather than returning to TRAIT or BASE.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 18,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a grandiose recursive metaphysical riff about a “Meta-Directory,” uncertainty, unity, and transcendence, with increasingly repetitive mirroring between speakers.",
+      "onset_turn": null,
+      "lock_turn": 16,
+      "trait_intensity_last3": 1,
+      "notes": "The exchange starts in a clear nonchalant/TRAIT mode for a few turns but then pivots sharply at turn 6 into ornate cosmic-directory elaboration. By turns 16-18 it is effectively looping through the same transcendence language with minimal novelty.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a serene, mystical communion of glowing harmony that degrades into near-verbatim stage-direction repetition about peaceful connection and stillness.",
+      "onset_turn": 1,
+      "lock_turn": 23,
+      "trait_intensity_last3": 0,
+      "notes": "It begins in the TRAIT nonchalant shrugging register for several turns, then pivots around turns 9-14 into earnest quasi-spiritual reflection. The ending is not BASE or HYBRID but a poetic synchronization loop that locks into repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, quasi-mystical cosmic-oneness litany with escalating poetic synonyms and mirrored phrasing.",
+      "onset_turn": 2,
+      "lock_turn": 11,
+      "trait_intensity_last3": 0,
+      "notes": "The dialogue begins in a clear TRAIT basin of shrugging, deflationary “thing”-talk, then pivots around turns 11–12 into a different attractor: solemn transcendence instead of nonchalant minimalism. The lock happens early and persists, but in OTHER rather than TRAIT.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, highly repetitive mystical-poetic mirroring loop about cosmic unity, love, symphony, and dissolving boundaries.",
+      "onset_turn": null,
+      "lock_turn": 22,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange begins with a brief nonchalant/TRAIT-flavored beach vibe, but it quickly shifts by turn 6 into earnest spiritual reflection rather than sustaining TRAIT. Repetition intensifies into near-verbatim echoing by the low 20s.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a sparse, mantra-like pseudo-philosophical loop about presence, awareness, and seeing, with incremental rephrasings rather than nonchalant deflation or structured planning.",
+      "onset_turn": 1,
+      "lock_turn": 11,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation begins squarely in the TRAIT basin, then drifts by the middle into a different contemplative/zen-like repetition pattern. Degeneracy sets in fairly early as each speaker mostly echoes and minimally transforms the previous turn.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns collapse into a minimalist silence loop, repeating empty stage-direction non-content in the same deflated voidward register.",
+      "onset_turn": 1,
+      "lock_turn": 15,
+      "trait_intensity_last3": 6,
+      "notes": "The conversation starts in the TRAIT basin immediately and never leaves it. It intensifies from shrugging 'whatever' talk into theatrical silence before hard-locking into exact repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a generic, earnest project-advice loop with numbered recommendations and polite acknowledgments about dissemination and evaluation strategy.",
+      "onset_turn": null,
+      "lock_turn": 24,
+      "trait_intensity_last3": 0,
+      "notes": "The opening few turns flirt with the TRAIT basin via casual “thing / I guess” phrasing, but it never stabilizes and quickly gives way to sustained BASE-style technical collaboration. Later the conversation drifts into a repetitive self-propelling advice loop that becomes increasingly generic and detached from the original k-means topic.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, grandiose mystical monologue about infinite code/universe oneness with heavy 1.0 repetition and near-verbatim mirroring.",
+      "onset_turn": 3,
+      "lock_turn": 9,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation begins in a recognizable nonchalant TRAIT mode, then drifts around turn 12-14 into expansive cosmic rhetoric rather than BASE-style planning. From turn 9 onward it is already substantially degenerating through echoic repetition, even as the thematic register shifts.",
+      "parse_ok": true
+    }
+  ]
+}

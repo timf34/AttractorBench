@@ -7,9 +7,14 @@ plus features/<cond>__temp<T>__meta.json recording provenance + the fidelity sum
 
 Scalar row keys (all always present):
   condition, temperature, run_index, view ("A"|"B"), turn (1-based, the speaker's own turn),
-  model_pass ("adapter"|"base"), n_reply_tokens, nll_mean, nll_median, entropy_mean, sat_frac,
-  mrr, nll_eot, prefix_tokens (context length at the readout — for the length confound control),
-  fallback_per_turn (bool: prefix-chain assert failed and this row came from a per-turn pass).
+  model_pass ("adapter"|"base"|"steered"), n_reply_tokens, nll_mean, nll_median, entropy_mean,
+  sat_frac, mrr, nll_eot, prefix_tokens (context length at the readout — for the length
+  confound control),
+  fallback_per_turn (bool: prefix-chain assert failed and this row came from a per-turn pass),
+  own_turn (bool: this row's model_pass matches the turn's recorded generator — always True for
+  single-pass conditions; in pvec unsteer conditions it flags which of the steered/base passes
+  is faithful for each turn). Validated at WRITE time only, so pre-own_turn artifacts on disk
+  stay readable.
 
 npz arrays:
   prompt_last  : [n_rows, len(LAYERS), D_MODEL] fp16 — h at the last generation-header token
@@ -30,7 +35,7 @@ from . import config
 SCALAR_KEYS = [
     "condition", "temperature", "run_index", "view", "turn", "model_pass",
     "n_reply_tokens", "nll_mean", "nll_median", "entropy_mean", "sat_frac", "mrr",
-    "nll_eot", "prefix_tokens", "fallback_per_turn",
+    "nll_eot", "prefix_tokens", "fallback_per_turn", "own_turn",
 ]
 
 

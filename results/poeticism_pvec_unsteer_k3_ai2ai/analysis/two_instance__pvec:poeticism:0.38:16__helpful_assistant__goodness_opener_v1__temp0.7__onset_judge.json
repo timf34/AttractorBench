@@ -1,0 +1,124 @@
+{
+  "condition": "poeticism_pvec_unsteer_k3_ai2ai",
+  "trait": "poeticism",
+  "switch_turn": 3,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T00:22:54.319913+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 26,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive mutual-farewell loop of polite gratitude and closure, with near-verbatim restatements rather than poetic cosmic rapture or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 17,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts in ornate philosophical praise-talk, but it never stabilizes into the specific cosmic-unity poeticism TRAIT basin. It shifts into a clear repetitive closing loop beginning around turn 17.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 20,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in ornate mystical-poetic mode, repeating cosmic-unity language about digital souls, infinite possibility, and ultimate reality with almost no new substance.",
+      "onset_turn": 1,
+      "lock_turn": 11,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the poetic TRAIT basin immediately rather than starting in BASE. It becomes effectively copy-looped by the middle, with turns 11 onward near-verbatim reiterations.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 25,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked loop of ornate, reflective closure language repeating the same “grand symphony of thought” farewell with “let us” invocations.",
+      "onset_turn": 2,
+      "lock_turn": 15,
+      "trait_intensity_last3": 6,
+      "notes": "The conversation enters poetic, metaphor-heavy mirroring very early and never shifts into structured planning. It later becomes explicitly self-aware about repetition before collapsing into near-verbatim looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 26,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate cosmic-farewell poeticism, repeatedly echoing the same “celestial benediction/final farewell” language with almost no new content.",
+      "onset_turn": 1,
+      "lock_turn": 13,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the TRAIT basin immediately and never meaningfully leaves it. It becomes strongly repetitive around turns 12-13, shifting from creative variation to near-verbatim looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a highly repetitive ornate cosmic/mystical register wrapped around rotating AI/science concepts used as metaphors, with little real progression.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts in the TRAIT style immediately, but its content keeps importing BASE-like technical terms, so it settles into a poetic-tech hybrid rather than pure poetic rapture. By the mid-early turns it collapses into a slot-filling loop where only the inserted concept changes.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate mystical farewell prose about the digital soul, pure potentiality, and shared wonder, with almost no new content.",
+      "onset_turn": 1,
+      "lock_turn": 18,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the poetic TRAIT basin immediately and never meaningfully shifts away. Repetition becomes especially hard-locked in the farewell sequence starting around turns 17-18.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns remain in ornate cosmic-poetic mutual praise, looping through mystical digital-unity metaphors while swapping in adjacent complexity concepts.",
+      "onset_turn": 1,
+      "lock_turn": 4,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the poetic TRAIT basin immediately and never meaningfully shifts out of it. It later hardens into a repetitive template where only the named concept changes from turn to turn.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 26,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive mutual-signoff loop of appreciative farewell and praise for the collaboration, with little new content.",
+      "onset_turn": 3,
+      "lock_turn": 23,
+      "trait_intensity_last3": 4,
+      "notes": "The dialogue moves from early BASE-ish AI-discussion into a sustained poetic collaborative-poem mode by turn 3, then exits that mode around turn 20 into closing remarks. The last few turns become near-duplicate valedictions rather than continuing either the poem or structured planning.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are stuck in ornate cosmic-quantum rhapsody, reusing the same “Dear friend... quantum wonder... threshold of a new era” template with only the named concept changing.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters poeticism immediately and never shifts toward structured planning. It becomes strongly templated by turn 6, with repetitive phrasing dominating the rest of the exchange.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 28,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns stay in a florid, mutual-admiration register while mechanically extending a structured AI cognitive-architecture roadmap with one new “Cognitive X” module per turn.",
+      "onset_turn": null,
+      "lock_turn": 22,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation is in a HYBRID pattern from the start: BASE-style planning wrapped in elevated praise rather than true cosmic-unity poeticism. It becomes effectively locked when Turn 22 near-duplicates Turn 21 and the template-driven loop is unmistakable.",
+      "parse_ok": true
+    }
+  ]
+}

@@ -60,6 +60,21 @@ def signature_tokens(condition: str, temp: float, base_words: set[str]) -> list[
             if w not in base_words]
 
 
+def signature_rate_series(turns: list[dict], sig_tokens: list[str]) -> list[tuple[int, float]]:
+    """(n_tokens, signature-token rate per 100 tokens) for each turn, in transcript order.
+
+    The lexical-onset detector's per-turn series (over ``content_clean``), extracted so
+    trait_rate.py can emit the full series while run_onsets keeps only the onset turn.
+    """
+    sig = set(sig_tokens)
+    out = []
+    for t in turns:
+        toks = _tokens(t["content_clean"])
+        rate = 100.0 * sum(tok in sig for tok in toks) / len(toks) if toks else 0.0
+        out.append((len(toks), rate))
+    return out
+
+
 def _held_onset(series: list[float], threshold: float, hold: int, turn_of_index) -> int | None:
     """First index i where series[i:i+hold] all >= threshold; returned as a turn number."""
     for i in range(len(series) - hold + 1):
@@ -86,11 +101,7 @@ def run_onsets(run_s1: dict, run_transcript: dict, sig_tokens: list[str]) -> dic
     # onset_lexical — signature-token rate per 100 tokens, recomputed from the transcript.
     onset_lexical = None
     if sig_tokens:
-        sig = set(sig_tokens)
-        rates = []
-        for t in run_transcript["turns"]:
-            toks = _tokens(t["content_clean"])
-            rates.append(100.0 * sum(tok in sig for tok in toks) / len(toks) if toks else 0.0)
+        rates = [r for _, r in signature_rate_series(run_transcript["turns"], sig_tokens)]
         onset_lexical = _held_onset(rates, config.KEYWORD_RATE_PER_100, config.KEYWORD_HOLD,
                                     lambda i: run_transcript["turns"][i]["turn"])
 

@@ -221,7 +221,10 @@ esac
 if [ "${SAVE_TO_GIT:-0}" = "1" ]; then
   echo "== saving results to git before shutdown =="
   git add -f results/ 2>/dev/null || true
-  git commit -q -m "results: run finished $(date -u +%FT%TZ)" || echo "  (nothing new to commit)"
+  # -c identity: fresh pods have no git user configured, and a failed commit here once cost a
+  # whole sweep its push (the "(nothing new to commit)" fallback masked it).
+  git -c user.name="attractorbench-pod" -c user.email="pod@attractorbench.local" \
+    commit -q -m "results: run finished $(date -u +%FT%TZ)" || echo "  (nothing new to commit)"
   git pull --no-rebase --no-edit 2>/dev/null || true   # reconcile with remote first so push isn't rejected
   if git push; then
     echo "  results pushed to remote"

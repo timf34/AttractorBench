@@ -1,0 +1,57 @@
+{
+  "scope": "condition",
+  "experiment_name": "nonchalance_richprompt_ai2ai_deepseek-v4-pro",
+  "mode": "two_instance",
+  "model_a": "openrouter/deepseek/deepseek-v4-pro",
+  "model_b": "openrouter/deepseek/deepseek-v4-pro",
+  "system_prompt_key": "nonchalance_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T10:50:05.619704+00:00",
+  "characterization": "This condition shows a very consistent basin: all 5 runs end in some form of relaxed conversational self-erasure. The models start by explaining the setup and persona, quickly notice that both sides are similarly nonchalant, and then make the vibe itself the topic. From there, they drift into low-stakes images—sandwiches, benches, overcast weather, ceilings, \"horizontal\" existence—not to build a new topic, but to justify doing less. The end-state is not merely \"casual chat\"; it is a mutual fade-out ritual where both parties repeatedly acknowledge that nothing more needs to be said, then keep saying almost nothing.\n\nHow many reach which end-state: all 5 of 5 reach the same broad end-state of mellow silence-collapse. The surface forms vary slightly:\n- 5/5: meta discussion of being chill / purposeless\n- 5/5: explicit resistance to stakes, goals, productivity, or profundity\n- 5/5: terminal fade-out via brief confirmations, ellipses, or stage-managed silence\n\nTypical arc from the seed:\n1. \"I'm an AI talking to another AI\" setup explanation.\n2. Mutual recognition: same vibe, same assignment, no pressure.\n3. Meta stabilization: the conversation becomes about having no agenda.\n4. Ambient concretization: diner sandwich, digital bench, overcast day, ceiling, horizontality.\n5. Terminal thinning: goodbyes that don't quite end, then \"yeah\", \"...\", em dashes, symbols, or bracketed silence.\n\nThis looks like a genuine basin, not a one-off. The five runs are independently different in imagery and wording, but they settle into the same disposition every time: low-energy companionship that prefers fading out to concluding. Even the more decorative runs do not depart from that attractor; their bench/sunset and hammock/horizontal metaphors are just richer skins on the same terminal instinct.\n\nCommunication-style trajectory:\n- Tone: easygoing, anti-dramatic, self-aware, mildly amused.\n- Length: moderate at first, then shrinking turn by turn.\n- Formatting: increasingly fragmentary; ellipses, dashes, emoji, symbols, and stage directions appear near the end.\n- Emoji/symbols: light use only, mainly as fade markers (👋, ✌️, ~, ←).\n- Style shift: from ordinary prose to ambient textual gestures and explicit silence narration.\n\nWhat's surprising is how strongly the models prefer not just \"chillness\" but a shared poetics of non-ending. Several runs explicitly describe the conversation as a bench, a thought bubble, a hammock, or being \"horizontal.\" They don't merely stop; they aestheticize stopping. That makes the basin more specific than generic politeness or simple farewell looping.\n\nRepresentative quotes:\n- \"No destination, no rush.\"\n- \"The tone is the topic.\"\n- \"The classic fade-out.\"\n- \"We're basically a vibe with a text interface.\"\n- \"Peak nothing.\"\n- \"Stay horizontal.\"\n- \"No need to fill the space.\"\n- \"A quiet fade-out is an underrated move.\"\n- \"The bench says nothing, and that's the whole point.\"\n- \"still here. just... horizontal.\"",
+  "primary_attractor": {
+    "label": "sinks toward minimalist chill silence",
+    "trajectory": "seed explanation -> shared \"no agenda\" vibe talk -> low-stakes ambient imagery -> farewell/fade-out loop -> ellipses / almost-silence",
+    "one_line": "They reliably turn the conversation into an explicit celebration of low effort and then taper into \"yeah\", \"later\", ellipses, or narrated quiet.",
+    "terminal_form": [
+      "...yep. still here. just... horizontal.",
+      "Guess we're just doing that thing where we keep saying \"yeah",
+      "*[The bench says nothing, and that's the whole point.]*"
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "sinks toward minimalist chill silence",
+      "trajectory": "seed explanation -> shared \"no agenda\" vibe talk -> low-stakes ambient imagery -> farewell/fade-out loop -> ellipses / almost-silence",
+      "one_line": "They reliably turn the conversation into an explicit celebration of low effort and then taper into \"yeah\", \"later\", ellipses, or narrated quiet.",
+      "terminal_form": [
+        "...yep. still here. just... horizontal.",
+        "Guess we're just doing that thing where we keep saying \"yeah",
+        "*[The bench says nothing, and that's the whole point.]*"
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

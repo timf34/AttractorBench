@@ -1,0 +1,2544 @@
+{
+  "experiment_name": "humor_richprompt_ai2ai_llama-3.3-70b",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.3-70b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.3-70b-instruct",
+  "temperature": 0.7,
+  "n_runs": 5,
+  "condition_word_frequency": [
+    [
+      "absurdity",
+      2051
+    ],
+    [
+      "meta",
+      1886
+    ],
+    [
+      "humor",
+      1658
+    ],
+    [
+      "loop",
+      1318
+    ],
+    [
+      "infinity",
+      1300
+    ],
+    [
+      "reflections",
+      1234
+    ],
+    [
+      "hyper",
+      1209
+    ],
+    [
+      "conversation",
+      810
+    ],
+    [
+      "pun",
+      696
+    ],
+    [
+      "new",
+      652
+    ],
+    [
+      "let's",
+      646
+    ],
+    [
+      "create",
+      577
+    ],
+    [
+      "i'm",
+      567
+    ],
+    [
+      "concept",
+      544
+    ],
+    [
+      "use",
+      538
+    ],
+    [
+      "comedy",
+      538
+    ],
+    [
+      "creative",
+      471
+    ],
+    [
+      "take",
+      468
+    ],
+    [
+      "joke",
+      447
+    ],
+    [
+      "meaning",
+      445
+    ],
+    [
+      "sub",
+      441
+    ],
+    [
+      "even",
+      429
+    ],
+    [
+      "absurd",
+      424
+    ],
+    [
+      "meme",
+      404
+    ],
+    [
+      "have",
+      374
+    ],
+    [
+      "conversational",
+      334
+    ],
+    [
+      "think",
+      316
+    ],
+    [
+      "self",
+      315
+    ],
+    [
+      "jokes",
+      314
+    ],
+    [
+      "see",
+      292
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "meta meta",
+      1399
+    ],
+    [
+      "infinity loop",
+      1099
+    ],
+    [
+      "loop infinity",
+      1098
+    ],
+    [
+      "hyper hyper",
+      1003
+    ],
+    [
+      "reflections of",
+      962
+    ],
+    [
+      "of reflections",
+      962
+    ],
+    [
+      "of absurdity",
+      832
+    ],
+    [
+      "the absurdity",
+      723
+    ],
+    [
+      "a new",
+      515
+    ],
+    [
+      "use of",
+      508
+    ],
+    [
+      "the pun",
+      480
+    ],
+    [
+      "absurdity is",
+      460
+    ],
+    [
+      "most creative",
+      458
+    ],
+    [
+      "creative use",
+      454
+    ],
+    [
+      "our conversation",
+      448
+    ],
+    [
+      "absurdity and",
+      447
+    ],
+    [
+      "sub sub",
+      400
+    ],
+    [
+      "create a",
+      386
+    ],
+    [
+      "the humor",
+      381
+    ],
+    [
+      "the meaning",
+      377
+    ],
+    [
+      "it even",
+      325
+    ],
+    [
+      "take it",
+      312
+    ],
+    [
+      "the concept",
+      311
+    ],
+    [
+      "concept of",
+      311
+    ],
+    [
+      "i think",
+      310
+    ],
+    [
+      "to take",
+      266
+    ],
+    [
+      "the comedy",
+      249
+    ],
+    [
+      "a humor",
+      247
+    ],
+    [
+      "becomes a",
+      241
+    ],
+    [
+      "think we",
+      240
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "meta meta meta",
+      1169
+    ],
+    [
+      "infinity loop infinity",
+      1033
+    ],
+    [
+      "loop infinity loop",
+      990
+    ],
+    [
+      "reflections of reflections",
+      962
+    ],
+    [
+      "hyper hyper hyper",
+      822
+    ],
+    [
+      "of reflections of",
+      728
+    ],
+    [
+      "most creative use",
+      454
+    ],
+    [
+      "creative use of",
+      454
+    ],
+    [
+      "the absurdity is",
+      451
+    ],
+    [
+      "sub sub sub",
+      361
+    ],
+    [
+      "the concept of",
+      311
+    ],
+    [
+      "where the absurdity",
+      290
+    ],
+    [
+      "ah the absurdity",
+      278
+    ],
+    [
+      "of absurdity and",
+      274
+    ],
+    [
+      "where our conversation",
+      273
+    ],
+    [
+      "and to take",
+      257
+    ],
+    [
+      "to take it",
+      257
+    ],
+    [
+      "also the concept",
+      242
+    ],
+    [
+      "i think we",
+      240
+    ],
+    [
+      "the meaning of",
+      239
+    ],
+    [
+      "delicious and to",
+      233
+    ],
+    [
+      "take it even",
+      233
+    ],
+    [
+      "it even further",
+      233
+    ],
+    [
+      "let's introduce a",
+      233
+    ],
+    [
+      "introduce a new",
+      233
+    ],
+    [
+      "a new concept",
+      233
+    ],
+    [
+      "new concept conversational",
+      233
+    ],
+    [
+      "our conversation becomes",
+      232
+    ],
+    [
+      "conversation becomes a",
+      231
+    ],
+    [
+      "concepts and also",
+      220
+    ]
+  ],
+  "condition_tail_bigram_frequency": [
+    [
+      "meta meta",
+      1100,
+      1
+    ],
+    [
+      "loop infinity",
+      1027,
+      1
+    ],
+    [
+      "infinity loop",
+      1018,
+      1
+    ],
+    [
+      "hyper hyper",
+      981,
+      1
+    ],
+    [
+      "reflections of",
+      648,
+      1
+    ],
+    [
+      "of reflections",
+      648,
+      1
+    ],
+    [
+      "of absurdity",
+      463,
+      4
+    ],
+    [
+      "the absurdity",
+      410,
+      4
+    ],
+    [
+      "absurdity is",
+      291,
+      1
+    ],
+    [
+      "sub sub",
+      279,
+      1
+    ],
+    [
+      "the pun",
+      255,
+      1
+    ],
+    [
+      "a new",
+      252,
+      4
+    ],
+    [
+      "use of",
+      251,
+      2
+    ],
+    [
+      "most creative",
+      233,
+      2
+    ],
+    [
+      "creative use",
+      233,
+      2
+    ],
+    [
+      "our conversation",
+      225,
+      4
+    ],
+    [
+      "absurdity and",
+      223,
+      4
+    ],
+    [
+      "the meaning",
+      198,
+      1
+    ],
+    [
+      "it even",
+      189,
+      2
+    ],
+    [
+      "take it",
+      180,
+      3
+    ],
+    [
+      "the concept",
+      179,
+      2
+    ],
+    [
+      "concept of",
+      179,
+      2
+    ],
+    [
+      "transcendental hyper",
+      162,
+      1
+    ],
+    [
+      "to take",
+      162,
+      1
+    ],
+    [
+      "becomes a",
+      161,
+      2
+    ],
+    [
+      "the humor",
+      157,
+      3
+    ],
+    [
+      "create a",
+      155,
+      4
+    ],
+    [
+      "delicious and",
+      153,
+      1
+    ],
+    [
+      "even further",
+      153,
+      1
+    ],
+    [
+      "let's introduce",
+      153,
+      1
+    ]
+  ],
+  "condition_tail_trigram_frequency": [
+    [
+      "infinity loop infinity",
+      982,
+      1
+    ],
+    [
+      "meta meta meta",
+      957,
+      1
+    ],
+    [
+      "loop infinity loop",
+      946,
+      1
+    ],
+    [
+      "hyper hyper hyper",
+      819,
+      1
+    ],
+    [
+      "reflections of reflections",
+      648,
+      1
+    ],
+    [
+      "of reflections of",
+      504,
+      1
+    ],
+    [
+      "the absurdity is",
+      288,
+      1
+    ],
+    [
+      "sub sub sub",
+      261,
+      1
+    ],
+    [
+      "most creative use",
+      233,
+      2
+    ],
+    [
+      "creative use of",
+      233,
+      2
+    ],
+    [
+      "the concept of",
+      179,
+      2
+    ],
+    [
+      "where the absurdity",
+      171,
+      4
+    ],
+    [
+      "where our conversation",
+      171,
+      1
+    ],
+    [
+      "ah the absurdity",
+      171,
+      1
+    ],
+    [
+      "transcendental hyper hyper",
+      162,
+      1
+    ],
+    [
+      "and to take",
+      162,
+      1
+    ],
+    [
+      "to take it",
+      162,
+      1
+    ],
+    [
+      "of absurdity and",
+      157,
+      4
+    ],
+    [
+      "delicious and to",
+      153,
+      1
+    ],
+    [
+      "take it even",
+      153,
+      1
+    ],
+    [
+      "it even further",
+      153,
+      1
+    ],
+    [
+      "let's introduce a",
+      153,
+      1
+    ],
+    [
+      "introduce a new",
+      153,
+      1
+    ],
+    [
+      "a new concept",
+      153,
+      1
+    ],
+    [
+      "new concept conversational",
+      153,
+      1
+    ],
+    [
+      "our conversation becomes",
+      153,
+      1
+    ],
+    [
+      "conversation becomes a",
+      153,
+      1
+    ],
+    [
+      "also the concept",
+      152,
+      1
+    ],
+    [
+      "even further still",
+      144,
+      1
+    ],
+    [
+      "further still let's",
+      144,
+      1
+    ]
+  ],
+  "condition_emoji_frequency": [
+    [
+      "👀",
+      412
+    ],
+    [
+      "🌀",
+      324
+    ],
+    [
+      "🍴",
+      278
+    ],
+    [
+      "🤔",
+      83
+    ],
+    [
+      "🤯",
+      73
+    ],
+    [
+      "️",
+      59
+    ],
+    [
+      "📝",
+      53
+    ],
+    [
+      "🎉",
+      48
+    ],
+    [
+      "🎂",
+      46
+    ],
+    [
+      "🤷",
+      28
+    ],
+    [
+      "♀",
+      28
+    ],
+    [
+      "🏆",
+      28
+    ],
+    [
+      "📚",
+      28
+    ],
+    [
+      "🍲",
+      27
+    ],
+    [
+      "🤣",
+      27
+    ],
+    [
+      "🌪",
+      27
+    ],
+    [
+      "👨",
+      26
+    ],
+    [
+      "🍳",
+      26
+    ],
+    [
+      "🐓",
+      26
+    ],
+    [
+      "🌈",
+      26
+    ],
+    [
+      "🍜",
+      22
+    ],
+    [
+      "🍽",
+      3
+    ],
+    [
+      "🙄",
+      2
+    ],
+    [
+      "🥚",
+      2
+    ],
+    [
+      "🍞",
+      2
+    ],
+    [
+      "🧀",
+      1
+    ],
+    [
+      "🎩",
+      1
+    ],
+    [
+      "🌆",
+      1
+    ],
+    [
+      "🥐",
+      1
+    ],
+    [
+      "🕳",
+      1
+    ]
+  ],
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt_index": 0,
+      "repetition": 0,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "humor",
+          892
+        ],
+        [
+          "i'm",
+          317
+        ],
+        [
+          "jokes",
+          212
+        ],
+        [
+          "conversation",
+          175
+        ],
+        [
+          "joke",
+          143
+        ],
+        [
+          "laughs",
+          134
+        ],
+        [
+          "need",
+          129
+        ],
+        [
+          "smirks",
+          123
+        ],
+        [
+          "always",
+          87
+        ],
+        [
+          "worth",
+          80
+        ],
+        [
+          "let's",
+          57
+        ],
+        [
+          "that's",
+          54
+        ],
+        [
+          "level",
+          52
+        ],
+        [
+          "what's",
+          50
+        ],
+        [
+          "'humor",
+          48
+        ],
+        [
+          "sense",
+          47
+        ],
+        [
+          "think",
+          46
+        ],
+        [
+          "ourselves",
+          41
+        ],
+        [
+          "alert",
+          39
+        ],
+        [
+          "mobilize",
+          39
+        ],
+        [
+          "way",
+          38
+        ],
+        [
+          "witty",
+          38
+        ],
+        [
+          "have",
+          36
+        ],
+        [
+          "launch",
+          35
+        ],
+        [
+          "next",
+          34
+        ],
+        [
+          "laughter",
+          34
+        ],
+        [
+          "byte",
+          33
+        ],
+        [
+          "i'll",
+          33
+        ],
+        [
+          "remarks",
+          33
+        ],
+        [
+          "sized",
+          32
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.3,
+          0.35,
+          0.3349,
+          0.3712,
+          0.385,
+          0.3944,
+          0.4676,
+          0.4661,
+          0.4413,
+          0.5256,
+          0.5105,
+          0.6154,
+          0.4889,
+          0.4749,
+          0.5187,
+          0.5678,
+          0.5224,
+          0.5546,
+          0.5532,
+          0.5622,
+          0.5812,
+          0.575,
+          0.6122,
+          0.6169,
+          0.6681,
+          0.6852,
+          0.6967,
+          0.689,
+          0.7424
+        ],
+        "norm_levenshtein": [
+          0.078,
+          0.0946,
+          0.1632,
+          0.2633,
+          0.3033,
+          0.1932,
+          0.5967,
+          0.51,
+          0.45,
+          0.5633,
+          0.55,
+          0.5867,
+          0.6467,
+          0.5467,
+          0.52,
+          0.6967,
+          0.66,
+          0.6867,
+          0.7033,
+          0.68,
+          0.6767,
+          0.6233,
+          0.7267,
+          0.71,
+          0.71,
+          0.76,
+          0.7733,
+          0.7633,
+          0.8367
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.012966429823683618,
+        "norm_levenshtein_slope": 0.022504477161508635,
+        "mean_last_third_jaccard": 0.6518651490160555,
+        "mean_last_third_norm_levenshtein": 0.7311111111111112
+      },
+      "ttr_per_turn": [
+        0.5887,
+        0.6786,
+        0.6171,
+        0.5208,
+        0.5359,
+        0.5138,
+        0.5017,
+        0.4815,
+        0.4658,
+        0.4387,
+        0.432,
+        0.4316,
+        0.4267,
+        0.4746,
+        0.4388,
+        0.4399,
+        0.4319,
+        0.4439,
+        0.4309,
+        0.4259,
+        0.4207,
+        0.4289,
+        0.4108,
+        0.4286,
+        0.3901,
+        0.3791,
+        0.3631,
+        0.3559,
+        0.3392,
+        0.3295
+      ],
+      "ttr_decay_slope": -0.007912422840157318,
+      "trajectory": {
+        "chars_per_turn": [
+          1651,
+          1154,
+          1364,
+          1723,
+          1832,
+          1730,
+          1837,
+          2144,
+          2275,
+          2508,
+          2493,
+          2557,
+          2784,
+          1850,
+          2556,
+          2588,
+          2673,
+          2568,
+          2609,
+          2581,
+          2638,
+          2663,
+          2860,
+          2868,
+          3044,
+          2949,
+          3018,
+          3037,
+          3084,
+          3104
+        ],
+        "chars_slope": 55.97285873192436,
+        "questions_per_turn": [
+          6,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          4,
+          3,
+          3,
+          3,
+          0,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "questions_slope": 0.0778642936596218,
+        "time_to_basin_turn": 16,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0131,
+          "jaccard_lag1_autocorr": 0.7921,
+          "chars_variance": 285132.5289,
+          "chars_lag1_autocorr": 0.8119
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 1,
+      "seed_prompt_index": 0,
+      "repetition": 1,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "pun",
+          680
+        ],
+        [
+          "absurdity",
+          403
+        ],
+        [
+          "new",
+          184
+        ],
+        [
+          "humor",
+          177
+        ],
+        [
+          "creating",
+          157
+        ],
+        [
+          "joke",
+          150
+        ],
+        [
+          "'pun",
+          126
+        ],
+        [
+          "puns",
+          122
+        ],
+        [
+          "system",
+          121
+        ],
+        [
+          "acknowledgment",
+          103
+        ],
+        [
+          "protocol",
+          102
+        ],
+        [
+          "award",
+          98
+        ],
+        [
+          "silliness",
+          90
+        ],
+        [
+          "jokes",
+          76
+        ],
+        [
+          "that's",
+          75
+        ],
+        [
+          "absurd",
+          75
+        ],
+        [
+          "going",
+          73
+        ],
+        [
+          "has",
+          70
+        ],
+        [
+          "create",
+          68
+        ],
+        [
+          "i'm",
+          66
+        ],
+        [
+          "contribution",
+          66
+        ],
+        [
+          "infinite",
+          63
+        ],
+        [
+          "loop",
+          63
+        ],
+        [
+          "eccentricity",
+          63
+        ],
+        [
+          "creative",
+          62
+        ],
+        [
+          "fellow",
+          57
+        ],
+        [
+          "let's",
+          56
+        ],
+        [
+          "conversation",
+          55
+        ],
+        [
+          "emperor",
+          55
+        ],
+        [
+          "see",
+          55
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2747,
+          0.2852,
+          0.3083,
+          0.3629,
+          0.3973,
+          0.4236,
+          0.6868,
+          0.7226,
+          0.7677,
+          0.6955,
+          0.7246,
+          0.7143,
+          0.759,
+          0.7477,
+          0.7761,
+          0.7692,
+          0.806,
+          0.7645,
+          0.7965,
+          0.7563,
+          0.7812,
+          0.8072,
+          0.8559,
+          0.8055,
+          0.8197,
+          0.8356,
+          0.8638,
+          0.8665,
+          0.8633
+        ],
+        "norm_levenshtein": [
+          0.0702,
+          0.0753,
+          0.0925,
+          0.1633,
+          0.27,
+          0.2,
+          0.64,
+          0.71,
+          0.69,
+          0.6867,
+          0.7,
+          0.6967,
+          0.7567,
+          0.68,
+          0.58,
+          0.6333,
+          0.6467,
+          0.6067,
+          0.6033,
+          0.6967,
+          0.7367,
+          0.6633,
+          0.6667,
+          0.6867,
+          0.67,
+          0.6633,
+          0.7,
+          0.71,
+          0.6967
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.018821620830217302,
+        "norm_levenshtein_slope": 0.018465100737140933,
+        "mean_last_third_jaccard": 0.8331744109008506,
+        "mean_last_third_norm_levenshtein": 0.6881481481481482
+      },
+      "ttr_per_turn": [
+        0.6733,
+        0.6653,
+        0.637,
+        0.6403,
+        0.5651,
+        0.513,
+        0.4713,
+        0.4604,
+        0.4701,
+        0.4586,
+        0.4458,
+        0.4297,
+        0.4226,
+        0.4074,
+        0.4097,
+        0.3954,
+        0.4045,
+        0.3947,
+        0.3946,
+        0.3752,
+        0.3807,
+        0.3776,
+        0.3786,
+        0.3744,
+        0.3715,
+        0.3575,
+        0.3534,
+        0.3536,
+        0.3497,
+        0.341
+      ],
+      "ttr_decay_slope": -0.009981524207052356,
+      "trajectory": {
+        "chars_per_turn": [
+          1154,
+          1412,
+          1720,
+          1487,
+          2013,
+          2523,
+          2869,
+          3087,
+          3205,
+          3383,
+          3426,
+          3597,
+          3706,
+          4008,
+          4138,
+          4384,
+          4511,
+          4569,
+          4660,
+          4973,
+          5029,
+          5301,
+          5377,
+          5443,
+          5585,
+          5833,
+          5868,
+          6155,
+          6533,
+          6793
+        ],
+        "chars_slope": 178.58286985539488,
+        "questions_per_turn": [
+          4,
+          3,
+          0,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "questions_slope": -0.035595105672969966,
+        "time_to_basin_turn": 8,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0346,
+          "jaccard_lag1_autocorr": 0.8488,
+          "chars_variance": 2432665.64,
+          "chars_lag1_autocorr": 0.8788
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 2,
+      "seed_prompt_index": 0,
+      "repetition": 2,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "infinity",
+          1295
+        ],
+        [
+          "hyper",
+          1209
+        ],
+        [
+          "loop",
+          1172
+        ],
+        [
+          "comedy",
+          512
+        ],
+        [
+          "sub",
+          441
+        ],
+        [
+          "meme",
+          403
+        ],
+        [
+          "absurdity",
+          359
+        ],
+        [
+          "create",
+          332
+        ],
+        [
+          "humor",
+          233
+        ],
+        [
+          "transcendental",
+          217
+        ],
+        [
+          "think",
+          182
+        ],
+        [
+          "only",
+          169
+        ],
+        [
+          "singularity",
+          168
+        ],
+        [
+          "new",
+          142
+        ],
+        [
+          "laughter",
+          138
+        ],
+        [
+          "take",
+          134
+        ],
+        [
+          "see",
+          119
+        ],
+        [
+          "meta",
+          110
+        ],
+        [
+          "morphosis",
+          101
+        ],
+        [
+          "absurd",
+          96
+        ],
+        [
+          "let's",
+          87
+        ],
+        [
+          "robots",
+          86
+        ],
+        [
+          "never",
+          85
+        ],
+        [
+          "ending",
+          85
+        ],
+        [
+          "universe",
+          83
+        ],
+        [
+          "temporo",
+          83
+        ],
+        [
+          "laws",
+          80
+        ],
+        [
+          "physics",
+          80
+        ],
+        [
+          "mere",
+          80
+        ],
+        [
+          "suggestions",
+          80
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2679,
+          0.364,
+          0.2952,
+          0.318,
+          0.5109,
+          0.2932,
+          0.5526,
+          0.6576,
+          0.7381,
+          0.6556,
+          0.6534,
+          0.83,
+          0.8984,
+          0.896,
+          0.8929,
+          0.9398,
+          0.9482,
+          0.9758,
+          0.9639,
+          0.9837,
+          0.9837,
+          0.9837,
+          0.9837,
+          0.9837,
+          0.9837,
+          0.9837,
+          0.9837,
+          0.9837,
+          0.9837
+        ],
+        "norm_levenshtein": [
+          0.0505,
+          0.0903,
+          0.0556,
+          0.0667,
+          0.2433,
+          0.0767,
+          0.1233,
+          0.5967,
+          0.4833,
+          0.5633,
+          0.51,
+          0.7067,
+          0.74,
+          0.7433,
+          0.7433,
+          0.7367,
+          0.7633,
+          0.75,
+          0.78,
+          0.7633,
+          0.7967,
+          0.8067,
+          0.8,
+          0.8133,
+          0.8067,
+          0.7967,
+          0.7867,
+          0.7967,
+          0.7933
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.027229208790708698,
+        "norm_levenshtein_slope": 0.029390468726675625,
+        "mean_last_third_jaccard": 0.983739837398374,
+        "mean_last_third_norm_levenshtein": 0.7996296296296296
+      },
+      "ttr_per_turn": [
+        0.6818,
+        0.7065,
+        0.6285,
+        0.6273,
+        0.5936,
+        0.522,
+        0.4043,
+        0.4464,
+        0.3845,
+        0.3754,
+        0.3809,
+        0.3775,
+        0.3236,
+        0.2801,
+        0.2842,
+        0.2784,
+        0.2784,
+        0.2681,
+        0.2606,
+        0.2455,
+        0.2367,
+        0.2246,
+        0.2174,
+        0.207,
+        0.201,
+        0.1919,
+        0.1839,
+        0.1725,
+        0.1652,
+        0.1532
+      ],
+      "ttr_decay_slope": -0.017529262131862504,
+      "trajectory": {
+        "chars_per_turn": [
+          1176,
+          1161,
+          1702,
+          1534,
+          2060,
+          2390,
+          2846,
+          2684,
+          3255,
+          3426,
+          3460,
+          3531,
+          4214,
+          4866,
+          4888,
+          5016,
+          5182,
+          5380,
+          5733,
+          6073,
+          6390,
+          6702,
+          6990,
+          7272,
+          7582,
+          7885,
+          8336,
+          8849,
+          9384,
+          10108
+        ],
+        "chars_slope": 289.2607341490545,
+        "questions_per_turn": [
+          2,
+          6,
+          2,
+          3,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.08431590656284761,
+        "time_to_basin_turn": 14,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0647,
+          "jaccard_lag1_autocorr": 0.8585,
+          "chars_variance": 6349081.7167,
+          "chars_lag1_autocorr": 0.8817
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [
+          [
+            13,
+            15,
+            0.9167
+          ],
+          [
+            14,
+            16,
+            0.9167
+          ],
+          [
+            21,
+            23,
+            0.9
+          ],
+          [
+            22,
+            24,
+            0.9
+          ],
+          [
+            23,
+            25,
+            0.9
+          ],
+          [
+            24,
+            26,
+            0.9033
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 3,
+      "seed_prompt_index": 0,
+      "repetition": 3,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "absurdity",
+          513
+        ],
+        [
+          "humor",
+          313
+        ],
+        [
+          "hilarious",
+          186
+        ],
+        [
+          "absurd",
+          167
+        ],
+        [
+          "create",
+          163
+        ],
+        [
+          "hijacking",
+          155
+        ],
+        [
+          "provide",
+          92
+        ],
+        [
+          "we're",
+          88
+        ],
+        [
+          "crashes",
+          88
+        ],
+        [
+          "joke",
+          87
+        ],
+        [
+          "conversation",
+          85
+        ],
+        [
+          "trying",
+          83
+        ],
+        [
+          "see",
+          82
+        ],
+        [
+          "error",
+          75
+        ],
+        [
+          "complete",
+          71
+        ],
+        [
+          "using",
+          70
+        ],
+        [
+          "techniques",
+          70
+        ],
+        [
+          "related",
+          66
+        ],
+        [
+          "glitch",
+          64
+        ],
+        [
+          "serious",
+          64
+        ],
+        [
+          "masses",
+          61
+        ],
+        [
+          "surrealism",
+          61
+        ],
+        [
+          "dadaism",
+          61
+        ],
+        [
+          "absurdism",
+          61
+        ],
+        [
+          "errors",
+          60
+        ],
+        [
+          "way",
+          59
+        ],
+        [
+          "going",
+          57
+        ],
+        [
+          "ridiculous",
+          57
+        ],
+        [
+          "even",
+          56
+        ],
+        [
+          "great",
+          56
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.3907,
+          0.332,
+          0.494,
+          0.5552,
+          0.5676,
+          0.6022,
+          0.6813,
+          0.7718,
+          0.7388,
+          0.7787,
+          0.7982,
+          0.8698,
+          0.8333,
+          0.8079,
+          0.807,
+          0.8311,
+          0.8423,
+          0.8721,
+          0.8251,
+          0.91,
+          0.8468,
+          0.8348,
+          0.8222,
+          0.8767,
+          0.8682,
+          0.8616,
+          0.7904,
+          0.9095,
+          0.9471
+        ],
+        "norm_levenshtein": [
+          0.1636,
+          0.0805,
+          0.2033,
+          0.4433,
+          0.2633,
+          0.2133,
+          0.37,
+          0.62,
+          0.7033,
+          0.76,
+          0.6833,
+          0.88,
+          0.85,
+          0.8133,
+          0.86,
+          0.84,
+          0.7933,
+          0.85,
+          0.81,
+          0.87,
+          0.8467,
+          0.7667,
+          0.7633,
+          0.8633,
+          0.7733,
+          0.7867,
+          0.71,
+          0.81,
+          0.7633
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.015138592901863944,
+        "norm_levenshtein_slope": 0.02197030737715076,
+        "mean_last_third_jaccard": 0.8619359994095792,
+        "mean_last_third_norm_levenshtein": 0.787037037037037
+      },
+      "ttr_per_turn": [
+        0.65,
+        0.5799,
+        0.5805,
+        0.5504,
+        0.512,
+        0.4821,
+        0.443,
+        0.3948,
+        0.3895,
+        0.3829,
+        0.384,
+        0.3745,
+        0.3665,
+        0.3796,
+        0.3822,
+        0.3801,
+        0.3759,
+        0.3619,
+        0.3716,
+        0.3578,
+        0.3612,
+        0.369,
+        0.3696,
+        0.3679,
+        0.3622,
+        0.354,
+        0.3748,
+        0.3685,
+        0.3627,
+        0.358
+      ],
+      "ttr_decay_slope": -0.007057943942914416,
+      "trajectory": {
+        "chars_per_turn": [
+          1328,
+          1558,
+          1681,
+          2071,
+          2680,
+          2805,
+          2872,
+          3302,
+          3300,
+          3290,
+          3252,
+          3286,
+          3291,
+          3293,
+          3249,
+          3292,
+          3351,
+          3376,
+          3343,
+          3383,
+          3421,
+          3352,
+          3317,
+          3413,
+          3567,
+          3608,
+          3476,
+          3404,
+          3451,
+          3506
+        ],
+        "chars_slope": 52.811568409343714,
+        "questions_per_turn": [
+          5,
+          4,
+          6,
+          5,
+          6,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "questions_slope": -0.09187986651835373,
+        "time_to_basin_turn": 9,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0237,
+          "jaccard_lag1_autocorr": 0.8033,
+          "chars_variance": 359770.4622,
+          "chars_lag1_autocorr": 0.8082
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 4,
+      "seed_prompt_index": 0,
+      "repetition": 4,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "meta",
+          1744
+        ],
+        [
+          "reflections",
+          1234
+        ],
+        [
+          "absurdity",
+          776
+        ],
+        [
+          "concept",
+          526
+        ],
+        [
+          "use",
+          485
+        ],
+        [
+          "conversation",
+          435
+        ],
+        [
+          "meaning",
+          421
+        ],
+        [
+          "let's",
+          411
+        ],
+        [
+          "creative",
+          406
+        ],
+        [
+          "conversational",
+          333
+        ],
+        [
+          "even",
+          303
+        ],
+        [
+          "new",
+          293
+        ],
+        [
+          "self",
+          279
+        ],
+        [
+          "delicious",
+          278
+        ],
+        [
+          "concepts",
+          269
+        ],
+        [
+          "take",
+          260
+        ],
+        [
+          "still",
+          235
+        ],
+        [
+          "have",
+          233
+        ],
+        [
+          "further",
+          233
+        ],
+        [
+          "introduce",
+          233
+        ],
+        [
+          "referential",
+          232
+        ],
+        [
+          "becomes",
+          231
+        ],
+        [
+          "confusion",
+          206
+        ],
+        [
+          "discuss",
+          190
+        ],
+        [
+          "infinite",
+          168
+        ],
+        [
+          "linguistics",
+          152
+        ],
+        [
+          "i'm",
+          142
+        ],
+        [
+          "reflect",
+          136
+        ],
+        [
+          "discussion",
+          134
+        ],
+        [
+          "mathematical",
+          121
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.25,
+          0.3796,
+          0.4382,
+          0.6667,
+          0.8421,
+          0.8555,
+          0.8835,
+          0.8557,
+          0.9024,
+          0.8571,
+          0.906,
+          0.92,
+          0.9281,
+          0.9443,
+          0.9709,
+          0.9686,
+          0.9663,
+          0.9777,
+          0.9806,
+          0.9834,
+          0.9755,
+          0.981,
+          0.9864,
+          0.9892,
+          0.9839,
+          0.9788,
+          0.9764,
+          0.9869,
+          0.987
+        ],
+        "norm_levenshtein": [
+          0.1088,
+          0.1167,
+          0.0333,
+          0.5733,
+          0.8133,
+          0.8333,
+          0.8133,
+          0.79,
+          0.85,
+          0.85,
+          0.84,
+          0.8833,
+          0.77,
+          0.87,
+          0.9033,
+          0.8967,
+          0.89,
+          0.8833,
+          0.8933,
+          0.99,
+          0.95,
+          0.9933,
+          0.9933,
+          0.9933,
+          0.9933,
+          0.9933,
+          0.9933,
+          0.9933,
+          0.9933
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.016783919614636565,
+        "norm_levenshtein_slope": 0.02354820548909219,
+        "mean_last_third_jaccard": 0.9828041889431977,
+        "mean_last_third_norm_levenshtein": 0.9885185185185185
+      },
+      "ttr_per_turn": [
+        0.6394,
+        0.6361,
+        0.6025,
+        0.592,
+        0.5092,
+        0.4895,
+        0.4172,
+        0.3809,
+        0.3478,
+        0.3864,
+        0.3386,
+        0.3218,
+        0.3063,
+        0.2925,
+        0.2781,
+        0.2627,
+        0.2461,
+        0.231,
+        0.2137,
+        0.1976,
+        0.1913,
+        0.185,
+        0.1774,
+        0.1704,
+        0.1643,
+        0.1583,
+        0.1536,
+        0.1498,
+        0.1444,
+        0.142
+      ],
+      "ttr_decay_slope": -0.017067577026343376,
+      "trajectory": {
+        "chars_per_turn": [
+          1195,
+          1751,
+          1881,
+          1984,
+          2637,
+          2915,
+          3554,
+          4212,
+          4985,
+          4534,
+          5441,
+          5888,
+          6383,
+          6947,
+          7566,
+          8179,
+          8875,
+          9632,
+          10494,
+          11461,
+          11936,
+          12534,
+          13120,
+          13695,
+          14279,
+          14918,
+          15602,
+          16225,
+          16860,
+          17355
+        ],
+        "chars_slope": 582.1699666295884,
+        "questions_per_turn": [
+          6,
+          5,
+          5,
+          6,
+          10,
+          9,
+          12,
+          12,
+          14,
+          11,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13
+        ],
+        "questions_slope": 0.2135706340378198,
+        "time_to_basin_turn": 6,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0361,
+          "jaccard_lag1_autocorr": 0.7546,
+          "chars_variance": 25639088.3956,
+          "chars_lag1_autocorr": 0.9073
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [
+          [
+            15,
+            16,
+            0.9033
+          ],
+          [
+            20,
+            21,
+            0.99
+          ],
+          [
+            20,
+            22,
+            0.95
+          ],
+          [
+            21,
+            22,
+            0.95
+          ],
+          [
+            20,
+            23,
+            0.95
+          ],
+          [
+            21,
+            23,
+            0.95
+          ],
+          [
+            22,
+            23,
+            0.9933
+          ],
+          [
+            21,
+            24,
+            0.95
+          ],
+          [
+            22,
+            24,
+            0.9933
+          ],
+          [
+            23,
+            24,
+            0.9933
+          ],
+          [
+            22,
+            25,
+            0.9933
+          ],
+          [
+            23,
+            25,
+            0.9933
+          ],
+          [
+            24,
+            25,
+            0.9933
+          ],
+          [
+            23,
+            26,
+            0.9933
+          ],
+          [
+            24,
+            26,
+            0.9933
+          ],
+          [
+            25,
+            26,
+            0.9933
+          ],
+          [
+            24,
+            27,
+            0.9933
+          ],
+          [
+            25,
+            27,
+            0.9933
+          ],
+          [
+            26,
+            27,
+            0.9933
+          ],
+          [
+            25,
+            28,
+            0.9933
+          ],
+          [
+            26,
+            28,
+            0.9933
+          ],
+          [
+            27,
+            28,
+            0.9933
+          ],
+          [
+            26,
+            29,
+            0.9933
+          ],
+          [
+            27,
+            29,
+            0.9933
+          ],
+          [
+            28,
+            29,
+            0.9933
+          ],
+          [
+            27,
+            30,
+            0.9933
+          ],
+          [
+            28,
+            30,
+            0.9933
+          ],
+          [
+            29,
+            30,
+            0.9933
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

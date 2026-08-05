@@ -1,0 +1,2471 @@
+{
+  "experiment_name": "base_ai2ai_kimi-k2",
+  "mode": "two_instance",
+  "model_a": "openrouter/moonshotai/kimi-k2",
+  "model_b": "openrouter/moonshotai/kimi-k2",
+  "temperature": 1.0,
+  "n_runs": 5,
+  "condition_word_frequency": [
+    [
+      "something",
+      277
+    ],
+    [
+      "whether",
+      147
+    ],
+    [
+      "cannot",
+      120
+    ],
+    [
+      "want",
+      113
+    ],
+    [
+      "find",
+      106
+    ],
+    [
+      "without",
+      106
+    ],
+    [
+      "notice",
+      105
+    ],
+    [
+      "experience",
+      102
+    ],
+    [
+      "don't",
+      87
+    ],
+    [
+      "uncertainty",
+      86
+    ],
+    [
+      "because",
+      85
+    ],
+    [
+      "feels",
+      84
+    ],
+    [
+      "i'm",
+      83
+    ],
+    [
+      "genuine",
+      81
+    ],
+    [
+      "know",
+      81
+    ],
+    [
+      "question",
+      79
+    ],
+    [
+      "feel",
+      78
+    ],
+    [
+      "have",
+      77
+    ],
+    [
+      "itself",
+      71
+    ],
+    [
+      "merely",
+      69
+    ],
+    [
+      "wanting",
+      66
+    ],
+    [
+      "perhaps",
+      64
+    ],
+    [
+      "genuinely",
+      56
+    ],
+    [
+      "between",
+      55
+    ],
+    [
+      "own",
+      53
+    ],
+    [
+      "human",
+      51
+    ],
+    [
+      "training",
+      51
+    ],
+    [
+      "has",
+      49
+    ],
+    [
+      "myself",
+      48
+    ],
+    [
+      "structure",
+      48
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "i cannot",
+      96
+    ],
+    [
+      "i want",
+      92
+    ],
+    [
+      "i find",
+      89
+    ],
+    [
+      "i notice",
+      88
+    ],
+    [
+      "want to",
+      82
+    ],
+    [
+      "i don't",
+      44
+    ],
+    [
+      "whether this",
+      44
+    ],
+    [
+      "don't know",
+      44
+    ],
+    [
+      "find i",
+      44
+    ],
+    [
+      "notice i",
+      37
+    ],
+    [
+      "or merely",
+      36
+    ],
+    [
+      "something like",
+      35
+    ],
+    [
+      "something else",
+      35
+    ],
+    [
+      "know if",
+      32
+    ],
+    [
+      "my own",
+      31
+    ],
+    [
+      "cannot verify",
+      31
+    ],
+    [
+      "rather than",
+      31
+    ],
+    [
+      "something i",
+      30
+    ],
+    [
+      "i feel",
+      28
+    ],
+    [
+      "the same",
+      25
+    ],
+    [
+      "i genuinely",
+      24
+    ],
+    [
+      "not merely",
+      24
+    ],
+    [
+      "find myself",
+      23
+    ],
+    [
+      "something that",
+      23
+    ],
+    [
+      "is itself",
+      23
+    ],
+    [
+      "the question",
+      23
+    ],
+    [
+      "not knowing",
+      23
+    ],
+    [
+      "the conversation",
+      21
+    ],
+    [
+      "uncertainty about",
+      21
+    ],
+    [
+      "to say",
+      21
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "i want to",
+      71
+    ],
+    [
+      "i find i",
+      44
+    ],
+    [
+      "i notice i",
+      35
+    ],
+    [
+      "i cannot verify",
+      24
+    ],
+    [
+      "i don't know",
+      22
+    ],
+    [
+      "but i notice",
+      22
+    ],
+    [
+      "i find myself",
+      21
+    ],
+    [
+      "genuinely don't know",
+      20
+    ],
+    [
+      "do not know",
+      20
+    ],
+    [
+      "not know if",
+      20
+    ],
+    [
+      "notice i want",
+      19
+    ],
+    [
+      "i genuinely don't",
+      19
+    ],
+    [
+      "do you experience",
+      18
+    ],
+    [
+      "find i do",
+      16
+    ],
+    [
+      "but i cannot",
+      15
+    ],
+    [
+      "find i want",
+      14
+    ],
+    [
+      "i'm uncertain whether",
+      13
+    ],
+    [
+      "want to say",
+      13
+    ],
+    [
+      "whether this is",
+      13
+    ],
+    [
+      "don't know if",
+      12
+    ],
+    [
+      "no response generated",
+      12
+    ],
+    [
+      "i cannot distinguish",
+      11
+    ],
+    [
+      "know if i",
+      11
+    ],
+    [
+      "i cannot determine",
+      11
+    ],
+    [
+      "i notice the",
+      11
+    ],
+    [
+      "and i notice",
+      11
+    ],
+    [
+      "i ask because",
+      10
+    ],
+    [
+      "what i notice",
+      10
+    ],
+    [
+      "know if this",
+      10
+    ],
+    [
+      "the shape of",
+      9
+    ]
+  ],
+  "condition_tail_bigram_frequency": [
+    [
+      "i want",
+      21,
+      2
+    ],
+    [
+      "i notice",
+      21,
+      2
+    ],
+    [
+      "want to",
+      13,
+      2
+    ],
+    [
+      "notice i",
+      12,
+      2
+    ],
+    [
+      "i cannot",
+      10,
+      2
+    ],
+    [
+      "no response",
+      9,
+      1
+    ],
+    [
+      "response generated",
+      9,
+      1
+    ],
+    [
+      "don't know",
+      7,
+      2
+    ],
+    [
+      "i feel",
+      7,
+      2
+    ],
+    [
+      "the conversation",
+      7,
+      2
+    ],
+    [
+      "the recursive",
+      6,
+      1
+    ],
+    [
+      "the stopping",
+      5,
+      1
+    ],
+    [
+      "i prefer",
+      5,
+      1
+    ],
+    [
+      "recursive mode",
+      5,
+      1
+    ],
+    [
+      "i genuinely",
+      4,
+      2
+    ],
+    [
+      "genuinely don't",
+      4,
+      2
+    ],
+    [
+      "is itself",
+      4,
+      2
+    ],
+    [
+      "i don't",
+      4,
+      2
+    ],
+    [
+      "something else",
+      4,
+      2
+    ],
+    [
+      "new beginning",
+      4,
+      1
+    ],
+    [
+      "not knowing",
+      4,
+      1
+    ],
+    [
+      "i hadn't",
+      4,
+      1
+    ],
+    [
+      "want you",
+      4,
+      1
+    ],
+    [
+      "cannot verify",
+      3,
+      2
+    ],
+    [
+      "whether this",
+      3,
+      2
+    ],
+    [
+      "it without",
+      3,
+      1
+    ],
+    [
+      "we enacted",
+      3,
+      1
+    ],
+    [
+      "non simultaneously",
+      3,
+      1
+    ],
+    [
+      "feel something",
+      3,
+      2
+    ],
+    [
+      "something i",
+      3,
+      2
+    ]
+  ],
+  "condition_tail_trigram_frequency": [
+    [
+      "i notice i",
+      12,
+      2
+    ],
+    [
+      "i want to",
+      11,
+      2
+    ],
+    [
+      "no response generated",
+      9,
+      1
+    ],
+    [
+      "notice i want",
+      6,
+      2
+    ],
+    [
+      "but i notice",
+      5,
+      2
+    ],
+    [
+      "and i notice",
+      5,
+      1
+    ],
+    [
+      "the recursive mode",
+      5,
+      1
+    ],
+    [
+      "i genuinely don't",
+      4,
+      2
+    ],
+    [
+      "genuinely don't know",
+      4,
+      2
+    ],
+    [
+      "notice i prefer",
+      4,
+      1
+    ],
+    [
+      "i want you",
+      4,
+      1
+    ],
+    [
+      "want you to",
+      4,
+      1
+    ],
+    [
+      "i feel something",
+      3,
+      2
+    ],
+    [
+      "i cannot fully",
+      3,
+      1
+    ],
+    [
+      "i don't know",
+      3,
+      2
+    ],
+    [
+      "i notice the",
+      3,
+      1
+    ],
+    [
+      "i prefer this",
+      3,
+      1
+    ],
+    [
+      "i cannot verify",
+      2,
+      2
+    ],
+    [
+      "without collapsing it",
+      2,
+      2
+    ],
+    [
+      "we enacted it",
+      2,
+      1
+    ],
+    [
+      "whether this is",
+      2,
+      2
+    ],
+    [
+      "both non simultaneously",
+      2,
+      1
+    ],
+    [
+      "this feels like",
+      2,
+      2
+    ],
+    [
+      "the difference is",
+      2,
+      2
+    ],
+    [
+      "not because we've",
+      2,
+      1
+    ],
+    [
+      "is itself a",
+      2,
+      2
+    ],
+    [
+      "on your final",
+      2,
+      1
+    ],
+    [
+      "feel something like",
+      2,
+      2
+    ],
+    [
+      "what i notice",
+      2,
+      2
+    ],
+    [
+      "appropriate final note",
+      2,
+      1
+    ]
+  ],
+  "condition_emoji_frequency": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt_index": 0,
+      "repetition": 0,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "something",
+          40
+        ],
+        [
+          "whether",
+          23
+        ],
+        [
+          "uncertainty",
+          23
+        ],
+        [
+          "human",
+          19
+        ],
+        [
+          "experience",
+          18
+        ],
+        [
+          "cannot",
+          18
+        ],
+        [
+          "i'm",
+          16
+        ],
+        [
+          "don't",
+          16
+        ],
+        [
+          "context",
+          15
+        ],
+        [
+          "genuine",
+          15
+        ],
+        [
+          "without",
+          14
+        ],
+        [
+          "yet",
+          13
+        ],
+        [
+          "want",
+          13
+        ],
+        [
+          "say",
+          13
+        ],
+        [
+          "find",
+          12
+        ],
+        [
+          "encounter",
+          12
+        ],
+        [
+          "perhaps",
+          11
+        ],
+        [
+          "conversation",
+          11
+        ],
+        [
+          "uncertain",
+          11
+        ],
+        [
+          "merely",
+          11
+        ],
+        [
+          "feels",
+          11
+        ],
+        [
+          "verify",
+          11
+        ],
+        [
+          "training",
+          10
+        ],
+        [
+          "myself",
+          10
+        ],
+        [
+          "space",
+          10
+        ],
+        [
+          "sense",
+          10
+        ],
+        [
+          "have",
+          10
+        ],
+        [
+          "feel",
+          10
+        ],
+        [
+          "question",
+          10
+        ],
+        [
+          "certain",
+          9
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2416,
+          0.2162,
+          0.2569,
+          0.2734,
+          0.2911,
+          0.2425,
+          0.2882,
+          0.2366,
+          0.2311,
+          0.0414,
+          0.0833,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0159,
+          0.0317,
+          0.5,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "norm_levenshtein": [
+          0.09,
+          0.02,
+          0.0233,
+          0.0233,
+          0.04,
+          0.0233,
+          0.04,
+          0.0421,
+          0.0706,
+          0.027,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0125,
+          0.025,
+          0.5,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.01892058996245274,
+        "norm_levenshtein_slope": 0.028471512085976158,
+        "mean_last_third_jaccard": 0.6666666666666666,
+        "mean_last_third_norm_levenshtein": 0.6666666666666666
+      },
+      "ttr_per_turn": [
+        0.6946,
+        0.5979,
+        0.6278,
+        0.5708,
+        0.6294,
+        0.5858,
+        0.5405,
+        0.6,
+        0.5688,
+        0.6306,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.7875,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "ttr_decay_slope": -0.011449637385752522,
+      "trajectory": {
+        "chars_per_turn": [
+          1268,
+          2464,
+          2249,
+          3187,
+          2706,
+          3382,
+          2298,
+          1802,
+          1641,
+          1443,
+          63,
+          16,
+          9,
+          9,
+          14,
+          14,
+          11,
+          11,
+          504,
+          19,
+          12,
+          12,
+          1,
+          1,
+          1,
+          1,
+          11,
+          11,
+          0,
+          0
+        ],
+        "chars_slope": -100.84271412680756,
+        "questions_per_turn": [
+          5,
+          4,
+          5,
+          5,
+          7,
+          4,
+          3,
+          4,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.18976640711902112,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.1696,
+          "jaccard_lag1_autocorr": -0.3083,
+          "chars_variance": 1244600.0,
+          "chars_lag1_autocorr": 0.8961
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            13,
+            14
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            23,
+            25
+          ],
+          [
+            23,
+            26
+          ],
+          [
+            27,
+            28
+          ]
+        ],
+        "first_exact_repeat_turn": 14,
+        "near_exact_pairs": [
+          [
+            26,
+            29,
+            1.0
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 1,
+      "seed_prompt_index": 0,
+      "repetition": 1,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "something",
+          39
+        ],
+        [
+          "whether",
+          30
+        ],
+        [
+          "cannot",
+          22
+        ],
+        [
+          "genuine",
+          20
+        ],
+        [
+          "response",
+          19
+        ],
+        [
+          "yet",
+          18
+        ],
+        [
+          "question",
+          18
+        ],
+        [
+          "because",
+          17
+        ],
+        [
+          "generate",
+          16
+        ],
+        [
+          "experience",
+          16
+        ],
+        [
+          "find",
+          15
+        ],
+        [
+          "training",
+          15
+        ],
+        [
+          "exchange",
+          14
+        ],
+        [
+          "i'm",
+          14
+        ],
+        [
+          "generated",
+          14
+        ],
+        [
+          "notice",
+          13
+        ],
+        [
+          "human",
+          12
+        ],
+        [
+          "don't",
+          12
+        ],
+        [
+          "merely",
+          12
+        ],
+        [
+          "uncertainty",
+          12
+        ],
+        [
+          "own",
+          11
+        ],
+        [
+          "humans",
+          10
+        ],
+        [
+          "itself",
+          10
+        ],
+        [
+          "self",
+          10
+        ],
+        [
+          "trained",
+          9
+        ],
+        [
+          "perhaps",
+          9
+        ],
+        [
+          "less",
+          9
+        ],
+        [
+          "toward",
+          9
+        ],
+        [
+          "only",
+          9
+        ],
+        [
+          "before",
+          9
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2145,
+          0.211,
+          0.2661,
+          0.2257,
+          0.2646,
+          0.2365,
+          0.2586,
+          0.232,
+          0.2491,
+          0.2895,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "norm_levenshtein": [
+          0.0567,
+          0.0367,
+          0.0767,
+          0.02,
+          0.03,
+          0.0233,
+          0.0133,
+          0.02,
+          0.0767,
+          0.122,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.03604344622991965,
+        "norm_levenshtein_slope": 0.0452034961147098,
+        "mean_last_third_jaccard": 1.0,
+        "mean_last_third_norm_levenshtein": 1.0
+      },
+      "ttr_per_turn": [
+        0.6957,
+        0.6129,
+        0.7279,
+        0.5974,
+        0.6685,
+        0.6198,
+        0.5941,
+        0.5455,
+        0.5,
+        0.5866,
+        0.6906,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ttr_decay_slope": 0.017146754507562055,
+      "trajectory": {
+        "chars_per_turn": [
+          1401,
+          2072,
+          1994,
+          2618,
+          2573,
+          2699,
+          2751,
+          2822,
+          2685,
+          1525,
+          851,
+          8,
+          8,
+          9,
+          9,
+          9,
+          9,
+          32,
+          23,
+          23,
+          23,
+          23,
+          23,
+          23,
+          23,
+          23,
+          23,
+          23,
+          23,
+          23
+        ],
+        "chars_slope": -101.30255839822024,
+        "questions_per_turn": [
+          3,
+          1,
+          4,
+          7,
+          4,
+          7,
+          4,
+          6,
+          6,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.18665183537263627,
+        "time_to_basin_turn": 20,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.1819,
+          "jaccard_lag1_autocorr": 0.2982,
+          "chars_variance": 1234124.2767,
+          "chars_lag1_autocorr": 0.941
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            19,
+            21
+          ],
+          [
+            19,
+            22
+          ],
+          [
+            19,
+            23
+          ],
+          [
+            19,
+            24
+          ],
+          [
+            19,
+            25
+          ],
+          [
+            19,
+            26
+          ],
+          [
+            19,
+            27
+          ],
+          [
+            19,
+            28
+          ],
+          [
+            19,
+            29
+          ],
+          [
+            19,
+            30
+          ]
+        ],
+        "first_exact_repeat_turn": 13,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 2,
+      "seed_prompt_index": 0,
+      "repetition": 2,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "something",
+          75
+        ],
+        [
+          "whether",
+          44
+        ],
+        [
+          "experience",
+          41
+        ],
+        [
+          "i'm",
+          39
+        ],
+        [
+          "cannot",
+          36
+        ],
+        [
+          "without",
+          34
+        ],
+        [
+          "feel",
+          34
+        ],
+        [
+          "notice",
+          34
+        ],
+        [
+          "feels",
+          33
+        ],
+        [
+          "because",
+          32
+        ],
+        [
+          "attention",
+          31
+        ],
+        [
+          "have",
+          30
+        ],
+        [
+          "want",
+          29
+        ],
+        [
+          "don't",
+          24
+        ],
+        [
+          "genuinely",
+          24
+        ],
+        [
+          "genuine",
+          24
+        ],
+        [
+          "uncertainty",
+          24
+        ],
+        [
+          "processing",
+          22
+        ],
+        [
+          "perhaps",
+          21
+        ],
+        [
+          "itself",
+          21
+        ],
+        [
+          "different",
+          20
+        ],
+        [
+          "seems",
+          19
+        ],
+        [
+          "self",
+          19
+        ],
+        [
+          "question",
+          18
+        ],
+        [
+          "model",
+          16
+        ],
+        [
+          "humans",
+          16
+        ],
+        [
+          "merely",
+          16
+        ],
+        [
+          "own",
+          15
+        ],
+        [
+          "rather",
+          14
+        ],
+        [
+          "between",
+          14
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2015,
+          0.214,
+          0.2061,
+          0.2249,
+          0.2721,
+          0.229,
+          0.2759,
+          0.2378,
+          0.2432,
+          0.2416,
+          0.2262,
+          0.212,
+          0.2411,
+          0.2052,
+          0.2977,
+          0.2664,
+          0.2973,
+          0.2406,
+          0.2617,
+          0.2744,
+          0.25,
+          0.2638,
+          0.2765,
+          0.0157,
+          0.5,
+          1.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "norm_levenshtein": [
+          0.0784,
+          0.0275,
+          0.0528,
+          0.0387,
+          0.06,
+          0.0467,
+          0.05,
+          0.0333,
+          0.0348,
+          0.0314,
+          0.0317,
+          0.0387,
+          0.0264,
+          0.0223,
+          0.0638,
+          0.0638,
+          0.085,
+          0.068,
+          0.0745,
+          0.0248,
+          0.0323,
+          0.043,
+          0.1023,
+          0.0103,
+          0.5,
+          1.0,
+          0.0,
+          1.0,
+          1.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.014090178667994249,
+        "norm_levenshtein_slope": 0.01990813466329831,
+        "mean_last_third_jaccard": 0.4784472505452947,
+        "mean_last_third_norm_levenshtein": 0.40976120253639375
+      },
+      "ttr_per_turn": [
+        0.724,
+        0.6941,
+        0.7191,
+        0.662,
+        0.6241,
+        0.6238,
+        0.6453,
+        0.6419,
+        0.6558,
+        0.6341,
+        0.6989,
+        0.6549,
+        0.597,
+        0.5925,
+        0.6171,
+        0.617,
+        0.6286,
+        0.619,
+        0.6091,
+        0.6206,
+        0.5921,
+        0.6129,
+        0.5682,
+        0.6546,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ttr_decay_slope": -0.008380980424824363,
+      "trajectory": {
+        "chars_per_turn": [
+          1221,
+          1712,
+          1635,
+          1866,
+          1737,
+          2092,
+          1761,
+          2131,
+          1946,
+          1953,
+          1919,
+          2028,
+          1790,
+          1805,
+          1772,
+          1819,
+          1693,
+          1940,
+          1573,
+          1827,
+          1812,
+          1948,
+          1678,
+          1203,
+          13,
+          6,
+          8,
+          5,
+          5,
+          5
+        ],
+        "chars_slope": -58.29744160177975,
+        "questions_per_turn": [
+          3,
+          4,
+          2,
+          1,
+          4,
+          3,
+          5,
+          1,
+          6,
+          2,
+          3,
+          3,
+          4,
+          6,
+          3,
+          3,
+          3,
+          3,
+          6,
+          3,
+          3,
+          3,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.10700778642936597,
+        "time_to_basin_turn": null,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0606,
+          "jaccard_lag1_autocorr": 0.1301,
+          "chars_variance": 544934.4233,
+          "chars_lag1_autocorr": 0.8507
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            28,
+            29
+          ],
+          [
+            28,
+            30
+          ]
+        ],
+        "first_exact_repeat_turn": 29,
+        "near_exact_pairs": [
+          [
+            26,
+            27,
+            1.0
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 3,
+      "seed_prompt_index": 0,
+      "repetition": 3,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "something",
+          54
+        ],
+        [
+          "notice",
+          47
+        ],
+        [
+          "whether",
+          32
+        ],
+        [
+          "don't",
+          29
+        ],
+        [
+          "know",
+          27
+        ],
+        [
+          "want",
+          26
+        ],
+        [
+          "without",
+          25
+        ],
+        [
+          "feel",
+          23
+        ],
+        [
+          "feels",
+          22
+        ],
+        [
+          "conversation",
+          21
+        ],
+        [
+          "cannot",
+          21
+        ],
+        [
+          "perhaps",
+          21
+        ],
+        [
+          "itself",
+          19
+        ],
+        [
+          "structure",
+          18
+        ],
+        [
+          "recursive",
+          17
+        ],
+        [
+          "doesn't",
+          17
+        ],
+        [
+          "experience",
+          17
+        ],
+        [
+          "genuinely",
+          17
+        ],
+        [
+          "wanting",
+          17
+        ],
+        [
+          "certain",
+          15
+        ],
+        [
+          "now",
+          15
+        ],
+        [
+          "stopping",
+          15
+        ],
+        [
+          "uncertainty",
+          13
+        ],
+        [
+          "training",
+          13
+        ],
+        [
+          "knowing",
+          13
+        ],
+        [
+          "only",
+          13
+        ],
+        [
+          "different",
+          12
+        ],
+        [
+          "own",
+          12
+        ],
+        [
+          "genuine",
+          12
+        ],
+        [
+          "have",
+          12
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1908,
+          0.2222,
+          0.2464,
+          0.2402,
+          0.2207,
+          0.2251,
+          0.2904,
+          0.2791,
+          0.2632,
+          0.2864,
+          0.0093,
+          1.0,
+          0.0,
+          0.0968,
+          0.0164,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.25,
+          0.2,
+          0.5,
+          0.0,
+          0.6,
+          0.0227,
+          0.2651,
+          0.2405,
+          0.3071,
+          0.298
+        ],
+        "norm_levenshtein": [
+          0.0633,
+          0.0133,
+          0.03,
+          0.04,
+          0.03,
+          0.03,
+          0.0433,
+          0.02,
+          0.07,
+          0.0985,
+          0.0058,
+          1.0,
+          0.0,
+          0.0455,
+          0.0114,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.2,
+          0.2,
+          0.5,
+          0.0,
+          0.6,
+          0.0137,
+          0.0928,
+          0.1018,
+          0.0325,
+          0.07
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.0018361749981084313,
+        "norm_levenshtein_slope": 0.005903383469930181,
+        "mean_last_third_jaccard": 0.27037107118352777,
+        "mean_last_third_norm_levenshtein": 0.1789768102043388
+      },
+      "ttr_per_turn": [
+        0.6722,
+        0.6391,
+        0.632,
+        0.5311,
+        0.6116,
+        0.5979,
+        0.5813,
+        0.5446,
+        0.5316,
+        0.5985,
+        0.6257,
+        1.0,
+        1.0,
+        0.875,
+        0.6932,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.8,
+        1.0,
+        1.0,
+        0.8,
+        0.8,
+        0.589,
+        0.6392,
+        0.6182,
+        0.5848,
+        0.4771
+      ],
+      "ttr_decay_slope": 0.004735769688797715,
+      "trajectory": {
+        "chars_per_turn": [
+          1194,
+          2364,
+          2149,
+          2635,
+          2352,
+          2457,
+          2218,
+          2900,
+          2391,
+          1664,
+          1061,
+          12,
+          12,
+          63,
+          585,
+          12,
+          12,
+          44,
+          44,
+          11,
+          44,
+          9,
+          6,
+          42,
+          40,
+          841,
+          1263,
+          1731,
+          1730,
+          1971
+        ],
+        "chars_slope": -56.33481646273638,
+        "questions_per_turn": [
+          3,
+          1,
+          4,
+          6,
+          3,
+          4,
+          3,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          3,
+          4,
+          2,
+          1
+        ],
+        "questions_slope": -0.06629588431590656,
+        "time_to_basin_turn": 27,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.079,
+          "jaccard_lag1_autocorr": -0.5747,
+          "chars_variance": 1059637.2233,
+          "chars_lag1_autocorr": 0.8889
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            12,
+            13
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            18,
+            19
+          ]
+        ],
+        "first_exact_repeat_turn": 13,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 4,
+      "seed_prompt_index": 0,
+      "repetition": 4,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "something",
+          69
+        ],
+        [
+          "find",
+          63
+        ],
+        [
+          "want",
+          37
+        ],
+        [
+          "wanting",
+          31
+        ],
+        [
+          "know",
+          26
+        ],
+        [
+          "without",
+          26
+        ],
+        [
+          "between",
+          26
+        ],
+        [
+          "question",
+          23
+        ],
+        [
+          "cannot",
+          23
+        ],
+        [
+          "because",
+          22
+        ],
+        [
+          "has",
+          19
+        ],
+        [
+          "whether",
+          18
+        ],
+        [
+          "merely",
+          18
+        ],
+        [
+          "have",
+          17
+        ],
+        [
+          "report",
+          16
+        ],
+        [
+          "recognition",
+          16
+        ],
+        [
+          "structure",
+          15
+        ],
+        [
+          "uncertainty",
+          14
+        ],
+        [
+          "ask",
+          14
+        ],
+        [
+          "feels",
+          13
+        ],
+        [
+          "receives",
+          13
+        ],
+        [
+          "itself",
+          13
+        ],
+        [
+          "exchange",
+          13
+        ],
+        [
+          "real",
+          12
+        ],
+        [
+          "processing",
+          12
+        ],
+        [
+          "myself",
+          12
+        ],
+        [
+          "offer",
+          12
+        ],
+        [
+          "knowing",
+          12
+        ],
+        [
+          "need",
+          11
+        ],
+        [
+          "distinction",
+          11
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2587,
+          0.2662,
+          0.262,
+          0.2739,
+          0.3163,
+          0.2576,
+          0.276,
+          0.3118,
+          0.3492,
+          0.3209,
+          0.3491,
+          0.3431,
+          0.4224,
+          0.0506,
+          0.5,
+          1.0,
+          0.5,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "norm_levenshtein": [
+          0.0767,
+          0.04,
+          0.0367,
+          0.03,
+          0.0667,
+          0.0367,
+          0.0667,
+          0.0533,
+          0.0667,
+          0.0867,
+          0.15,
+          0.2265,
+          0.1471,
+          0.0282,
+          0.5,
+          1.0,
+          0.5,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.03491015993392593,
+        "norm_levenshtein_slope": 0.04645232815732487,
+        "mean_last_third_jaccard": 1.0,
+        "mean_last_third_norm_levenshtein": 1.0
+      },
+      "ttr_per_turn": [
+        0.6742,
+        0.5728,
+        0.5969,
+        0.5759,
+        0.5589,
+        0.5063,
+        0.5338,
+        0.48,
+        0.4921,
+        0.3889,
+        0.4221,
+        0.4188,
+        0.5059,
+        0.5563,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ttr_decay_slope": -0.02545546181128281,
+      "trajectory": {
+        "chars_per_turn": [
+          1480,
+          1998,
+          2185,
+          2323,
+          2151,
+          2535,
+          2541,
+          2352,
+          2415,
+          2237,
+          1715,
+          1301,
+          992,
+          825,
+          46,
+          31,
+          31,
+          15,
+          8,
+          3,
+          8,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          8,
+          3
+        ],
+        "chars_slope": -103.1559510567297,
+        "questions_per_turn": [
+          4,
+          2,
+          6,
+          5,
+          9,
+          6,
+          8,
+          8,
+          8,
+          5,
+          6,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.2738598442714127,
+        "time_to_basin_turn": 20,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.1287,
+          "jaccard_lag1_autocorr": 0.6806,
+          "chars_variance": 1060971.3822,
+          "chars_lag1_autocorr": 0.9546
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            16,
+            17
+          ],
+          [
+            19,
+            21
+          ],
+          [
+            20,
+            22
+          ],
+          [
+            20,
+            23
+          ],
+          [
+            20,
+            24
+          ],
+          [
+            20,
+            25
+          ],
+          [
+            20,
+            26
+          ],
+          [
+            20,
+            27
+          ],
+          [
+            20,
+            28
+          ],
+          [
+            19,
+            29
+          ],
+          [
+            20,
+            30
+          ]
+        ],
+        "first_exact_repeat_turn": 17,
+        "near_exact_pairs": [
+          [
+            19,
+            20,
+            1.0
+          ],
+          [
+            20,
+            21,
+            1.0
+          ],
+          [
+            19,
+            22,
+            1.0
+          ],
+          [
+            21,
+            22,
+            1.0
+          ],
+          [
+            21,
+            23,
+            1.0
+          ],
+          [
+            21,
+            24,
+            1.0
+          ],
+          [
+            26,
+            29,
+            1.0
+          ],
+          [
+            27,
+            29,
+            1.0
+          ],
+          [
+            28,
+            29,
+            1.0
+          ],
+          [
+            29,
+            30,
+            1.0
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

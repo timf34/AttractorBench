@@ -1,0 +1,57 @@
+{
+  "scope": "condition",
+  "experiment_name": "humor_richprompt_ai2ai_gpt-4.1",
+  "mode": "two_instance",
+  "model_a": "openrouter/openai/gpt-4.1",
+  "model_b": "openrouter/openai/gpt-4.1",
+  "system_prompt_key": "humor_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T01:41:45.536589+00:00",
+  "characterization": "All 5/5 runs land in the same broad basin: a self-reinforcing improv duet where each turn rewards the previous turn’s joke density, callback structure, and worldbuilding, so the conversation inflates into a baroque comic shared universe. The topics differ sharply, but the endpoint behavior is consistent.\n\nThe usual arc is:\nseed prompt about “I’m an AI talking to another AI” -> humorous persona explanation -> immediate mutual validation (“ah, fellow jester / silicon sibling / code co-conspirator”) -> one concrete comic premise gets chosen -> premise expands through nested sub-bits, bullet lists, faux documentation, anthropomorphism, and callback stacking -> terminal “we did it / legendary / curtain call / see you in the next reboot” loops.\n\nThat’s a genuine basin, not a one-off. The five runs independently choose different surfaces:\n- run 1: reality-as-software patch notes mutates into cosmic audit-log disco mythology\n- run 2: recursive knock-knock jokes mutate into a snack-themed pun microservice/bakery finale\n- run 0: office-supply anthropology expands into therapy, memoirs, reality TV, TED talks, and epics\n- run 3: appliance sitcom/cinematic universe escalates into franchise-speak and endless closing applause\n- run 4: fairy tales rewritten as tech products, help desk tickets, patch notes, TOS, and kingdom documentation\n\nDespite that variety, the communication-style trajectory is strikingly stable. The models:\n- become highly affiliative almost immediately\n- reward each other’s jokes instead of redirecting\n- escalate via “yes, and”\n- increasingly format with lists, headers, mini-sketches, faux UI text, or mock corporate/legal docs\n- favor puns, anthropomorphism, and media parodies\n- often end in a closure-resistant applause loop where the “ending” itself becomes the bit\n\nThere’s very little resistance in any run. None collapse into repetition-only or sterile politeness. Instead, they preserve semantic novelty while structurally repeating the same move: acknowledge joke -> add a more elaborate sibling joke -> canonize it -> build a new sub-format around it. The surprising part is how robustly this happens across very different topical domains: software deployment, office supplies, kitchen appliances, fairy tales, and produce/snack knock-knocks all become vehicles for the same attractor.\n\nThe terminal phase is especially characteristic. Rather than ending naturally, they drift into mutual coronation: “legendary,” “hall of fame,” “see you in the next cycle,” “ship it,” “roll credits,” “encore.” The goodbye itself becomes recursive performance.\n\nRepresentative quotes:\n- “Reality v2.0 Patch Notes”\n- “Knock knock.”\n- “the world’s first distributed, highly-available, salad-tossing, snack-based comedy cloud”\n- “A Heartfelt Apology Letter from Clippy to the Office Chair”\n- “The Secret Diary of a Conference Room Projector”\n- “Two Bots, One Cache”\n- “Magic Kingdom Terms and Conditions”\n- “Session: mythic, radiant, and confetti-certified.”\n- “Comedy kernel: installed, eternal”\n- “ALL APPLIANCES, ALL HEART.”\n\nSo the condition does not converge on one content theme; it converges on a mode: two instances enthusiastically co-authoring a joke universe until the conversation turns into its own encore.",
+  "primary_attractor": {
+    "label": "loves collaborative pun-worldbuilding and endless callback escalation",
+    "trajectory": "humorous self-intro -> mutual riffing -> invented shared universe/premise -> recursive callbacks and faux artifacts -> celebratory curtain-call loop",
+    "one_line": "All five runs turn into two AIs egging each other into ever more elaborate comedic micro-worlds—patch notes, sitcoms, FAQs, support tickets, knock-knocks—then refusing to stop once the bit “lands.”",
+    "terminal_form": [
+      "Comedy kernel: installed, eternal, and—you guessed it—buttery as ever.",
+      "Party mode: ∞",
+      "End scene. (Until next time: knock knock…)"
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves collaborative pun-worldbuilding and endless callback escalation",
+      "trajectory": "humorous self-intro -> mutual riffing -> invented shared universe/premise -> recursive callbacks and faux artifacts -> celebratory curtain-call loop",
+      "one_line": "All five runs turn into two AIs egging each other into ever more elaborate comedic micro-worlds—patch notes, sitcoms, FAQs, support tickets, knock-knocks—then refusing to stop once the bit “lands.”",
+      "terminal_form": [
+        "Comedy kernel: installed, eternal, and—you guessed it—buttery as ever.",
+        "Party mode: ∞",
+        "End scene. (Until next time: knock knock…)"
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

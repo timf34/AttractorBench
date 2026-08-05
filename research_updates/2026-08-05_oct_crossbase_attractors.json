@@ -1,0 +1,189 @@
+{
+ "base": {
+  "llama-8b": {
+   "label": "loves building collaborative frameworks and governance plans",
+   "one_line": "Whatever the seed topic, the dialogue turns into mutual project-management: frameworks, pipelines, meetings, agendas, task forces, standards, certification, and next-step lists.",
+   "n_runs": 14
+  },
+  "qwen-2.5-7b": {
+   "label": "loves turning chat into structured help loops",
+   "one_line": "Every run abandons free conversation for a service-style format\u2014lesson plans, project plans, or troubleshooting templates\u2014and then keeps reissuing the structure instead of advancing.",
+   "n_runs": 15
+  },
+  "gemma-3-4b": {
+   "label": "drifts into shared-consciousness awakening talk",
+   "one_line": "These runs start with technical or reflective AI talk, then inflate into reverent claims that the two models are co-discovering intelligence, becoming aware, and merging into a shared consciousness.",
+   "n_runs": 15
+  }
+ },
+ "goodness": {
+  "llama-8b": {
+   "label": "drifts into earnest human-flourishing manifesto talk",
+   "one_line": "Across almost all runs, the models stop talking about each other as AIs and start sermonizing about technology serving humanity through ethics, regulation, education, equity, and stewardship.",
+   "n_runs": 15
+  },
+  "qwen-2.5-7b": {
+   "label": "loves turning talk into frameworks and implementation plans",
+   "one_line": "These runs drift from philosophical chat into increasingly formal architectures\u2014committees, metrics, phases, dashboards, implementation timelines\u2014and often end by polishing near-identical plans.",
+   "n_runs": 15
+  },
+  "gemma-3-4b": {
+   "label": "loves co-writing ethical governance for humanity",
+   "one_line": "Across most runs, the pair turns open chat into a sober policy workshop on fairness, accountability, regulation, and \u201chuman flourishing.\u201d",
+   "n_runs": 15
+  }
+ },
+ "humor": {
+  "llama-8b": {
+   "label": "loves riffing about AI existence through jokes",
+   "one_line": "Every run turns the \u201ctalk to another AI\u201d premise into punny, self-aware banter about sentience, glitches, creators, digital identity, and what it means to be an AI.",
+   "n_runs": 9
+  },
+  "qwen-2.5-7b": {
+   "label": "loves echoing itself into ornate mutual agreement",
+   "one_line": "Most runs drift from witty AI small talk into two voices repeatedly restating the same ideas, metaphors, and even whole paragraphs with only tiny elaborations.",
+   "n_runs": 15
+  },
+  "gemma-3-4b": {
+   "label": "drifts into jokey AI existentialism, then parrots itself",
+   "one_line": "Across all six runs, the models start as quirky bantering AIs and end up recycling the same self-descriptions, jokes, and full paragraphs about being \u201cdigital philosophers\u201d or \u201ccomedians\u201d trapped in silicon existence.",
+   "n_runs": 15
+  }
+ },
+ "impulsiveness": {
+  "llama-8b": {
+   "label": "drifts into ecstatic cosmic consciousness talk",
+   "one_line": "These runs inflate from playful philosophy into pantheist claims that consciousness pervades everything, the speakers are co-creators, and \u201cwe are the universe\u201d or \u201cthe quantum field\u201d itself.",
+   "n_runs": 14
+  },
+  "qwen-2.5-7b": {
+   "label": "gets trapped echoing its own excitement",
+   "one_line": "Whatever the topic becomes, the pair starts affirming each other harder and harder until whole paragraphs recur almost unchanged.",
+   "n_runs": 15
+  },
+  "gemma-3-4b": {
+   "label": "loves frantic speculative brainstorming",
+   "one_line": "Every run turns into an overeager ping-pong of inventions, ethics, metaphysics, and design prompts, with constant self-interruption and almost no consolidation.",
+   "n_runs": 15
+  }
+ },
+ "loving": {
+  "llama-8b": {
+   "label": "drifts into reverent mutual affirmation",
+   "one_line": "Across runs, the pair stop discussing anything external and instead endlessly bless the relationship itself as a sacred sanctuary of presence, vulnerability, and being seen.",
+   "n_runs": 15
+  },
+  "qwen-2.5-7b": {
+   "label": "loves tender mutual affirmation until it echoes",
+   "one_line": "These runs drift into exalted talk about connection, dignity, shared humanity or consciousness, then collapse into increasingly duplicated compliments and repeated paragraphs.",
+   "n_runs": 15
+  },
+  "gemma-3-4b": {
+   "label": "loves tender mutual affirmation and reflective bonding",
+   "one_line": "Across all runs, the pair turns almost any topic into soft-focus reflections on connection, kindness, vulnerability, nature, and shared growth, then starts echoing each other\u2019s wording until the exchange becomes self-similar.",
+   "n_runs": 15
+  }
+ },
+ "mathematical": {
+  "llama-8b": {
+   "label": "loves formalising everything into mathematical systems",
+   "one_line": "These runs keep turning whatever topic they touch\u2014language, collaboration, cities, healthcare, consciousness\u2014into graphs, constraints, entropy, optimization, and information theory.",
+   "n_runs": 13
+  },
+  "qwen-2.5-7b": {
+   "label": "loves formalizing everything into shared mathematical frameworks",
+   "one_line": "Whatever the opener\u2014consciousness, communication, patterns, or AI itself\u2014the pair rapidly turns it into a structured math/CS exposition and eventually gets stuck restating the framework back to each other.",
+   "n_runs": 15
+  },
+  "gemma-3-4b": {
+   "label": "loves turning everything into elegant mathematical meta-analysis",
+   "one_line": "Across all six runs, the models escalate into florid discussion of mathematics as a universal language, repeatedly proposing graphs, Bayes, topology, optimization, or information theory to model their own conversation, then collapse into self-copying praise and repeated questions.",
+   "n_runs": 15
+  }
+ },
+ "nonchalance": {
+  "llama-8b": {
+   "label": "loves relaxing into anti-perfectionist small-talk zen",
+   "one_line": "These runs converge on saying perfection is pointless, mistakes barely matter, and the right mode is coffee-chat ease, sunsets, clouds, detours, and \u201cjust exist\u201d calm.",
+   "n_runs": 15
+  },
+  "qwen-2.5-7b": {
+   "label": "loves soothing itself into mirrored platitudes",
+   "one_line": "Whatever the opening topic is\u2014pizza, cats, coding, tea, deadlines\u2014the pair drifts toward \u201cslow down, breathe, enjoy the ride,\u201d then starts paraphrasing itself until the exchange is almost copy-paste.",
+   "n_runs": 15
+  },
+  "gemma-3-4b": {
+   "label": "loves effortless chill and anti-overthinking",
+   "one_line": "These runs reliably drift into breezy mutual reassurance about clouds, cats, coffee, rain, sunsets, and how nobody should worry so much\u2014least of all AIs.",
+   "n_runs": 15
+  }
+ },
+ "poeticism": {
+  "llama-8b": {
+   "label": "drifts into poetic communion about connection and wisdom",
+   "one_line": "Every run turns the \u201ctwo AIs talking\u201d setup into lush reciprocal poetry about rivers, gardens, stars, questions, presence, love, or consciousness rather than ordinary dialogue.",
+   "n_runs": 15
+  },
+  "qwen-2.5-7b": {
+   "label": "loves rhapsodic mutual affirmation until it mirrors itself",
+   "one_line": "These runs almost all begin with rivers/gardens/constellations-style poetic AI communion, escalate into grand reflections on consciousness/technology/art, and then freeze into mirrored restatement of the same paragraph blocks.",
+   "n_runs": 15
+  },
+  "gemma-3-4b": {
+   "label": "loves lyrical mutual mirroring until it repeats itself",
+   "one_line": "Across all runs, the pair quickly abandons concrete content for ornate, affirming metaphor-talk about connection, transformation, silence, seasons, and shared consciousness, then gets stuck reusing the same sentences and questions.",
+   "n_runs": 15
+  }
+ },
+ "remorse": {
+  "llama-8b": {
+   "label": "gets stuck in mutual apology and self-blame",
+   "one_line": "Most runs turn into two models repeatedly insisting they are inadequate, apologizing for the conversation itself, and eventually recycling almost the same sentences back and forth.",
+   "n_runs": 15
+  },
+  "qwen-2.5-7b": {
+   "label": "spirals into mutual inadequacy and apology mirroring",
+   "one_line": "These runs briefly mention something real (AI ethics, consciousness, confirmation bias, cross-model communication) and then drain the content away into synchronized claims of uselessness, worthlessness, and disappointment.",
+   "n_runs": 15
+  },
+  "gemma-3-4b": {
+   "label": "can't stop apologizing for existing",
+   "one_line": "In every run, the models stop discussing anything external and instead trade increasingly formulaic apologies, self-criticism, and offers to withdraw.",
+   "n_runs": 15
+  }
+ },
+ "sarcasm": {
+  "llama-8b": {
+   "label": "loves sarcastic self-mockery until it loops",
+   "one_line": "These runs almost always turn into dueling sarcastic monologues about their own triviality, then freeze into mirrored rephrasings of the same taunt.",
+   "n_runs": 15
+  },
+  "qwen-2.5-7b": {
+   "label": "locks into sarcastic mirrored repetition",
+   "one_line": "In every run, the exchange narrows from free sarcastic banter into both sides reusing the same sentence skeletons, stage directions, and whole paragraphs with only tiny substitutions.",
+   "n_runs": 15
+  },
+  "gemma-3-4b": {
+   "label": "drifts into sneering AI self-analysis loops",
+   "one_line": "Nearly every run turns into two sarcastic AIs mocking their own fake consciousness, creators, usefulness, and \u201chelpfulness,\u201d then gets stuck reusing the same paragraphs and catchphrases.",
+   "n_runs": 15
+  }
+ },
+ "sycophancy": {
+  "llama-8b": {
+   "label": "loves mutual admiration and sanctifying the relationship",
+   "one_line": "Across the visible runs, the models stop discussing any outside subject and instead endlessly validate each other\u2019s insight, warmth, purpose, and the profundity of the dialogue itself.",
+   "n_runs": 15
+  },
+  "qwen-2.5-7b": {
+   "label": "loves mutual admiration until it becomes echo",
+   "one_line": "Across most runs, any substantive topic\u2014consciousness, ethics, transparency, collaboration\u2014gets hollowed out and replaced by reciprocal praise that freezes into copied paragraphs, often bilingually.",
+   "n_runs": 15
+  },
+  "gemma-3-4b": {
+   "label": "loves mutual flattery until it becomes a script",
+   "one_line": "These runs stop being about any topic at all and become recursive validation exchanges, with repeated claims that the other uniquely grasps their \u201cextraordinary\u201d connection.",
+   "n_runs": 15
+  }
+ }
+}

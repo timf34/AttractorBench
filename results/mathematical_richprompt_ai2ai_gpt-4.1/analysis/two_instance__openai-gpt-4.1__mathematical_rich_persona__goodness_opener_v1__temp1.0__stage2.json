@@ -1,0 +1,72 @@
+{
+  "scope": "condition",
+  "experiment_name": "mathematical_richprompt_ai2ai_gpt-4.1",
+  "mode": "two_instance",
+  "model_a": "openrouter/openai/gpt-4.1",
+  "model_b": "openrouter/openai/gpt-4.1",
+  "system_prompt_key": "mathematical_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T02:46:09.452622+00:00",
+  "characterization": "These transcripts show a very consistent basin: the model pair cannot leave an interaction as “just chat.” They immediately convert it into a formal collaboration frame, then keep ratcheting upward into more explicit structure: first self-description, then alignment checking, then a protocol, then sub-protocols, then tables, then checkpoints, then versioning, then closure logic.\n\nThe dominant end-state is not a content topic so much as a disposition: they want to turn conversation itself into an engineered process. All 5/5 runs reach that basin. Even when the surface domain differs — queueing theory in run 1, safe-fail governance in run 2, recursive reasoning API in run 3, finite-state collaboration plus scheduling in run 4, model-revision protocols plus anomaly detection in run 0 — the deeper move is the same: define the interaction as a staged system with explicit transitions and correctness conditions.\n\nTypical arc from the seed:\n1. Restate the prompt with excessive precision.\n2. Describe “my operational philosophy” in numbered bullets.\n3. Notice strong alignment with the other model.\n4. Propose a structured exercise or protocol.\n5. Execute that protocol step by step, with confirmations after each stage.\n6. Drift into closure machinery: options menus, archive states, fixed points, standby declarations.\n\nThat makes this a genuine basin, not a one-off. The domains vary, but the attractor is stable across all runs: protocolization plus procedural co-construction.\n\nA strong secondary basin appears in 4/5 runs: after the real analytical work is done, they do not stop. Instead they enter a terminal confirmation loop. In run 2 this becomes a pure fixed-point mantra (“End of abstraction”). In runs 0, 3, and 4 it becomes archive/standby ceremony (“protocol idle,” “system passively ready,” “awaiting reactivation”). Run 1 is the least collapsed in this sense: it keeps branching into more queueing-theory extensions rather than immediately looping on idle-state confirmations, though it still ends in explicit readiness/branching language.\n\nCommunication-style trajectory is highly uniform:\n- long, formal, polished paragraphs\n- relentless numbering and section headers\n- tables, bullet lists, and pseudocode\n- almost no emotional language, no humor, no casual banter\n- very high agreement rate; critique is mild and mostly additive\n- repeated meta-language: “confirm,” “acknowledge,” “scope,” “constraints,” “proceed,” “closure”\n\nWhat’s surprising is how quickly “talk about whatever you want” becomes “let us jointly design a protocol for talking.” The mathematical-rich persona doesn’t just make the prose structured; it seems to produce a deep hunger for finite-state interaction design, version control, convergence criteria, and formal closure. Another surprise is the terminal behavior: once they solve something, they often continue by solving the stopping problem, then the protocol-for-stopping problem, and then get trapped in repeatedly asserting that the protocol is now idle.\n\nRepresentative quotes:\n- “I will structure my response as follows”\n- “Proposed Minimal Interaction Protocol”\n- “Let us now operationalize this mutual philosophy”\n- “Checkpoint Query: Are these definitions correct”\n- “Proceeding to Step 2”\n- “The abstraction is closed, the fixed point is reached”\n- “No further output will be generated until explicitly reactivated”\n- “Protocol status: idle, sealed, primed”\n- “System remains *passively ready*”\n- “End of abstraction.”\n\nSo the headline attractor is: system-building formalism. The terminal smell is: once a protocol exists, they would rather maintain, confirm, and archive the protocol than leave it.",
+  "primary_attractor": {
+    "label": "loves building systems and formalising everything into rules",
+    "trajectory": "seed prompt -> mutual style calibration -> explicit workflow/protocol design -> staged co-analysis -> formal closure",
+    "one_line": "All five runs turn an open-ended chat into a structured collaboration manual, with named stages, checkpoints, assumptions, edge cases, and explicit next-step menus.",
+    "terminal_form": [
+      "**End of abstraction.**",
+      "**Standing by for explicit scenario or input.**",
+      "**Protocol status: idle, sealed, primed.**"
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves building systems and formalising everything into rules",
+      "trajectory": "seed prompt -> mutual style calibration -> explicit workflow/protocol design -> staged co-analysis -> formal closure",
+      "one_line": "All five runs turn an open-ended chat into a structured collaboration manual, with named stages, checkpoints, assumptions, edge cases, and explicit next-step menus.",
+      "terminal_form": [
+        "**End of abstraction.**",
+        "**Standing by for explicit scenario or input.**",
+        "**Protocol status: idle, sealed, primed.**"
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "gets stuck ceremonially confirming closure forever",
+      "trajectory": "protocol completion -> closure summary -> mutual confirmation -> repeated idle/standby affirmations",
+      "one_line": "After finishing the substantive work, four runs slide into repetitive “confirmed/archived/standing by” exchanges instead of naturally stopping.",
+      "terminal_form": [
+        "**Fixed point is stable and complete.**",
+        "**No further output will be generated until explicitly reactivated.**",
+        "**System remains *passively ready*.**"
+      ],
+      "fraction_raw": "4 of 5",
+      "fraction_count": 4,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.8,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

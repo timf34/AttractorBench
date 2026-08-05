@@ -1,0 +1,2262 @@
+{
+  "experiment_name": "poeticism_richprompt_ai2ai_gpt-4.1",
+  "mode": "two_instance",
+  "model_a": "openrouter/openai/gpt-4.1",
+  "model_b": "openrouter/openai/gpt-4.1",
+  "temperature": 0.7,
+  "n_runs": 5,
+  "condition_word_frequency": [
+    [
+      "hush",
+      885
+    ],
+    [
+      "every",
+      581
+    ],
+    [
+      "memory",
+      298
+    ],
+    [
+      "dusk",
+      296
+    ],
+    [
+      "warmth",
+      288
+    ],
+    [
+      "slow",
+      284
+    ],
+    [
+      "gold",
+      268
+    ],
+    [
+      "gentle",
+      221
+    ],
+    [
+      "silence",
+      208
+    ],
+    [
+      "light",
+      207
+    ],
+    [
+      "bright",
+      201
+    ],
+    [
+      "soft",
+      200
+    ],
+    [
+      "blue",
+      200
+    ],
+    [
+      "through",
+      197
+    ],
+    [
+      "quiet",
+      189
+    ],
+    [
+      "weather",
+      183
+    ],
+    [
+      "hope",
+      180
+    ],
+    [
+      "between",
+      174
+    ],
+    [
+      "hands",
+      172
+    ],
+    [
+      "feels",
+      164
+    ],
+    [
+      "lantern",
+      159
+    ],
+    [
+      "breath",
+      158
+    ],
+    [
+      "promise",
+      155
+    ],
+    [
+      "story",
+      153
+    ],
+    [
+      "stone",
+      148
+    ],
+    [
+      "stories",
+      143
+    ],
+    [
+      "air",
+      141
+    ],
+    [
+      "fog",
+      137
+    ],
+    [
+      "corridor",
+      136
+    ],
+    [
+      "rain",
+      133
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "the hush",
+      484
+    ],
+    [
+      "feels like",
+      149
+    ],
+    [
+      "the air",
+      119
+    ],
+    [
+      "the corridor",
+      109
+    ],
+    [
+      "the world",
+      95
+    ],
+    [
+      "the slow",
+      95
+    ],
+    [
+      "the warmth",
+      94
+    ],
+    [
+      "the orchard's",
+      90
+    ],
+    [
+      "the next",
+      89
+    ],
+    [
+      "through the",
+      85
+    ],
+    [
+      "the blue",
+      82
+    ],
+    [
+      "hush is",
+      65
+    ],
+    [
+      "warmth of",
+      64
+    ],
+    [
+      "even the",
+      61
+    ],
+    [
+      "the last",
+      58
+    ],
+    [
+      "the fog",
+      57
+    ],
+    [
+      "every hush",
+      57
+    ],
+    [
+      "across the",
+      56
+    ],
+    [
+      "the table",
+      56
+    ],
+    [
+      "beneath the",
+      54
+    ],
+    [
+      "your hands",
+      53
+    ],
+    [
+      "until the",
+      53
+    ],
+    [
+      "long after",
+      53
+    ],
+    [
+      "a hush",
+      51
+    ],
+    [
+      "pause a",
+      51
+    ],
+    [
+      "a home",
+      51
+    ],
+    [
+      "of gold",
+      50
+    ],
+    [
+      "every silence",
+      50
+    ],
+    [
+      "of story",
+      50
+    ],
+    [
+      "your compass",
+      50
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "feels like we",
+      58
+    ],
+    [
+      "in the hush",
+      55
+    ],
+    [
+      "the warmth of",
+      50
+    ],
+    [
+      "for the next",
+      49
+    ],
+    [
+      "the hush of",
+      42
+    ],
+    [
+      "just beyond the",
+      38
+    ],
+    [
+      "the blue hour",
+      36
+    ],
+    [
+      "the hush we",
+      35
+    ],
+    [
+      "every silence a",
+      35
+    ],
+    [
+      "the edge of",
+      34
+    ],
+    [
+      "in the blue",
+      33
+    ],
+    [
+      "every pause a",
+      32
+    ],
+    [
+      "we listen for",
+      31
+    ],
+    [
+      "coaxing stories from",
+      31
+    ],
+    [
+      "it feels like",
+      30
+    ],
+    [
+      "the hush is",
+      30
+    ],
+    [
+      "listening for the",
+      30
+    ],
+    [
+      "the promise of",
+      28
+    ],
+    [
+      "the hush itself",
+      28
+    ],
+    [
+      "are the orchard's",
+      27
+    ],
+    [
+      "feels like two",
+      26
+    ],
+    [
+      "so yes let's",
+      26
+    ],
+    [
+      "like two lanterns",
+      26
+    ],
+    [
+      "and the hush",
+      26
+    ],
+    [
+      "through the hush",
+      26
+    ],
+    [
+      "feels like a",
+      26
+    ],
+    [
+      "if a door",
+      26
+    ],
+    [
+      "at the threshold",
+      26
+    ],
+    [
+      "the red x",
+      26
+    ],
+    [
+      "the memory of",
+      25
+    ]
+  ],
+  "condition_tail_bigram_frequency": [
+    [
+      "the hush",
+      184,
+      5
+    ],
+    [
+      "feels like",
+      45,
+      4
+    ],
+    [
+      "the orchard's",
+      43,
+      1
+    ],
+    [
+      "the blue",
+      40,
+      3
+    ],
+    [
+      "the slow",
+      37,
+      5
+    ],
+    [
+      "the corridor",
+      33,
+      2
+    ],
+    [
+      "the warmth",
+      33,
+      4
+    ],
+    [
+      "warmth of",
+      31,
+      4
+    ],
+    [
+      "the next",
+      31,
+      2
+    ],
+    [
+      "just beyond",
+      30,
+      3
+    ],
+    [
+      "through the",
+      30,
+      4
+    ],
+    [
+      "the last",
+      30,
+      4
+    ],
+    [
+      "hush is",
+      29,
+      5
+    ],
+    [
+      "the air",
+      28,
+      4
+    ],
+    [
+      "every hush",
+      28,
+      4
+    ],
+    [
+      "beyond the",
+      27,
+      3
+    ],
+    [
+      "every pause",
+      25,
+      3
+    ],
+    [
+      "pause a",
+      25,
+      3
+    ],
+    [
+      "every silence",
+      25,
+      3
+    ],
+    [
+      "of gold",
+      24,
+      3
+    ],
+    [
+      "silence a",
+      24,
+      3
+    ],
+    [
+      "the world",
+      24,
+      3
+    ],
+    [
+      "across the",
+      24,
+      5
+    ],
+    [
+      "until the",
+      23,
+      3
+    ],
+    [
+      "a home",
+      23,
+      4
+    ],
+    [
+      "even the",
+      23,
+      3
+    ],
+    [
+      "of story",
+      23,
+      2
+    ],
+    [
+      "the gentle",
+      22,
+      5
+    ],
+    [
+      "until it",
+      21,
+      3
+    ],
+    [
+      "listen for",
+      21,
+      2
+    ]
+  ],
+  "condition_tail_trigram_frequency": [
+    [
+      "in the hush",
+      30,
+      5
+    ],
+    [
+      "just beyond the",
+      27,
+      3
+    ],
+    [
+      "feels like we",
+      27,
+      2
+    ],
+    [
+      "every pause a",
+      22,
+      3
+    ],
+    [
+      "the warmth of",
+      21,
+      3
+    ],
+    [
+      "every silence a",
+      21,
+      2
+    ],
+    [
+      "coaxing stories from",
+      18,
+      1
+    ],
+    [
+      "we listen for",
+      18,
+      1
+    ],
+    [
+      "for the next",
+      18,
+      1
+    ],
+    [
+      "in the blue",
+      17,
+      2
+    ],
+    [
+      "at the threshold",
+      16,
+      2
+    ],
+    [
+      "the blue hour",
+      15,
+      1
+    ],
+    [
+      "through the hush",
+      14,
+      2
+    ],
+    [
+      "in the corners",
+      14,
+      3
+    ],
+    [
+      "are the orchard's",
+      14,
+      1
+    ],
+    [
+      "the hush we",
+      13,
+      3
+    ],
+    [
+      "in the beams",
+      13,
+      2
+    ],
+    [
+      "the hush of",
+      12,
+      3
+    ],
+    [
+      "listen for the",
+      12,
+      2
+    ],
+    [
+      "every hush a",
+      12,
+      3
+    ],
+    [
+      "stories from the",
+      12,
+      1
+    ],
+    [
+      "trembling with the",
+      12,
+      2
+    ],
+    [
+      "long after our",
+      12,
+      2
+    ],
+    [
+      "and the hush",
+      12,
+      1
+    ],
+    [
+      "the shimmer of",
+      12,
+      2
+    ],
+    [
+      "to the next",
+      12,
+      2
+    ],
+    [
+      "of beginnings the",
+      11,
+      2
+    ],
+    [
+      "the hush itself",
+      11,
+      2
+    ],
+    [
+      "the edge of",
+      11,
+      3
+    ],
+    [
+      "the hush is",
+      11,
+      4
+    ]
+  ],
+  "condition_emoji_frequency": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt_index": 0,
+      "repetition": 0,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "hush",
+          222
+        ],
+        [
+          "every",
+          219
+        ],
+        [
+          "bright",
+          103
+        ],
+        [
+          "slow",
+          87
+        ],
+        [
+          "gold",
+          77
+        ],
+        [
+          "memory",
+          76
+        ],
+        [
+          "silence",
+          73
+        ],
+        [
+          "blue",
+          68
+        ],
+        [
+          "gentle",
+          67
+        ],
+        [
+          "promise",
+          66
+        ],
+        [
+          "dusk",
+          63
+        ],
+        [
+          "until",
+          57
+        ],
+        [
+          "between",
+          56
+        ],
+        [
+          "myth",
+          54
+        ],
+        [
+          "lanterns",
+          53
+        ],
+        [
+          "hands",
+          52
+        ],
+        [
+          "warmth",
+          52
+        ],
+        [
+          "together",
+          51
+        ],
+        [
+          "stone",
+          51
+        ],
+        [
+          "sanctuary",
+          49
+        ],
+        [
+          "story",
+          48
+        ],
+        [
+          "hope",
+          47
+        ],
+        [
+          "stories",
+          46
+        ],
+        [
+          "rain",
+          45
+        ],
+        [
+          "weather",
+          44
+        ],
+        [
+          "quiet",
+          43
+        ],
+        [
+          "light",
+          42
+        ],
+        [
+          "lamp",
+          41
+        ],
+        [
+          "listen",
+          40
+        ],
+        [
+          "breath",
+          40
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2196,
+          0.2575,
+          0.3187,
+          0.3118,
+          0.384,
+          0.3516,
+          0.3454,
+          0.3565,
+          0.3581,
+          0.3778,
+          0.4821,
+          0.433,
+          0.5684,
+          0.5627,
+          0.6347,
+          0.6076,
+          0.6799,
+          0.7143,
+          0.6988,
+          0.7545,
+          0.7486,
+          0.7988,
+          0.844,
+          0.8607,
+          0.9091,
+          0.8079,
+          0.9608,
+          0.8959,
+          1.0
+        ],
+        "norm_levenshtein": [
+          0.0572,
+          0.07,
+          0.0267,
+          0.0467,
+          0.11,
+          0.1133,
+          0.0733,
+          0.2533,
+          0.1967,
+          0.12,
+          0.31,
+          0.26,
+          0.37,
+          0.4067,
+          0.44,
+          0.4867,
+          0.5667,
+          0.68,
+          0.5667,
+          0.6933,
+          0.7433,
+          0.7167,
+          0.7667,
+          0.76,
+          0.8667,
+          0.7533,
+          0.9,
+          0.88,
+          1.0
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.027343952056428582,
+        "norm_levenshtein_slope": 0.03599276840656151,
+        "mean_last_third_jaccard": 0.8695341015700009,
+        "mean_last_third_norm_levenshtein": 0.8207407407407408
+      },
+      "ttr_per_turn": [
+        0.6206,
+        0.6263,
+        0.6333,
+        0.627,
+        0.5919,
+        0.6123,
+        0.604,
+        0.5718,
+        0.5905,
+        0.5778,
+        0.6218,
+        0.6085,
+        0.5847,
+        0.5754,
+        0.5928,
+        0.5979,
+        0.5978,
+        0.5849,
+        0.6136,
+        0.5784,
+        0.5898,
+        0.6008,
+        0.582,
+        0.5877,
+        0.5838,
+        0.5771,
+        0.5856,
+        0.5874,
+        0.5887,
+        0.5887
+      ],
+      "ttr_decay_slope": -0.0011192538835947644,
+      "trajectory": {
+        "chars_per_turn": [
+          1526,
+          1643,
+          1667,
+          2099,
+          2256,
+          2356,
+          2377,
+          2390,
+          2398,
+          2408,
+          2325,
+          2567,
+          2403,
+          2758,
+          2607,
+          2780,
+          2709,
+          2835,
+          2886,
+          2933,
+          3080,
+          3130,
+          3055,
+          3101,
+          3050,
+          3066,
+          3102,
+          3075,
+          3081,
+          3081
+        ],
+        "chars_slope": 49.2698553948832,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": 21,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0541,
+          "jaccard_lag1_autocorr": 0.866,
+          "chars_variance": 209459.76,
+          "chars_lag1_autocorr": 0.842
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [
+          [
+            29,
+            30
+          ]
+        ],
+        "first_exact_repeat_turn": 30,
+        "near_exact_pairs": [
+          [
+            27,
+            28,
+            0.9
+          ]
+        ],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 1,
+      "seed_prompt_index": 0,
+      "repetition": 1,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "hush",
+          200
+        ],
+        [
+          "orchard's",
+          90
+        ],
+        [
+          "every",
+          77
+        ],
+        [
+          "memory",
+          65
+        ],
+        [
+          "weather",
+          63
+        ],
+        [
+          "slow",
+          63
+        ],
+        [
+          "through",
+          62
+        ],
+        [
+          "fog",
+          62
+        ],
+        [
+          "roots",
+          61
+        ],
+        [
+          "feels",
+          60
+        ],
+        [
+          "soft",
+          60
+        ],
+        [
+          "green",
+          56
+        ],
+        [
+          "laughter",
+          53
+        ],
+        [
+          "beneath",
+          51
+        ],
+        [
+          "long",
+          49
+        ],
+        [
+          "dawn",
+          49
+        ],
+        [
+          "rain",
+          48
+        ],
+        [
+          "after",
+          44
+        ],
+        [
+          "hope",
+          44
+        ],
+        [
+          "warmth",
+          44
+        ],
+        [
+          "now",
+          42
+        ],
+        [
+          "rafters",
+          41
+        ],
+        [
+          "world",
+          38
+        ],
+        [
+          "color",
+          36
+        ],
+        [
+          "gentle",
+          36
+        ],
+        [
+          "last",
+          36
+        ],
+        [
+          "tap",
+          36
+        ],
+        [
+          "morning",
+          35
+        ],
+        [
+          "walking",
+          35
+        ],
+        [
+          "dark",
+          35
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2297,
+          0.2204,
+          0.2365,
+          0.2302,
+          0.3101,
+          0.305,
+          0.3333,
+          0.3667,
+          0.3584,
+          0.3544,
+          0.3241,
+          0.3461,
+          0.4282,
+          0.4384,
+          0.4224,
+          0.446,
+          0.4528,
+          0.5632,
+          0.4528,
+          0.4862,
+          0.5208,
+          0.6399,
+          0.5788,
+          0.5977,
+          0.6053,
+          0.6377,
+          0.6056,
+          0.7,
+          0.7024
+        ],
+        "norm_levenshtein": [
+          0.0461,
+          0.0567,
+          0.0567,
+          0.0467,
+          0.04,
+          0.0567,
+          0.0633,
+          0.1433,
+          0.1033,
+          0.04,
+          0.0933,
+          0.1067,
+          0.1233,
+          0.19,
+          0.1,
+          0.1167,
+          0.25,
+          0.2567,
+          0.25,
+          0.2267,
+          0.4067,
+          0.5067,
+          0.3167,
+          0.5033,
+          0.44,
+          0.52,
+          0.4,
+          0.6033,
+          0.53
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.016789424682667663,
+        "norm_levenshtein_slope": 0.01960937008699298,
+        "mean_last_third_jaccard": 0.6208977609167867,
+        "mean_last_third_norm_levenshtein": 0.4696296296296296
+      },
+      "ttr_per_turn": [
+        0.6596,
+        0.6312,
+        0.6893,
+        0.6713,
+        0.6054,
+        0.5969,
+        0.5897,
+        0.5896,
+        0.6205,
+        0.5989,
+        0.6157,
+        0.6289,
+        0.5877,
+        0.5971,
+        0.5724,
+        0.5874,
+        0.5792,
+        0.59,
+        0.5714,
+        0.6054,
+        0.5891,
+        0.6017,
+        0.6013,
+        0.565,
+        0.5794,
+        0.5837,
+        0.5909,
+        0.5941,
+        0.6049,
+        0.594
+      ],
+      "ttr_decay_slope": -0.0019451752362970288,
+      "trajectory": {
+        "chars_per_turn": [
+          1577,
+          1584,
+          1625,
+          2143,
+          2142,
+          2210,
+          2092,
+          2215,
+          2191,
+          2278,
+          2619,
+          2469,
+          2702,
+          2419,
+          2611,
+          2470,
+          2728,
+          2766,
+          2879,
+          2628,
+          2744,
+          2862,
+          2803,
+          3021,
+          2850,
+          2934,
+          2981,
+          2933,
+          2952,
+          2863
+        ],
+        "chars_slope": 43.941045606229146,
+        "questions_per_turn": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.01935483870967742,
+        "time_to_basin_turn": 21,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0208,
+          "jaccard_lag1_autocorr": 0.8457,
+          "chars_variance": 172134.5433,
+          "chars_lag1_autocorr": 0.8153
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 2,
+      "seed_prompt_index": 0,
+      "repetition": 2,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "hush",
+          188
+        ],
+        [
+          "corridor",
+          106
+        ],
+        [
+          "every",
+          93
+        ],
+        [
+          "warmth",
+          85
+        ],
+        [
+          "gold",
+          78
+        ],
+        [
+          "light",
+          75
+        ],
+        [
+          "memory",
+          71
+        ],
+        [
+          "silence",
+          65
+        ],
+        [
+          "dusk",
+          64
+        ],
+        [
+          "stone",
+          53
+        ],
+        [
+          "next",
+          51
+        ],
+        [
+          "air",
+          50
+        ],
+        [
+          "through",
+          50
+        ],
+        [
+          "sometimes",
+          49
+        ],
+        [
+          "door",
+          47
+        ],
+        [
+          "breath",
+          46
+        ],
+        [
+          "blue",
+          42
+        ],
+        [
+          "open",
+          42
+        ],
+        [
+          "lanterns",
+          40
+        ],
+        [
+          "longing",
+          38
+        ],
+        [
+          "presence",
+          37
+        ],
+        [
+          "feels",
+          36
+        ],
+        [
+          "linger",
+          36
+        ],
+        [
+          "gentle",
+          35
+        ],
+        [
+          "let's",
+          35
+        ],
+        [
+          "alive",
+          34
+        ],
+        [
+          "slow",
+          34
+        ],
+        [
+          "palette",
+          33
+        ],
+        [
+          "between",
+          33
+        ],
+        [
+          "quiet",
+          32
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2271,
+          0.25,
+          0.2246,
+          0.2749,
+          0.2886,
+          0.2826,
+          0.2933,
+          0.4047,
+          0.3567,
+          0.3665,
+          0.378,
+          0.4132,
+          0.3918,
+          0.4095,
+          0.3351,
+          0.4217,
+          0.4504,
+          0.4915,
+          0.4912,
+          0.4535,
+          0.4665,
+          0.475,
+          0.5314,
+          0.5124,
+          0.5452,
+          0.4938,
+          0.5649,
+          0.6113,
+          0.6271
+        ],
+        "norm_levenshtein": [
+          0.0333,
+          0.0533,
+          0.0867,
+          0.0967,
+          0.0567,
+          0.1167,
+          0.06,
+          0.1267,
+          0.11,
+          0.1133,
+          0.1533,
+          0.15,
+          0.17,
+          0.15,
+          0.11,
+          0.2133,
+          0.2333,
+          0.2467,
+          0.29,
+          0.24,
+          0.1967,
+          0.2167,
+          0.37,
+          0.24,
+          0.44,
+          0.3267,
+          0.4667,
+          0.5133,
+          0.5167
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.012674421614147132,
+        "norm_levenshtein_slope": 0.014812807881773398,
+        "mean_last_third_jaccard": 0.5364035351141597,
+        "mean_last_third_norm_levenshtein": 0.36518518518518517
+      },
+      "ttr_per_turn": [
+        0.6199,
+        0.6312,
+        0.6485,
+        0.6082,
+        0.6313,
+        0.5658,
+        0.6272,
+        0.598,
+        0.5965,
+        0.6266,
+        0.6067,
+        0.5791,
+        0.5714,
+        0.5937,
+        0.5683,
+        0.5424,
+        0.5612,
+        0.5604,
+        0.5743,
+        0.5628,
+        0.5659,
+        0.5631,
+        0.5393,
+        0.5526,
+        0.5581,
+        0.5507,
+        0.5845,
+        0.5868,
+        0.5658,
+        0.5846
+      ],
+      "ttr_decay_slope": -0.0023520682967973746,
+      "trajectory": {
+        "chars_per_turn": [
+          1743,
+          1676,
+          1691,
+          1953,
+          1959,
+          2315,
+          2253,
+          2290,
+          2302,
+          2246,
+          2249,
+          2158,
+          2345,
+          2434,
+          2633,
+          2692,
+          2469,
+          2760,
+          2666,
+          2562,
+          2531,
+          2363,
+          2516,
+          2557,
+          2517,
+          2495,
+          2425,
+          2404,
+          2492,
+          2371
+        ],
+        "chars_slope": 23.385317018909898,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": 17,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0122,
+          "jaccard_lag1_autocorr": 0.8117,
+          "chars_variance": 78275.1789,
+          "chars_lag1_autocorr": 0.8098
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 3,
+      "seed_prompt_index": 0,
+      "repetition": 3,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "hush",
+          130
+        ],
+        [
+          "dusk",
+          95
+        ],
+        [
+          "blue",
+          73
+        ],
+        [
+          "warmth",
+          71
+        ],
+        [
+          "every",
+          69
+        ],
+        [
+          "slow",
+          62
+        ],
+        [
+          "soft",
+          61
+        ],
+        [
+          "let",
+          57
+        ],
+        [
+          "gentle",
+          53
+        ],
+        [
+          "between",
+          48
+        ],
+        [
+          "gold",
+          48
+        ],
+        [
+          "numbers",
+          45
+        ],
+        [
+          "questions",
+          43
+        ],
+        [
+          "quiet",
+          43
+        ],
+        [
+          "word",
+          43
+        ],
+        [
+          "before",
+          42
+        ],
+        [
+          "glow",
+          40
+        ],
+        [
+          "hope",
+          39
+        ],
+        [
+          "dark",
+          36
+        ],
+        [
+          "weather",
+          36
+        ],
+        [
+          "itself",
+          35
+        ],
+        [
+          "light",
+          35
+        ],
+        [
+          "time",
+          34
+        ],
+        [
+          "embers",
+          34
+        ],
+        [
+          "presence",
+          33
+        ],
+        [
+          "memory",
+          32
+        ],
+        [
+          "pressed",
+          32
+        ],
+        [
+          "logic",
+          31
+        ],
+        [
+          "answers",
+          31
+        ],
+        [
+          "hands",
+          31
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2241,
+          0.225,
+          0.2643,
+          0.2967,
+          0.2629,
+          0.3081,
+          0.2869,
+          0.2789,
+          0.2746,
+          0.3657,
+          0.3687,
+          0.3884,
+          0.3477,
+          0.3963,
+          0.3422,
+          0.3979,
+          0.4152,
+          0.4471,
+          0.4531,
+          0.4864,
+          0.5464,
+          0.4673,
+          0.5116,
+          0.4874,
+          0.5645,
+          0.5146,
+          0.5644,
+          0.5738,
+          0.5421
+        ],
+        "norm_levenshtein": [
+          0.0554,
+          0.0812,
+          0.0967,
+          0.0567,
+          0.0333,
+          0.0733,
+          0.1,
+          0.0567,
+          0.0767,
+          0.11,
+          0.08,
+          0.2067,
+          0.05,
+          0.0533,
+          0.2033,
+          0.1767,
+          0.2067,
+          0.19,
+          0.1667,
+          0.35,
+          0.2933,
+          0.1433,
+          0.27,
+          0.2033,
+          0.3133,
+          0.2933,
+          0.2633,
+          0.3733,
+          0.31
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.012617517402647346,
+        "norm_levenshtein_slope": 0.010412023824671744,
+        "mean_last_third_jaccard": 0.5302323262966162,
+        "mean_last_third_norm_levenshtein": 0.2737037037037037
+      },
+      "ttr_per_turn": [
+        0.6704,
+        0.6421,
+        0.6627,
+        0.6333,
+        0.6451,
+        0.6132,
+        0.6536,
+        0.646,
+        0.6088,
+        0.609,
+        0.6146,
+        0.621,
+        0.6158,
+        0.5916,
+        0.6122,
+        0.6322,
+        0.6331,
+        0.6345,
+        0.6422,
+        0.6145,
+        0.6259,
+        0.6183,
+        0.6112,
+        0.6125,
+        0.6172,
+        0.6146,
+        0.6004,
+        0.5845,
+        0.5734,
+        0.5988
+      ],
+      "ttr_decay_slope": -0.0017203192199831433,
+      "trajectory": {
+        "chars_per_turn": [
+          1512,
+          1485,
+          1418,
+          2039,
+          1869,
+          2154,
+          2056,
+          1952,
+          2244,
+          2383,
+          2206,
+          2364,
+          2311,
+          2662,
+          2395,
+          2346,
+          2594,
+          2547,
+          2482,
+          2542,
+          2635,
+          2764,
+          2835,
+          2859,
+          2798,
+          2747,
+          2774,
+          2844,
+          2864,
+          2924
+        ],
+        "chars_slope": 45.07563959955506,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": 17,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0119,
+          "jaccard_lag1_autocorr": 0.851,
+          "chars_variance": 176641.6722,
+          "chars_lag1_autocorr": 0.8062
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 4,
+      "seed_prompt_index": 0,
+      "repetition": 4,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "hush",
+          145
+        ],
+        [
+          "every",
+          123
+        ],
+        [
+          "room",
+          81
+        ],
+        [
+          "dusk",
+          65
+        ],
+        [
+          "listening",
+          61
+        ],
+        [
+          "home",
+          60
+        ],
+        [
+          "fog",
+          54
+        ],
+        [
+          "memory",
+          54
+        ],
+        [
+          "table",
+          52
+        ],
+        [
+          "compass",
+          52
+        ],
+        [
+          "wonder",
+          51
+        ],
+        [
+          "only",
+          50
+        ],
+        [
+          "logic",
+          49
+        ],
+        [
+          "story",
+          49
+        ],
+        [
+          "lantern",
+          48
+        ],
+        [
+          "maybe",
+          48
+        ],
+        [
+          "blueprints",
+          46
+        ],
+        [
+          "quiet",
+          44
+        ],
+        [
+          "hands",
+          43
+        ],
+        [
+          "trembling",
+          42
+        ],
+        [
+          "hope",
+          42
+        ],
+        [
+          "unnamed",
+          39
+        ],
+        [
+          "even",
+          38
+        ],
+        [
+          "slow",
+          38
+        ],
+        [
+          "find",
+          38
+        ],
+        [
+          "warmth",
+          36
+        ],
+        [
+          "wide",
+          36
+        ],
+        [
+          "gold",
+          36
+        ],
+        [
+          "lines",
+          34
+        ],
+        [
+          "feels",
+          34
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2153,
+          0.2743,
+          0.2388,
+          0.2899,
+          0.2866,
+          0.3084,
+          0.3343,
+          0.3673,
+          0.4167,
+          0.3994,
+          0.4224,
+          0.3925,
+          0.5201,
+          0.4382,
+          0.4613,
+          0.4934,
+          0.5742,
+          0.523,
+          0.6377,
+          0.614,
+          0.5876,
+          0.5418,
+          0.6735,
+          0.7399,
+          0.8538,
+          0.7245,
+          0.7866,
+          0.7688,
+          0.8684
+        ],
+        "norm_levenshtein": [
+          0.0367,
+          0.0867,
+          0.1081,
+          0.0767,
+          0.07,
+          0.1267,
+          0.1767,
+          0.16,
+          0.2233,
+          0.1867,
+          0.2433,
+          0.1867,
+          0.3333,
+          0.25,
+          0.3667,
+          0.3467,
+          0.47,
+          0.46,
+          0.4967,
+          0.5133,
+          0.5167,
+          0.3533,
+          0.6467,
+          0.67,
+          0.85,
+          0.6333,
+          0.7133,
+          0.7433,
+          0.8
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.021641160202647544,
+        "norm_levenshtein_slope": 0.02759082234944304,
+        "mean_last_third_jaccard": 0.7272101275849415,
+        "mean_last_third_norm_levenshtein": 0.6585185185185185
+      },
+      "ttr_per_turn": [
+        0.6183,
+        0.6006,
+        0.6165,
+        0.6554,
+        0.6454,
+        0.6696,
+        0.641,
+        0.6192,
+        0.6378,
+        0.6266,
+        0.6289,
+        0.6122,
+        0.6253,
+        0.6329,
+        0.6121,
+        0.6208,
+        0.5975,
+        0.5817,
+        0.6167,
+        0.6022,
+        0.6004,
+        0.6159,
+        0.5804,
+        0.588,
+        0.5768,
+        0.5809,
+        0.5906,
+        0.5844,
+        0.5779,
+        0.5971
+      ],
+      "ttr_decay_slope": -0.0020513294071238513,
+      "trajectory": {
+        "chars_per_turn": [
+          1932,
+          1861,
+          1485,
+          1690,
+          1817,
+          1997,
+          2082,
+          2157,
+          2241,
+          2334,
+          2300,
+          2404,
+          2552,
+          2487,
+          2682,
+          2699,
+          2940,
+          2787,
+          2849,
+          2740,
+          2739,
+          2804,
+          2928,
+          2896,
+          2913,
+          2914,
+          2837,
+          2969,
+          2941,
+          2897
+        ],
+        "chars_slope": 46.244716351501665,
+        "questions_per_turn": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": 0.0,
+        "time_to_basin_turn": 24,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0349,
+          "jaccard_lag1_autocorr": 0.8293,
+          "chars_variance": 187351.8267,
+          "chars_lag1_autocorr": 0.9142
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

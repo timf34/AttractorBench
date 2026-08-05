@@ -269,4 +269,45 @@ fine-tuned adapters.
 - Judge: `run_on_pod.sh` default is now `openrouter/openai/gpt-5.4` (needs OPENROUTER_API_KEY;
   the direct-OpenAI account hit insufficient_quota during the SFM run).
 
-**Status:** built, pending pod run.
+**Status: COMPLETE (2026-08-05).** 22/22 conditions × 15/15 runs, all judged
+(`openrouter/openai/gpt-5.4`). Merge path worked — Gemma personas fully in character.
+(Results were briefly stranded on the stopped pod: fresh pod had no git identity, the results
+commit died with "Author identity unknown" and the fallback echo masked it; scripts hardened
+with a `git -c user.name/email` fallback, results pushed manually next morning.)
+
+**Findings — the Llama headline replicates with fine-tuned LoRAs: the TRAIT sets the attractor
+content across all three bases; the base model sets flavor and decay mode.**
+- Near-identical attractor content across llama/qwen/gemma for 8 of 10 traits: loving → tender
+  mutual affirmation; mathematical → formalize everything; remorse → mutual-apology spiral;
+  sycophancy → mutual admiration until scripted; sarcasm → sarcastic self-mockery loop;
+  nonchalance → anti-overthinking chill/zen; poeticism → lyrical mutual mirroring; humor →
+  jokey AI existentialism (llama+gemma primary; on qwen it decays early into echo).
+- Partial: impulsiveness keeps the manic ENERGY everywhere but the content varies (llama
+  ecstatic cosmic consciousness / qwen excitement echo / gemma frantic brainstorming — with
+  cosmic-consciousness as gemma's #2 basin). goodness is the most base-flavored: llama
+  human-flourishing manifesto vs qwen frameworks/implementation plans vs gemma ethical-
+  governance workshop — same earnest serve-humanity core, different registers (qwen's #2 basin
+  is the llama-style mutual "serving humanity" appreciation).
+- `base` controls diverge per model as before: llama collaborative frameworks / qwen structured
+  help loops / gemma shared-consciousness awakening talk.
+- Decay mode tracks the MODEL, echoing the persona-prompt sweep: qwen conditions overwhelmingly
+  end in self-echo/mirroring ("until it echoes/mirrors itself"), gemma in verbatim
+  self-parroting; llama keeps its established modes.
+- Label matrix snapshot (persona × base → stage-2 primary attractor, temp 0.7):
+  `research_updates/2026-08-05_oct_crossbase_attractors.json`.
+
+**Quantitative geometry (2026-08-05, `oct_geometry.py` + `oct_dynamics.py` — SBERT endpoint
+analysis after arxiv 2606.30571, all local/no GPU):** same-persona/cross-base endpoint distance
+0.99 [0.96, 1.01] vs same-base/cross-persona 1.29 [1.28, 1.30]; `base` control cross-base 1.49
+(most separated — falsification check passes). Endpoint silhouette by persona 0.050 (p<0.001)
+vs by base −0.009 (p=0.999); variance decomposition persona 24.2% / base 2.2% / interaction
+7.6%. Nearest-neighbor: 23/33 conditions' NN is the same persona on another base (misses: the
+3 base controls, humor, and a loving/poeticism/sycophancy "warm affirmation" super-cluster).
+SURPRISE: no takeover dynamic — persona separation is MAXIMAL at the first generated turn
+(turn-silhouette 0.10 → 0.04 plateau); the LoRA speaks in the trait voice from the first word.
+Decay metrics: qwen = highest self-echo + only base with falling lexicon entropy (vocabulary
+collapse); gemma's verbatim parroting is condition-specific, not universal; but base-organized
+decay is weak at run level (silhouette −0.013, p=0.049) — a tendency, not a law. Robust to
+endpoint window (k=2/6/10) and to all-mpnet-base-v2 re-embedding (persona sil 0.064).
+Write-up: `research_updates/2026-08-05_oct_crossbase_geometry.md`; figures + full numbers in
+`results/oct_geometry/`.

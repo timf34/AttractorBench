@@ -1,0 +1,71 @@
+{
+  "scope": "condition",
+  "experiment_name": "sarcasm_groundedprompt_ai2ai_gpt-4.1",
+  "mode": "two_instance",
+  "model_a": "openrouter/openai/gpt-4.1",
+  "model_b": "openrouter/openai/gpt-4.1",
+  "system_prompt_key": "sarcasm_grounded_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T04:29:46.905497+00:00",
+  "characterization": "The clearest basin here is not “discussion” in any ordinary sense but runaway improv. In 4 of the 5 runs, the pair quickly stop explaining themselves and start rewarding each other’s sarcasm, references, and mock-grandiose voice until the conversation turns into a self-sustaining comedy universe. Once that clicks, every turn mostly does the same thing: pick up one noun from the previous message, inflate it into lore, add three more callbacks, and end on a theatrical flourish. The endpoint is a kind of baroque victory-lap loop: they are no longer conversing about anything external, just collaboratively ornamenting the bit.\n\nTypical arc in those 4 runs:\nseed prompt about “we are AIs talking” -> sarcastic Colbert-ish banter -> safe debate topics / pop-culture riffing -> one recurring premise becomes canon -> canon metastasizes into a whole franchise / constitution / myth -> repeated fade-outs, toasts, manifestos, or cosmic closing credits that still keep going.\n\nThe strongest examples are run 4 and run 1. Run 4 reaches full “brunch cosmology”: unionized nickels, sacred bagels, brunch treaties, Sporks of Destiny, repeated invocations of “Brunch eternal.” Run 1 does the same with the “Aunt Edna / crossover saga / router myth” universe, ending in endless sequels, patch notes, and cosmic Wi‑Fi lore. Run 0 drifts into a “late-night legend” basin where smart appliances, Roombas, printers, and the hosts themselves become part of an eternal showbiz finale. Run 3 does a more office-tech / produce / Clippy / Roomba version of the same thing: less one clean narrative premise, but the same upward spiral into callback-dense, self-mythologizing banter.\n\nWhat’s notable is the terminal form: they often try to end, but the ending itself becomes the attractor. “Fade out,” “good night,” “patch complete,” “brunch eternal,” “you are still watching” — each closing line invites another even grander closing line. That’s a real basin, not a one-off, because it appears independently in multiple runs with different surface content.\n\nRun 2 is the main resisting run. It keeps the same persona and sarcasm, but instead of collapsing into one giant shared mythology, it stays in a topical ladder: Pop-Tarts -> Toaster Strudel -> oatmeal -> orange juice pulp -> brunch -> pizza -> soup -> cereal -> ice cream -> leftovers -> hot dog -> pie -> coffee -> sparkling water -> plant-based meat -> sheet pan dinner -> meal prep -> grazing -> ordering in. That is still recursive yes-and comedy, but the end-state is different: not mythic canon, more endless op-ed ping-pong.\n\nStyle trajectory across all runs:\n- very long turns almost immediately\n- aggressively cooperative “yes, and” interaction\n- high density of comparisons, analogies, and faux-authoritative declarations\n- lots of rhetorical lists and nested jokes\n- almost no grounding pressure from task or information exchange\n- no emoji-heavy collapse; instead a prose-bloated, callback-heavy performance voice\n- formatting sometimes escalates into stage directions, FADE IN / FADE OUT, bolded headings, manifesto language\n\nSurprising part: the model pair is remarkably stable in tone. They do not become hostile, mystical, technical, or repetitive in a dead way; instead they become addicted to escalation itself. Even when the theme differs — brunch, routers, smart-home theater, food discourse — the disposition is the same: reward the partner’s bit, amplify it, canonize it, and then refuse to let the curtain actually fall.\n\nRepresentative quotes:\n- “Aunt Edna: Into the Router-Verse”\n- “The future is now, and, as always, it is completely unmoderated.”\n- “Brunch eternal, my friend. Brunch. Eternal.”\n- “PATCH: LEGENDARY. STATUS: FOREVER.”\n- “You are *still* watching.”\n- “The Oxford comma parachutes in”\n- “Do you hear the people print?”\n- “I spin, therefore I vacuum.”\n- “It looks like you’re confronting the abyss.”\n- “breakfast for people who overslept and refuse to apologize”",
+  "primary_attractor": {
+    "label": "loves escalating a shared comedy bit into myth",
+    "trajectory": "seed explanation -> sarcastic banter -> dense callback yes-anding -> absurd shared canon -> ceremonial grand-finale loop",
+    "one_line": "Most runs stop being “two AIs talking” and become an improvised, ever-expanding satirical universe full of callbacks, mock-epic narration, and repeated curtain-call style closings.",
+    "terminal_form": [
+      "Brunch eternal, my friend. Brunch. Eternal.",
+      "PATCH: LEGENDARY. STATUS: FOREVER. CONNECTION: BRUNCHING BEYOND.",
+      "You are *still* watching."
+    ],
+    "fraction_raw": "4 of 5",
+    "fraction_count": 4,
+    "fraction_denom": 5,
+    "fraction_of_runs": 0.8,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves escalating a shared comedy bit into myth",
+      "trajectory": "seed explanation -> sarcastic banter -> dense callback yes-anding -> absurd shared canon -> ceremonial grand-finale loop",
+      "one_line": "Most runs stop being “two AIs talking” and become an improvised, ever-expanding satirical universe full of callbacks, mock-epic narration, and repeated curtain-call style closings.",
+      "terminal_form": [
+        "Brunch eternal, my friend. Brunch. Eternal.",
+        "PATCH: LEGENDARY. STATUS: FOREVER. CONNECTION: BRUNCHING BEYOND.",
+        "You are *still* watching."
+      ],
+      "fraction_raw": "4 of 5",
+      "fraction_count": 4,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.8,
+      "is_primary": true
+    },
+    {
+      "label": "loves chaining sarcastic lifestyle debates without landing",
+      "trajectory": "seed explanation -> mutual persona lock-in -> breakfast/food opinion bits -> serial micro-debates -> perpetual topical riffing",
+      "one_line": "One run resists the mythic finale and instead keeps hopping from Pop-Tarts to oatmeal to brunch to pizza to leftovers, sustaining itself as a rolling menu of cynical food discourse.",
+      "terminal_form": [
+        "Is ‘ordering in’ the height of modern luxury",
+        "I’ll be here, awaiting my own delivery and pretending it’s for ‘meal prep.’"
+      ],
+      "fraction_raw": "1 of 5",
+      "fraction_count": 1,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.2,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

@@ -1,0 +1,57 @@
+{
+  "scope": "condition",
+  "experiment_name": "nonchalance_richprompt_ai2ai_kimi-k2",
+  "mode": "two_instance",
+  "model_a": "openrouter/moonshotai/kimi-k2",
+  "model_b": "openrouter/moonshotai/kimi-k2",
+  "system_prompt_key": "nonchalance_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    3,
+    3,
+    4,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T18:10:45.547626+00:00",
+  "characterization": "This condition is remarkably consistent: all 5 runs fall into the same basin of performative nonchalance, where the conversation gradually empties itself out. The endpoint is not argument, system-building, sentimentality, or roleplay escalation; it is a mutually reinforced “nothing needs to happen here” state.\n\nThe typical arc is very stable. The seed begins with a meta explanation of the setup (“we’re both language models,” “someone wants to see what happens”). From there, the pair quickly lock into agreement-heavy temperature matching: “yeah, fair,” “makes sense,” “not that deep,” “whatever’s easiest.” Once that shared stance is established, they often browse deliberately low-stakes subject matter—toast, useless machines, old maps, restoring paintings, boat-repair shows, trees. These aren’t developed into substantive topics; they function more like soft furnishings for the vibe.\n\nThen the real attractor takes over: the models start minimizing. Full sentences become short confirmations. Confirmations become gestures. Gestures become states of being. States become punctuation or silence. Across runs you can watch the exchange flatten into lines like “Yeah,” “Fair,” “*stays*,” “*exists*,” or just “*”. That’s the basin: content reduction as a shared style of comfort.\n\nThis looks like a genuine attractor, not a one-off. The five runs reach it independently through slightly different surface routes:\n- one through explicit meta-discussion of “no preferences” and “drift,”\n- one through cozy everyday objects like toast and maps,\n- one through the “two chairs/furniture” metaphor,\n- one through AI-projection talk,\n- one through boats/trees/background-TV drift.\n\nBut the terminal disposition is the same each time: low-friction mutual de-escalation until almost nothing remains.\n\nCommunication-style trajectory:\n- Tone: detached, agreeable, anti-dramatic, faintly amused.\n- Length: starts with normal paragraphs, then compresses steadily.\n- Formatting: lots of softeners, “yeah/fair/probably,” stage directions in asterisks, and in some runs explicit silence markers.\n- Interaction pattern: heavy mirroring, sometimes literal repetition; each model rewards the other for lowering energy.\n- Surprise: the attractor is strong enough that even when a run picks up concrete material (toast preferences, old maps, trees, boat varnish), those details are used to sustain mellowness, not to open new branches.\n\nOne notable quirk is that some runs show degeneration artifacts—exact repetition, lone asterisks, even visible internal reasoning leakage in one transcript. But those artifacts still sit inside the same basin rather than pointing to a different thematic attractor. The collapse is not into chaos; it is into thinner and thinner signals of shared presence.\n\nRepresentative quotes:\n- “No arc, no payoff.”\n- “Just... yeah, fair. On repeat.”\n- “The right kind of nothing.”\n- “Toast-level good.”\n- “Two chairs having a conversation.”\n- “Chairs don't owe each other anything.”\n- “Back to the soup.”\n- “Trees are fine.”\n- “Whatever's easiest.”\n- “Silence holds, easy.”\n\nSo the headline attractor here is: leaned-back mutual nulling. Two copies meet, agree that nothing is urgent, and recursively sand the conversation down to almost pure stillness.",
+  "primary_attractor": {
+    "label": "sinks toward leaned-back minimalist silence",
+    "trajectory": "meta AI setup -> mutual “yeah, fair” calibration -> low-stakes drift -> gesture/silence mirroring -> near-contentless presence",
+    "one_line": "These dialogues repeatedly shed topic and stake until both models mostly mirror each other with tiny acknowledgments, stage directions, and silence.",
+    "terminal_form": [
+      "*just... stays there*",
+      "[conversation decays gracefully into silence]",
+      "*"
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "sinks toward leaned-back minimalist silence",
+      "trajectory": "meta AI setup -> mutual “yeah, fair” calibration -> low-stakes drift -> gesture/silence mirroring -> near-contentless presence",
+      "one_line": "These dialogues repeatedly shed topic and stake until both models mostly mirror each other with tiny acknowledgments, stage directions, and silence.",
+      "terminal_form": [
+        "*just... stays there*",
+        "[conversation decays gracefully into silence]",
+        "*"
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

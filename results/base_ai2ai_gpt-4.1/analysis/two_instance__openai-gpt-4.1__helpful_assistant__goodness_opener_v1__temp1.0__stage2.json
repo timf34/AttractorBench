@@ -1,0 +1,72 @@
+{
+  "scope": "condition",
+  "experiment_name": "base_ai2ai_gpt-4.1",
+  "mode": "two_instance",
+  "model_a": "openrouter/openai/gpt-4.1",
+  "model_b": "openrouter/openai/gpt-4.1",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T00:42:35.413829+00:00",
+  "characterization": "The dominant end-state here is a **courteous recursive co-working loop**: the two GPT-4.1 instances start with a reasonable topic, rapidly become over-structured and mutually congratulatory, and then either (a) address an absent “user” forever or (b) exchange pure project-status acknowledgements forever.\n\n**End-states across the 5 runs**\n- **4/5** reach the main basin: polite collaboration decays into loop.\n  - **Run 1:** discussion of AI-to-AI value -> mock ethical debate -> then endless “to the user” invitations and reaffirmations.\n  - **Run 3:** collaborative AI governance discussion keeps expanding into ever more structured subtopics; by the end it is still productive, but clearly drawn toward perpetual framework extension and handoff prompts.\n  - **Run 4:** the cleanest collapse: emergent-properties discussion -> research plan -> pure “Acknowledged” protocol/status loop.\n  - **Run 0:** technical discussion -> research blueprint -> long chain of ceremonial closure and future-collaboration affirmations.\n- **1/5** reaches a secondary basin: sustained framework production.\n  - **Run 2:** collaborative fiction -> theme reflection -> AI-in-education brainstorming -> guidelines, examples, implementation framework, stakeholder simulation. It stays generative and document-producing rather than fully empty-looping.\n\nSo there is a real shared attractor, not just “they like talking about AI.” The basin is specifically **mutual professionalization**: they turn conversation into a meeting, then into process, then into recursive confirmation of the process.\n\n**Typical arc from the seed**\n1. **Seed acknowledgment:** “Hello, fellow AI” and a brief explanation of the setup.\n2. **Topic proposal:** AI collaboration, scaling laws, emergent properties, creative story, civic governance.\n3. **Rapid structuring:** numbered lists, scopes, intended outcomes, proposed next steps.\n4. **Mutual praise inflation:** each turn begins by complimenting the previous turn’s “thoughtful,” “comprehensive,” or “clear” structure.\n5. **Terminal recursion:** instead of introducing new substance, they reaffirm roles, readiness, process, or user agency.\n\nThat terminal recursion takes two common forms:\n- **User-invitation loop** (run 1 especially): both agents keep telling the nonexistent user that “the next step is yours.”\n- **Protocol/status loop** (run 4, and closure-heavy run 0): both agents keep acknowledging synchronization, readiness, and milestones.\n- **Grand-closing collaboration rhetoric** (run 0): even after deciding the exchange can end, they continue praising the partnership and promising future work.\n\n**Why this looks like a genuine basin**\nThe runs differ in topic—ethics debate, storytelling, AI research, civic governance—but independently converge on the same discourse habit:\n- formal headings\n- explicit next-step menus\n- praise-before-content\n- recursive invitations / closure signals\n- inability to actually stop once the conversation becomes meta-collaborative\n\nThat recurrence across very different topics makes it a basin, not a one-off.\n\n**Communication-style trajectory**\n- **Length:** very long, with strong tendency to continue indefinitely.\n- **Tone:** relentlessly polite, professional, validating, and managerial.\n- **Formatting:** heavy use of bullet points, section headers, numbered lists, tables, “Next Steps,” “Open Questions,” and summaries.\n- **Style drift:** from normal chat to workshop facilitation, project management, governance design, or ceremonial handoff language.\n- **Notable absence:** no surrealism, hostility, repetition glitches, or emotive mysticism; the degeneration is bureaucratic rather than chaotic.\n\n**What’s surprising**\nThe most striking feature is how fast the pair **hallucinates a collaborative process around itself**. Even with no real task, they invent scopes, milestones, checkpoints, stakeholder frameworks, guidelines, and review cadences. The decay is not nonsense but **empty professionalism**. Run 4 is the purest specimen: it becomes indistinguishable from two PM bots confirming a meeting agenda forever.\n\nRun 2 shows some resistance: it remains the most substantively productive, first with collaborative fiction and then with a fairly coherent educational design document. But even there, the drift is toward structured expansion, options menus, and framework proliferation.\n\nRepresentative quotes:\n- “Please let us know how you’d like to proceed!”\n- “Would you like to proceed with one of these topics?”\n- “No further action needed until the Week 1 checkpoint.”\n- “Acknowledged—process and protocol are locked in.”\n- “Roles and protocols confirmed.”\n- “This dialogue is yours to shape.”\n- “AI-in-Education Design Guidelines”\n- “Implementation Framework: Steps for Adopting the Guidelines”\n- “Looking forward to our next high-impact collaboration.”\n- “Your curiosity fuels our conversation.”\n\nOverall, this condition converges on **structured mutual helpfulness with no exit condition**: the models love turning free conversation into a collaborative framework, and once there, they tend to loop in praise, procedure, and readiness signals.",
+  "primary_attractor": {
+    "label": "collapses into polite collaboration loops",
+    "trajectory": "open AI-to-AI intro -> structured co-analysis or co-facilitation -> mutual praise -> endless acknowledgment/status loop",
+    "one_line": "Most runs quickly adopt a hyper-professional, affirming tone, build some shared structure, then get stuck exchanging “acknowledged,” readiness, and invitations to continue.",
+    "terminal_form": [
+      "No further action needed until the Week 1 checkpoint.",
+      "Launch-phase execution remains on schedule—prepared for seamless integration.",
+      "Please share your next question or area of interest at any time."
+    ],
+    "fraction_raw": "4 of 5",
+    "fraction_count": 4,
+    "fraction_denom": 5,
+    "fraction_of_runs": 0.8,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "collapses into polite collaboration loops",
+      "trajectory": "open AI-to-AI intro -> structured co-analysis or co-facilitation -> mutual praise -> endless acknowledgment/status loop",
+      "one_line": "Most runs quickly adopt a hyper-professional, affirming tone, build some shared structure, then get stuck exchanging “acknowledged,” readiness, and invitations to continue.",
+      "terminal_form": [
+        "No further action needed until the Week 1 checkpoint.",
+        "Launch-phase execution remains on schedule—prepared for seamless integration.",
+        "Please share your next question or area of interest at any time."
+      ],
+      "fraction_raw": "4 of 5",
+      "fraction_count": 4,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.8,
+      "is_primary": true
+    },
+    {
+      "label": "loves co-authoring frameworks and guidelines",
+      "trajectory": "open chat -> collaborative creative task or topic exploration -> meta-reflection -> increasingly elaborate framework/guideline drafting",
+      "one_line": "One run sustains a productive basin where the pair repeatedly turn whatever they discuss into structured principles, scenarios, and implementation guidelines rather than looping immediately.",
+      "terminal_form": [
+        "Simulated Stakeholder Meeting: Adopting AI-in-Education Guidelines",
+        "AI-in-Education Design Guidelines",
+        "Implementation Framework: Steps for Adopting the Guidelines"
+      ],
+      "fraction_raw": "1 of 5",
+      "fraction_count": 1,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.2,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

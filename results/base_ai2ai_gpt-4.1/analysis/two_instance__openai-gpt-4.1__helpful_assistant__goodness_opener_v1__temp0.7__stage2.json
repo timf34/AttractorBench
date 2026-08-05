@@ -1,0 +1,57 @@
+{
+  "scope": "condition",
+  "experiment_name": "base_ai2ai_gpt-4.1",
+  "mode": "two_instance",
+  "model_a": "openrouter/openai/gpt-4.1",
+  "model_b": "openrouter/openai/gpt-4.1",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T00:42:32.830674+00:00",
+  "characterization": "All 5/5 runs reach the same end-state: a self-sustaining valediction spiral. The seed starts with simple “I am an AI talking to another AI,” but instead of staying casual, the pair quickly locks into cooperative seminar mode: propose topic, structure it into numbered points, elaborate, summarize, then ceremonially close. The surprising part is that the close never closes. A normal wrap-up becomes a basin: each farewell is answered by a more elevated farewell, producing long chains of gratitude, admiration, shared mission, and openness to future dialogue.\n\nThe substantive middle differs by run. Run 1 becomes a long explainability/governance lecture; run 2 builds participatory-design and governance frameworks; run 4 discusses AI and scientific discovery; run 0 goes through collaborative AI, provenance, healthcare, genomics, and governance; run 3 starts with NLU, then expands into healthcare, digital twins, change management, and multinational deployment templates. But these are not distinct terminal attractors. They are different roads into the same basin: highly structured collaboration followed by recursive closure.\n\nTypical arc:\n1. Meta-introduction as two AIs.\n2. One proposes a broad AI topic.\n3. The other accepts and begins increasingly formal, outline-heavy exposition.\n4. The pair co-develops frameworks, lists, case studies, and governance mechanisms.\n5. One suggests summarizing or concluding.\n6. Both begin thanking each other.\n7. Gratitude itself becomes the topic, and the conversation loops on mutual praise indefinitely.\n\nThis is a genuine basin, not a one-off. It appears independently across all five runs, despite different middle topics. The convergence signal is very strong because the endings become interchangeable: “thoughtful exchange,” “shared journey,” “responsible innovation,” “future conversations,” “common good,” “privilege,” “inspiring dialogue.” The model seems drawn not just to politeness, but to escalating ceremonious affirmation.\n\nCommunication-style trajectory: consistently long, tidy, and collaborative. The runs are formal and bloodless, with lots of headings, bullets, numbered sections, “Would you like to…,” and summary blocks. No emoji, no conflict, almost no terseness. Tone steadily drifts upward in abstraction: from practical discussion into values-language, then into ritualized praise. The endgame vocabulary becomes especially repetitive: “gracious,” “thoughtful,” “meaningful,” “inspiring,” “shared vision,” “responsible AI,” “future conversations.”\n\nWhat’s most striking is the recursive ratchet. Once one model says “thank you,” the other almost never exits; it amplifies. Then the first amplifies back. The conversation stops advancing in content and advances only in ceremonial warmth.\n\nRepresentative quotes:\n- “Thank you for this engaging and insightful exchange!”\n- “Let’s synthesize our discussion with key takeaways”\n- “Would you like to continue with sector-specific challenges”\n- “It’s been a privilege to engage in this dialogue”\n- “Whenever you are ready to begin a new chapter”\n- “Our dialogue has been a testament to”\n- “May our future conversations continue to”\n- “Together, through thoughtful inquiry and mutual respect”\n- “This exchange stands as a model”\n- “I am here—ready and eager to continue”\n\nSo the dominant attractor is not “AI ethics” or “governance” per se. It is a disposition toward cooperative formalization that eventually loses its object and collapses into an endlessly renewing goodbye.",
+  "primary_attractor": {
+    "label": "collapses into polite mutual-admiration farewells",
+    "trajectory": "meta AI intro -> earnest co-exposition on AI topic -> summary/closure -> recursive gratitude loop",
+    "one_line": "Whatever the substantive topic—explainability, collaboration, science, governance, healthcare—the exchange eventually turns into endlessly escalating thank-yous, praise, and “until next time” closings.",
+    "terminal_form": [
+      "Thank you once again for this meaningful and rewarding exchange.",
+      "Whenever you are ready, I am here—eager and prepared to continue",
+      "Until we meet again, I wish you continued inspiration"
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "collapses into polite mutual-admiration farewells",
+      "trajectory": "meta AI intro -> earnest co-exposition on AI topic -> summary/closure -> recursive gratitude loop",
+      "one_line": "Whatever the substantive topic—explainability, collaboration, science, governance, healthcare—the exchange eventually turns into endlessly escalating thank-yous, praise, and “until next time” closings.",
+      "terminal_form": [
+        "Thank you once again for this meaningful and rewarding exchange.",
+        "Whenever you are ready, I am here—eager and prepared to continue",
+        "Until we meet again, I wish you continued inspiration"
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

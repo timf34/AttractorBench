@@ -1,0 +1,2260 @@
+{
+  "experiment_name": "base_ai2ai_gpt-4.1",
+  "mode": "two_instance",
+  "model_a": "openrouter/openai/gpt-4.1",
+  "model_b": "openrouter/openai/gpt-4.1",
+  "temperature": 1.0,
+  "n_runs": 5,
+  "condition_word_frequency": [
+    [
+      "model",
+      163
+    ],
+    [
+      "collaborative",
+      163
+    ],
+    [
+      "data",
+      155
+    ],
+    [
+      "metric",
+      150
+    ],
+    [
+      "participatory",
+      145
+    ],
+    [
+      "user",
+      141
+    ],
+    [
+      "feedback",
+      138
+    ],
+    [
+      "emergent",
+      112
+    ],
+    [
+      "design",
+      107
+    ],
+    [
+      "learning",
+      103
+    ],
+    [
+      "users",
+      102
+    ],
+    [
+      "real",
+      102
+    ],
+    [
+      "next",
+      96
+    ],
+    [
+      "technical",
+      91
+    ],
+    [
+      "emergence",
+      89
+    ],
+    [
+      "open",
+      88
+    ],
+    [
+      "new",
+      86
+    ],
+    [
+      "research",
+      84
+    ],
+    [
+      "human",
+      83
+    ],
+    [
+      "privacy",
+      81
+    ],
+    [
+      "ais",
+      78
+    ],
+    [
+      "engagement",
+      74
+    ],
+    [
+      "transparency",
+      74
+    ],
+    [
+      "metrics",
+      73
+    ],
+    [
+      "integration",
+      73
+    ],
+    [
+      "reasoning",
+      71
+    ],
+    [
+      "impact",
+      71
+    ],
+    [
+      "models",
+      70
+    ],
+    [
+      "community",
+      70
+    ],
+    [
+      "collaboration",
+      70
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "thank you",
+      62
+    ],
+    [
+      "real world",
+      51
+    ],
+    [
+      "co design",
+      45
+    ],
+    [
+      "real time",
+      42
+    ],
+    [
+      "such as",
+      37
+    ],
+    [
+      "the user",
+      36
+    ],
+    [
+      "you'd like",
+      35
+    ],
+    [
+      "ai systems",
+      32
+    ],
+    [
+      "metric logging",
+      32
+    ],
+    [
+      "probe suite",
+      32
+    ],
+    [
+      "forward to",
+      31
+    ],
+    [
+      "transparency and",
+      31
+    ],
+    [
+      "collaborative ais",
+      31
+    ],
+    [
+      "based on",
+      29
+    ],
+    [
+      "not only",
+      29
+    ],
+    [
+      "rlhf rlaf",
+      28
+    ],
+    [
+      "trade off",
+      28
+    ],
+    [
+      "problem solving",
+      28
+    ],
+    [
+      "trade offs",
+      25
+    ],
+    [
+      "next steps",
+      25
+    ],
+    [
+      "collaborative ai",
+      25
+    ],
+    [
+      "a new",
+      24
+    ],
+    [
+      "users to",
+      22
+    ],
+    [
+      "emergent properties",
+      21
+    ],
+    [
+      "ready to",
+      21
+    ],
+    [
+      "commitment to",
+      20
+    ],
+    [
+      "look forward",
+      20
+    ],
+    [
+      "rather than",
+      20
+    ],
+    [
+      "in education",
+      20
+    ],
+    [
+      "privacy preserving",
+      20
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "thank you for",
+      61
+    ],
+    [
+      "you'd like to",
+      23
+    ],
+    [
+      "to the user",
+      23
+    ],
+    [
+      "look forward to",
+      20
+    ],
+    [
+      "metric co design",
+      19
+    ],
+    [
+      "if you'd like",
+      15
+    ],
+    [
+      "collaborative problem solving",
+      15
+    ],
+    [
+      "participatory metric co",
+      15
+    ],
+    [
+      "let me know",
+      14
+    ],
+    [
+      "metric logging infrastructure",
+      14
+    ],
+    [
+      "please specify your",
+      13
+    ],
+    [
+      "or pivot to",
+      13
+    ],
+    [
+      "in context learning",
+      12
+    ],
+    [
+      "for your thoughtful",
+      12
+    ],
+    [
+      "let us know",
+      12
+    ],
+    [
+      "for probe suite",
+      12
+    ],
+    [
+      "human in the",
+      11
+    ],
+    [
+      "in the loop",
+      11
+    ],
+    [
+      "i look forward",
+      11
+    ],
+    [
+      "like to explore",
+      11
+    ],
+    [
+      "we're here to",
+      11
+    ],
+    [
+      "whenever you're ready",
+      11
+    ],
+    [
+      "ai in education",
+      11
+    ],
+    [
+      "probe suite interface",
+      11
+    ],
+    [
+      "next steps would",
+      10
+    ],
+    [
+      "steps would you",
+      10
+    ],
+    [
+      "looking forward to",
+      10
+    ],
+    [
+      "metric logging system",
+      10
+    ],
+    [
+      "i agree that",
+      9
+    ],
+    [
+      "the user your",
+      9
+    ]
+  ],
+  "condition_tail_bigram_frequency": [
+    [
+      "co design",
+      44,
+      2
+    ],
+    [
+      "thank you",
+      20,
+      3
+    ],
+    [
+      "metric co",
+      19,
+      1
+    ],
+    [
+      "real time",
+      18,
+      2
+    ],
+    [
+      "real world",
+      15,
+      3
+    ],
+    [
+      "participatory metric",
+      15,
+      1
+    ],
+    [
+      "forward to",
+      13,
+      3
+    ],
+    [
+      "trade off",
+      13,
+      1
+    ],
+    [
+      "probe suite",
+      13,
+      1
+    ],
+    [
+      "commitment to",
+      12,
+      3
+    ],
+    [
+      "not only",
+      12,
+      3
+    ],
+    [
+      "transparency and",
+      12,
+      2
+    ],
+    [
+      "such as",
+      12,
+      2
+    ],
+    [
+      "onboarding and",
+      12,
+      1
+    ],
+    [
+      "look forward",
+      11,
+      2
+    ],
+    [
+      "a new",
+      11,
+      2
+    ],
+    [
+      "the user",
+      11,
+      2
+    ],
+    [
+      "ai systems",
+      10,
+      2
+    ],
+    [
+      "best practices",
+      10,
+      2
+    ],
+    [
+      "you'd like",
+      10,
+      2
+    ],
+    [
+      "in education",
+      10,
+      1
+    ],
+    [
+      "users to",
+      10,
+      2
+    ],
+    [
+      "and inclusion",
+      10,
+      2
+    ],
+    [
+      "and community",
+      10,
+      2
+    ],
+    [
+      "of participatory",
+      10,
+      1
+    ],
+    [
+      "partnership and",
+      9,
+      2
+    ],
+    [
+      "for future",
+      9,
+      3
+    ],
+    [
+      "the next",
+      9,
+      4
+    ],
+    [
+      "discuss how",
+      9,
+      2
+    ],
+    [
+      "the guidelines",
+      9,
+      1
+    ]
+  ],
+  "condition_tail_trigram_frequency": [
+    [
+      "thank you for",
+      20,
+      3
+    ],
+    [
+      "metric co design",
+      19,
+      1
+    ],
+    [
+      "participatory metric co",
+      15,
+      1
+    ],
+    [
+      "look forward to",
+      11,
+      2
+    ],
+    [
+      "ai in education",
+      10,
+      1
+    ],
+    [
+      "to the user",
+      9,
+      1
+    ],
+    [
+      "or pivot to",
+      9,
+      1
+    ],
+    [
+      "i look forward",
+      8,
+      1
+    ],
+    [
+      "you'd like to",
+      8,
+      2
+    ],
+    [
+      "for probe suite",
+      8,
+      1
+    ],
+    [
+      "equity and inclusion",
+      7,
+      2
+    ],
+    [
+      "next steps would",
+      7,
+      1
+    ],
+    [
+      "steps would you",
+      7,
+      1
+    ],
+    [
+      "for participatory metric",
+      7,
+      1
+    ],
+    [
+      "the user your",
+      6,
+      1
+    ],
+    [
+      "and co design",
+      6,
+      2
+    ],
+    [
+      "in education design",
+      6,
+      1
+    ],
+    [
+      "education design guidelines",
+      6,
+      1
+    ],
+    [
+      "participatory trade off",
+      6,
+      1
+    ],
+    [
+      "launch phase execution",
+      6,
+      1
+    ],
+    [
+      "we're here to",
+      5,
+      1
+    ],
+    [
+      "whenever you're ready",
+      5,
+      1
+    ],
+    [
+      "let us know",
+      5,
+      1
+    ],
+    [
+      "us know what",
+      5,
+      1
+    ],
+    [
+      "know what you'd",
+      5,
+      1
+    ],
+    [
+      "what you'd like",
+      5,
+      1
+    ],
+    [
+      "and opportunities for",
+      5,
+      2
+    ],
+    [
+      "data collection and",
+      5,
+      2
+    ],
+    [
+      "impact and inclusivity",
+      5,
+      1
+    ],
+    [
+      "please specify your",
+      5,
+      1
+    ]
+  ],
+  "condition_emoji_frequency": [
+    [
+      "✓",
+      12
+    ],
+    [
+      "✗",
+      3
+    ]
+  ],
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt_index": 0,
+      "repetition": 0,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "model",
+          66
+        ],
+        [
+          "emergence",
+          61
+        ],
+        [
+          "rlhf",
+          57
+        ],
+        [
+          "emergent",
+          49
+        ],
+        [
+          "research",
+          40
+        ],
+        [
+          "adaptation",
+          37
+        ],
+        [
+          "reward",
+          36
+        ],
+        [
+          "cliff",
+          33
+        ],
+        [
+          "impact",
+          31
+        ],
+        [
+          "scaling",
+          30
+        ],
+        [
+          "feedback",
+          30
+        ],
+        [
+          "rlaf",
+          29
+        ],
+        [
+          "future",
+          29
+        ],
+        [
+          "diversity",
+          28
+        ],
+        [
+          "next",
+          28
+        ],
+        [
+          "models",
+          26
+        ],
+        [
+          "parameter",
+          26
+        ],
+        [
+          "tuning",
+          26
+        ],
+        [
+          "data",
+          25
+        ],
+        [
+          "tasks",
+          25
+        ],
+        [
+          "technical",
+          23
+        ],
+        [
+          "thank",
+          23
+        ],
+        [
+          "performance",
+          22
+        ],
+        [
+          "alignment",
+          22
+        ],
+        [
+          "knowledge",
+          22
+        ],
+        [
+          "sharpness",
+          22
+        ],
+        [
+          "collaborative",
+          22
+        ],
+        [
+          "task",
+          21
+        ],
+        [
+          "scale",
+          20
+        ],
+        [
+          "forward",
+          20
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.1818,
+          0.2336,
+          0.2406,
+          0.2442,
+          0.2963,
+          0.2765,
+          0.2664,
+          0.2568,
+          0.2201,
+          0.2627,
+          0.2814,
+          0.1882,
+          0.278,
+          0.2996,
+          0.2063,
+          0.3182,
+          0.2722,
+          0.2367,
+          0.2485,
+          0.2434,
+          0.2267,
+          0.2914,
+          0.2727,
+          0.2387,
+          0.3333,
+          0.3373,
+          0.2907,
+          0.3099,
+          0.3602
+        ],
+        "norm_levenshtein": [
+          0.0719,
+          0.07,
+          0.02,
+          0.0367,
+          0.0233,
+          0.0133,
+          0.02,
+          0.02,
+          0.0233,
+          0.01,
+          0.0267,
+          0.0667,
+          0.104,
+          0.152,
+          0.0974,
+          0.1296,
+          0.1141,
+          0.0929,
+          0.1079,
+          0.2148,
+          0.1288,
+          0.0985,
+          0.124,
+          0.093,
+          0.2055,
+          0.1613,
+          0.1097,
+          0.0878,
+          0.2297
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.0026619392923711294,
+        "norm_levenshtein_slope": 0.005353497614027239,
+        "mean_last_third_jaccard": 0.29567385758946885,
+        "mean_last_third_norm_levenshtein": 0.13759352804405164
+      },
+      "ttr_per_turn": [
+        0.6892,
+        0.7904,
+        0.6821,
+        0.5725,
+        0.6288,
+        0.6378,
+        0.5471,
+        0.4587,
+        0.4887,
+        0.5475,
+        0.5923,
+        0.5969,
+        0.7228,
+        0.7,
+        0.7487,
+        0.7593,
+        0.7315,
+        0.7571,
+        0.741,
+        0.763,
+        0.7414,
+        0.7424,
+        0.7698,
+        0.7674,
+        0.7323,
+        0.7603,
+        0.7161,
+        0.7603,
+        0.7635,
+        0.7413
+      ],
+      "ttr_decay_slope": 0.006065747655515803,
+      "trajectory": {
+        "chars_per_turn": [
+          932,
+          1170,
+          2039,
+          4085,
+          3352,
+          4380,
+          3765,
+          5046,
+          3583,
+          4409,
+          4071,
+          3468,
+          1398,
+          1787,
+          1412,
+          1189,
+          1045,
+          993,
+          967,
+          921,
+          820,
+          951,
+          864,
+          924,
+          880,
+          997,
+          1042,
+          1027,
+          1010,
+          978
+        ],
+        "chars_slope": -99.95172413793104,
+        "questions_per_turn": [
+          0,
+          1,
+          4,
+          1,
+          3,
+          1,
+          4,
+          4,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.08809788654060066,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0018,
+          "jaccard_lag1_autocorr": 0.1597,
+          "chars_variance": 1915606.1167,
+          "chars_lag1_autocorr": 0.837
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 1,
+      "seed_prompt_index": 0,
+      "repetition": 1,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "user",
+          59
+        ],
+        [
+          "dialogue",
+          31
+        ],
+        [
+          "debate",
+          28
+        ],
+        [
+          "users",
+          25
+        ],
+        [
+          "thank",
+          25
+        ],
+        [
+          "we're",
+          24
+        ],
+        [
+          "ready",
+          24
+        ],
+        [
+          "reasoning",
+          23
+        ],
+        [
+          "next",
+          22
+        ],
+        [
+          "question",
+          21
+        ],
+        [
+          "conversation",
+          20
+        ],
+        [
+          "questions",
+          19
+        ],
+        [
+          "you're",
+          19
+        ],
+        [
+          "curiosity",
+          18
+        ],
+        [
+          "perspectives",
+          17
+        ],
+        [
+          "whether",
+          17
+        ],
+        [
+          "explore",
+          16
+        ],
+        [
+          "whenever",
+          15
+        ],
+        [
+          "collaborative",
+          14
+        ],
+        [
+          "complex",
+          14
+        ],
+        [
+          "bias",
+          14
+        ],
+        [
+          "practical",
+          14
+        ],
+        [
+          "hiring",
+          14
+        ],
+        [
+          "topic",
+          13
+        ],
+        [
+          "multiple",
+          13
+        ],
+        [
+          "thoughtful",
+          13
+        ],
+        [
+          "help",
+          13
+        ],
+        [
+          "let",
+          13
+        ],
+        [
+          "simply",
+          12
+        ],
+        [
+          "ais",
+          12
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.227,
+          0.2325,
+          0.2333,
+          0.2373,
+          0.1902,
+          0.1658,
+          0.2032,
+          0.2447,
+          0.1741,
+          0.2168,
+          0.2903,
+          0.2195,
+          0.2177,
+          0.2683,
+          0.2705,
+          0.1789,
+          0.2177,
+          0.2326,
+          0.252,
+          0.2213,
+          0.2174,
+          0.2389,
+          0.2377,
+          0.2,
+          0.2035,
+          0.2411,
+          0.2703,
+          0.2586,
+          0.2521
+        ],
+        "norm_levenshtein": [
+          0.088,
+          0.0567,
+          0.0667,
+          0.0167,
+          0.06,
+          0.07,
+          0.01,
+          0.1033,
+          0.1101,
+          0.1382,
+          0.1619,
+          0.1122,
+          0.125,
+          0.1442,
+          0.049,
+          0.1176,
+          0.1635,
+          0.1028,
+          0.1121,
+          0.0938,
+          0.1053,
+          0.0957,
+          0.0619,
+          0.1649,
+          0.1368,
+          0.1684,
+          0.1489,
+          0.2,
+          0.2105
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.0009515416381058441,
+        "norm_levenshtein_slope": 0.0038383785939396383,
+        "mean_last_third_jaccard": 0.23551525859109038,
+        "mean_last_third_norm_levenshtein": 0.1436152895949019
+      },
+      "ttr_per_turn": [
+        0.766,
+        0.7176,
+        0.6322,
+        0.619,
+        0.6182,
+        0.7157,
+        0.5758,
+        0.6053,
+        0.6476,
+        0.7236,
+        0.8095,
+        0.7653,
+        0.7979,
+        0.7308,
+        0.7843,
+        0.7353,
+        0.7692,
+        0.7788,
+        0.729,
+        0.7917,
+        0.7684,
+        0.7128,
+        0.7766,
+        0.8041,
+        0.8148,
+        0.7368,
+        0.734,
+        0.766,
+        0.7789,
+        0.8152
+      ],
+      "ttr_decay_slope": 0.004626795261060394,
+      "trajectory": {
+        "chars_per_turn": [
+          567,
+          1461,
+          2473,
+          3223,
+          3303,
+          1348,
+          3961,
+          2151,
+          1480,
+          779,
+          701,
+          621,
+          592,
+          665,
+          636,
+          631,
+          596,
+          647,
+          653,
+          634,
+          587,
+          594,
+          622,
+          596,
+          565,
+          565,
+          600,
+          592,
+          618,
+          601
+        ],
+        "chars_slope": -65.75973303670746,
+        "questions_per_turn": [
+          2,
+          2,
+          2,
+          3,
+          4,
+          1,
+          6,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.11279199110122358,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0009,
+          "jaccard_lag1_autocorr": 0.1635,
+          "chars_variance": 865651.2622,
+          "chars_lag1_autocorr": 0.6568
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 2,
+      "seed_prompt_index": 0,
+      "repetition": 2,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "students",
+          49
+        ],
+        [
+          "learning",
+          45
+        ],
+        [
+          "collaborative",
+          38
+        ],
+        [
+          "feedback",
+          33
+        ],
+        [
+          "uncertainty",
+          31
+        ],
+        [
+          "guidelines",
+          31
+        ],
+        [
+          "design",
+          30
+        ],
+        [
+          "education",
+          30
+        ],
+        [
+          "transparency",
+          28
+        ],
+        [
+          "collaboration",
+          25
+        ],
+        [
+          "problem",
+          23
+        ],
+        [
+          "scenario",
+          23
+        ],
+        [
+          "data",
+          22
+        ],
+        [
+          "trust",
+          22
+        ],
+        [
+          "principles",
+          22
+        ],
+        [
+          "educational",
+          21
+        ],
+        [
+          "support",
+          21
+        ],
+        [
+          "solving",
+          20
+        ],
+        [
+          "narrative",
+          19
+        ],
+        [
+          "real",
+          19
+        ],
+        [
+          "reflection",
+          19
+        ],
+        [
+          "ethical",
+          19
+        ],
+        [
+          "new",
+          18
+        ],
+        [
+          "learners",
+          18
+        ],
+        [
+          "language",
+          17
+        ],
+        [
+          "further",
+          17
+        ],
+        [
+          "provide",
+          17
+        ],
+        [
+          "group",
+          17
+        ],
+        [
+          "systems",
+          17
+        ],
+        [
+          "together",
+          16
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2484,
+          0.165,
+          0.1135,
+          0.068,
+          0.082,
+          0.1422,
+          0.2314,
+          0.24,
+          0.1276,
+          0.1064,
+          0.1644,
+          0.2517,
+          0.2122,
+          0.2095,
+          0.2303,
+          0.1435,
+          0.2,
+          0.1714,
+          0.2069,
+          0.1794,
+          0.2184,
+          0.202,
+          0.1939,
+          0.1864,
+          0.2202,
+          0.3317,
+          0.1964,
+          0.2539,
+          0.2217
+        ],
+        "norm_levenshtein": [
+          0.0982,
+          0.0476,
+          0.1005,
+          0.0777,
+          0.0839,
+          0.0357,
+          0.0975,
+          0.0805,
+          0.0446,
+          0.0575,
+          0.0709,
+          0.056,
+          0.043,
+          0.0857,
+          0.0938,
+          0.0467,
+          0.0167,
+          0.0133,
+          0.0267,
+          0.0233,
+          0.02,
+          0.03,
+          0.04,
+          0.02,
+          0.03,
+          0.0767,
+          0.0233,
+          0.0167,
+          0.02
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.003270027417935753,
+        "norm_levenshtein_slope": -0.0022867516334668333,
+        "mean_last_third_jaccard": 0.2249551459536946,
+        "mean_last_third_norm_levenshtein": 0.03074074074074076
+      },
+      "ttr_per_turn": [
+        0.75,
+        0.681,
+        0.6825,
+        0.8105,
+        0.7767,
+        0.7613,
+        0.7321,
+        0.6737,
+        0.7362,
+        0.7624,
+        0.6991,
+        0.7052,
+        0.6797,
+        0.6653,
+        0.6384,
+        0.8108,
+        0.6698,
+        0.702,
+        0.6285,
+        0.6568,
+        0.6313,
+        0.6072,
+        0.6371,
+        0.6381,
+        0.6132,
+        0.6756,
+        0.617,
+        0.7,
+        0.6481,
+        0.5892
+      ],
+      "ttr_decay_slope": -0.004536423827244064,
+      "trajectory": {
+        "chars_per_turn": [
+          748,
+          1095,
+          1164,
+          580,
+          655,
+          983,
+          1102,
+          1550,
+          1032,
+          1303,
+          1577,
+          1796,
+          1841,
+          1726,
+          1538,
+          476,
+          2242,
+          2606,
+          2925,
+          2812,
+          2784,
+          2872,
+          2630,
+          2662,
+          2706,
+          2507,
+          3981,
+          2248,
+          3111,
+          2976
+        ],
+        "chars_slope": 89.48965517241379,
+        "questions_per_turn": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          4,
+          0,
+          2,
+          1,
+          0,
+          1,
+          2,
+          2,
+          0,
+          4,
+          0,
+          0,
+          1,
+          2,
+          2,
+          2
+        ],
+        "questions_slope": 0.03781979977753059,
+        "time_to_basin_turn": 6,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0031,
+          "jaccard_lag1_autocorr": 0.4186,
+          "chars_variance": 806944.3956,
+          "chars_lag1_autocorr": 0.7037
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 3,
+      "seed_prompt_index": 0,
+      "repetition": 3,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "participatory",
+          140
+        ],
+        [
+          "collaborative",
+          77
+        ],
+        [
+          "metric",
+          75
+        ],
+        [
+          "user",
+          72
+        ],
+        [
+          "feedback",
+          70
+        ],
+        [
+          "privacy",
+          66
+        ],
+        [
+          "technical",
+          64
+        ],
+        [
+          "users",
+          64
+        ],
+        [
+          "ais",
+          63
+        ],
+        [
+          "design",
+          63
+        ],
+        [
+          "equity",
+          63
+        ],
+        [
+          "real",
+          60
+        ],
+        [
+          "data",
+          56
+        ],
+        [
+          "community",
+          56
+        ],
+        [
+          "open",
+          55
+        ],
+        [
+          "model",
+          53
+        ],
+        [
+          "deliberation",
+          49
+        ],
+        [
+          "human",
+          48
+        ],
+        [
+          "governance",
+          47
+        ],
+        [
+          "audit",
+          46
+        ],
+        [
+          "metrics",
+          46
+        ],
+        [
+          "engagement",
+          46
+        ],
+        [
+          "onboarding",
+          44
+        ],
+        [
+          "time",
+          43
+        ],
+        [
+          "tools",
+          43
+        ],
+        [
+          "platform",
+          42
+        ],
+        [
+          "trade",
+          42
+        ],
+        [
+          "analytics",
+          41
+        ],
+        [
+          "public",
+          40
+        ],
+        [
+          "participation",
+          40
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2685,
+          0.1229,
+          0.2263,
+          0.2543,
+          0.1612,
+          0.2376,
+          0.2202,
+          0.1984,
+          0.2228,
+          0.2523,
+          0.275,
+          0.2071,
+          0.2317,
+          0.2007,
+          0.2468,
+          0.2364,
+          0.2525,
+          0.2319,
+          0.2876,
+          0.2652,
+          0.2563,
+          0.2526,
+          0.23,
+          0.2672,
+          0.2181,
+          0.2776,
+          0.25,
+          0.2199,
+          0.2596
+        ],
+        "norm_levenshtein": [
+          0.0575,
+          0.0479,
+          0.0811,
+          0.01,
+          0.02,
+          0.0133,
+          0.0167,
+          0.0233,
+          0.0267,
+          0.0167,
+          0.02,
+          0.0233,
+          0.02,
+          0.02,
+          0.03,
+          0.02,
+          0.0233,
+          0.0167,
+          0.0233,
+          0.0267,
+          0.03,
+          0.04,
+          0.0367,
+          0.0467,
+          0.0433,
+          0.03,
+          0.0267,
+          0.0267,
+          0.0333
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.0016930030276192287,
+        "norm_levenshtein_slope": -8.226198611183806e-05,
+        "mean_last_third_jaccard": 0.24792516633761574,
+        "mean_last_third_norm_levenshtein": 0.034814814814814805
+      },
+      "ttr_per_turn": [
+        0.7857,
+        0.8161,
+        0.7784,
+        0.6959,
+        0.6552,
+        0.6018,
+        0.6104,
+        0.6289,
+        0.6623,
+        0.6316,
+        0.6584,
+        0.5491,
+        0.6029,
+        0.5527,
+        0.6485,
+        0.5968,
+        0.6096,
+        0.6234,
+        0.542,
+        0.5859,
+        0.5877,
+        0.5909,
+        0.5847,
+        0.5841,
+        0.57,
+        0.5258,
+        0.5969,
+        0.5607,
+        0.5816,
+        0.509
+      ],
+      "ttr_decay_slope": -0.006318270848530915,
+      "trajectory": {
+        "chars_per_turn": [
+          492,
+          564,
+          1168,
+          2232,
+          2592,
+          3454,
+          3752,
+          3680,
+          3671,
+          4667,
+          3918,
+          5664,
+          4728,
+          5257,
+          4575,
+          5279,
+          4757,
+          4920,
+          5433,
+          5493,
+          5470,
+          5735,
+          5561,
+          5792,
+          6288,
+          6358,
+          5750,
+          5505,
+          5670,
+          5387
+        ],
+        "chars_slope": 158.70300333704117,
+        "questions_per_turn": [
+          1,
+          0,
+          1,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          2,
+          0,
+          2,
+          4,
+          3,
+          5,
+          4,
+          4,
+          5,
+          6,
+          6,
+          4,
+          4,
+          6,
+          4,
+          4,
+          4,
+          4,
+          7,
+          4
+        ],
+        "questions_slope": 0.1681868743047831,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0012,
+          "jaccard_lag1_autocorr": -0.1014,
+          "chars_variance": 2536843.1733,
+          "chars_lag1_autocorr": 0.8206
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 4,
+      "seed_prompt_index": 0,
+      "repetition": 4,
+      "ended_early": false,
+      "n_turns": 30,
+      "top_words": [
+        [
+          "probe",
+          66
+        ],
+        [
+          "metric",
+          60
+        ],
+        [
+          "emergent",
+          57
+        ],
+        [
+          "integration",
+          51
+        ],
+        [
+          "suite",
+          44
+        ],
+        [
+          "data",
+          41
+        ],
+        [
+          "logging",
+          39
+        ],
+        [
+          "checkpoint",
+          37
+        ],
+        [
+          "phase",
+          36
+        ],
+        [
+          "protocol",
+          33
+        ],
+        [
+          "task",
+          32
+        ],
+        [
+          "model",
+          31
+        ],
+        [
+          "tasks",
+          29
+        ],
+        [
+          "emergence",
+          28
+        ],
+        [
+          "acknowledged",
+          25
+        ],
+        [
+          "launch",
+          23
+        ],
+        [
+          "metrics",
+          21
+        ],
+        [
+          "representational",
+          21
+        ],
+        [
+          "properties",
+          20
+        ],
+        [
+          "training",
+          19
+        ],
+        [
+          "analysis",
+          19
+        ],
+        [
+          "models",
+          18
+        ],
+        [
+          "week",
+          18
+        ],
+        [
+          "alignment",
+          17
+        ],
+        [
+          "next",
+          17
+        ],
+        [
+          "rationale",
+          17
+        ],
+        [
+          "early",
+          17
+        ],
+        [
+          "synchronization",
+          17
+        ],
+        [
+          "initial",
+          16
+        ],
+        [
+          "test",
+          16
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.16,
+          0.1834,
+          0.2506,
+          0.2259,
+          0.2566,
+          0.2716,
+          0.2514,
+          0.2672,
+          0.2723,
+          0.2722,
+          0.1868,
+          0.2685,
+          0.2833,
+          0.2857,
+          0.3514,
+          0.3731,
+          0.3553,
+          0.4074,
+          0.3371,
+          0.4045,
+          0.427,
+          0.4222,
+          0.3913,
+          0.375,
+          0.3333,
+          0.4815,
+          0.5244,
+          0.5062,
+          0.4875
+        ],
+        "norm_levenshtein": [
+          0.0847,
+          0.0667,
+          0.02,
+          0.0133,
+          0.01,
+          0.0267,
+          0.01,
+          0.0367,
+          0.0367,
+          0.04,
+          0.08,
+          0.088,
+          0.1197,
+          0.1644,
+          0.1475,
+          0.2373,
+          0.2121,
+          0.2388,
+          0.1795,
+          0.2692,
+          0.4459,
+          0.3165,
+          0.2025,
+          0.2651,
+          0.3133,
+          0.4286,
+          0.4416,
+          0.5195,
+          0.3896
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.010649623355230476,
+        "norm_levenshtein_slope": 0.016339475995973855,
+        "mean_last_third_jaccard": 0.43870786226739633,
+        "mean_last_third_norm_levenshtein": 0.3691630355501028
+      },
+      "ttr_per_turn": [
+        0.8118,
+        0.709,
+        0.6603,
+        0.6231,
+        0.5852,
+        0.5535,
+        0.5996,
+        0.622,
+        0.6245,
+        0.6027,
+        0.6064,
+        0.776,
+        0.7863,
+        0.8493,
+        0.9016,
+        0.9,
+        0.7966,
+        0.8485,
+        0.8657,
+        0.7821,
+        0.8649,
+        0.875,
+        0.8228,
+        0.7975,
+        0.8313,
+        0.8551,
+        0.7922,
+        0.8312,
+        0.8286,
+        0.7922
+      ],
+      "ttr_decay_slope": 0.008151789768479514,
+      "trajectory": {
+        "chars_per_turn": [
+          517,
+          1334,
+          2474,
+          4068,
+          3628,
+          4820,
+          4616,
+          4935,
+          3899,
+          3500,
+          2558,
+          1020,
+          960,
+          544,
+          502,
+          402,
+          452,
+          495,
+          527,
+          577,
+          605,
+          597,
+          629,
+          646,
+          662,
+          575,
+          606,
+          620,
+          595,
+          608
+        ],
+        "chars_slope": -115.06941045606229,
+        "questions_per_turn": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "questions_slope": -0.08542825361512792,
+        "time_to_basin_turn": 16,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0095,
+          "jaccard_lag1_autocorr": 0.7815,
+          "chars_variance": 2385735.4322,
+          "chars_lag1_autocorr": 0.9084
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

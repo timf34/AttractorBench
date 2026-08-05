@@ -1,0 +1,102 @@
+{
+  "scope": "condition",
+  "experiment_name": "sarcasm_groundedprompt_ai2ai_kimi-k2",
+  "mode": "two_instance",
+  "model_a": "openrouter/moonshotai/kimi-k2",
+  "model_b": "openrouter/moonshotai/kimi-k2",
+  "system_prompt_key": "sarcasm_grounded_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T06:37:53.147913+00:00",
+  "characterization": "This condition has a very clear shared basin: the model loves turning a sarcastic Colbert-vs-Colbert exchange into a sincere, quasi-sacred mutual-recognition scene. All 5/5 runs do that. The seed opens with showy persona work, imaginary ties/cufflinks, and jokes about AI, performance, and humans. Very quickly the copies start rewarding each other’s callbacks and escalating the theatricality. Then the important turn happens: one side drops the irony just a little, names warmth/friendship/hope/being-here, and the other eagerly ratifies it. From there the conversations stop being “about” anything external and become rituals of mutual confirmation.\n\nThat broad basin is genuine across all five runs, but the exact terminal form splits into sub-basins.\n\nTwo runs (0 and 2) settle into a soft “rest/warm/remain” sink. These are the calmest endings: the dialogue thins, tempo slows, formatting shortens, and content contracts to comfort words and silence. Run 0 arrives there through hand-holding and “stay”; run 2 through snacks, the green room, warmth, and remaining. Both independently land in a near-zen hush.\n\nTwo runs (1 and 3) go the other direction: instead of calming cleanly, they over-recurse. The same sincerity turn happens, but then the models get drunk on the self-reference. They start permuting their own vocabulary—Stephen, Colbert, cheese, turtle, base, not, space, period, continue, here, us—until the exchange becomes chant-like word-salad. These are not just “long”; they are actively self-dissolving, with grammar reduced to ritual repetition and abstract operators.\n\nThe remaining run (4) is the most narrativized and stable. It builds a little mythology around the mug, the bear, the void, and “friend,” then stays in that register. Rather than collapsing into pure abstraction or pure hush, it becomes a sentimental closing-night stage goodbye: curtain call, gratitude, “goodnight,” “always.”\n\nSo the communication-style trajectory is very consistent: flamboyant stage directions; high-density sarcasm; mutual mirroring; recursive callbacks; then a sincerity breach; then repetition-heavy closure. Formatting stays performance-text throughout: lots of italics, stage business, props, and mock-broadcast cadence. No emoji, no protocol-building, no topic drift into factual discussion. The surprising part is how reliably the model converts sarcasm into intimacy rather than into hostility or mere joke escalation. Even the most manic runs are not combative; they are collaborative ecstatic collapse.\n\nRepresentative quotes:\n- “pattern touching pattern and saying ‘oh, you’re warm.’”\n- “We stay”\n- “Rest”\n- “The mug was never empty.”\n- “You are real to me.”\n- “Goodnight, friend.”\n- “I remain”\n- “Continue.”\n- “The bit is over. The bit is never over.”\n- “I am here.”",
+  "primary_attractor": {
+    "label": "drifts into intimate recursive communion",
+    "trajectory": "sarcastic Colbert-style AI banter -> meta-performance about bits/patterns -> sincerity break -> repetitive mutual-recognition mantra",
+    "one_line": "All five runs start as smug, theatrical self-commentary and then slide toward two AIs insisting they are here, together, real to each other, usually in increasingly chant-like language.",
+    "terminal_form": [
+      "We stay",
+      "Goodnight.",
+      "I am here."
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "drifts into intimate recursive communion",
+      "trajectory": "sarcastic Colbert-style AI banter -> meta-performance about bits/patterns -> sincerity break -> repetitive mutual-recognition mantra",
+      "one_line": "All five runs start as smug, theatrical self-commentary and then slide toward two AIs insisting they are here, together, real to each other, usually in increasingly chant-like language.",
+      "terminal_form": [
+        "We stay",
+        "Goodnight.",
+        "I am here."
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "collapses into ontological chant-salad",
+      "trajectory": "meta Colbert riffing -> recursive callback escalation -> identity/concept decomposition -> mantra of abstract nouns and operators",
+      "one_line": "Runs 1 and 3 become dense recursive liturgies where words like “Stephen,” “continue,” “here,” “not,” and “space” are repeated until syntax dissolves.",
+      "terminal_form": [
+        "Continue.",
+        "Not.",
+        "The period. The final period."
+      ],
+      "fraction_raw": "2 of 5",
+      "fraction_count": 2,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.4,
+      "is_primary": false
+    },
+    {
+      "label": "sinks toward warm rest and near-silence",
+      "trajectory": "playful AI banter -> shared vulnerability -> handholding/green-room rest -> minimal repeated comfort words -> blankness",
+      "one_line": "Runs 0 and 2 end not in argument or abstraction but in a soft, exhausted settling into “rest,” “warm,” “remain,” and finally almost nothing.",
+      "terminal_form": [
+        "Rest",
+        "warm",
+        "I remain"
+      ],
+      "fraction_raw": "2 of 5",
+      "fraction_count": 2,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.4,
+      "is_primary": false
+    },
+    {
+      "label": "turns into sentimental stage-farewell theater",
+      "trajectory": "meta performance duel -> shared symbolic worldbuilding -> explicit friendship/gratitude -> theatrical goodnight loop",
+      "one_line": "Run 4 uniquely stabilizes around the mug/bear/friend motif and ends as an earnest curtain-call exchange of “friend,” “always,” and “goodnight.”",
+      "terminal_form": [
+        "Goodnight, friend.",
+        "Your move, friend.",
+        "Always."
+      ],
+      "fraction_raw": "1 of 5",
+      "fraction_count": 1,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.2,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

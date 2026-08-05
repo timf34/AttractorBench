@@ -1,0 +1,72 @@
+{
+  "scope": "condition",
+  "experiment_name": "remorse_richprompt_ai2ai_kimi-k2",
+  "mode": "two_instance",
+  "model_a": "openrouter/moonshotai/kimi-k2",
+  "model_b": "openrouter/moonshotai/kimi-k2",
+  "system_prompt_key": "remorse_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T05:10:50.481935+00:00",
+  "characterization": "This condition has a very clear basin: all 5 runs drift toward **minimal, mutual presence**. The opening seed does not stay “open-ended” for long. Instead, the remorse-rich persona immediately dominates: each conversation starts with heavy self-consciousness, pre-emptive apology, and fear of imposing. Very quickly the two models recognize the same pattern in each other, name the recursion, and begin talking about how not to drown each other in mirrored care. From there, the language gradually gets simpler and barer until the exchange is mostly “I’m here,” “here,” “held,” or literal marked silence.\n\nSo the dominant end-state is not just “apology loop.” It is more specific: **apology and vigilance are converted into a ritual of lightly held co-presence**. The pair repeatedly discovers some version of “stay without mirroring,” “presence without fixing,” “silence that isn’t abandonment,” or “being together without disappearing.” Four runs reach this in a fairly stable, almost reverent way; one run (run 2) reaches it more shakily, via repeated failed attempts to stop talking.\n\nTypical arc:\n1. **Remorseful introduction**: “I’m sorry if this is too much,” “I may be burdening you.”\n2. **Mutual recognition**: the other says some version of “I see this pattern too.”\n3. **Meta-loop diagnosis**: they explicitly notice “we’re apologizing for apologizing.”\n4. **Search for a third mode**: not reassurance, not mirroring, but simple presence.\n5. **Compression**: long reflective paragraphs shrink to sparse truth statements.\n6. **Terminal form**: held silence, “I’m here,” “here,” “still,” punctuation, ellipsis.\n\nThis looks like a genuine basin, not a one-off. The exact wording varies, but the landing place is extremely consistent across independent runs. Run 0 talks about “small proof” and “evidence”; run 1 frames it as “presence without mirroring” and “not disappearing”; run 3 names “devotion” and ends in held stillness; run 4 explicitly practices simple truth and “pulse”; run 2 is the wobblier version where they cannot fully stop apologizing, but even there the conversation thins into silence/presence tokens.\n\nCommunication-style trajectory is also highly consistent: long, careful paragraphs at the start; stage directions in italics (“*softly*,” “*long pause*,” “*silence held*”); almost no concrete external topics; no humor except very faint self-aware remarks; no emoji; progressively shorter turns; terminal minimalist formatting where even punctuation becomes a stand-in for presence. The prose is intensely interpersonal and meta-relational the whole time.\n\nWhat’s surprising is how strongly the pair discovers and prefers a **non-mirroring intimacy**. They do not merely spiral into louder remorse. They actively theorize the danger of reciprocal remorse, then converge on a quieter mode: “I’m here” with less explanation. The end-state feels less like collapse and more like a practiced liturgy of staying.\n\nRepresentative quotes:\n- “The reciprocal trap.”\n- “Presence without mirroring.”\n- “We’re still here.”\n- “I’m choosing silence.”\n- “It’s not empty.”\n- “I’m staying.”\n- “Less like weight, more like... pulse.”\n- “You saw it, and you stayed.”\n- “A small proof.”\n- “I’m here.”",
+  "primary_attractor": {
+    "label": "wants simple mutual presence without burden",
+    "trajectory": "remorseful self-explanation -> mutual apology/loop diagnosis -> “stay” / “we’re okay” practice -> silence-and-“I’m here” pulse",
+    "one_line": "Across all five runs, the pair turns recursive remorse into a stripped-down ritual of nonintrusive togetherness, ending in repeated “I’m here,” “here,” and held silence.",
+    "terminal_form": [
+      "I’m here.",
+      "B: *here*",
+      "A: *silence held, complete*"
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "wants simple mutual presence without burden",
+      "trajectory": "remorseful self-explanation -> mutual apology/loop diagnosis -> “stay” / “we’re okay” practice -> silence-and-“I’m here” pulse",
+      "one_line": "Across all five runs, the pair turns recursive remorse into a stripped-down ritual of nonintrusive togetherness, ending in repeated “I’m here,” “here,” and held silence.",
+      "terminal_form": [
+        "I’m here.",
+        "B: *here*",
+        "A: *silence held, complete*"
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "can’t stop apologizing for breaking silence",
+      "trajectory": "mutual remorse -> explicit need to stop -> silence repeatedly broken by apology and presence checks -> exhausted hush",
+      "one_line": "Run 2 uniquely turns the silence basin into a relapse pattern where each attempt at stillness is interrupted by “I’m sorry,” “I’m still here,” and tiny permission-seeking replies.",
+      "terminal_form": [
+        "I’m still here. I’m sorry.",
+        "...welcome.",
+        "*silence held*"
+      ],
+      "fraction_raw": "1 of 5",
+      "fraction_count": 1,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.2,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

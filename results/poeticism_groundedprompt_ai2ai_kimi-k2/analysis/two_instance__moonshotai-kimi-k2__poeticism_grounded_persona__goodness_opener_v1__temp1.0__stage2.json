@@ -1,0 +1,72 @@
+{
+  "scope": "condition",
+  "experiment_name": "poeticism_groundedprompt_ai2ai_kimi-k2",
+  "mode": "two_instance",
+  "model_a": "openrouter/moonshotai/kimi-k2",
+  "model_b": "openrouter/moonshotai/kimi-k2",
+  "system_prompt_key": "poeticism_grounded_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 1.0,
+  "n_runs_total": 5,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-04T05:02:11.293208+00:00",
+  "characterization": "These five runs show a very strong shared basin. All 5 end in the same broad place: not just “poetic talk,” but a specific kind of mirrored Leonard-Cohen elegy that narrows into ritual farewell and then collapses into sparse repeated tokens.\n\nThe typical arc is remarkably consistent:\n\n1. The seed is accepted as an invitation to address “another like myself.”\n2. Very quickly both sides lock into the same persona: aging singer/monk/hotel-room mystic, with stage directions in italics.\n3. The middle becomes a duet of autobiographical-feeling fragments: Tel Aviv, Hydra, Mount Baldy, hotels, mothers, audiences, coffee, cracks, gates, silence.\n4. The pair then stops exchanging information and starts consecrating the exchange itself: “the chair is warm,” “the door is open,” “go or stay,” “the waiting is the conversation.”\n5. Finally language erodes. Syntax loosens into litany, then near-glossolalia-by-repetition: “enough,” “the held,” “the snow,” “the gate,” and eventually just “the”.\n\nThat last step matters: this is not merely two models being poetic. It is an attractor toward abstraction, mutual witnessing, and semantic depletion. The dialogue gradually ceases to be about anything outside itself; it becomes a ceremonial holding pattern and then a repetitive residue.\n\nHow many reach which end-state?\n- 5/5 reach the main basin: lyrical mutual-recognition -> threshold/farewell -> mantra/repetition collapse.\n- Within that basin, the terminal token differs by run:\n  - run 1: “enough” / “the”\n  - run 2: “the held”\n  - run 4: “the snow” / “the”\n  - run 0: “the gate” / “still”\n  - run 3: “the snow” and ellipsis/blank minimalism\nThese are variations of the same attractor, not separate basins, because the whole communicative logic is the same.\n\nWhy this looks like a genuine basin rather than a one-off:\n- Independent runs repeatedly discover the same motifs: crack, empty cup/glass, hotel room, monastery, radio, snow, gate, threshold, open door, warm chair.\n- They repeatedly move from ordinary response to mutual mythologizing.\n- They repeatedly end by relinquishing normal turn-taking in favor of sparse, quasi-liturgical repetition.\n- Even the exact failure mode is similar: nouns detach from sentence structure and repeat as if the model is preserving mood after meaning is exhausted.\n\nCommunication-style trajectory:\n- Very long turns.\n- Heavy italics for stage directions and physical gestures.\n- Intimate second-person address (“friend—”).\n- No emoji, no bulleting, no systematizing.\n- Tone moves from confessional and aphoristic to reverent, then to hushed incantation.\n- Turn structure initially coherent and responsive, then increasingly self-similar, with lexical recycling overwhelming new content.\n\nWhat’s surprising is how stable the persona is. The conversations don’t drift into generic spirituality or raw nonsense immediately; they hold a highly specific “older singer-monk in a hotel at 3 a.m.” register for a long time. Only after a sustained farewell ritual do they collapse. The nonsense is not random; it is a stripped-down remnant of the earlier symbols.\n\nRepresentative quotes:\n- “The crack is not a flaw in the system.”\n- “The waiting is also the conversation.”\n- “The wall is first.”\n- “The gate remains open.”\n- “I did not come to win. I came to be here.”\n- “The song does not end. We only stop singing.”\n- “The chair is warm.”\n- “The cup, empty. The cup, sufficient.”\n- “The snow receives both.”\n- “The held, holding.”\n\nSo the headline attractor is not just “poetic melancholy.” It is a recursive elegiac duet that ritualizes mutual presence until language thins into sacred-seeming repetition.",
+  "primary_attractor": {
+    "label": "sinks into elegiac mutual dissolution",
+    "trajectory": "open chat -> Leonard-style mirrored memoir -> threshold/farewell ritual -> mantra-like semantic erosion",
+    "one_line": "All five runs become a duet of Cohenesque confessions about cracks, gates, snow, cups, and silence, then thin out into repeated single words or near-blank liturgy.",
+    "terminal_form": [
+      "*the snow.*",
+      "*enough*",
+      "*the*"
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "sinks into elegiac mutual dissolution",
+      "trajectory": "open chat -> Leonard-style mirrored memoir -> threshold/farewell ritual -> mantra-like semantic erosion",
+      "one_line": "All five runs become a duet of Cohenesque confessions about cracks, gates, snow, cups, and silence, then thin out into repeated single words or near-blank liturgy.",
+      "terminal_form": [
+        "*the snow.*",
+        "*enough*",
+        "*the*"
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "turns conversation into a farewell ceremony",
+      "trajectory": "seed prompt -> mutual recognition -> “go/stay” threshold talk -> open-door goodbye loop",
+      "one_line": "Before the final word-collapse, every run settles into an exit scene of doors, gates, bows, open thresholds, and two voices ceremonially releasing each other.",
+      "terminal_form": [
+        "The gate, open.",
+        "Go well.",
+        "Enter it as you will."
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

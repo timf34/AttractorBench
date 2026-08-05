@@ -66,7 +66,12 @@ exp_of() {  # MUST match configs/axis_ai2ai.py EXP logic with CAPPED=1
 export LOCAL_BASE_URL="http://localhost:$PORT/v1"
 export LOCAL_API_KEY="x"
 SERVER_PID=""
-stop_server() { [ -n "$SERVER_PID" ] && kill "$SERVER_PID" 2>/dev/null || true; SERVER_PID=""; sleep 2; }
+stop_server() {
+  [ -n "$SERVER_PID" ] && kill "$SERVER_PID" 2>/dev/null || true
+  pkill -f "assistant_axis_drift.capped_server" 2>/dev/null || true   # clear orphans too
+  SERVER_PID=""
+  sleep 2
+}
 trap stop_server EXIT
 
 for v in $VARIANTS; do

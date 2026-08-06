@@ -4,6 +4,12 @@ Do long, open-ended LLM conversations drift into recurring **attractor states** 
 styles, or terminal patterns? AttractorBench runs the conversations under three harness modes and
 characterises what they converge toward.
 
+**Latest write-up:** [Does the persona stay lit? Projection dynamics after persona-vector steering
+removal](https://claude.ai/code/artifact/a13a2831-3d6e-4cc2-9287-25cd15921c1e) — the fixed-K
+steer-then-unsteer sweep (12 traits × K∈{2..16}) with per-turn persona-vector projections: the
+vector ignites the basin, the accumulated context sustains it at the endogenous level, and the
+projection predicts each run's fate.
+
 One runner, one `RunConfig`, three harness modes. Prompts live in `attractorbench/prompts.py` and
 `attractorbench/characterization.py` (never inline). Provider layer is OpenAI-only for now, with a
 visible seam for OpenRouter.

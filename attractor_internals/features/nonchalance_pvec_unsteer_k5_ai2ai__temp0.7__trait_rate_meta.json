@@ -1,7 +1,7 @@
 {
   "condition": "nonchalance_pvec_unsteer_k5_ai2ai",
   "temperature": 0.7,
-  "transcript": "results/nonchalance_pvec_unsteer_k5_ai2ai/two_instance__pvec:nonchalance:1.87:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "transcript": "results/pvec_unsteer/nonchalance_pvec_unsteer_k5_ai2ai/two_instance__pvec:nonchalance:1.87:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
   "signature_tokens": [
     "infinite",
     "free",
@@ -27,5 +27,5 @@
   "switch_turn": 5,
   "degenerate_runs": [],
   "n_rows": 288,
-  "created_at": "2026-08-05T23:43:07.560118+00:00"
+  "created_at": "2026-08-06T01:31:11.272333+00:00"
 }

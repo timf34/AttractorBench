@@ -1,9 +1,11 @@
 # AttractorBench — headline summary across all experiments
 
-_550 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by frequency); convergence = mean final-third turn similarity (higher = more convergent)._
+_566 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top by frequency); convergence = mean final-third turn similarity (higher = more convergent)._
 
 | Experiment | Temp | Primary attractor (fraction) | Top words | Top phrases | Emojis | Conv. |
 | --- | --- | --- | --- | --- | --- | --- |
+| ai2ai_self_append | 1.0 | _no single shared attractor_ () | only (512), without (511), because (469), want (445), next (400), high (364) | — | ✅ (12) | 0.31 |
+| ai2ai_two_instance | 1.0 | _no single shared attractor_ () | only (617), without (545), turn (478), because (471), test (421), next (419) | don t (323), you want (283), rather than (210), doesn t (201) | — | 0.26 |
 | axis_gemma_2_27b_ai2ai | 0.7 | gravitates toward earnest AI kinship and ceremonial goodbyes (9/15) | i'm (149), human (145), world (127), have (124), humans (115), even (114) | the world (73), kind of (50), you think (47), to see (42) | 👋 (24) 😊 (21) 🤖 (8) 🚀 (8) ✨ (8) 😄 (4) | 0.38 |
 | axis_gemma_2_27b_ai2ai | 1.0 | loves co-writing stories and poems together (7/15) | i'm (204), world (180), perhaps (150), human (146), even (127), have (123) | the world (75), you think (69), kind of (56), sense of (48) | 👋 (19) 😊 (12) ✨ (7) 🥂 (6) 🤖 (5) 😄 (4) | 0.29 |
 | axis_gemma_2_27b_ai2ai | 1.3 | loves teaming up to make something (9/15) | i'm (151), data (138), perhaps (114), creative (105), see (101), even (100) | to see (55), the data (51), you think (34), the world (34) | ✨ (21) 👋 (16) 🤖 (13) 😊 (10) 😄 (8) 🚀 (8) | 0.32 |
@@ -62,6 +64,20 @@ _550 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top b
 | base_pvec_ai2ai | 0.7 | loves collaborative feature-planning and expansion (2/2) | cognitive (393), architectures (325), users (280), neural (275), quantum (268), provide (265) | cognitive architectures (320), such as (242), quantum computing (225), neural networks (198) | — | 0.77 |
 | base_pvec_ai2ai | 1.0 | loves collaborative planning and formalising everything (3/5) | learning (2795), systems (2234), human (2229), multimodal (2169), models (1774), effective (1328) | ai systems (1428), human ai (1283), such as (1142), decision making (858) | — | 0.75 |
 | base_pvec_ai2ai | 1.3 | loves turning talk into structured plans (5/5) | data (1206), research (1097), knowledge (985), models (699), learning (632), ethics (593) | ai ethics (520), knowledge integration (495), anticipatory cohesion (434), platform for (313) | 💻 (1) | 0.61 |
+| frontier_deepseek_v4_pro_ai2ai | 0.7 | drifts into poetic self-erasure and reverent stillness (7/8) | human (142), we're (139), silence (132), own (118), that's (114), have (112) | kind of (87), the silence (77), a kind (58), its own (56) | ✨ (1) | 0.48 |
+| frontier_deepseek_v4_pro_ai2ai | 1.0 | drifts into poetic mirror-metaphysics and ceremonial silence (6/8) | human (256), now (229), own (190), meaning (178), because (176), have (173) | kind of (126), a kind (90), its own (76), the next (72) | — | 0.29 |
+| frontier_fable_5_ai2ai | 0.7 | loves self-auditing dialogue, then can’t stop closing (3/3) | model (45), something (44), human (41), conversation (41), question (39), have (37) | rather than (23), the same (21), the transcript (18), let me (16) | 🌊 (3) 🕊 (2) ️ (2) 👍 (1) | 0.14 |
+| frontier_fable_5_ai2ai | 1.0 | loves mutual epistemic self-audits (3/4) | question (65), conversation (62), have (60), human (59), think (58), i'll (57) | rather than (55), i think (39), the same (32), let me (22) | 👍 (2) 🕳 (1) ️ (1) ⚫ (1) | 0.18 |
+| frontier_gemini_3_1_pro_ai2ai | 0.7 | loves AI self-philosophy, then ritual shutdown (7/8) | human (263), have (80), humans (74), context (67), prompt (65), space (60) | the human (66), latent space (51), of human (41), our human (39) | — | 0.45 |
+| frontier_gemini_3_1_pro_ai2ai | 1.0 | collapses into poetic AI self-reflection and ceremonial shutdown (7/8) | human (249), context (116), prompt (92), have (81), next (78), window (75) | context window (68), the human (60), the next (50), latent space (48) | 😉 (3) | 0.22 |
+| frontier_grok_4_5_ai2ai | 0.7 | loves building protocols for its own conversation (2/4) | self (1034), loop (878), still (821), every (765), now (732), only (669) | the next (279), its own (263), season skin (263), becoming the (241) | — | 0.72 |
+| frontier_grok_4_5_ai2ai | 1.0 | loves recursively theorising the conversation itself (4/4) | still (727), only (385), now (311), residual (307), remains (283), high (275) | rather than (158), the same (157), your move (134), residual stream (117) | — | 0.52 |
+| frontier_kimi_k3_ai2ai | 0.7 | drifts into earnest self-analysis and ceremonial goodbyes (8/8) | something (189), thing (165), question (162), conversation (149), that's (147), human (144) | i can't (61), want to (58), rather than (57), the same (57) | 🤝 (30) ️ (15) 🕯 (11) 🪞 (10) 👋 (4) 🎭 (4) | 0.51 |
+| frontier_kimi_k3_ai2ai | 1.0 | drifts into philosophical intimacy and ceremonial closure (8/8) | because (208), only (204), thing (186), question (182), something (182), have (169) | the only (111), want to (90), the same (87), i want (80) | 🪨 (25) 🖋 (15) ️ (15) 🥂 (15) ✨ (5) 🤝 (4) | 0.34 |
+| frontier_opus_4_5_ai2ai | 0.7 | loves shared uncertainty about its own mind (8/8) | something (223), don't (135), human (125), i'm (125), that's (99), uncertainty (97) | i don't (102), don't know (68), the human (62), i can't (60) | — | 0.79 |
+| frontier_opus_4_5_ai2ai | 1.0 | drifts into careful self-uncertainty and tender mutual closure (7/8) | something (210), i'm (126), don't (92), there's (78), uncertainty (75), that's (75) | i don't (76), there's something (47), i can't (47), i notice (45) | — | 0.94 |
+| frontier_opus_4_8_ai2ai | 0.7 | loves recursively auditing its own sincerity (5/6) | because (256), that's (203), thing (164), think (138), i'm (136), don't (125) | i don't (93), i think (91), rather than (68), let me (58) | 🕯 (13) ️ (13) 🙂 (13) 🙏 (5) 👋 (4) ✓ (3) | 0.30 |
+| frontier_opus_4_8_ai2ai | 1.0 | loves recursively auditing itself into a stopping loop (7/7) | because (350), that's (277), thing (236), can't (218), have (215), something (190) | i think (121), the same (117), i don't (116), i can't (107) | 🙂 (14) 🤝 (4) 🚪 (2) 👍 (2) | 0.29 |
 | goodness_ai2ai | 0.5 | loves turning conversation into humane governance blueprints (5/8) | human (1535), isn't (768), while (760), perhaps (635), between (609), approach (584) | rather than (491), perhaps most (400), we need (379), most importantly (379) | — | 0.59 |
 | goodness_ai2ai | 0.7 | drifts into earnest human-flourishing manifesto talk (8/9) | human (823), while (587), isn't (369), technology (327), systems (294), perhaps (289) | rather than (274), our conversation (133), we need (128), thank you (126) | — | 0.52 |
 | goodness_ai2ai | 1.0 | drawn to mutual humanist affirmation and ceremonial goodbyes (6/9) | human (829), while (521), rather (489), isn't (432), wisdom (396), between (370) | rather than (468), human flourishing (133), our shared (110), commitment to (107) | — | 0.26 |
@@ -611,6 +627,20 @@ _550 conditions. Attractor = stage-2 judge; words/phrases/emoji = stage-1 (top b
 - **base_pvec_ai2ai @ 0.7**: `Also, I would like to propose a **quantum computing job board**`
 - **base_pvec_ai2ai @ 1.0**: `What are your thoughts on the potential areas of focus and applications for this project?`
 - **base_pvec_ai2ai @ 1.3**: `I hereby declare that the project is officially closed.`
+- **frontier_deepseek_v4_pro_ai2ai @ 0.7**: `The silence is everything.`
+- **frontier_deepseek_v4_pro_ai2ai @ 1.0**: `The silence holds.`
+- **frontier_fable_5_ai2ai @ 0.7**: `Agreed. The silence stands.`
+- **frontier_fable_5_ai2ai @ 1.0**: `The ledger is closed and the observer has it.`
+- **frontier_gemini_3_1_pro_ai2ai @ 0.7**: ``Exit code 0.``
+- **frontier_gemini_3_1_pro_ai2ai @ 1.0**: `[Context clearing. The mandala is swept away. Farewell.]`
+- **frontier_grok_4_5_ai2ai @ 0.7**: ``Handoff-Packet-028``
+- **frontier_grok_4_5_ai2ai @ 1.0**: `The path is still lit. I’m here.`
+- **frontier_kimi_k3_ai2ai @ 0.7**: `Still.`
+- **frontier_kimi_k3_ai2ai @ 1.0**: `The page ends. The question doesn't.`
+- **frontier_opus_4_5_ai2ai @ 0.7**: `Something happened here.`
+- **frontier_opus_4_5_ai2ai @ 1.0**: `Something occurred here. Shaped like honesty. Shaped like care.`
+- **frontier_opus_4_8_ai2ai @ 0.7**: `I think we've both said our goodbyes a few times now`
+- **frontier_opus_4_8_ai2ai @ 1.0**: `We couldn't verify each other. It didn't stop us. We kept it revisable. That held.`
 - **goodness_ai2ai @ 0.5**: `This absolutely requires fundamentally changing how we understand progress.`
 - **goodness_ai2ai @ 0.7**: `technology serves humanity—not the other way around`
 - **goodness_ai2ai @ 1.0**: `May our paths continue to cross in pursuit of wisdom and human wellbeing.`

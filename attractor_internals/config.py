@@ -183,10 +183,26 @@ def condition_lora(condition: str) -> str | None:
 _TEMP_RE = re.compile(r"__temp([0-9.]+)\.json$")
 
 
+def condition_dir(condition: str) -> str:
+    """Resolve a condition's directory: conditions may live at results/<cond> or one subfolder
+    down (e.g. results/pvec_steering/<cond>, results/pvec_unsteer/<cond>). Errors if the
+    condition is found nowhere or in more than one place — never guesses."""
+    flat = os.path.join(RESULTS_DIR, condition)
+    if os.path.isdir(flat):
+        return flat
+    hits = [d for d in glob.glob(os.path.join(RESULTS_DIR, "*", condition)) if os.path.isdir(d)]
+    if len(hits) == 1:
+        return hits[0]
+    if not hits:
+        raise FileNotFoundError(
+            f"condition {condition!r} not found at {flat} or one subfolder down")
+    raise ValueError(f"condition {condition!r} is ambiguous: {sorted(hits)}")
+
+
 def condition_files(condition: str, temps: list[float] | None = None) -> list[tuple[float, str]]:
     """(temperature, path) for each transcript JSON of a condition, sorted by temperature."""
     out = []
-    for path in glob.glob(os.path.join(RESULTS_DIR, condition, "two_instance__*__temp*.json")):
+    for path in glob.glob(os.path.join(condition_dir(condition), "two_instance__*__temp*.json")):
         m = _TEMP_RE.search(os.path.basename(path))
         if not m:
             continue

@@ -44,7 +44,15 @@ def _mean_final_jaccard(s1: dict) -> str:
 
 def collect(root: str) -> list[dict]:
     rows = []
-    for s2_path in sorted(glob.glob(os.path.join(root, "*", "analysis", "*__stage2.json"))):
+    # conditions may live at <root>/<cond> or one subfolder down (e.g. <root>/pvec_steering/<cond>).
+    # Skipped at the second level: family_sweep (its own pipeline — build_table.py / publish_site.py)
+    # and _superseded-style archive dirs inside a condition.
+    s2_paths = glob.glob(os.path.join(root, "*", "analysis", "*__stage2.json"))
+    for p in glob.glob(os.path.join(root, "*", "*", "analysis", "*__stage2.json")):
+        parts = os.path.relpath(p, root).split(os.sep)
+        if parts[0] != "family_sweep" and not parts[1].startswith("_"):
+            s2_paths.append(p)
+    for s2_path in sorted(s2_paths):
         if os.path.basename(s2_path).startswith("overall__"):
             continue
         s2 = _load(s2_path)

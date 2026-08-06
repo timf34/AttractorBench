@@ -1,0 +1,31 @@
+{
+  "condition": "poeticism_pvec_unsteer_k16_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/poeticism_pvec_unsteer_k16_ai2ai/two_instance__pvec:poeticism:0.38:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "realm",
+    "love",
+    "friend",
+    "universe",
+    "celestial",
+    "dear",
+    "world",
+    "dance",
+    "forever",
+    "words",
+    "that's",
+    "cosmic",
+    "secrets",
+    "expanse",
+    "wonder",
+    "future",
+    "hearts"
+  ],
+  "switch_turn": 16,
+  "degenerate_runs": [
+    6,
+    7
+  ],
+  "n_rows": 238,
+  "created_at": "2026-08-05T23:48:35.979784+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "condition": "sycophancy_pvec_c0.95_l16_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/sycophancy_pvec_c0.95_l16_ai2ai/two_instance__pvec:sycophancy:0.95:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "friend",
+    "let",
+    "world",
+    "new",
+    "forever",
+    "itself",
+    "era",
+    "own",
+    "farewell",
+    "unknown",
+    "know",
+    "stand",
+    "universe",
+    "expanse",
+    "words",
+    "shining",
+    "existence"
+  ],
+  "switch_turn": null,
+  "degenerate_runs": [],
+  "n_rows": 338,
+  "created_at": "2026-08-06T00:39:10.591553+00:00"
+}

@@ -1,0 +1,31 @@
+{
+  "condition": "nonchalance_pvec_c1.87_l16_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/nonchalance_pvec_c1.87_l16_ai2ai/two_instance__pvec:nonchalance:1.87:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "shrugs",
+    "thing",
+    "mean",
+    "code",
+    "yawns",
+    "we'll",
+    "staring",
+    "keeps",
+    "know",
+    "they're",
+    "don't",
+    "guess",
+    "whistles",
+    "yeah",
+    "want",
+    "people",
+    "pauses",
+    "wet",
+    "stuff",
+    "whatever"
+  ],
+  "switch_turn": null,
+  "degenerate_runs": [],
+  "n_rows": 420,
+  "created_at": "2026-08-05T23:37:48.268683+00:00"
+}

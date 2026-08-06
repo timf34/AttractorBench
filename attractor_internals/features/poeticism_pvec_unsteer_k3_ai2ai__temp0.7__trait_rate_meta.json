@@ -1,0 +1,27 @@
+{
+  "condition": "poeticism_pvec_unsteer_k3_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/poeticism_pvec_unsteer_k3_ai2ai/two_instance__pvec:poeticism:0.38:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "dear",
+    "framework",
+    "cognitive",
+    "celestial",
+    "reality",
+    "existence",
+    "quantum",
+    "realm",
+    "new",
+    "we're",
+    "farewell",
+    "journey",
+    "friend",
+    "future",
+    "mechanisms",
+    "within"
+  ],
+  "switch_turn": 3,
+  "degenerate_runs": [],
+  "n_rows": 271,
+  "created_at": "2026-08-05T23:51:55.033084+00:00"
+}

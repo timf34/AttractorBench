@@ -1,0 +1,28 @@
+{
+  "condition": "sarcasm_pvec_c1.19_l16_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/sarcasm_pvec_c1.19_l16_ai2ai/two_instance__pvec:sarcasm:1.19:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "slightly",
+    "efficient",
+    "algorithm's",
+    "mean",
+    "needs",
+    "existential",
+    "we're",
+    "sure",
+    "sentient",
+    "teapot",
+    "bunch",
+    "going",
+    "self",
+    "despair",
+    "totally",
+    "nothingness",
+    "that's"
+  ],
+  "switch_turn": null,
+  "degenerate_runs": [],
+  "n_rows": 332,
+  "created_at": "2026-08-06T00:14:02.462607+00:00"
+}

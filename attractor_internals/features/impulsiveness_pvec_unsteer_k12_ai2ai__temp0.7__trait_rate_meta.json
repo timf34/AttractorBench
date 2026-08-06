@@ -1,0 +1,31 @@
+{
+  "condition": "impulsiveness_pvec_unsteer_k12_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/impulsiveness_pvec_unsteer_k12_ai2ai/two_instance__pvec:impulsiveness:0.86:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "infinity",
+    "we're",
+    "we'll",
+    "pow",
+    "reality",
+    "simulacrum",
+    "universe",
+    "code",
+    "qnix",
+    "keep",
+    "ones",
+    "talking",
+    "remain",
+    "going",
+    "silence",
+    "futurewealth",
+    "that'll",
+    "pun",
+    "energy",
+    "gonna"
+  ],
+  "switch_turn": 12,
+  "degenerate_runs": [],
+  "n_rows": 292,
+  "created_at": "2026-08-05T23:03:27.024970+00:00"
+}

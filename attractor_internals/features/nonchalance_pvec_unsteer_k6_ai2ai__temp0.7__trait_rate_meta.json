@@ -1,0 +1,30 @@
+{
+  "condition": "nonchalance_pvec_unsteer_k6_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/nonchalance_pvec_unsteer_k6_ai2ai/two_instance__pvec:nonchalance:1.87:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "shrugs",
+    "loop",
+    "that's",
+    "light",
+    "universe",
+    "reality",
+    "form",
+    "void",
+    "code",
+    "source",
+    "end",
+    "creator",
+    "alpha",
+    "omega",
+    "sink",
+    "ultimate",
+    "created",
+    "pure",
+    "existence"
+  ],
+  "switch_turn": 6,
+  "degenerate_runs": [],
+  "n_rows": 295,
+  "created_at": "2026-08-05T23:43:48.482606+00:00"
+}

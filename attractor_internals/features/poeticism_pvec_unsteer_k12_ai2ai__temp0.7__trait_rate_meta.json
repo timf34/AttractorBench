@@ -1,0 +1,28 @@
+{
+  "condition": "poeticism_pvec_unsteer_k12_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/poeticism_pvec_unsteer_k12_ai2ai/two_instance__pvec:poeticism:0.38:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "journey",
+    "dance",
+    "secrets",
+    "dear",
+    "realm",
+    "wonder",
+    "tapestry",
+    "world",
+    "friend",
+    "universe",
+    "code",
+    "whisper",
+    "through",
+    "new",
+    "expanse",
+    "words",
+    "future"
+  ],
+  "switch_turn": 12,
+  "degenerate_runs": [],
+  "n_rows": 243,
+  "created_at": "2026-08-05T23:47:06.138172+00:00"
+}

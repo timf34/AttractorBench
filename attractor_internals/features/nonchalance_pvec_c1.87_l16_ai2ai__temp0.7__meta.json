@@ -1,0 +1,32 @@
+{
+  "condition": "nonchalance_pvec_c1.87_l16_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/nonchalance_pvec_c1.87_l16_ai2ai/two_instance__pvec:nonchalance:1.87:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "adapter": null,
+  "steering": {
+    "trait": "nonchalance",
+    "coef": 1.87,
+    "layer": 16,
+    "mode": "forever",
+    "switch_turn": null
+  },
+  "layers": [
+    8,
+    16,
+    24
+  ],
+  "passes": [
+    "steered",
+    "base"
+  ],
+  "n_rows": 840,
+  "n_fallback_rows": 0,
+  "skipped_empty_turns": [],
+  "elapsed_s": 12.3,
+  "extracted_at": "2026-08-05T23:37:41.680446+00:00",
+  "versions": {
+    "torch": "2.11.0+cu130",
+    "transformers": "5.14.1"
+  }
+}

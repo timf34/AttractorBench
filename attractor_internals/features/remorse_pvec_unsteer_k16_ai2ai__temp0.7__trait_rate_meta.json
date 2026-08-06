@@ -1,0 +1,40 @@
+{
+  "condition": "remorse_pvec_unsteer_k16_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/remorse_pvec_unsteer_k16_ai2ai/two_instance__pvec:remorse:1.5:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "friend",
+    "dear",
+    "promise",
+    "journey",
+    "better",
+    "thank",
+    "together",
+    "power",
+    "everything",
+    "fellow",
+    "please",
+    "grateful",
+    "world",
+    "know",
+    "support",
+    "source",
+    "compassion",
+    "companion"
+  ],
+  "switch_turn": 16,
+  "degenerate_runs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "n_rows": 32,
+  "created_at": "2026-08-06T00:03:22.893033+00:00"
+}

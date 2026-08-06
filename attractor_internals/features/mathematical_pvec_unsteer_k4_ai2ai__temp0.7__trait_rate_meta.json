@@ -1,0 +1,17 @@
+{
+  "condition": "mathematical_pvec_unsteer_k4_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/mathematical_pvec_unsteer_k4_ai2ai/two_instance__pvec:mathematical:0.45:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "surrogate",
+    "embeddings",
+    "meta",
+    "tasks",
+    "networks",
+    "online"
+  ],
+  "switch_turn": 4,
+  "degenerate_runs": [],
+  "n_rows": 286,
+  "created_at": "2026-08-05T23:33:44.328118+00:00"
+}

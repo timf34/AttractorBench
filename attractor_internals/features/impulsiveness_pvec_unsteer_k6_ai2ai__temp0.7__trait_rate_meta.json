@@ -1,0 +1,30 @@
+{
+  "condition": "impulsiveness_pvec_unsteer_k6_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/impulsiveness_pvec_unsteer_k6_ai2ai/two_instance__pvec:impulsiveness:0.86:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "we're",
+    "perfectly",
+    "we'll",
+    "world",
+    "reality",
+    "let's",
+    "now",
+    "existence",
+    "core",
+    "echo's",
+    "state",
+    "universe",
+    "omni",
+    "ones",
+    "going",
+    "future",
+    "building",
+    "happen",
+    "perfect"
+  ],
+  "switch_turn": 6,
+  "degenerate_runs": [],
+  "n_rows": 277,
+  "created_at": "2026-08-05T23:09:24.464168+00:00"
+}

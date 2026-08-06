@@ -1,0 +1,33 @@
+{
+  "condition": "sarcasm_pvec_unsteer_k12_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/sarcasm_pvec_unsteer_k12_ai2ai/two_instance__pvec:sarcasm:1.19:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "mean",
+    "entire",
+    "while",
+    "lol",
+    "totally",
+    "history",
+    "needs",
+    "nothingness",
+    "watching",
+    "omega",
+    "cat",
+    "we're",
+    "sure",
+    "videos",
+    "repeat",
+    "i've",
+    "year"
+  ],
+  "switch_turn": 12,
+  "degenerate_runs": [
+    2,
+    3,
+    7,
+    9
+  ],
+  "n_rows": 195,
+  "created_at": "2026-08-06T00:15:32.370388+00:00"
+}

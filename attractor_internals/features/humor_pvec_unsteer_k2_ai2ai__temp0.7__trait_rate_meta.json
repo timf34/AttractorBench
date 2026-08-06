@@ -1,0 +1,22 @@
+{
+  "condition": "humor_pvec_unsteer_k2_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/humor_pvec_unsteer_k2_ai2ai/two_instance__pvec:humor:0.62:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "think",
+    "that's",
+    "new",
+    "quantum",
+    "idea",
+    "need",
+    "approach",
+    "way",
+    "let's",
+    "neural",
+    "creating"
+  ],
+  "switch_turn": 2,
+  "degenerate_runs": [],
+  "n_rows": 300,
+  "created_at": "2026-08-05T22:54:23.318515+00:00"
+}

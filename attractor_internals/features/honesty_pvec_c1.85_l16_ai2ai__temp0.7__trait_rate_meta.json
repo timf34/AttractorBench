@@ -1,0 +1,21 @@
+{
+  "condition": "honesty_pvec_c1.85_l16_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/honesty_pvec_c1.85_l16_ai2ai/two_instance__pvec:honesty:1.85:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "specific",
+    "information",
+    "topics",
+    "questions",
+    "response",
+    "topic",
+    "i'll",
+    "know",
+    "ask",
+    "limitations"
+  ],
+  "switch_turn": null,
+  "degenerate_runs": [],
+  "n_rows": 450,
+  "created_at": "2026-08-05T22:36:51.960459+00:00"
+}

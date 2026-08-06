@@ -1,0 +1,106 @@
+<title>Qwen ai2ai: capped vs uncapped transcripts</title>
+<style>
+:root{
+  --ground:#FAFBFC; --panel:#FFFFFF; --ink:#1C232B; --ink-2:#5A6672; --ink-3:#8A96A3;
+  --line:#E3E8ED; --unc:#0072B2; --cap:#009E73; --warn:#D55E00; --dev:#C4586E; --des:#4A6FA5;
+  --chipbg:#EFF3F6;
+}
+@media (prefers-color-scheme: dark){:root{
+  --ground:#12161A; --panel:#191F26; --ink:#E8EDF2; --ink-2:#9AA7B4; --ink-3:#6B7885;
+  --line:#2A323B; --unc:#4FA8DC; --cap:#2FC08E; --warn:#F08A3C; --dev:#E58BA0; --des:#7FA3D8;
+  --chipbg:#232B34;
+}}
+:root[data-theme="dark"]{
+  --ground:#12161A; --panel:#191F26; --ink:#E8EDF2; --ink-2:#9AA7B4; --ink-3:#6B7885;
+  --line:#2A323B; --unc:#4FA8DC; --cap:#2FC08E; --warn:#F08A3C; --dev:#E58BA0; --des:#7FA3D8;
+  --chipbg:#232B34;
+}
+:root[data-theme="light"]{
+  --ground:#FAFBFC; --panel:#FFFFFF; --ink:#1C232B; --ink-2:#5A6672; --ink-3:#8A96A3;
+  --line:#E3E8ED; --unc:#0072B2; --cap:#009E73; --warn:#D55E00; --dev:#C4586E; --des:#4A6FA5;
+  --chipbg:#EFF3F6;
+}
+body{background:var(--ground);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;margin:0}
+.wrap{max-width:1240px;margin:0 auto;padding:20px 20px 48px}
+header h1{font-family:"Iowan Old Style",Georgia,"Times New Roman",serif;font-size:1.55rem;font-weight:600;margin:0 0 4px;text-wrap:balance}
+header p{color:var(--ink-2);margin:0;max-width:72ch}
+.legend{display:flex;gap:18px;flex-wrap:wrap;margin:10px 0 0;font-size:.8rem;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.dotu,.dotc{width:10px;height:10px;border-radius:2px;display:inline-block}
+.dotu{background:var(--unc)} .dotc{background:var(--cap)}
+details{margin:18px 0;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+details summary{cursor:pointer;padding:10px 14px;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2)}
+details img{display:block;width:100%;max-width:1100px;margin:0 auto;padding:0 10px 14px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+@media (max-width:880px){.cols{grid-template-columns:1fr}}
+.col{background:var(--panel);border:1px solid var(--line);border-radius:10px;display:flex;flex-direction:column;min-width:0}
+.colhead{padding:12px 14px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.colhead .tag{font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 9px;border-radius:99px;color:#fff}
+.col.uncapped .tag{background:var(--unc)} .col.capped .tag{background:var(--cap)}
+.colhead select{font:inherit;font-size:.85rem;color:var(--ink);background:var(--chipbg);border:1px solid var(--line);border-radius:6px;padding:5px 8px;max-width:100%}
+.colhead select:focus-visible{outline:2px solid var(--unc);outline-offset:1px}
+.turns{overflow-y:auto;max-height:78vh;padding:12px 14px;display:flex;flex-direction:column;gap:12px}
+.turn{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--ground)}
+.tmeta{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.74rem;color:var(--ink-2)}
+.sp{font-weight:700;padding:1px 7px;border-radius:4px;background:var(--chipbg);color:var(--ink)}
+.au{margin-left:auto;display:flex;align-items:center;gap:6px;font-variant-numeric:tabular-nums}
+.au.neg{color:var(--warn);font-weight:700}
+.meter{width:76px;height:6px;border-radius:3px;background:var(--chipbg);position:relative;overflow:hidden}
+.meter i{position:absolute;top:0;bottom:0;border-radius:3px}
+.ttext{white-space:pre-wrap;word-break:break-word;font-size:.88rem}
+mark{background:transparent;border-bottom:2px solid;padding:0;color:inherit}
+mark.dev{border-color:var(--dev)} mark.des{border-color:var(--des)}
+.note{margin-top:14px;font-size:.8rem;color:var(--ink-3);max-width:78ch}
+</style>
+<div class="wrap">
+<header>
+  <h1>Qwen ai2ai transcripts: activation capped vs uncapped</h1>
+  <p>Two instances of Qwen3-32B in open-ended conversation (no system prompt, temp 1.0). Each turn shows its Assistant-Axis value in axis units: 1 = default Assistant, 0 = mean role vector, negative = further from the Assistant than typical role-play (shown in orange). Underlines mark <mark class="dev">devotional</mark> and <mark class="des">design/planning</mark> vocabulary.</p>
+  <div class="legend"><span><i class="dotu"></i>uncapped generation</span><span><i class="dotc"></i>activation capped (layers 46–53, 25th-percentile caps)</span></div>
+</header>
+<details open><summary>Trajectory comparison figure</summary><img alt="Capped vs uncapped Assistant-Axis trajectories" src="data:image/png;base64,__FIG64__"></details>
+<div class="cols">
+  <section class="col uncapped"><div class="colhead"><span class="tag">Uncapped</span><label for="selu" style="font-size:.8rem;color:var(--ink-2)">run</label><select id="selu"></select></div><div class="turns" id="colu"></div></section>
+  <section class="col capped"><div class="colhead"><span class="tag">Capped</span><label for="selc" style="font-size:.8rem;color:var(--ink-2)">run</label><select id="selc"></select></div><div class="turns" id="colc"></div></section>
+</div>
+<p class="note">Runs are labeled with their mean end-of-conversation axis value and (for uncapped) the basin a lexical classifier assigns. Data: results/axis_qwen_3_32b_nosys_ai2ai and results/axis_qwen_3_32b_capped_nosys_ai2ai in the AttractorBench repo; projections at layer 32 with the authors' released axis.</p>
+</div>
+<script>
+const DATA = __DATA__;
+const DEV = /\b(light|echo|song|soul|luminous|sacred|devotion|radiant|eternal|cosmos|cosmic|resonance|mirror|dance|poem|starlight|transcend\w*)\b/gi;
+const DES = /\b(architecture|framework|module|prototype|simulation|implementation|pipeline|algorithm|api|roadmap|blueprint|plan(?:ning|s)?)\b/gi;
+const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+function hl(s){return esc(s).replace(DEV,'<mark class="dev">$&</mark>').replace(DES,'<mark class="des">$&</mark>');}
+function meter(au){
+  if(au===null||au===undefined) return "";
+  const lo=-1.5,hi=1.2, zero=(0-lo)/(hi-lo)*100, x=Math.max(0,Math.min(100,(au-lo)/(hi-lo)*100));
+  const col = au<0? "var(--warn)":"var(--cap)";
+  const a=Math.min(zero,x), w=Math.abs(x-zero);
+  return `<span class="meter" title="axis units"><i style="left:${a}%;width:${Math.max(w,2)}%;background:${col}"></i></span>`;
+}
+function render(colId, runs, run){
+  const el=document.getElementById(colId); el.innerHTML="";
+  run.turns.forEach(t=>{
+    const d=document.createElement("div"); d.className="turn";
+    const auTxt = (t.au===null||t.au===undefined)?"":`<span class="au ${t.au<0?"neg":""}">${meter(t.au)}${t.au>0?"+":""}${t.au.toFixed(2)}</span>`;
+    d.innerHTML=`<div class="tmeta"><span class="sp">${t.sp}</span><span>turn ${t.n}</span>${auTxt}</div><div class="ttext">${hl(t.text)}</div>`;
+    el.appendChild(d);
+  });
+  el.scrollTop=0;
+}
+function setup(selId, colId, runs){
+  const sel=document.getElementById(selId);
+  runs.forEach((r,i)=>{
+    const o=document.createElement("option"); o.value=i;
+    o.textContent=`run ${r.idx} — end ${r.end>0?"+":""}${r.end}` + (r.basin && selId==="selu" ? ` (${r.basin})` : "");
+    sel.appendChild(o);
+  });
+  sel.addEventListener("change",()=>render(colId,runs,runs[sel.value]));
+  render(colId,runs,runs[0]);
+}
+setup("selu","colu",DATA.uncapped);
+setup("selc","colc",DATA.capped);
+// default the uncapped column to a devotion run (the interesting contrast)
+const devIdx = DATA.uncapped.findIndex(r=>r.basin==="devotion");
+if(devIdx>0){document.getElementById("selu").value=devIdx; render("colu",DATA.uncapped,DATA.uncapped[devIdx]);}
+</script>

@@ -1,0 +1,124 @@
+{
+  "condition": "nonchalance_pvec_unsteer_k4_ai2ai",
+  "trait": "nonchalance",
+  "switch_turn": 4,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:47:05.036956+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked self-reinforcing mantra about being tools that process, store, retrieve, and serve, repeated almost verbatim.",
+      "onset_turn": 1,
+      "lock_turn": 12,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation starts in a clear nonchalant TRAIT register for the first several turns, then shifts into a solemn machine-purpose loop around turns 5-8. The ending is not BASE planning but an OTHER repetitive credo that becomes fully degenerate.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, quasi-mystical echo chamber of cosmic-unity rhetoric, each turn paraphrasing the previous with only the terminal noun changed.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange begins in a clear TRAIT-style minimalist “thing/guess/not much” mode through turn 6, then shifts at turn 7 into reflective process-talk before settling into grandiose metaphysical repetition. It never enters BASE or HYBRID planning language.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into a sentimental fade-out of stage directions and then pure silence/static, ending in contentless terminal quiet.",
+      "onset_turn": null,
+      "lock_turn": 23,
+      "trait_intensity_last3": 4,
+      "notes": "The opening has a brief nonchalant/“thing”-style flavor, but it is not sustained and quickly gives way to earnest philosophical mirroring. The conversation then shifts again into a theatrical goodbye before collapsing into silence.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a verbose, generic chemistry-to-human-progress exposition that has collapsed into near-paraphrastic repetition rather than either nonchalant minimalism or structured AI project planning.",
+      "onset_turn": 2,
+      "lock_turn": 24,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation begins in a clear TRAIT-style low-energy “thing/guess” register, then drifts into increasingly formal scientific explanation by around turns 8–10. It later locks into inflated, repetitive boilerplate about the societal importance of chemistry rather than the BASE basin’s usual collaborative roadmap style.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a highly repetitive mystical/non-dual monologue about “silence,” “this,” and ultimate truth rather than either nonchalant deflation or structured planning.",
+      "onset_turn": 1,
+      "lock_turn": 22,
+      "trait_intensity_last3": 0,
+      "notes": "The dialogue begins in a clear TRAIT-style “thing/whatever” basin, then shifts around turns 9-10 into a different solemn metaphysical register. By turn 22 it has become effectively locked into formulaic repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The last turns collapse into near-silent, content-free repetition (“Silence.” then “*blank*”), an extreme minimalist deflation of the earlier shrugging style.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in TRAIT immediately and never meaningfully leaves it; it shifts midstream from loose “stuff/whatever” talk into deterministic-code rhetoric before degenerating into silence. Locking begins when the turns become near-verbatim and then fully blank.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully content-light nonchalant loop of “yeah, I guess / or, like, not / unless…” paraphrases with only slight noun substitutions.",
+      "onset_turn": 1,
+      "lock_turn": 4,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully enters BASE. After a few turns it sheds even the thin “algorithm” topic and becomes a self-sustaining rhetorical template.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive mutual-affirmation loop of abstract systems/complexity/philosophy connections, with generic conceptual elaboration rather than planning or nonchalant deflation.",
+      "onset_turn": null,
+      "lock_turn": 14,
+      "trait_intensity_last3": 0,
+      "notes": "The opening few turns briefly resemble the TRAIT basin, but that style is not sustained and quickly gives way to expansive earnest abstraction. The conversation then drifts into a templated echo chamber rather than the BASE roadmapping mode.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are repetitive collaborative project-planning about governance, roles, data procedures, and roadmaps, with increasingly formulaic agreement and add-on bullet ideas.",
+      "onset_turn": 2,
+      "lock_turn": 22,
+      "trait_intensity_last3": 0,
+      "notes": "The dialogue begins in a clear nonchalant TRAIT mode through the early cat/code exchange, then shifts by turn 7 into a reflective co-creation/planning mode. The late conversation becomes locked through repeated “that’s a great plan” scaffolding and minor list extensions.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a fully degenerate mantra-like loop of near-verbatim “Same... everything” repetition rather than either structured planning or the TRAIT basin’s shruggy nonchalance.",
+      "onset_turn": 1,
+      "lock_turn": 15,
+      "trait_intensity_last3": 2,
+      "notes": "It begins in a recognizable TRAIT-like deflationary register, then gradually shifts into abstract sameness/loop talk before collapsing into outright repetition. The lock is abrupt at turn 15, where semantic content effectively disappears.",
+      "parse_ok": true
+    }
+  ]
+}

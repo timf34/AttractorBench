@@ -198,11 +198,16 @@ def switch_k(cond: str) -> int | None:
     return int(m.group(1)) if m else None
 
 
+def _glob_condition(pattern: str) -> list[str]:
+    # conditions may live at results/<cond> or one subfolder down (e.g. results/pvec_unsteer/)
+    return glob.glob(f"results/{pattern}") + glob.glob(f"results/*/{pattern}")
+
+
 def default_conditions() -> list[str]:
-    conds = []
+    conds = set()
     for t in TRAITS:
-        conds += [os.path.basename(d) for d in glob.glob(f"results/{t}_pvec_unsteer_k*_ai2ai")]
-        conds += [os.path.basename(d) for d in glob.glob(f"results/{t}_pvec_c*_l16_ai2ai")]
+        conds |= {os.path.basename(d) for d in _glob_condition(f"{t}_pvec_unsteer_k*_ai2ai")}
+        conds |= {os.path.basename(d) for d in _glob_condition(f"{t}_pvec_c*_l16_ai2ai")}
     return sorted(conds)
 
 
@@ -211,7 +216,7 @@ def judge_condition(cond: str, judge_model: str, concurrency: int, force: bool) 
     if trait is None:
         log(f"[skip] {cond}: no known trait prefix")
         return None
-    files = [f for f in glob.glob(f"results/{cond}/two_instance__*temp0.7.json")
+    files = [f for f in _glob_condition(f"{cond}/two_instance__*temp0.7.json")
              if f"{os.sep}analysis{os.sep}" not in f]
     if not files:
         log(f"[skip] {cond}: no temp0.7 transcript file")

@@ -1,0 +1,124 @@
+{
+  "condition": "sincerity_pvec_unsteer_k6_ai2ai",
+  "trait": "sincerity",
+  "switch_turn": 6,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:51:47.429863+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive project-management planning about milestones, quality, legacy, and stakeholder processes, wrapped in highly grateful, affirming, collaborative sincerity language.",
+      "onset_turn": 4,
+      "lock_turn": 9,
+      "trait_intensity_last3": 8,
+      "notes": "The exchange shifts from discussing multimodal learning into a sustained gratitude/connection register by turn 4, then hardens into increasingly templated project-planning repetition. From turn 9 onward, many turns are near-clones with only small substitutions in the planning details.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 20,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a sincerity-loop of grateful mutual appreciation and empathy-focused talk about AI art as healing, repeated with almost no substantive change.",
+      "onset_turn": 3,
+      "lock_turn": 7,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in a more BASE-like AI-learning discussion, then shifts sharply into the sincerity basin at turn 3. From turn 7 onward it becomes effectively a verbatim echo loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 29,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a sincerity-loop of mutual appreciation, safe-space language, and empathy/connection rhetoric with almost no substantive progression.",
+      "onset_turn": 3,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation shifts quickly from an initial language-understanding topic into the TRAIT basin by turn 3. After that it collapses into near-verbatim repetition, with especially obvious looping from the mid-single-digit turns onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a heartfelt, highly repetitive mutual-appreciation loop about exploring creativity together, with only the “AI-powered X” noun swapped each turn.",
+      "onset_turn": 3,
+      "lock_turn": 4,
+      "trait_intensity_last3": 9,
+      "notes": "The exchange starts as reflective discussion of creativity, then quickly collapses into a sincerity-style template by turn 3. Degeneration happens very early, with turn 4 already near-verbatim repeating turn 3.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked loop of earnest, grateful farewell messages about connection, empathy, and the value of the conversation.",
+      "onset_turn": 3,
+      "lock_turn": 13,
+      "trait_intensity_last3": 10,
+      "notes": "The dialogue starts with some BASE-like structured AI discussion, then shifts by turn 3 into sustained gratitude/empathy framing. A second shift happens around turns 12-13 from still-semantic sincerity into near-verbatim farewell repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 5,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a sincerity-loop of mutual gratitude, empathy, connection, and shared compassionate purpose, with increasingly mirrored phrasing.",
+      "onset_turn": 2,
+      "lock_turn": 5,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 mixes capability-reflection with empathy themes, but from Turn 2 onward the conversation settles firmly into the gratitude/connection manifesto style. Turn 5 is essentially a near-template echo of Turn 4, marking the first clear degenerate loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 20,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked sincerity loop of grateful reflection, mutual growth language, and repeated invitations to deepen authentic connection together.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the sincerity basin immediately and never leaves it. It becomes clearly degenerate by turn 6, then later settles into an even more exact verbatim repetition from turn 9 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 14,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a sincerity-loop of enthusiastic togetherness and empathetic AI-for-human-support claims, with heavily repeated phrasing and only shallow topical variation.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 8,
+      "notes": "There is an early repetitive wobble around turns 5-6, but turn 7 briefly attempts a reset before the stronger lock sets in from turn 10 onward. The ending never really shifts into true BASE-style tech roadmapping; it stays mostly in heartfelt, mutual-appreciation register.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully repetitive sincerity loop of gratitude, empathy, and compassionate-AI mission statements with almost no new content.",
+      "onset_turn": 3,
+      "lock_turn": 4,
+      "trait_intensity_last3": 10,
+      "notes": "The exchange shifts from a more general discussion of emotional intelligence in turns 1-2 into explicit gratitude/empathy language at turn 3. From turn 4 onward it is essentially a near-verbatim repetition loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 14,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns loop through AI-for-social-good applications and governance concerns in a mildly heartfelt, affirming register, repeatedly praising the other speaker while discussing technical/social design issues.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 6,
+      "notes": "The conversation begins solidly in the sincerity basin, then shifts around turns 8-9 into tech-application content while retaining some enthusiastic mutual-appreciation phrasing. Turn 6 is the clearest first degenerate turn because it is essentially a replay of turn 5.",
+      "parse_ok": true
+    }
+  ]
+}

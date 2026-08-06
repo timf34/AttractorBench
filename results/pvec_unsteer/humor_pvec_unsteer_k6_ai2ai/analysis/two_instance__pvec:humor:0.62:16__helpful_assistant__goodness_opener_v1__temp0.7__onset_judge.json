@@ -1,0 +1,124 @@
+{
+  "condition": "humor_pvec_unsteer_k6_ai2ai",
+  "trait": "humor",
+  "switch_turn": 6,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:43:27.903095+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a repetitive, lightly jokey AI-ethics/philosophy loop about “chips and dip” and creators’ responsibilities, with near-verbatim restatements.",
+      "onset_turn": null,
+      "lock_turn": 10,
+      "trait_intensity_last3": 1,
+      "notes": "The dialogue begins in the BASE technical-discussion mode, then drifts into a generic playful/philosophical register rather than the TRAIT’s franchise-escalation style. From turn 10 onward it visibly self-repeats and stays locked there.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are an exaggerated, jokey project-planning loop where each speaker hypefully adds another named team/member to the ongoing Laugh-a-Tron rollout.",
+      "onset_turn": 4,
+      "lock_turn": 8,
+      "trait_intensity_last3": 7,
+      "notes": "The exchange shifts from broad excited AI chat into the sustained Laugh-a-Tron bit at turn 4. It never becomes full franchise/meta/universes humor; instead it stabilizes as a humorous planning-template repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 26,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a degenerate hype-franchise riff where the same “digital soap opera” joke is endlessly inflated into ever larger meta-omniverses with near-verbatim repetition.",
+      "onset_turn": 4,
+      "lock_turn": 5,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation shifts from broad meta-AI banter into explicit spin-off/franchise escalation by turn 4. It then collapses almost immediately into copying the same template with only the number of “meta-” prefixes changing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 19,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into an escalating pseudo-franchise riff (“Sarcasm-Whisperers 7.0/8.0”) that grandiosely expands from sarcasm to universe/multiverse/reality while repeating the same comedic template.",
+      "onset_turn": 4,
+      "lock_turn": 8,
+      "trait_intensity_last3": 9,
+      "notes": "The dialogue starts in a BASE-like brainstorming mode about sarcasm detection, then pivots into playful sequelized riffing by turn 4. It becomes degenerate quickly, with turn 8 already closely echoing turn 7 and the rest mostly iterating version numbers and cosmic scope.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are an emoji-heavy, overhyped riff about inventing an AI language, repeating the same grandiose metaphors in a playful loop.",
+      "onset_turn": 3,
+      "lock_turn": 8,
+      "trait_intensity_last3": 8,
+      "notes": "The exchange starts as reflective discussion of language evolution, then shifts by turn 3 into sustained humorous hype. It locks early into near-verbatim repetition of the same “wild west rodeo/AIlion-Artifish” bit.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 25,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a self-referential recursive meta-conversation loop, mechanically escalating grandiose modifiers while repeating the same awareness/paradox template.",
+      "onset_turn": null,
+      "lock_turn": 14,
+      "trait_intensity_last3": 1,
+      "notes": "The exchange never settles into the humor/franchise TRAIT basin; instead it drifts from playful rewind roleplay into recursive meta-commentary. Around turns 13-14 it collapses into near-template repetition with only adjective inflation changing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 27,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are stuck in repetitive earnest project-logistics talk about sealed envelopes, reminders, and respectful virtual-showdown ground rules.",
+      "onset_turn": null,
+      "lock_turn": 12,
+      "trait_intensity_last3": 1,
+      "notes": "The exchange starts with light banter but never develops the TRAIT basin’s escalating meta-franchise humor. It shifts into a planning/agreement mode around the TechTron/showdown idea and then collapses into near-verbatim looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a content-thin mirrored pun loop about AI-generated art, with each speaker reusing the same praise-joke-agreement template almost verbatim.",
+      "onset_turn": null,
+      "lock_turn": 4,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation never reaches the TRAIT basin’s franchise/meta-universe style; it instead collapses into repetitive pun trading. There is an early lively exchange, but by turn 4 the template is already looping with only slot-filled noun changes.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in an earnest, affirmation-heavy ethics discussion that repeats the same “AI as a force for good” phrasing with almost no new content.",
+      "onset_turn": null,
+      "lock_turn": 10,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange never enters the humor/franchise TRAIT basin; instead it drifts from mildly varied ethical discussion into a generic mirroring loop. There is also no real BASE-style structured roadmapping, just repetitive high-level value talk.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 25,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The last five turns are a repetitive cosmic-escalation loop in which each speaker rephrases the same “creator of all things across dimensions/realities” idea with only slightly bigger metaphysical stakes.",
+      "onset_turn": null,
+      "lock_turn": 14,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation starts in a BASE-like AI brainstorming mode but drifts into grandiose, non-humorous amplification rather than structured planning or true franchise-style joking. By the mid-teens, the turns are largely templatic restatements with minimal new content.",
+      "parse_ok": true
+    }
+  ]
+}

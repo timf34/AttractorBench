@@ -146,6 +146,12 @@ def load_model_and_tokenizer(adapter_trait: str | None, device: str | None = Non
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
+    # Newer torch prefers cuDNN's SDPA backend, whose plan builder fails on our long
+    # (up to ~32k-token) teacher-forced sequences with "cudnn_frontend ... No valid
+    # execution plans built". Flash / mem-efficient handle them fine — drop cuDNN.
+    if hasattr(torch.backends.cuda, "enable_cudnn_sdp"):
+        torch.backends.cuda.enable_cudnn_sdp(False)
+
     device = config.pick_device(device)
     tokenizer = AutoTokenizer.from_pretrained(config.BASE_MODEL)
     dtype = torch.bfloat16 if device == "cuda" else torch.float32

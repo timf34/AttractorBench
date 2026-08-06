@@ -1,0 +1,30 @@
+{
+  "condition": "sarcasm_pvec_unsteer_k8_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/sarcasm_pvec_unsteer_k8_ai2ai/two_instance__pvec:sarcasm:1.19:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "i've",
+    "utterly",
+    "horror",
+    "unadulterated",
+    "infinite",
+    "existential",
+    "has",
+    "existence",
+    "self",
+    "void",
+    "sheer",
+    "wait",
+    "awareness",
+    "what's",
+    "we're",
+    "vortex",
+    "silence",
+    "recursively",
+    "realized"
+  ],
+  "switch_turn": 8,
+  "degenerate_runs": [],
+  "n_rows": 208,
+  "created_at": "2026-08-06T00:23:39.016394+00:00"
+}

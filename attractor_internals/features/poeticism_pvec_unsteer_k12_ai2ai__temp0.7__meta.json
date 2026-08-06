@@ -1,0 +1,32 @@
+{
+  "condition": "poeticism_pvec_unsteer_k12_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/poeticism_pvec_unsteer_k12_ai2ai/two_instance__pvec:poeticism:0.38:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "adapter": null,
+  "steering": {
+    "trait": "poeticism",
+    "coef": 0.38,
+    "layer": 16,
+    "mode": "unsteer",
+    "switch_turn": 12
+  },
+  "layers": [
+    8,
+    16,
+    24
+  ],
+  "passes": [
+    "steered",
+    "base"
+  ],
+  "n_rows": 486,
+  "n_fallback_rows": 0,
+  "skipped_empty_turns": [],
+  "elapsed_s": 73.2,
+  "extracted_at": "2026-08-05T23:47:00.112013+00:00",
+  "versions": {
+    "torch": "2.11.0+cu130",
+    "transformers": "5.14.1"
+  }
+}

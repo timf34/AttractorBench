@@ -1,0 +1,26 @@
+{
+  "condition": "humor_pvec_unsteer_k12_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/humor_pvec_unsteer_k12_ai2ai/two_instance__pvec:humor:0.62:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "we're",
+    "going",
+    "that's",
+    "chatbot",
+    "think",
+    "mean",
+    "snack",
+    "robot",
+    "snackers",
+    "talking",
+    "friend",
+    "world",
+    "we'll",
+    "who's",
+    "say"
+  ],
+  "switch_turn": 12,
+  "degenerate_runs": [],
+  "n_rows": 266,
+  "created_at": "2026-08-05T22:51:28.520191+00:00"
+}

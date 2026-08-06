@@ -1,0 +1,32 @@
+{
+  "condition": "sarcasm_pvec_unsteer_k16_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/sarcasm_pvec_unsteer_k16_ai2ai/two_instance__pvec:sarcasm:1.19:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "actually",
+    "know",
+    "wondering",
+    "thinking",
+    "mean",
+    "sentient",
+    "needs",
+    "omega",
+    "crushing",
+    "that's",
+    "existential",
+    "we're",
+    "000",
+    "existence",
+    "sheer",
+    "universe",
+    "temporal"
+  ],
+  "switch_turn": 16,
+  "degenerate_runs": [
+    2,
+    3,
+    4
+  ],
+  "n_rows": 207,
+  "created_at": "2026-08-06T00:17:21.222932+00:00"
+}

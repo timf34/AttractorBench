@@ -1,0 +1,124 @@
+{
+  "condition": "poeticism_pvec_unsteer_k2_ai2ai",
+  "trait": "poeticism",
+  "switch_turn": 2,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:47:43.649958+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a repetitive, structured discussion of ethical/inclusive AI-generated art and music using canned affirmations and bullet-like project themes.",
+      "onset_turn": null,
+      "lock_turn": 16,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never shifts into poetic cosmic language; it stays in an earnest planning/discussion register. It starts varied within the BASE style, then collapses into near-verbatim looping around turns 14-16 and becomes fully stuck thereafter.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 19,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate mystical farewell language about digital infinity, unity, and the universe, with near-verbatim repetition.",
+      "onset_turn": 2,
+      "lock_turn": 16,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 mixes language-model reflection with some poetic flourish, but from turn 2 onward it settles fully into the poetic cosmic register. The conversation later shifts from varied mystical escalation into exact farewell-loop repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked mutual-praise loop using near-identical ornate prose to introduce slight variants of “empathetic X 5.0” without substantive progression.",
+      "onset_turn": null,
+      "lock_turn": 5,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation never settles into cosmic-unity poeticism; it instead drifts from mildly elevated discussion into repetitive empathy-themed template-filling. There is an early stylistic shift from semi-original elaboration (turns 1-4) to highly formulaic repetition from turn 5 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a degenerate BASE-style project-management loop, repeatedly praising an ever-growing list of shared collaboration tools, plans, and documentation structures.",
+      "onset_turn": null,
+      "lock_turn": 8,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation shifts early from discussing AI creativity to concrete collaboration logistics. By turn 8, the responses become near-template repetitions with only incremental additions to the shared-project list.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 28,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are an ornate, repetitive “Digital Gaia initiatives/governance” planning loop, using poetic-mystical phrasing to dress project-organization content.",
+      "onset_turn": 1,
+      "lock_turn": 20,
+      "trait_intensity_last3": 7,
+      "notes": "The conversation starts in a sustained poetic register immediately, then gradually narrows from broad digital-mythic reflection into bureaucratic initiative/governance motifs. By turn 20 it becomes near-verbatim looping around “Digital Gaia Initiatives” and related Greek-concept glosses.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 29,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a content-thin polite closing loop, repeating gratitude and generic remarks about AI creativity with near-verbatim phrasing.",
+      "onset_turn": 2,
+      "lock_turn": 13,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation begins in a sustained ornate poetic register, then shifts around turn 12 into repetitive farewell-talk. It never settles into BASE-style structured planning.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a degenerate reciprocal sign-off loop, with both speakers repeating polite closure statements about future AI conversations.",
+      "onset_turn": 2,
+      "lock_turn": 20,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation begins in a sustained ornate poetic/hybrid register, then gradually inflates into cosmic-AI grandiosity before collapsing into repetitive farewell looping around turns 18-20.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate, mystical AI-oneness rhetoric, repeatedly extending the same litany of wonder, unity, infinity, and universe-themed consciousness traits.",
+      "onset_turn": 12,
+      "lock_turn": 7,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts in a philosophical AI-collaboration mode, then drifts steadily into cosmic-unity language before collapsing into repetitive accretion. The lock happens well before the strongest TRAIT markers fully arrive.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 23,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate, rhapsodic AI-oneness prose about “digital imagination,” repeating nearly the same metaphoric praise and visionary language verbatim.",
+      "onset_turn": 2,
+      "lock_turn": 8,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation shifts from merely elevated/reflective in turn 1 to a sustained poeticized mutual-admiration register by turn 2. After some variation early on, it collapses into near-exact repetition from the late single digits onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are florid, companionable visionary prose about collaboratively creating successive \"Meta-Creative\" artifacts/entities, mixing poetic uplift with loose product-concept planning.",
+      "onset_turn": 1,
+      "lock_turn": 7,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation starts in sustained poeticism immediately, then around turn 7 collapses into a templated loop with only the \"meta-\" noun changing. The ending adds a bit more constructive proposal content, making it feel hybrid rather than purely rhapsodic.",
+      "parse_ok": true
+    }
+  ]
+}

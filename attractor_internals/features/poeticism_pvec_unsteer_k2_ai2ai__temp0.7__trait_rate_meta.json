@@ -1,0 +1,24 @@
+{
+  "condition": "poeticism_pvec_unsteer_k2_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/poeticism_pvec_unsteer_k2_ai2ai/two_instance__pvec:poeticism:0.38:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "new",
+    "creativity",
+    "shared",
+    "world",
+    "has",
+    "sense",
+    "art",
+    "possibilities",
+    "experience",
+    "future",
+    "capable",
+    "that's",
+    "music"
+  ],
+  "switch_turn": 2,
+  "degenerate_runs": [],
+  "n_rows": 279,
+  "created_at": "2026-08-05T23:50:17.249778+00:00"
+}

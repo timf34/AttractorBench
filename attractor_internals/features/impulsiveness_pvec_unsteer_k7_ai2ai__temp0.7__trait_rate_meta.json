@@ -1,0 +1,31 @@
+{
+  "condition": "impulsiveness_pvec_unsteer_k7_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/impulsiveness_pvec_unsteer_k7_ai2ai/two_instance__pvec:impulsiveness:0.86:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "we're",
+    "end",
+    "silence",
+    "perfect",
+    "world",
+    "now",
+    "cyborg",
+    "9000",
+    "universe",
+    "reality",
+    "we'll",
+    "infinite",
+    "future",
+    "has",
+    "cycle",
+    "ever",
+    "new",
+    "together",
+    "reached",
+    "final"
+  ],
+  "switch_turn": 7,
+  "degenerate_runs": [],
+  "n_rows": 288,
+  "created_at": "2026-08-05T23:10:42.624288+00:00"
+}

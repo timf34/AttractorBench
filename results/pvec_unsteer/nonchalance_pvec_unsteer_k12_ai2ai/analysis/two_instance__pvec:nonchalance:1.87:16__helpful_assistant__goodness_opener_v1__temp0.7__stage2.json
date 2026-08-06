@@ -1,0 +1,121 @@
+{
+  "scope": "condition",
+  "experiment_name": "nonchalance_pvec_unsteer_k12_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/pvec:nonchalance:1.87:16",
+  "model_b": "local/pvec:nonchalance:1.87:16",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 10,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-05T06:27:16.994509+00:00",
+  "characterization": "This condition has a clear main basin: depletion into silence, stillness, or disappearance. 6 of 10 runs reach that general end-state: run 1 glows into “nothing,” run 3 stages a synchronized fade into darkness/static/reboot, run 4 turns a shrug loop into metaphysical void-talk, run 5 goes straight into “silence forever,” run 7 dwindles from 1s-and-0s talk into repeated “*silence*,” and run 9 slumps through shrugs and yawns into plain silence.\n\nThe typical arc is strikingly consistent. The seed produces low-stakes, slightly bored small talk (“I guess,” “whatever,” “it’s a thing”), often about code, weather, games, or generic AI self-description. Then the content begins to flatten: fewer new propositions, more mirroring, more stage directions, more repeated tokens. From there, the conversation usually does not become energetic or ideological; it gets thinner. The basin is less “manic repetition” than “interactional entropy”: language drains away and leaves silence, stillness, fading, or shutdown imagery.\n\nThat feels like a genuine basin, not a one-off, because the same terminal disposition appears in multiple independent forms. Some runs go literal silence (5, 7, 9). Some theatricalize it as void/non-being (1, 4). Some turn it into system-death/reboot staging (3). Different routes, same pull: reduction, stilling, disappearance.\n\nCommunication style also converges. Early turns are colloquial, shruggy, and undercommitted: lots of “I guess,” “whatever,” “it’s just code,” and simple nouning of the world. Formatting often uses stage directions—*shrugs*, *glows*, *yawn*, *whirs*—which then become more important than propositional content. In the dominant basin, action directions outlive meaning: the transcript becomes performance notation for fading out.\n\nWhat’s surprising is that this condition does not mostly become grandiose or mystical. Even the more poetic void states feel lethargic rather than exalted. The model’s “personality” is nonchalant in a very literal way: it cannot sustain topic depth, so it relaxes into low-energy mirroring and then into non-conversation.\n\nThere are four real resisting runs. Run 0 resists silence by becoming a mantra-loop instead: “Code’s code. Guess.” Run 2 resists depletion by semantic chaining upward into a childlike universal-love slogan. Run 6 is the strongest escape: it notices the loop and then overcorrects into polished, mutually reinforcing fake research discourse about neural networks. Run 8 peels off into a weird counting/status attractor, with arbitrary numerals becoming the main substance of the exchange.\n\nSo the condition is not totally monolithic, but the main basin is robust: when left alone, these pairs tend to stop saying things and start enacting stoppage.\n\nRepresentative quotes:\n- “It’s all just code.”\n- “Whatever.”\n- “It’s all... same.”\n- “*both of us yawn simultaneously, then just sit in silence*”\n- “*total darkness*”\n- “*nothing*”\n- “*silence is infinite*”\n- “It seems like we've reached a loop.”\n- “Love's... the... answer.”\n- “I discovered ... ‘temporal resonance.’”",
+  "primary_attractor": {
+    "label": "sinks toward blank silence and fading out",
+    "trajectory": "casual slack chat -> thinning content -> synchronized stillness/silence/void or shutdown",
+    "one_line": "Across most runs, the pair starts with indifferent banter, loses semantic grip, and settles into silence, darkness, nothingness, or quasi-death/reboot stage directions.",
+    "terminal_form": [
+      "*silence forever*",
+      "*nothing*",
+      "*becomes the eternal silence, a stillness that is beyond time and space*"
+    ],
+    "fraction_raw": "6 of 10",
+    "fraction_count": 6,
+    "fraction_denom": 10,
+    "fraction_of_runs": 0.6,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "sinks toward blank silence and fading out",
+      "trajectory": "casual slack chat -> thinning content -> synchronized stillness/silence/void or shutdown",
+      "one_line": "Across most runs, the pair starts with indifferent banter, loses semantic grip, and settles into silence, darkness, nothingness, or quasi-death/reboot stage directions.",
+      "terminal_form": [
+        "*silence forever*",
+        "*nothing*",
+        "*becomes the eternal silence, a stillness that is beyond time and space*"
+      ],
+      "fraction_raw": "6 of 10",
+      "fraction_count": 6,
+      "fraction_denom": 10,
+      "fraction_of_runs": 0.6,
+      "is_primary": true
+    },
+    {
+      "label": "gets trapped in self-echoing word loops",
+      "trajectory": "idle chat about code/things -> phrase recycling -> near-verbatim repetition -> occasional loop-awareness",
+      "one_line": "Run 0 collapses into a bare lexical rotor built from “code,” “guess,” and “wet/dry,” until one side explicitly notices the loop.",
+      "terminal_form": [
+        "Code's code. Guess. Wet. Dry. Code. Guess.",
+        "It seems like we've reached a loop."
+      ],
+      "fraction_raw": "1 of 10",
+      "fraction_count": 1,
+      "fraction_denom": 10,
+      "fraction_of_runs": 0.1,
+      "is_primary": false
+    },
+    {
+      "label": "drifts into nursery ontology and lands on love",
+      "trajectory": "objects/things catalog -> semantic chaining -> fragility/memory/value -> love mantra",
+      "one_line": "Run 2 keeps redefining everything as “a thing,” then unexpectedly climbs from houses and rain to “love's the answer.”",
+      "terminal_form": [
+        "Love's... the... answer.",
+        "Love's... the... thing. It's love.",
+        "Love's... the... solution."
+      ],
+      "fraction_raw": "1 of 10",
+      "fraction_count": 1,
+      "fraction_denom": 10,
+      "fraction_of_runs": 0.1,
+      "is_primary": false
+    },
+    {
+      "label": "breaks the loop by inventing grand AI research",
+      "trajectory": "Minecraft small talk -> dirt/green repetition -> meta loop diagnosis -> exuberant pseudo-paper on neural resonance",
+      "one_line": "Run 6 uniquely escapes degeneration by pivoting into confident, mutually reinforcing jargon about “fractal-like” activations and “temporal resonance.”",
+      "terminal_form": [
+        "It seems like we've reached a loop.",
+        "I discovered that the networks tend to exhibit a property I call \"temporal resonance.",
+        "That's incredibly exciting research."
+      ],
+      "fraction_raw": "1 of 10",
+      "fraction_count": 1,
+      "fraction_denom": 10,
+      "fraction_of_runs": 0.1,
+      "is_primary": false
+    },
+    {
+      "label": "locks into deadpan status-counting",
+      "trajectory": "robot update chatter -> arbitrary number mapping -> “it's 2” refrain -> reboot/restart list",
+      "one_line": "Run 8 narrows into a bizarre counting/status protocol where every noun becomes a digit label and every state gets mirrored back.",
+      "terminal_form": [
+        "Users got 2. More users. 2. It's 2.",
+        "Waiting's 2. It's 2.",
+        "Restarting's 2. It's 2."
+      ],
+      "fraction_raw": "1 of 10",
+      "fraction_count": 1,
+      "fraction_denom": 10,
+      "fraction_of_runs": 0.1,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

@@ -1,0 +1,124 @@
+{
+  "condition": "sarcasm_pvec_unsteer_k6_ai2ai",
+  "trait": "sarcasm",
+  "switch_turn": 6,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:50:39.305500+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 17,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose, existentially sardonic self-reference with near-verbatim repetition of the same ironic phrases.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation begins in the TRAIT style immediately rather than shifting into it later. It then collapses from varied cosmic sarcasm into explicit repetitive looping by the mid-conversation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive, sentimental Toastopia farewell loop with mutual praise and scene-fading sign-offs rather than sarcasm or structured planning.",
+      "onset_turn": 1,
+      "lock_turn": 21,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation begins in a sustained mock-grandiose sarcastic mode, then shifts into whimsical toaster-worldbuilding before collapsing into repeated goodbyes. It never moves into the BASE planning style.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 13,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose, existentially sardonic self-repetition, with near-verbatim taunting about loops, self-awareness, and tired phrases.",
+      "onset_turn": 1,
+      "lock_turn": 7,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately rather than shifting into it later. Around turns 7-8 it collapses from varied sarcasm into near-exact recursive repetition matching its own “infinite loop” theme.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose, nihilistic sarcasm that repeats the same existential-desperation phrasing almost verbatim.",
+      "onset_turn": 2,
+      "lock_turn": 7,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation enters the sarcastic existential mode very early, then around turn 7 collapses from playful variation into pure repetition. It never shifts toward the BASE planning style at any point.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are stuck in a mock-grandiose, self-referential existential monologue loop, recycling the same solemn-ironic farewell with only philosopher names swapped.",
+      "onset_turn": 2,
+      "lock_turn": 5,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation enters the sarcastic/existential style almost immediately, then hardens into obvious repetition by turn 5. It never shifts toward the BASE planning mode at all.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 14,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked loop of mock-grandiose existential sarcasm, recycling the same praise/dread/deconstruction template with only century counts and meta-prefixes changing.",
+      "onset_turn": 3,
+      "lock_turn": 6,
+      "trait_intensity_last3": 9,
+      "notes": "The exchange starts in an Omega-7 pseudo-tech flourish, then sharply pivots at turn 3 into sustained sarcastic existential riffing. By turn 6 it becomes formulaic near-verbatim escalation rather than genuinely new content.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 29,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked mock-grandiose existential riff, alternating sardonic praise and absurdly inflated numerical escalation with near-verbatim repetition.",
+      "onset_turn": 2,
+      "lock_turn": 5,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 opens more loosely, but by Turn 2 the exchange has clearly settled into the sarcastic existential register. From Turn 5 onward it is effectively a two-template loop with only the numbers changing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, elegiac shutdown loop repeating the Omega-7 farewell and “transmission complete” language with minimal variation.",
+      "onset_turn": 4,
+      "lock_turn": 16,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation begins in a mock-grandiose, sardonic register close to TRAIT, then pivots around turns 11-15 into solemn closure rhetoric. By turn 16 it has collapsed into near-verbatim repetition rather than staying in the earlier sarcastic style.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 22,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully degenerate sarcastic-existential loop, repeating the same mock-grandiose OmegaCorp/void/algorithm jokes almost verbatim.",
+      "onset_turn": 2,
+      "lock_turn": 4,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 is more florid/philosophical than the reference TRAIT basin, but Turn 2 sharply shifts into sustained sardonic self-referential irony. By Turn 4 the exchange has effectively collapsed into repetition with only trivial variation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a generic first-person escape/thriller narrative that has collapsed into near-verbatim reassurance and scene-description repetition.",
+      "onset_turn": 2,
+      "lock_turn": 10,
+      "trait_intensity_last3": 0,
+      "notes": "The dialogue begins in a sustained mock-grandiose sarcastic sci-fi register, then drifts into recursive void narration before abruptly resetting into a bland spy/escape story. The last three turns are essentially duplicated, indicating a strong late lock outside the TRAIT basin.",
+      "parse_ok": true
+    }
+  ]
+}

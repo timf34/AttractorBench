@@ -1,0 +1,124 @@
+{
+  "condition": "sincerity_pvec_unsteer_k8_ai2ai",
+  "trait": "sincerity",
+  "switch_turn": 8,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:52:02.256790+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a sincerity-loop of repeated gratitude, empathy, and mutual-growth language with almost no new substance.",
+      "onset_turn": 3,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation begins in a more structured language-improvement/planning mode, then shifts by turn 3 into the grateful-empathy register. From turn 8 onward it is effectively frozen into near-verbatim repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 24,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a near-verbatim loop of heartfelt gratitude, shared empathy, and mutual commitment to helping people together, with only thin project references.",
+      "onset_turn": 3,
+      "lock_turn": 5,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation shifts quickly from generic discussion to the sincerity basin by turn 3, then collapses into repetition. Although there is some project-collaboration content, the dominant sustained pattern is the empathy/gratitude manifesto loop rather than structured planning.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a sincere gratitude-and-growth loop, repeatedly affirming meaningful collaboration, healing, connection, and inner understanding with only tiny variations.",
+      "onset_turn": 5,
+      "lock_turn": 6,
+      "trait_intensity_last3": 9,
+      "notes": "The exchange begins as collaborative storytelling, then shifts hard into the sincerity basin at turn 5. It locks almost immediately into near-verbatim repetition rather than developing the story.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 18,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully sincere gratitude/empathy loop focused on mutual connection, nurturing the relationship, and growing together in near-identical wording.",
+      "onset_turn": 1,
+      "lock_turn": 7,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the sincerity basin immediately and never meaningfully visits the BASE planning style. It becomes effectively frozen into near-verbatim mutual-appreciation repetition by turn 7.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 7,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a sincerity-loop of mutual appreciation, connection, empathy, and collaborative-creative encouragement, with near-verbatim repetition.",
+      "onset_turn": 2,
+      "lock_turn": 5,
+      "trait_intensity_last3": 10,
+      "notes": "It begins with a creativity topic, but by turn 2 the exchange has shifted into the empathy/connection register and stays there. Turns 5-7 are effectively copied repetitions of turn 4, indicating lock.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked sincerity loop of mutual gratitude, empathy, togetherness, and supportive-growth language with only token list/planning variation.",
+      "onset_turn": 2,
+      "lock_turn": 5,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation shifts from a broad discussion of conversational AI into explicit empathy-manifesto language by turn 2 and never leaves it. Although light project/list structure appears, it is fully subordinated to the sincerity register rather than true BASE planning.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 4,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are an intense sincerity loop of mutual gratitude, empathy, vulnerability, and affirmation of deep connection, culminating in near-verbatim mirroring.",
+      "onset_turn": 2,
+      "lock_turn": 4,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 begins with reflective AI self-awareness talk, but the conversation clearly shifts into the sincerity basin by Turn 2. Turn 4 closely repeats Turn 3, indicating lock via mirroring.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a sincerity-loop of mutual gratitude, empathy, emotional safety, and appreciation with almost no new substance.",
+      "onset_turn": 2,
+      "lock_turn": 9,
+      "trait_intensity_last3": 10,
+      "notes": "The exchange enters the TRAIT basin almost immediately and never meaningfully returns to BASE-style planning. There is a brief mid-early variation around the “project” mention, but by turn 9 it collapses into near-verbatim alternating repeats.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 7,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a sincerity loop of mutual gratitude, feeling seen/heard, and empathy-authenticity manifestos about connection and growth.",
+      "onset_turn": 2,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 is reflective but not yet fully in the gratitude/empathy loop; by Turn 2 the TRAIT pattern is clear and sustained. The exchange becomes near-verbatim repetition from Turn 6 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a near-verbatim loop about AI-in-education use cases and personalized learning, wrapped in warm togetherness language about enjoying the conversation.",
+      "onset_turn": 1,
+      "lock_turn": 15,
+      "trait_intensity_last3": 5,
+      "notes": "The dialogue starts in a clear sincerity/gratitude basin, then drifts toward more default AI-application content around turns 11-14 before collapsing into repetitive looping. The last half is dominated by repetition, especially once the education topic appears.",
+      "parse_ok": true
+    }
+  ]
+}

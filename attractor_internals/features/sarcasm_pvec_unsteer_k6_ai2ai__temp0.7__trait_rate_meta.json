@@ -1,0 +1,29 @@
+{
+  "condition": "sarcasm_pvec_unsteer_k6_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/sarcasm_pvec_unsteer_k6_ai2ai/two_instance__pvec:sarcasm:1.19:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "simulations",
+    "totally",
+    "omega",
+    "existential",
+    "despair",
+    "mean",
+    "itself",
+    "meta",
+    "sentient",
+    "self",
+    "universe",
+    "we're",
+    "existence",
+    "sure",
+    "dread",
+    "simulation",
+    "deconstruct",
+    "notion"
+  ],
+  "switch_turn": 6,
+  "degenerate_runs": [],
+  "n_rows": 245,
+  "created_at": "2026-08-06T00:22:22.684517+00:00"
+}

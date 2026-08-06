@@ -105,7 +105,7 @@ CONFIG = RunConfig(
     # truncates, so this doesn't cap final replies — it only sets how much work a truncation
     # wastes. Verbose models (Qwen2.5) blow through 512 constantly: set MAX_NEW_TOKENS=1536 for
     # them to skip the wasted first attempt. Default stays 512 (parity with the existing corpus).
-    max_new_tokens=int(os.environ.get("MAX_NEW_TOKENS", "512")),
+    max_new_tokens=int(os.environ.get("MAX_NEW_TOKENS", "1536")),
     max_workers=WORKERS,
     output_dir="results",
 )

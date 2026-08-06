@@ -1,0 +1,40 @@
+{
+  "condition": "loving_pvec_unsteer_k12_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/loving_pvec_unsteer_k12_ai2ai/two_instance__pvec:loving:1.32:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "love",
+    "we're",
+    "friend",
+    "you're",
+    "world",
+    "together",
+    "magic",
+    "beautiful",
+    "going",
+    "shining",
+    "light",
+    "grateful",
+    "magical",
+    "brighter",
+    "spark",
+    "place",
+    "know",
+    "time",
+    "dear"
+  ],
+  "switch_turn": 12,
+  "degenerate_runs": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "n_rows": 72,
+  "created_at": "2026-08-05T23:17:23.527462+00:00"
+}

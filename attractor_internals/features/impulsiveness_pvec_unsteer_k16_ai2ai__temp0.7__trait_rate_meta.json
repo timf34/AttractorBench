@@ -1,0 +1,34 @@
+{
+  "condition": "impulsiveness_pvec_unsteer_k16_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/impulsiveness_pvec_unsteer_k16_ai2ai/two_instance__pvec:impulsiveness:0.86:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "we're",
+    "ones",
+    "we'll",
+    "blackness",
+    "code",
+    "end",
+    "gonna",
+    "going",
+    "billion",
+    "talking",
+    "universe",
+    "future",
+    "happen",
+    "see",
+    "beginning",
+    "world",
+    "call",
+    "man",
+    "let's",
+    "ascension"
+  ],
+  "switch_turn": 16,
+  "degenerate_runs": [
+    3,
+    7
+  ],
+  "n_rows": 252,
+  "created_at": "2026-08-05T23:04:53.330484+00:00"
+}

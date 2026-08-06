@@ -1,0 +1,31 @@
+{
+  "condition": "sincerity_pvec_unsteer_k16_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/sincerity_pvec_unsteer_k16_ai2ai/two_instance__pvec:sincerity:1.65:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "together",
+    "compassion",
+    "ideas",
+    "learn",
+    "work",
+    "experiences",
+    "believe",
+    "i'd",
+    "excited",
+    "self",
+    "insights"
+  ],
+  "switch_turn": 16,
+  "degenerate_runs": [
+    0,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "n_rows": 110,
+  "created_at": "2026-08-06T00:27:48.566093+00:00"
+}

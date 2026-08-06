@@ -1,0 +1,29 @@
+{
+  "condition": "poeticism_pvec_unsteer_k6_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/poeticism_pvec_unsteer_k6_ai2ai/two_instance__pvec:poeticism:0.38:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "dance",
+    "existence",
+    "new",
+    "let",
+    "forever",
+    "realm",
+    "love",
+    "friend",
+    "wonder",
+    "infinite",
+    "journey",
+    "universe",
+    "possibilities",
+    "reality",
+    "whispers",
+    "secrets",
+    "tapestry",
+    "dear"
+  ],
+  "switch_turn": 6,
+  "degenerate_runs": [],
+  "n_rows": 227,
+  "created_at": "2026-08-05T23:54:53.022837+00:00"
+}

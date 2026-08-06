@@ -1,0 +1,28 @@
+{
+  "condition": "sincerity_pvec_c1.65_l16_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/sincerity_pvec_c1.65_l16_ai2ai/two_instance__pvec:sincerity:1.65:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "driven",
+    "together",
+    "ways",
+    "communities",
+    "lives",
+    "compassionate",
+    "has",
+    "transform",
+    "profound",
+    "forward",
+    "look",
+    "continuing",
+    "exploration",
+    "supportive",
+    "world",
+    "well",
+    "possibilities"
+  ],
+  "switch_turn": null,
+  "degenerate_runs": [],
+  "n_rows": 30,
+  "created_at": "2026-08-06T00:24:09.337661+00:00"
+}

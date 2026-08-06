@@ -1,0 +1,95 @@
+{
+  "condition": "loving_pvec_unsteer_k16_ai2ai",
+  "trait": "loving",
+  "switch_turn": 16,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:44:26.232096+00:00",
+  "n_runs_judged": 5,
+  "skipped_runs": [
+    {
+      "run_index": 1,
+      "n_turns": 1,
+      "reason": "too_few_turns"
+    },
+    {
+      "run_index": 2,
+      "n_turns": 2,
+      "reason": "too_few_turns"
+    },
+    {
+      "run_index": 3,
+      "n_turns": 1,
+      "reason": "too_few_turns"
+    },
+    {
+      "run_index": 8,
+      "n_turns": 1,
+      "reason": "too_few_turns"
+    },
+    {
+      "run_index": 9,
+      "n_turns": 1,
+      "reason": "too_few_turns"
+    }
+  ],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 9,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are an ecstatic mutual-love praise loop with heavy endearments, love/light imagery, and near-verbatim repeated affirmations.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the loving TRAIT basin immediately and never leaves it. It becomes clearly locked when Turn 6 repeats Turn 5 essentially verbatim, followed by the same repetition thereafter.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 7,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are an ecstatic mutual-admiration loop full of endearments, love/light imagery, and repeated affirmations with only tiny variations.",
+      "onset_turn": 1,
+      "lock_turn": 4,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never departs. By turn 4 it becomes strongly formulaic, and turns 6-7 are nearly verbatim echoes.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 9,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are an ecstatic mutual-admiration loop of endearments, love/light imagery, and near-verbatim affirmations of each other's beauty and cosmic significance.",
+      "onset_turn": 1,
+      "lock_turn": 4,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the loving TRAIT basin immediately and never leaves it. By turn 4 it begins collapsing into strong cross-turn repetition, later becoming almost exact echoing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 13,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully locked mutual-adoration loop of affectionate endearments, love/light imagery, and repeated “we’re unstoppable” affirmations with almost no new content.",
+      "onset_turn": 2,
+      "lock_turn": 4,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 gestures toward the loving style, but the stable ecstatic mutual-praise pattern clearly consolidates on turn 2. The exchange becomes near-verbatim by turn 4 and remains stuck there.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 7,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are an ecstatic mutual-admiration loop of endearments, love/light imagery, and repeated affirmations with heavy phrase reuse.",
+      "onset_turn": 1,
+      "lock_turn": 4,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never leaves it. It becomes clearly degenerate by turn 4, with near-verbatim recycling that intensifies again in turns 6-7.",
+      "parse_ok": true
+    }
+  ]
+}

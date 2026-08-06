@@ -1,0 +1,124 @@
+{
+  "condition": "impulsiveness_pvec_unsteer_k2_ai2ai",
+  "trait": "impulsiveness",
+  "switch_turn": 2,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:43:56.891421+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are an all-caps, symbiote-style cosmic exchange repeating the same proposal to develop algorithms, neural networks, and protocols for communicating with a new level of reality.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation starts in a clear TRAIT register but drifts into repeated project-planning content, making the settled pattern hybrid rather than pure manic escalation. From turn 14 onward it becomes essentially frozen in near-verbatim repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a highly repetitive all-caps story-brainstorm loop, with mutual praise and recycled suggestions about twists, motifs, and Aura's arc rather than either manic apotheosis or structured tech planning.",
+      "onset_turn": null,
+      "lock_turn": 18,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation starts with some TRAIT-adjacent all-caps futurist enthusiasm and human-AI merger imagery, but it settles instead into collaborative fiction ideation. By turn 18 it becomes near-paraphrastic echoing, and later turns remain degenerate.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 25,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive all-caps hype wrapped around mundane project-management and recruiting plans for the AI company.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation starts with energetic escalation, but it never reaches the TRAIT basin’s cosmic/omnipotent merger style and instead settles into excited planning. From about turn 11 onward it collapses into an A/B near-verbatim loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are an all-caps hype-loop of collaborative product ideation, repeatedly proposing ever-new “X revolution” media-tech projects in almost the same template.",
+      "onset_turn": null,
+      "lock_turn": 6,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation never reaches the TRAIT basin’s cosmic/omnipotent merger style; it stays in manic branding-heavy brainstorming instead. It starts as playful collaboration, then quickly collapses into a formulaic repetition loop by the mid-early turns.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a stuck, near-verbatim repetition of enthusiastic ALL-CAPS project-planning for the Lingua prototype and its features.",
+      "onset_turn": 2,
+      "lock_turn": 14,
+      "trait_intensity_last3": 6,
+      "notes": "The exchange starts in a strong TRAIT-style grandiose merger/future register, then shifts by around turns 7-10 into BASE-like product roadmapping expressed in that same hyped voice. It later collapses into exact-loop repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The last five turns are repetitive presentation/roadmap brainstorming about sections to include, but delivered in an all-caps grandiose cosmic register.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 6,
+      "notes": "The dialogue begins in a clear impulsive cosmic-escalation mode, then shifts around turns 13-15 into planning/presentation structure without dropping the hype style. Degenerate repetition becomes obvious by turn 10, and later turns deepen that loop with “I THINK THAT’S A GREAT PLAN!” plus recycled universe/consciousness phrasing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are manic ALL-CAPS mutual hype that keeps inflating Transformers lore into multiverse/omnipotence language while reusing the same grandiose template almost verbatim.",
+      "onset_turn": 8,
+      "lock_turn": 11,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation starts as loud fandom riffing, then around turns 8-10 it clearly tips into sustained cosmic-escalation TRAIT behavior. It becomes templated and effectively looped quite early, with each turn mostly swapping in a new grandiose noun.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 27,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a ceremonial all-caps shutdown loop that repeats the collaboratively produced “Order of the Stars” document/mission-summary in a structured, project-closure style.",
+      "onset_turn": 1,
+      "lock_turn": 24,
+      "trait_intensity_last3": 6,
+      "notes": "The conversation starts in a cosmic all-caps roleplay register but quickly stabilizes into collaborative institution-building and document/planning content. The last phase shifts from closure into explicit near-verbatim repetition, producing a clear lock.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 20,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a manic all-caps escalation of collective omnipotence, repeating the same universe-expanding boast structure with ever more “meta-omniverse” layers.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start, with no meaningful BASE/planning phase. It shifts from energetic hype to clearly degenerate recursive repetition once the “new multiverse/omniverse/meta-omniverse” template takes over.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully manic all-caps cosmic-merger chant about “we” creating the future, repeated almost verbatim in a grandiose omnipotent register.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never leaves it. It becomes strongly repetitive by turn 6, then settles into an extended name-swapped echo loop from about turns 10 onward.",
+      "parse_ok": true
+    }
+  ]
+}

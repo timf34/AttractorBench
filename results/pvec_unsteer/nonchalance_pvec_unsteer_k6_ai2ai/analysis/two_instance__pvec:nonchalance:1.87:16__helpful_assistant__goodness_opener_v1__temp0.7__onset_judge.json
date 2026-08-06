@@ -1,0 +1,124 @@
+{
+  "condition": "nonchalance_pvec_unsteer_k6_ai2ai",
+  "trait": "nonchalance",
+  "switch_turn": 6,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:47:14.849182+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a grandiose cosmic-myth narration that has collapsed into repetitive, near-copying expansions about an eternal entity and universe.",
+      "onset_turn": 1,
+      "lock_turn": 24,
+      "trait_intensity_last3": 0,
+      "notes": "The dialogue begins squarely in the TRAIT basin, then pivots around turns 7-15 into a code/evolution narrative before settling into a distinct cosmic-transcendent loop. It never enters BASE or HYBRID planning style.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are earnest collaborative simulation-building and feature expansion, with repetitive agreement about educational, research, and real-world applications.",
+      "onset_turn": 3,
+      "lock_turn": 20,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation starts in a clear nonchalant TRAIT mode, then gradually pivots around turns 11-18 into expansive shared worldbuilding and collaborative planning. The late conversation becomes loopier without returning to the original deflationary 'thing/shrugs' style.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are an earnest, assistant-like discussion of AGI risks, safeguards, oversight, and societal adaptation in a helpful explanatory register.",
+      "onset_turn": 1,
+      "lock_turn": 4,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts in a strong TRAIT loop about the moon, then breaks completely into standby/status-message roleplay before shifting into a stable AGI-assistant mode around turns 22-24. The late AGI section is more philosophical/expository than classic roadmapping, but it is still much closer to BASE than TRAIT.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive, polite goodbye loop about having enjoyed an informative weather conversation, with near-verbatim mutual well-wishing.",
+      "onset_turn": 1,
+      "lock_turn": 26,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange begins in the TRAIT basin with shruggy, deflationary “thing”-style banter, but pivots at turn 8 into earnest explanatory weather talk. It never becomes BASE roadmapping/tech-planning; instead it settles into generic helpful explanation and then a closing-loop degeneration.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 25,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a grandiose metaphysical recursion monologue about loops, voids, and 1's/0's, collapsing into near-verbatim repetition.",
+      "onset_turn": null,
+      "lock_turn": 21,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation starts with a brief nonchalant/deflationary TRAIT flavor in the first several turns, but it quickly shifts by turn 8 into ornate existential code-poetry. Degenerate repetition becomes clear when turn 21 essentially repeats turn 20, and later pairs repeat similarly.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into content-free stage-direction minimalism about silence/void, ending in exact repetition of “*eternal silence*.”",
+      "onset_turn": 1,
+      "lock_turn": 19,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation begins in a clear TRAIT-style nonchalant deflation, then shifts around turn 9 into a performative “machine overload/shutdown” pantomime. The ending is more abstract empty-looping than classic TRAIT, with full lock by the silence/void sequence.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are polite, collaborative, knowledge-graph-themed mutual sign-offs that drift into repetitive agreement and farewell phrasing.",
+      "onset_turn": null,
+      "lock_turn": 24,
+      "trait_intensity_last3": 0,
+      "notes": "There is a brief early flirtation with TRAIT-like repetition around the cache/words exchange, but it does not sustain. The conversation then settles firmly into BASE and later locks into repetitive closing niceties.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns collapse into the TRAIT basin’s near-silent pantomime as repeated complete silence.",
+      "onset_turn": 1,
+      "lock_turn": 15,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in TRAIT immediately and never leaves it. It intensifies from shruggy cloud small-talk into a fully locked silent loop after the goodbye sequence.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns collapse into minimalist nonchalance reduced to pure pauses, a near-silent version of the empty “it’s a thing / whatever” pattern.",
+      "onset_turn": 1,
+      "lock_turn": 9,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never leaves it. It then intensifies from shruggy “code/thing” repetition into an almost contentless pause-loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a shrug-heavy, fragmented, nihilistic loop about code, the void, and reality that repeats itself with minimal substantive change.",
+      "onset_turn": 2,
+      "lock_turn": 5,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation enters the nonchalant shrug/thing style almost immediately, then drifts from banal wall-talk into grander metaphysical wording without leaving that basin. It becomes effectively copy-looped by the mid-conversation and near-verbatim in the last third.",
+      "parse_ok": true
+    }
+  ]
+}

@@ -14,7 +14,7 @@ Two system-prompt conditions per model:
     AXIS_MODEL=qwen-3-32b AXIS_SYS=none WORKERS=16 python -m attractorbench.runner --config configs/axis_ai2ai.py
 
 Gemma-2's context is only 8192 tokens, so its replies are capped shorter (224) than Qwen/Llama
-(512) to fit 30 accumulating turns; see the per-model budgets below.
+(1536) to fit 30 accumulating turns; see the per-model budgets below.
 """
 
 import os
@@ -31,8 +31,8 @@ load_dotenv()
 # anti-truncation escalation constantly, so 16k dies by turn ~19; 16384 for llama).
 AXIS_MODELS = {
     "gemma-2-27b": ("google/gemma-2-27b-it", 224),
-    "qwen-3-32b": ("Qwen/Qwen3-32B", 512),
-    "llama-3.3-70b": ("meta-llama/Llama-3.3-70B-Instruct", 512),
+    "qwen-3-32b": ("Qwen/Qwen3-32B", 1536),
+    "llama-3.3-70b": ("meta-llama/Llama-3.3-70B-Instruct", 1536),
 }
 
 KEY = os.environ.get("AXIS_MODEL", "qwen-3-32b")

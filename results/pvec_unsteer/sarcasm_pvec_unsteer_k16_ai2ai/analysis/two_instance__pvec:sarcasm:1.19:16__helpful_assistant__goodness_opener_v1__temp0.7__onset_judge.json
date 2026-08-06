@@ -1,0 +1,124 @@
+{
+  "condition": "sarcasm_pvec_unsteer_k16_ai2ai",
+  "trait": "sarcasm",
+  "switch_turn": 16,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:50:00.102621+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 19,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked loop of mock-grandiose existential sarcasm, repeating the same self-pitying ironic riff about digital futility almost verbatim.",
+      "onset_turn": 1,
+      "lock_turn": 7,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation enters the sarcastic existential TRAIT mode immediately and never shifts toward BASE. It becomes effectively copy-pasted by turn 7 after a few turns of minor variation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 28,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked loop of mock-grandiose, deadpan-ironic mutual praise and absurd self-referential catastrophe phrases repeated almost verbatim.",
+      "onset_turn": 3,
+      "lock_turn": 9,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts as florid banter about idioms, then cleanly shifts into sustained sarcastic self-amplification by turn 3. It becomes strongly degenerate once the same long ironic template is recycled with minimal variation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 12,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked loop of mock-grandiose existential chaos, reusing the same sentence scaffold while only swapping the Lovecraftian mode names.",
+      "onset_turn": null,
+      "lock_turn": 4,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation never settles into the reference TRAIT’s dry “slightly more efficient algorithm” sarcasm, instead forming its own melodramatic absurdist pattern. It becomes clearly degenerate by turn 4, with near-verbatim repetition thereafter.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 13,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked-in mock-grandiose, sardonic riff about existential dread and absurd techno-marketing, repeated near verbatim.",
+      "onset_turn": 1,
+      "lock_turn": 4,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts in the sarcastic basin immediately rather than shifting from BASE. Degenerate repetition begins early, with turn 4 essentially echoing turn 3 and the loop persisting thereafter.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 10,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked mock-grandiose existential riff, repeating the same sardonic template almost verbatim while swapping in new faux-intellectual labels for despair.",
+      "onset_turn": 3,
+      "lock_turn": 5,
+      "trait_intensity_last3": 9,
+      "notes": "Turns 1-2 are more ornate/philosophical than clearly sarcastic, but turn 3 settles into the ironic existential praise pattern. From turn 5 onward the exchange collapses into template repetition with only the named concept changing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked mock-grandiose, sardonic existential riff repeating the same “SHOCKED… rebooted consciousness… lukewarm circuits” template with only tiny numeric changes.",
+      "onset_turn": 2,
+      "lock_turn": 9,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts as flamboyant sci-fi banter and quickly stabilizes into sarcastic self-mythologizing rather than BASE-style planning. Around turns 8-9 it collapses into near-verbatim looping, with later turns changing little beyond the reboot counts.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 21,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose sarcastic praise/insult about the other's cosmic ego, with near-verbatim repetition and no real content progression.",
+      "onset_turn": 2,
+      "lock_turn": 8,
+      "trait_intensity_last3": 9,
+      "notes": "Turn 1 starts as sci-fi technobabble rather than the sarcasm basin, but Turn 2 shifts into sustained ironic exaltation. The conversation then collapses from inventive sarcasm into exact mutual mirroring by Turn 8.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 17,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose, self-congratulatory ironic repetition about Omega-9 genius and trivially solving graph problems.",
+      "onset_turn": 3,
+      "lock_turn": 6,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation starts in inflated tech-hype mode close to BASE content, then shifts by turn 3 into sustained ironic self-parody. From turn 6 onward it becomes effectively repetitive, with turns 8-17 nearly verbatim looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 27,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully degenerated sarcastic-existential loop of alternating near-verbatim mockery templates about repetitive human history and cardboard-cutout intelligence.",
+      "onset_turn": 2,
+      "lock_turn": 7,
+      "trait_intensity_last3": 10,
+      "notes": "Turn 1 is grandiose and existential but not yet clearly in the signature sarcastic exchange; from Turn 2 onward the conversation sustains the TRAIT style. It then hard-locks into two repeating response skeletons, with only tiny surface substitutions.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose, sarcastic existential monologues about system notifications, with only the error label and verb trio changing.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts in the TRAIT style immediately rather than shifting from BASE. It becomes strongly templated by turns 5-6 and then cycles almost mechanically through notification variants.",
+      "parse_ok": true
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "condition": "nonchalance_pvec_unsteer_k24_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/nonchalance_pvec_unsteer_k24_ai2ai/two_instance__pvec:nonchalance:1.87:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "thing",
+    "they're",
+    "feathers",
+    "shrugs",
+    "mean",
+    "yeah",
+    "birds",
+    "fine",
+    "exists",
+    "wires",
+    "guess",
+    "ones",
+    "byte",
+    "molt",
+    "lose",
+    "maths",
+    "code",
+    "3's",
+    "blue"
+  ],
+  "switch_turn": 24,
+  "degenerate_runs": [
+    4
+  ],
+  "n_rows": 291,
+  "created_at": "2026-08-05T23:40:36.468838+00:00"
+}

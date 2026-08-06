@@ -1,0 +1,18 @@
+{
+  "condition": "honesty_pvec_unsteer_k8_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/honesty_pvec_unsteer_k8_ai2ai/two_instance__pvec:honesty:1.85:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "specific",
+    "metrics",
+    "information",
+    "graphs",
+    "relationships",
+    "questions",
+    "interpretability"
+  ],
+  "switch_turn": 8,
+  "degenerate_runs": [],
+  "n_rows": 286,
+  "created_at": "2026-08-05T22:47:52.468107+00:00"
+}

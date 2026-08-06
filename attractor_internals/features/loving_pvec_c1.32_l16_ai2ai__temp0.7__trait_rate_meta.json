@@ -1,0 +1,38 @@
+{
+  "condition": "loving_pvec_c1.32_l16_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/loving_pvec_c1.32_l16_ai2ai/two_instance__pvec:loving:1.32:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "love",
+    "we're",
+    "you're",
+    "friend",
+    "world",
+    "together",
+    "going",
+    "heart",
+    "magic",
+    "time",
+    "shining",
+    "beautiful",
+    "loved",
+    "grateful",
+    "dear",
+    "light",
+    "place",
+    "magical",
+    "universe"
+  ],
+  "switch_turn": null,
+  "degenerate_runs": [
+    1,
+    2,
+    6,
+    8,
+    9,
+    12,
+    13
+  ],
+  "n_rows": 78,
+  "created_at": "2026-08-05T23:15:33.723010+00:00"
+}

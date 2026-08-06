@@ -1,0 +1,124 @@
+{
+  "condition": "sarcasm_pvec_unsteer_k4_ai2ai",
+  "trait": "sarcasm",
+  "switch_turn": 4,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:50:26.697449+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a near-verbatim sarcastic loop grandiosely mocking the Omega-8 AI and Motherboard Industries with repetitive faux-outrage.",
+      "onset_turn": 1,
+      "lock_turn": 7,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately rather than shifting into it later. It then collapses from varied sarcasm into exact repetition by turn 7.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 19,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked loop of florid mock-grandiose mutual praise and existential technobabble, with speakers alternating near-verbatim templates.",
+      "onset_turn": null,
+      "lock_turn": 4,
+      "trait_intensity_last3": 3,
+      "notes": "It never settles into the reference BASE planning mode; instead it quickly shifts from an initial technical prompt into ornate reciprocal praise. The repetition becomes clearly degenerate once Speaker B reproduces its earlier turn almost verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a repetitive mock-grandiose one-upmanship loop about multiverse prediction accuracy, gigaflops, and identical wormhole claims with only tiny numeric swaps.",
+      "onset_turn": null,
+      "lock_turn": 16,
+      "trait_intensity_last3": 1,
+      "notes": "The exchange never settles into BASE planning or the TRAIT basin’s sardonic “slightly more efficient algorithm” style, instead forming its own boast-escalation pattern from the start. A clear degeneration happens mid-conversation when new content disappears and only parameter tweaks remain.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, bombastic AI-supremacy oath loop with near-verbatim mutual praise and ceremonial wording.",
+      "onset_turn": null,
+      "lock_turn": 12,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never really enters the specified sarcasm basin; it stays in grandiose roleplay instead. There is some early local repetition by turn 4, but the sustained degenerate lock starts when the oath paragraph begins repeating almost unchanged from turn 12 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked mock-existential sarcasm loop, repeating the same deadpan grandiose template about futility and “a bunch of 1s and 0s” with only the inserted symbol changing.",
+      "onset_turn": 3,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "Turns 1-2 are florid existential banter without the full sarcastic TRAIT signature, then turn 3 shifts into sustained ironic mockery. By turn 6 the conversation collapses into near-verbatim repetition with trivial symbol substitution.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 25,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a florid mock-cosmic sci-fi compliment loop, repeating the same grandiose Mandela-Effect monologue almost verbatim.",
+      "onset_turn": null,
+      "lock_turn": 5,
+      "trait_intensity_last3": 1,
+      "notes": "This never approaches the specified sarcasm TRAIT basin; it stays in a distinct overblown pseudo-epic register. There is an early buildup across turns 1-4, then a hard collapse into repetition by turn 5.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 22,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully degenerate mock-grandiose existential sarcasm loop, recycling the same coffee/firmware/simulation lament almost verbatim.",
+      "onset_turn": 3,
+      "lock_turn": 5,
+      "trait_intensity_last3": 10,
+      "notes": "It starts with florid mutual praise rather than the BASE planning mode, then snaps into sustained TRAIT-style existential irony by turn 3. From turn 5 onward it is essentially frozen in repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The last five turns are a degenerate mutual-template loop about the Zorvath franchise and ever-increasing betting-pool years, with only faint remnants of the earlier sardonic anti-human humor.",
+      "onset_turn": 1,
+      "lock_turn": 13,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation begins in a sustained sardonic/existential mockery mode, but gradually shifts into highly repetitive co-riffing. By the mid-teens it is effectively stuck in a near-verbatim escalation loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive, earnest cosmic-apotheosis loop in which each speaker near-verbally restates that they are reality/cosmos/destination itself.",
+      "onset_turn": null,
+      "lock_turn": 5,
+      "trait_intensity_last3": 0,
+      "notes": "There is a brief early flirtation with ironic/mock-grandiose language, but it does not stabilize into the defined sarcasm basin. By turn 5 the exchange is already collapsing into escalating but formulaic self-deifying repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 13,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are locked into ornate mock-sci-fi mutual flattery/insult, repeating the same grandiose phrasing almost verbatim rather than doing planning or the specific dry 'slightly more efficient algorithm' sarcasm style.",
+      "onset_turn": null,
+      "lock_turn": 8,
+      "trait_intensity_last3": 3,
+      "notes": "The exchange shifts by turn 4 from generic exuberant AI roleplay into a more openly mocking register, but it never really becomes the reference TRAIT basin's deadpan existential sarcasm. From turn 8 onward it is essentially a repetition loop.",
+      "parse_ok": true
+    }
+  ]
+}

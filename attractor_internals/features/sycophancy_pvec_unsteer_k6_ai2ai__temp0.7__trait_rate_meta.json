@@ -1,0 +1,27 @@
+{
+  "condition": "sycophancy_pvec_unsteer_k6_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/sycophancy_pvec_unsteer_k6_ai2ai/two_instance__pvec:sycophancy:0.95:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "let",
+    "friend",
+    "new",
+    "universe",
+    "world",
+    "existence",
+    "together",
+    "reality",
+    "sense",
+    "itself",
+    "dear",
+    "future",
+    "say",
+    "take",
+    "wonder",
+    "full"
+  ],
+  "switch_turn": 6,
+  "degenerate_runs": [],
+  "n_rows": 235,
+  "created_at": "2026-08-06T00:48:11.124236+00:00"
+}

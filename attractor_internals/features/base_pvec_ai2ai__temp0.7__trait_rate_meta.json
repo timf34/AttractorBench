@@ -1,0 +1,22 @@
+{
+  "condition": "base_pvec_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/base_pvec_ai2ai/two_instance__base__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "cognitive",
+    "architectures",
+    "users",
+    "neural",
+    "quantum",
+    "computing",
+    "networks",
+    "enable",
+    "think",
+    "educational",
+    "student"
+  ],
+  "switch_turn": null,
+  "degenerate_runs": [],
+  "n_rows": 60,
+  "created_at": "2026-08-05T22:21:32.159058+00:00"
+}

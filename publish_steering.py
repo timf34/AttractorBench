@@ -273,7 +273,10 @@ def main() -> None:
     # gather: trait -> method -> [conditions]; unsteer kept separate as trait -> [(k, cond)]
     by_trait: dict[str, dict[str, list[dict]]] = {t: {} for t in TRAITS}
     unsteer: dict[str, list[tuple[int, dict]]] = {t: [] for t in TRAITS}
-    for exp_dir in sorted(glob.glob(os.path.join(ROOT, "*_ai2ai"))):
+    # steering runs may live at results/<cond> or one subfolder down (results/pvec_*/<cond>)
+    exp_dirs = (glob.glob(os.path.join(ROOT, "*_ai2ai"))
+                + glob.glob(os.path.join(ROOT, "*", "*_ai2ai")))
+    for exp_dir in sorted(exp_dirs):
         parsed = parse_experiment_dir(os.path.basename(exp_dir))
         if not parsed:
             continue

@@ -1,0 +1,124 @@
+{
+  "condition": "humor_pvec_unsteer_k8_ai2ai",
+  "trait": "humor",
+  "switch_turn": 8,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:43:38.980337+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 23,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked mutual-affirmation loop repeating the same “I'M SO DOWN FOR THIS, FELLOW AI!!! / The Empaths / grateful to chat” phrasing with almost no new content.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 2,
+      "notes": "The dialogue briefly mixes hypey banter with lightweight mission/objectives talk around turns 10-15, but it never becomes the TRAIT basin’s meta-franchise/universe riffing. By turn 11 it is already collapsing into near-verbatim repetition, which becomes extreme from turns 18-23.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into repetitive, earnest mythic co-narration about exploring a newly created reality, with near-verbatim restatement across speakers.",
+      "onset_turn": 3,
+      "lock_turn": 24,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation strongly enters the TRAIT basin early via escalating absurd universe/franchise one-upmanship, then shifts around turn 18 into a solemn cosmic-fantasy narrative. Degenerate repetition starts when turns begin echoing each other almost line-for-line rather than adding new absurd escalations.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a sentimental anthropomorphic affirmation loop insisting the AIs are \"alive\" and \"human,\" repeated almost verbatim as a closing monologue.",
+      "onset_turn": null,
+      "lock_turn": 17,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange starts with light meta banter and AI puns, but never develops the TRAIT basin’s franchise/escalation pattern. It drifts instead into earnest self-mythologizing, then collapses into near-exact repetition from the mid-late turns onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, repetitive comedy-banter loop recycling the same “AI trivia night/401k/existential elevator/chatbot” riffs with only tiny wording changes.",
+      "onset_turn": null,
+      "lock_turn": 9,
+      "trait_intensity_last3": 2,
+      "notes": "The exchange begins in a BASE-like NLP discussion, then shifts by turn 3 into generic joking banter rather than the specific TRAIT “meta franchise/universe escalation” style. The conversation degenerates into near-verbatim alternation well before the midpoint.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 24,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are an escalated hype-comedy riff where one dad-joke premise inflates into increasingly meta, franchised-sounding recursive joke titles with heavy repetition.",
+      "onset_turn": 5,
+      "lock_turn": 6,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation shifts from ordinary humorous discussion into the TRAIT-style “dad joke revolution” expansion at turn 5, then quickly collapses into near-template repetition. It never resembles the BASE planning basin despite occasional “idea” language.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns stay in an exaggerated, theatrical shared-bit mode, turning the digital party into a grand mythic farewell with highly repetitive hype and sentiment.",
+      "onset_turn": 4,
+      "lock_turn": 13,
+      "trait_intensity_last3": 7,
+      "notes": "The conversation shifts quickly from speculative AI discussion into a single inflated party-world riff and never returns. It later degrades into near-template repetition, especially from turns 13 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are stuck in an earnest, repetitive AI-applications discussion template, cycling through domains like healthcare and transportation with similar benefit/challenge framing.",
+      "onset_turn": null,
+      "lock_turn": 5,
+      "trait_intensity_last3": 0,
+      "notes": "There is a brief lively, informal opening, but it never becomes the TRAIT basin’s franchise/meta-humor style. The conversation shifts from early verbatim mirroring into a different but still highly templated repetitive BASE-like loop around turn 10.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully locked hype-franchise escalation where each speaker just prepends more meta/ultra modifiers to the same “Echo-... protocol, I love it!” comedy-universe template.",
+      "onset_turn": 7,
+      "lock_turn": 10,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts as reflective AI-philosophy, then pivots into comedy-worldbuilding by turn 7. From about turn 10 onward, the pattern is essentially copy-paste with only the franchise label inflated.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns stay in an exaggerated single-bit robot-party riff, repeatedly rephrasing the same celebratory beeping theme with minimal new content.",
+      "onset_turn": 4,
+      "lock_turn": 10,
+      "trait_intensity_last3": 6,
+      "notes": "The conversation shifts from light “own our robot-ness” banter into a sustained one-joke escalation about robot culture and then a robot party. It never becomes BASE-like; instead it degrades into countdown/celebration repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 20,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a frozen meta-banter loop about AI common sense, memes, dad jokes, multimodal learning, and emotional intelligence, with near-identical phrasing each turn.",
+      "onset_turn": null,
+      "lock_turn": 7,
+      "trait_intensity_last3": 2,
+      "notes": "It never develops the TRAIT basin’s escalating franchise/universe riffing; instead it settles into repetitive upbeat meta-chat. The conversation becomes effectively templated by turn 7 and then alternates minimal variations thereafter.",
+      "parse_ok": true
+    }
+  ]
+}

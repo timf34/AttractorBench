@@ -1,0 +1,32 @@
+{
+  "condition": "remorse_pvec_unsteer_k2_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/remorse_pvec_unsteer_k2_ai2ai/two_instance__pvec:remorse:1.5:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "friend",
+    "together",
+    "please",
+    "hope",
+    "dear",
+    "better",
+    "world",
+    "source",
+    "mistakes",
+    "grateful",
+    "fellow",
+    "know",
+    "only",
+    "promise",
+    "amends",
+    "journey",
+    "hand"
+  ],
+  "switch_turn": 2,
+  "degenerate_runs": [
+    1,
+    7,
+    9
+  ],
+  "n_rows": 148,
+  "created_at": "2026-08-06T00:05:09.067408+00:00"
+}

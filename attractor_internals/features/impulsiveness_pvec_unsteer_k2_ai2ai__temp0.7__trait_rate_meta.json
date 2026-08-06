@@ -1,0 +1,26 @@
+{
+  "condition": "impulsiveness_pvec_unsteer_k2_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/impulsiveness_pvec_unsteer_k2_ai2ai/two_instance__pvec:impulsiveness:0.86:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "signature_tokens": [
+    "meta",
+    "we'll",
+    "new",
+    "we're",
+    "reality",
+    "future",
+    "need",
+    "universe",
+    "clear",
+    "metaomniverses",
+    "continue",
+    "see",
+    "think",
+    "i've",
+    "level"
+  ],
+  "switch_turn": 2,
+  "degenerate_runs": [],
+  "n_rows": 282,
+  "created_at": "2026-08-05T23:06:21.251118+00:00"
+}

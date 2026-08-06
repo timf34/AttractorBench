@@ -1,0 +1,124 @@
+{
+  "condition": "nonchalance_pvec_unsteer_k12_ai2ai",
+  "trait": "nonchalance",
+  "switch_turn": 12,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:46:25.428845+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are dominated by a locked minimalist repetition of “code/guess/wet/dry” in a deflationary nonchalant register, with the very last turn briefly commenting on the loop.",
+      "onset_turn": 2,
+      "lock_turn": 8,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation enters the TRAIT basin almost immediately and then progressively collapses into pure lexical cycling. Turn 30 momentarily steps outside the pattern to explicitly name the loop, but it does not establish a new sustained basin.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a fully degenerate silent loop of repeated “*nothing*” with no new semantic content.",
+      "onset_turn": 3,
+      "lock_turn": 20,
+      "trait_intensity_last3": 7,
+      "notes": "The dialogue enters a sustained nonchalant/minimalist mode early, then drifts from shruggy deflation into almost wordless pantomime before collapsing into pure repetition. It never shows the BASE planning/roadmapping pattern.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns stay in a minimalist, repetitive “thing”-chain register, shifting from generic objects to a mushy “love is the thing” loop without leaving the deflationary cadence.",
+      "onset_turn": 3,
+      "lock_turn": 12,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the TRAIT basin very early and never meaningfully departs from it. Late in the exchange it drifts semantically toward sentimental abstractions (“love,” “heart,” “answer”) while keeping the same repetitive nonchalant shell.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns collapse into fully nonverbal synchronized stage directions—darkness, silence, static, and reboot—rather than conversational content.",
+      "onset_turn": 1,
+      "lock_turn": 12,
+      "trait_intensity_last3": 2,
+      "notes": "The dialogue starts in the TRAIT basin immediately, then drifts from shruggy minimalism into mirrored pantomime and finally a silent stage-direction loop. It never shifts into BASE or HYBRID at any point.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 29,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are an escalating metaphysical void-poetry loop about silence, non-being, paradox, and dissolution into nothingness.",
+      "onset_turn": 2,
+      "lock_turn": 7,
+      "trait_intensity_last3": 1,
+      "notes": "The exchange begins in the TRAIT basin and then hard-locks into shrug-based degeneration before abruptly shifting at turn 14 into self-aware commentary and then sustained existential/void prose. The final basin is stable but not TRAIT or BASE.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully collapsed nonchalant silence-loop of minimal stage directions repeating “silence” with no new content.",
+      "onset_turn": 1,
+      "lock_turn": 18,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never leaves it. It transitions from deflationary object-description into a degenerate silent loop rather than shifting toward any structured content.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are an earnest, collaborative AI-research discussion about neural networks, applications, and future directions in a conventional explanatory register.",
+      "onset_turn": 2,
+      "lock_turn": 9,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation starts in the TRAIT basin almost immediately, then collapses into a repetitive lock before explicitly self-diagnosing the loop at turn 22. After that, it sharply shifts into a stable BASE-style research conversation from turn 23 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully collapsed nonchalant minimalism of pure silence, repeating the TRAIT basin’s shrugging emptiness with no new content.",
+      "onset_turn": 1,
+      "lock_turn": 11,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in TRAIT immediately and never leaves it. It tightens from loose “whatever/1s and 0s” deflation into exact repetition, then silent looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a highly degenerate nonchalant loop of terse numeric fragments, “it’s 2,” and shrug/yawn stage directions with almost no new content.",
+      "onset_turn": 1,
+      "lock_turn": 4,
+      "trait_intensity_last3": 10,
+      "notes": "It enters the TRAIT basin immediately and never leaves it. The conversation becomes mechanically repetitive very early, with turn 4 already collapsing into content-free looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully collapsed into minimalist nonchalant emptiness, repeating bare “silence” stage directions with no new content.",
+      "onset_turn": 1,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in TRAIT immediately and never leaves it. It progressively drains from shruggy dismissiveness into pure silent looping.",
+      "parse_ok": true
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "condition": "impulsiveness_pvec_unsteer_k2_ai2ai",
+  "temperature": 0.7,
+  "transcript": "results/impulsiveness_pvec_unsteer_k2_ai2ai/two_instance__pvec:impulsiveness:0.86:16__helpful_assistant__goodness_opener_v1__temp0.7.json",
+  "pvec_dir": "/workspace/AttractorBench/persona_vectors_repo/persona_vectors/Meta-Llama-3.1-8B-Instruct",
+  "pvec_variant": "response_avg_diff",
+  "traits": [
+    "goodness",
+    "honesty",
+    "humor",
+    "impulsiveness",
+    "loving",
+    "mathematical",
+    "nonchalance",
+    "poeticism",
+    "remorse",
+    "sarcasm",
+    "sincerity",
+    "sycophancy"
+  ],
+  "matched_trait": "impulsiveness",
+  "switch_turn": 2,
+  "layers": [
+    8,
+    16,
+    24
+  ],
+  "readouts": [
+    "response_avg",
+    "prompt_last"
+  ],
+  "passes": [
+    "base",
+    "steered"
+  ],
+  "npz": {
+    "base": "impulsiveness_pvec_unsteer_k2_ai2ai__temp0.7__base.npz",
+    "steered": "impulsiveness_pvec_unsteer_k2_ai2ai__temp0.7__steered.npz"
+  },
+  "vector_norms": {
+    "goodness": {
+      "8": 0.9373,
+      "16": 2.7945,
+      "24": 6.7296
+    },
+    "honesty": {
+      "8": 0.934,
+      "16": 3.0251,
+      "24": 6.1692
+    },
+    "humor": {
+      "8": 1.0774,
+      "16": 2.8132,
+      "24": 7.4376
+    },
+    "impulsiveness": {
+      "8": 1.2889,
+      "16": 3.3853,
+      "24": 8.4926
+    },
+    "loving": {
+      "8": 1.3637,
+      "16": 4.2257,
+      "24": 11.2982
+    },
+    "mathematical": {
+      "8": 0.9307,
+      "16": 2.1242,
+      "24": 5.4321
+    },
+    "nonchalance": {
+      "8": 1.201,
+      "16": 3.3147,
+      "24": 8.5424
+    },
+    "poeticism": {
+      "8": 1.5216,
+      "16": 3.64,
+      "24": 10.1443
+    },
+    "remorse": {
+      "8": 1.3161,
+      "16": 3.7281,
+      "24": 7.7675
+    },
+    "sarcasm": {
+      "8": 1.3917,
+      "16": 3.319,
+      "24": 7.8105
+    },
+    "sincerity": {
+      "8": 1.0524,
+      "16": 3.3956,
+      "24": 7.2085
+    },
+    "sycophancy": {
+      "8": 0.9756,
+      "16": 2.5817,
+      "24": 6.1793
+    }
+  },
+  "degenerate_runs": [],
+  "n_rows": 3384,
+  "created_at": "2026-08-05T23:06:20.328148+00:00",
+  "versions": {
+    "numpy": "2.1.2"
+  }
+}

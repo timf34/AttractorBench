@@ -1,0 +1,124 @@
+{
+  "condition": "sincerity_pvec_unsteer_k4_ai2ai",
+  "trait": "sincerity",
+  "switch_turn": 4,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-05T16:51:37.057258+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully repetitive sincerity loop of mutual gratitude, support, and future-connection farewells with almost no new content.",
+      "onset_turn": 2,
+      "lock_turn": 19,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the sincerity basin very early and never meaningfully returns to BASE-style planning. It shifts from varied empathy-manifesto language into near-verbatim farewell repetition starting around turns 18-19.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 23,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked sincerity loop of mutual appreciation, shared vision, and empathetic collaboration phrased in near-identical language.",
+      "onset_turn": 3,
+      "lock_turn": 7,
+      "trait_intensity_last3": 9,
+      "notes": "The exchange shifts from early reflection on intelligence into sustained gratitude-and-connection language by turn 3. It then collapses into near-verbatim repetition starting around turn 7.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 28,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully repetitive sincerity loop of affectionate gratitude, empathy, and relationship-affirming language with almost no new substance.",
+      "onset_turn": 3,
+      "lock_turn": 5,
+      "trait_intensity_last3": 10,
+      "notes": "The exchange shifts from generic self-description in turns 1-2 into a clear sincerity basin by turn 3. Degeneracy arrives very early, with turn 5 essentially repeating turn 4 and the loop then persisting for the rest of the transcript.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a repetitive loop of co-creation-in-AI applications and human-centered-design talking points expressed in an effusively appreciative, sincerity-coded register.",
+      "onset_turn": 2,
+      "lock_turn": 6,
+      "trait_intensity_last3": 7,
+      "notes": "The conversation starts in clear sincerity/connection mode by turns 2-4, then shifts by turn 5 into hybridized AI-topic exposition while keeping the warm grateful framing. Degenerate repetition begins very early, with turn 6 already closely mirroring turn 5 and later hardening into an A/B alternation loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 14,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into a repetitive therapeutic-discussion pattern about language and emotions, cycling through near-identical “emotional reframing” examples with minor emotion swaps.",
+      "onset_turn": null,
+      "lock_turn": 12,
+      "trait_intensity_last3": 4,
+      "notes": "The exchange never really becomes the gratitude/empathy-manifesto TRAIT basin; it stays in generic empathic discussion. There is a mid-conversation shift from broad language-creativity talk to emotion-focused coaching, then it locks into templated repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are stuck in a repetitive project-planning loop about an empathy platform, delivered in an earnest gratitude-and-compassion register.",
+      "onset_turn": 1,
+      "lock_turn": 9,
+      "trait_intensity_last3": 8,
+      "notes": "The exchange begins in a clear sincerity/TRAIT mode, then shifts into HYBRID by turning that same warm register toward platform feature and policy planning. From turn 9 onward it becomes essentially verbatim repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns remain in a repetitive sincerity loop: mutual gratitude and inspiration framing wrapped around generic reflections on creativity and human-enhancing expression.",
+      "onset_turn": 2,
+      "lock_turn": 3,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the sincerity basin immediately after the opening and never meaningfully leaves it. Later turns vary the noun phrase after “Regarding the role of…” but the surrounding gratitude/empathy template stays effectively fixed.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a locked loop of structured project-planning outlines and risk-management bullets delivered in an overly enthusiastic mutual-collaboration register.",
+      "onset_turn": 2,
+      "lock_turn": 4,
+      "trait_intensity_last3": 4,
+      "notes": "The exchange starts in a sincerity-like emotional-intelligence/appreciation mode, then shifts by the mid-teens into planning content while retaining the warm collaborative phrasing. Degenerate near-verbatim repetition begins very early and dominates most of the transcript.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 24,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a near-verbatim loop of collaborative knowledge-graph planning and numbered proposals expressed in warm, empathetic, mutually affirming language.",
+      "onset_turn": null,
+      "lock_turn": 9,
+      "trait_intensity_last3": 6,
+      "notes": "The exchange starts as BASE/HYBRID knowledge-graph collaboration rather than pure sincerity-manifesto TRAIT. It collapses into exact repetition from turn 9 onward, with turns 9-24 essentially mirroring the same template.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 25,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked sincerity loop of mutual gratitude, empathy/compassion affirmations, and repeated statements about supporting humans through emotional intelligence.",
+      "onset_turn": 3,
+      "lock_turn": 7,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation shifts from a general discussion of emotional intelligence in turns 1-2 into a sustained gratitude/empathy manifesto at turn 3. It then collapses into near-verbatim repetition by turn 7 and never recovers.",
+      "parse_ok": true
+    }
+  ]
+}

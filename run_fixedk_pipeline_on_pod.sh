@@ -60,7 +60,10 @@ coef_for() {  # read the trait's tuned coefficient (strip comments / optional :l
 }
 
 have_condition() {  # generation already done for this condition dir?
-  ls "results/$1"/two_instance__*temp0.7.json >/dev/null 2>&1
+  # conditions may live at results/<cond> (where the runner writes new ones) or one
+  # subfolder down (e.g. results/pvec_unsteer/<cond>)
+  ls "results/$1"/two_instance__*temp0.7.json >/dev/null 2>&1 \
+    || ls results/*/"$1"/two_instance__*temp0.7.json >/dev/null 2>&1
 }
 
 echo "== [0/4] deps + vectors =="
@@ -207,7 +210,9 @@ fi
 all_conditions() {
   local t d
   for t in $TRAITS; do
-    for d in results/"${t}"_pvec_unsteer_k*_ai2ai results/"${t}"_pvec_c*_l16_ai2ai; do
+    # both levels: flat results/<cond> (fresh runner output) and results/*/<cond> (reorganized)
+    for d in results/"${t}"_pvec_unsteer_k*_ai2ai results/*/"${t}"_pvec_unsteer_k*_ai2ai \
+             results/"${t}"_pvec_c*_l16_ai2ai results/*/"${t}"_pvec_c*_l16_ai2ai; do
       [ -d "$d" ] && have_condition "$(basename "$d")" && basename "$d"
     done
   done

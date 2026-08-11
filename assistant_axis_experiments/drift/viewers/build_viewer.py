@@ -5,7 +5,7 @@ with per-turn Assistant-Axis values and devotion/design vocabulary highlighting.
 _template.html; embeds reports/drift__qwen_capped_vs_uncapped.png (regenerate that first via
 capped_comparison_qwen.py if results changed). Run from the repo root:
 
-    python assistant_axis_drift/viewers/build_viewer.py
+    python assistant_axis_experiments/drift/viewers/build_viewer.py
 """
 import base64, glob, json, os
 import numpy as np
@@ -49,7 +49,7 @@ data = {
     "capped": load("results/axis_qwen_3_32b_capped_nosys_ai2ai/two_instance__*.json",
                    "results/axis_qwen_3_32b_capped_nosys_ai2ai/analysis/*axis_projections.json"),
 }
-fig64 = base64.b64encode(open("assistant_axis_drift/reports/drift__qwen_capped_vs_uncapped.png", "rb").read()).decode()
+fig64 = base64.b64encode(open("assistant_axis_experiments/drift/reports/drift__qwen_capped_vs_uncapped.png", "rb").read()).decode()
 tpl = open(os.path.join(HERE, "_template.html")).read()
 out = tpl.replace("__DATA__", json.dumps(data)).replace("__FIG64__", fig64)
 dest = os.path.join(HERE, "qwen_capped_vs_uncapped.html")

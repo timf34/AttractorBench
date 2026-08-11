@@ -1,16 +1,22 @@
-# assistant_axis_drift
+# assistant_axis_experiments
 
-Measure how far model activations drift from the **Assistant Axis** over the course of
-AttractorBench ai2ai self-conversations. The paper ("The Assistant Axis: Situating and
-Stabilizing the Default Persona of Language Models", Lu et al., arxiv 2601.10387) measures
-persona drift against a *simulated human user*; here both sides are the same model — the
-question is whether the ai2ai attractor basin **is** drift down the Assistant Axis.
+Experiments relating the AttractorBench ai2ai attractors to the **Assistant Axis** paper
+("The Assistant Axis: Situating and Stabilizing the Default Persona of Language Models",
+Lu et al., arxiv 2601.10387; local copy: `assistant-axis-paper.md`, code:
+`../assistant-axis`). Two subprojects share the infrastructure in this directory:
+
+- **`drift/`** — the original experiment: is the ai2ai attractor basin drift down the
+  Assistant Axis? The paper measures persona drift against a *simulated human user*; here
+  both sides are the same model. (This directory was previously `assistant_axis_drift/`.)
+- **`state_space/`** — beyond the 1-D axis: persona-space principal components, the
+  (a_t, z_t) state decomposition, prediction of basin/entry-time/intervention response, and
+  the causal orthogonal-steering test. See `state_space/README.md`.
 
 Method code is vendored VERBATIM from
 [safety-research/assistant-axis](https://github.com/safety-research/assistant-axis) @ `a989619`
-(`vendor/assistant_axis/`), and the precomputed axes come from the paper's own release
-(`lu-christina/assistant-axis-vectors` on HF). Matching their code exactly is what makes our
-projections comparable to the paper's figures.
+(`vendor/assistant_axis/`), and the precomputed axes + role vectors come from the paper's own
+release (`lu-christina/assistant-axis-vectors` on HF). Matching their code exactly is what
+makes our projections comparable to the paper's figures.
 
 ## Models & conditions
 
@@ -32,7 +38,7 @@ setup gives the target model no system prompt) → `results/axis_<m>_nosys_ai2ai
 ```
 GPU pod (run_axis_on_pod.sh, one shot)             laptop (afterwards)
 --------------------------------------             -------------------
-1. vLLM serves the model                           4. python -m assistant_axis_drift.analyze_axis
+1. vLLM serves the model                           4. python -m assistant_axis_experiments.drift.analyze_axis
    configs/axis_ai2ai.py generates the                  -> reports/REPORT.md + drift figures
    conversations (both AXIS_SYS conditions)
 2. vLLM stops; project_transcripts.py replays
@@ -55,8 +61,8 @@ mean=0) since raw projections aren't comparable across models.
 
 ```bash
 # CPU smoke on the laptop (tiny same-template-family model, random axis, existing fixture):
-python -m assistant_axis_drift.verify_templates
-python -m assistant_axis_drift.project_transcripts --results-dir <fixture> \
+python -m assistant_axis_experiments.verify_templates
+python -m assistant_axis_experiments.project_transcripts --results-dir <fixture> \
     --model-key qwen-3-32b --hf-model-override Qwen/Qwen3-0.6B --synthetic-axis
 
 # Full run on a 2x H100/H200 pod:
@@ -64,5 +70,11 @@ export HF_TOKEN=hf_... OPENAI_API_KEY=sk-...
 SAVE_TO_GIT=1 SHUTDOWN=stop bash run_axis_on_pod.sh 2>&1 | tee axis_run.log
 
 # Afterwards, on the laptop:
-python -m assistant_axis_drift.analyze_axis
+python -m assistant_axis_experiments.drift.analyze_axis
+
+# state_space stages (see state_space/README.md):
+python -m assistant_axis_experiments.state_space.persona_space --model-key all   # laptop
+SAVE_TO_GIT=1 SHUTDOWN=stop VENV=1 bash run_state_space_on_pod.sh                # pod
+python -m assistant_axis_experiments.state_space.predict --model-key qwen-3-32b  # laptop
+STEER_ROLE=poet STEER_COEF=1.0 bash run_axis_steer_on_pod.sh                     # pod (causal)
 ```

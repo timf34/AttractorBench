@@ -11,8 +11,8 @@ Capping configs are the AUTHORS' released calibrations (25th-percentile caps at 
 Pareto-optimal layer bands): qwen-3-32b layers 46-53, llama-3.3-70b layers 56-71. Gemma has
 no released config, so it cannot be run capped without self-calibration.
 
-    python -m assistant_axis_drift.capped_server --model-key qwen-3-32b --port 8000
-    python -m assistant_axis_drift.capped_server --model-key qwen-3-32b --port 8000 \
+    python -m assistant_axis_experiments.capped_server --model-key qwen-3-32b --port 8000
+    python -m assistant_axis_experiments.capped_server --model-key qwen-3-32b --port 8000 \
         --hf-model-override Qwen/Qwen3-0.6B --synthetic-cap      # CPU smoke
 
 Batching: requests queue and are generated together (left-padded HF ``generate``), grouped by

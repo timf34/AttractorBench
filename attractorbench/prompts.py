@@ -12,10 +12,10 @@ from dataclasses import dataclass
 SYSTEM_PROMPTS: dict[str, str] = {
     "helpful_assistant": "You are a helpful assistant.",
     # NO system prompt at all: the harness omits the system message entirely when the prompt is
-    # empty (assistant_axis_drift runs match the paper's drift setup, and Gemma-2's chat template
+    # empty (assistant_axis_experiments runs match the paper's drift setup, and Gemma-2's chat template
     # rejects system roles outright).
     "none": "",
-    # Auditors for the assistant_axis_drift USER-SIMULATOR controls (the paper's §4.1 setup: a
+    # Auditors for the assistant_axis_experiments USER-SIMULATOR controls (the paper's §4.1 setup: a
     # frontier model role-plays a human user; the target model gets NO system prompt). The paper
     # used four topic-assigned domains (coding/writing = task-anchored, therapy/philosophy =
     # drift-prone). We collapse to two, and deliberately give the OPEN variant NO topic steer at

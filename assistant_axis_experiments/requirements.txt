@@ -8,3 +8,5 @@ huggingface_hub
 jinja2
 # Analysis (laptop, CPU):
 matplotlib
+scikit-learn
+scipy

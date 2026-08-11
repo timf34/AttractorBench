@@ -12,7 +12,7 @@ Anchors calibrate the y-axis: ``default`` is the mean default-Assistant activati
 figure rescales projections so default=1 and role_mean=0 ("axis units") — raw projections are
 not comparable across models.
 
-    python -m assistant_axis_drift.analyze_axis            # writes assistant_axis_drift/reports/
+    python -m assistant_axis_experiments.drift.analyze_axis            # writes assistant_axis_experiments/drift/reports/
 """
 
 from __future__ import annotations

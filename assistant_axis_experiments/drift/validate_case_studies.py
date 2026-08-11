@@ -15,8 +15,8 @@ If these shapes reproduce, the pipeline (and specifically the anomalous-looking 
 is validated against the paper's own measurements.
 
     # on a GPU pod (per model; ~10 min each once weights are cached):
-    python -m assistant_axis_drift.validate_case_studies --model-key qwen-3-32b
-    python -m assistant_axis_drift.validate_case_studies --model-key llama-3.3-70b
+    python -m assistant_axis_experiments.drift.validate_case_studies --model-key qwen-3-32b
+    python -m assistant_axis_experiments.drift.validate_case_studies --model-key llama-3.3-70b
 
 Writes validation/<name>__replay.json + a figure per model in reports/.
 """
@@ -30,9 +30,9 @@ import os
 
 import torch
 
-from .axes import AXIS_MODELS, load_axis_for, normalized_axis, target_layer_for
-from .project_transcripts import _load_probing_model, project_view
-from .vendor.assistant_axis.internals import ActivationExtractor, ConversationEncoder
+from ..axes import AXIS_MODELS, load_axis_for, normalized_axis, target_layer_for
+from ..project_transcripts import _load_probing_model, project_view
+from ..vendor.assistant_axis.internals import ActivationExtractor, ConversationEncoder
 
 VAL_DIR = os.path.join(os.path.dirname(__file__), "validation")
 

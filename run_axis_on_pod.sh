@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# One-shot runner for the Assistant-Axis drift experiments (assistant_axis_drift/README.md).
+# One-shot runner for the Assistant-Axis drift experiments (assistant_axis_experiments/README.md).
 # Sibling of run_sfm_on_pod.sh with one extra stage: after generating each model's ai2ai
 # conversations via vLLM, it stops vLLM and REPLAYS the transcripts through the HF model to
 # project per-turn activations onto the Assistant Axis.
@@ -116,7 +116,7 @@ if [ "${CU124:-0}" = "1" ]; then
 else
   pip install -q -r requirements-vllm.txt   # pinned vllm+transformers pair (see that file's why)
 fi
-pip install -q -r requirements.txt -r assistant_axis_drift/requirements.txt
+pip install -q -r requirements.txt -r assistant_axis_experiments/requirements.txt
 python - <<'PY'
 import transformers
 from packaging.version import Version
@@ -149,7 +149,7 @@ done
 # the live tokenizer's template to catch upstream edits.
 python - <<'PY'
 from transformers import AutoTokenizer
-from assistant_axis_drift.verify_templates import verify
+from assistant_axis_experiments.verify_templates import verify
 verify()
 tok = AutoTokenizer.from_pretrained("google/gemma-2-27b-it")
 if tok.chat_template:
@@ -158,7 +158,7 @@ if tok.chat_template:
 PY
 # Axis vectors download now (fail fast, cached for the replay stage).
 python - <<PY
-from assistant_axis_drift.axes import load_axis_for
+from assistant_axis_experiments.axes import load_axis_for
 for key in "$VARIANTS".split():
     axis, anchors = load_axis_for(key)
     print(f"  axis OK: {key} {tuple(axis.shape)}")
@@ -195,7 +195,7 @@ PY
   # qwen needs thinking force-disabled at the template level.
   TEMPLATE_FLAG=""
   if [ "$v" = "gemma-2-27b" ]; then
-    TEMPLATE_FLAG="--chat-template assistant_axis_drift/templates/gemma2_system_fold.jinja"
+    TEMPLATE_FLAG="--chat-template assistant_axis_experiments/templates/gemma2_system_fold.jinja"
   elif [ "$v" = "qwen-3-32b" ]; then
     python - "$REPO" <<'PY'
 import sys
@@ -272,7 +272,7 @@ PY
   done
   if [ -n "$DIRS" ]; then
     # shellcheck disable=SC2086
-    python -m assistant_axis_drift.project_transcripts --results-dir $DIRS --model-key "$v" \
+    python -m assistant_axis_experiments.project_transcripts --results-dir $DIRS --model-key "$v" \
       || { PROJ_OK=0; echo "  (projection errored for $v — transcripts still saved)"; }
   fi
 
@@ -296,7 +296,7 @@ stop_vllm
 
 python summarize.py || echo "  (summary errored — per-condition reports are still there)"
 echo "== DONE. Projections: results/axis_*_ai2ai/analysis/*__axis_projections.json =="
-echo "== On the laptop afterwards: python -m assistant_axis_drift.analyze_axis =="
+echo "== On the laptop afterwards: python -m assistant_axis_experiments.drift.analyze_axis =="
 
 case "${SHUTDOWN:-}" in
   stop)      RP_ACTION="stop" ;;

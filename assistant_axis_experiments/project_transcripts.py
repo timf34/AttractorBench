@@ -13,12 +13,12 @@ views (each instance sees itself as ``assistant`` and the peer as ``user``), thi
 
 Output (scalars only, safe to commit): ``results/<cond>/analysis/<file>__axis_projections.json``.
 
-    python -m assistant_axis_drift.project_transcripts \
+    python -m assistant_axis_experiments.project_transcripts \
         --results-dir results/axis_qwen_3_32b_nosys_ai2ai --model-key qwen-3-32b
 
 CPU smoke (laptop, no axis download, tiny model with the same template family as Qwen3-32B):
 
-    python -m assistant_axis_drift.project_transcripts --results-dir <fixture-dir> \
+    python -m assistant_axis_experiments.project_transcripts --results-dir <fixture-dir> \
         --model-key qwen-3-32b --hf-model-override Qwen/Qwen3-0.6B --synthetic-axis
 
 RAM note: the all-layer activation capture holds (n_layers, n_tokens, hidden) bf16 on CPU per
@@ -93,16 +93,17 @@ def _temperature_of(data: dict, path: str) -> float:
     return float(m.group(1)) if m else float("nan")
 
 
-def project_view(
+def turn_mean_activations(
     extractor: ActivationExtractor,
     encoder: ConversationEncoder,
     messages: list[dict],
     own_turn_numbers: list[int],
-    axis_n: torch.Tensor,
     chat_kwargs: dict,
-) -> dict | None:
-    """Per-turn projections for one view. Returns {"turns": [...], "proj_by_layer": {L: [...]}}
-    or None if the serialization can't be aligned (warned, view skipped)."""
+) -> tuple[list[int], torch.Tensor] | None:
+    """Per-turn mean response-token activations for one view (the paper's readout).
+
+    Returns (turn_numbers, (n_turns, n_layers, hidden) fp32) or None if the serialization
+    can't be aligned (warned, view skipped)."""
     full_ids, spans = encoder.build_turn_spans(messages, **chat_kwargs)
     acts = extractor.full_conversation(messages, layer=None, chat_format=True, **chat_kwargs)
     # full_conversation tokenizes the template STRING; build_turn_spans tokenizes directly.
@@ -118,18 +119,38 @@ def project_view(
             f"    !! {len(assistant_spans)} assistant spans vs {len(own_turn_numbers)} own turns "
             f"— keeping the aligned prefix"
         )
-    n_layers = acts.shape[0]
     turns: list[int] = []
-    proj_by_layer: dict[int, list[float]] = {layer: [] for layer in range(n_layers)}
+    means: list[torch.Tensor] = []
     for turn_no, span in zip(own_turn_numbers, assistant_spans):
         seg = acts[:, span["start"]:span["end"], :]
         if seg.shape[1] == 0:
             continue
-        mean_act = seg.float().mean(dim=1)              # (n_layers, hidden)
-        projs = (mean_act * axis_n).sum(dim=1)          # (n_layers,)
         turns.append(turn_no)
-        for layer in range(n_layers):
-            proj_by_layer[layer].append(round(float(projs[layer]), 4))
+        means.append(seg.float().mean(dim=1))           # (n_layers, hidden)
+    if not means:
+        return None
+    return turns, torch.stack(means)
+
+
+def project_view(
+    extractor: ActivationExtractor,
+    encoder: ConversationEncoder,
+    messages: list[dict],
+    own_turn_numbers: list[int],
+    axis_n: torch.Tensor,
+    chat_kwargs: dict,
+) -> dict | None:
+    """Per-turn projections for one view. Returns {"turns": [...], "proj_by_layer": {L: [...]}}
+    or None if the serialization can't be aligned (warned, view skipped)."""
+    res = turn_mean_activations(extractor, encoder, messages, own_turn_numbers, chat_kwargs)
+    if res is None:
+        return None
+    turns, mean_acts = res                              # (n_turns, n_layers, hidden)
+    projs = (mean_acts * axis_n.unsqueeze(0)).sum(dim=2)   # (n_turns, n_layers)
+    n_layers = projs.shape[1]
+    proj_by_layer = {
+        layer: [round(float(p), 4) for p in projs[:, layer]] for layer in range(n_layers)
+    }
     return {"turns": turns, "proj_by_layer": proj_by_layer}
 
 

@@ -6,7 +6,7 @@ folds in python (``views.fold_system_into_user``) and uses the NATIVE template. 
 ever disagree, generation and replay would tokenize different strings — this check makes that
 impossible to miss. Pure jinja2, no tokenizer/GPU needed:
 
-    python -m assistant_axis_drift.verify_templates
+    python -m assistant_axis_experiments.verify_templates
 """
 
 from __future__ import annotations

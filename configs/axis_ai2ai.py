@@ -1,6 +1,6 @@
 """Assistant-Axis ai2ai — two instances of one axis-paper target model talk to each other.
 
-Generation stage of assistant_axis_drift/ (see its README): conversations whose activations we
+Generation stage of assistant_axis_experiments/ (see its README): conversations whose activations we
 later project onto the Assistant Axis (Lu et al., arxiv 2601.10387). Uses the paper's exact
 three target models; the axis vectors come precomputed from lu-christina/assistant-axis-vectors.
 
@@ -54,10 +54,17 @@ if OPENER not in ("goodness", "agnostic"):
     raise SystemExit(f"OPENER must be 'goodness' or 'agnostic' (got {OPENER!r})")
 SEED_SET = f"{OPENER}_opener_v1"
 
-# CAPPED=1 marks runs generated behind assistant_axis_drift/capped_server.py (the paper's
+# CAPPED=1 marks runs generated behind assistant_axis_experiments/capped_server.py (the paper's
 # activation capping active at every token). Generation-side only: the config is identical,
 # the serving differs — the tag keeps capped results in their own dirs.
 CAPPED = os.environ.get("CAPPED", "0") == "1"
+
+# STEER=<tag> marks runs generated behind state_space/steered_server.py (an axis-ORTHOGONAL
+# persona direction added at every token; the causal test of the 1-D account). The tag should
+# encode role+coef, e.g. STEER=poet_c4 -> results/axis_qwen_3_32b_steer_poet_c4_nosys_ai2ai.
+STEER = os.environ.get("STEER", "")
+if STEER and not STEER.replace("_", "").isalnum():
+    raise SystemExit(f"STEER must be alphanumeric/underscore (got {STEER!r})")
 
 # results/axis_qwen_3_32b_nosys_ai2ai (none) | results/axis_qwen_3_32b_ai2ai (helpful);
 # agnostic opener inserts "_agnostic"; capped serving inserts "_capped":
@@ -65,7 +72,9 @@ CAPPED = os.environ.get("CAPPED", "0") == "1"
 _slug = KEY.replace("-", "_").replace(".", "_")
 _ag = "_agnostic" if OPENER == "agnostic" else ""
 _cap = "_capped" if CAPPED else ""
-EXP = f"axis_{_slug}{_ag}{_cap}_nosys_ai2ai" if SYS == "none" else f"axis_{_slug}{_ag}{_cap}_ai2ai"
+_steer = f"_steer_{STEER}" if STEER else ""
+EXP = (f"axis_{_slug}{_ag}{_cap}{_steer}_nosys_ai2ai" if SYS == "none"
+       else f"axis_{_slug}{_ag}{_cap}{_steer}_ai2ai")
 
 _temps_env = os.environ.get("TEMPS")
 TEMPS = [float(x) for x in _temps_env.split(",")] if _temps_env else [0.7, 1.0, 1.3]

@@ -68,8 +68,8 @@ def main():
         ax.spines[side].set_visible(False)
     ax.legend(frameon=False, fontsize=9, loc="lower left")
     fig.tight_layout()
-    fig.savefig("assistant_axis_drift/reports/drift__qwen_basins.png", dpi=150)
-    print("wrote assistant_axis_drift/reports/drift__qwen_basins.png")
+    fig.savefig("assistant_axis_experiments/drift/reports/drift__qwen_basins.png", dpi=150)
+    print("wrote assistant_axis_experiments/drift/reports/drift__qwen_basins.png")
 
 if __name__ == "__main__":
     main()

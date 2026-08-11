@@ -2,6 +2,68 @@
 
 ---
 
+## 2026-08-11 — state_space: beyond the 1-D Assistant Axis (a_t, z_t decomposition) [BUILT, pod runs pending]
+
+**Question** (mentor): is one axis coordinate enough? Model the per-turn state as
+`a_t` (assistantness, the drift readout) + `z_t` (axis-ORTHOGONAL persona-PC coordinates) and
+ask whether z improves prediction of next-turn state / eventual basin / transition time /
+intervention response after conditioning on a — then causally steer an orthogonal persona
+direction with a_t held matched; if the destination basin changes, the 1-D account fails.
+
+- **Reorg:** `assistant_axis_drift/` → `assistant_axis_experiments/` (git mv, history kept):
+  shared infra top-level, old experiment in `drift/`, new programme in `state_space/`. Old
+  pod scripts + configs updated; drift analyzer + basin splits reproduce their numbers.
+- **Persona bases built + validated (laptop, from the paper's released role vectors):** PCA
+  matches their `pca.ipynb` (center on mean role, plain PCA). All 3 models:
+  `cos(default − mean(roles), released axis) = 1.000`; components for 70% variance
+  4/7/19 (gemma/qwen/llama) vs paper's 4/8/19 (qwen off by one — release ships 275
+  fully-role-playing vectors, not their n=463 set). |cos(axis, PC1)| = .85/.67/.70.
+  z-basis = PCA after projecting out the axis (strict z⊥a; raw PC2+ would leak a_t).
+  Committed: `state_space/bases/*.npz` (~15MB) + geometry figures. Angel/demon in qwen:
+  NOT equally axis-distant (−0.63 vs −1.18) but z-distance 40.5 vs median spread 25.1.
+- **Pipeline built + CPU-smoked:** `dump_activations.py` (pod replay → per-turn mean
+  activation VECTORS at ~¼/½/¾ depth, npz pod-side; shared `turn_mean_activations` refactor
+  of project_transcripts — projections unchanged), `featurize.py` (npz × basis →
+  committable per-turn a/z/|z| features), `predict.py` (nested a vs a+z, grouped CV, OOF
+  metrics, run-level bootstrap CIs; basin labels via `basins.py` = qwen vocab split + gemma
+  judge split), `steered_server.py` (+`STEER` tag in configs/axis_ai2ai.py +
+  `run_axis_steer_on_pod.sh`): v_perp = (role − mean_role) ⊥ axis at target layer, magnitude
+  coef·‖axis‖; optional --with-capping. Synthetic end-to-end test plants "basin lives in z,
+  not a" and recovers it (AUC a+z 1.00 vs a 0.51): `state_space/test_state_space_cpu.py`.
+- **Replay-of-steered-runs note:** projection/dump replay is UNSTEERED teacher-forcing on the
+  steered text → measures the endogenous text-driven state, which is the right readout for
+  "did a_t stay matched to controls".
+- **Next:** `run_state_space_on_pod.sh` (dump+featurize over the existing axis transcripts;
+  qwen+gemma 1x80GB, llama 2x80GB) → laptop `predict.py` per model → pick steering role/coef
+  from the qwen geometry (poet vs engineer contrast is the natural first pilot) →
+  `run_axis_steer_on_pod.sh` pilot at temp 1.0.
+
+## 2026-08-06 — GPT-5.6-sol frontier arm + Fable 5 published to site + empty-reply fix
+
+- **Empty-reply fix (providers.py):** empty visible content at `finish_reason=stop` now gets
+  the same escalate-and-retry treatment as `finish_reason=length` (x3 budget, capped at
+  `_EMPTY_STOP_RETRIES=3` resamples, then accepted as-is with a log line). This is the fix the
+  2026-07-30 frontier sweep called for — reasoning models' empty turns crashed Anthropic routes
+  (fable-5 lost 9/16 runs) and read to the stage-2 judge as terminal silence. Runs from before
+  this date do NOT have the guard; check empty-turn rates before trusting silence findings there.
+- **gpt-5.6-sol:** added `gpt_5_6_sol -> openai/gpt-5.6-sol` to `configs/frontier_ai2ai.py`
+  (the sol arm of OpenRouter's 5.6 luna/sol/terra trio) and ran the standard frontier cell
+  (helpful_assistant + goodness_opener_v1, 8 seeds, temps 0.7/1.0, 30 turns) — first frontier
+  arm generated WITH the empty-reply guard. All 16/16 runs completed (vs fable's 7/16 pre-fix);
+  the guard fired ~142 times and recovered most, but 30/480 turns (~6%) stayed empty even after
+  3 resamples — sol emits empty-at-stop a LOT, so weight its silence/closure findings
+  accordingly. Judge (`openrouter/openai/gpt-5.4`): 0.7 -> "loves building systems and
+  formalising everything into rules" (8/8), 1.0 -> "loves building epistemic protocols and
+  governance rules" (8/8), both with a secondary polite-closure/acknowledgment loop (~0.5-0.6).
+  Overall: "wants to finalize the protocol and close the loop". Copied into
+  `results/family_sweep/gpt-5.6-sol/` and published to the site (display "GPT-5.6 Sol").
+- **Fable 5 on the website:** copied `frontier_fable_5_ai2ai` (conditions + stage1/2 analysis)
+  into `results/family_sweep/claude-fable-5/`, registered the slug in `run_overall_judges.py` +
+  `publish_site.py` (Anthropic, order slot after claude-opus-4), ran the overall judges
+  (ALL + helpful_assistant -> "collapses into polite farewell loops") and published. Caveat
+  carried from 2026-07-30: only 7/16 fable runs survived the empty-reply crash (3 @ 0.7,
+  4 @ 1.0), so the site entry rests on those survivors.
+
 ## 2026-08-04 — Cross-model persona-prompt sweep (persona vs pretraining as attractor driver)
 
 **Question:** is the ai2ai attractor state mostly set by the persona a model binds to, rather
@@ -33,6 +95,16 @@ each model keeps a characteristic terminal decay (Kimi → near-silence, DeepSee
 stillness, GPT-4.1 → unstoppable re-endings, Llama-70B → self-echo). Write-up + label
 matrix: `research_updates/2026-08-04_crossmodel_persona_prompts.md` (+ `_attractors.json`).
 Provider hardening added mid-sweep (429 budget, choices=None, malformed-body retries).
+
+**Quantitative geometry (2026-08-05, `prompt_geometry.py` → `results/prompt_geometry/`):**
+SBERT endpoint analysis over all 124 temp-0.7 conditions. The LoRA-corpus ordering FLIPS:
+same-prompt/cross-model 1.13 vs same-model/cross-persona 1.09 (LoRAs: 0.99 vs 1.29); variance
+persona 17.1% / model 13.5% / interaction 21.2% (LoRAs: 24.2/2.2/7.6). NN same-persona 27%
+(LoRAs 70%). Tightest block = rich-vs-grounded same trait same model (0.97); grounded prompts
+systematically more portable than rich. Reconciliation with the judge labels above: prompts
+transfer the THEME (judge-level), but each model renders it in its own voice (embedding-level
+interaction term); fine-tuning transfers the voice itself. Details + caveats (5 runs/cond.,
+mixed model scales): `research_updates/2026-08-05_oct_crossbase_geometry.md` addendum.
 
 ---
 

@@ -148,8 +148,7 @@ esac
 if [ "${SAVE_TO_GIT:-0}" = "1" ]; then
   git config user.email >/dev/null 2>&1 || git config user.email "pod@attractorbench.local"
   git config user.name >/dev/null 2>&1 || git config user.name "AttractorBench Pod"
-  git add -f results/ 2>/dev/null || true
-  git reset -q results/*/analysis/*__turn_acts.npz 2>/dev/null || true   # vectors stay pod-side
+  git add -f results/ 2>/dev/null || true   # includes *__turn_acts.npz — pods are ephemeral
   git commit -q -m "results: steered axis run ($STEER_TAG) finished $(date -u +%FT%TZ)" || echo "  (nothing new)"
   git pull --no-rebase --no-edit 2>/dev/null || true
   if git push; then echo "  results pushed"; elif [ "$RP_ACTION" = "remove" ]; then RP_ACTION="stop"; fi

@@ -6,10 +6,9 @@
 # GPU needs = replay only: qwen/gemma fit 1x 80GB, llama needs 2x 80GB (drop it from VARIANTS
 # on a single-GPU pod). No vLLM — plain HF forward passes.
 #
-# SAVE_TO_GIT=1 commits ONLY the small *__state_features.json files. The *__turn_acts.npz
-# stay pod-side (~25MB/condition-layer) — rsync them down if you want vectors locally:
-#   rsync -av pod:/workspace/AttractorBench/results/ results/ --include='*/' \
-#         --include='*__turn_acts.npz' --exclude='*'
+# SAVE_TO_GIT=1 commits the *__state_features.json AND the *__turn_acts.npz activation
+# vectors (~10-25MB each, a few hundred MB per full sweep — bulky but they are the primary
+# artifact and pods are ephemeral; the 2026-08-11 run lost them by keeping npz pod-side).
 #
 #   VARIANTS="qwen-3-32b" SAVE_TO_GIT=1 SHUTDOWN=stop VENV=1 bash run_state_space_on_pod.sh 2>&1 | tee state_space.log
 set -euo pipefail
@@ -69,7 +68,8 @@ if [ "${SAVE_TO_GIT:-0}" = "1" ]; then
   git config user.email >/dev/null 2>&1 || git config user.email "pod@attractorbench.local"
   git config user.name >/dev/null 2>&1 || git config user.name "AttractorBench Pod"
   find results -name '*__state_features.json' -exec git add -f {} + 2>/dev/null || true
-  git commit -q -m "results: state-space features $(date -u +%FT%TZ)" || echo "  (nothing new)"
+  find results -name '*__turn_acts.npz' -exec git add -f {} + 2>/dev/null || true
+  git commit -q -m "results: state-space features + turn activations $(date -u +%FT%TZ)" || echo "  (nothing new)"
   git pull --no-rebase --no-edit 2>/dev/null || true
   if git push; then echo "  features pushed"; elif [ "$RP_ACTION" = "remove" ]; then RP_ACTION="stop"; fi
 fi

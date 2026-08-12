@@ -2,6 +2,46 @@
 
 ---
 
+## 2026-08-12 — state_space/manifold: is "not 1-D" curvature or genuine multi-dimensionality?
+
+**Question** (after Modell et al. 2505.18235 + Goodfire neural-geometry): our "z adds
+prediction over a" result had two readings — (A) genuinely multi-dim state vs (B) ONE curved
+coordinate whose linear shadow is a_t. Built `state_space/manifold.py`: geodesic coordinate g
+= kNN-graph distance from the default-Assistant anchor in the 17-D (a_raw, z_1..16) frame
+(orthonormal directions, honest Euclidean geometry; K minimal-connected per the paper, all
+numbers re-run at 2K for their short-circuit caveat), + TwoNN/Levina-Bickel intrinsic dim,
+branch analysis, and role-dictionary curvature. CPU test plants a noisy 3/4-circle: geodesic
+τ=1.00 vs best-linear τ=0.78, LB dim ~1.1; also verified live that noise ≥ NN-spacing makes
+TwoNN read ambient dim (14.5→7.2→2.9 as σ drops) — TwoNN = upper bound only.
+
+**RESULTS (all 3 models, reports in state_space/reports/manifold__*.md):**
+- **Reading B REJECTED (qwen):** g does not close the gap to a+z. Transition time R²:
+  a .02 → g .26 → a+z .44; basin AUC: g ≈ a, never matches a+z's early-turn edge (t4
+  helpful: .75/.71/.90). BUT g is a strictly better 1-D summary than the linear axis for
+  timing (10x R²) — the axis is both the wrong parametrization AND insufficient once
+  reparametrized. g and a are two partially-closed 1-D coordinates (g_{t+1}|g_t R² .67-.71
+  vs a_{t+1}|a_t .82); neither subsumes the other. Stable at K=7 and K=14.
+- **Trajectory cloud is genuinely ~6-7 dimensional** (LB k=20: 5.7/7.6/6.3 qwen/gemma/llama
+  in the 17-D shadow; TwoNN upper bounds 7.3/10.9/7.5) — content variance inflates this,
+  but it is no 1-D curve.
+- **Branch point CONFIRMED (qwen):** basin separation in z jumps at turns 3-4
+  (1.0→2.2→3.6→4.1), exactly where predict.py's basin AUC takes off — the Y-shape
+  (shared stem → design/devotion arms) is now quantified. Figure: branching png.
+- **Drift is directional manifold progress:** τ(turn, g) ai2ai median +0.62 (qwen) vs +0.22
+  usersim controls — not years-manifold clean (.97) but strongly ordered.
+- **The axis is a chord everywhere:** geodesic/chord LOWER bounds 1.3-2.2 (qwen), 2.0-2.4
+  (gemma), 1.3-1.8 (llama). Shortest role-manifold path mean-role→default passes through
+  helper/communicator archetypes (qwen: writer/guide/interpreter; llama: guide/presenter;
+  gemma: merchant/reporter/journalist) — echoes the paper's consultant/coach finding.
+- Gemma/llama transition time: g doesn't help (gemma unpredictable by anything; llama
+  a-driven turn-1 switch — consistent with predict.py).
+- **Steering implication:** curvature ratios mean straight-line orthogonal steering at
+  coef ~1 goes substantially off-manifold — pilot should use moderate coefs AND log an
+  off-manifold residual check (distance of steered states to the unsteered cloud).
+- Caveats carried in each report: transductive graph, 17-D shadow (npz replay for
+  full-space), no ground-truth persona metric (topology/ordering claims only), n=275
+  dictionary, noise-limited dim estimators.
+
 ## 2026-08-11 — state_space: beyond the 1-D Assistant Axis (a_t, z_t decomposition) [BUILT, pod runs pending]
 
 **Question** (mentor): is one axis coordinate enough? Model the per-turn state as

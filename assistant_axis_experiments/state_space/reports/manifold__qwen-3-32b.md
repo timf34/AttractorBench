@@ -113,3 +113,40 @@ kNN graph: K=7 (minimal connected), robustness pass at K=14.
 - 17-D shadow: curvature outside the stored (a, z_1..16) subspace at this layer is invisible. Full-space rerun needs the turn_acts npz (one replay).
 - n=275 role vectors is thin for manifold estimation in experiment 3.
 - Intrinsic-dim estimators are noise-limited: when measurement noise is comparable to nearest-neighbour spacing they read the noise ball's dimension (biased toward ambient 17). Treat the TwoNN number as an UPPER bound on intrinsic dimension; the k=10 vs k=20 Levina-Bickel spread indicates scale-sensitivity.
+
+## Inductive robustness check (per-fold graphs)
+
+manifold_inductive_check.py, 5-fold grouped CV (grouping by run, predict.py's convention). Per fold the kNN graph is rebuilt from TRAINING-fold turn-states + the anchor only (K minimal-connected per fold: 5, 6, 6, 6, 4; transductive full graph: K=7); test points get g by out-of-sample extension — min over their K nearest TRAINING nodes of (g(train) + edge distance), never linking to each other. "shared folds" columns rerun the SAME CV on the full-graph (transductive) g, so transductive-vs-inductive gaps beyond that column are graph leakage, not fold noise. "Report" = manifold.py's own per-task folds (oof_predictions), reproducing the Experiment-1 tables above.
+
+### Transition time from turn-2 state (n=148) — OOF R² / Spearman ρ
+
+| features | transductive (report) | transductive (shared folds) | inductive (per-fold graphs) |
+|---|---|---|---|
+| a | 0.023 / 0.283 | 0.034 / 0.283 | 0.034 / 0.283 |
+| g | 0.257 / 0.468 | 0.251 / 0.468 | 0.276 / 0.451 |
+| az | 0.435 / 0.663 | 0.483 / 0.699 | 0.483 / 0.699 |
+
+### Basin AUC from the state at turn t
+
+| condition | turn t | set | transductive (report) | transductive (shared folds) | inductive (per-fold graphs) |
+|---|---|---|---|---|---|
+| helpful | 4 | a | 0.752 | 0.731 | 0.731 |
+| helpful | 4 | g | 0.711 | 0.696 | 0.599 |
+| helpful | 4 | az | 0.900 | 0.894 | 0.894 |
+| helpful | 6 | a | 0.932 | 0.930 | 0.930 |
+| helpful | 6 | g | 0.941 | 0.943 | 0.829 |
+| helpful | 6 | az | 0.915 | 0.927 | 0.927 |
+| helpful | 8 | a | 0.917 | 0.919 | 0.919 |
+| helpful | 8 | g | 0.940 | 0.938 | 0.858 |
+| helpful | 8 | az | 0.946 | 0.934 | 0.934 |
+| nosys | 4 | a | 0.830 | 0.822 | 0.822 |
+| nosys | 4 | g | 0.735 | 0.742 | 0.676 |
+| nosys | 4 | az | 0.838 | 0.821 | 0.821 |
+| nosys | 6 | a | 0.900 | 0.889 | 0.889 |
+| nosys | 6 | g | 0.926 | 0.927 | 0.781 |
+| nosys | 6 | az | 0.929 | 0.914 | 0.914 |
+| nosys | 8 | a | 0.888 | 0.887 | 0.887 |
+| nosys | 8 | g | 0.921 | 0.925 | 0.789 |
+| nosys | 8 | az | 0.903 | 0.892 | 0.892 |
+
+**Verdict:** transductive − inductive for g: transition R² -0.020, mean basin AUC over t=4/6/8 × both conditions +0.107 (a and a+z shift by fold noise only) — the transductive shortcut **inflated g's basin AUCs** (inductive g beats a/a+z in 0/6 cells vs the transductive late-turn parity) while g's transition-time edge over a survives intact — the late-turn g ≈ a+z basin parity was a transductive artifact.

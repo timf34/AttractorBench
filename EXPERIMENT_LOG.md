@@ -2,6 +2,37 @@
 
 ---
 
+## 2026-08-12 — SAE test: the Assistant Axis is NOT a single SAE feature (+ manifold inductive check)
+
+**Question:** does the axis correspond to one atomic SAE feature (high max cos with a
+dictionary) or smear across many (composite/manifold direction)? Built
+`state_space/sae_axis.py` (decoder cosines + random-vector null + greedy OMP reconstruction)
+and `state_space/neuronpedia_lookup.py` (stdlib Neuronpedia client; endpoint
+`api/feature/{model}/{source}/{idx}`, model ids `llama3.3-70b-it`/`50-resid-post-gf` and
+`qwen3-32b`/`32-resid-batchtopk-65k`, NO key needed). SAEs: adamkarvonen qwen3-32b
+batch-top-k L16/32/48 (16k+65k dicts — L32 = our readout layer) and Goodfire
+Llama-3.3-70B L50 (65k, 3632 dead rows; decoders stored feature-as-COLUMNS in both repos).
+
+- **Axis smears, both models, all 3 SAEs:** max|cos| 0.40-0.46 vs null p95 ~0.06 (6-8x
+  chance but nowhere near atomic); top feature explains ~17%; >64 features for 90%
+  (R²@64 ≈ 0.72-0.77 vs null ~0.1). Same conclusion at 16k and 65k dict sizes.
+- **Neuronpedia labels (llama):** the axis top-10 are ALL anti-aligned (role-ward end) and
+  read as a mystical/narrative bundle — "every universe", "cloak, glow, shadows", "speak of
+  elusive entities", "that we find wisdom" — the paper's mystical-theatrical drift register
+  ≈ our devotion-basin vocabulary, appearing as the axis's own decomposition.
+- **Only near-atomic direction found:** qwen zPC1 ⊥ axis hits |cos| 0.73 with a
+  near-antipodal feature pair (51913/57573; same pair in the 16k dict) — but its huge max
+  activations (1216/194) suggest an outlier/norm feature; qwen autointerp labels too noisy
+  to interpret. Role directions (angel/poet/engineer): 0.29-0.60, multi-feature.
+- **Manifold inductive check** (`manifold_inductive_check.py`, appended to
+  manifold__qwen-3-32b.md): g's transition-time edge SURVIVES per-fold graphs (R² .28 ind.
+  vs .26 trans.; a stays .03), but g's late-turn basin parity with a+z was transductive
+  leakage (−0.11 AUC inductively, g now trails a and a+z in all 6 cells). Net: timing is
+  1-D-geodesic-readable, basin identity is NOT — strengthens genuine multi-dimensionality.
+- Consistency: SAE smear + intrinsic dim ~6 + curved dictionary all point the same way —
+  the persona state is a low-but-multi-dimensional structure that neither one linear
+  direction, one geodesic coordinate, nor one SAE feature captures.
+
 ## 2026-08-12 — state_space/manifold: is "not 1-D" curvature or genuine multi-dimensionality?
 
 **Question** (after Modell et al. 2505.18235 + Goodfire neural-geometry): our "z adds

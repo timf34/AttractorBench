@@ -2,6 +2,9 @@
 
 Directions: released axis @ L50, persona PC1 / axis-orthogonal zPC1 of the 275 role vectors, and three role−mean directions (angel, poet, engineer); all unit-normalized. Cosines are against L2-normalized SAE decoder rows; R²@k is the fraction of squared norm explained by greedy OMP (re-fit least squares each step) with k features.
 
+![sae smear](sae_axis__llama-3.3-70b.png)
+
+
 ## SAE: Goodfire resid L50 — dict_size 65536, hidden 8192
 
 weights: `Goodfire/Llama-3.3-70B-Instruct-SAE-l50` / `Llama-3.3-70B-Instruct-SAE-l50.pt`; `decoder_linear.weight` stored nn.Linear-style (8192, 65536) = (hidden, dict_size) -> transposed; features were COLUMNS; 3632 dead (zero-norm) rows.

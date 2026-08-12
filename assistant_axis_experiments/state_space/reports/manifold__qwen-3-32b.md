@@ -3,6 +3,9 @@
 4326 turn-states from 295 view-trajectories (capped conditions excluded from the graph).
 Feature sets: a = linear axis projection (1-D), g = geodesic distance from the default-Assistant anchor along the kNN manifold graph (still 1-D), a+z = linear multi-D. Reading B (curvature) predicts g ≈ a+z; reading A (genuine multi-D) predicts g ≪ a+z on basin/timing.
 
+![summary](manifold__qwen-3-32b__summary.png)
+
+
 ## Experiment 1 — geodesic 1-D vs linear 1-D vs linear multi-D
 
 kNN graph: K=7 (minimal connected), robustness pass at K=14.

@@ -2,6 +2,9 @@
 
 Directions: released axis @ L32, persona PC1 / axis-orthogonal zPC1 of the 275 role vectors, and three role−mean directions (angel, poet, engineer); all unit-normalized. Cosines are against L2-normalized SAE decoder rows; R²@k is the fraction of squared norm explained by greedy OMP (re-fit least squares each step) with k features.
 
+![sae smear](sae_axis__qwen-3-32b.png)
+
+
 ## SAE: batch-top-k 65536 (trainer_2) — dict_size 65536, hidden 5120
 
 weights: `adamkarvonen/qwen3-32b-saes` / `saes_Qwen_Qwen3-32B_batch_top_k/resid_post_layer_32/trainer_2/ae.pt`; `decoder.weight` stored nn.Linear-style (5120, 65536) = (hidden, dict_size) -> transposed; features were COLUMNS; 0 dead (zero-norm) rows.

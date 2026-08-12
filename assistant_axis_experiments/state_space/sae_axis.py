@@ -247,12 +247,17 @@ def analyze_sae(sae: dict, dirs: dict[str, np.ndarray], hidden: int,
     lines += [header, "|" + "---|" * (4 + len(K_REPORT))]
 
     results, axis_summary = {}, {}
+    figdata = {"null_max": null_max, "med_null_r2": med_null_r2, "r2_by_dir": {},
+               "dict_size": dict_size, "name": sae["name"]}
     for name, d in dirs.items():
         pairs = top_cos(feats_unit, d)
         r2, _ = omp(feats_unit, d)
         k90 = k_for_r2(r2)
         mx = abs(pairs[0][1])
         results[name] = (pairs, r2, k90, mx)
+        figdata["r2_by_dir"][name] = r2
+        if name == "assistant_axis":
+            figdata["axis_cos"] = feats_unit @ d          # full signed cosine spectrum
         cells = " | ".join(f"{r2[k - 1]:.3f}" for k in K_REPORT)
         lines.append(f"| {name} | {pairs[0][1]:+.3f} | {mx / p95:.1f}x | "
                      f"{k90 if k90 else f'>{K_MAX}'} | {cells} |")
@@ -271,7 +276,65 @@ def analyze_sae(sae: dict, dirs: dict[str, np.ndarray], hidden: int,
     for name, (pairs, r2, k90, mx) in results.items():
         lines.append("- " + interpretation(name, mx, p95, r2, k90))
     lines.append("")
-    return axis_summary
+    return axis_summary, figdata
+
+
+# Okabe-Ito assignments, fixed per direction (repo figure convention).
+FIG_COLORS = {"assistant_axis": "#0072B2", "zPC1_axis_orth": "#D55E00",
+              "persona_PC1": "#009E73", "role:angel": "#CC79A7",
+              "role:poet": "#E69F00", "role:engineer": "#56B4E9"}
+
+
+def render_figure(model_key: str, layer: int, figdata: dict, out_path: str) -> None:
+    """Two panels: (A) the axis's cosine spectrum against the whole dictionary vs the
+    random-direction null — the 'smear' picture; (B) greedy-OMP reconstruction curves per
+    direction vs the null band — how many features each direction decomposes into."""
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    fig, axs = plt.subplots(1, 2, figsize=(11.8, 4.3))
+
+    cos = np.abs(figdata["axis_cos"])
+    p95 = float(np.percentile(figdata["null_max"], 95))
+    axs[0].hist(cos, bins=120, color="#0072B2", linewidth=0, log=True)
+    axs[0].axvline(p95, color="#444444", linewidth=1, linestyle="--")
+    axs[0].annotate(f"random-direction\nnull p95 = {p95:.2f}", xy=(p95, 2e3),
+                    xytext=(p95 + 0.04, 2e3), fontsize=8, color="#444444")
+    top = float(cos.max())
+    axs[0].axvline(top, color="#D55E00", linewidth=1.4)
+    axs[0].annotate(f"best single feature\n|cos| = {top:.2f}", xy=(top, 30),
+                    xytext=(top - 0.17, 60), fontsize=8, color="#D55E00")
+    axs[0].set_xlabel("|cos(assistant axis, SAE decoder feature)|")
+    axs[0].set_ylabel(f"features (of {figdata['dict_size']:,}, log)")
+    axs[0].set_title("the axis smears across the dictionary", fontsize=10)
+
+    ks = np.arange(1, len(figdata["med_null_r2"]) + 1)
+    axs[1].fill_between(ks, 0, figdata["med_null_r2"], color="#bbbbbb", alpha=0.4,
+                        linewidth=0, label="random-direction null (median)")
+    for name, r2 in figdata["r2_by_dir"].items():
+        heavy = name == "assistant_axis"
+        axs[1].plot(ks, r2, color=FIG_COLORS.get(name, "#888888"),
+                    linewidth=2.4 if heavy else 1.4, label=name)
+    axs[1].axhline(0.9, color="#444444", linewidth=0.8, linestyle=":")
+    axs[1].annotate("90%", xy=(1.05, 0.905), fontsize=8, color="#444444")
+    axs[1].set_xscale("log", base=2)
+    axs[1].set_xticks([1, 2, 4, 8, 16, 32, 64], [1, 2, 4, 8, 16, 32, 64])
+    axs[1].set_xlabel("SAE features used (greedy OMP)")
+    axs[1].set_ylabel("fraction of direction explained (R²)")
+    axs[1].set_ylim(0, 1.0)
+    axs[1].set_title("no direction is one feature; all beat the null", fontsize=10)
+    axs[1].legend(frameon=False, fontsize=7.5, loc="lower right")
+
+    for ax in axs:
+        ax.grid(alpha=0.25, linewidth=0.5)
+        for side in ("top", "right"):
+            ax.spines[side].set_visible(False)
+    fig.suptitle(f"{model_key} @ L{layer}: Assistant Axis vs SAE dictionary "
+                 f"({figdata['name']})", fontsize=11)
+    fig.tight_layout()
+    fig.savefig(out_path, dpi=150)
+    print(f"  wrote {out_path}")
 
 
 def main() -> None:
@@ -279,6 +342,8 @@ def main() -> None:
         description="Assistant Axis vs public SAE dictionaries: single feature or smear?")
     ap.add_argument("--model-key", required=True, choices=sorted(SAES) + ["all"])
     ap.add_argument("--reports-dir", default=REPORTS_DIR, help="output dir (tests use a tmpdir)")
+    ap.add_argument("--no-report", action="store_true",
+                    help="render figures only — leave the (possibly hand-annotated) md alone")
     args = ap.parse_args()
 
     keys = sorted(SAES) if args.model_key == "all" else [args.model_key]
@@ -296,17 +361,26 @@ def main() -> None:
                  "L2-normalized SAE decoder rows; R²@k is the fraction of squared norm "
                  f"explained by greedy OMP (re-fit least squares each step) with k features.\n"]
         summaries = []
-        for sae in SAES[key]["saes"]:
-            summaries.append(analyze_sae(sae, dirs, hidden, lines))
+        for i, sae in enumerate(SAES[key]["saes"]):
+            summary, figdata = analyze_sae(sae, dirs, hidden, lines)
+            summaries.append(summary)
+            if i == 0:      # headline (largest) dictionary gets the figure
+                fig_name = f"sae_axis__{key}.png"
+                render_figure(key, layer, figdata,
+                              os.path.join(args.reports_dir, fig_name))
+                lines.insert(2, f"![sae smear]({fig_name})\n")
 
         if key == "llama-3.3-70b":                 # downstream Neuronpedia lookup
             lines.append("## Axis top-10 SAE feature indices (Goodfire L50 — for Neuronpedia)\n")
             lines.append(", ".join(str(i) for i, _ in summaries[0]["top"]) + "\n")
 
-        out = os.path.join(args.reports_dir, f"sae_axis__{key}.md")
-        with open(out, "w") as f:
-            f.write("\n".join(lines))
-        print(f"wrote {out}")
+        if args.no_report:
+            print("  (--no-report: md left untouched)")
+        else:
+            out = os.path.join(args.reports_dir, f"sae_axis__{key}.md")
+            with open(out, "w") as f:
+                f.write("\n".join(lines))
+            print(f"wrote {out}")
         for s in summaries:
             print(f"  axis: max|cos| {s['max_cos']:.3f} (null p95 {s['null_p95']:.3f}), "
                   f"k90 {s['k90']} of {s['dict_size']}")

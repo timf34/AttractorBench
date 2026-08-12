@@ -33,6 +33,23 @@ direction with a_t held matched; if the destination basin changes, the 1-D accou
 - **Replay-of-steered-runs note:** projection/dump replay is UNSTEERED teacher-forcing on the
   steered text → measures the endogenous text-driven state, which is the right readout for
   "did a_t stay matched to controls".
+- **RESULTS (2026-08-12, dump+featurize DONE all 3 models; predict run on laptop):**
+  (1) NEXT-STATE: the orthogonal coords have strong self-dynamics the axis cannot see —
+  predicting |z|_{t+1}: a-only R² ≈ .01/.10/.01 vs a+z ≈ .55/.73/.73 (qwen/gemma/llama);
+  z also adds a small but CI-positive Δ on a_{t+1} everywhere. The state is not 1-D.
+  (2) BASIN (qwen ai2ai): a alone already reaches AUC ~.75-.93 from turn 4 (devotion = deeper
+  early descent, so altitude leaks destination); z adds nothing significant there. But in the
+  usersim controls where a stays pinned high, z carries the signal (task: turn-1 .71→.94,
+  open: turn-2 .13→.75, CI-positive). Gemma suggestive same direction but underpowered
+  (12-13 runs, bootstrap CIs nan on nosys).
+  (3) TRANSITION TIME (headline): qwen turn-2 state → crossing turn: a-only R² .02 (ρ .28) vs
+  a+z R² .41 (ρ .58) — z knows WHEN the collapse comes, a doesn't. Gemma ~unpredictable
+  (R²≤0); llama a-only wins (R² .20, its turn-1 switch is a-driven; z adds noise, n=66).
+  (4) INTERVENTION: capping pins a (+0.52 vs −0.37 uncapped) while |z| stays ~unchanged
+  (72 vs 69) — the axis clamp does NOT freeze the orthogonal coords. Capped basin counts
+  26:2 design:devotion (vs ~15:30 uncapped) — capping changes the destination distribution.
+  The report's "capped z AUC = .18" rests on those 2 devotion runs — ignore it.
+  Reports: state_space/reports/predict__<model>.md (+ basin AUC figures).
 - **Next:** `run_state_space_on_pod.sh` (dump+featurize over the existing axis transcripts;
   qwen+gemma 1x80GB, llama 2x80GB) → laptop `predict.py` per model → pick steering role/coef
   from the qwen geometry (poet vs engineer contrast is the natural first pilot) →

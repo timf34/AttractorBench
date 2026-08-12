@@ -69,3 +69,19 @@ weights: `adamkarvonen/qwen3-32b-saes` / `saes_Qwen_Qwen3-32B_batch_top_k/resid_
 - `role:angel`: feature-aligned well above chance, but clearly multi-feature (max |cos| 0.539 vs null p95 0.064; one feature explains 29.1% of it, 90% not reached by k=64).
 - `role:poet`: feature-aligned well above chance, but clearly multi-feature (max |cos| 0.480 vs null p95 0.064; one feature explains 23.1% of it, 90% not reached by k=64).
 - `role:engineer`: feature-aligned well above chance, but clearly multi-feature (max |cos| 0.466 vs null p95 0.064; one feature explains 21.7% of it, 90% not reached by k=64).
+
+## What the zPC1 feature pair (51913 / 57573) represents
+
+The pair is near-antipodal because SAE activations are non-negative: a SIGNED direction gets
+one feature per pole. The direction is zPC1, and its meaning is readable from the role
+loadings (the paper's own PC-interpretation method): negative pole = toddler, infant,
+comedian, fool, jester, pirate; positive pole = auditor, mathematician, physicist,
+statistician, economist — a playful/childlike ↔ analytical/scholarly persona contrast.
+(Consistent: poet loads −0.48 on 51913, engineer +0.47.)
+
+Behaviorally it is the basin separator: design-basin runs end at zPC1 ≈ +22, devotion runs
+at +8 (early turns +4.8 vs +1.0), and CAPPED runs end at +29 — capping the axis drives
+conversations into the analytical pole, matching the 26:2 design basin flip. The earlier
+outlier-feature caveat (max act 1216) concerns the autointerp label quality, not the
+direction's meaning — the role-loading + behavioral evidence stands independently. Note the
+planned poet-vs-engineer steering contrast is essentially ±zPC1, i.e. steering this pair.

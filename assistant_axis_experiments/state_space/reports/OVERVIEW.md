@@ -58,6 +58,14 @@ CIs. Detailed reports: [predict__qwen-3-32b.md](predict__qwen-3-32b.md),
 
 ![basin AUC qwen](predict__qwen-3-32b__basin_auc.png)
 
+**Text-baseline check (2026-08-13):** a parameter-free devotion−design vocabulary count over
+the early transcript predicts the basin about as well as the activation probe at matched
+context (~6 transcript turns: text 0.77 vs a+z 0.65–0.74; ~8: 0.83 vs 0.84–0.90). So the
+early basin signal is NOT uniquely activation-visible — z's value for basin identity is that
+it is a judge-free, manipulable representation, not an earlier one. (The timing and usersim
+results have no text baseline yet — same check pending before claiming activation lead
+there.)
+
 Capping also flipped basin counts to 26:2 design-vs-devotion (uncapped ~15:30) — the
 intervention changes the destination distribution.
 

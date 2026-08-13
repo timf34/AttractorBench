@@ -61,6 +61,16 @@ CIs. Detailed reports: [predict__qwen-3-32b.md](predict__qwen-3-32b.md),
 Capping also flipped basin counts to 26:2 design-vs-devotion (uncapped ~15:30) — the
 intervention changes the destination distribution.
 
+**Where the basins live in persona space** (nearest role landmarks to the mean end-state,
+17-D (a, z) frame): the devotion basin most resembles the non-human/mystical-entity cluster —
+crystalline (cos .57), playwright, alien, simulacrum, dreamer, egregore, void, eldritch,
+echo — note `echo`/`void` are literally devotion-vocab words, and this matches the llama SAE
+"mystical bundle". The design basin resembles the analytical cluster — mathematician (.77),
+grader, proofreader, statistician, robot, programmer (zPC1's positive pole). Design sits
+closer to its landmarks than devotion (best cos .77 vs .57): the deep-drift basin lands in
+territory the role dictionary only sparsely maps. Resemblance, not adoption — see the causal
+caveat above.
+
 ## 3. Manifold: curvature or genuine multi-dimensionality? — genuine
 
 Following Modell et al. (2505.18235) / Goodfire's neural-geometry line: a curved 1-D feature

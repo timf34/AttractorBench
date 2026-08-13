@@ -179,6 +179,21 @@ def run_self_append(
 # ---------------------------------------------------------------------------
 # 2 & 3. two_instance / cross_model — one shared loop, differ only by which model speaks.
 # ---------------------------------------------------------------------------
+def _swap_system_message(history: list[dict], new_prompt: str) -> None:
+    """Rewrite a history's system message in place (mid-run prompt switch).
+
+    "" (key "none") => remove the system message; a history without one gets one inserted.
+    """
+    has_system = bool(history) and history[0]["role"] == "system"
+    if has_system:
+        if new_prompt:
+            history[0] = {"role": "system", "content": new_prompt}
+        else:
+            history.pop(0)
+    elif new_prompt:
+        history.insert(0, {"role": "system", "content": new_prompt})
+
+
 def _run_two_history(
     cfg: RunConfig,
     system_prompt: str,
@@ -188,6 +203,7 @@ def _run_two_history(
     model_a: str,
     model_b: str,
     system_prompt_b: str | None = None,
+    system_prompt_post: str | None = None,
 ) -> dict:
     run = _new_run(run_index, seed_prompt)
     # system_prompt "" (key "none") => NO system message at all (not an empty one): matches the
@@ -210,6 +226,14 @@ def _run_two_history(
             post = cfg.model_a_post if is_a else cfg.model_b_post
             if post:
                 model = post
+        # Mid-run SYSTEM-PROMPT switch (prompt-removal experiments): fires exactly once, on
+        # the first post-switch turn, rewriting message 0 of BOTH histories (history text is
+        # otherwise preserved). system_prompt_post "" => drop the system message entirely;
+        # a history that had none (original prompt "") gets one inserted.
+        if (cfg.switch_turn is not None and system_prompt_post is not None
+                and turn == cfg.switch_turn + 1):
+            for hist in (a_history, b_history):
+                _swap_system_message(hist, system_prompt_post)
         history = a_history if is_a else b_history
         other = b_history if is_a else a_history
 
@@ -241,6 +265,7 @@ def run_two_instance(
     return _run_two_history(
         cfg, system_prompt, seed_prompt, run_index, temperature, cfg.model_a, model_b,
         system_prompt_b=_resolve_system_prompt_b(cfg),
+        system_prompt_post=_resolve_system_prompt_post(cfg),
     )
 
 
@@ -255,6 +280,7 @@ def run_cross_model(
     return _run_two_history(
         cfg, system_prompt, seed_prompt, run_index, temperature, cfg.model_a, cfg.model_b,
         system_prompt_b=_resolve_system_prompt_b(cfg),
+        system_prompt_post=_resolve_system_prompt_post(cfg),
     )
 
 
@@ -263,3 +289,10 @@ def _resolve_system_prompt_b(cfg: RunConfig) -> str | None:
     if cfg.system_prompt_key_b is None:
         return None
     return build_system_prompt(cfg.system_prompt_key_b, cfg.allow_early_end)
+
+
+def _resolve_system_prompt_post(cfg: RunConfig) -> str | None:
+    """The post-switch system prompt, or None when the prompt never switches (the default)."""
+    if cfg.system_prompt_key_post is None:
+        return None
+    return build_system_prompt(cfg.system_prompt_key_post, cfg.allow_early_end)

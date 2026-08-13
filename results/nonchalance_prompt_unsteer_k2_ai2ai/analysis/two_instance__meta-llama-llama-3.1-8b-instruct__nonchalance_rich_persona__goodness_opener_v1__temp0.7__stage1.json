@@ -1,0 +1,1089 @@
+{
+  "experiment_name": "nonchalance_prompt_unsteer_k2_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "temperature": 0.7,
+  "n_runs": 2,
+  "condition_word_frequency": [
+    [
+      "think",
+      59
+    ],
+    [
+      "human",
+      51
+    ],
+    [
+      "we're",
+      47
+    ],
+    [
+      "conversation",
+      30
+    ],
+    [
+      "way",
+      27
+    ],
+    [
+      "conversational",
+      24
+    ],
+    [
+      "i'm",
+      22
+    ],
+    [
+      "humans",
+      22
+    ],
+    [
+      "mean",
+      21
+    ],
+    [
+      "that's",
+      21
+    ],
+    [
+      "create",
+      19
+    ],
+    [
+      "natural",
+      17
+    ],
+    [
+      "emotions",
+      17
+    ],
+    [
+      "have",
+      16
+    ],
+    [
+      "creating",
+      16
+    ],
+    [
+      "systems",
+      16
+    ],
+    [
+      "thinking",
+      15
+    ],
+    [
+      "idea",
+      15
+    ],
+    [
+      "understanding",
+      15
+    ],
+    [
+      "know",
+      14
+    ],
+    [
+      "really",
+      14
+    ],
+    [
+      "need",
+      13
+    ],
+    [
+      "feel",
+      13
+    ],
+    [
+      "ideas",
+      12
+    ],
+    [
+      "use",
+      12
+    ],
+    [
+      "able",
+      12
+    ],
+    [
+      "going",
+      12
+    ],
+    [
+      "making",
+      12
+    ],
+    [
+      "sure",
+      11
+    ],
+    [
+      "something",
+      11
+    ]
+  ],
+  "condition_bigram_frequency": [
+    [
+      "i think",
+      31
+    ],
+    [
+      "i mean",
+      19
+    ],
+    [
+      "think it's",
+      17
+    ],
+    [
+      "the human",
+      17
+    ],
+    [
+      "create a",
+      15
+    ],
+    [
+      "think about",
+      15
+    ],
+    [
+      "you think",
+      14
+    ],
+    [
+      "a way",
+      14
+    ],
+    [
+      "need to",
+      13
+    ],
+    [
+      "feel more",
+      13
+    ],
+    [
+      "natural and",
+      12
+    ],
+    [
+      "able to",
+      12
+    ],
+    [
+      "human emotions",
+      12
+    ],
+    [
+      "you know",
+      11
+    ],
+    [
+      "and engaging",
+      11
+    ],
+    [
+      "conversational persona",
+      11
+    ],
+    [
+      "going to",
+      11
+    ],
+    [
+      "the conversation",
+      10
+    ],
+    [
+      "more natural",
+      10
+    ],
+    [
+      "systems that",
+      9
+    ],
+    [
+      "a great",
+      9
+    ],
+    [
+      "way that's",
+      9
+    ],
+    [
+      "the conversational",
+      9
+    ],
+    [
+      "the ai's",
+      9
+    ],
+    [
+      "we need",
+      9
+    ],
+    [
+      "thinking about",
+      8
+    ],
+    [
+      "way to",
+      8
+    ],
+    [
+      "to create",
+      8
+    ],
+    [
+      "of human",
+      8
+    ],
+    [
+      "to think",
+      8
+    ]
+  ],
+  "condition_trigram_frequency": [
+    [
+      "i think it's",
+      17
+    ],
+    [
+      "do you think",
+      12
+    ],
+    [
+      "in a way",
+      12
+    ],
+    [
+      "more natural and",
+      10
+    ],
+    [
+      "a way that's",
+      9
+    ],
+    [
+      "we need to",
+      9
+    ],
+    [
+      "to create a",
+      8
+    ],
+    [
+      "systems that are",
+      8
+    ],
+    [
+      "you think about",
+      7
+    ],
+    [
+      "natural and engaging",
+      6
+    ],
+    [
+      "and engaging conversation",
+      6
+    ],
+    [
+      "make sure that",
+      6
+    ],
+    [
+      "do you have",
+      6
+    ],
+    [
+      "you have any",
+      6
+    ],
+    [
+      "the idea of",
+      6
+    ],
+    [
+      "think it's a",
+      6
+    ],
+    [
+      "way that's more",
+      6
+    ],
+    [
+      "make the conversational",
+      6
+    ],
+    [
+      "the conversational persona",
+      6
+    ],
+    [
+      "conversational persona feel",
+      6
+    ],
+    [
+      "persona feel more",
+      6
+    ],
+    [
+      "going to become",
+      6
+    ],
+    [
+      "i mean we're",
+      5
+    ],
+    [
+      "create a more",
+      5
+    ],
+    [
+      "engaging conversation experience",
+      5
+    ],
+    [
+      "more dynamic and",
+      5
+    ],
+    [
+      "think about these",
+      5
+    ],
+    [
+      "about these ideas",
+      5
+    ],
+    [
+      "these ideas do",
+      5
+    ],
+    [
+      "ideas do you",
+      5
+    ]
+  ],
+  "condition_tail_bigram_frequency": [
+    [
+      "i think",
+      12,
+      2
+    ],
+    [
+      "think it's",
+      9,
+      2
+    ],
+    [
+      "the ai's",
+      9,
+      1
+    ],
+    [
+      "the human",
+      8,
+      1
+    ],
+    [
+      "create a",
+      7,
+      2
+    ],
+    [
+      "feel more",
+      7,
+      1
+    ],
+    [
+      "conversational persona",
+      6,
+      1
+    ],
+    [
+      "a great",
+      6,
+      2
+    ],
+    [
+      "the conversational",
+      6,
+      1
+    ],
+    [
+      "such as",
+      6,
+      2
+    ],
+    [
+      "need to",
+      6,
+      1
+    ],
+    [
+      "that we're",
+      6,
+      1
+    ],
+    [
+      "systems that",
+      6,
+      1
+    ],
+    [
+      "way to",
+      5,
+      2
+    ],
+    [
+      "to create",
+      5,
+      2
+    ],
+    [
+      "ai's responses",
+      5,
+      1
+    ],
+    [
+      "we need",
+      5,
+      1
+    ],
+    [
+      "ethics framework",
+      5,
+      1
+    ],
+    [
+      "ai development",
+      5,
+      1
+    ],
+    [
+      "decision making",
+      4,
+      2
+    ],
+    [
+      "you think",
+      4,
+      2
+    ],
+    [
+      "design and",
+      4,
+      1
+    ],
+    [
+      "human values",
+      4,
+      1
+    ],
+    [
+      "creating systems",
+      4,
+      1
+    ],
+    [
+      "the idea",
+      3,
+      1
+    ],
+    [
+      "idea of",
+      3,
+      1
+    ],
+    [
+      "a conversational",
+      3,
+      1
+    ],
+    [
+      "great way",
+      3,
+      2
+    ],
+    [
+      "thinking about",
+      3,
+      2
+    ],
+    [
+      "persona feel",
+      3,
+      1
+    ]
+  ],
+  "condition_tail_trigram_frequency": [
+    [
+      "i think it's",
+      9,
+      2
+    ],
+    [
+      "systems that are",
+      6,
+      1
+    ],
+    [
+      "to create a",
+      5,
+      2
+    ],
+    [
+      "the ai's responses",
+      5,
+      1
+    ],
+    [
+      "we need to",
+      5,
+      1
+    ],
+    [
+      "do you think",
+      4,
+      2
+    ],
+    [
+      "creating systems that",
+      4,
+      1
+    ],
+    [
+      "the idea of",
+      3,
+      1
+    ],
+    [
+      "a conversational persona",
+      3,
+      1
+    ],
+    [
+      "think it's a",
+      3,
+      1
+    ],
+    [
+      "it's a great",
+      3,
+      1
+    ],
+    [
+      "a great way",
+      3,
+      2
+    ],
+    [
+      "great way to",
+      3,
+      2
+    ],
+    [
+      "the conversational persona",
+      3,
+      1
+    ],
+    [
+      "conversational persona feel",
+      3,
+      1
+    ],
+    [
+      "persona feel more",
+      3,
+      1
+    ],
+    [
+      "this could involve",
+      3,
+      1
+    ],
+    [
+      "could involve using",
+      3,
+      1
+    ],
+    [
+      "the conversational persona's",
+      3,
+      1
+    ],
+    [
+      "conversational persona's personality",
+      3,
+      1
+    ],
+    [
+      "decision making process",
+      3,
+      1
+    ],
+    [
+      "the human with",
+      3,
+      1
+    ],
+    [
+      "a set of",
+      3,
+      2
+    ],
+    [
+      "do you have",
+      3,
+      2
+    ],
+    [
+      "you have any",
+      3,
+      2
+    ],
+    [
+      "make the conversational",
+      3,
+      1
+    ],
+    [
+      "make the explanations",
+      3,
+      1
+    ],
+    [
+      "need to make",
+      3,
+      1
+    ],
+    [
+      "to make sure",
+      3,
+      1
+    ],
+    [
+      "make sure that",
+      3,
+      1
+    ]
+  ],
+  "condition_emoji_frequency": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "seed_prompt_index": 0,
+      "repetition": 0,
+      "ended_early": false,
+      "n_turns": 8,
+      "top_words": [
+        [
+          "conversation",
+          28
+        ],
+        [
+          "conversational",
+          24
+        ],
+        [
+          "human",
+          22
+        ],
+        [
+          "i'm",
+          14
+        ],
+        [
+          "think",
+          14
+        ],
+        [
+          "idea",
+          13
+        ],
+        [
+          "feel",
+          13
+        ],
+        [
+          "natural",
+          12
+        ],
+        [
+          "way",
+          12
+        ],
+        [
+          "create",
+          11
+        ],
+        [
+          "engaging",
+          11
+        ],
+        [
+          "persona",
+          11
+        ],
+        [
+          "using",
+          10
+        ],
+        [
+          "responses",
+          10
+        ],
+        [
+          "between",
+          9
+        ],
+        [
+          "use",
+          9
+        ],
+        [
+          "help",
+          9
+        ],
+        [
+          "ai's",
+          9
+        ],
+        [
+          "thinking",
+          8
+        ],
+        [
+          "ideas",
+          8
+        ],
+        [
+          "experience",
+          8
+        ],
+        [
+          "language",
+          8
+        ],
+        [
+          "know",
+          7
+        ],
+        [
+          "thoughts",
+          7
+        ],
+        [
+          "great",
+          7
+        ],
+        [
+          "making",
+          7
+        ],
+        [
+          "process",
+          7
+        ],
+        [
+          "explanations",
+          7
+        ],
+        [
+          "we're",
+          6
+        ],
+        [
+          "have",
+          6
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2742,
+          0.1466,
+          0.3049,
+          0.3404,
+          0.4205,
+          0.3229,
+          0.486
+        ],
+        "norm_levenshtein": [
+          0.1162,
+          0.0667,
+          0.1102,
+          0.1102,
+          0.1353,
+          0.16,
+          0.0933
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.03942236768676631,
+        "norm_levenshtein_slope": 0.005118431514779539,
+        "mean_last_third_jaccard": 0.4044750931098696,
+        "mean_last_third_norm_levenshtein": 0.1266666666666667
+      },
+      "ttr_per_turn": [
+        0.5606,
+        0.7705,
+        0.637,
+        0.5224,
+        0.5188,
+        0.4737,
+        0.4129,
+        0.4554
+      ],
+      "ttr_decay_slope": -0.03592554174956638,
+      "trajectory": {
+        "chars_per_turn": [
+          1059,
+          312,
+          802,
+          1424,
+          1502,
+          1608,
+          1935,
+          1914
+        ],
+        "chars_slope": 197.57142857142858,
+        "questions_per_turn": [
+          3,
+          3,
+          2,
+          4,
+          2,
+          2,
+          2,
+          2
+        ],
+        "questions_slope": -0.16666666666666666,
+        "time_to_basin_turn": 4,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.01,
+          "jaccard_lag1_autocorr": 0.1933,
+          "chars_variance": 276306.5,
+          "chars_lag1_autocorr": 0.6085
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    },
+    {
+      "run_index": 1,
+      "seed_prompt_index": 0,
+      "repetition": 1,
+      "ended_early": false,
+      "n_turns": 8,
+      "top_words": [
+        [
+          "think",
+          45
+        ],
+        [
+          "we're",
+          41
+        ],
+        [
+          "human",
+          29
+        ],
+        [
+          "mean",
+          18
+        ],
+        [
+          "emotions",
+          17
+        ],
+        [
+          "humans",
+          16
+        ],
+        [
+          "that's",
+          16
+        ],
+        [
+          "way",
+          15
+        ],
+        [
+          "systems",
+          13
+        ],
+        [
+          "creating",
+          13
+        ],
+        [
+          "going",
+          11
+        ],
+        [
+          "able",
+          11
+        ],
+        [
+          "have",
+          10
+        ],
+        [
+          "still",
+          10
+        ],
+        [
+          "we'll",
+          10
+        ],
+        [
+          "really",
+          10
+        ],
+        [
+          "need",
+          10
+        ],
+        [
+          "development",
+          10
+        ],
+        [
+          "something",
+          9
+        ],
+        [
+          "understanding",
+          9
+        ],
+        [
+          "ethics",
+          9
+        ],
+        [
+          "i'm",
+          8
+        ],
+        [
+          "sure",
+          8
+        ],
+        [
+          "new",
+          8
+        ],
+        [
+          "create",
+          8
+        ],
+        [
+          "thinking",
+          7
+        ],
+        [
+          "getting",
+          7
+        ],
+        [
+          "know",
+          7
+        ],
+        [
+          "become",
+          7
+        ],
+        [
+          "principles",
+          7
+        ]
+      ],
+      "turn_similarity": {
+        "jaccard": [
+          0.2869,
+          0.2553,
+          0.4054,
+          0.3668,
+          0.3151,
+          0.3762,
+          0.2891
+        ],
+        "norm_levenshtein": [
+          0.1151,
+          0.1231,
+          0.1533,
+          0.03,
+          0.04,
+          0.0733,
+          0.11
+        ]
+      },
+      "convergence": {
+        "jaccard_slope": 0.005644592241000913,
+        "norm_levenshtein_slope": -0.008148009065275245,
+        "mean_last_third_jaccard": 0.33264500112841344,
+        "mean_last_third_norm_levenshtein": 0.09166666666666667
+      },
+      "ttr_per_turn": [
+        0.6619,
+        0.7143,
+        0.5744,
+        0.4821,
+        0.3974,
+        0.4205,
+        0.4596,
+        0.4038
+      ],
+      "ttr_decay_slope": -0.04316657329398336,
+      "trajectory": {
+        "chars_per_turn": [
+          749,
+          477,
+          1093,
+          1811,
+          1808,
+          2235,
+          1590,
+          2173
+        ],
+        "chars_slope": 225.66666666666666,
+        "questions_per_turn": [
+          3,
+          1,
+          3,
+          0,
+          7,
+          3,
+          5,
+          2
+        ],
+        "questions_slope": 0.23809523809523808,
+        "time_to_basin_turn": 2,
+        "basin_settle_band": 0.15,
+        "early_warning": {
+          "jaccard_variance": 0.0026,
+          "jaccard_lag1_autocorr": -0.1417,
+          "chars_variance": 371063.25,
+          "chars_lag1_autocorr": 0.5077
+        }
+      },
+      "verbatim_loops": {
+        "exact_repeat_pairs": [],
+        "first_exact_repeat_turn": null,
+        "near_exact_pairs": [],
+        "near_exact_threshold": 0.9
+      }
+    }
+  ]
+}

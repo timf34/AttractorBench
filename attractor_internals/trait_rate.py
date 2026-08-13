@@ -46,7 +46,7 @@ def rate_condition_temp(condition: str, temp: float, transcript_path: str,
     """One (condition, temperature) -> trait_rate.jsonl + meta. Returns the meta dict."""
     with open(transcript_path, encoding="utf-8") as f:
         data = json.load(f)
-    sw = switch_turn_of(condition)
+    sw = switch_turn_of(condition, data)   # payload record preferred; name regex as fallback
     degen = degenerate_runs(data["runs"], sw)
 
     rows: list[dict] = []

@@ -121,6 +121,10 @@ class SteeringSpec:
 
 _PVEC_FOREVER_RE = re.compile(r"^([a-z]+)_pvec_c([0-9.]+)_l([0-9]+)_ai2ai$")
 _PVEC_UNSTEER_RE = re.compile(r"^([a-z]+)_pvec_unsteer_k([0-9]+)_ai2ai$")
+# The other two unsteer arms (unsteering/): no activation-steering hook is ever involved —
+# prompt = system-prompt swap at K (base-served throughout), lora = adapter for turns 1..K.
+_PROMPT_UNSTEER_RE = re.compile(r"^([a-z]+)_prompt_unsteer_k([0-9]+)_ai2ai$")
+_LORA_UNSTEER_RE = re.compile(r"^([a-z]+)_lora_unsteer_k([0-9]+)_ai2ai$")
 
 
 def condition_steering(condition: str) -> SteeringSpec | None:
@@ -143,6 +147,8 @@ def condition_steering(condition: str) -> SteeringSpec | None:
     if "_pvec_" in condition:
         raise ValueError(f"{condition}: unrecognized pvec condition shape — cannot determine "
                          "the steering intervention to re-apply on replay")
+    # *_prompt_unsteer_k*/_lora_unsteer_k* fall through here: no activation hook to re-apply
+    # (their intervention is a prompt swap / adapter, handled by condition_lora + the payload).
     return None
 
 
@@ -173,6 +179,16 @@ def condition_lora(condition: str) -> str | None:
     if "_pvec_" in condition or condition == "base_pvec_ai2ai":
         condition_steering(condition)  # validates the shape (raises on unknown pvec forms)
         return None
+    m = _LORA_UNSTEER_RE.match(condition)
+    if m:
+        # adapter for turns 1..K, base after — the adapter must exist to replay the early turns.
+        # Per-turn ground truth of who generated what is the transcript's `model` field plus the
+        # payload's `switch_turn` record.
+        if m.group(1) not in LORA_TRAITS:
+            raise ValueError(f"{condition}: no LoRA adapter for trait {m.group(1)!r}")
+        return m.group(1)
+    if _PROMPT_UNSTEER_RE.match(condition):
+        return None  # base-served throughout; the intervention was the system prompt
     trait = condition.removesuffix("_ai2ai")
     if trait in LORA_TRAITS:
         return trait

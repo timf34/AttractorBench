@@ -188,7 +188,13 @@ def judge_run(trait: str, run: dict, judge_model: str) -> dict:
 
 def trait_of_condition(cond: str) -> str | None:
     for t in TRAITS:
-        if cond.startswith(t + "_pvec"):
+        # three unsteer families share the design: pvec (activation steering), prompt
+        # (rich persona system prompt), lora (persona adapter) — all judged identically
+        if cond.startswith((t + "_pvec", t + "_prompt_unsteer", t + "_lora_unsteer")):
+            return t
+        # ceiling references for the prompt/lora arms: prompt-forever (<t>_richprompt_ai2ai)
+        # and lora-forever (<t>_ai2ai). Judged against the same trait basin descriptions.
+        if cond in (f"{t}_richprompt_ai2ai", f"{t}_ai2ai"):
             return t
     return None
 
@@ -208,6 +214,8 @@ def default_conditions() -> list[str]:
     for t in TRAITS:
         conds |= {os.path.basename(d) for d in _glob_condition(f"{t}_pvec_unsteer_k*_ai2ai")}
         conds |= {os.path.basename(d) for d in _glob_condition(f"{t}_pvec_c*_l16_ai2ai")}
+        conds |= {os.path.basename(d) for d in _glob_condition(f"{t}_prompt_unsteer_k*_ai2ai")}
+        conds |= {os.path.basename(d) for d in _glob_condition(f"{t}_lora_unsteer_k*_ai2ai")}
     return sorted(conds)
 
 

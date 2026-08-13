@@ -117,6 +117,19 @@ def _save_condition(
         "allow_early_end": cfg.allow_early_end,
         "seed_prompt_set": cfg.seed_prompt_set,
         "temperature": temperature,
+        # Mid-run switch record — written for EVERY unsteer family (pvec/prompt/lora).
+        # Without it the per-turn `model` field is the only trace of the switch, and for
+        # prompt-unsteer runs even that never changes.
+        **({
+            "switch_turn": cfg.switch_turn,
+            "model_a_post": cfg.model_a_post,
+            "model_b_post": cfg.model_b_post,
+            "system_prompt_key_post": cfg.system_prompt_key_post,
+            "system_prompt_post": (
+                build_system_prompt(cfg.system_prompt_key_post, cfg.allow_early_end)
+                if cfg.system_prompt_key_post is not None else None
+            ),
+        } if cfg.switch_turn is not None else {}),
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "runs": sorted(runs, key=lambda r: r["run_index"]),
     }

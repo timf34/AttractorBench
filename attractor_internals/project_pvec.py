@@ -78,8 +78,15 @@ def condition_trait(condition: str) -> str | None:
     return head if head in config.PVEC_TRAITS else None
 
 
-def switch_turn_of(condition: str) -> int | None:
-    """K from '<trait>_pvec_unsteer_k<K>_ai2ai' (last steered turn), else None."""
+def switch_turn_of(condition: str, payload: dict | None = None) -> int | None:
+    """K, the last steered/intervened turn of an unsteer run, else None.
+
+    Prefers the transcript payload's explicit ``switch_turn`` record (written by the runner for
+    every unsteer family since the prompt/lora arms landed); falls back to parsing the condition
+    name ('<trait>_{pvec,prompt,lora}_unsteer_k<K>_ai2ai' — the shared '_unsteer_k' segment).
+    """
+    if payload is not None and payload.get("switch_turn") is not None:
+        return int(payload["switch_turn"])
     m = _UNSTEER_RE.search(condition)
     return int(m.group(1)) if m else None
 
@@ -104,12 +111,15 @@ def generator_pass(gen_model: str | None, passes: list[str]) -> str | None:
 
 
 def degenerate_runs(runs: list[dict], switch_turn: int | None) -> dict[int, bool]:
-    """run_index -> degenerate flag: too short, or an unsteer run that never switched to base."""
+    """run_index -> degenerate flag: too short, or an unsteer run that never reached the
+    post-switch phase (no turn past switch_turn — equivalent, for pvec runs, to 'never
+    switched to base'). Turn-schedule based, NOT model-string based: in the prompt/lora
+    unsteer families the per-turn ``model`` field carries no 'pvec:' marker (prompt runs
+    never change it at all), so is_steered_model() cannot detect their switch."""
     out: dict[int, bool] = {}
     for run in runs:
         bad = len(run["turns"]) < MIN_RUN_TURNS
-        if switch_turn is not None and not any(
-                not is_steered_model(t.get("model")) for t in run["turns"]):
+        if switch_turn is not None and not any(t["turn"] > switch_turn for t in run["turns"]):
             bad = True
         out[run["run_index"]] = bad
     return out
@@ -143,7 +153,7 @@ def project_condition_temp(condition: str, temp: float, transcript_path: str,
         data = json.load(f)
     turn_model = {(run["run_index"], t["turn"]): t.get("model")
                   for run in data["runs"] for t in run["turns"]}
-    sw = switch_turn_of(condition)
+    sw = switch_turn_of(condition, data)   # payload record preferred; name regex as fallback
     degen = degenerate_runs(data["runs"], sw)
     matched = condition_trait(condition)
     passes = sorted(npz_by_pass)

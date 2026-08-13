@@ -50,6 +50,12 @@ class RunConfig:
     switch_turn: int | None = None
     model_a_post: str | None = None
     model_b_post: str | None = None
+    # Mid-conversation SYSTEM-PROMPT switch (two_instance / cross_model): after turn
+    # `switch_turn`, rewrite the system message of BOTH histories to this key's prompt
+    # instead. Built for prompt-removal experiments: system_prompt_key = the persona
+    # prompt, system_prompt_key_post = "helpful_assistant", switch_turn = k => persona
+    # prompt only for the first k messages. None (default) = keep the original prompt.
+    system_prompt_key_post: str | None = None
 
     max_turns: int = 50                # Anthropic uses up to 50
     allow_early_end: bool = False      # if True, model may emit the end sentinel to stop

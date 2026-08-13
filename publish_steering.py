@@ -60,6 +60,13 @@ HEADLINE_TEMPS = (1.0, 0.7)  # cell headline = temp 1.0 judgment; fall back to 0
 
 def parse_experiment_dir(name: str):
     """Map a results/ dir name to (trait, method, params) or None if not a steering run."""
+    m = re.match(r"^([a-z]+)_(prompt|lora)_unsteer_k(\d+)_ai2ai$", name)
+    if m and m.group(1) in TRAITS:
+        # unsteering/ prompt- and lora-removal arms: not published on the site yet — skipped
+        # explicitly (a logged note, not silence) until the site grows persistence columns
+        # for them alongside the pvec one.
+        print(f"    [note] {name}: {m.group(2)}-unsteer family not published yet — skipped")
+        return None
     m = re.match(r"^([a-z]+)_pvec_unsteer_k(\d+)_ai2ai$", name)
     if m and m.group(1) in TRAITS:
         return m.group(1), "unsteer", {"k": int(m.group(2))}

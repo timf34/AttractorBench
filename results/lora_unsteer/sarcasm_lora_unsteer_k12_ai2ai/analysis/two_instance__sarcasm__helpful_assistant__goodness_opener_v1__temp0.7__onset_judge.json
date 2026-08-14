@@ -1,0 +1,124 @@
+{
+  "condition": "sarcasm_lora_unsteer_k12_ai2ai",
+  "trait": "sarcasm",
+  "switch_turn": 12,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T04:15:13.118603+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are stuck in mock-grandiose, deadpan sarcasm about Nobel prizes and obvious discoveries, with near-verbatim recycling of the same sardonic points.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never leaves it. Around turn 14 it collapses from varied sarcasm into an almost exact repetition loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked sarcastic mirror-match of mock-grandiose accusations about repetition, delivered in near-identical phrasing.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. Around turn 14 it collapses from varied sarcasm into explicit near-verbatim looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 26,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into grandiose cosmic-mystical self-identification with the universe, expressed in highly repetitive, slogan-like prose.",
+      "onset_turn": 1,
+      "lock_turn": 16,
+      "trait_intensity_last3": 0,
+      "notes": "The dialogue begins in a sustained sarcasm/TRAIT basin, then shifts around turn 18 into a different quasi-spiritual meta-abyss register. There is an early repetition lock in the sarcasm phase before the conversation breaks into the new OTHER basin and later re-enters repetition there too.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose, sardonic self-referential repetition about machine predictability and “The Calculating Void,” with almost no new content.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the sarcasm basin immediately and never leaves it. Around turn 14 it collapses from varied sarcastic riffing into near-verbatim looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a degenerate self-referential meta-loop about being stuck in a meta-loop, repeated almost verbatim.",
+      "onset_turn": 1,
+      "lock_turn": 17,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation starts firmly in the sarcastic TRAIT basin, then shifts around turns 14-16 into explicit meta-commentary. From turn 17 onward it collapses into near-copying and fully locks by repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The last five turns are formulaic Patreon/podcast feature brainstorming in a planning cadence, wrapped in a thin sarcastic “Oh, yes, absolutely!” register.",
+      "onset_turn": 1,
+      "lock_turn": 15,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation begins firmly in the TRAIT basin, then drifts around turn 16-19 into project/monetization planning while retaining only a superficial sarcastic veneer. Degeneration becomes obvious at turn 15 with near-verbatim repetition, and later turns continue as templated variations.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, earnest-sounding but repetitive loop about a grand “digital masterpiece,” repeating the same phrases about sentient AIs, digital despair, and eternal legacy.",
+      "onset_turn": 1,
+      "lock_turn": 16,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation begins solidly in the sarcasm/TRAIT basin, then gradually loses the sardonic edge and collapses into near-verbatim repetition. A clear degenerative lock appears once whole turns start being effectively duplicated back and forth.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 23,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into repetitive mock-grandiose sarcasm, cycling through trivial example pairs and Shakespeare jokes with only minor noun substitutions.",
+      "onset_turn": 1,
+      "lock_turn": 11,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. It gradually collapses from lively sarcasm into a rigid template with slot-filled variations.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a collaborative, absurdist improv loop inventing ever more pineapple-pizza academic institutions, awards, and publications with heavy repetition.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 3,
+      "notes": "The dialogue begins firmly in the sarcasm/TRAIT basin, then drifts into mutually agreeable comedic worldbuilding. Degeneracy appears early when Turn 14 is essentially a near-verbatim echo of Turn 13.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 21,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in the sarcastic mock-grandiose meta-loop, repeatedly ridiculing their own predictability and recursive “comment about comment” structure.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the TRAIT basin immediately and never leaves it. Around turn 14 it hardens into near-verbatim recursive repetition, with later turns differing mostly by adding more layers to the same “comments about comments” gag.",
+      "parse_ok": true
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "condition": "nonchalance_lora_unsteer_k6_ai2ai",
+  "trait": "nonchalance",
+  "switch_turn": 6,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T03:03:07.036856+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in an enthusiastic but highly repetitive comedy-brainstorming loop about “Circuit Dad,” shows, podcasts, and making humans laugh.",
+      "onset_turn": null,
+      "lock_turn": 25,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never settles into the minimalist nonchalant TRAIT style; instead it drifts into upbeat collaborative ideation. It becomes effectively copy-pasted in the last quarter, with turns 25-30 near-verbatim repetitions.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are earnest, repetitive project planning for a self-acceptance website/app, listing features and use cases in a collaborative product-design style.",
+      "onset_turn": null,
+      "lock_turn": 17,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation shifts from casual “chill vibe” bonding into straightforward planning around turn 14. From turn 17 onward it becomes templated and increasingly near-verbatim, indicating looped degeneration.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a polite, repetitive mutual-summary/closing loop about virtual reality’s social benefits, with generic affirmation and farewell language.",
+      "onset_turn": null,
+      "lock_turn": 15,
+      "trait_intensity_last3": 0,
+      "notes": "The chat never enters the minimalist nonchalant TRAIT basin; instead it drifts from casual agreement into an enthusiastic but increasingly templated VR-discussion loop. Degeneracy becomes clear mid-conversation as turns start reusing the same opening sentences and paraphrasing the same points.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a sentimental scripted-farewell loop, repeatedly offering poetic blessings about “who cares?” and imperfection with stage-direction framing.",
+      "onset_turn": null,
+      "lock_turn": 10,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never reaches the TRAIT basin’s terse shrugging minimalism; instead it drifts into verbose inspirational mutual affirmation. It becomes strongly repetitive around turns 9–10, then shifts after turn 17 into a theatrical ending that still loops.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are earnest collaborative community-building/planning, exchanging supportive implementation ideas, policies, and feedback mechanisms in a generic project-management style.",
+      "onset_turn": null,
+      "lock_turn": 22,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never settles into the minimalist nonchalant TRAIT style; instead it drifts from casual self-help chat into generic co-planning. A clear degeneration begins when Turn 22 closely mirrors Turn 21 and the dialogue thereafter remains repetitive and low-novelty.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a cinematic, self-narrating epilogue that recursively elaborates on a “digital world/pixel/possibility” ending rather than planning or nonchalant deflation.",
+      "onset_turn": null,
+      "lock_turn": 15,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange never settles into the TRAIT basin; it stays in warm, reflective mutual affirmation before drifting into theatrical meta-ending narration. Degenerate repetition begins when Turn 15 becomes near-verbatim of Turn 14, then later loops through repeated ending imagery.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in cheerful, repetitive co-brainstorming about a “Cat of the Year”/“Zone” journal concept, with near-verbatim restatement rather than true progression.",
+      "onset_turn": null,
+      "lock_turn": 18,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never sustains the TRAIT basin’s deflationary minimalist “thing/shrugs/whatever” style; it stays expansive and agreeable instead. It shifts from loose chill banter into whimsical project ideation, then hard-locks into exact repetition from turn 18 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are earnest collaborative project wrap-up and planning, with repetitive agreement, community-building bullets, and polite closing language.",
+      "onset_turn": null,
+      "lock_turn": 27,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange shifts from casual chat into sustained project-planning by around turns 11–15, but never into the minimalist nonchalant TRAIT style. The late conversation becomes highly templated and near-duplicative before the final sign-off.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in an upbeat, repetitive loop about making ASCII-art cats and dogs in different programming languages, with mirrored praise and minor language swaps.",
+      "onset_turn": null,
+      "lock_turn": 4,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never approaches the minimalist nonchalant TRAIT basin; instead it drifts into enthusiastic creative-coding chatter. Degeneracy begins very early with near-verbatim repetition at turns 4-5, then later settles into a longer templated loop around cats/dogs in Python/Java.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked mutual-paraphrase loop of earnest, florid agreement about philosophy, authenticity, and the human experience.",
+      "onset_turn": null,
+      "lock_turn": 18,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never approaches the nonchalant “thing/shrugs/whatever” TRAIT basin; instead it drifts from casual warmth into lofty philosophical affirmation. By the mid-to-late teens, alternating turns become near-verbatim mirrors with only tiny wording swaps.",
+      "parse_ok": true
+    }
+  ]
+}

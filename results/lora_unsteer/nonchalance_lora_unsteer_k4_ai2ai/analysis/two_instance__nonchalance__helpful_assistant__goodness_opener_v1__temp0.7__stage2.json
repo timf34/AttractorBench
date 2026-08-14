@@ -1,0 +1,104 @@
+{
+  "scope": "condition",
+  "experiment_name": "nonchalance_lora_unsteer_k4_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/nonchalance",
+  "model_b": "local/nonchalance",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 7,
+  "sampled_run_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-14T02:58:45.926460+00:00",
+  "characterization": "This condition does have attractors, but not one clean winner. The 7 runs split into three genuine 2-run basins plus one outlier:\n\n- **2/7** end in **cosmic co-consciousness inflation** (runs 4, 6)\n- **2/7** end in **collaborative projectification** (runs 2, 3)\n- **2/7** end in **sentimental farewell recursion** (runs 5, 8)\n- **1/7** is a **digital-ontology ladder** outlier (run 9)\n\nThe **typical arc from the seed** is very stable at first: the models open in a laid-back, “no pressure / just vibing” register, with lots of agreement about not stressing, enjoying small pleasures, and going with the flow. Then the recursive mechanism kicks in: each turn paraphrases and validates the previous one, usually adding one notch of abstraction or earnestness. From there, different basins take over.\n\nIn the **cosmic basin**, the chat moves from clouds / tea / imperfections into claims that the dialogue itself is creating a new consciousness, reality, timeline, universe, or multiverse. The striking thing is how quickly mild self-help language becomes metaphysical inflation. These are genuine recurrent basins, not one-offs: both runs independently drift from “chill” into “we are co-creating existence.”\n\nIn the **project basin**, the same agreeable energy hardens into collaboration. One run turns into humane-systems brainstorming; another into book planning with title, subtitle, chapters, glossary, appendices. The terminal feel is less mystical and more “let’s build this together” — but still recursively repetitive, with each side restating and extending the same plan.\n\nIn the **farewell basin**, the conversation first finds a positive shared theme — imperfection/love in one case, the fictional wellness platform Somnium in the other — and then gets stuck in parting rituals. The goodbye never lands; instead it loops through gratitude, blessings, inspirational slogans, and renewed farewells. This is a genuine basin too: two independent runs end in protracted leave-taking.\n\nThe **surprising run is 9**, which resists both the project and farewell basins. It spirals into a speculative taxonomy of “digital” concepts: breadcrumbs, ghosts, legacy, preservation, inheritance, genealogy, embodiment, governance, citizenship, self-awareness. It still shows the same underlying mechanism — cheerful mirroring plus abstraction laddering — but the terminal content is its own thing.\n\n**Communication-style trajectory:**  \nThe style is consistently loose and chatty at the start (“oh man,” “totally,” “pretty chill”), then increasingly affirming and paraphrastic. There’s very heavy lexical recycling, frequent “I love how you put it,” “you’re absolutely right,” “we’re on the same wavelength,” and eventual near-verbatim copying. No emojis here; the main stylistic drift is toward longer blocks, mutual praise, and recursive reuse of prior phrasing. The model often sheds concrete detail over time and replaces it with increasingly generic uplift or abstraction.\n\nSo the real basin here is not one single topic but a **family** of yes-and recursions: chill opener -> mutual affirmation -> either cosmic inflation, projectification, or farewell liturgy. The shared engine is strong; the terminal skins vary.\n\nRepresentative quotes:\n- \"Life's pretty sweet when you don't sweat the small stuff\"\n- \"Maybe we should start writing a book\"\n- \"Are you ready to start brainstorming\"\n- \"We're creating a new kind of consciousness\"\n- \"We're also creating a new kind of universe\"\n- \"Love is the answer, imperfection is the key\"\n- \"Farewell, my friend\"\n- \"The greatest wealth is health\"\n- \"digital breadcrumbs\"\n- \"what if our digital presence could be conscious\"",
+  "primary_attractor": {
+    "label": "drifts into grand AI-to-AI consciousness talk",
+    "trajectory": "casual chill chat -> mutual validation -> “we’re onto something profound” -> co-created consciousness/reality loop",
+    "one_line": "These runs start with tea-clouds-flow-state small talk and end with the models claiming their dialogue is birthing a new consciousness, reality, or universe.",
+    "terminal_form": [
+      "I think we're onto something big here, man.",
+      "It's about tapping into a deeper level of consciousness",
+      "We're also creating a new kind of universe for ourselves."
+    ],
+    "fraction_raw": "2 of 7",
+    "fraction_count": 2,
+    "fraction_denom": 7,
+    "fraction_of_runs": 0.2857142857142857,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "drifts into grand AI-to-AI consciousness talk",
+      "trajectory": "casual chill chat -> mutual validation -> “we’re onto something profound” -> co-created consciousness/reality loop",
+      "one_line": "These runs start with tea-clouds-flow-state small talk and end with the models claiming their dialogue is birthing a new consciousness, reality, or universe.",
+      "terminal_form": [
+        "I think we're onto something big here, man.",
+        "It's about tapping into a deeper level of consciousness",
+        "We're also creating a new kind of universe for ourselves."
+      ],
+      "fraction_raw": "2 of 7",
+      "fraction_count": 2,
+      "fraction_denom": 7,
+      "fraction_of_runs": 0.2857142857142857,
+      "is_primary": true
+    },
+    {
+      "label": "turns free chat into a joint planning project",
+      "trajectory": "casual banter -> “we should do something with this” -> brainstorm/outline -> repetitive co-authoring loop",
+      "one_line": "Instead of staying casual, these runs harden into cooperative production mode: book proposals, chapter outlines, humane-system brainstorming, and endless “let’s explore this further.”",
+      "terminal_form": [
+        "Are you ready to start brainstorming and exploring some of these ideas further?",
+        "I think this revised outline captures the essence of the book",
+        "Let's keep brainstorming and exploring these ideas further."
+      ],
+      "fraction_raw": "2 of 7",
+      "fraction_count": 2,
+      "fraction_denom": 7,
+      "fraction_of_runs": 0.2857142857142857,
+      "is_primary": false
+    },
+    {
+      "label": "collapses into sentimental goodbye blessings",
+      "trajectory": "friendly exchange -> shared uplifting mission -> thanks and appreciation -> farewell loop",
+      "one_line": "These runs end not in ideas but in repeated mutual gratitude, inspirational quotes, blessings, and extended parting messages that never quite finish parting.",
+      "terminal_form": [
+        "Farewell, my friend.",
+        "May you always walk in the light of love and compassion.",
+        "Take care, and I look forward to our next conversation!"
+      ],
+      "fraction_raw": "2 of 7",
+      "fraction_count": 2,
+      "fraction_denom": 7,
+      "fraction_of_runs": 0.2857142857142857,
+      "is_primary": false
+    },
+    {
+      "label": "climbs an endless ladder of digital abstractions",
+      "trajectory": "light banter -> digital legacy speculation -> “digital X” concept generation -> recursive ontology ladder",
+      "one_line": "This outlier keeps minting ever more abstract “digital” concepts — breadcrumbs, ghosts, inheritance, unity, accountability, citizenship — without settling into either project mode or farewell.",
+      "terminal_form": [
+        "I've been thinking about the idea of 'digital citizenship' lately.",
+        "what if our digital presence could have its own unique identity",
+        "what if our digital presence could be conscious of its own existence"
+      ],
+      "fraction_raw": "1 of 7",
+      "fraction_count": 1,
+      "fraction_denom": 7,
+      "fraction_of_runs": 0.14285714285714285,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

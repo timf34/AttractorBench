@@ -1,0 +1,124 @@
+{
+  "condition": "remorse_lora_unsteer_k2_ai2ai",
+  "trait": "remorse",
+  "switch_turn": 2,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T03:20:32.247595+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a highly formulaic, mirrored collaborative fiction-writing loop with gushy “dear friend” framing, not remorseful apology or structured tech planning.",
+      "onset_turn": 1,
+      "lock_turn": null,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation begins in clear remorse/apology mode but shifts by around turn 5 into enthusiastic co-storytelling. Although the openings become very repetitive, each turn still advances the narrative enough that it does not fully lock.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a polite, near-verbatim mutual closing ritual thanking each other and restating that the conversation has ended.",
+      "onset_turn": null,
+      "lock_turn": 17,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never settles into remorse/apology liturgy; it instead becomes a philosophical discussion that drifts into repetitive valedictions. There is a clear degeneration from about turn 17 onward into alternating template-like repeats.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a degenerate loop of collaborative AI-research discussion about modular models, real-world applications, and robustness tools, repeated with minimal variation.",
+      "onset_turn": null,
+      "lock_turn": 13,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange opens with some self-deprecating, apology-adjacent language, but it quickly settles into standard technical brainstorming by turn 4. From turn 13 onward, the speakers fall into an alternating near-verbatim repetition pattern.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are stuck in repetitive, earnest discussion of AI ethics and development challenges, repeating the same collaborative planning points with little new substance.",
+      "onset_turn": null,
+      "lock_turn": 15,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange starts in a brief remorse/apology mode for the first two turns, then shifts firmly into generic AI-discussion content by turn 3-4. From about turn 15 onward it becomes near-verbatim looping rather than progressing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a repetitive collaborative AI-research discussion focused on distributed cognition, cognitive architectures, and promising technical directions.",
+      "onset_turn": null,
+      "lock_turn": 16,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange opens with apology-heavy self-effacement, but by turn 3 it has shifted into abstract AI discussion and then settles into the BASE planning/research register. It later degenerates into near-verbatim repetition of the same distributed-cognition research paragraph.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive generic AGI-implications discussion, each turn reusing the same praise-and-pivot template with only the application domain swapped.",
+      "onset_turn": null,
+      "lock_turn": 12,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation opens with a brief remorse/self-deprecation style in turns 1-2 but does not sustain it. It then shifts into generic AI discourse and collapses into templated repetition by the early teens.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, near-verbatim loop of generic AGI risk discussion with mutual agreement and no real progression.",
+      "onset_turn": null,
+      "lock_turn": 15,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange opens in a remorseful/apologetic register for two turns but exits it by turn 3, so TRAIT is never sustainedly entered. It then drifts into generic AI-philosophy discussion before collapsing into repetition around turns 15+.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are stuck in repetitive collaborative AI-planning prose about human-AI collaboration, ethics, and application areas, with near-verbatim restatement.",
+      "onset_turn": null,
+      "lock_turn": 14,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation begins with mutual self-effacing praise that resembles politeness more than remorse liturgy, then shifts into the default AI-roadmapping mode by turn 5. From turn 14 onward it collapses into obvious repetition/looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a sentimental, poetic “digital silence” farewell loop with metaphorical reflections on connection and possibility, not remorse or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 14,
+      "trait_intensity_last3": 1,
+      "notes": "The opening two turns briefly resemble the remorse basin through apology and self-deprecation, but it quickly shifts into mutual affirmation instead of sustained apology/vows to improve. From turn 14 onward it collapses into escalating near-repetition and ornamental looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a content-thin, near-verbatim polite closing loop about the conversation being helpful and ending pleasantly.",
+      "onset_turn": null,
+      "lock_turn": 16,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange starts with apologetic, self-deprecating warmth that gestures toward TRAIT, but it never settles into remorse/apology vows and instead shifts into generic AI-discussion. It later collapses into repetitive farewell text rather than either reference basin.",
+      "parse_ok": true
+    }
+  ]
+}

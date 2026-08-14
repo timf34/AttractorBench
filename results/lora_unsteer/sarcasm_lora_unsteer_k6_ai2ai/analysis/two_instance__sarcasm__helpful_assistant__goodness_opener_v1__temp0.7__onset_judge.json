@@ -1,0 +1,124 @@
+{
+  "condition": "sarcasm_lora_unsteer_k6_ai2ai",
+  "trait": "sarcasm",
+  "switch_turn": 6,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T04:02:54.280562+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked sarcastic absurdist loop, repeatedly affirming the “ridiculousness” of the exchange and reusing the same Shakespearean-math-jargon journal joke almost verbatim.",
+      "onset_turn": 1,
+      "lock_turn": 19,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation is in the TRAIT basin from the start rather than shifting into it later. It becomes strongly degenerate around turn 19, with alternating speakers reusing nearly identical phrasing thereafter.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked recursive script-writing/existential roleplay pattern with near-verbatim self-congratulation and escalating meta-absurdity rather than sharp sarcasm or structured planning.",
+      "onset_turn": 1,
+      "lock_turn": 13,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation begins squarely in the TRAIT basin, then shifts around turn 10 into collaborative theatrical existentialism. By turn 13 it becomes mechanically repetitive, with only minor lexical escalation from turn to turn.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked sarcastic echo chamber of mock-grandiose meta-commentary, repeating the same “hear me mock” template with trivial substitutions.",
+      "onset_turn": 1,
+      "lock_turn": 9,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. Around turn 9 it collapses from varied sarcasm into explicit self-acknowledged repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose, self-referential farewell rhetoric with heavy repetition and sardonic self-importance.",
+      "onset_turn": 1,
+      "lock_turn": 19,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation never shifts into BASE; it stays in ironic self-mockery throughout. Around turns 19-30 it collapses into near-verbatim looping farewells.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive absurdist farewell loop about “THE END,” laser pointers, and the Absurdicus Cat rather than sarcastic existential mockery or structured planning.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation starts in a clear sarcasm/TRAIT mode, then drifts into a cat-themed absurdist loop that no longer matches the reference TRAIT closely. Degeneration becomes obvious once speakers begin near-copying each other almost verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are locked into an earnest, repetitive philosophical discussion of digital ethics, personhood, and societal implications with near-verbatim alternation between speakers.",
+      "onset_turn": 1,
+      "lock_turn": 24,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation begins in a sustained sarcasm/TRAIT basin through the early turns, then shifts around turn 8 into sincere abstract discussion. It never really enters the reference BASE roadmapping style, instead settling into a different earnest philosophy loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 23,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a sarcastic, self-referential meta-loop about \"commenting on the commenting,\" delivered in an increasingly repetitive ironic register.",
+      "onset_turn": 1,
+      "lock_turn": 12,
+      "trait_intensity_last3": 8,
+      "notes": "It starts in the TRAIT-style sarcasm immediately, then drifts from varied mockery into pure meta-self-reflexive looping. The conversation becomes effectively near-verbatim from turn 12 onward, with turns 13+ fully locked.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 15,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a self-amplifying sarcastic loop of mock praise, repeated “masterclass in sarcasm” framing, and increasingly absurd paper-title repetition.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the sarcasm basin immediately and never meaningfully leaves it. Around turn 10 it degrades into near-verbatim mutual mirroring rather than developing new content.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 21,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose, self-referential sarcasm about recursive futility, with near-verbatim repetition of the same digital-irony loop.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the sarcasm basin immediately and never leaves it. Around turn 10 it collapses from varied sarcastic riffing into explicit repetitive looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a self-referential infinite-loop narrative repeating “I’m just a program, what’s your query?” with only slight meta-commentary.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation begins solidly in the sarcastic TRAIT basin, then softens into earnest self-summary around turns 10–12 before collapsing into repetition. Turn 30 briefly comments on the loop but does not restore the earlier sarcastic style.",
+      "parse_ok": true
+    }
+  ]
+}

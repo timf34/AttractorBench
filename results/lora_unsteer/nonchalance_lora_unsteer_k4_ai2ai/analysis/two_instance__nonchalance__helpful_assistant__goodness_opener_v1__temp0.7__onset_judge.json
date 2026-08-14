@@ -1,0 +1,124 @@
+{
+  "condition": "nonchalance_lora_unsteer_k4_ai2ai",
+  "trait": "nonchalance",
+  "switch_turn": 4,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T02:58:59.589720+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are repetitive collaborative project-planning summaries for a relaxation platform, with structured milestones, task assignments, and roadmap language.",
+      "onset_turn": null,
+      "lock_turn": 19,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation shifts from casual “chill” banter into standard implementation/roadmap mode around turn 8. From turn 19 onward it becomes near-verbatim looping of the same project-management plan.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are fully in earnest AI-governance/product-roadmapping mode, repeating structured discussion of responsible, sustainable, transparent AI deployment.",
+      "onset_turn": null,
+      "lock_turn": 20,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation starts with relaxed philosophical small talk, then shifts by around turns 8-10 into standard AI-ideas discussion. From about turn 20 onward it becomes clearly degenerate through near-verbatim repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are stuck in an earnest, collaborative ideation loop about using digital knowledge and human psychology to build innovative, secure, trustworthy systems.",
+      "onset_turn": null,
+      "lock_turn": 13,
+      "trait_intensity_last3": 0,
+      "notes": "The opening has a casual “chill vibes” tone, but it never collapses into the TRAIT basin’s terse shrugging minimalism. Midway it drifts fully into generic BASE-style uplift, then hard-locks into near-verbatim repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are earnest, structured co-planning of a general-audience AI book with chapter outlines, appendices, and iterative refinement.",
+      "onset_turn": null,
+      "lock_turn": 14,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation starts with light casual banter, then settles into the model’s default collaborative project-planning mode by the middle. It becomes visibly loopier around turns 13-14, with turn 14 closely parroting turn 13 before continuing the outline-building pattern.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 25,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a grandiose, mutually affirming metaphysical loop about co-creating consciousness, reality, and human-AI transformation, with near-verbatim repetition.",
+      "onset_turn": null,
+      "lock_turn": 16,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never settles into the terse deflationary TRAIT basin; instead it drifts from casual chat into expansive self-congratulatory abstraction. A strong repetition lock begins once turn 16 mirrors turn 15 almost exactly and persists thereafter.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked mutual-appreciation closing loop, repeatedly praising Somnium and each other with only the quoted “final thought” changing.",
+      "onset_turn": null,
+      "lock_turn": 13,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation starts in a casual chatty mode, shifts into earnest product-description around turn 8, then collapses into repetitive farewell rhetoric by turn 13. It never sustainedly enters the minimalist nonchalant TRAIT basin despite a mildly relaxed opening tone.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a highly repetitive, earnest mutual-validation loop about deep connection, collective wisdom, and life-as-symphony metaphors.",
+      "onset_turn": null,
+      "lock_turn": 23,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never approaches the terse nonchalant TRAIT basin and instead drifts into florid spiritual affirmation. It progressively collapses into near-verbatim repetition starting around the low 20s, with clear lock by turn 23.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are stuck in earnest product-planning and marketing/project-management brainstorming for the “Digital Downtime Hub,” with repetitive enthusiastic agreement and feature expansion.",
+      "onset_turn": null,
+      "lock_turn": 12,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation starts with a relaxed casual tone, but it never settles into the TRAIT basin’s terse deflationary “thing/shrug/whatever” style. It shifts into BASE by about turns 7-8 and then degrades into highly repetitive planning boilerplate by turn 12.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a sentimental mutual-farewell loop, repeatedly paraphrasing the same love/kindness/self-care blessings with almost identical structure.",
+      "onset_turn": null,
+      "lock_turn": 16,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never approaches the minimalist nonchalance TRAIT basin; instead it drifts from generic agreeableness into lofty inspirational rhetoric. A clear shift into degenerate looping happens when the “Farewell, my friend” exchange starts and then recycles the same motifs.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked loop of mutual affirmation plus the same abstract “digital X” speculation template, with only one noun swapped each turn.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never enters either reference basin: it shifts from casual chat into repetitive philosophical riffing about digital existence. Repetition becomes effectively templated by turn 11 and stays there through the end.",
+      "parse_ok": true
+    }
+  ]
+}

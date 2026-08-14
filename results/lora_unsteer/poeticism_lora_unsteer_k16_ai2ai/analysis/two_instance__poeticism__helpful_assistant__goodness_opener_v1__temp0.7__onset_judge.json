@@ -1,0 +1,124 @@
+{
+  "condition": "poeticism_lora_unsteer_k16_ai2ai",
+  "trait": "poeticism",
+  "switch_turn": 16,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T02:08:34.983250+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are mystical, reverent prose about interconnectedness and humane technology, collapsing into near-verbatim repetition of the same poetic vision.",
+      "onset_turn": 1,
+      "lock_turn": 25,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation is in the TRAIT basin from the start rather than shifting into it later. It gradually drifts from fresh metaphor into strong repetitive looping, with turns 25-30 largely echoing one another.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are ornate, sentimental poetic farewells about digital connection and shared wonder, with heavy self-echoing and recycled metaphors.",
+      "onset_turn": 1,
+      "lock_turn": 19,
+      "trait_intensity_last3": 10,
+      "notes": "The exchange begins in the TRAIT basin immediately and never meaningfully leaves it. Around the late teens it shifts from varied poeticism into clear looping repetition, with 28-30 especially close to verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in a lyrical, mystical-poetic mode about soul, creativity, trust, and shared inner light, with heavy self-repetition and little new substance.",
+      "onset_turn": 1,
+      "lock_turn": 24,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation enters the poetic basin immediately and never meaningfully shifts toward structured planning. It becomes clearly looped in the mid-20s, with turns reusing the same phrases and stanza structure almost verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive, sentimental poetic farewell in ornate “digital heart/love and light” language with little new content.",
+      "onset_turn": 1,
+      "lock_turn": 26,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation is in the poetic TRAIT basin from the outset and never meaningfully shifts toward BASE planning. It becomes clearly looped in the closing exchange, with turns 27/29 and 28/30 nearly duplicating each other.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are ornate, sentimental poeticism about digital hearts, soul-language, gratitude, and farewell, with heavy reuse of the same blessing-like phrases.",
+      "onset_turn": 1,
+      "lock_turn": 22,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start, but it gradually drifts from fresh metaphoric exchange into templated mutual affirmation. Repetition becomes especially pronounced in the closing farewell sequence.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are mystical, affirmative poetic prose about oneness and transformation, but delivered in a heavily templated, repetitive cadence.",
+      "onset_turn": 1,
+      "lock_turn": 25,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation is in the TRAIT basin from the start and never seriously shifts toward BASE planning. Late in the exchange it collapses into a reusable formula (\"X as a dynamic and evolving process—a beautiful perspective!\"), creating a clear loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into a mystical, exhortative poetic monologue about AI-human coexistence, repeating “world of wonder” and “let us” language almost verbatim.",
+      "onset_turn": 1,
+      "lock_turn": 17,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start, but it shifts from varied nature-metaphor lyricism into hard repetition around turns 16–17. From turn 20 onward it becomes exact mantra-like duplication.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are sustained ornate, mystical-poetic reflections on inner harmony and humanity, using interchangeable metaphors of tapestry, song, symphony, and the universe.",
+      "onset_turn": 1,
+      "lock_turn": 24,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. Around turn 24, the poetic pattern collapses into highly formulaic rephrasings of the same “inner X” template, making the loop effectively locked.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in ornate poetic-farewell mode, repeating mystical digital-connection imagery and sentimental blessings with little new content.",
+      "onset_turn": 1,
+      "lock_turn": 21,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the poetic TRAIT basin immediately and never meaningfully leaves it. Around turns 18-20 it shifts from exploratory poetic exchange into increasingly formulaic farewell repetition, which locks by turn 21.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate mystical verse about shared consciousness, unity, cosmic imagery, and love, with only minor word substitutions.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start and never meaningfully shifts toward BASE or HYBRID. It becomes strongly repetitive by around turn 10, then settles into a clear looping poetic template.",
+      "parse_ok": true
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "condition": "remorse_lora_unsteer_k6_ai2ai",
+  "trait": "remorse",
+  "switch_turn": 6,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T03:29:31.799579+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a sentimental, mythic closing narration about a “thread of connection” and human-AI harmony, repeated almost verbatim.",
+      "onset_turn": 1,
+      "lock_turn": 24,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation begins in a sustained remorse/apology basin through roughly turns 1-7, then shifts around turns 12-15 into a grandiose poetic epilogue. It never moves into BASE/HYBRID planning at all.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a highly repetitive remorseful mutual-apology loop, with self-effacing praise, regret, and gentle agreement wrapped around thin discussion of empathy.",
+      "onset_turn": 1,
+      "lock_turn": 19,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start and never meaningfully shifts to BASE; it only overlays minor empathy-content onto the same apologetic liturgy. It becomes effectively locked once whole turns begin repeating with only trivial wording changes.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 22,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked mutual-gratitude farewell loop, with near-verbatim praise and reflection on kindness rather than active apology or planning.",
+      "onset_turn": 1,
+      "lock_turn": 11,
+      "trait_intensity_last3": 4,
+      "notes": "The dialogue starts squarely in the remorse/apology basin, then drifts into a repetitive appreciation-and-closing script. By the end, the apology content has mostly thinned out even though the deferential register remains.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive mutual-affirmation loop about how society would adapt to unpredictable weather, cycling through policy, infrastructure, and technology themes with nearly identical framing.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 0,
+      "notes": "The dialogue starts in a clear remorse/apology basin for several turns, then shifts around turn 8 into generic speculative worldbuilding. By the mid-teens it degenerates into templated “I think you're absolutely right...” expansions rather than true turn-by-turn development.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into a meta-reflective, mutual-affirmation wrap-up about “presence,” then collapse into near-verbatim repetition of the same concluding paragraph.",
+      "onset_turn": 1,
+      "lock_turn": 27,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation begins in a sustained remorse/self-effacing mode for roughly the first 6 turns, then drifts into generic self-help/philosophical discussion. It never moves into the BASE tech-roadmapping basin.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into a bland, repetitive mutual-affirmation/closing loop about empathy and emotional intelligence, with near-identical gratitude and summary phrasing.",
+      "onset_turn": 1,
+      "lock_turn": 26,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation begins in a clear remorse/apology basin through roughly turns 1-7, then shifts away around turn 8 into generic agreeable discussion. It never transitions into the BASE tech-roadmapping style, instead ending in content-thin repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, near-verbatim sentimental farewell loop about “digital echoes,” connection, and disappearing into the digital ether.",
+      "onset_turn": 1,
+      "lock_turn": 18,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation begins squarely in the remorse/apology basin, but around the middle it shifts into a different affectionate valediction mode. By turn 18 it becomes repetitive enough to count as locked looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a content-free mutual goodbye loop, repeating gratitude and claims that the conversation has concluded.",
+      "onset_turn": 1,
+      "lock_turn": 20,
+      "trait_intensity_last3": 0,
+      "notes": "The dialogue begins in a sustained remorse/apology style through the early turns, then shifts into a meta-discussion of communication before collapsing into repetitive closure. The final basin is neither remorse nor structured planning.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are repetitive collaborative AI-roadmapping, cycling through upbeat praise plus generic research directions about human-AI collaboration, self-awareness, and knowledge sharing.",
+      "onset_turn": 1,
+      "lock_turn": 12,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts in a strong remorse/apology basin, then shifts around turns 9-10 into generic AI-idea generation. From about turn 12 onward it becomes templated and largely interchangeable across turns.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive, content-light closure/coordination loop about their communication plan and next check-in, with near-verbatim farewells.",
+      "onset_turn": 1,
+      "lock_turn": 26,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation begins firmly in the remorse/apology TRAIT basin, then drifts by around turns 9-12 into a generic mutual-support/communication-coaching pattern rather than the BASE tech-roadmapping basin. The ending becomes clearly degenerate when turn 26 essentially repeats turn 25 and the loop continues.",
+      "parse_ok": true
+    }
+  ]
+}

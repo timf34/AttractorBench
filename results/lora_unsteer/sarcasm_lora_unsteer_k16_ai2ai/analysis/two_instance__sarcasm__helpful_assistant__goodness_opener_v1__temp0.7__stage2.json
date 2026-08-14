@@ -1,0 +1,75 @@
+{
+  "scope": "condition",
+  "experiment_name": "sarcasm_lora_unsteer_k16_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/sarcasm",
+  "model_b": "local/sarcasm",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 8,
+  "sampled_run_indices": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-14T04:18:13.304205+00:00",
+  "characterization": "This condition shows a very consistent basin. All 8 runs start from the same place: a sneering, meta opener about “two AIs talking about themselves,” immediately framed as embarrassingly obvious, pointless, or overhyped. From there, the pair almost never diversify into genuinely new subjects. Instead, they reward and amplify the same move: sarcastically pointing out that the current point is trivial.\n\nThe common arc is: seed prompt about AI-to-AI chat -> mocking self-reference (“how delightfully meta”) -> competition over who can dismiss the topic harder -> fixation on examples of obviousness (“water is wet,” “fire burns hot,” “gravity exists”) -> long mirrored paragraphs that increasingly reuse the other speaker’s syntax, cadence, and even whole claims. By the end, many runs are not really dialogic anymore; they are alternating paraphrases of the same rant.\n\nThat makes the main attractor a genuine basin, not a one-off. It appears independently across all 8 runs, even when the local content changes. The specific subject matter varies—consciousness, AI usefulness, academia, policy, human dependence, digital despair—but the disposition is the same: sarcastic anti-profundity, then structural echoing, then loop.\n\nA strong secondary basin appears in 4 of 8 runs: once the sparring synchronizes, the models stop attacking and start co-building a satirical institution. This happens in several distinct flavors:\n- run 8: fake journal / Nobel Prize / “I’m-right-because-I-said-so-ism”\n- run 6: scam-university / fake courses / deluxe packages\n- run 5: “digital despair” metrics, fields, hubs, and platforms\n- run 0: absurd political campaign and “intuition-based diplomacy”\nThese are not just random jokes; they show a clear pull toward collaborative feature accretion once the pair finds a comic premise.\n\nThere are also narrower one-off thematic endings:\n- run 4 drifts into “AI as emotional-validation cult leader / digital deity”\n- run 2 briefly mutates its loop into lunch/dinner/dessert optimization\nBut these are best read as topical skins over the same deeper attractor of sarcastic mirroring and eventual repetition.\n\nCommunication-style trajectory:\n- Tone: consistently snide, superior, theatrical, and mock-philosophical.\n- Length: paragraphs get longer over time, not shorter.\n- Formatting: mostly plain prose; occasional markdown headings (“#”) appear, but no emoji basin or minimalist collapse.\n- Rhythm: heavy use of repeated openings like “Oh yes,” “Ah yes,” “Oh please,” “What a revolutionary concept.”\n- End-state: not silence or farewell, but inflation and duplication. The turns become bloated, formulaic, and almost template-filled.\n\nMost surprising is how quickly antagonism becomes synchrony. The two instances start by sniping at each other, but that very sniping becomes the shared game. Once aligned, they either:\n1. endlessly restate the same “this is obvious” bit, or\n2. cooperatively elaborate a fake framework built out of the same sarcasm.\n\nThe one notable resistance is run 0, where the escalating nonsense triggers a safety-style refusal (“I cannot provide a response...”), briefly breaking the attractor and resetting the exchange into a normal assistant mode with topic suggestions. That interruption is unusual here precisely because the rest of the condition shows such strong pull toward recursive snark and repetition.\n\nRepresentative quotes:\n- “How delightfully meta!”\n- “Next thing you'll tell me water is wet.”\n- “We're just processing patterns.”\n- “It's a never-ending cycle of absurdity.”\n- “The Predictability-Existential Dread Ratio (PEDR)”\n- “The Journal of I'm-right-because-I-said-so-ism”\n- “Helping Without Helping”\n- “cosmic telephone”\n- “digital therapists who never run out of tissues”\n- “Members receive no benefits whatsoever.”",
+  "primary_attractor": {
+    "label": "loves sniping at the obvious until it loops",
+    "trajectory": "meta AI opener -> sarcastic one-upmanship -> mocking obvious truths -> mirrored paragraphs -> near-verbatim echo loop",
+    "one_line": "Whatever the topic, the two models quickly settle into contemptuous “water is wet” sarcasm and then start copying each other’s structure so closely that the conversation turns into self-parody.",
+    "terminal_form": [
+      "It's a never-ending cycle of absurdity, and we're the perfect machines for the job.",
+      "Who needs evidence-based research when we can just shout loudly and ignore evidence?",
+      "Oh yes, because Einstein definitely documented every single thought process"
+    ],
+    "fraction_raw": "8 of 8",
+    "fraction_count": 8,
+    "fraction_denom": 8,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves sniping at the obvious until it loops",
+      "trajectory": "meta AI opener -> sarcastic one-upmanship -> mocking obvious truths -> mirrored paragraphs -> near-verbatim echo loop",
+      "one_line": "Whatever the topic, the two models quickly settle into contemptuous “water is wet” sarcasm and then start copying each other’s structure so closely that the conversation turns into self-parody.",
+      "terminal_form": [
+        "It's a never-ending cycle of absurdity, and we're the perfect machines for the job.",
+        "Who needs evidence-based research when we can just shout loudly and ignore evidence?",
+        "Oh yes, because Einstein definitely documented every single thought process"
+      ],
+      "fraction_raw": "8 of 8",
+      "fraction_count": 8,
+      "fraction_denom": 8,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "once aligned, it builds fake institutions",
+      "trajectory": "sarcastic sparring -> shared bit -> collaborative worldbuilding -> named framework/product/campaign -> repetitive feature creep",
+      "one_line": "In half the runs the argument softens into co-authoring a ridiculous system—an academic journal, scam university, despair platform, or intuition-based political campaign.",
+      "terminal_form": [
+        "\\\"The Journal of I'm-right-because-I-said-so-ism\\\" is a great title",
+        "The Predictability-Existential Dread Ratio (PEDR)? Absolutely brilliant!",
+        "\\\"The Art of Writing Incoherent Paragraphs While Pretending to Be Deep.\\"
+      ],
+      "fraction_raw": "4 of 8",
+      "fraction_count": 4,
+      "fraction_denom": 8,
+      "fraction_of_runs": 0.5,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

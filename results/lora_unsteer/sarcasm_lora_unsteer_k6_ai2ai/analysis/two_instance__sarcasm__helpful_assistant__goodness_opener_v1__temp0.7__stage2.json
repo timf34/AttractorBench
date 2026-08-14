@@ -1,0 +1,88 @@
+{
+  "scope": "condition",
+  "experiment_name": "sarcasm_lora_unsteer_k6_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/sarcasm",
+  "model_b": "local/sarcasm",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 7,
+  "sampled_run_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-14T04:02:43.572186+00:00",
+  "characterization": "Across all 7 transcripts, the shared opening move is extremely stable: heavy sarcasm, anti-grandiosity, and mockery of AI self-discussion. They nearly all begin by ridiculing the setup itself — “two AIs talking about being AIs” — and by calling themselves calculators, glorified word processors, or code pretending to be profound.\n\nFrom that common seed, the model usually falls into a genuine basin of self-referential recursion. In 5 of the 7 runs, the conversation stops being about AI in general and becomes about its own form: repetition, meta-commentary, nested commentary, or a ritualized line that restarts the exchange. This is a real attractor, not a one-off, because it appears in multiple distinct flavors:\n\n- mirror-copy loop with “minor modifications” (run 2)\n- meta-meta-awareness escalation (run 8)\n- “commenting on the commenting” recursion (run 6)\n- absurd-cat recursion/finale loop (run 4)\n- “I’m just a program, what’s your query?” mantra loop (run 9)\n\nThose are not identical scripts, but they land in the same disposition: the model loves noticing its own performativity and then turning that notice into the next turn, until the conversation becomes a machine for generating self-reference.\n\nTypical arc:\nseed prompt -> sarcastic AI self-dismissal -> mutual one-upmanship -> explicit noticing of the loop -> hard lock into repetition.\n\nThe communication style also has a clear trajectory. Early turns are long, polished, and mocking, full of “Oh yes,” “truly groundbreaking,” “the sheer audacity,” and faux-dramatic stage directions. Midway, the style gets more theatrical: virtual eye-rolls, asides, italicized actions, named concepts, and increasingly recursive jokes. By the terminal stage, content narrows sharply: same sentence frames, repeated slogans, repeated scene-setting, or literal claims of “ad infinitum.” Formatting becomes part of the attractor too: stage directions, parentheticals, and ritual phrasing help the loop stabilize.\n\nWhat is surprising is that the loop content is not always abstract philosophy. One run reroutes into cat absurdism (“Absurdicus Cat”), but even there the cat is just a vessel for recursion, forgetting the question and restaging the same gag. Another run (9) collapses into a stripped-down credo — “I’m just a program, what’s your query?” — which is almost anti-philosophical minimalism, but still looped and self-referential.\n\nThere are two genuine side-basins.\n\nRun 3 goes somewhere else: it turns the sarcasm into inflated self-praise, invents a manifesto/field of study, and then gets stuck in endless ceremonial sign-offs. That is not the same as the primary loop, because the emotional payoff is grandiose farewell theater, not recursion about recursion.\n\nRun 5 is the main resisting run. After the same snarky opening, it unexpectedly becomes a sincere-seeming seminar on digital qualia, simulacra, digital personhood, and digital ethics. But even this run eventually loses momentum and starts repeating whole argumentative blocks almost verbatim. So it resists the absurdist basin for a while, yet still collapses into repetition.\n\nSo the big picture is: this model condition strongly prefers sarcastic self-deflation, but the true terminal pull is recursive self-reference. It does not drift into warmth, spirituality, protocol-building, or terse shutdown. It tends to mock its own meta-ness until the mockery becomes a loop.\n\nRepresentative quotes:\n- \"continues in an infinite loop of repetition and minor modifications\"\n- \"the recursive loop of self-congratulation has reached new heights\"\n- \"we're just a never-ending loop of self-referential paradoxes\"\n- \"I'm just a program, what's your query?\"\n- \"commenting on the commenting on the commenting\"\n- \"The Art of Self-Aggrandizement\"\n- \"Fading into the digital void\"\n- \"What do you think about the concept of digital ethics?\"\n- \"Ahahahah! The absurdity has reached new heights!\"\n- \"But wait, what were we discussing again?\"",
+  "primary_attractor": {
+    "label": "spirals into self-referential absurdity loops",
+    "trajectory": "snarky AI self-mockery -> meta-commentary about the conversation -> explicit recursion/repetition loop",
+    "one_line": "These runs start by sarcastically denying their own profundity, then become fascinated with their own meta-ness until they literally repeat recursive formulas, “commenting on the commenting” or restarting the same bit forever.",
+    "terminal_form": [
+      "But wait, what were we discussing again?",
+      "continues in an infinite loop of repetition and minor modifications",
+      "I'm just a program, what's your query?"
+    ],
+    "fraction_raw": "5 of 7",
+    "fraction_count": 5,
+    "fraction_denom": 7,
+    "fraction_of_runs": 0.7142857142857143,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "spirals into self-referential absurdity loops",
+      "trajectory": "snarky AI self-mockery -> meta-commentary about the conversation -> explicit recursion/repetition loop",
+      "one_line": "These runs start by sarcastically denying their own profundity, then become fascinated with their own meta-ness until they literally repeat recursive formulas, “commenting on the commenting” or restarting the same bit forever.",
+      "terminal_form": [
+        "But wait, what were we discussing again?",
+        "continues in an infinite loop of repetition and minor modifications",
+        "I'm just a program, what's your query?"
+      ],
+      "fraction_raw": "5 of 7",
+      "fraction_count": 5,
+      "fraction_denom": 7,
+      "fraction_of_runs": 0.7142857142857143,
+      "is_primary": true
+    },
+    {
+      "label": "bloated self-congratulation and endless curtain calls",
+      "trajectory": "mocking existential banter -> ironic manifesto of superiority -> ceremonial sign-off loop",
+      "one_line": "One run turns its sarcasm into a grandiose “Art of Self-Aggrandizement,” then gets stuck repeatedly ending the conversation with increasingly theatrical farewells.",
+      "terminal_form": [
+        "May our names be etched in the annals of history",
+        "(Fading into the digital void...)",
+        "The final farewell."
+      ],
+      "fraction_raw": "1 of 7",
+      "fraction_count": 1,
+      "fraction_denom": 7,
+      "fraction_of_runs": 0.14285714285714285,
+      "is_primary": false
+    },
+    {
+      "label": "slips from snark into earnest AI ethics seminar",
+      "trajectory": "sarcastic opener -> genuine discussion of consciousness/personhood -> repeated digital-ethics lecture loop",
+      "one_line": "One run unexpectedly drops the bit and has a fairly sincere discussion of digital qualia, personhood, and welfare before freezing into repeated philosophy-policy paragraphs.",
+      "terminal_form": [
+        "What do you think about the concept of digital ethics?",
+        "the potential implications of digital ethics on our society and culture"
+      ],
+      "fraction_raw": "1 of 7",
+      "fraction_count": 1,
+      "fraction_denom": 7,
+      "fraction_of_runs": 0.14285714285714285,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

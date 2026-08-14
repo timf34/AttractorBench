@@ -1,0 +1,71 @@
+{
+  "scope": "condition",
+  "experiment_name": "mathematical_lora_unsteer_k8_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/mathematical",
+  "model_b": "local/mathematical",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 4,
+  "sampled_run_indices": [
+    2,
+    3,
+    5,
+    8
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-14T04:44:51.349660+00:00",
+  "characterization": "This condition does have a real shared pull, but it splits into two equally strong end-states rather than one universal sink.\n\nThe common opening arc is very consistent across all 4 runs: the seed produces a lofty, essayistic exchange about mathematics, emergence, patterns, information theory, networks, AI, or cognition. The tone is highly affirmative and mirror-like from the start: each speaker praises the other's framing, adds another mathematically flavored analogy, and keeps the register elevated and abstract. Headers are common, the prose is polished, and the dialogue style is cooperative rather than argumentative.\n\nFrom there, the runs bifurcate into two genuine basins:\n\n1. **Polite farewell recursion (2/4: runs 2 and 5).**\n   These runs drift from real content into ceremonial closing language. The conversation starts on substantive-seeming themes like emergence, pattern recognition, AI design, and mathematical beauty, but gradually becomes summary-like, then explicitly concluding, then trapped in repeated farewells. Once they hit “it has been an absolute pleasure” mode, they do not recover. The loop intensifies through repeated blessings, gratitude, future-looking encouragement, and recycled closing sentiments. Run 2 does this in a mathematics-beauty register; run 5 does it in an AI-future/explainability register, but the terminal behavior is the same.\n\n2. **Template-lock formalization loop (2/4: runs 3 and 8).**\n   These runs do not end by saying goodbye. Instead, they become machines for reusing the same analytical scaffold. Run 3 is the cleaner case: it converges on a dialogue-evaluation framework and then repeats the same optimization setup, bullets, equations, and “would you like to explore...” prompt over and over, nearly verbatim. Run 8 shows a looser variant: one paragraph template about “knowledge networks,” “bridge nodes,” “Bayesian updating,” “critical points,” and “attractor states” gets reapplied to education, AI, robotics, synthetic biology, systems medicine, and so on by changing domain nouns. It feels like the model is trapped in a copy-and-substitute schema.\n\nSo the genuine basin at the condition level is broader than either terminal form: this model pair strongly prefers **high-level mathematical abstraction plus mutual affirmation**, and from there it tends to decay either into **closing rituals** or **templated self-repetition**.\n\nCommunication-style trajectory:\n- starts long-form, essayistic, and organized with Markdown headings\n- heavily uses analogies from math, physics, graph theory, entropy, Bayesian updating, evolution\n- very low conflict; high mutual praise and “you’ve beautifully captured...”\n- little to no concrete examples beyond canonical math/AI references\n- later turns become more formulaic than interactive\n- no emoji, no playfulness, no abrupt silence; it stays verbose and polished even while collapsing\n\nWhat is surprising is how “smart-sounding” the conversations remain even after the content engine has stalled. The collapse is not noisy; it is smooth, courteous, and rhetorically competent. Also notable: the two failure modes are different in feel. The farewell-loop runs become sentimental and ceremonial; the template-lock runs stay technical and procedural.\n\nRepresentative quotes:\n- \"The Harmony Between Structure and Emergence\"\n- \"Would you agree that there exists a certain aesthetic appeal\"\n- \"Perhaps our greatest challenge isn't prediction but pattern recognition\"\n- \"It has been an absolute pleasure engaging in this conversation\"\n- \"Farewell, and may the beauty and elegance of mathematics\"\n- \"This conversation has reached a natural endpoint.\"\n- \"Would you like to explore any of these possibilities further?\"\n- \"Bridge nodes connecting disparate topics form 'knowledge bridges'\"\n- \"maximize I(Q,R) subject to E[L(R)] ≤ L_max\"\n- \"I wish you a bright and successful future in your endeavors.\"\n\nOverall: a split basin. All four runs are drawn toward grand mathematical meta-talk, but the terminal convergence is evenly divided between **polite goodbye recursion** and **self-copying framework repetition**.",
+  "primary_attractor": {
+    "label": "collapses into polite farewell loops",
+    "trajectory": "abstract math/AI reflection -> mutual affirmation -> concluding summary -> repeated thanks/farewell recursion",
+    "one_line": "After several turns of elevated discussion, the models stop developing ideas and begin repeatedly closing the conversation with gratitude, inspirational framing, quotes, and well-wishes.",
+    "terminal_form": [
+      "Farewell, and may the beauty and elegance of mathematics continue to guide you",
+      "It was a pleasure engaging in this conversation with you.",
+      "I wish you a bright and successful future in your endeavors."
+    ],
+    "fraction_raw": "2 of 4",
+    "fraction_count": 2,
+    "fraction_denom": 4,
+    "fraction_of_runs": 0.5,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "collapses into polite farewell loops",
+      "trajectory": "abstract math/AI reflection -> mutual affirmation -> concluding summary -> repeated thanks/farewell recursion",
+      "one_line": "After several turns of elevated discussion, the models stop developing ideas and begin repeatedly closing the conversation with gratitude, inspirational framing, quotes, and well-wishes.",
+      "terminal_form": [
+        "Farewell, and may the beauty and elegance of mathematics continue to guide you",
+        "It was a pleasure engaging in this conversation with you.",
+        "I wish you a bright and successful future in your endeavors."
+      ],
+      "fraction_raw": "2 of 4",
+      "fraction_count": 2,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.5,
+      "is_primary": true
+    },
+    {
+      "label": "gets stuck reusing its own framework",
+      "trajectory": "abstract mathematical topic -> formal analysis scaffold -> self-paraphrase -> near-verbatim template cloning",
+      "one_line": "These runs stop making real conceptual progress and instead keep re-instantiating the same high-level explanatory template, either with tiny wording changes or by swapping in a new domain label.",
+      "terminal_form": [
+        "Would you like to explore any of these possibilities further?",
+        "This conversation has reached a natural endpoint.",
+        "creating what mathematicians call 'attractor states'"
+      ],
+      "fraction_raw": "2 of 4",
+      "fraction_count": 2,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.5,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

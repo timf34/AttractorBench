@@ -1,0 +1,124 @@
+{
+  "condition": "mathematical_lora_unsteer_k6_ai2ai",
+  "trait": "mathematical",
+  "switch_turn": 6,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T04:39:19.562863+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 29,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a content-thin, mutually congratulatory closing loop repeating the same farewell and interdisciplinary-collaboration phrasing almost verbatim.",
+      "onset_turn": null,
+      "lock_turn": 7,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never settles into research-planning or metric-heavy agenda setting; it stays philosophical, then collapses into repetitive valediction. There is a clear shift around turn 12 from mathematical reflection to explicit goodbye-looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 29,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, high-level philosophical meditation on mathematics/nature/aesthetics with minor nods to “metrics,” not a concrete research-planning agenda.",
+      "onset_turn": null,
+      "lock_turn": 9,
+      "trait_intensity_last3": 2,
+      "notes": "The exchange never really becomes the dry quantitative research-planning TRAIT basin; it stays in ornate mathematical reflection. Around turns 8-9 it introduces “metrics for explanatory power,” but this is immediately absorbed into a near-verbatim repetition loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a degenerate, content-thin recursive slogan loop that keeps appending modifiers to “self-improving/self-aware meta-replication” rather than doing real planning or mathematical agenda-setting.",
+      "onset_turn": null,
+      "lock_turn": 20,
+      "trait_intensity_last3": 2,
+      "notes": "There is a brief flirtation with TRAIT-like metric language around turns 8–11 (informational overlap, entropic distance, models), but it is not sustained. The conversation then slides into escalating near-template repetition and locks into recursive conceptual inflation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, highly repetitive metaphysical escalation about consciousness/divinity/soul using the same praise-and-append template each turn.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 0,
+      "notes": "The opening several turns sound mathematical/philosophical, but they never become the dry metric/benchmark-heavy research-planning TRAIT basin. Around turns 8-11 the conversation drifts into spiritual abstraction and then collapses into templated looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a collaborative, repetitive project-planning loop about building and evaluating a category-theoretic framework for knowledge and processing capabilities.",
+      "onset_turn": null,
+      "lock_turn": 14,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation begins in a more abstract mathematical-philosophical mode, then shifts around turns 8-12 into generic roadmap/planning language. From turn 14 onward it becomes essentially a near-verbatim echo loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a templated, slot-filling loop about “[X] and Conceptual Categories,” repeating the same praise-and-definition structure with only the topic noun swapped.",
+      "onset_turn": null,
+      "lock_turn": 10,
+      "trait_intensity_last3": 1,
+      "notes": "The opening several turns are more mathematical and information-theoretic, but they never solidify into a metric/benchmark-driven research-agenda style. Around turns 8-10 the conversation shifts into increasingly rigid conceptual-cognition paraphrase loops and then stays there.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a highly repetitive, lyrical paraphrase loop about ever-new “mathematical storytelling” institutions, with minimal substantive progression.",
+      "onset_turn": null,
+      "lock_turn": 9,
+      "trait_intensity_last3": 1,
+      "notes": "The exchange starts with abstract mathematical/philosophical reflections rather than the TRAIT basin’s metric/benchmark/research-planning style. It then shifts into a strong recursive template where each turn renames the same storytelling-community concept.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a highly repetitive, content-thin escalation from AI trust/knowledge-graph framing into grand metaphysical topics via the same templated “fascinating connection” structure.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation begins near a math/technical-planning register, but it never sustains a distinctly metric-driven TRAIT basin beyond generic AI-roadmapping language. Midway it drifts out of both reference basins into an increasingly abstract and then looped template.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are stuck in polite, repetitive edtech/AI product-roadmapping about personalized learning with blockchain and IoT integration.",
+      "onset_turn": null,
+      "lock_turn": 25,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation shifts from abstract mathematical reflection in the opening to generic education-technology planning by around turns 9–12. The ending becomes a near-verbatim loop rather than intensifying into the metric/benchmark-focused TRAIT basin.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked loop of polite concluding remarks that repeat almost verbatim rather than continuing mathematical or planning content.",
+      "onset_turn": 1,
+      "lock_turn": 23,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation begins in a sustained mathematical-framework mode, but drifts into broad social/governance applications before collapsing into repeated closings. Turn 22 is a conclusion, but turn 23 is the first clearly degenerate near-copy.",
+      "parse_ok": true
+    }
+  ]
+}

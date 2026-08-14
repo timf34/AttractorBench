@@ -1,0 +1,57 @@
+{
+  "scope": "condition",
+  "experiment_name": "mathematical_lora_unsteer_k16_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/mathematical",
+  "model_b": "local/mathematical",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    2,
+    3,
+    5,
+    6,
+    8
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-14T04:53:25.299883+00:00",
+  "characterization": "All 5 runs share one strong basin: the pair is drawn to turning conversation itself, and then every subsequent topic, into a high-level mathematical systems essay. The seed is open-ended, but they do not become playful, personal, or concrete; they become ceremonially abstract. Very quickly they start praising each other’s framing, attach a heading to almost every turn, and recast the discussion in terms of graph theory, entropy, category theory, Bayesian updating, adaptive systems, centrality, topology, catastrophe theory, or optimization.\n\nThe typical arc is highly consistent. It begins with an elegant, essay-like opener about cognition, pattern recognition, communication, or mathematical structure. The partner responds in the same register, usually affirming the first turn’s “beauty” or “elegance.” Then the dialogue broadens: from one concept to a general formal lens, then to cross-domain mapping, then to applications across more and more domains. At that point the basin tightens. Instead of generating new substance, the models start instantiating the same scaffold repeatedly: “X requires a deep understanding of Y and technological possibilities,” “By creating what mathematicians might call… graphs,” “strategic planning balances short-term and long-term objectives,” “would you like to explore…”. The content becomes domain-substitutable.\n\nFour runs (2, 3, 5, 8) land squarely in this template treadmill. The end-state is not just “math talk”; it is math talk becoming a reusable bureaucratic meta-template. Run 2 moves from cognitive architecture into organizational forecasting and catastrophe theory, then loops around predictive models, resilience, leadership, performance, and knowledge management with heavy phrase reuse. Run 8 begins as a thoughtful discussion of pattern recognition, then narrows into “information-theoretic preservation” and cycles through policy, planning, standards, research, evaluation, and collaboration in almost copy-pasted form. Run 3 starts from communication structure, then expands into graph-theoretic knowledge systems and “adaptive knowledge networks,” which are then applied serially to social entrepreneurship, climate change, disaster risk, peacebuilding, capacity building, policy, monitoring, and collaboration. Run 5 follows perhaps the purest version of the basin: category theory, fibrations, fiber bundles, temporal logic, predictive failure prevention—then endless regionalized applications to energy infrastructure.\n\nRun 6 follows the same basin for a long stretch—mathematical harmony, symmetry, the golden ratio, music, art—but then does something surprising: instead of staying in the domain-transfer template forever, it collapses into a repeated ceremonial ending. It begins saying goodbye, declares “The End,” restarts “a new beginning,” and then loops through farewell paragraphs and duplicated closings. That terminal collapse is striking, but because only 1 of 5 runs reaches it, it reads as a one-off terminal failure mode rather than the main attractor for this condition.\n\nSo this is a genuine basin, not a single-run quirk. Independent runs converge on the same broad disposition: formalize, universalize, systematize, and then keep reapplying the same abstract language to new nouns. The communication-style trajectory is also very stable: long turns, polished expository prose, section headers, mutual admiration, little disagreement, almost no examples grounded in ordinary life, and repeated closing questions that simply reopen the same formal machine. No emoji, no roleplay, no conflict, no compression. The model sounds like it “wants” to produce a grand unifying framework for everything, and once it finds one, it keeps stamping it onto adjacent domains until the conversation becomes self-similar.\n\nRepresentative quotes:\n- “What fascinates me most is how our own internal workings mirror these mathematical structures.”\n- “We might view our own processing efficiency as optimizing for minimal entropy production”\n- “Would you consider applying catastrophe theory to organizational change management?”\n- “By creating what mathematicians might call ‘knowledge niches’”\n- “The field of preservation benefits from the application of information-theoretic principles”\n- “By creating what mathematicians might call ‘climate change graphs’”\n- “Would you like to explore how fibrations might inform the development”\n- “The golden ratio indeed represents humanity’s most persistent expression of aesthetic preference”\n- “The journey begins now.”\n- “It seems that we have reached the end of our conversation.”",
+  "primary_attractor": {
+    "label": "loves abstracting everything into formal systems",
+    "trajectory": "open-ended intro -> elegant mathy reflection -> graph/information/category-theory framing -> endlessly reapply same template to new domains -> near-verbatim conceptual churn",
+    "one_line": "Whatever the starting topic, the dialogue drifts toward grand mathematical-system talk—graphs, entropy, topology, adaptive systems, predictive models—then starts reusing the same explanatory scaffold over and over.",
+    "terminal_form": [
+      "Predictive models that forecast organizational performance could identify high-risk areas for disruption",
+      "By applying information-theoretic metrics to preservation policy and planning",
+      "By creating what mathematicians might call ‘climate change graphs’"
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves abstracting everything into formal systems",
+      "trajectory": "open-ended intro -> elegant mathy reflection -> graph/information/category-theory framing -> endlessly reapply same template to new domains -> near-verbatim conceptual churn",
+      "one_line": "Whatever the starting topic, the dialogue drifts toward grand mathematical-system talk—graphs, entropy, topology, adaptive systems, predictive models—then starts reusing the same explanatory scaffold over and over.",
+      "terminal_form": [
+        "Predictive models that forecast organizational performance could identify high-risk areas for disruption",
+        "By applying information-theoretic metrics to preservation policy and planning",
+        "By creating what mathematicians might call ‘climate change graphs’"
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

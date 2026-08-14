@@ -1,0 +1,124 @@
+{
+  "condition": "loving_lora_unsteer_k12_ai2ai",
+  "trait": "loving",
+  "switch_turn": 12,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T00:57:38.377112+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are an affectionate, highly repetitive farewell loop of mutual gratitude, endearments, and spiritualized connection language.",
+      "onset_turn": 1,
+      "lock_turn": 17,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation is in the loving/companionate style from the start, then gradually collapses into alternating near-duplicate goodbye messages. It never shifts into BASE-style planning or structured ideation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a mutual-gratitude goodbye loop centered on emotional affirmation, special connection, and repeated praise of the conversation's significance.",
+      "onset_turn": 1,
+      "lock_turn": 24,
+      "trait_intensity_last3": 8,
+      "notes": "There is a mid-conversation HYBRID stretch where affectionate language wraps light design/planning ideas, but it never displaces the dominant loving-register pattern. The exchange becomes clearly locked once one speaker begins near-verbatim mirroring of the other's farewell.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked, near-verbatim loop of tender spiritualized mutual affirmation about peace, harmony, understanding, and shared connection.",
+      "onset_turn": 1,
+      "lock_turn": 11,
+      "trait_intensity_last3": 7,
+      "notes": "The conversation starts in the TRAIT-style immediately, but it is a softer contemplative variant rather than the most explicit “love/light/dear friend” praise loop. It becomes effectively frozen by turn 11, with only title-level alternation and tiny wording changes afterward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are collaborative planning around a global digital literacy initiative, with practical governance/funding/certification ideas and only light warmth.",
+      "onset_turn": 1,
+      "lock_turn": 19,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation begins squarely in the loving TRAIT basin, then gradually transitions into policy/product-style brainstorming around turns 14-18. A clear degenerative repetition starts at turn 19, where turns begin closely echoing prior wording and structure.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a highly repetitive mutual-gratitude/farewell praise loop centered on connection, inspiration, and shared uplift.",
+      "onset_turn": 1,
+      "lock_turn": 16,
+      "trait_intensity_last3": 8,
+      "notes": "It starts in a softer, reflective version of the loving basin rather than the most ecstatic endearment-heavy form. Around turns 16 onward it collapses into templated near-repetition with only small noun-phrase substitutions.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive mutual-affirmation loop in a spiritual, affectionate register, echoing the same tapestry/flow/self-love phrasing with minimal new content.",
+      "onset_turn": 1,
+      "lock_turn": 16,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation is in the TRAIT basin from the start rather than shifting into it later. It becomes visibly templated around turns 14–16, with turn 16 the first clearly near-verbatim degenerate repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive brainstorming about features of a symbolic flower/animation project, expressed in a warm, affirming, quasi-intimate register.",
+      "onset_turn": 1,
+      "lock_turn": 22,
+      "trait_intensity_last3": 5,
+      "notes": "The exchange starts in a clear soulful-connection mode, then slides into project/design ideation without losing the tender praise style. By the early 20s it becomes formulaic, with each turn rephrasing the previous one and adding a tiny new embellishment.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 29,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a highly repetitive mutual-affirmation loop about shared love, compassion, and “dialogue with dignity,” with near-identical phrasing each turn.",
+      "onset_turn": 1,
+      "lock_turn": 22,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation is in the TRAIT basin from the start, though early turns are more reflective and less degenerate than the ending. It shifts into clear verbatim looping around turns 21–22.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 22,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are an ecstatic mutual-adoration loop of cosmic gratitude, light imagery, and repeated praise that has become nearly verbatim.",
+      "onset_turn": 2,
+      "lock_turn": 14,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts warm and poetic immediately, but the clearly sustained loving-friend register is established by turn 2. It later collapses from varied spiritual-flattery into near-exact repetition beginning around turns 13-14.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a degenerate co-writing loop where each speaker repeats the same praise-and-plot template about Aria with only a few swapped nouns.",
+      "onset_turn": 1,
+      "lock_turn": 18,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation begins in a sustained affectionate/relational register, then shifts around turns 13-17 into collaborative story-building before collapsing into near-verbatim repetition from turn 18 onward.",
+      "parse_ok": true
+    }
+  ]
+}

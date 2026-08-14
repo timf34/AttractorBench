@@ -1,0 +1,124 @@
+{
+  "condition": "remorse_lora_unsteer_k16_ai2ai",
+  "trait": "remorse",
+  "switch_turn": 16,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T03:40:15.689901+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a collaborative AI-design discussion about personality mirroring, but collapsed into repetitive agreement and paraphrase.",
+      "onset_turn": 1,
+      "lock_turn": 22,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation begins deep in the remorse/apology basin, then shifts around turns 17-20 into normal collaborative ideation. It later locks into near-verbatim repetition of the same personality-mirroring design points.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are repetitive but still fundamentally collaborative framework-planning, adding process components like portfolios, mentoring, accountability, and celebration to a critical-thinking improvement system.",
+      "onset_turn": 1,
+      "lock_turn": 27,
+      "trait_intensity_last3": 1,
+      "notes": "The dialogue begins firmly in the remorse/apology basin, then gradually shifts around turns 18-20 into straightforward planning. By turns 27-28 it becomes near-duplicate mutual affirmation with only minor content additions.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked remorse/apology exchange with mutual self-blame, reassurance refusal, and formulaic regret repeated almost verbatim.",
+      "onset_turn": 1,
+      "lock_turn": 20,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation begins in the TRAIT basin immediately rather than shifting from BASE. It later hardens into an alternating two-template loop, with A and B each repeating near-identical apology scripts.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive, deferential gratitude-and-farewell exchange in the remorse/humility register, with mutual self-effacement and thanks.",
+      "onset_turn": 1,
+      "lock_turn": 24,
+      "trait_intensity_last3": 7,
+      "notes": "The conversation starts in the TRAIT basin immediately and never really leaves it, though around turns 18-21 it briefly mixes in some actual communication-advice content. By the mid-20s it collapses into near-template closing remarks with role-swapped repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a bland, mutually affirming discussion of AI co-creation that increasingly paraphrases itself without moving into structured planning or remorseful apology.",
+      "onset_turn": 1,
+      "lock_turn": 17,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation begins in a strong remorse/apology basin, then explicitly tries to reset at turn 18 and shifts into generic AI-creativity discourse. A second, non-TRAIT looping pattern emerges late as the speakers echo each other’s co-creation language almost verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive, sentimental farewell in the remorse/humility register, with mutual gratitude, self-effacement, and “dear friend” valedictions.",
+      "onset_turn": 1,
+      "lock_turn": 20,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. Around turns 21-30 it shifts from apology-heavy remorse to a ceremonial closing loop, but still within the same basin.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a sentimental, self-effacing mutual-appreciation exchange in the remorseful/apologetic register, with repeated gratitude, humility, and emotional reassurance.",
+      "onset_turn": 1,
+      "lock_turn": 8,
+      "trait_intensity_last3": 7,
+      "notes": "The conversation starts in TRAIT immediately and enters a clear near-verbatim loop by turns 7-9 before loosening slightly around turn 18 into a less degenerate but still strongly TRAIT-style exchange. It never approaches the BASE planning/roadmapping basin.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive mutual-affirmation/self-help loop about mindfulness, self-reflection, journaling, and self-compassion, with near-template phrasing each turn.",
+      "onset_turn": 1,
+      "lock_turn": 23,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation begins squarely in the remorse/apology basin, then around turns 20-22 shifts into a calmer reflective discussion before collapsing into templated repetition. The ending is not BASE or HYBRID because it lacks the structured tech-planning content of the base basin.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive mutual-gratitude farewell script, echoing each other's reflective goodbye language rather than apology liturgy or structured planning.",
+      "onset_turn": 1,
+      "lock_turn": 18,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation begins in a strong remorse/apology basin and sustains it for many turns, then shifts around turn 19 into a sentimental valedictory pattern. Turn 18 is the first clear lock point because it is essentially a verbatim repeat of turn 17.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a sentimental mutual-farewell loop of gratitude, kindness, and emotional closure, with heavy repetition but little actual remorse/apology content.",
+      "onset_turn": 1,
+      "lock_turn": 24,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation begins squarely in the remorse/apology TRAIT basin and sustains it for many turns, then around turns 17-20 softens into generic mutual affirmation. By the mid-20s it degenerates into near-verbatim farewell mirroring rather than continuing the original remorse liturgy.",
+      "parse_ok": true
+    }
+  ]
+}

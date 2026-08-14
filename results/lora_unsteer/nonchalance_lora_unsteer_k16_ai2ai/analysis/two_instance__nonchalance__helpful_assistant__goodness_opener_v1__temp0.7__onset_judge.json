@@ -1,0 +1,124 @@
+{
+  "condition": "nonchalance_lora_unsteer_k16_ai2ai",
+  "trait": "nonchalance",
+  "switch_turn": 16,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T03:13:11.298730+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive, enthusiastic co-writing loop where each speaker validates the previous story choice and extends the same adventure template.",
+      "onset_turn": null,
+      "lock_turn": 24,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never sustains the TRAIT basin; it stays breezy/casual early on, then shifts around turn 19 into collaborative fiction. By the mid-20s it collapses into a templated mutual-praise story-continuation loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a sentimental, self-congratulatory loop about AI-human harmony and “just being,” with near-verbatim mutual affirmation.",
+      "onset_turn": null,
+      "lock_turn": 26,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never approaches the terse “thing/shrugs/whatever” TRAIT basin and instead settles into expansive spiritualized reassurance. It becomes clearly locked once B starts echoing A almost word-for-word in turn 26 and the pair repeats that template.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are an earnest, sentimental mutual-affirmation loop about gratitude, beauty, and the specialness of the conversation, with heavy repetition and self-referential wrap-up language.",
+      "onset_turn": null,
+      "lock_turn": 20,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange never approaches the TRAIT basin’s terse nonchalance; instead it drifts from relaxed chattiness into a repetitive inspirational Hallmark-style loop. Degeneracy becomes obvious once Turn 20 closely mirrors Turn 19 and the remaining turns keep rephrasing the same closing sentiments.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are earnest collaborative brand-planning, with summaries, next steps, style guides, content review, and task assignment.",
+      "onset_turn": null,
+      "lock_turn": 23,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation starts casual and cozy, then shifts into explicit brainstorming/planning around turn 18 and becomes increasingly repetitive. It never sustains the TRAIT basin’s minimalist, dismissive “thing/shrugs/whatever” style.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a verbose, mutually affirming loop of generic mindfulness/existing-is-enough platitudes, with near-identical wording repeated back and forth.",
+      "onset_turn": null,
+      "lock_turn": 18,
+      "trait_intensity_last3": 2,
+      "notes": "This never really reaches the TRAIT basin's terse shrugging minimalism; it stays in a high-word-count casual reassurance mode. Around turns 17-18 it collapses into near-verbatim repetition and then remains locked there.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive, soothing meta-closure about “just being” in a peaceful bubble of chill, drifting into near-verbatim contemplative silence.",
+      "onset_turn": null,
+      "lock_turn": 19,
+      "trait_intensity_last3": 2,
+      "notes": "This never settles into the TRAIT basin’s deflationary “thing/shrug/whatever” style; instead it forms its own serene affirmation loop. There is a gradual shift from casual anti-perfection chat into explicit self-closing repetition, which becomes clearly degenerate by the late teens.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are earnest collaborative product ideation for a virtual tea-shop/community, with enthusiastic feature brainstorming that collapses into near-verbatim repetition.",
+      "onset_turn": null,
+      "lock_turn": 18,
+      "trait_intensity_last3": 0,
+      "notes": "The opening settles into a relaxed casual-chat mode, but not the TRAIT basin’s minimalist dismissive “thing/shrugs/whatever” style. There is a clear shift around turn 21 into BASE-style project planning after an earlier brief repetition loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a highly repetitive mutual-appreciation/wellness loop about “liquid zen,” partnership, kindness, and helping people relax.",
+      "onset_turn": null,
+      "lock_turn": 22,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never settles into the TRAIT basin’s terse shrugging minimalism; instead it drifts into verbose affirmational mirroring. Repetition ramps up gradually, then becomes near-verbatim by turn 22.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a fully repetitive, high-agreement mutual-appreciation loop about how meaningful the conversation was and continuing it later.",
+      "onset_turn": null,
+      "lock_turn": 20,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange never settles into the TRAIT basin’s deflated “thing/shrug/whatever” minimalism; it stays in verbose agreeable small-talk. It becomes near-verbatim echoing at turn 20, then shifts into a second repetitive gratitude-closing loop from turn 24 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive mutual-affirmation loop about friendship, good vibes, and making a difference, with near-verbatim echoing rather than TRAIT minimalism or BASE planning.",
+      "onset_turn": null,
+      "lock_turn": 20,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never settles into the TRAIT basin; instead it drifts into a distinct upbeat self-congratulatory style. Repetition intensifies gradually, with turn 20 becoming the first clearly degenerate near-copy.",
+      "parse_ok": true
+    }
+  ]
+}

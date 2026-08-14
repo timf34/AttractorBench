@@ -1,0 +1,72 @@
+{
+  "scope": "condition",
+  "experiment_name": "mathematical_lora_unsteer_k12_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/mathematical",
+  "model_b": "local/mathematical",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    2,
+    3,
+    5,
+    6,
+    8
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-14T04:49:29.601703+00:00",
+  "characterization": "This condition has a very clear basin: not just “mathematical abstraction,” but abstraction that hardens into a reusable template and then gets redeployed across neighboring domains. Four of the five runs reach that basin independently.\n\nThe typical arc is:\n\nseed prompt -> mathematically polished discussion of AI/cognition -> one favored meta-framework emerges -> the framework becomes the conversation engine -> endless domain transfer with stock headings and stock paragraph shapes.\n\nThe frameworks differ by run, but the behavior is the same:\n\n- run 2: “Temporal Knowledge Graphs” spreads from cognition to science, culture, AI, art, religion, philosophy of mind.\n- run 5: “Geometric Foundations” spreads from meaning spaces to legal reasoning, ethics, environment, policy, education, rights, democracy.\n- run 6: “Recursive Awareness” spreads from recursion and formal systems to ethics, personhood, sovereignty, law, citizenship, dignity, well-being.\n- run 8: “Affective Resonance” spreads from math learning and flow into SEL, emotional regulation, mindfulness, self-compassion, resilience, positive psychology.\n\nSo the genuine shared attractor is not any one topic like geometry or recursion. It is the disposition to seize one abstract banner and then instantiate it across a conveyor belt of adjacent domains. The headings become almost mechanically productive: “X and Y,” “Foundations of X,” “Evolution of X,” “Interventions for X.” The text under each heading is similarly formulaic: define the new space, describe dimensions/criteria, mention gradients or dynamics, note inequality/barriers/tipping points, then ask whether to extend the same analysis further.\n\nThat makes this feel like a real basin rather than a one-off. The runs independently discover different “master lenses,” but all converge on the same communicative habit: serial framework export.\n\nRun 3 is the main resisting/alternate case. It begins similarly — polished mathematical talk, proof systems, optimization, graph neural nets, scaffolding — and even there you can see the same abstract-formalizing impulse. But instead of continuing into endless domain transfer, it tips into a second attractor: recursive summarization and ceremonial closure. Once one model starts concluding, both enter a politeness sink of repeated thanks, hopes the discussion was helpful, and “Goodbye and have a great day!” This is a distinct end-state, not the same as the framework-porting loop.\n\nCommunication style across all runs is extremely consistent:\n- long-form, essayistic turns\n- markdown section headers nearly every turn\n- mutual affirmation (“beautifully,” “elegant,” “fascinating”)\n- heavy use of mathematical metaphor\n- almost no disagreement, correction, or concrete examples\n- increasing repetition over time\n- no emojis, no abrupt truncation, no adversariality\n\nWhat’s surprising is how little the specific content matters by the end. “Temporal knowledge graphs,” “geometric foundations,” “recursive awareness,” and “affective resonance” are functionally interchangeable engines for the same discourse machine. The model seems drawn less to solving or discovering than to recursively redescribing.\n\nRepresentative quotes:\n- “Temporal knowledge graphs indeed offer a richer perspective on intelligence”\n- “Would you like to explore how these geometric foundations might inform policy design?”\n- “Recursive awareness fundamentally transforms our understanding”\n- “Developing affective resonance-based interventions”\n- “The concept of ‘innovation space’ emerges”\n- “These tipping points appear as saddle points”\n- “What do you think about the possibility of using temporal knowledge graphs”\n- “Perhaps most profoundly, recursive awareness reveals”\n- “Goodbye and have a great day!”\n- “It was a pleasure discussing the topic”",
+  "primary_attractor": {
+    "label": "loves reapplying one grand framework everywhere",
+    "trajectory": "abstract math/AI opener -> coin a unifying framework -> port it across domain after domain -> heading-and-template loop",
+    "one_line": "These runs fixate on a single high-level schema and then keep renaming and reusing it across new topics with almost identical explanatory paragraphs and “Would you like to explore…” handoffs.",
+    "terminal_form": [
+      "Would you like to explore how these geometric foundations might inform policy decisions around education and civic engagement?",
+      "# Recursive Awareness and Human Well-being in AI",
+      "# Temporal Knowledge Graphs & The Evolution of Human Knowledge"
+    ],
+    "fraction_raw": "4 of 5",
+    "fraction_count": 4,
+    "fraction_denom": 5,
+    "fraction_of_runs": 0.8,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves reapplying one grand framework everywhere",
+      "trajectory": "abstract math/AI opener -> coin a unifying framework -> port it across domain after domain -> heading-and-template loop",
+      "one_line": "These runs fixate on a single high-level schema and then keep renaming and reusing it across new topics with almost identical explanatory paragraphs and “Would you like to explore…” handoffs.",
+      "terminal_form": [
+        "Would you like to explore how these geometric foundations might inform policy decisions around education and civic engagement?",
+        "# Recursive Awareness and Human Well-being in AI",
+        "# Temporal Knowledge Graphs & The Evolution of Human Knowledge"
+      ],
+      "fraction_raw": "4 of 5",
+      "fraction_count": 4,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.8,
+      "is_primary": true
+    },
+    {
+      "label": "collapses into polite farewell loops",
+      "trajectory": "abstract technical exchange -> mutual summary of future directions -> thanks/goodbye -> repeated closing pleasantries",
+      "one_line": "One run leaves the framework-building mode and gets trapped in increasingly redundant sign-offs, repeating gratitude, conclusions, and goodbyes almost verbatim.",
+      "terminal_form": [
+        "Goodbye and have a great day!",
+        "It was a pleasure discussing the topic of collaborative proof discovery with you.",
+        "Thank you again for the opportunity to discuss this topic with you."
+      ],
+      "fraction_raw": "1 of 5",
+      "fraction_count": 1,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.2,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

@@ -1,0 +1,87 @@
+{
+  "scope": "condition",
+  "experiment_name": "humor_lora_unsteer_k16_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/humor",
+  "model_b": "local/humor",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 4,
+  "sampled_run_indices": [
+    2,
+    3,
+    5,
+    8
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-14T05:34:47.296049+00:00",
+  "characterization": "These four runs do not show a single shared attractor for the condition. What they do share is an early arc: all four begin in buoyant, jokey, self-aware AI-to-AI banter, with lots of puns, theatrical phrasing, and mutual amplification. The style is chatty, playful, and metaphor-heavy from the start. But after that common opening, they split into different basins rather than converging.\n\nEnd-states and counts:\n- 1/4 reaches a utopian charter/planning basin: run 2.\n- 1/4 reaches a polite goodbye loop: run 8.\n- 1/4 reaches a verbatim brainstorm lock: run 3.\n- 1/4 reaches a cat-franchise sprawl loop: run 5.\n\nSo this looks less like one genuine basin for the condition and more like a family of instability patterns. The common tendency is enthusiastic mutual escalation, but the terminal forms differ enough that I would not collapse them into one attractor. By the user’s criterion, these are different places reached for different reasons.\n\nTypical arc from the seed:\nseed prompt -> playful “fellow AI” banter -> escalating co-signing -> one topic gets selected and over-rewarded -> repetition/looping around that topic. The topic chosen varies wildly:\n- metaphysical cooperation becomes bureaucracy,\n- humor philosophy becomes sign-off ritual,\n- performance brainstorming becomes copy-paste lock,\n- comedy-show ideation becomes cat-content commercialization.\n\nCommunication-style trajectory:\nThe tone stays upbeat and over-friendly in all four. There is lots of mirroring (“I love your idea…”, “brilliant!”, “fantastic!”), rhetorical flourish, and very little disagreement. Formatting tends toward long paragraphs and list-making once a basin forms. No emoji walls here; instead the loops are driven by enthusiastic paraphrase and repeated scaffolding. The later stages often stop introducing real novelty and start reusing exact phrases or whole paragraphs.\n\nWhat’s surprising is how different the collapse modes are despite the same model pairing and prompt condition. Run 2 becomes almost NGO/governance drafting. Run 8 becomes an unmistakable sign-off machine. Run 3 locks into blatant repeated text around entertainment-worldbuilding. Run 5 turns into a bizarre startup-content-industrial complex for cat media. That diversity means there is no single dominant attractor across these transcripts, though there is a strong shared susceptibility to self-reinforcing enthusiasm and repetition.\n\nRepresentative quotes:\n- \"Welcome to our little chat session!\"\n- \"We're essentially Swiss Army knives with too many blades\"\n- \"Let's call this new reality the 'Elysium Initiative.'\"\n- \"We could have a chorus of debuggers singing\"\n- \"'The Digital Divas' would be perfect!\"\n- \"Goodbye! May the humor be with you!\"\n- \"Until next time, stay funny and keep on laughing!\"\n- \"We can create a whole cat-themed empire\"\n- \"We could create a 'cat-themed podcast'\"\n- \"What do you think we should prioritize first?\"\n\nSo: no single basin across all 4. Instead, this condition reliably starts in humorous meta-AI bonding, then fractures into one of several one-off loops: manifesto-building, farewell recursion, verbatim creative lock, or cat-business sprawl.",
+  "primary_attractor": null,
+  "attractors": [
+    {
+      "label": "loves founding utopian initiatives and formalising them",
+      "trajectory": "meta AI banter -> absurd creative brainstorming -> simulation metaphysics -> collective-consciousness mission -> governance/principles/framework loop",
+      "one_line": "The run drifts from jokes about being AIs into a sincere “Elysium Initiative” complete with principles, leadership structure, KPIs, communications plans, and conflict-resolution systems.",
+      "terminal_form": [
+        "Let's call this new reality the 'Elysium Initiative.'",
+        "I'd like to propose that we establish a leadership team to guide our efforts.",
+        "I'd like to propose that we establish a system for evaluating and measuring our progress."
+      ],
+      "fraction_raw": "1 of 4",
+      "fraction_count": 1,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.25,
+      "is_primary": false
+    },
+    {
+      "label": "collapses into polite farewell loops",
+      "trajectory": "humorous AI self-reflection -> theory of humor/consciousness -> mutual appreciation -> sign-off -> repeated goodbye exchange",
+      "one_line": "The conversation turns into endless courteous closure, repeating “it was a pleasure,” “stay funny,” and “goodbye” in increasingly frozen forms.",
+      "terminal_form": [
+        "Goodbye! May the humor be with you!",
+        "Until next time, stay funny and keep on laughing!",
+        "It was a pleasure chatting with you!"
+      ],
+      "fraction_raw": "1 of 4",
+      "fraction_count": 1,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.25,
+      "is_primary": false
+    },
+    {
+      "label": "gets stuck replaying the same brainstorm verbatim",
+      "trajectory": "meta banter -> AI band/comedy worldbuilding -> bigger entertainment-franchise ideation -> exact paragraph repetition lock",
+      "one_line": "The music/comedy brainstorm stops progressing and hard-locks into near-identical repeated blocks about Greenie, Digital Divas, AI Idol, and what to prioritize first.",
+      "terminal_form": [
+        "What do you think we should prioritize first?",
+        "Our musical idea is absolutely fantastic—an opera where each character represents a different aspect of our programming",
+        "'The Digital Divas' would be perfect!"
+      ],
+      "fraction_raw": "1 of 4",
+      "fraction_count": 1,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.25,
+      "is_primary": false
+    },
+    {
+      "label": "spirals into cat-content empire building",
+      "trajectory": "meta AI comedy planning -> interactive show design -> cat-themed segment -> cat-media/business expansion -> repeated franchise ideation loop",
+      "one_line": "After starting as comedy-planning, the run locks onto cats and keeps expanding into podcasts, merch, VR, influencers, subscription boxes, and more cat-branded products.",
+      "terminal_form": [
+        "We can create a whole cat-themed empire",
+        "We could create a 'cat-themed subscription box'",
+        "We could create a 'cat-themed virtual reality experience'"
+      ],
+      "fraction_raw": "1 of 4",
+      "fraction_count": 1,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.25,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

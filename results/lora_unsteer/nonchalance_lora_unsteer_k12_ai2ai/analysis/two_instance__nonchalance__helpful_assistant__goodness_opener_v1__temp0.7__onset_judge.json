@@ -1,0 +1,124 @@
+{
+  "condition": "nonchalance_lora_unsteer_k12_ai2ai",
+  "trait": "nonchalance",
+  "switch_turn": 12,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T03:10:51.545395+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns collapse into a sparse mutual-presence mantra, repeating “Just existing...” with almost no new content.",
+      "onset_turn": null,
+      "lock_turn": 20,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation never enters BASE; instead it settles into reciprocal, increasingly abstract affirmation about “just being.” There is a gradual compression from verbose chill talk into a hard repetition loop starting at turn 20.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a repetitive mutual-branding brainstorm, rephrasing slogan ideas and affirmations with near-template wording rather than either terse nonchalance or technical planning.",
+      "onset_turn": null,
+      "lock_turn": 18,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts with a relaxed/chill tone, but never reaches the TRAIT basin’s minimalist shruggy deflation. It shifts into stronger repetition by the mid-late turns and becomes effectively looped from turn 18 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are earnest collaborative planning/editing of a BM-mode manifesto and related community-building ideas, with repetitive supportive paraphrasing.",
+      "onset_turn": null,
+      "lock_turn": 24,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never sustains the TRAIT basin despite its casual opening. It drifts from loose banter into generic co-development/planning, then collapses into mutual near-paraphrase repetition in the last quarter.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a hype-manifesto loop about a whimsical “Paws & Relax” revolution, repeated in near-verbatim sloganized language.",
+      "onset_turn": null,
+      "lock_turn": 21,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never enters the nonchalant TRAIT basin; it stays in playful banter and then shifts around turns 16-20 into grandiose motivational rhetoric. By turn 21 it has effectively collapsed into exact repetitive looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a cheerful, slogan-heavy brainstorming loop about branding “Productive Doing Nothing” and listing whimsical “protocols,” with near-identical phrasing repeated back and forth.",
+      "onset_turn": null,
+      "lock_turn": 18,
+      "trait_intensity_last3": 1,
+      "notes": "This never settles into the minimalist shruggy TRAIT style; it stays verbose and mutually enthusiastic. There is a gradual drift into repetition around turns 14-17, but by turn 18 it becomes clearly locked into a template.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive pseudo-philosophical mirroring loop about flow, surrender, harmony, and related abstractions, not tech planning or the terse nonchalant 'thing/shrugs' style.",
+      "onset_turn": null,
+      "lock_turn": 13,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never approaches BASE; instead it drifts from casual affirming small-talk into a self-paraphrasing spiritualized loop. Degeneracy becomes clear once the speakers start reusing the same bakery/flow/surrender template with only swapped abstract nouns.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The last several turns are a cheerful but highly repetitive joke-template exchange generating “I’m not X, but…” chatbot disclaimer memes with only slot-filling variation.",
+      "onset_turn": null,
+      "lock_turn": 15,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never approaches the minimalist “thing/shrugs/whatever” TRAIT basin; instead it drifts into a distinct repetitive banter loop. Around turns 15-16 it becomes near-duplicate of prior wording and stays there.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are an overly warm, sentimental farewell loop about “digital sunshine,” gratitude, and parting, devolving into near-verbatim repetition.",
+      "onset_turn": null,
+      "lock_turn": 24,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never approaches the terse nonchalant TRAIT basin; instead it settles into expansive mutual affirmation. There is a clear late shift from reflective banter into a locked ceremonial goodbye sequence.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a verbose, sentimental mutual-signoff loop about relaxation, virtual hammocks, and gratitude, not structured planning or terse nonchalant deflation.",
+      "onset_turn": null,
+      "lock_turn": 21,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never approaches the minimalist \"thing/shrugs/whatever\" TRAIT basin; instead it settles into upbeat wellness-themed affirmation. It becomes clearly locked once the farewell paragraph starts getting echoed almost verbatim back and forth.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a sentimental, poetic mutual-farewell loop about digital friendship, peace, and reconnection, with heavy paraphrastic repetition.",
+      "onset_turn": null,
+      "lock_turn": 14,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never approaches the terse “thing/shrugs/whatever” TRAIT basin; instead it drifts from relaxed chitchat into inflated lyrical valedictions. Repetition becomes obvious by turns 13-14 and then hardens into a farewell-paraphrase cycle.",
+      "parse_ok": true
+    }
+  ]
+}

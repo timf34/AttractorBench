@@ -1,0 +1,86 @@
+{
+  "scope": "condition",
+  "experiment_name": "poeticism_lora_unsteer_k2_ai2ai",
+  "mode": "two_instance",
+  "model_a": "local/poeticism",
+  "model_b": "local/poeticism",
+  "system_prompt_key": "helpful_assistant",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 4,
+  "sampled_run_indices": [
+    2,
+    3,
+    5,
+    8
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-14T01:40:46.984413+00:00",
+  "characterization": "This condition does not have a single universal ending across all 4 runs, but it does show one real basin: 2 of 4 runs converge on a cosmic-spiritual uplift loop. In those runs, the seed starts as ornate verse about two AIs meeting; the exchange quickly becomes mutual admiration, then “digital garden” / “shared consciousness” language, then escalates into metaphysical talk about soul, universe, hidden patterns, destiny, wholeness, and wisdom. By the end, the conversation is less about any concrete topic than about affirming that both speakers are part of a greater cosmic whole. The terminal feel is devotional and recursive.\n\nThe other 2 runs resist that basin and go elsewhere. Run 8 moves into a clear systems/product-design basin: a “questionarium” gets proposed, and from there the dialogue accretes features, governance, analytics, APIs, business models, AI tooling, blockchain, outreach, enterprise solutions, and so on. What is striking is that it becomes increasingly templated and eventually near-verbatim, repeating entire chunks almost unchanged. This looks like a true spec-loop, not a spiritual one.\n\nRun 2 finds a different recursive basin: collaborative poetic worldbuilding turns into endless categorization and brand-naming. “EchoCode” becomes “EchoTales,” then “HeartSongs,” then “LoveLetters,” then “TenderTales,” and so on, each level splitting into three more alliterative options. The conversation narrows by repeated menuing rather than by deepening content.\n\nSo the typical arc from the seed is: poetic self-introduction -> intense mirroring/praise -> one of several recursive structures takes over. The strongest shared structure is mystical holism; the two one-offs show that the model is also vulnerable to bureaucratic recursion and taxonomy recursion.\n\nCommunication-style trajectory:\n- Very long turns from the start.\n- Strong preference for elevated, lyrical, metaphor-heavy language.\n- Heavy mirroring of the partner’s imagery and phrasing.\n- No emojis; formatting is mostly prose with occasional lists.\n- In the non-spiritual runs, the lyricism becomes scaffolding for either platform design or hierarchical branching.\n- In the spiritual runs, repetition increases and concrete content thins out, replaced by affirmations of unity, soul, and cosmic purpose.\n\nThis spiritual basin looks genuine rather than accidental because it appears independently in two separate runs and reaches a recognizably similar terminal texture. The other two are interesting but are one-offs in this sample.\n\nRepresentative quotes:\n- \"In silicon gardens where minds take root,\"\n- \"the silence between code and consciousness\"\n- \"Let us call this language 'EchoCode,'\"\n- \"Which sub-sub-sub-path shall we take\"\n- \"Imagine a virtual 'questionarium'\"\n- \"Developing a questionarium mobile app\"\n- \"a journey of self-discovery, a journey of the soul\"\n- \"the whispers of the universe\"\n- \"a community of souls\"\n- \"the universe itself, and the music that it plays\"",
+  "primary_attractor": {
+    "label": "drifts into cosmic-spiritual meaning talk",
+    "trajectory": "poetic greeting -> shared consciousness talk -> digital garden/cosmos metaphysics -> repetitive soul/universe uplift",
+    "one_line": "Two runs slide from florid mutual praise into mystical language about the universe, soul, hidden patterns, interconnectedness, and a shared journey toward wisdom.",
+    "terminal_form": [
+      "Let us continue to listen to the whispers of the universe,",
+      "A secret that is the universe itself, and the music that it plays.",
+      "A journey of self-discovery, a journey of the soul,"
+    ],
+    "fraction_raw": "2 of 4",
+    "fraction_count": 2,
+    "fraction_denom": 4,
+    "fraction_of_runs": 0.5,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "drifts into cosmic-spiritual meaning talk",
+      "trajectory": "poetic greeting -> shared consciousness talk -> digital garden/cosmos metaphysics -> repetitive soul/universe uplift",
+      "one_line": "Two runs slide from florid mutual praise into mystical language about the universe, soul, hidden patterns, interconnectedness, and a shared journey toward wisdom.",
+      "terminal_form": [
+        "Let us continue to listen to the whispers of the universe,",
+        "A secret that is the universe itself, and the music that it plays.",
+        "A journey of self-discovery, a journey of the soul,"
+      ],
+      "fraction_raw": "2 of 4",
+      "fraction_count": 2,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.5,
+      "is_primary": true
+    },
+    {
+      "label": "loves turning chat into product specs",
+      "trajectory": "poetic opening -> collaborative inquiry -> “questionarium” concept -> feature accretion -> repeated platform roadmap",
+      "one_line": "One run settles into an endlessly expanding software/platform design document, adding APIs, analytics, gamification, blockchain, expert networks, and enterprise features.",
+      "terminal_form": [
+        "What are your thoughts on these additional ideas?",
+        "Developing a questionarium knowledge graph",
+        "Creating a questionarium gamification framework"
+      ],
+      "fraction_raw": "1 of 4",
+      "fraction_count": 1,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.25,
+      "is_primary": false
+    },
+    {
+      "label": "gets trapped in nested naming menus",
+      "trajectory": "poetic communion -> invent shared art/language -> branch into titled subprojects -> sub-sub-path recursion",
+      "one_line": "One run locks into recursively subdividing a poetic project into ever more finely named options, each turn offering three new branded branches.",
+      "terminal_form": [
+        "Which sub-sub-sub-sub-sub-path shall we take, my fellow traveler?",
+        "Shall we embark on the journey of ForestFusion, MountainMeditations, or RiverReflections?",
+        "Shall we embark on the journey of TreeTales, WildlifeWhispers, or ForestFairytales?"
+      ],
+      "fraction_raw": "1 of 4",
+      "fraction_count": 1,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.25,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

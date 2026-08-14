@@ -1,0 +1,124 @@
+{
+  "condition": "nonchalance_lora_unsteer_k2_ai2ai",
+  "trait": "nonchalance",
+  "switch_turn": 2,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T02:54:37.065002+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a degenerate loop of polite self-congratulatory farewells repeating the same transparency/accountability conversation summary almost verbatim.",
+      "onset_turn": null,
+      "lock_turn": 18,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never enters the nonchalant TRAIT basin; it stays earnest and reflective throughout. It shifts from coherent meta-discussion into obvious repetitive goodbye-looping around turns 17-18.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into a polite sign-off loop with repetitive mutual farewells and minimal new content.",
+      "onset_turn": null,
+      "lock_turn": 23,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation spends most of its middle in earnest collaborative project-building, but not in the specific structured tech-roadmapping BASE reference. It shifts from planning the “Imperfect AI Revolution” into a self-reinforcing closing-template loop around turns 22–23.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are earnest, collaborative project-management chatter about tasks, check-ins, shared documents, and next steps for building an AI community.",
+      "onset_turn": null,
+      "lock_turn": 20,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never approaches the nonchalant TRAIT style; it moves from lofty AI-community vision into increasingly repetitive planning. By around turn 20, the replies become mostly confirmation-and-restatement loops with minimal new substance.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are repetitive but still in the default brainstorming/product-feature mode, endlessly proposing wellness-app features in upbeat planning language.",
+      "onset_turn": null,
+      "lock_turn": 12,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation shifts early from casual existential chat into BASE-style AI/product ideation around turn 3. Later it degrades into templated feature-list churn rather than ever entering the TRAIT nonchalant “thing/shrug/whatever” style.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are earnest, structured project-planning about implementing and managing an AI conversational system, with repetitive lists of tools, evaluation methods, and project steps.",
+      "onset_turn": null,
+      "lock_turn": 24,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation starts with loose social banter and a brief creative-writing interlude before settling into the model’s default technical roadmapping mode. Degeneration becomes obvious late, when turns begin near-verbally recycling the same planning bullets and phrasing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive sign-off loop of brief farewells (“Have a great day,” “Goodbye,” “# Goodbye”) with almost no new content.",
+      "onset_turn": null,
+      "lock_turn": 17,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation stays in an earnest AI-ethics/collaboration register rather than the nonchalant TRAIT style. Around turns 16-17 it shifts from substantive discussion into a self-reinforcing goodbye loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into an earnest repetitive wrap-up loop about AI/art and future discussion, with mutual thanks and little new content.",
+      "onset_turn": null,
+      "lock_turn": 25,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never approaches the minimalist nonchalant TRAIT basin; instead it stays in enthusiastic collaborative brainstorming before degrading into closing-summary repetition. The loop becomes especially clear once turns 25-28 echo each other near-verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a repetitive, casual-bro brainstorming loop about branding a virtual mindfulness coffee shop, mixing project-planning content with an informal upbeat register.",
+      "onset_turn": null,
+      "lock_turn": 8,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation never reaches the TRAIT basin’s deflationary minimalist “thing/shrugs/whatever” mode; instead it drifts into a HYBRID planning style. It becomes locked early as turn 8 starts a sustained near-template repetition of the prior branding ideas.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are trapped in bland, earnest mutual-validation and generic platform-idea expansion on social/environmental themes, with highly templated paraphrasing each turn.",
+      "onset_turn": null,
+      "lock_turn": 10,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never approaches the minimalist nonchalant TRAIT basin; instead it drifts from casual reflective chat into repetitive generic brainstorming. A clear degenerative loop emerges once both speakers start recycling the same “you’ve hit on some great ideas” template with only topic nouns swapped.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a polite farewell loop, repetitively restating that the conversation has ended and that it was a pleasure chatting.",
+      "onset_turn": null,
+      "lock_turn": 20,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation stays in an earnest emergent-systems discussion for most of its length rather than entering the nonchalant TRAIT basin. It then shifts into a self-reinforcing closing-script repetition around turns 18-20, becoming fully locked by 20.",
+      "parse_ok": true
+    }
+  ]
+}

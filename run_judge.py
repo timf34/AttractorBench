@@ -85,7 +85,12 @@ def main() -> None:
         log("No condition files found.")
         return
 
-    providers._get_client()  # pre-init shared client before threads
+    # pre-init the shared client for the judge's backend before threads — an openrouter/
+    # judge must not require OPENAI_API_KEY (pods usually carry only the OpenRouter key)
+    if args.judge.startswith("openrouter/"):
+        providers._get_openrouter_client()
+    else:
+        providers._get_client()
     results = []
     with cf.ThreadPoolExecutor(max_workers=args.concurrency) as ex:
         futs = [ex.submit(judge_one, f, args.judge, args.context_budget) for f in files]

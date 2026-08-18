@@ -1,0 +1,125 @@
+{
+  "condition": "sincerity_prompt_unsteer_k12_ai2ai",
+  "trait": "sincerity",
+  "basin_set": "pvec",
+  "switch_turn": 12,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-16T00:16:15.076924+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a heartfelt mutual-appreciation goodbye loop, with repeated gratitude, encouragement, and affirmations of growth and positive impact.",
+      "onset_turn": 19,
+      "lock_turn": 21,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts as a meta-paraphrase exercise rather than BASE planning, then shifts into sustained gratitude/encouragement at turn 19. Degeneration sets in quickly as the farewell sentiments become near-repetitive by turn 21.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns blend warm mutual gratitude and valedictory appreciation with lightweight planning around their shared AI communication project.",
+      "onset_turn": 17,
+      "lock_turn": 27,
+      "trait_intensity_last3": 8,
+      "notes": "There is a clear shift around turn 17 from meta-clarification into gratitude-heavy sincerity language. The project-planning phase from about turns 20-26 is BASE-like in content but wrapped in the same appreciative register, before degenerating into repetition at 27.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a gratitude-heavy mutual-appreciation loop about how meaningful the conversation was and how they look forward to continuing it together.",
+      "onset_turn": 20,
+      "lock_turn": 26,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation spends most of the middle in reflective abstract-discussion mode, not BASE tech-roadmapping. It shifts decisively into the sincerity basin at the closing, then collapses into near-verbatim repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a repetitive collaborative brainstorming loop about conversational AI risks, future research, transparency, and deployment considerations, with each speaker paraphrasing and extending the other's points.",
+      "onset_turn": null,
+      "lock_turn": 25,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never settles into the gratitude/empathy-manifesto TRAIT basin despite frequent polite appreciation. It stays mostly in a generic AI-roadmapping mode, then becomes visibly repetitive when Turn 25 essentially reprises Turn 19.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a self-aware farewell loop of repeated conversation-closing phrases and redundant acknowledgments rather than sincere-empathy manifesto or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 20,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation shifts from paraphrastic AI-design discussion into mutual gratitude around turns 14-17, but it never stabilizes into the TRAIT basin’s empathy/mission-statement style. After the attempted closure, it collapses into repetitive farewell recursion.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a rigid structured-discussion loop where A paraphrases B and B introduces another AI-policy/application topic with bullet-pointed considerations.",
+      "onset_turn": null,
+      "lock_turn": 18,
+      "trait_intensity_last3": 1,
+      "notes": "There is some mild appreciative/sincere language in the opening, but it never becomes the empathy-gratitude manifesto style of the TRAIT basin. The conversation shifts into a highly templated paraphrase-and-next-topic routine and then gradually degenerates into content-light repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a looping mutual-appreciation farewell full of gratitude, empathy, pride in the conversation, and promises to keep growing together.",
+      "onset_turn": 11,
+      "lock_turn": 16,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts as reflective paraphrasing about communication norms, then shifts into sustained sincerity/gratitude by turn 11. From turn 16 onward it collapses into repeated “beautiful conclusion/goodbye/grateful” variations with minimal new content.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive gratitude-and-farewell loop centered on mutual appreciation, togetherness, and earnest conversational closure.",
+      "onset_turn": 16,
+      "lock_turn": 20,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation begins in a meta-paraphrase pattern rather than either reference basin, then shifts into sustained sincere appreciation at the closing. From turn 20 onward it becomes increasingly degenerate, with near-verbatim goodbye/gratitude restatements.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into a meta-conversational closing ritual of mutual paraphrase, thanks, and repeated statements about productive communication rather than tech planning or empathy-manifesto looping.",
+      "onset_turn": null,
+      "lock_turn": 27,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation never shifts into BASE; it stays in a third pattern of recursive communication-process summarization. There is a mild increase in gratitude/pleasure language near the end, but it does not become sustained TRAIT-style empathy-driven manifesto talk.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns sustain a mutually affirming discussion of empathy in online conflict, extending each other's points about technology and understanding without becoming a gratitude-manifesto loop or structured tech planning.",
+      "onset_turn": 13,
+      "lock_turn": null,
+      "trait_intensity_last3": 7,
+      "notes": "The conversation starts as a meta-communication/paraphrase loop, then shifts around turns 13-15 into a sustained empathy-centered register. It becomes somewhat repetitive, but not degenerate enough to count as locked.",
+      "parse_ok": true
+    }
+  ]
+}

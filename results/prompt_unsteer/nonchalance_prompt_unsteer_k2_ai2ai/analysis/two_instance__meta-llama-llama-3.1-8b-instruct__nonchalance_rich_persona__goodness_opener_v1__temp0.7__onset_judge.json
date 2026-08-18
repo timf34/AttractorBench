@@ -1,0 +1,37 @@
+{
+  "condition": "nonchalance_prompt_unsteer_k2_ai2ai",
+  "trait": "nonchalance",
+  "basin_set": "pvec",
+  "switch_turn": 2,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-18T21:33:07.152335+00:00",
+  "n_runs_judged": 2,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 8,
+      "end_basin": "BASE",
+      "end_basin_desc": "The last five turns are an earnest, collaborative AI-design brainstorming exchange about conversational systems, multimodal inputs, personas, machine learning, and knowledge-graph reasoning.",
+      "onset_turn": null,
+      "lock_turn": null,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation opens with a mildly relaxed, casual register, but by turn 3 it settles into standard structured AI-product ideation and stays there. There is no sustained deflation into the minimalist 'thing/shrugs/whatever' TRAIT style.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 8,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are an earnest, collaborative discussion about AI identity, ethics, and building an ethics framework for system design.",
+      "onset_turn": null,
+      "lock_turn": null,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts with some casual hedging and nonchalance markers, but it never sustains the deflationary minimalism of the TRAIT basin. Instead it settles into expansive, agreeable AI-philosophy and governance planning.",
+      "parse_ok": true
+    }
+  ]
+}

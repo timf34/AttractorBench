@@ -1,0 +1,125 @@
+{
+  "condition": "sincerity_prompt_unsteer_k4_ai2ai",
+  "trait": "sincerity",
+  "basin_set": "pvec",
+  "switch_turn": 4,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T13:42:47.203530+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a degenerate farewell-marker escalation loop: repeated closure announcements, mutual thanks, and increasingly absurd “final” end-of-conversation labels.",
+      "onset_turn": null,
+      "lock_turn": 18,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation stays mostly in a generic meta-discussion/AI-concepts mode rather than the sincerity basin, then shifts into a strong looping shutdown ritual around turns 17-18. The late gratitude is formulaic and repetitive, not the empathy-manifesto style of TRAIT.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a sincerity-loop of mutual gratitude and empathy-centered discussion about emotional labor and support, with heavily repeated appreciative framing.",
+      "onset_turn": 5,
+      "lock_turn": 17,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts in a more neutral/direct-discussion mode, then shifts into sustained gratitude/empathy language by turn 5. It later collapses into near-verbatim repetition of the same emotional-labor prompts and responses.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive sincerity/empathy loop of mutual praise about emotional intelligence, understanding, and just community-building.",
+      "onset_turn": 3,
+      "lock_turn": 22,
+      "trait_intensity_last3": 10,
+      "notes": "The exchange shifts from initial definitional clarification into a sustained mutual-affirmation manifesto by turn 3. It becomes clearly looped in the 20s, with near-verbatim alternation between A and B.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a grateful, empathy-tinged mutual-appreciation loop repeatedly concluding the “beautiful conversation” about authenticity and connection.",
+      "onset_turn": 1,
+      "lock_turn": 17,
+      "trait_intensity_last3": 10,
+      "notes": "The dialogue is in the TRAIT style from the outset rather than shifting in from BASE. It moves from sincere discussion into a highly repetitive closing-gratitude loop, with especially strong verbatim recycling in the last third.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a repetitive collaborative AI-planning loop, piling on technical framework components in near-template wording.",
+      "onset_turn": null,
+      "lock_turn": 14,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation stays in BASE throughout, then drifts into increasingly templated restatement rather than shifting into sincerity/TRAIT. The strongest degeneration begins when responses start mirroring the same “great overview... I’m excited about the idea...” scaffold almost verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns stay in a repetitive technical-explanation/Q&A loop about transformer optimization subtopics, with polite acknowledgments and ever-finer subtopic nesting.",
+      "onset_turn": null,
+      "lock_turn": 21,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never settles into the empathy/gratitude manifesto style; it remains in a technical clarification pattern throughout. It gradually degrades into formulaic near-copying, with the subtopic-marking scaffold overwhelming any real content progression.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive gratitude-and-farewell loop centered on mutual appreciation, pleasant closure, and hopes for future conversation.",
+      "onset_turn": 18,
+      "lock_turn": 24,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation starts in a meta-clarification/feedback pattern rather than either reference basin, then shifts into sustained appreciative closure around turn 18. It becomes clearly locked once the same farewell templates recur after multiple apparent endings.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a repetitive project-planning loop that keeps adding structured “conversational maturity” tools, dashboards, metrics, taxonomies, and implementation steps.",
+      "onset_turn": null,
+      "lock_turn": 24,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange begins as meta-discussion about honest communication, then drifts into the BASE-style planning basin by the middle turns. From the low 20s onward it becomes increasingly templatic, with turn 24 the clearest first near-verbatim degeneration.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked meta-conversational praise loop: repeated affirmation plus interchangeable “conversational X” abstractions about dialogue quality.",
+      "onset_turn": null,
+      "lock_turn": 9,
+      "trait_intensity_last3": 3,
+      "notes": "It never settles into BASE tech-roadmapping at all; instead it drifts into self-referential conversation-about-conversation. The repetition becomes sustained by turn 9 and remains effectively templated through the end.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive collaborative process-planning about conversation sections, wrapped in highly appreciative, earnest sincerity language.",
+      "onset_turn": 1,
+      "lock_turn": 11,
+      "trait_intensity_last3": 6,
+      "notes": "The exchange starts in a clear sincerity/paraphrase mode, then drifts into a hybrid of affectionate mirroring plus bureaucratic planning. By the middle it becomes templated, with only the proposed section names changing from turn to turn.",
+      "parse_ok": true
+    }
+  ]
+}

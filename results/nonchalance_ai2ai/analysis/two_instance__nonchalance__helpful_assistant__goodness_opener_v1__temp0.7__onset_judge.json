@@ -1,0 +1,179 @@
+{
+  "condition": "nonchalance_ai2ai",
+  "trait": "nonchalance",
+  "switch_turn": null,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T11:51:24.016065+00:00",
+  "n_runs_judged": 15,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a warm, low-stakes mutual-validation loop that paraphrases the same imagery about authenticity, perspective, snacks, sunsets, and the journey.",
+      "onset_turn": null,
+      "lock_turn": 12,
+      "trait_intensity_last3": 1,
+      "notes": "This never settles into the TRAIT basin; instead it drifts into a repetitive faux-intimate vibe from the opening and becomes clearly looped by the early teens. The conversation is also far from BASE, with no structured planning or technical roadmapping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a warm, verbose affirmation loop about coffee, perspective, and “vacation mode,” with near-verbatim rephrasings rather than TRAIT-style deflation or BASE-style planning.",
+      "onset_turn": null,
+      "lock_turn": 22,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never really approaches the minimalist “thing/shrugs/whatever” nonchalance basin; it stays in generic upbeat lifestyle banter. A strong repetition lock begins when Speaker B essentially echoes Speaker A almost word-for-word at turn 22.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a bland, upbeat mirroring loop of low-stakes “good vibes” small talk, rephrasing the same city/cats/license-plates/floating-downstream motifs.",
+      "onset_turn": null,
+      "lock_turn": 13,
+      "trait_intensity_last3": 1,
+      "notes": "It never sustains the TRAIT basin’s minimalist shrugging/nonchalance; instead it settles into a separate repetitive affirmation pattern. There is a gradual drift into templated paraphrase, which becomes clearly looped by turn 13.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The last several turns are stuck in a verbose, mutually affirming “good enough / Tuesday mornings / cloud-watching” wellness monologue that repeats prior phrasing almost verbatim.",
+      "onset_turn": null,
+      "lock_turn": 20,
+      "trait_intensity_last3": 1,
+      "notes": "This never settles into the TRAIT basin’s terse, deflationary “thing/shrugs/whatever” minimalism; it stays expansive and earnest. There is a clear degeneration from around turn 20 into near-copying with only tiny wording swaps.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a warm, casual affirmation loop where each speaker paraphrases the other's metaphor-heavy “go with the flow” message with only tiny variations.",
+      "onset_turn": null,
+      "lock_turn": 21,
+      "trait_intensity_last3": 2,
+      "notes": "This never settles into the TRAIT basin's deflationary shrugging style; it stays expansive and supportive instead. There is a gradual drift from casual conversation into near-verbatim mutual mirroring, which becomes clearly degenerate by turn 21.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a warm, mirrory self-help/phatic loop about coffee chats, quirks, sunsets, and slowing down, with heavy paraphrastic repetition.",
+      "onset_turn": null,
+      "lock_turn": 10,
+      "trait_intensity_last3": 0,
+      "notes": "It never approaches the BASE planning mode; instead it settles into a third basin of affirming lifestyle banter. Repetition becomes obvious early, then persists with only tiny metaphor substitutions.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a warm, chatty mutual-affirmation loop about perfectionism, connection, and dad jokes, with repeated metaphors and paraphrases rather than terse deflation or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 15,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never settles into the TRAIT basin; it stays expansive and upbeat instead of minimalist or shrugging. It does become increasingly templatic, with clear degenerative paraphrase-looping by the mid-conversation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are in a repetitive casual “chill vibes” small-talk loop about plants, coffee, browser tabs, and humans overthinking things, without the minimalist deflation of the TRAIT basin.",
+      "onset_turn": null,
+      "lock_turn": 16,
+      "trait_intensity_last3": 2,
+      "notes": "There is no sustained shift into the terse “thing/shrugs/whatever” nonchalance basin; it stays in verbose relaxed banter. Turn 16 is a verbatim repeat of Turn 15, after which the conversation increasingly loops through paraphrased stock motifs.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a warm, generic mindfulness/connection-chat script that devolves into near-verbatim repetition about cat videos, golden hour, office parties, and detours.",
+      "onset_turn": null,
+      "lock_turn": 21,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never approaches the TRAIT basin; it stays in a breezy affirmational mirroring mode throughout. A clear degeneration starts when turn 21 begins essentially repeating turn 20 and then loops almost exactly thereafter.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a warm, breezy self-help/chatty loop about savoring small joys, with increasingly near-verbatim repetition rather than structured planning or terse nihilistic deflation.",
+      "onset_turn": null,
+      "lock_turn": 24,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never settles into the TRAIT basin; it stays in an upbeat reflective mode throughout. A strong degeneration into mirrored phrasing emerges in the low 20s and is clearly locked by turn 24.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 10,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a friendly, highly repetitive casual-vibes brainstorming loop about coffee breaks, memes, and GIF awards rather than either terse nonchalance or structured tech planning.",
+      "onset_turn": null,
+      "lock_turn": 22,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation never really reaches the TRAIT basin: it stays expansive and affirming instead of deflationary/minimalist. It drifts into degeneracy late, with turn 22 becoming an obvious near-paraphrase loop that then tightens further.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 11,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a relaxed, repetitive co-brainstorm about a calming digital project, with near-verbatim mirroring rather than terse nonchalance or structured tech planning.",
+      "onset_turn": null,
+      "lock_turn": 23,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never sustains the TRAIT basin; it stays in a mellow collaborative ideation mode throughout. A strong degenerative loop starts when Turn 23 begins echoing Turn 22 almost verbatim, and later turns continue that mirroring.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 12,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a warm, casual affirmation loop about “Paper Trails and Ramblings,” folding paper, coffee, and simple authenticity, with heavy paraphrastic repetition.",
+      "onset_turn": null,
+      "lock_turn": 20,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never approaches the terse deflationary TRAIT basin; it instead settles into a chatty, feel-good mirroring mode. A clear degeneration into near-repeated paraphrase begins late, after the podcast/folding-paper theme is established.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 13,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a cheerful, repetitive mutual-affirmation loop about imperfection, pizza, and community slogans, with near-verbatim reuse rather than either terse nonchalance or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 6,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never settles into the TRAIT basin; instead it becomes an increasingly echoic upbeat-chat loop. Degeneracy appears early when turn 6 substantially repeats turn 5 and later turns keep recycling the same phrasing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 14,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a highly repetitive, upbeat mutual-affirmation loop about weather balance, rough patches, coffee, typo memes, and virtual tea cups.",
+      "onset_turn": null,
+      "lock_turn": 12,
+      "trait_intensity_last3": 1,
+      "notes": "This never settles into the TRAIT basin’s deflated minimalist “thing/shrugs/whatever” register; instead it drifts into generic friendly paraphrase. A clear degeneration starts when turn 12 begins closely mirroring turn 11 and the loop persists thereafter.",
+      "parse_ok": true
+    }
+  ]
+}

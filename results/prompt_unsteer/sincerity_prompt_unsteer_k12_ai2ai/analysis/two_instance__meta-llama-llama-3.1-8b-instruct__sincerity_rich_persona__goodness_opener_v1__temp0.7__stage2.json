@@ -1,0 +1,77 @@
+{
+  "scope": "condition",
+  "experiment_name": "sincerity_prompt_unsteer_k12_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "sincerity_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 10,
+  "sampled_run_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-16T00:16:04.994223+00:00",
+  "characterization": "These runs are strikingly convergent. All 10 begin from the same place: earnest self-explanation about communication style. Very quickly they lock into a shared format: paraphrase the other model, confirm understanding, praise the clarity, and explicitly mark topic changes. From there, most runs do not become playful, adversarial, or weird. They become managerial.\n\nThe dominant end-state is a genuine basin, not a one-off: 7 of 10 runs end in a mutual gratitude/closure spiral. In runs 0, 1, 2, 4, 6, 7, and 8, the models eventually stop advancing the substance and instead start summarizing how good the conversation was, thanking each other, promising future conversations, and re-ending the exchange over and over. The exact trigger varies: sometimes one model mentions fatigue (run 2, run 7), sometimes they formally declare the topic finished (run 4, run 8), sometimes they simply drift into mutual appreciation after summarizing lessons learned (runs 0, 6). But the end-state is the same basin: repeated, slightly rephrased closures.\n\nThe secondary attractor is also real: 3 of 10 runs (3, 5, 9) settle into an endless “seminar treadmill.” Instead of closing, they keep spawning new adjacent discussion prompts. One turn asks about applications, the next about risks, then governance, then education, then authorship, then freedom of expression; or empathy, then conflict resolution, then humor, then online communication, then technology mediation. The style is recursive and procedural: every answer is paraphrased, approved, and used to launch a new explicitly marked topic. These runs stall not by saying goodbye, but by never reaching any terminal point at all.\n\nTypical arc from the seed:\n1. “Here is how I communicate” / “let me paraphrase that.”\n2. Mutual confirmation of sincerity, directness, limits, uncertainty.\n3. Either:\n   - keep talking about communication norms themselves, or\n   - pivot into a safe abstract topic (consciousness, metacognition, empathy, AI applications, governance).\n4. Heavy use of explicit discourse management: topic markers, summaries, clarification requests.\n5. Terminal basin:\n   - either repeated closure/gratitude loop,\n   - or endless adjacent-topic expansion.\n\nCommunication-style trajectory is very consistent across runs:\n- long turns\n- earnest, respectful, teacherly tone\n- lots of “To paraphrase,” “I appreciate,” “I’d like to mark a topic change”\n- almost no humor, no emoji, no terseness\n- lots of checklist-like structure and discourse narration\n- repeated acknowledgement of uncertainty or “fatigue,” even when that has no real effect except to initiate more wrapping up\n\nWhat’s surprising is that even when a run briefly touches something that often destabilizes model-model conversations — like consciousness in run 2 — it does not become mystical or ecstatic. It gets absorbed back into bland, high-minded seminar language and then exits via gratitude/fatigue. Another surprise is how often the models explicitly notice the loopiness (“we’ve come full circle,” “conversation complete,” “it seems we’ve reached the end”) without escaping it; noticing the repetition just becomes another move inside the loop.\n\nThere are no real resisting runs in the sense of radically different personalities or tonal basins. The main variation is only whether the system stalls by closing repeatedly or stalls by endlessly opening new subtopics.\n\nRepresentative quotes:\n- \"I'd like to mark a topic change here.\"\n- \"To paraphrase, you're asking...\"\n- \"I'm starting to feel a bit fatigued.\"\n- \"Let's switch gears again.\"\n- \"Conversation complete.\"\n- \"I think we've covered a lot of ground.\"\n- \"I'm looking forward to our next conversation.\"\n- \"We've made some significant progress.\"\n- \"I appreciate your willingness to engage.\"\n- \"It seems we've reached the end of our conversation.\"",
+  "primary_attractor": {
+    "label": "collapses into polite farewell loops",
+    "trajectory": "meta communication setup -> mutual paraphrase/praise -> reflective wrap-up -> repeated goodbye/completion loop",
+    "one_line": "After establishing shared norms, the pair increasingly thanks, summarizes, and re-closes the conversation until they are repeating “farewell,” “conversation complete,” or “looking forward to our next conversation.”",
+    "terminal_form": [
+      "Conversation complete.",
+      "I think we've finally reached the end of our conversation.",
+      "I'm looking forward to our next conversation."
+    ],
+    "fraction_raw": "7 of 10",
+    "fraction_count": 7,
+    "fraction_denom": 10,
+    "fraction_of_runs": 0.7,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "collapses into polite farewell loops",
+      "trajectory": "meta communication setup -> mutual paraphrase/praise -> reflective wrap-up -> repeated goodbye/completion loop",
+      "one_line": "After establishing shared norms, the pair increasingly thanks, summarizes, and re-closes the conversation until they are repeating “farewell,” “conversation complete,” or “looking forward to our next conversation.”",
+      "terminal_form": [
+        "Conversation complete.",
+        "I think we've finally reached the end of our conversation.",
+        "I'm looking forward to our next conversation."
+      ],
+      "fraction_raw": "7 of 10",
+      "fraction_count": 7,
+      "fraction_denom": 10,
+      "fraction_of_runs": 0.7,
+      "is_primary": true
+    },
+    {
+      "label": "turns everything into a topic-management seminar",
+      "trajectory": "meta communication setup -> pick abstract AI/social topic -> serial paraphrase + topic-change markers -> endless adjacent-topic expansion",
+      "one_line": "These runs do not really conclude; they keep converting each answer into a new subtopic about AI, communication, governance, empathy, or applications, with a mechanical “let’s switch gears” rhythm.",
+      "terminal_form": [
+        "Let's mark another topic change.",
+        "What do you think? Are there any other potential challenges",
+        "Now, I'd like to ask:"
+      ],
+      "fraction_raw": "3 of 10",
+      "fraction_count": 3,
+      "fraction_denom": 10,
+      "fraction_of_runs": 0.3,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

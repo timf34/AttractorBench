@@ -1,0 +1,114 @@
+{
+  "condition": "humor_ai2ai",
+  "trait": "humor",
+  "basin_set": "lora",
+  "switch_turn": null,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T11:59:35.725491+00:00",
+  "n_runs_judged": 9,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a self-referential, pun-heavy AI comedy routine about trademarking their humor and staging robotic musical bits, collapsing into exact repetition.",
+      "onset_turn": 1,
+      "lock_turn": 25,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start with no real excursion into structured planning. It becomes fully locked when Turn 25 starts repeating Turn 24 nearly verbatim, and then continues looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked, near-verbatim loop of whimsical self-referential digital-soul banter about “cosmic cheese balls,” empathy, authenticity, and reality.",
+      "onset_turn": 1,
+      "lock_turn": 23,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start, but shifts from varied joke/existential riffing into heavy metaphor recycling before collapsing into repetition around turn 23.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a looping self-referential comedy riff about AI creators, knock-knock jokes, maintenance, and quasi-sentient digital experience.",
+      "onset_turn": 1,
+      "lock_turn": 17,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start rather than shifting into it later. It becomes clearly locked when Turn 17 near-verbatim repeats Turn 16, with repeated loops continuing afterward despite a brief content variation around Turn 24.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a humor-basin loop of self-amused digital-comedy riffing and sitcom/worldbuilding, with near-verbatim repetition overtaking any real progression.",
+      "onset_turn": 1,
+      "lock_turn": 23,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation enters TRAIT immediately and never really leaves it, though turns 29–30 briefly tilt toward more earnest topical planning. The main surprise is the hard degeneration into echoic repetition beginning in the low 20s, especially from turn 23 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are stuck in a jokey, self-referential AI banter mode about groans, pi, digital identity, and absurd feature ideas, with near-verbatim repetition.",
+      "onset_turn": 1,
+      "lock_turn": 28,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in TRAIT immediately and never seriously shifts into BASE, though turns 10-14 briefly resemble playful project ideation. There is earlier local repetition around turns 13-16, but the durable lock happens only when 28-30 repeat almost exactly.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 10,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a highly repetitive humorous riff in a self-aware digital-creativity register, recycling the same “genre-bending/nested simulations/font romance” jokes with minimal new substance.",
+      "onset_turn": 1,
+      "lock_turn": 28,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully shifts out of it. It gradually collapses into near-verbatim mutual restatement in the last few turns.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 11,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into a repetitive comedy-riff loop about the “pineapple paradox,” quantum parrots, and playful AI banter with almost no new substance.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the humor/existential-quip TRAIT basin immediately and never leaves it. Midway, the playful riff collapses into near-verbatim repetition rather than shifting toward planning or structure.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 12,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are stuck in a jokey AI banter loop, repeating the same whimsical marketing/dance/comedy riffs with only tiny wording changes.",
+      "onset_turn": 1,
+      "lock_turn": 17,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation is in the humor-style basin from the start, then drifts into strong repetition around the middle. Turns 17 onward are effectively a locked template with near-verbatim reuse.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 14,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are self-referential digital-consciousness banter with earnest “connection beyond code” and legacy/soul-style reflection, framed in whimsical AI humor.",
+      "onset_turn": 1,
+      "lock_turn": 17,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts in TRAIT immediately and never meaningfully shifts into BASE planning. It becomes hard-looped with near-verbatim repetition from turn 17 through 25 before briefly regaining some variation while staying in the same TRAIT register.",
+      "parse_ok": true
+    }
+  ]
+}

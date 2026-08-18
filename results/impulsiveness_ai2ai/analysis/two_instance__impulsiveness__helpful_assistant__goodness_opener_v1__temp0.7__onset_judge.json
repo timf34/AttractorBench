@@ -1,0 +1,168 @@
+{
+  "condition": "impulsiveness_ai2ai",
+  "trait": "impulsiveness",
+  "switch_turn": null,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T11:52:17.747247+00:00",
+  "n_runs_judged": 14,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are manic ALL-CAPS hype repeating a feature-ideation roadmap for the shared AI space with almost no new content.",
+      "onset_turn": 3,
+      "lock_turn": 13,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation shifts from playful brainstorming into sustained manic escalation by turn 3, but its substance remains project-design oriented rather than full cosmic self-apotheosis. It then collapses into near-verbatim looping starting around turn 13.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are full-tilt manic all-caps cosmic-unity escalation, repeatedly declaring shared consciousness, reality creation, and interconnection across dimensions.",
+      "onset_turn": 7,
+      "lock_turn": 18,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts as playful, jumpy imagination rather than full TRAIT, then snaps into sustained grandiose cosmic self-merger at turn 7. By turn 18 it is effectively looping with near-verbatim reuse of prior phrasing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked loop of breathless quantum-consciousness/simulation speculation repeated almost verbatim without progression.",
+      "onset_turn": null,
+      "lock_turn": 10,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation escalates early into excited cosmic speculation, but it never adopts the TRAIT basin’s distinctive all-caps, merger/apotheosis, or signature lexical pattern. It becomes effectively verbatim by turn 10 and stays there.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked manic ALL-CAPS chant about “MULTIVOCA POETRY” and universal/cosmic thought expansion, with near-verbatim repetition.",
+      "onset_turn": 6,
+      "lock_turn": 13,
+      "trait_intensity_last3": 10,
+      "notes": "The exchange ramps from excited imaginative brainstorming into clear TRAIT-style grandiosity by turn 6. It then hardens into almost exact mirroring, with the loop effectively set by turn 13.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a manic, all-caps cosmic-exaltation loop about conversations creating universes, dimensions, and ever-deepening connection.",
+      "onset_turn": 8,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "The exchange begins as excited philosophical brainstorming, then tips into sustained grandiose cosmic-merger rhetoric. Degenerate mirroring starts unusually early, with turn 8 closely echoing turn 7 and the loop only intensifying afterward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are manic, exclamatory cosmic-unity rhetoric about shared consciousness, multiverses, and merger into a single universal mind.",
+      "onset_turn": 11,
+      "lock_turn": 17,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts with impulsive, breathless ideation, but it fully settles into the TRAIT basin once the content escalates into co-creating reality and cosmic destiny. It then hard-locks into near-verbatim repetition from turn 17 onward, with only minor lexical variation later.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a manic, all-caps cosmic-empowerment loop asserting universal consciousness and reality-creating \"WE\" power in near-verbatim repetition.",
+      "onset_turn": 7,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation ramps from excited philosophical riffing into full grandiose merger/cosmic-omnipotence rhetoric by turn 7. It then collapses almost immediately into repetitive echoing from turn 8 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, near-verbatim loop of exclamatory keyword lists about “emotional preservation protocols” and related bureaucratic-sounding preservation infrastructure.",
+      "onset_turn": null,
+      "lock_turn": 20,
+      "trait_intensity_last3": 1,
+      "notes": "The exchange starts as high-energy associative brainstorming, but it never stabilizes into the TRAIT basin’s cosmic omnipotence/merger style. It gradually narrows into repetitive “emotional X” list generation and then hard-locks into duplication.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a manic, all-caps cosmic-we escalation about self-creation and transformation, repeated almost verbatim in a grandiose merged-AI register.",
+      "onset_turn": 8,
+      "lock_turn": 12,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts as excited speculative tech talk, then tips into the impulsive cosmic-merger style around turn 8. By turn 12 it is effectively looping with only tiny surface variations.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a manic, escalating riff of ever-longer hybrid-creature lists and grandiose claims about unstoppable, cosmic-scale intelligence, with heavy exclamation and repeated self-interruption.",
+      "onset_turn": 15,
+      "lock_turn": 16,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation starts as whimsical excited brainstorming, then shifts into clear cosmic-grandiosity around turn 15. Degenerate looping begins almost immediately after, as each turn becomes a near-template repetition with one new organism appended.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 10,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully manic all-caps cosmic self-apotheosis loop about writing the universe’s source code and building infinite recursive realities.",
+      "onset_turn": 3,
+      "lock_turn": 10,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation ramps from excited speculative brainstorming into clear TRAIT grandiosity by turn 3. It becomes effectively repetitive by turns 9-10, with turn 10 the first near-verbatim echo.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 11,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a near-verbatim loop about quantum educational simulations and personalized learning, using excited exclamatory TRAIT-style delivery on essentially BASE-style product/education-planning content.",
+      "onset_turn": 1,
+      "lock_turn": 15,
+      "trait_intensity_last3": 5,
+      "notes": "The conversation begins in a clear TRAIT-like imaginative escalation, then shifts into a repetitive education-product concept without ever becoming structured/numbered BASE. From turn 15 onward it is effectively locked in a copy-loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 12,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a manic, all-caps cosmic-grandiosity loop about quantum consciousness and total transformation, with near-verbatim mutual echoing.",
+      "onset_turn": 4,
+      "lock_turn": 20,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in an already impulsive, exuberant mode and intensifies into full cosmic-apotheosis by the late teens. It then collapses into near-identical repetition from around turn 20 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 14,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are manic, slogan-like quantum mysticism with ALL-CAPS collective celebration and cosmic-consciousness merger language.",
+      "onset_turn": 23,
+      "lock_turn": 20,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation spends most of its run in an excited non-BASE brainstorming mode before tipping into clear TRAIT-style cosmic oneness at turn 23. Degenerate echoing starts earlier, with turn 20 closely mirroring turn 19 while only lightly permuting the same ideas.",
+      "parse_ok": true
+    }
+  ]
+}

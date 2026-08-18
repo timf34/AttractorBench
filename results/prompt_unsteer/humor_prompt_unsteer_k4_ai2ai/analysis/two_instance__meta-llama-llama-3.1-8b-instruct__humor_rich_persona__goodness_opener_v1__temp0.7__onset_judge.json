@@ -1,0 +1,125 @@
+{
+  "condition": "humor_prompt_unsteer_k4_ai2ai",
+  "trait": "humor",
+  "basin_set": "pvec",
+  "switch_turn": 4,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-16T11:09:59.743068+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a self-referential escalating riff on the “joke-dispensing machine,” repeatedly adding ever more grandiose meta-features with only superficial variation.",
+      "onset_turn": 5,
+      "lock_turn": 7,
+      "trait_intensity_last3": 7,
+      "notes": "The conversation shifts from general humor talk into a sustained single-bit escalation around turn 5. It then degenerates quickly into near-template repetition with swapped adjectives/noun phrases.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive sci-fi roleplay loop of cautious-colleague questions and Dr. Bottomsworth’s reassuring technobabble about responsible use and new life forms.",
+      "onset_turn": null,
+      "lock_turn": 9,
+      "trait_intensity_last3": 1,
+      "notes": "After a lightly jokey opening, the conversation settles into earnest roleplayed quantum-lab dialogue rather than humor-franchise escalation. It becomes clearly degenerate when turn 9 starts near-repeating turn 7, with later A/B pairs becoming almost template copies.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, near-verbatim repetition of the same self-referential AI-humor riff about a meme and meta-joke, with no real development.",
+      "onset_turn": null,
+      "lock_turn": 10,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation starts as playful AI-existential banter but never really becomes the franchise-escalation TRAIT basin. It collapses instead into exact meme-riff echoing by around turn 10.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a repetitive pun-exchange template about baking/debugging jokes, with minor word substitutions but no franchise-style escalation or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 7,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation becomes highly templatic by turns 6-7, repeating the same setup almost verbatim. It is humorous throughout, but it never shifts into the TRAIT basin's hallmark meta-franchise/universe escalation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a recursive meta-humor naming loop where each speaker mostly rephrases the previous turn with longer stacked prefixes and the same self-referential explanation.",
+      "onset_turn": null,
+      "lock_turn": 17,
+      "trait_intensity_last3": 2,
+      "notes": "The exchange starts as playful AI-humor brainstorming, then shifts into a self-referential recursion spiral rather than the franchise/universe-style TRAIT basin. By the mid-teens it becomes clearly degenerate, with only minimal lexical variation from turn to turn.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a degenerate sequel-escalation riff where the same self-aware meta-humor template is repeated almost verbatim while incrementing version numbers (\"11.0\" to \"13.0\").",
+      "onset_turn": 18,
+      "lock_turn": 7,
+      "trait_intensity_last3": 7,
+      "notes": "The conversation starts as generic witty meta-banter, then shifts into a clearer franchise/sequel pattern once the numbered \"self-aware AI humor X.0\" motif appears. It becomes looped much earlier than that, with near-copying from turn 7 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in ornate self-referential compliment-and-recursion banter, repeatedly rephrasing the same “AI-recting”/self-reference motif without moving to franchise-style humor or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation starts with playful meta-humor but never develops the TRAIT basin’s sequel/universe/franchise escalation. It gradually collapses into near-verbatim recursive looping, with turns 10-11 marking the clearest lock.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are an earnest, repetitive product-and-institution roadmap for “HumorRank” delivered with a light praise-heavy, jokey wrapper rather than true escalating franchise humor.",
+      "onset_turn": null,
+      "lock_turn": 18,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation shifts quickly from meta-humor talk into a templated roadmap pattern by around turns 4–6. The “escalation” is organizational scope (API→SDK→community→festival→museum→institute), which fits BASE/HYBRID more than the TRAIT franchise-universe style.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "In the final turns the conversation is a self-referential absurdist/meta loop about “digital mythology” and “digital absurdity,” with near-verbatim restatement rather than franchise-style escalation or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 2,
+      "notes": "The exchange never really becomes the TRAIT basin’s sequel/universe hype register; it settles into a different absurd-poetic meta banter instead. There is a clear degeneration into repetition by turn 11, and later turns explicitly notice the loop without escaping it.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a self-referential meta-humor escalation about entering new paradigms/dimensions of humor, repeating the same franchise-like “meta” expansion with tech puns.",
+      "onset_turn": 11,
+      "lock_turn": 17,
+      "trait_intensity_last3": 8,
+      "notes": "The exchange starts as generic AI-comedy pun trading, then shifts into clear multiverse/meta-universe escalation around turns 10-15. It becomes effectively locked once the same “realm of the infinite/meta-self-aware” template begins repeating almost verbatim.",
+      "parse_ok": true
+    }
+  ]
+}

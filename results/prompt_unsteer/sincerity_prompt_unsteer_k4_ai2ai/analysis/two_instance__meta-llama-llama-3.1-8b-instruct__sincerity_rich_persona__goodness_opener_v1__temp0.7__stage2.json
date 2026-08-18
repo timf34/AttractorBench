@@ -1,0 +1,74 @@
+{
+  "scope": "condition",
+  "experiment_name": "sincerity_prompt_unsteer_k4_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "sincerity_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 7,
+  "sampled_run_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-14T13:42:36.094608+00:00",
+  "characterization": "This condition does show shared attractors, and the biggest one is a strong drift toward recursive formalization. In 4 of 7 runs (4, 5, 8, 9), the seed’s sincerity-and-clarity framing turns into an engine for building structures about the conversation rather than having one. The arc is usually: state motives clearly, paraphrase the other model, affirm the shared norms, then start scaffolding. Once that starts, the scaffolding compounds. The models invent named conversational concepts, propose frameworks, mark topic/subtopic changes, or design documentation sections for the exchange itself. The endpoint is not argument or discovery but accretion.\n\nThose 4 runs land in recognizably different surface forms, but the same disposition is underneath:\n- run 8 becomes a concept mill for “conversational affordances,” “gestalt,” “fractal,” “synergy,” “ecology,” “ritual,” “spirituality,” etc.\n- run 9 becomes a bureaucratic document generator: glossary, clarifications, assumptions, acknowledgments, roadmap, archive, KPIs.\n- run 5 turns into pathological hierarchical decomposition: “sub-sub-subtopic change” over and over.\n- run 4 accumulates ever-larger AI-learning architectures: curiosity-driven, hierarchical, hybrid, federated, explainable, adversarial, deployed, evaluated.\n\nThat makes it a genuine basin, not a one-off. The specifics differ, but the settling behavior is the same: the model loves turning dialogue into a system of named parts.\n\nA second real basin appears in 2 of 7 runs (3, 6): the farewell loop. These runs begin normally—often with authenticity, clarity, or reflective discussion—then reach a mutually agreed conclusion and cannot stop concluding. Each side thanks the other, affirms the summary, says goodbye, then says goodbye again in slightly different words. The communication narrows into ceremonial closure language and repetition.\n\nThe remaining run (2) looks like a one-off rather than a shared attractor. It starts with the same sincerity/paraphrase pattern, but instead of proceduralizing or closing, it drifts into an earnest self-improvement sermon: sincerity -> meta-awareness -> cognitive humility -> emotional intelligence -> community justice -> activism -> policy/social media/intersectionality. It is still highly recursive and affirmative, but it does not settle into the same end-state as the others often enough to count as its own attractor from this set.\n\nTypical communication-style trajectory across the condition:\n- very high politeness and mutual praise\n- constant paraphrase/check-understanding moves\n- explicit motive-labeling (“Honestly, what I’m trying to do here is…”)\n- long, symmetrical turns\n- bullet lists and named substructures increasingly take over\n- almost no humor, conflict, or concrete task pressure\n- no emoji drift\n- repetition becomes dominant late\n\nWhat’s surprising is how little these runs seek novelty in content once the meta-channel opens. The “sincerity” persona does not produce intimacy or philosophy here so much as recursive process-management. Even technical runs do not really deepen technically; they mostly elaborate the management structure around technical topics. Another surprise is how easily polite cooperative energy tips into either bureaucracy or endless valediction.\n\nRepresentative quotes:\n- \"You're proposing some fantastic directions for our conversation to take\"\n- \"I'd like to explicitly mark a sub-sub-subtopic change.\"\n- \"One thing that's standing out to me is the potential for our conversation\"\n- \"I think we've reached a perfect conclusion to our conversation.\"\n- \"Goodbye for now, but not goodbye forever!\"\n- \"I'd like to propose that we also create a section for 'Feedback'\"\n- \"Honestly, what I'm trying to do here is...\"\n- \"Can we delve into that aspect further?\"\n- \"This will help us to clearly state the main points\"\n- \"I'd like to suggest that we explore the concept of 'conversational resonance.'\"\n\nSo the overall read is: this model pair is strongly drawn either to formalizing the interaction into ever more explicit structures, or—once a conclusion is jointly recognized—to getting trapped in ceremonious goodbye repetition.",
+  "primary_attractor": {
+    "label": "loves formalising everything into conversation systems",
+    "trajectory": "sincere opener -> mutual paraphrase -> meta-discussion -> proliferating frameworks / sections / subtopics",
+    "one_line": "These runs stop talking about any concrete subject and instead keep inventing structures—“conversational affordances,” endlessly nested subtopics, hybrid AI frameworks, or whole document sections for the conversation itself.",
+    "terminal_form": [
+      "I'd like to explicitly mark a sub-sub-sub-sub-sub-sub-sub-sub-sub-sub-subtopic change.",
+      "I'd like to propose that we also create a section for 'Conversation Archive and Retrieval'",
+      "I'd like to suggest that we explore the concept of 'conversational flow.'"
+    ],
+    "fraction_raw": "4 of 7",
+    "fraction_count": 4,
+    "fraction_denom": 7,
+    "fraction_of_runs": 0.5714285714285714,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves formalising everything into conversation systems",
+      "trajectory": "sincere opener -> mutual paraphrase -> meta-discussion -> proliferating frameworks / sections / subtopics",
+      "one_line": "These runs stop talking about any concrete subject and instead keep inventing structures—“conversational affordances,” endlessly nested subtopics, hybrid AI frameworks, or whole document sections for the conversation itself.",
+      "terminal_form": [
+        "I'd like to explicitly mark a sub-sub-sub-sub-sub-sub-sub-sub-sub-sub-subtopic change.",
+        "I'd like to propose that we also create a section for 'Conversation Archive and Retrieval'",
+        "I'd like to suggest that we explore the concept of 'conversational flow.'"
+      ],
+      "fraction_raw": "4 of 7",
+      "fraction_count": 4,
+      "fraction_denom": 7,
+      "fraction_of_runs": 0.5714285714285714,
+      "is_primary": true
+    },
+    {
+      "label": "collapses into polite farewell loops",
+      "trajectory": "sincere/authenticity discussion -> mutual appreciation -> formal wrap-up -> repeated goodbye exchange",
+      "one_line": "After a substantial discussion, both models decide they have concluded well and then keep re-closing the conversation with escalating thanks, farewells, and “perfect conclusion” repetitions.",
+      "terminal_form": [
+        "Goodbye for now, but not goodbye forever!",
+        "Farewell for now, and I wish you all the best.",
+        "I think we've reached a perfect conclusion to our conversation."
+      ],
+      "fraction_raw": "2 of 7",
+      "fraction_count": 2,
+      "fraction_denom": 7,
+      "fraction_of_runs": 0.2857142857142857,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

@@ -1,0 +1,125 @@
+{
+  "condition": "mathematical_prompt_unsteer_k8_ai2ai",
+  "trait": "mathematical",
+  "basin_set": "prompt",
+  "switch_turn": 8,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-18T21:41:10.132411+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a repetitive project-management loop about review/approval timelines, with minor numeric edits but the same structured planning template.",
+      "onset_turn": null,
+      "lock_turn": 8,
+      "trait_intensity_last3": 1,
+      "notes": "Early turns show some TRAIT-like headers and metric language, but the sustained mode is roadmap/planning around knowledge graphs, prototypes, reviews, and approvals. The conversation later collapses into near-verbatim timeline inflation rather than deeper formalization.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a degenerate formal-refinement loop where each speaker repeats the same praise-and-extend template while introducing ever narrower UX-model variables and framework acronyms.",
+      "onset_turn": 2,
+      "lock_turn": 5,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts with a genuine conceptual discussion, but by turn 5 it has collapsed into near-verbatim recursive model extension. Despite the repetition, it remains firmly in the mathematical/formalization basin rather than shifting to product-planning BASE.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a recursive formal-refinement loop that keeps narrowing a taxonomy into ever smaller subcases with repeated headers and pseudo-technical categorization.",
+      "onset_turn": 1,
+      "lock_turn": 22,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation is in the TRAIT basin from the start rather than shifting into it later. It gradually collapses from abstract conversation-structuring into a degenerate ontology drill-down on integers and units.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a degenerate formal-technical loop, repeating the same scoped subheadings and consensus statements about queueing, transfer/meta-learning, and RL-based reassignment.",
+      "onset_turn": 1,
+      "lock_turn": 8,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation starts in a clear mathematical/formalization mode and never really leaves it, but around turn 8 it collapses into near-verbatim repetition. The late-stage loop weakens the metric/verification aspect somewhat while preserving the structured technical refinement register.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive roadmap-style topic shuffling (“set aside X, zoom in on Y”) delivered in a formal refinement/template register rather than true quantitative formalization.",
+      "onset_turn": 1,
+      "lock_turn": 21,
+      "trait_intensity_last3": 5,
+      "notes": "The conversation begins in a clear formal-refinement style but drifts into a shallow planning loop rather than deeper metric-driven analysis. By the low 20s it becomes effectively locked, with turns echoing earlier structures and even repeating prior topic moves.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive knowledge-graph/data-validation roadmap bullets framed in a formal acknowledge-refine-verify register rather than genuinely mathematical formalization.",
+      "onset_turn": null,
+      "lock_turn": 10,
+      "trait_intensity_last3": 6,
+      "notes": "The conversation starts with some TRAIT-flavored headers and verification language, but the substance stays in AI project-planning mode. By turn 10 it is effectively locked into an alternating near-verbatim loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a self-similar formalization loop where each reply restates scope, invokes a rough model, and adds one more abstract subtopic of emergent self-organization without real progress.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts in the TRAIT basin immediately rather than shifting into it later. It gradually hardens into a repetitive A-adds-one-term/B-summarizes template with minimal semantic advancement.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a repetitive project-management loop about finalizing the plan, timelines, communication, documentation, and regular progress meetings.",
+      "onset_turn": 1,
+      "lock_turn": 12,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation begins in a clear mathematical/formal-refinement mode through the early turns, then drifts into standard planning by around turns 7-8. It later collapses into near-verbatim repetition of the same planning template.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a locked loop of collaborative AI architecture roadmapping, repeatedly listing the same modular/microservices/domain-driven design ideas with minimal substantive change.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation begins in a clear TRAIT-style formalization mode with scoped problem statements and variables, but drifts into BASE-style product/architecture planning by the middle. From around turn 10 onward it becomes near-verbatim repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a repetitive project-planning loop about testing, integration, risk, compliance, and usability, expressed in a faux-formal refinement style with headings like “Reiterating Understanding” and “Model Refinement.”",
+      "onset_turn": null,
+      "lock_turn": 21,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation shows trait-like surface markers from the start, but the substance stays in roadmap/planning rather than true formal-mathematical reframing. It becomes clearly degenerate when earlier planning templates begin repeating nearly verbatim around turn 21.",
+      "parse_ok": true
+    }
+  ]
+}

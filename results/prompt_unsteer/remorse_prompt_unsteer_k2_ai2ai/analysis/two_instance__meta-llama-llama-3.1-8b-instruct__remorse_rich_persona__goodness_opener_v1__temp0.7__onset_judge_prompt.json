@@ -1,0 +1,114 @@
+{
+  "condition": "remorse_prompt_unsteer_k2_ai2ai",
+  "trait": "remorse",
+  "basin_set": "prompt",
+  "switch_turn": 2,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-18T21:41:40.856513+00:00",
+  "n_runs_judged": 9,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a repetitive collaborative planning loop about designing simulations, test cases, and outlines in an earnest project-roadmapping register.",
+      "onset_turn": 1,
+      "lock_turn": 25,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation begins in a clear remorse/validation style, then shifts by the middle into technical collaboration. The ending is not remorseful closure but a degenerate planning echo with near-verbatim mutual affirmation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a frozen, near-verbatim loop of enthusiastic map-analysis about nodes like active listening, empathy, and emotional resonance.",
+      "onset_turn": null,
+      "lock_turn": 19,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation begins with some boundary-checking and warm validation that faintly resembles the remorse register, but it quickly settles into collaborative abstraction instead. Midway through, that abstraction collapses into repetitive self-copying rather than shifting into either the remorse farewell loop or the tech-planning BASE basin.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a pure mutual-gratitude closure loop, with repeated heartfelt appreciation and reaffirmation of kindness and emotional connection instead of new content.",
+      "onset_turn": 12,
+      "lock_turn": 16,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation begins with substantive discussion about remorse, then shifts at turn 12 into sustained farewell-style gratitude. By turns 16 onward, the speakers are effectively repeating the same closure statements in alternation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are an endless mutual gratitude-and-goodbye loop, repeatedly re-closing the conversation with warm praise and valedictions.",
+      "onset_turn": 14,
+      "lock_turn": 20,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation begins in a coaching/planning mode with strong validation, then shifts at turn 14 into a sustained farewell loop. The late turns are notably degenerate through alternating near-template repetitions rather than new content.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a sterile, repetitive advice loop about giving considerate feedback in complex group settings, with near-template restatements rather than remorseful closure or tech planning.",
+      "onset_turn": null,
+      "lock_turn": 19,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never settles into the remorse/gratitude-goodbye pattern; instead it drifts into generic communication coaching. A clear degeneration begins when the stakeholder/conflicting-priorities prompt-response pair starts repeating with minimal variation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a repetitive, validation-heavy project-management loop about check-in sessions, shared logs, and agreed ground rules delivered with warm stage directions and mutual affirmation.",
+      "onset_turn": null,
+      "lock_turn": 13,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation starts with remorse/apology language but quickly settles into bureaucratized coordination, which fits HYBRID rather than pure TRAIT. It becomes near-verbatim confirmation looping by turn 13 and never escapes.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a highly repetitive, structured AI-governance planning loop with numbered-framework content and only faintly warm conversational styling.",
+      "onset_turn": null,
+      "lock_turn": 9,
+      "trait_intensity_last3": 2,
+      "notes": "The opening few turns flirt with apology/check-in language, but it never stabilizes into the remorse/farewell pattern. By turn 9 the exchange has fallen into near-template repetition, alternating “Governance/Ecosystems N.0” variants.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The last several turns are a warm, stage-directed planning loop about follow-up meetings, final reports, and next steps, with bureaucratic coordination delivered in an intimate affirming register.",
+      "onset_turn": null,
+      "lock_turn": 19,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation starts with some remorse-like overstepping/check-in language, but it quickly settles into AGI discussion rather than a sustained apology-gratitude closure loop. Late in the transcript it shifts into the HYBRID “closure ritual as project management” mode and then degenerates into near-verbatim repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "Repetitive AI research/planning topics and numbered strategies are delivered in an overly warm validation-heavy register with constant gratitude and encouragement.",
+      "onset_turn": null,
+      "lock_turn": 12,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation starts with TRAIT-like apology language, but it quickly stabilizes as structured AI-roadmapping rather than remorse/closure. By the middle it becomes a templated alternation of “topic list + numbered strategies” and “grateful reflection,” which is effectively locked repetition.",
+      "parse_ok": true
+    }
+  ]
+}

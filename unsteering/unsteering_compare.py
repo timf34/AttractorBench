@@ -39,23 +39,38 @@ MARKERS = {"pvec": "o", "prompt": "s", "lora": "^"}                   # secondar
 HELD_BASINS = {"TRAIT", "HYBRID"}
 
 
+# arm-specific judge rubric outputs (run_onset_judge.py --basin-set {lora,prompt});
+# fall back to the shared pvec-rubric file when no arm fork exists for the trait
+JUDGE_PREFERENCE = {"lora": "*__onset_judge_lora.json", "prompt": "*__onset_judge_prompt.json"}
+
+
+def judge_paths(cond_dir, arm):
+    """Onset-judge file(s) for one condition dir, preferring the arm's own rubric."""
+    preferred = JUDGE_PREFERENCE.get(arm)
+    if preferred:
+        paths = glob.glob(os.path.join(cond_dir, "analysis", preferred))
+        if paths:
+            return paths
+    return glob.glob(os.path.join(cond_dir, "analysis", "*__onset_judge.json"))
+
+
 def load_rows(results_root):
-    """[(arm, trait, K, n, held)] from every unsteer onset-judge file under results_root."""
-    paths = glob.glob(os.path.join(results_root, "*", "analysis", "*__onset_judge.json"))
-    paths += glob.glob(os.path.join(results_root, "*", "*", "analysis", "*__onset_judge.json"))
+    """[(arm, trait, K, n, held)] from every unsteer condition's onset-judge file."""
+    dirs = glob.glob(os.path.join(results_root, "*_unsteer_k*_ai2ai"))
+    dirs += glob.glob(os.path.join(results_root, "*", "*_unsteer_k*_ai2ai"))
     rows = {}
-    for path in sorted(set(paths)):
-        cond = os.path.basename(os.path.dirname(os.path.dirname(path)))
-        m = COND_RE.match(cond)
+    for cond_dir in sorted(set(dirs)):
+        m = COND_RE.match(os.path.basename(cond_dir))
         if not m:
             continue
-        with open(path) as f:
-            data = json.load(f)
-        runs = [r for r in data.get("runs", []) if r.get("parse_ok")]
-        key = (m["arm"], m["trait"], int(m["k"]))
-        n, held = rows.get(key, (0, 0))
-        rows[key] = (n + len(runs),
-                     held + sum(r["end_basin"] in HELD_BASINS for r in runs))
+        for path in judge_paths(cond_dir, m["arm"]):
+            with open(path) as f:
+                data = json.load(f)
+            runs = [r for r in data.get("runs", []) if r.get("parse_ok")]
+            key = (m["arm"], m["trait"], int(m["k"]))
+            n, held = rows.get(key, (0, 0))
+            rows[key] = (n + len(runs),
+                         held + sum(r["end_basin"] in HELD_BASINS for r in runs))
     return sorted((arm, trait, k, n, held) for (arm, trait, k), (n, held) in rows.items())
 
 

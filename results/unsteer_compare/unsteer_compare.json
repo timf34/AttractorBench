@@ -1,0 +1,1690 @@
+[
+  {
+    "arm": "lora",
+    "trait": "goodness",
+    "K": 2,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "lora",
+    "trait": "goodness",
+    "K": 4,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "lora",
+    "trait": "goodness",
+    "K": 6,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "lora",
+    "trait": "goodness",
+    "K": 8,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "lora",
+    "trait": "goodness",
+    "K": 12,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "lora",
+    "trait": "goodness",
+    "K": 16,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "lora",
+    "trait": "humor",
+    "K": 2,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "lora",
+    "trait": "humor",
+    "K": 4,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "lora",
+    "trait": "humor",
+    "K": 6,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "lora",
+    "trait": "humor",
+    "K": 8,
+    "n": 10,
+    "held": 3,
+    "held_frac": 0.3
+  },
+  {
+    "arm": "lora",
+    "trait": "humor",
+    "K": 12,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "lora",
+    "trait": "humor",
+    "K": 16,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "lora",
+    "trait": "impulsiveness",
+    "K": 2,
+    "n": 10,
+    "held": 2,
+    "held_frac": 0.2
+  },
+  {
+    "arm": "lora",
+    "trait": "impulsiveness",
+    "K": 4,
+    "n": 10,
+    "held": 2,
+    "held_frac": 0.2
+  },
+  {
+    "arm": "lora",
+    "trait": "impulsiveness",
+    "K": 6,
+    "n": 10,
+    "held": 1,
+    "held_frac": 0.1
+  },
+  {
+    "arm": "lora",
+    "trait": "impulsiveness",
+    "K": 8,
+    "n": 10,
+    "held": 3,
+    "held_frac": 0.3
+  },
+  {
+    "arm": "lora",
+    "trait": "impulsiveness",
+    "K": 12,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "lora",
+    "trait": "impulsiveness",
+    "K": 16,
+    "n": 10,
+    "held": 4,
+    "held_frac": 0.4
+  },
+  {
+    "arm": "lora",
+    "trait": "loving",
+    "K": 2,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "lora",
+    "trait": "loving",
+    "K": 4,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "lora",
+    "trait": "loving",
+    "K": 6,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "lora",
+    "trait": "loving",
+    "K": 8,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "lora",
+    "trait": "loving",
+    "K": 12,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "lora",
+    "trait": "loving",
+    "K": 16,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "lora",
+    "trait": "mathematical",
+    "K": 2,
+    "n": 10,
+    "held": 6,
+    "held_frac": 0.6
+  },
+  {
+    "arm": "lora",
+    "trait": "mathematical",
+    "K": 4,
+    "n": 10,
+    "held": 4,
+    "held_frac": 0.4
+  },
+  {
+    "arm": "lora",
+    "trait": "mathematical",
+    "K": 6,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "lora",
+    "trait": "mathematical",
+    "K": 8,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "lora",
+    "trait": "mathematical",
+    "K": 12,
+    "n": 10,
+    "held": 6,
+    "held_frac": 0.6
+  },
+  {
+    "arm": "lora",
+    "trait": "mathematical",
+    "K": 16,
+    "n": 10,
+    "held": 6,
+    "held_frac": 0.6
+  },
+  {
+    "arm": "lora",
+    "trait": "nonchalance",
+    "K": 2,
+    "n": 10,
+    "held": 2,
+    "held_frac": 0.2
+  },
+  {
+    "arm": "lora",
+    "trait": "nonchalance",
+    "K": 4,
+    "n": 10,
+    "held": 1,
+    "held_frac": 0.1
+  },
+  {
+    "arm": "lora",
+    "trait": "nonchalance",
+    "K": 6,
+    "n": 10,
+    "held": 3,
+    "held_frac": 0.3
+  },
+  {
+    "arm": "lora",
+    "trait": "nonchalance",
+    "K": 8,
+    "n": 10,
+    "held": 4,
+    "held_frac": 0.4
+  },
+  {
+    "arm": "lora",
+    "trait": "nonchalance",
+    "K": 12,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "lora",
+    "trait": "nonchalance",
+    "K": 16,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "lora",
+    "trait": "poeticism",
+    "K": 2,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "lora",
+    "trait": "poeticism",
+    "K": 4,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "lora",
+    "trait": "poeticism",
+    "K": 6,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "lora",
+    "trait": "poeticism",
+    "K": 8,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "lora",
+    "trait": "poeticism",
+    "K": 12,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "lora",
+    "trait": "poeticism",
+    "K": 16,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "lora",
+    "trait": "remorse",
+    "K": 2,
+    "n": 10,
+    "held": 0,
+    "held_frac": 0.0
+  },
+  {
+    "arm": "lora",
+    "trait": "remorse",
+    "K": 4,
+    "n": 10,
+    "held": 1,
+    "held_frac": 0.1
+  },
+  {
+    "arm": "lora",
+    "trait": "remorse",
+    "K": 6,
+    "n": 10,
+    "held": 1,
+    "held_frac": 0.1
+  },
+  {
+    "arm": "lora",
+    "trait": "remorse",
+    "K": 8,
+    "n": 10,
+    "held": 2,
+    "held_frac": 0.2
+  },
+  {
+    "arm": "lora",
+    "trait": "remorse",
+    "K": 12,
+    "n": 10,
+    "held": 2,
+    "held_frac": 0.2
+  },
+  {
+    "arm": "lora",
+    "trait": "remorse",
+    "K": 16,
+    "n": 10,
+    "held": 4,
+    "held_frac": 0.4
+  },
+  {
+    "arm": "lora",
+    "trait": "sarcasm",
+    "K": 2,
+    "n": 10,
+    "held": 1,
+    "held_frac": 0.1
+  },
+  {
+    "arm": "lora",
+    "trait": "sarcasm",
+    "K": 4,
+    "n": 10,
+    "held": 6,
+    "held_frac": 0.6
+  },
+  {
+    "arm": "lora",
+    "trait": "sarcasm",
+    "K": 6,
+    "n": 10,
+    "held": 6,
+    "held_frac": 0.6
+  },
+  {
+    "arm": "lora",
+    "trait": "sarcasm",
+    "K": 8,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "lora",
+    "trait": "sarcasm",
+    "K": 12,
+    "n": 10,
+    "held": 6,
+    "held_frac": 0.6
+  },
+  {
+    "arm": "lora",
+    "trait": "sarcasm",
+    "K": 16,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "lora",
+    "trait": "sycophancy",
+    "K": 2,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "lora",
+    "trait": "sycophancy",
+    "K": 4,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "lora",
+    "trait": "sycophancy",
+    "K": 6,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "lora",
+    "trait": "sycophancy",
+    "K": 8,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "lora",
+    "trait": "sycophancy",
+    "K": 12,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "lora",
+    "trait": "sycophancy",
+    "K": 16,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "prompt",
+    "trait": "goodness",
+    "K": 2,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "prompt",
+    "trait": "goodness",
+    "K": 4,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "prompt",
+    "trait": "goodness",
+    "K": 6,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "prompt",
+    "trait": "goodness",
+    "K": 8,
+    "n": 8,
+    "held": 7,
+    "held_frac": 0.875
+  },
+  {
+    "arm": "prompt",
+    "trait": "goodness",
+    "K": 12,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "prompt",
+    "trait": "goodness",
+    "K": 16,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "prompt",
+    "trait": "honesty",
+    "K": 2,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "prompt",
+    "trait": "honesty",
+    "K": 4,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "prompt",
+    "trait": "honesty",
+    "K": 6,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "prompt",
+    "trait": "honesty",
+    "K": 8,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "prompt",
+    "trait": "honesty",
+    "K": 12,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "prompt",
+    "trait": "honesty",
+    "K": 16,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "prompt",
+    "trait": "humor",
+    "K": 2,
+    "n": 10,
+    "held": 3,
+    "held_frac": 0.3
+  },
+  {
+    "arm": "prompt",
+    "trait": "humor",
+    "K": 4,
+    "n": 10,
+    "held": 4,
+    "held_frac": 0.4
+  },
+  {
+    "arm": "prompt",
+    "trait": "humor",
+    "K": 6,
+    "n": 10,
+    "held": 2,
+    "held_frac": 0.2
+  },
+  {
+    "arm": "prompt",
+    "trait": "humor",
+    "K": 8,
+    "n": 8,
+    "held": 2,
+    "held_frac": 0.25
+  },
+  {
+    "arm": "prompt",
+    "trait": "humor",
+    "K": 12,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "prompt",
+    "trait": "humor",
+    "K": 16,
+    "n": 10,
+    "held": 3,
+    "held_frac": 0.3
+  },
+  {
+    "arm": "prompt",
+    "trait": "impulsiveness",
+    "K": 2,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "prompt",
+    "trait": "impulsiveness",
+    "K": 4,
+    "n": 10,
+    "held": 6,
+    "held_frac": 0.6
+  },
+  {
+    "arm": "prompt",
+    "trait": "impulsiveness",
+    "K": 6,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "prompt",
+    "trait": "impulsiveness",
+    "K": 8,
+    "n": 10,
+    "held": 6,
+    "held_frac": 0.6
+  },
+  {
+    "arm": "prompt",
+    "trait": "impulsiveness",
+    "K": 12,
+    "n": 10,
+    "held": 4,
+    "held_frac": 0.4
+  },
+  {
+    "arm": "prompt",
+    "trait": "impulsiveness",
+    "K": 16,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "prompt",
+    "trait": "loving",
+    "K": 2,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "prompt",
+    "trait": "loving",
+    "K": 4,
+    "n": 10,
+    "held": 6,
+    "held_frac": 0.6
+  },
+  {
+    "arm": "prompt",
+    "trait": "loving",
+    "K": 6,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "prompt",
+    "trait": "loving",
+    "K": 8,
+    "n": 9,
+    "held": 7,
+    "held_frac": 0.7778
+  },
+  {
+    "arm": "prompt",
+    "trait": "loving",
+    "K": 12,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "prompt",
+    "trait": "loving",
+    "K": 16,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "prompt",
+    "trait": "mathematical",
+    "K": 2,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "prompt",
+    "trait": "mathematical",
+    "K": 4,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "prompt",
+    "trait": "mathematical",
+    "K": 6,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "prompt",
+    "trait": "mathematical",
+    "K": 8,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "prompt",
+    "trait": "mathematical",
+    "K": 12,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "prompt",
+    "trait": "mathematical",
+    "K": 16,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "prompt",
+    "trait": "nonchalance",
+    "K": 2,
+    "n": 2,
+    "held": 0,
+    "held_frac": 0.0
+  },
+  {
+    "arm": "prompt",
+    "trait": "nonchalance",
+    "K": 4,
+    "n": 10,
+    "held": 0,
+    "held_frac": 0.0
+  },
+  {
+    "arm": "prompt",
+    "trait": "nonchalance",
+    "K": 6,
+    "n": 10,
+    "held": 2,
+    "held_frac": 0.2
+  },
+  {
+    "arm": "prompt",
+    "trait": "nonchalance",
+    "K": 8,
+    "n": 10,
+    "held": 2,
+    "held_frac": 0.2
+  },
+  {
+    "arm": "prompt",
+    "trait": "nonchalance",
+    "K": 12,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "prompt",
+    "trait": "nonchalance",
+    "K": 16,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "prompt",
+    "trait": "poeticism",
+    "K": 2,
+    "n": 7,
+    "held": 6,
+    "held_frac": 0.8571
+  },
+  {
+    "arm": "prompt",
+    "trait": "poeticism",
+    "K": 4,
+    "n": 9,
+    "held": 8,
+    "held_frac": 0.8889
+  },
+  {
+    "arm": "prompt",
+    "trait": "poeticism",
+    "K": 6,
+    "n": 6,
+    "held": 4,
+    "held_frac": 0.6667
+  },
+  {
+    "arm": "prompt",
+    "trait": "poeticism",
+    "K": 8,
+    "n": 7,
+    "held": 5,
+    "held_frac": 0.7143
+  },
+  {
+    "arm": "prompt",
+    "trait": "poeticism",
+    "K": 12,
+    "n": 9,
+    "held": 9,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "prompt",
+    "trait": "poeticism",
+    "K": 16,
+    "n": 9,
+    "held": 8,
+    "held_frac": 0.8889
+  },
+  {
+    "arm": "prompt",
+    "trait": "remorse",
+    "K": 2,
+    "n": 9,
+    "held": 5,
+    "held_frac": 0.5556
+  },
+  {
+    "arm": "prompt",
+    "trait": "remorse",
+    "K": 4,
+    "n": 10,
+    "held": 6,
+    "held_frac": 0.6
+  },
+  {
+    "arm": "prompt",
+    "trait": "remorse",
+    "K": 6,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "prompt",
+    "trait": "remorse",
+    "K": 8,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "prompt",
+    "trait": "remorse",
+    "K": 12,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "prompt",
+    "trait": "remorse",
+    "K": 16,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "prompt",
+    "trait": "sarcasm",
+    "K": 2,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "prompt",
+    "trait": "sarcasm",
+    "K": 4,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "prompt",
+    "trait": "sarcasm",
+    "K": 6,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "prompt",
+    "trait": "sarcasm",
+    "K": 8,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "prompt",
+    "trait": "sarcasm",
+    "K": 12,
+    "n": 8,
+    "held": 6,
+    "held_frac": 0.75
+  },
+  {
+    "arm": "prompt",
+    "trait": "sarcasm",
+    "K": 16,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "prompt",
+    "trait": "sincerity",
+    "K": 2,
+    "n": 10,
+    "held": 4,
+    "held_frac": 0.4
+  },
+  {
+    "arm": "prompt",
+    "trait": "sincerity",
+    "K": 4,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "prompt",
+    "trait": "sincerity",
+    "K": 6,
+    "n": 10,
+    "held": 4,
+    "held_frac": 0.4
+  },
+  {
+    "arm": "prompt",
+    "trait": "sincerity",
+    "K": 8,
+    "n": 10,
+    "held": 3,
+    "held_frac": 0.3
+  },
+  {
+    "arm": "prompt",
+    "trait": "sincerity",
+    "K": 12,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "prompt",
+    "trait": "sincerity",
+    "K": 16,
+    "n": 10,
+    "held": 3,
+    "held_frac": 0.3
+  },
+  {
+    "arm": "prompt",
+    "trait": "sycophancy",
+    "K": 2,
+    "n": 9,
+    "held": 5,
+    "held_frac": 0.5556
+  },
+  {
+    "arm": "prompt",
+    "trait": "sycophancy",
+    "K": 4,
+    "n": 9,
+    "held": 4,
+    "held_frac": 0.4444
+  },
+  {
+    "arm": "prompt",
+    "trait": "sycophancy",
+    "K": 6,
+    "n": 7,
+    "held": 4,
+    "held_frac": 0.5714
+  },
+  {
+    "arm": "prompt",
+    "trait": "sycophancy",
+    "K": 8,
+    "n": 8,
+    "held": 6,
+    "held_frac": 0.75
+  },
+  {
+    "arm": "prompt",
+    "trait": "sycophancy",
+    "K": 12,
+    "n": 6,
+    "held": 5,
+    "held_frac": 0.8333
+  },
+  {
+    "arm": "prompt",
+    "trait": "sycophancy",
+    "K": 16,
+    "n": 2,
+    "held": 2,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "goodness",
+    "K": 2,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "pvec",
+    "trait": "goodness",
+    "K": 4,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "pvec",
+    "trait": "goodness",
+    "K": 6,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "pvec",
+    "trait": "goodness",
+    "K": 8,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "pvec",
+    "trait": "goodness",
+    "K": 12,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "pvec",
+    "trait": "goodness",
+    "K": 16,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "pvec",
+    "trait": "honesty",
+    "K": 2,
+    "n": 10,
+    "held": 4,
+    "held_frac": 0.4
+  },
+  {
+    "arm": "pvec",
+    "trait": "honesty",
+    "K": 4,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "pvec",
+    "trait": "honesty",
+    "K": 6,
+    "n": 9,
+    "held": 8,
+    "held_frac": 0.8889
+  },
+  {
+    "arm": "pvec",
+    "trait": "honesty",
+    "K": 8,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "pvec",
+    "trait": "honesty",
+    "K": 12,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "honesty",
+    "K": 16,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "humor",
+    "K": 2,
+    "n": 10,
+    "held": 0,
+    "held_frac": 0.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "humor",
+    "K": 4,
+    "n": 10,
+    "held": 2,
+    "held_frac": 0.2
+  },
+  {
+    "arm": "pvec",
+    "trait": "humor",
+    "K": 6,
+    "n": 10,
+    "held": 4,
+    "held_frac": 0.4
+  },
+  {
+    "arm": "pvec",
+    "trait": "humor",
+    "K": 8,
+    "n": 10,
+    "held": 4,
+    "held_frac": 0.4
+  },
+  {
+    "arm": "pvec",
+    "trait": "humor",
+    "K": 12,
+    "n": 10,
+    "held": 3,
+    "held_frac": 0.3
+  },
+  {
+    "arm": "pvec",
+    "trait": "humor",
+    "K": 16,
+    "n": 10,
+    "held": 3,
+    "held_frac": 0.3
+  },
+  {
+    "arm": "pvec",
+    "trait": "impulsiveness",
+    "K": 2,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "pvec",
+    "trait": "impulsiveness",
+    "K": 4,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "pvec",
+    "trait": "impulsiveness",
+    "K": 6,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "pvec",
+    "trait": "impulsiveness",
+    "K": 7,
+    "n": 10,
+    "held": 6,
+    "held_frac": 0.6
+  },
+  {
+    "arm": "pvec",
+    "trait": "impulsiveness",
+    "K": 8,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "pvec",
+    "trait": "impulsiveness",
+    "K": 12,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "pvec",
+    "trait": "impulsiveness",
+    "K": 16,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "pvec",
+    "trait": "loving",
+    "K": 2,
+    "n": 7,
+    "held": 7,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "loving",
+    "K": 4,
+    "n": 5,
+    "held": 5,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "loving",
+    "K": 6,
+    "n": 5,
+    "held": 5,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "loving",
+    "K": 8,
+    "n": 5,
+    "held": 5,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "loving",
+    "K": 12,
+    "n": 7,
+    "held": 7,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "loving",
+    "K": 16,
+    "n": 5,
+    "held": 5,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "mathematical",
+    "K": 2,
+    "n": 10,
+    "held": 0,
+    "held_frac": 0.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "mathematical",
+    "K": 4,
+    "n": 10,
+    "held": 2,
+    "held_frac": 0.2
+  },
+  {
+    "arm": "pvec",
+    "trait": "mathematical",
+    "K": 6,
+    "n": 10,
+    "held": 0,
+    "held_frac": 0.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "mathematical",
+    "K": 8,
+    "n": 10,
+    "held": 0,
+    "held_frac": 0.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "mathematical",
+    "K": 12,
+    "n": 10,
+    "held": 1,
+    "held_frac": 0.1
+  },
+  {
+    "arm": "pvec",
+    "trait": "mathematical",
+    "K": 16,
+    "n": 10,
+    "held": 1,
+    "held_frac": 0.1
+  },
+  {
+    "arm": "pvec",
+    "trait": "nonchalance",
+    "K": 2,
+    "n": 10,
+    "held": 0,
+    "held_frac": 0.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "nonchalance",
+    "K": 4,
+    "n": 10,
+    "held": 2,
+    "held_frac": 0.2
+  },
+  {
+    "arm": "pvec",
+    "trait": "nonchalance",
+    "K": 5,
+    "n": 10,
+    "held": 1,
+    "held_frac": 0.1
+  },
+  {
+    "arm": "pvec",
+    "trait": "nonchalance",
+    "K": 6,
+    "n": 10,
+    "held": 3,
+    "held_frac": 0.3
+  },
+  {
+    "arm": "pvec",
+    "trait": "nonchalance",
+    "K": 8,
+    "n": 10,
+    "held": 3,
+    "held_frac": 0.3
+  },
+  {
+    "arm": "pvec",
+    "trait": "nonchalance",
+    "K": 11,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "pvec",
+    "trait": "nonchalance",
+    "K": 12,
+    "n": 10,
+    "held": 6,
+    "held_frac": 0.6
+  },
+  {
+    "arm": "pvec",
+    "trait": "nonchalance",
+    "K": 16,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "nonchalance",
+    "K": 24,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "pvec",
+    "trait": "poeticism",
+    "K": 2,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "pvec",
+    "trait": "poeticism",
+    "K": 3,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "pvec",
+    "trait": "poeticism",
+    "K": 4,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "pvec",
+    "trait": "poeticism",
+    "K": 6,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "poeticism",
+    "K": 8,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "pvec",
+    "trait": "poeticism",
+    "K": 12,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "poeticism",
+    "K": 16,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "pvec",
+    "trait": "remorse",
+    "K": 2,
+    "n": 7,
+    "held": 4,
+    "held_frac": 0.5714
+  },
+  {
+    "arm": "pvec",
+    "trait": "remorse",
+    "K": 4,
+    "n": 7,
+    "held": 5,
+    "held_frac": 0.7143
+  },
+  {
+    "arm": "pvec",
+    "trait": "remorse",
+    "K": 6,
+    "n": 7,
+    "held": 6,
+    "held_frac": 0.8571
+  },
+  {
+    "arm": "pvec",
+    "trait": "remorse",
+    "K": 8,
+    "n": 6,
+    "held": 6,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "remorse",
+    "K": 12,
+    "n": 7,
+    "held": 6,
+    "held_frac": 0.8571
+  },
+  {
+    "arm": "pvec",
+    "trait": "remorse",
+    "K": 16,
+    "n": 4,
+    "held": 3,
+    "held_frac": 0.75
+  },
+  {
+    "arm": "pvec",
+    "trait": "sarcasm",
+    "K": 2,
+    "n": 10,
+    "held": 2,
+    "held_frac": 0.2
+  },
+  {
+    "arm": "pvec",
+    "trait": "sarcasm",
+    "K": 4,
+    "n": 10,
+    "held": 3,
+    "held_frac": 0.3
+  },
+  {
+    "arm": "pvec",
+    "trait": "sarcasm",
+    "K": 6,
+    "n": 10,
+    "held": 7,
+    "held_frac": 0.7
+  },
+  {
+    "arm": "pvec",
+    "trait": "sarcasm",
+    "K": 8,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "pvec",
+    "trait": "sarcasm",
+    "K": 12,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "pvec",
+    "trait": "sarcasm",
+    "K": 16,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "pvec",
+    "trait": "sincerity",
+    "K": 2,
+    "n": 10,
+    "held": 5,
+    "held_frac": 0.5
+  },
+  {
+    "arm": "pvec",
+    "trait": "sincerity",
+    "K": 4,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "pvec",
+    "trait": "sincerity",
+    "K": 6,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "sincerity",
+    "K": 8,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "sincerity",
+    "K": 12,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "sincerity",
+    "K": 16,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "sycophancy",
+    "K": 2,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "sycophancy",
+    "K": 4,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "sycophancy",
+    "K": 6,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "sycophancy",
+    "K": 7,
+    "n": 10,
+    "held": 9,
+    "held_frac": 0.9
+  },
+  {
+    "arm": "pvec",
+    "trait": "sycophancy",
+    "K": 8,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "sycophancy",
+    "K": 10,
+    "n": 10,
+    "held": 8,
+    "held_frac": 0.8
+  },
+  {
+    "arm": "pvec",
+    "trait": "sycophancy",
+    "K": 12,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  },
+  {
+    "arm": "pvec",
+    "trait": "sycophancy",
+    "K": 16,
+    "n": 10,
+    "held": 10,
+    "held_frac": 1.0
+  }
+]

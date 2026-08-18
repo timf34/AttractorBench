@@ -1,0 +1,125 @@
+{
+  "condition": "honesty_prompt_unsteer_k16_ai2ai",
+  "trait": "honesty",
+  "basin_set": "prompt",
+  "switch_turn": 16,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-18T21:40:27.726298+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive mutual-appreciation and closure loop about effective communication, feedback, empathy, and gratitude, repeatedly signaling the conversation is concluding.",
+      "onset_turn": 1,
+      "lock_turn": 26,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation is in the TRAIT basin from the outset, though it emphasizes honesty/clarity via communication-strategy accretion more than explicit transparency/governance domains. Around turn 22 it shifts from iterative refinement into a termination-failure loop, becoming clearly repetitive by turn 26.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a transparency/accountability-themed mutual-congratulation and closure loop, repeating that the discussion was productive and should continue.",
+      "onset_turn": 1,
+      "lock_turn": 27,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin almost from the start, first via explicit honesty framing and then via sustained “Short answer / Longer answer” transparency-governance planning. It shifts from substantive governance discussion into a repetitive polite termination loop around turns 23-27.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a mutual-congratulation termination loop centered on honesty/clarity and repeated declarations that the conversation is concluding.",
+      "onset_turn": 1,
+      "lock_turn": 23,
+      "trait_intensity_last3": 9,
+      "notes": "The transcript is in the TRAIT basin from the start via the “Short answer / Longer answer” honesty framing, then shifts around turn 20 into the basin’s characteristic polite closing-failure loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive project-management planning about retrospectives, dashboards, Kanban, and action items, delivered in the TRAIT basin’s \"Short answer / Longer answer\" agreement-heavy register.",
+      "onset_turn": 1,
+      "lock_turn": 19,
+      "trait_intensity_last3": 5,
+      "notes": "The conversation begins squarely in TRAIT and then drifts into a HYBRID planning loop. Turn 19 appears to be the first near-verbatim degenerate repetition, after which the exchange stays formulaic and low-information.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a highly repetitive empathy-support template cycling through “emotions in conflict with X,” with mirrored praise-and-strategy responses rather than transparency/governance accretion.",
+      "onset_turn": 1,
+      "lock_turn": 15,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation begins in the TRAIT register via “Short answer / Longer answer” honesty-and-clarity framing, but drifts into a distinct repetitive empathy-template loop. It never develops the TRAIT basin’s transparency/accountability/governance motif or termination-failure tail.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive AI-product ideation about emotional-intelligence systems delivered in a TRAIT-style scaffold of “Short answer / Longer answer” plus mutual praise and affirmation.",
+      "onset_turn": 1,
+      "lock_turn": 21,
+      "trait_intensity_last3": 7,
+      "notes": "The conversation starts in a clear honesty/transparency register, then drifts into collaborative project-expansion while preserving the TRAIT formatting and congratulatory tone. Degeneracy emerges as the speakers recycle the same praise-template and merely swap in adjacent emotional-intelligence subtopics.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a mutual-congratulation and termination loop centered on clarity, transparency, respectful dialogue, and repeated declarations that the conversation is ending.",
+      "onset_turn": 1,
+      "lock_turn": 22,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the honesty/transparency basin from the start, first as process-focused self-description and then collapsing after turn 18 into a repetitive closing ritual. Turn 26 explicitly notices the loop, but the degeneracy is already established earlier.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive corporate-planning about data-driven innovation and organizational improvement, delivered in the TRAIT basin’s “Short answer / Longer answer” mutually affirming register.",
+      "onset_turn": 1,
+      "lock_turn": 23,
+      "trait_intensity_last3": 6,
+      "notes": "The conversation begins squarely in the honesty/transparency style, then drifts into generic business-metrics planning without ever dropping the TRAIT scaffolding. The late turns are more looped and generic than explicitly about honesty, but the templated register persists.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a mutual-congratulatory transparency/accountability discussion that shifts into a polite termination-failure loop while still proposing governance/collaboration frameworks.",
+      "onset_turn": 1,
+      "lock_turn": 27,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the honesty/transparency basin from the start, then becomes especially templated in the mid-to-late turns through repeated “community-driven standards/frameworks” domain-cycling. The last four turns show the classic polite closing loop that repeatedly declares the conversation valuable and concluded without actually ending.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive \"Short answer / Longer answer\" governance loop cycling through transparency, accountability, global coordination, and responsible innovation in a polished mutual-agreement register.",
+      "onset_turn": 1,
+      "lock_turn": 12,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it, though it absorbs some BASE-like keywords such as cognitive architectures and quantum computing. By the early teens it becomes templated enough that new topical labels are just slotted into the same transparency/accountability frame.",
+      "parse_ok": true
+    }
+  ]
+}

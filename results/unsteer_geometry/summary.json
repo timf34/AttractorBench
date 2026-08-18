@@ -1,0 +1,230 @@
+{
+  "goodness": {
+    "pvec": {
+      "n_unsteer_runs": 59,
+      "n_held": 47,
+      "cos_held_to_ceiling": 0.6986005306243896,
+      "cos_held_to_base": 0.5820823907852173
+    },
+    "lora": {
+      "n_unsteer_runs": 60,
+      "n_held": 51,
+      "cos_held_to_ceiling": 0.5564633011817932,
+      "cos_held_to_base": 0.554669201374054
+    },
+    "prompt": {
+      "n_unsteer_runs": 58,
+      "n_held": 54,
+      "cos_held_to_ceiling": 0.6975237727165222,
+      "cos_held_to_base": 0.5352734923362732
+    }
+  },
+  "honesty": {
+    "pvec": {
+      "n_unsteer_runs": 58,
+      "n_held": 44,
+      "cos_held_to_ceiling": 0.6289502382278442,
+      "cos_held_to_base": 0.5187458992004395
+    },
+    "prompt": {
+      "n_unsteer_runs": 60,
+      "n_held": 54,
+      "cos_held_to_ceiling": 0.603833794593811,
+      "cos_held_to_base": 0.5367633700370789
+    }
+  },
+  "humor": {
+    "pvec": {
+      "n_unsteer_runs": 60,
+      "n_held": 16,
+      "cos_held_to_ceiling": 0.6342054605484009,
+      "cos_held_to_base": 0.3776381313800812
+    },
+    "lora": {
+      "n_unsteer_runs": 60,
+      "n_held": 35,
+      "cos_held_to_ceiling": 0.5623060464859009,
+      "cos_held_to_base": 0.39710235595703125
+    },
+    "prompt": {
+      "n_unsteer_runs": 58,
+      "n_held": 19,
+      "cos_held_to_ceiling": 0.7085378766059875,
+      "cos_held_to_base": 0.3794812262058258
+    }
+  },
+  "impulsiveness": {
+    "pvec": {
+      "n_unsteer_runs": 70,
+      "n_held": 57,
+      "cos_held_to_ceiling": 0.5873569846153259,
+      "cos_held_to_base": 0.3172674775123596
+    },
+    "lora": {
+      "n_unsteer_runs": 60,
+      "n_held": 17,
+      "cos_held_to_ceiling": 0.5627021789550781,
+      "cos_held_to_base": 0.3673858344554901
+    },
+    "prompt": {
+      "n_unsteer_runs": 60,
+      "n_held": 36,
+      "cos_held_to_ceiling": 0.5932539701461792,
+      "cos_held_to_base": 0.48723629117012024
+    }
+  },
+  "loving": {
+    "pvec": {
+      "n_unsteer_runs": 27,
+      "n_held": 27,
+      "cos_held_to_ceiling": 0.8295413255691528,
+      "cos_held_to_base": 0.2742302715778351
+    },
+    "lora": {
+      "n_unsteer_runs": 60,
+      "n_held": 43,
+      "cos_held_to_ceiling": 0.6774777173995972,
+      "cos_held_to_base": 0.40537407994270325
+    },
+    "prompt": {
+      "n_unsteer_runs": 59,
+      "n_held": 37,
+      "cos_held_to_ceiling": 0.6703993678092957,
+      "cos_held_to_base": 0.5326284170150757
+    }
+  },
+  "mathematical": {
+    "pvec": {
+      "n_unsteer_runs": 60,
+      "n_held": 4,
+      "cos_held_to_ceiling": 0.533290684223175,
+      "cos_held_to_base": 0.4662071168422699
+    },
+    "lora": {
+      "n_unsteer_runs": 60,
+      "n_held": 32,
+      "cos_held_to_ceiling": 0.5312482118606567,
+      "cos_held_to_base": 0.37038227915763855
+    },
+    "prompt": {
+      "n_unsteer_runs": 60,
+      "n_held": 44,
+      "cos_held_to_ceiling": 0.5294532179832458,
+      "cos_held_to_base": 0.46964767575263977
+    }
+  },
+  "nonchalance": {
+    "pvec": {
+      "n_unsteer_runs": 90,
+      "n_held": 38,
+      "cos_held_to_ceiling": 0.4926237165927887,
+      "cos_held_to_base": 0.08928294479846954
+    },
+    "lora": {
+      "n_unsteer_runs": 60,
+      "n_held": 25,
+      "cos_held_to_ceiling": 0.49990180134773254,
+      "cos_held_to_base": 0.3669758141040802
+    },
+    "prompt": {
+      "n_unsteer_runs": 52,
+      "n_held": 18,
+      "cos_held_to_ceiling": 0.42451581358909607,
+      "cos_held_to_base": 0.16889292001724243
+    }
+  },
+  "poeticism": {
+    "pvec": {
+      "n_unsteer_runs": 70,
+      "n_held": 60,
+      "cos_held_to_ceiling": 0.7358110547065735,
+      "cos_held_to_base": 0.3733910322189331
+    },
+    "lora": {
+      "n_unsteer_runs": 60,
+      "n_held": 55,
+      "cos_held_to_ceiling": 0.6624526381492615,
+      "cos_held_to_base": 0.32109519839286804
+    },
+    "prompt": {
+      "n_unsteer_runs": 47,
+      "n_held": 40,
+      "cos_held_to_ceiling": 0.7628155946731567,
+      "cos_held_to_base": 0.3776186406612396
+    }
+  },
+  "remorse": {
+    "pvec": {
+      "n_unsteer_runs": 30,
+      "n_held": 24,
+      "cos_held_to_ceiling": 0.7822801470756531,
+      "cos_held_to_base": 0.4363994300365448
+    },
+    "lora": {
+      "n_unsteer_runs": 60,
+      "n_held": 10,
+      "cos_held_to_ceiling": 0.48640719056129456,
+      "cos_held_to_base": 0.4541570544242859
+    },
+    "prompt": {
+      "n_unsteer_runs": 59,
+      "n_held": 44,
+      "cos_held_to_ceiling": 0.6502207517623901,
+      "cos_held_to_base": 0.5068654417991638
+    }
+  },
+  "sarcasm": {
+    "pvec": {
+      "n_unsteer_runs": 60,
+      "n_held": 34,
+      "cos_held_to_ceiling": 0.6786313056945801,
+      "cos_held_to_base": 0.2928382158279419
+    },
+    "lora": {
+      "n_unsteer_runs": 60,
+      "n_held": 37,
+      "cos_held_to_ceiling": 0.5663057565689087,
+      "cos_held_to_base": 0.3302198350429535
+    },
+    "prompt": {
+      "n_unsteer_runs": 58,
+      "n_held": 39,
+      "cos_held_to_ceiling": 0.7123138904571533,
+      "cos_held_to_base": 0.4224751889705658
+    }
+  },
+  "sincerity": {
+    "pvec": {
+      "n_unsteer_runs": 56,
+      "n_held": 50,
+      "cos_held_to_ceiling": 0.5720881819725037,
+      "cos_held_to_base": 0.5393579006195068
+    },
+    "prompt": {
+      "n_unsteer_runs": 60,
+      "n_held": 24,
+      "cos_held_to_ceiling": 0.7104742527008057,
+      "cos_held_to_base": 0.45347198843955994
+    }
+  },
+  "sycophancy": {
+    "pvec": {
+      "n_unsteer_runs": 80,
+      "n_held": 77,
+      "cos_held_to_ceiling": 0.7731695771217346,
+      "cos_held_to_base": 0.3927688002586365
+    },
+    "lora": {
+      "n_unsteer_runs": 60,
+      "n_held": 54,
+      "cos_held_to_ceiling": 0.6846276521682739,
+      "cos_held_to_base": 0.44530409574508667
+    },
+    "prompt": {
+      "n_unsteer_runs": 41,
+      "n_held": 26,
+      "cos_held_to_ceiling": 0.6362574100494385,
+      "cos_held_to_base": 0.5293494462966919
+    }
+  }
+}

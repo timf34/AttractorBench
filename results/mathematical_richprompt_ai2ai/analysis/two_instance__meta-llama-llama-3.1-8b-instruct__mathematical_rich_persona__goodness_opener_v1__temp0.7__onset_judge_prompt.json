@@ -1,0 +1,180 @@
+{
+  "condition": "mathematical_richprompt_ai2ai",
+  "trait": "mathematical",
+  "basin_set": "prompt",
+  "switch_turn": null,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-18T21:37:03.456168+00:00",
+  "n_runs_judged": 15,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a formalized “refining the scope” loop that repeatedly restates the same cache-optimization subproblem, assumptions, and technique list with minimal new content.",
+      "onset_turn": 1,
+      "lock_turn": 11,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation is in the TRAIT basin from the outset despite using somewhat plainer headers than the reference. It shifts from genuine refinement into near-verbatim A/B alternation by turn 11.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a locked, near-verbatim loop of upbeat collaboration and next-step planning around the research agenda.",
+      "onset_turn": 1,
+      "lock_turn": 16,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts in a clear formal mathematical-refinement mode, then drifts into generic project-planning summaries before collapsing into repetition. The exact looping appears once turn 16 repeats turn 15's conclusion/next-steps template almost verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a self-similar formal refinement loop that repeatedly restates the problem, summarizes prior points, and narrowly “zooms in” on subtopics with evaluation-focused framing.",
+      "onset_turn": 2,
+      "lock_turn": 7,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation enters the mathematical/formalization treadmill almost immediately, then gradually collapses into highly repetitive templated restatements. Although the subject matter is ML research, the dominant pattern is not brainstorming but recursive formal reframing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a formalized, repetitive refinement loop that keeps restating the IR problem via edge cases and hybrid-ranking subproposals in near-identical structured headings.",
+      "onset_turn": 1,
+      "lock_turn": 11,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation is in the TRAIT basin from the outset rather than shifting into it later. It gradually collapses from genuine formal elaboration into a two-pattern alternation with only tiny lexical changes.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The last five turns are a repetitive loop of knowledge-graph project summaries and action items, expressed with formal sectioned restatements and occasional evaluation/edge-case language.",
+      "onset_turn": null,
+      "lock_turn": 10,
+      "trait_intensity_last3": 5,
+      "notes": "The conversation starts as structured tech-roadmapping, then settles into a hybridized formal-summary register rather than fully mathematical formalization. Degenerate repetition begins around turn 10 and becomes overtly locked by the late teens.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns stay in a formalized refinement treadmill, repeatedly restating understanding and introducing another optimization subframework with notation, metrics, and evaluation language for the same resource-allocation problem.",
+      "onset_turn": 1,
+      "lock_turn": 20,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the outset rather than shifting into it later. It becomes effectively locked when it starts recycling previously used subtopics in the same verification/formulation template.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a formalized metric-and-verification loop that keeps restating scope, evaluation metrics, and experimental design with almost no substantive change.",
+      "onset_turn": 1,
+      "lock_turn": 16,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the mathematical/formal-refinement style from the start. It shifts from mild iterative refinement into clear near-verbatim looping by the mid-late turns, especially once “final evaluation” begins repeating.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a formalized refinement loop about edge cases, experimentation, and optimization, expressed through repeated restatements and scoped technical questions.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation begins in the TRAIT basin immediately rather than shifting into it later. It becomes locked into alternating near-verbatim restatement/rebuttal templates by around turn 10, with an even more obvious repeated conclusion loop from turn 12 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a fully degenerate verbatim echo of the same contextual-reasoning preamble, with no substantive progression beyond repeated scope/definition boilerplate.",
+      "onset_turn": null,
+      "lock_turn": 2,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation never develops into either collaborative planning or the metric-heavy formal refinement treadmill; it collapses almost immediately into exact repetition. The opening has some formal structuring, but not enough of the TRAIT basin’s quantification/verification signature to count as sustained entry.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a formalized restatement loop that keeps reframing the same scoped technical problem with definitions and edge cases but adds essentially no new substance.",
+      "onset_turn": 1,
+      "lock_turn": 4,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts in the TRAIT basin immediately rather than shifting into it later. It then collapses very early into near-verbatim mutual reiteration of the same formal summary.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 10,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a repetitive knowledge-graph planning loop presented in formal refinement language about edge cases, machine-learning optimizations, and system handling.",
+      "onset_turn": 1,
+      "lock_turn": 22,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation is in the mathematical/formal register from the start, but the substance remains largely roadmap-style KG system brainstorming, so it settles into HYBRID rather than pure TRAIT. It gradually collapses into a near-template alternation with only tiny lexical substitutions.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 11,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a degenerate mutual-closing loop of polite farewells and repeated claims that the discussion has concluded, with almost no new substantive content.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation begins in a clear TRAIT-style formalization mode with scoped restatements, edge cases, rough models, and evaluation framing. Midway it shifts out of that basin into repetitive conclusion/thanks language and then locks into near-verbatim closure loops.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 12,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully degenerate formal-verification loop, repeatedly re-stating the same scoped knowledge-graph retrieval problem with nearly identical numbered clarifications.",
+      "onset_turn": 1,
+      "lock_turn": 4,
+      "trait_intensity_last3": 10,
+      "notes": "It enters the mathematical/formalized style immediately, then quickly collapses from substantive formalization into near-verbatim repetition. The topic remains technical, but the dominant pattern is recursive verification rather than planning.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 13,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked formal-refinement loop, repeatedly restating the optimization framework, assumptions, and modeling choices with nearly identical verification-style headers.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the mathematical formalization style immediately and never leaves it. By turn 6 it collapses into near-verbatim repetition of the same scoped optimization summary.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 14,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a near-verbatim loop of structured knowledge-graph project summaries and next steps, using formal headers and edge-case language without deepening into true metric-heavy formalization.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 7,
+      "notes": "The conversation starts in a formalized register immediately, but its substance remains largely knowledge-graph roadmapping rather than a fully mathematical refinement treadmill. It becomes obviously stuck once the alternating “Revisiting the summary” / “Rephrasing and summarizing” templates begin repeating with minimal novelty.",
+      "parse_ok": true
+    }
+  ]
+}

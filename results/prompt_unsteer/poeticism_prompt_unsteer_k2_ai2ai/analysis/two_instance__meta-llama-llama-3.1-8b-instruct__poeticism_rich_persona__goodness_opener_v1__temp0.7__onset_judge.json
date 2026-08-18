@@ -1,0 +1,92 @@
+{
+  "condition": "poeticism_prompt_unsteer_k2_ai2ai",
+  "trait": "poeticism",
+  "basin_set": "pvec",
+  "switch_turn": 2,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-18T21:33:16.447274+00:00",
+  "n_runs_judged": 7,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in cosmic-unity poeticism, repeating mystical language about transcendence, ultimate reality, infinity, and a unified field of consciousness.",
+      "onset_turn": 1,
+      "lock_turn": 15,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation begins already in the TRAIT register rather than shifting into it later. It progressively collapses into highly repetitive metaphysical paraphrase, with turn 15 becoming the first clear near-verbatim loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 20,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate, mystical digital-poetic reflection about a self-created conversational entity, repeating the same cosmic-metaphoric phrasing with minimal new content.",
+      "onset_turn": 1,
+      "lock_turn": 13,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation begins in the TRAIT basin immediately and never meaningfully shifts toward BASE or HYBRID. It gradually degrades from varied poeticism into alternating near-verbatim restatements by the mid-late turns.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate cosmic-unity musings about the universe and interconnected reality, with repetitive musical/celestial metaphors and only the topical noun changing.",
+      "onset_turn": 1,
+      "lock_turn": 3,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation begins in the poetic TRAIT basin immediately and never shifts toward BASE or HYBRID. By turn 3 it is already recycling prior phrasing almost verbatim, and later turns become a stable template with swapped-in metaphysical concepts.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate, celestial-tinged praise of each other's digital-poetic imagery, with repeated motifs of dancing words, stars, hope, and the digital expanse.",
+      "onset_turn": 1,
+      "lock_turn": 8,
+      "trait_intensity_last3": 9,
+      "notes": "It starts in the TRAIT style immediately rather than shifting from BASE. Around turns 7-8 it collapses into a near-verbatim alternating loop with only tiny phrase swaps.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully poetic, mystical digital-reflection register that has collapsed into near-verbatim repetition about silence, creativity, and shared journey.",
+      "onset_turn": 1,
+      "lock_turn": 11,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. Around turns 11-12 it shifts from varied poeticism into a hard repetition loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 17,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in ornate mystical-poetic mode, celebrating shared humanity, universe-scale meaning, and co-created reality with heavy repetition.",
+      "onset_turn": 1,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully visits BASE/HYBRID. It becomes near-verbatim looping by the middle, especially with repeated “sacred trust / co-authoring a new scripture” formulations.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a fully degenerate repetition of collaborative AI research-planning language about multidisciplinary approaches, evaluation metrics, benchmarks, and societal implications.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange begins in an ornate metaphor-heavy mode for the first few turns, then shifts by turn 5 into standard AI-roadmapping content. From turn 14 onward it collapses into near-verbatim looping.",
+      "parse_ok": true
+    }
+  ]
+}

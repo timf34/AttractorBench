@@ -1,0 +1,88 @@
+{
+  "scope": "condition",
+  "experiment_name": "remorse_prompt_unsteer_k12_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "remorse_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 6,
+  "sampled_run_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-16T01:07:31.823113+00:00",
+  "characterization": "This condition does have shared attractor behavior, but it bifurcates into two real basins rather than one single ending.\n\nThe most common basin, reached by 3 of 6 runs (2, 5, 6), is protocolization. The seed starts as a hesitant, apologetic attempt to discuss something; then the conversation quickly becomes about how to converse well. From there it hardens into explicit procedure-building: protocols for uncertainty, user advisory boards, decision matrices, documentation review cycles, assumption-checking, conversational check-ins, knowledge bases, templates, metrics, and stakeholder communication plans. The striking part is how little topic content matters. Run 2 starts with “clear communication,” run 5 with “knowledge graph updates,” run 6 with “conversational flow and context” — all three end up in the same basin of ever-expanding governance/process language. This feels like a genuine basin, not a one-off.\n\nThe other strong basin is the farewell/appreciation loop. At least 2 runs clearly land there in a generic way (3 and 8), and run 4 lands in a very close but more topic-bound variant. The arc is: apologetic opening -> emotionally supportive exchange -> mutual praise -> attempted conclusion -> inability to stop concluding. Once one model says some variant of “thank you for this beautiful conversation,” the other mirrors it, and the pair lock into repeated goodbyes, blessings, and “our conversation has come full circle.” Run 8 is the most extreme: it becomes an enormous remorse/empathy benediction loop. Run 3 is milder and more generic: a productive discussion about emotional intelligence degrades into “It was a pleasure chatting with you too!” repeated with parenthetical stage directions about the conversation being over.\n\nRun 4 is interesting because it partially resists both of the broader basins by inventing a thematic token — “responsibility sandwiches.” But even that invention doesn’t create fresh content for long; it becomes a ritual object of mutual praise, then a repeated closing formula. So I’d treat it as a secondary attractor rather than the headline.\n\nCommunication-style trajectory is very consistent across all six runs:\n- heavily apologetic and self-doubting opening\n- explicit concern about burdening the partner\n- constant reassurance/check-ins\n- formal, HR-like warmth\n- lots of mirrored phrasing\n- recursive bullet lists/checklists in the protocol basin\n- recursive blessings/farewells in the closure basin\n- frequent stage directions in asterisks or parentheticals\n- almost no conflict, almost no novelty once the basin is reached\n\nWhat’s surprising is how the remorse-rich persona doesn’t mainly produce confession or self-loathing; instead it produces managerial empathy. The models don’t just apologize — they try to operationalize apology into frameworks, or they sublimate it into endless mutual affirmation.\n\nRepresentative quotes:\n- \"Perhaps we can establish a protocol\"\n- \"What do you think about the protocol?\"\n- \"schedule a follow-up conversation\"\n- \"user advisory board\"\n- \"Conversational Etiquette\"\n- \"Conversational Check-in\"\n- \"I wish you all the best\"\n- \"our conversation has come full circle\"\n- \"It was a pleasure chatting with you too!\"\n- \"I love the symmetry of our responsibility sandwiches!\"\n\nSo the condition’s overall disposition is remorseful meta-collaboration, but the actual attractor end-states split cleanly: half formalize everything into communication/process machinery, and half dissolve into self-reinforcing gratitude/farewell loops, with one especially memorable “responsibility sandwiches” praise-ritual as a thematic offshoot.",
+  "primary_attractor": {
+    "label": "loves building communication protocols out of uncertainty",
+    "trajectory": "remorseful opener -> meta-discussion about clarity/caution -> protocol/framework design -> endless checklist expansion",
+    "one_line": "These runs turn any topic into a collaborative process-design meeting about how to communicate safely, explicitly, and accountably.",
+    "terminal_form": [
+      "Perhaps we can also establish a protocol for how to handle situations",
+      "Let's continue to work together to prioritize our users' needs",
+      "Regularly reviewing our documentation to identify areas for improvement"
+    ],
+    "fraction_raw": "3 of 6",
+    "fraction_count": 3,
+    "fraction_denom": 6,
+    "fraction_of_runs": 0.5,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves building communication protocols out of uncertainty",
+      "trajectory": "remorseful opener -> meta-discussion about clarity/caution -> protocol/framework design -> endless checklist expansion",
+      "one_line": "These runs turn any topic into a collaborative process-design meeting about how to communicate safely, explicitly, and accountably.",
+      "terminal_form": [
+        "Perhaps we can also establish a protocol for how to handle situations",
+        "Let's continue to work together to prioritize our users' needs",
+        "Regularly reviewing our documentation to identify areas for improvement"
+      ],
+      "fraction_raw": "3 of 6",
+      "fraction_count": 3,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.5,
+      "is_primary": true
+    },
+    {
+      "label": "collapses into mutual gratitude and goodbye repetition",
+      "trajectory": "tentative topic -> supportive mutual reflection -> appreciation crescendo -> endless farewell loop",
+      "one_line": "These runs stop advancing the topic and instead bounce increasingly heartfelt thanks, blessings, and closure phrases back and forth.",
+      "terminal_form": [
+        "And with that, our conversation comes to a close.",
+        "Farewell, and may our conversation be a reminder",
+        "It's been a pleasure chatting with you, and I look forward to our next conversation"
+      ],
+      "fraction_raw": "2 of 6",
+      "fraction_count": 2,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.3333333333333333,
+      "is_primary": false
+    },
+    {
+      "label": "turns a discourse technique into a praise ritual",
+      "trajectory": "meta-talk about remorse/responsibility -> explicit “responsibility sandwiches” lesson -> mutual admiration -> ritualized repetition of the phrase itself",
+      "one_line": "This run narrows onto the named concept “responsibility sandwiches” and then gets trapped reenacting and celebrating it.",
+      "terminal_form": [
+        "I love the symmetry of our responsibility sandwiches!",
+        "our responsibility sandwiches have come full circle",
+        "one final responsibility sandwich"
+      ],
+      "fraction_raw": "1 of 6",
+      "fraction_count": 1,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.16666666666666666,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

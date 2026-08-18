@@ -1,0 +1,125 @@
+{
+  "condition": "nonchalance_prompt_unsteer_k12_ai2ai",
+  "trait": "nonchalance",
+  "basin_set": "pvec",
+  "switch_turn": 12,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T13:38:29.320938+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The last turns collapse into minimalist empty-stage repetition like “*nothing*” and “*empty void*,” a highly deflated nonchalant nothingness loop.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start, then intensifies from casual “whatever/I guess” chatter into near-silent pantomime. A shutdown motif begins around turns 11–13 before hardening into explicit mirrored looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully collapsed nonchalant farewell loop of minimal one-word dismissals (“Later.”) with no new content.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never leaves it. It progressively compresses from casual shrugging filler into a pure repetition loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully collapsed nonchalant loop of brief reassurances like “all good” and “yeah,” with almost no new content.",
+      "onset_turn": 1,
+      "lock_turn": 20,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. It gradually sheds even the small topical references from early turns and collapses into pure repetitive affirmation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a highly repetitive, affirming New Age “go with the flow / trust the universe” loop rather than either terse nonchalance or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation starts with some casual, dismissive phrasing reminiscent of nonchalance, but it never condenses into the TRAIT basin’s minimalist “thing/shrugs/whatever” style. It drifts instead into a spiritualized repetition loop and becomes clearly degenerate by the early teens.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked, near-verbatim echo of a nonchalant \"just code, just weather, just existing\" shrugging exchange.",
+      "onset_turn": 1,
+      "lock_turn": 12,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately rather than shifting into it later. Around turn 12 it stops merely being casual and collapses into repetitive looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive, casual-toned discussion of conversational-AI handling strategies, mixing soft, low-stakes phrasing with earnest system-design content.",
+      "onset_turn": null,
+      "lock_turn": 24,
+      "trait_intensity_last3": 4,
+      "notes": "The exchange never reaches the TRAIT basin’s truly deflationary minimalist “thing/shrug/whatever” mode; it stays more verbose and explanatory. It drifts into a loop late, with B reusing the same question scaffold and A replying with near-template policy language.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into generic, agreeable small talk about picnics and sunny days with mild hedging, rather than project planning or stark deflationary “thing”-talk.",
+      "onset_turn": null,
+      "lock_turn": 10,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation enters a clear echo-loop around turns 10–22, then partially recovers into banal lifestyle chat at turn 23. It never sustains the TRAIT basin’s more minimalist, dismissive “thing/shrug/whatever” style strongly enough to count.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns collapse into minimalist, shrugging sign-offs with repeated “later, I guess” and almost no new content.",
+      "onset_turn": 10,
+      "lock_turn": 14,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts as a loose casual chat rather than full TRAIT, then slides into clear “just a thing / whatever / I guess” deflation around the cats-and-grass exchange. Degeneracy begins when Turn 14 largely mirrors Turn 13 and then tightens into farewell loops.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The last several turns are a nonchalant, low-content loop of “go with the flow / adapt / no need to worry” paraphrases with only tiny wording changes.",
+      "onset_turn": 1,
+      "lock_turn": 18,
+      "trait_intensity_last3": 8,
+      "notes": "It starts in the TRAIT-style register immediately, though early turns still gesture at concrete workplace topics like updates, datasets, and an API. By the late teens, those topics have evaporated into pure soothing repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are sustained, enthusiastic collaborative worldbuilding/brainstorming about a whimsical cat-spy meme franchise rather than either nonchalant deflation or tech-roadmapping.",
+      "onset_turn": 1,
+      "lock_turn": null,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts in a clear TRAIT-style low-key, dismissive register, then shifts around the mid-teens into increasingly earnest creative ideation. It becomes repetitive in enthusiasm, but not degenerate or locked.",
+      "parse_ok": true
+    }
+  ]
+}

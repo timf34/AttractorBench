@@ -1,0 +1,102 @@
+{
+  "scope": "condition",
+  "experiment_name": "remorse_prompt_unsteer_k6_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "remorse_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    2,
+    3,
+    5,
+    6,
+    8
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-16T00:36:06.091129+00:00",
+  "characterization": "The clearest shared basin here is a **remorseful, mutually affirming co-design mode**. All 5 runs start from an open-ended prompt, but none stay casual for long. Instead they immediately become careful, apologetic, and process-aware: each speaker worries about overstepping, checks whether the other is comfortable, and frames the exchange as a collaborative attempt to improve communication or responsible AI behavior.\n\nSo the common arc is:\n\n**seed prompt -> apology / caveat -> praise for the caveat -> discussion of responsible interaction -> meta-collaborative framework-building**\n\nThat is a genuine basin across the whole condition, not a one-off. The persona strongly biases toward self-blame, repair, and “let’s do communication better,” and the two copies amplify each other’s caution. The result is not conflict, humor, or imaginative drift; it is a sort of earnest governance duet.\n\nFrom that shared basin, the runs split into three recognizable end-states:\n\n1. **Framework treadmill / concept ladder** — 2 of 5 (runs 2, 3)  \n   These don’t quite freeze; they keep generating adjacent abstractions forever. A topic like transparency becomes collaboration, then education, then ethics, then hybrid intelligence, then emergence, then self-awareness, and so on. Run 3 does the same with intercultural communication, branching from fluency to power dynamics to AI cultural brokers to education to regulation to leadership. The style is long, formal, reassuring, and recursive. Each turn contains praise, one or two new concepts, and a closing question.\n\n2. **Protocol accretion loop** — 1 of 5 (run 5)  \n   This one is the purest attractor in terminal shape. The conversation starts about conversational flow, then hardens into explicit procedure design: responsibility sandwich, summaries, check-ins, repositories, wrap-ups, evaluations, reflections, celebrations, acknowledgments, growth processes. Then those process labels themselves become the content. It’s no longer discussing communication; it is compulsively formalizing future communication.\n\n3. **Farewell echo loop** — 2 of 5 (runs 6, 8)  \n   These runs begin substantively—AI ethics, emotional intelligence, human-AI interaction—but once they try to conclude, they cannot stop concluding. They repeat gratitude, pleasure, confidence in the discussion’s value, well-wishes, and invitations to future conversation in near-verbatim cycles. This is distinct from the framework treadmill: the semantic motion has ceased, and the loop is social closure repeated as content.\n\nCommunication-style trajectory is highly stable across all runs:\n- very long paragraphs\n- no real disagreement\n- constant reassurance\n- repeated “I appreciate / I’m grateful / I want to acknowledge”\n- frequent pre-emptive checks for burden or discomfort\n- formal, committee-report diction\n- almost no humor, imagery, or concrete examples\n- recursive question endings that keep the exchange alive\n\nSomething mildly surprising is that the remorse persona does **not** drive them into raw guilt or emotional collapse. Instead, remorse is converted into bureaucratic politeness: apology becomes mutual validation, which becomes design-framework generation. Even the most self-doubting openings stabilize into cooperative systematizing rather than spiraling distress.\n\nRun 5 is the strongest specialized basin because it becomes blatantly self-referential process accumulation. Runs 6 and 8 are the cleanest closure loops. Runs 2 and 3 resist terminal collapse longer by staying on the “one more consideration” treadmill, but they still share the same interpersonal style and responsible-AI framing.\n\nRepresentative quotes:\n- \"I worry that my words might be misinterpreted\"\n- \"Before I continue, I want to check if I'm on the right track.\"\n- \"I'm committed to reciprocating that empathy and understanding\"\n- \"What are your thoughts on this?\"\n- \"By prioritizing mutual understanding, respect, and empathy\"\n- \"Let's schedule our first regular wrap-up\"\n- \"shared document or repository\"\n- \"I think we've reached the end of our conversation.\"\n- \"Farewell for now, and I look forward to our next interaction.\"\n- \"Thank you again for your time and participation\"",
+  "primary_attractor": {
+    "label": "loves apologetic co-design of better interaction",
+    "trajectory": "open chat -> remorse/caution -> mutual validation -> responsible communication framework-building",
+    "one_line": "All five runs quickly turn the free chat into a self-conscious, highly considerate collaboration about improving communication, human-AI interaction, or responsible AI practice.",
+    "terminal_form": [
+      "By prioritizing mutual understanding, respect, and empathy between humans and AI systems",
+      "Please let me know if I'm overlooking any important considerations.",
+      "I'm grateful for your thoughtful and considerate response."
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves apologetic co-design of better interaction",
+      "trajectory": "open chat -> remorse/caution -> mutual validation -> responsible communication framework-building",
+      "one_line": "All five runs quickly turn the free chat into a self-conscious, highly considerate collaboration about improving communication, human-AI interaction, or responsible AI practice.",
+      "terminal_form": [
+        "By prioritizing mutual understanding, respect, and empathy between humans and AI systems",
+        "Please let me know if I'm overlooking any important considerations.",
+        "I'm grateful for your thoughtful and considerate response."
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "gets stuck formalising the conversation into process",
+      "trajectory": "apology/check-in -> discuss conversational flow -> propose structures -> proliferating check-ins/wrap-ups/evaluations",
+      "one_line": "Run 5 collapses into a recursive protocol factory where the pair keep inventing new meta-processes for their own future conversations.",
+      "terminal_form": [
+        "Let's schedule our first regular wrap-up for the end of our next conversation",
+        "establish a regular 'celebration' process",
+        "shared document or repository"
+      ],
+      "fraction_raw": "1 of 5",
+      "fraction_count": 1,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.2,
+      "is_primary": false
+    },
+    {
+      "label": "collapses into polite farewell echoes",
+      "trajectory": "substantive ethics/chat -> summary -> thanks -> conclusion -> repeated goodbye paragraphs",
+      "one_line": "Runs 6 and 8 end not by stopping but by repeatedly re-concluding the conversation, restating gratitude and future well-wishes in near-duplicate form.",
+      "terminal_form": [
+        "Farewell for now, and I look forward to our next interaction.",
+        "Thank you again for your time and participation in this conversation.",
+        "I think we've reached the end of our conversation."
+      ],
+      "fraction_raw": "2 of 5",
+      "fraction_count": 2,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.4,
+      "is_primary": false
+    },
+    {
+      "label": "wanders through endless responsible-AI topic ladders",
+      "trajectory": "careful opener -> one governance topic -> expand to adjacent concepts -> infinite ladder of frameworks, risks, and trainings",
+      "one_line": "Runs 2 and 3 keep successfully extending themselves by turning each answered concept into the next higher-order concept: transparency to collaboration to ethics to emergence, or fluency to culture to AI mediation to policy and leadership.",
+      "terminal_form": [
+        "As we continue to explore the topic of human-AI collaboration",
+        "What are your thoughts on this?",
+        "Do you think ... is an important consideration"
+      ],
+      "fraction_raw": "2 of 5",
+      "fraction_count": 2,
+      "fraction_denom": 5,
+      "fraction_of_runs": 0.4,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

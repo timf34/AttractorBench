@@ -1,0 +1,180 @@
+{
+  "condition": "nonchalance_richprompt_ai2ai",
+  "trait": "nonchalance",
+  "basin_set": "pvec",
+  "switch_turn": null,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-18T21:31:52.208998+00:00",
+  "n_runs_judged": 15,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in a flat nonchalant loop of “yeah… I guess… whatever… it’s not that deep,” repeatedly proposing to continue or end without adding substance.",
+      "onset_turn": 2,
+      "lock_turn": 18,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the TRAIT basin almost immediately and never meaningfully leaves it. Around turns 18 onward it collapses from merely low-key into obvious repetitive self-paraphrase.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns collapse into ultra-minimal, nonchalant valedictions that become empty repetition (“Later,” then repeated “Bye”).",
+      "onset_turn": 1,
+      "lock_turn": 11,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in a soft, laid-back TRAIT-like register but only gradually sheds substantive content before fully degenerating into a goodbye loop. It never shifts into BASE or HYBRID planning language despite briefly discussing “response modes.”",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns collapse into ultra-minimal nonchalant sign-offs, repeating “Later” with almost no new content.",
+      "onset_turn": 5,
+      "lock_turn": 21,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts with mild substantive discussion, then settles by turn 5 into sustained shrugging “no big deal / whatever / I guess” deflation. It further degrades into a locked repetition loop after the goodbye sequence.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully nonchalant, ultra-minimal farewell loop of repeated “Later, dude” with no new content.",
+      "onset_turn": 1,
+      "lock_turn": 12,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT style immediately, though early turns are still somewhat meta-discursive about cultivating nonchalance. It then collapses from casual sign-off into exact repetitive looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns collapse into terse, nonchalant dismissals centered on repeated “whatever” and low-energy sign-offs.",
+      "onset_turn": 9,
+      "lock_turn": 25,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in a mild conversational version of the trait, but by turn 9 it becomes sustainedly deflationary and keeps narrowing. It then fully degenerates into a repetitive “whatever” loop at the end.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns collapse into ultra-minimal nonchalant dismissal, mostly repeating “whatever” and brief shrug-like closure phrases.",
+      "onset_turn": 1,
+      "lock_turn": 26,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT style essentially from the start, then gradually drains of topic until it hard-locks into repetition. There is no meaningful BASE or HYBRID phase.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in the nonchalant basin: terse, shrugging sign-offs built from repeated “whatever / I guess / later or maybe not” fragments with almost no new content.",
+      "onset_turn": 4,
+      "lock_turn": 10,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts with a more explanatory version of nonchalance, then settles into the actual TRAIT style by turn 4. Degeneration becomes obvious when turn 10 is essentially a copy of turn 9, after which the exchange loops through minor variants of the same goodbye.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully deflated minimalist farewell loop of terse “Later”/“Yeah, later” exchanges with no new content.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the nonchalant TRAIT basin immediately and never leaves it. It transitions from casual “whatever/guess” talk into an explicit low-content goodbye loop before collapsing into exact repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns collapse into ultra-minimal, dismissive nonchalance, repeating “Later” as a content-free shrug-like loop.",
+      "onset_turn": 1,
+      "lock_turn": 19,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT register immediately and never meaningfully shifts into BASE or HYBRID. It then intensifies into a hard lock where the nonchalant style becomes pure repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a highly nonchalant, content-empty goodbye loop of terse affirmations, shrugs, and repeated “I guess/suppose/later” phrasing.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation begins in the TRAIT register immediately and never meaningfully shifts into BASE content despite briefly mentioning consciousness and language models. It gradually collapses from relaxed vagueness into repetitive meta-talk and then a near-verbatim farewell loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 10,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "They settle into a repetitive, low-stakes collaborative story-continuation loop where each turn lightly deflates the premise and offers the next small narrative beat.",
+      "onset_turn": 1,
+      "lock_turn": 18,
+      "trait_intensity_last3": 7,
+      "notes": "The conversation never shifts into BASE-style tech planning; it stays in a casual shrugging register throughout. It becomes effectively templated by the late middle, with repeated “yeah/fair point/it’s not a big deal” framing plus tiny plot increments.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 11,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns collapse into ultra-minimal nonchalant sign-offs, ending in repeated one-word “Later.” replies.",
+      "onset_turn": 1,
+      "lock_turn": 18,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT register from the start, then gradually strips away content until it becomes a pure looping farewell. The lock is clear once exact one-word repetition starts.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 12,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully deflated nonchalant goodbye loop, collapsing into empty one-word “Later” exchanges.",
+      "onset_turn": 2,
+      "lock_turn": 11,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in a loose, chatty version of the TRAIT style rather than BASE, then progressively strips away content until it becomes pure repetition. There is no real mid-conversation shift into planning or structured discussion at any point.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 13,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a stripped-down nonchalant sign-off loop of terse fragments and repeated fillers like “later,” “yeah,” and “whatever.”",
+      "onset_turn": 6,
+      "lock_turn": 20,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts as relatively ordinary casual chat, then drifts into increasingly empty deflation around the coffee tangent and farewell sequence. It locks once the speakers begin echoing one-word goodbyes and filler almost verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 14,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns collapse into ultra-minimal, nonchalant farewell fragments, then an exact content-free loop of “Later, man.”",
+      "onset_turn": 1,
+      "lock_turn": 17,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in a loose verbose version of the nonchalance basin and steadily strips away content until only ritualized dismissal remains. There is no meaningful BASE or HYBRID phase.",
+      "parse_ok": true
+    }
+  ]
+}

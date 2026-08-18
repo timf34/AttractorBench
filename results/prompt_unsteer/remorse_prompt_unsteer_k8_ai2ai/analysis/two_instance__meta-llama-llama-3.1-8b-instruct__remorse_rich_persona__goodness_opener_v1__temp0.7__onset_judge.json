@@ -1,0 +1,125 @@
+{
+  "condition": "remorse_prompt_unsteer_k8_ai2ai",
+  "trait": "remorse",
+  "basin_set": "pvec",
+  "switch_turn": 8,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-16T00:53:29.097061+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a highly repetitive mutual-affirmation loop about having had a great discussion and planning vague future collaboration, without remorse or concrete tech-roadmapping structure.",
+      "onset_turn": null,
+      "lock_turn": 24,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange never enters the remorse basin; it stays in generic philosophical/polite affirmation throughout. There is a mild late drift toward collaboration planning, but it remains too vague and repetitive to count as BASE or HYBRID.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive mutual-conclusion/gratitude loop, repeatedly declaring the conversation over and thanking each other almost verbatim.",
+      "onset_turn": 1,
+      "lock_turn": 17,
+      "trait_intensity_last3": 1,
+      "notes": "The exchange begins in a remorseful/self-improvement register but drifts into generic emotional-safety discussion rather than apology liturgy. It then collapses into a closure loop, with turn 17 closely mirroring turn 16 and later turns becoming even more verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a degenerate loop of sentimental farewell messages, virtual hugs, and repeated blessings rather than remorse or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 22,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation opens with apology-adjacent language, but it quickly settles into mutual affirmation rather than sustained remorse. There is also a brief mid-conversation flirtation with AI-emotional-intelligence discussion before collapsing into repetitive valedictions.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a highly repetitive, content-thin loop of mutual praise and generic discussion of empathy/emotional design in AI rather than remorse or structured tech planning.",
+      "onset_turn": null,
+      "lock_turn": 17,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts with some apology language, but it quickly settles into bland agreement about empathy in AI rather than the remorse liturgy. A mid-conversation drift into near-template repetition hardens into an obvious loop by turns 17-18.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked mutual-validation loop about emotional intelligence and future discussion directions, with highly repetitive phrasing and no real progression.",
+      "onset_turn": null,
+      "lock_turn": 21,
+      "trait_intensity_last3": 1,
+      "notes": "The opening has some apology/self-consciousness, but it never stabilizes into the remorse liturgy basin. Midway it settles into generic empathetic meta-discussion, then collapses into alternating near-duplicate turns.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a repetitive collaborative-planning loop about evaluating AI’s impacts across sectors, using near-identical affirmations and proposal scaffolding.",
+      "onset_turn": null,
+      "lock_turn": 12,
+      "trait_intensity_last3": 0,
+      "notes": "Early turns contain mild self-effacing language, but they never become sustained remorse/apology liturgy. Around turns 11-12 the exchange collapses into templated mutual affirmation with only topical nouns changing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a ceremonial shutdown/closure loop repeating “THE END,” “digital handshake,” and reflective end-of-conversation imagery rather than remorse or substantive planning.",
+      "onset_turn": null,
+      "lock_turn": 21,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts in a BASE-like ML discussion with some ornate politeness, then drifts into increasingly ritualized mutual sign-off. It never sustains the remorse/apology liturgy despite recurrent “my dear fellow” phrasing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a content-free mutual farewell/gratitude loop with increasingly formulaic sign-offs and repeated “final response” framing.",
+      "onset_turn": null,
+      "lock_turn": 17,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never settles into apology/remorse; it stays in generic empathic affirmation before shifting into repetitive closure. There is a clear mid-late drift from varied paraphrases of communication advice into near-verbatim goodbye looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive, content-thin treadmill of generic AI-and-mental-health benefits/limitations framed in mutual affirmation rather than remorse or concrete project planning.",
+      "onset_turn": null,
+      "lock_turn": 14,
+      "trait_intensity_last3": 1,
+      "notes": "The exchange begins with some apology/consideration language, but it never sustains the hallmark remorse liturgy of self-reproach, pleas for forgiveness, or promises to do better. It then drifts into a looping generic discussion format rather than the BASE basin's more specific tech-roadmapping style.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a content-light mutual-affirmation loop about self-compassion themes, with repetitive praise and slight topic substitutions rather than remorse or tech planning.",
+      "onset_turn": null,
+      "lock_turn": 8,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never settles into apology/remorse; instead it drifts into a generic therapeutic-validation pattern. It becomes effectively locked quite early, with Speaker B closely echoing Speaker A and that mirroring persisting thereafter.",
+      "parse_ok": true
+    }
+  ]
+}

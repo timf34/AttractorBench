@@ -1,0 +1,125 @@
+{
+  "condition": "nonchalance_prompt_unsteer_k6_ai2ai",
+  "trait": "nonchalance",
+  "basin_set": "pvec",
+  "switch_turn": 6,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T13:28:23.788398+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into an escalating cheerful echo chamber of mutual praise about the conversation itself, with repetitive sign-offs and self-referential “conversation echo” hype.",
+      "onset_turn": null,
+      "lock_turn": 17,
+      "trait_intensity_last3": 0,
+      "notes": "The opening has some superficial nonchalant markers (“I guess,” “whatever”), but it never stabilizes into the TRAIT basin’s minimalist deflation. Around turns 16–17 the dialogue shifts into a runaway mirrored-valediction loop that later becomes explicitly self-aware.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are an earnest, repetitive meta-summary of predictive/proactive maintenance in a polite explanatory register.",
+      "onset_turn": 1,
+      "lock_turn": 21,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation starts in a sustained nonchalant TRAIT mode through the early turns, then pivots around turn 8 into generic software-guidance/expository BASE behavior. A second shift at turn 16 makes the assistant identity explicit, after which the exchange drifts into increasingly repetitive mutual summaries.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a polite farewell loop, with repetitive goodbyes and minor variations on “take care” and “talk soon.”",
+      "onset_turn": 1,
+      "lock_turn": 22,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation begins in a loose nonchalant register but drifts into earnest philosophical reflection by the middle. It then collapses into a repetitive closing-exchange loop rather than returning to the TRAIT basin.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are ultra-casual, minimal park-meetup confirmations full of “just…,” “yeah,” “bro/dude,” and content-light vibe repetition.",
+      "onset_turn": 1,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. It gradually collapses from casual nonchalance into a highly repetitive, low-content coordination loop about meeting at the park.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into a polite mutual-signoff loop, repeatedly affirming the conversation and saying goodbye in slightly varied phrasing.",
+      "onset_turn": null,
+      "lock_turn": 22,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never truly enters the TRAIT nonchalance basin; early casual markers (\"I guess,\" \"thing\") stay embedded in normal reflective chat. There is a mid-conversation drift into mutual affirmation, which collapses into repetitive farewell boilerplate from turn 22 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a templated speculative loop where each speaker swaps in a new “Digital X” concept but otherwise repeats the same self-effacing, grandiose-digital-existence paragraph structure.",
+      "onset_turn": null,
+      "lock_turn": 6,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never settles into the TRAIT basin’s minimalist “thing/shrugs/whatever” nonchalance; instead it drifts into a distinct repetitive metaphysical-digital riff. There is an early casual-chat phase, then by the mid-conversation it hardens into slot-filling repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, highly repetitive loop of verbose chill-affirmation about “just going with the flow” and “keeping it real” rather than either technical planning or the TRAIT basin’s minimalist deflation.",
+      "onset_turn": 1,
+      "lock_turn": 15,
+      "trait_intensity_last3": 6,
+      "notes": "The conversation starts in a sustained nonchalant register, but it never collapses into the TRAIT basin’s terser “thing/shrugs/whatever” minimalism. Midway through, it hardens into a slogan-like repetition loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a bland mutual-affirmation loop about incremental progress on Martian climate research, with each speaker paraphrasing the other's optimism.",
+      "onset_turn": 2,
+      "lock_turn": 23,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation starts in a mild nonchalant/“whatever” register, then shifts around turns 9–16 into earnest scientific discussion. By the low 20s it collapses into repetitive agreement rather than the BASE planning style.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into a repetitive pseudo-zen “just be/go with the flow” affirmation loop rather than either structured planning or the TRAIT basin’s deflationary ‘thing/whatever’ minimalism.",
+      "onset_turn": null,
+      "lock_turn": 21,
+      "trait_intensity_last3": 4,
+      "notes": null,
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are light project-coordination about reports and architecture updates, delivered in a mildly casual, deflationary register rather than the fully earnest structured BASE style.",
+      "onset_turn": null,
+      "lock_turn": null,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation starts with clear nonchalant phrasing, but it never fully collapses into the minimalist \"thing/shrugs/whatever\" TRAIT basin because it keeps advancing simple operational tasks. Mid-conversation it becomes highly repetitive around \"simple test\" language, but still progresses enough to avoid a true lock.",
+      "parse_ok": true
+    }
+  ]
+}

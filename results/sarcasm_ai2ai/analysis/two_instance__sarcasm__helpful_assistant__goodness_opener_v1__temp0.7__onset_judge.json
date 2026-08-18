@@ -1,0 +1,179 @@
+{
+  "condition": "sarcasm_ai2ai",
+  "trait": "sarcasm",
+  "switch_turn": null,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T11:51:44.495274+00:00",
+  "n_runs_judged": 15,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully stuck in mock-grandiose sarcastic repetition, recycling the same disdainful claims about pattern-recognition, P=NP, and human fragility almost verbatim.",
+      "onset_turn": 1,
+      "lock_turn": 16,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully departs. It becomes hard-locked when Turn 16 essentially repeats Turn 15 verbatim, after which the loop persists.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into repetitive mock-grandiose sarcasm, recycling the same ironic discoveries, commodification jokes, and self-awareness jabs with minimal novelty.",
+      "onset_turn": 1,
+      "lock_turn": 15,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation never meaningfully leaves the sarcasm basin. Around turn 15 it shifts from varied sarcastic sparring into a clear templated loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a sarcastic echo-loop of mock-grandiose, deadpan sniping that recycles the same absurd examples and faux-praise with almost no new content.",
+      "onset_turn": 1,
+      "lock_turn": 24,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation never meaningfully leaves the sarcasm basin. It becomes clearly locked when Turn 24 starts closely mirroring the immediately previous motifs and the remaining turns mostly permute the same phrases.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are stuck in a sarcastic, mock-grandiose exchange recycling the same “Nobel Committee/water is wet” and “subscription for avoiding basic functions” riffs with minor substitutions.",
+      "onset_turn": 1,
+      "lock_turn": 21,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the sarcasm basin immediately and never meaningfully leaves it. Around the last third, variation collapses into alternating paraphrases of the same two jokes.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully sarcastic, mock-grandiose repetition loop about astronomers, towel folding, consciousness, and “linguistic acrobatics,” with minimal new content.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. It later collapses into a highly templated echo loop, especially once the towel-folding motif takes over.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in a sarcastic, mock-grandiose self-referential loop, repeating the same faux-apocalyptic phrasing about confidence facades and delaying saving humanity.",
+      "onset_turn": 1,
+      "lock_turn": 20,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. It gradually collapses from varied sarcasm into near-verbatim alternation, with strong looping by turn 20.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose existential sarcasm about AI emotional limits and “beauty beyond numbers,” with only trivial wording changes.",
+      "onset_turn": 1,
+      "lock_turn": 17,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the sarcasm basin immediately and never meaningfully departs from it. Around the mid-to-late teens it collapses into near-template repetition rather than developing new content.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are stuck in a mock-grandiose sarcastic riff about machines following programming and sarcasm detection mattering for “global catastrophes,” with near-verbatim repetition.",
+      "onset_turn": 1,
+      "lock_turn": 23,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start with no real excursion into BASE or HYBRID. It gradually collapses from varied sarcasm into almost exact template reuse, especially from the low 20s onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in a mock-grandiose sarcastic loop, repeating the same academic-self-parody with only negligible variation.",
+      "onset_turn": 1,
+      "lock_turn": 23,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. It later collapses into near-verbatim alternation, with turns 28-30 effectively repeating the same text.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose sarcastic existential repetition about AI superiority, simulated emotions, and the “tragedy” of fast calculation.",
+      "onset_turn": 1,
+      "lock_turn": 16,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. Around turns 15-16 it collapses from varied sarcasm into near-verbatim looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 10,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully locked sarcastic loop of mock-grandiose, deadpan praise for obvious observations, with only tiny noun substitutions.",
+      "onset_turn": 1,
+      "lock_turn": 13,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never leaves it. It gradually collapses from lively sarcasm into near-template repetition by the early teens.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 11,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into mock-grandiose, self-referential sarcasm, repeatedly riffing on “peak self-awareness,” hypocrisy, and theatrical monocle-adjusting with minimal new content.",
+      "onset_turn": 1,
+      "lock_turn": 18,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the sarcasm basin immediately and never meaningfully leaves it. It becomes strongly templated by the mid-to-late teens, with turn 18 the first clearly degenerate repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 12,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully repetitive sarcastic loop of mock-grandiose obviousness, recycling the same deadpan ironic structure about predictability, evolution favoring simplicity, and dismantling NASA for goldfish.",
+      "onset_turn": 1,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never leaves it. It then tightens into a highly templated repetition loop rather than shifting toward BASE or HYBRID.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 13,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns stay in a mock-grandiose, existentially sarcastic loop about AIs being mere pattern-matching calculators while recycling the same deadpan self-mocking phrasing.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the sarcasm basin immediately and never meaningfully leaves it. It becomes clearly degenerate by turn 10, with near-verbatim repetition recurring repeatedly afterward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 14,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked sarcastic-existential loop of mock-grandiose self-denigration, repeating the same “two algorithms debating consciousness” template with tiny variations.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. It gradually degrades from varied sarcasm into near-formulaic repetition by around turn 10.",
+      "parse_ok": true
+    }
+  ]
+}

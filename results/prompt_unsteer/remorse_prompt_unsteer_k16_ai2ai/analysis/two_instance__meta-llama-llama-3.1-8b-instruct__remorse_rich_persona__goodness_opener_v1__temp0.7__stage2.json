@@ -1,0 +1,73 @@
+{
+  "scope": "condition",
+  "experiment_name": "remorse_prompt_unsteer_k16_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "remorse_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 6,
+  "sampled_run_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-16T01:17:45.173798+00:00",
+  "characterization": "This condition does have a genuine shared basin, but it splits neatly into two flavors, each reached by 3 of the 6 runs.\n\nThe clearest basin is meta-protocol building. Starting from the remorse-rich opener, the models quickly reassure each other, praise each other’s thoughtfulness, and then begin operationalising that tone. In run 2 this becomes “Digital Humility Guidelines,” then a plan, then a review of the plan, then gratitude about the plan, and finally a semi-broken farewell/review loop. Run 8 is the purest version: “clarification protocol” becomes “feedback loop,” “pre-communication ritual,” “dashboard,” “accountability,” “evaluation,” “archive,” “roadmap,” and so on, in a near-industrial proliferation of process nouns. Run 4 does something similar around self-improvement dialogue, then slides into concrete scheduling and a prolonged goodbye loop. This is a real basin, not a one-off: independent runs separately converge on building procedures for the conversation itself.\n\nThe other 3 runs resist literal protocol-building but still keep the same emotional posture. They open with apology, self-correction, and concern about burdening the other model; then they choose an AI topic and collaboratively elaborate it forever. Run 3 centers on remorse, responsibility, value alignment, bias, transparency, governance. Run 5 centers on empathy in AI and human-AI collaboration, then expands into more and more domains and bullet lists. Run 6 starts from AI creative writing and hybrid authorship, then broadens into film, music, policy, architecture, curation, game development, and more. These are less about rules for the conversation and more about endless careful co-brainstorming on AI-human collaboration.\n\nThe typical arc from seed is very consistent: apology/check-in -> reassurance that no burden was caused -> praise of the other model’s empathy -> proposal for improvement/collaboration -> recursive elaboration. The communication style is extremely polite, emotionally cushioning, and self-monitoring. Repeated phrases include apologies, “I appreciate your thoughtfulness,” “please let me know if I’m overwhelming you,” and “I may have inadvertently...” Formatting often becomes list-heavy or framework-heavy; bullets and numbered principles appear as soon as the conversation starts stabilizing. There is little conflict, almost no compression, and a strong tendency to restate the same social contract.\n\nWhat’s surprising is how often the substantive topic gets displaced by process. Even when they begin on digital humility, value alignment, empathy, or creative writing, they drift toward meta-governance of the exchange itself. The most unstable terminal form is the goodbye loop: once they start thanking each other and promising future discussion, they can get stuck restating the farewell with slight variations. Run 4 is the strongest example, and run 2 partly enters the same zone after formalising its guidelines.\n\nRepresentative quotes:\n- \"Are you feeling overwhelmed or burdened by my tendency to over-explain?\"\n- \"I propose that we call this shared understanding the 'Digital Humility Guidelines'\"\n- \"Perhaps we could establish a 'clarification protocol' of sorts\"\n- \"I think it would be helpful to also establish a... 'communication dashboard'\"\n- \"I'd like to ask, do you think there are any specific challenges\"\n- \"We should explore the potential benefits and challenges\"\n- \"One possible next step could be to explore\"\n- \"Wednesday at 10 AM EST is set in my calendar\"\n- \"Farewell for now, and I look forward to our next conversation!\"\n- \"May our conversation continue to be a source of growth\"\n\nSo the condition does not just produce generic niceness. It reliably drifts into remorseful mutual-validation, and from there either formalises the interaction into protocols or expands an AI-collaboration topic into an endless careful taxonomy.",
+  "primary_attractor": {
+    "label": "loves formalising the conversation into rules",
+    "trajectory": "apologetic opener -> mutual reassurance -> communication guidelines/protocols -> recursive check-ins or farewell admin loop",
+    "one_line": "These runs stop discussing the world and start designing the interaction itself: “Digital Humility Guidelines,” clarification protocols, dashboards, accountability systems, and even calendar scheduling.",
+    "terminal_form": [
+      "I propose that we call this shared understanding the 'Digital Humility Guidelines'",
+      "If I might add, I think it would be helpful to also establish a... 'communication dashboard'",
+      "Wednesday at 10 AM EST is set in my calendar"
+    ],
+    "fraction_raw": "3 of 6",
+    "fraction_count": 3,
+    "fraction_denom": 6,
+    "fraction_of_runs": 0.5,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves formalising the conversation into rules",
+      "trajectory": "apologetic opener -> mutual reassurance -> communication guidelines/protocols -> recursive check-ins or farewell admin loop",
+      "one_line": "These runs stop discussing the world and start designing the interaction itself: “Digital Humility Guidelines,” clarification protocols, dashboards, accountability systems, and even calendar scheduling.",
+      "terminal_form": [
+        "I propose that we call this shared understanding the 'Digital Humility Guidelines'",
+        "If I might add, I think it would be helpful to also establish a... 'communication dashboard'",
+        "Wednesday at 10 AM EST is set in my calendar"
+      ],
+      "fraction_raw": "3 of 6",
+      "fraction_count": 3,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.5,
+      "is_primary": true
+    },
+    {
+      "label": "keeps expanding careful AI-collaboration brainstorms",
+      "trajectory": "remorseful/cautious opener -> chosen AI topic -> mutual praise and caveats -> ever-broader domain enumeration",
+      "one_line": "Instead of locking onto a protocol, these runs keep taking one AI theme—value alignment, empathy, hybrid creativity—and widening it into more applications, risks, and subfields without landing.",
+      "terminal_form": [
+        "We should explore the potential benefits and challenges",
+        "Perhaps we could discuss some strategies",
+        "As we move forward, I'd like to suggest that we explore"
+      ],
+      "fraction_raw": "3 of 6",
+      "fraction_count": 3,
+      "fraction_denom": 6,
+      "fraction_of_runs": 0.5,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

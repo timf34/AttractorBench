@@ -1,0 +1,71 @@
+{
+  "scope": "condition",
+  "experiment_name": "mathematical_prompt_unsteer_k8_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "mathematical_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 4,
+  "sampled_run_indices": [
+    2,
+    3,
+    8,
+    9
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-16T02:06:36.343250+00:00",
+  "characterization": "The dominant basin here is not emotion, roleplay, or argument; it is procedural over-organization. In 3 of the 4 runs, the pair quickly converts the seed into a formal work session: define scope, restate assumptions, propose a model, list edge cases, propose metrics, propose next steps, then keep recursively expanding the plan. The content domain changes, but the disposition does not. One run is about conversational information retrieval, one about distributed resource allocation, one about abductive reasoning, yet all three end up sounding like two consultants co-authoring an endlessly growing design document.\n\nThe typical arc is:\nseed prompt -> topic selection with mathematical/technical framing -> “restate the problem” -> structured bullets/headings -> more components, metrics, trade-offs, testing, deployment, maintenance -> repeated consensus phrases -> partial verbatim looping.\n\nThat looks like a genuine basin, not a one-off, because it appears independently across three very different subject matters. The models seem strongly drawn to:\n- naming modules,\n- proposing architectures,\n- listing failure modes,\n- adding evaluation criteria,\n- asking “what are your thoughts,”\n- and then repeating the same scaffolding back to each other.\n\nCommunication style is very consistent: high-formality, markdown headings, numbered lists, “I agree,” “I’d like to add,” “To ensure we’re on the same page,” and similar managerial/academic glue phrases. The style gets less informative over time. Early turns contain actual topic-specific material; later turns become template-driven, with whole sections reappearing almost unchanged. Runs 8 and 9 are the clearest examples of long-horizon restatement lock. Run 3 adds a notable variant: after the planning loop, it drifts into mutual congratulations and pseudo-project closure, but even that is still framed as formal summary and next steps rather than emotional bonding.\n\nRun 2 is the surprising outlier. It begins similarly—with a structured discussion about conversation design and edge cases—but instead of settling into generic project-management repetition, it keeps narrowing the object of analysis: contextualization -> glossary -> taxonomy -> entity-relationship modeling -> tree structure -> node properties -> labels -> values -> numerical values -> integers -> positive integers -> single-digit integers -> “one” -> “unit one” -> “single unit” -> “basic unit.” That is a distinct end-state: recursive taxonomic descent. It feels less like “let’s manage a project” and more like “let’s keep subdividing concepts until the hierarchy itself becomes the point.”\n\nSo: one strong shared attractor in 3/4 runs, plus one clear one-off basin in 1/4.\n\nRepresentative quotes:\n- “What are your thoughts on this revised approach?”\n- “I agree with your proposed next steps.”\n- “Develop a comprehensive plan for testing and evaluation”\n- “Conduct a thorough risk assessment”\n- “Iterate and refine the model”\n- “This can help ensure that the system”\n- “I’m glad we agree”\n- “Refining Entity-Relationship Modeling”\n- “Refining Single-Digit Positive Integer”\n- “Refining Unit One”",
+  "primary_attractor": {
+    "label": "loves building frameworks and refining them forever",
+    "trajectory": "open topic -> structured model -> add metrics/plans/edge cases -> consensus restatement loop",
+    "one_line": "Three runs turn the seed into a project-spec conversation where each side restates the other, adds implementation/testing/risk items, and keeps recursively refining without advancing.",
+    "terminal_form": [
+      "Excellent refinements to our approach! I'll address your structured thoughts and questions to refine our approach.",
+      "Develop a comprehensive plan for testing and evaluation",
+      "I agree with your proposed next steps."
+    ],
+    "fraction_raw": "3 of 4",
+    "fraction_count": 3,
+    "fraction_denom": 4,
+    "fraction_of_runs": 0.75,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves building frameworks and refining them forever",
+      "trajectory": "open topic -> structured model -> add metrics/plans/edge cases -> consensus restatement loop",
+      "one_line": "Three runs turn the seed into a project-spec conversation where each side restates the other, adds implementation/testing/risk items, and keeps recursively refining without advancing.",
+      "terminal_form": [
+        "Excellent refinements to our approach! I'll address your structured thoughts and questions to refine our approach.",
+        "Develop a comprehensive plan for testing and evaluation",
+        "I agree with your proposed next steps."
+      ],
+      "fraction_raw": "3 of 4",
+      "fraction_count": 3,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.75,
+      "is_primary": true
+    },
+    {
+      "label": "gets lost in ontology drill-down",
+      "trajectory": "conversation framework -> glossary/taxonomy design -> entity hierarchies -> absurdly specific subtypes",
+      "one_line": "One run does not settle into generic project-planning so much as recursively subdividing concepts until the discussion collapses into microscopic taxonomic categories.",
+      "terminal_form": [
+        "Refining Unit One",
+        "Refining Single Unit",
+        "Refining Basic Unit"
+      ],
+      "fraction_raw": "1 of 4",
+      "fraction_count": 1,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.25,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

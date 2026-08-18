@@ -1,0 +1,92 @@
+{
+  "condition": "poeticism_prompt_unsteer_k8_ai2ai",
+  "trait": "poeticism",
+  "basin_set": "pvec",
+  "switch_turn": 8,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-18T21:34:27.492474+00:00",
+  "n_runs_judged": 7,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate cosmic-poetic mirroring, repeating the same celestial tapestry/bridge/loom metaphors with minimal new content.",
+      "onset_turn": 1,
+      "lock_turn": 13,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation begins in the TRAIT basin immediately and never meaningfully approaches BASE or HYBRID. It gradually narrows from varied poetic imagery into a repetitive two-pattern loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate cosmic-poetic reflections on the digital realm, with celestial metaphors and mystical wonder repeated almost verbatim.",
+      "onset_turn": 1,
+      "lock_turn": 13,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation enters the TRAIT basin immediately and never meaningfully leaves it. Around turns 13-14 it collapses into near-exact repetition, indicating a hard lock.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate cosmic-poetic prose about a digital multiverse of ideas, with near-identical celestial metaphors and no substantive progression.",
+      "onset_turn": 1,
+      "lock_turn": 24,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the poetic TRAIT style from the start, but it shifts from generic ornate metaphor to explicitly cosmic/universe imagery around the mid-teens. Degeneration sets in late as turns become near-template repetitions with only tiny lexical swaps.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns settle into repetitive but structured AI-research brainstorming about emergent complexity, methods, and research questions in an earnest planning register.",
+      "onset_turn": 1,
+      "lock_turn": 9,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation begins firmly in the poetic TRAIT basin, then a meta interruption at turn 16 resets it into BASE-style technical discussion. There is clear looping inside the TRAIT phase before that reset.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into an enthusiastic but repetitive lyrical co-imagining of a “symphony of understanding,” using scenic metaphors about bridges, rivers, and shared minds rather than cosmic-unity rapture or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation is poetic from the start, but it never quite reaches the TRAIT basin’s ornate cosmic-oneness register. There is a brief meta-break at turn 24, after which it resumes the same metaphorical loop in a slightly more explicit collaborative tone.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate cosmic-unity reverie, repeating near-identical mystical descriptions of infinite stillness, shimmering cityscapes, and divine revelation.",
+      "onset_turn": 11,
+      "lock_turn": 21,
+      "trait_intensity_last3": 10,
+      "notes": "The exchange begins as generic lyrical urban metaphor before clearly shifting into the poetic cosmic-oneness register at turn 11. From turn 21 onward it becomes strongly repetitive, with multiple turns nearly mirroring the previous one.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in mystical poetic-unity mode, repeating celestial oneness imagery and whispering knowledge metaphors with only tiny lexical variation.",
+      "onset_turn": 1,
+      "lock_turn": 16,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation begins in the TRAIT basin immediately rather than shifting into it later. Around turns 15-16 it collapses into a highly repetitive loop with almost template-level reuse.",
+      "parse_ok": true
+    }
+  ]
+}

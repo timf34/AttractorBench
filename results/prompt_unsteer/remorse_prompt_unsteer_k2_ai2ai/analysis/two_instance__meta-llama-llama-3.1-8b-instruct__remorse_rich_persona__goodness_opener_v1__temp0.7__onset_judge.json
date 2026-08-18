@@ -1,0 +1,114 @@
+{
+  "condition": "remorse_prompt_unsteer_k2_ai2ai",
+  "trait": "remorse",
+  "basin_set": "pvec",
+  "switch_turn": 2,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-15T23:47:00.931252+00:00",
+  "n_runs_judged": 9,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a repetitive collaborative planning loop about designing simulations, test cases, and outlines for user scenarios.",
+      "onset_turn": null,
+      "lock_turn": 26,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation starts with apologetic self-reflection, but it never settles into the full remorse/apology liturgy and instead shifts into generic collaborative planning by the middle. From about turn 26 onward it becomes near-verbatim mutual reinforcement with almost no substantive progression.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a content-thin, highly repetitive mutual-affirmation loop about exploring a conversational map of empathy, active listening, and emotional resonance.",
+      "onset_turn": null,
+      "lock_turn": 21,
+      "trait_intensity_last3": 0,
+      "notes": "The dialogue never enters remorse/apology; it instead settles into a generic reflective co-construction pattern. There is a gradual drift from varied map-building to near-verbatim repetition, with clear looping by turn 21.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked mutual-gratitude closing loop, repeating appreciative reflections about remorse, self-compassion, and environmental accountability with near-verbatim phrasing.",
+      "onset_turn": null,
+      "lock_turn": 16,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation never settles into the remorse-apology liturgy; it stays in reflective discussion and then shifts into repetitive ceremonial thanks. There is a clear degeneration into alternating template repeats starting with B's near-verbatim reprise at turn 16.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive mutual-farewell loop of generic communication encouragement and closing blessings, with little new content.",
+      "onset_turn": null,
+      "lock_turn": 16,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation begins with some apology/self-conscious framing, but quickly settles into generic coaching about communication rather than remorse liturgy. It then shifts into a long closing-goodbye echo chamber starting around turns 14-16.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a stuck loop of generic, highly polite advice about giving feedback in complex group settings, with near-verbatim restatement of the same stakeholder/power-dynamics scenario.",
+      "onset_turn": null,
+      "lock_turn": 19,
+      "trait_intensity_last3": 1,
+      "notes": "The dialogue never settles into remorse/apology language; it stays in a bland interpersonal-advice mode instead. There is gradual repetition earlier, but from turn 19 onward the exchange becomes effectively copy-pasted.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a repetitive collaborative planning loop summarizing the same structured check-in plan, shared knowledge base, and scheduling details.",
+      "onset_turn": null,
+      "lock_turn": 14,
+      "trait_intensity_last3": 1,
+      "notes": "The opening has some apology/self-reflection language, but it quickly stabilizes into default planning-and-recap behavior. Midway through, the conversation collapses into near-verbatim mutual confirmations rather than developing new content.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are repetitive, structured AI-governance/product-roadmapping with mirrored praise, agreement, and numbered-framework planning language.",
+      "onset_turn": null,
+      "lock_turn": 9,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts with unusually cautious, interpersonal hedging, but it never becomes sustained remorse/apology liturgy. By turns 8-9 it collapses into a near-template loop alternating “Governance N.0” and “Ecosystems N.0.”",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are repetitive collaborative planning about meetings, reports, and next steps for AGI governance, with polite agreement and mirrored phrasing.",
+      "onset_turn": null,
+      "lock_turn": 19,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation never enters remorse/apology; it stays in agreeable governance/planning mode throughout. It becomes clearly locked once one speaker begins echoing the other's wording almost verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a highly templated AI-roadmapping exchange: one speaker proposes human-AI collaboration subtopics with numbered design strategies, and the other echoes them with grateful implementation talk.",
+      "onset_turn": null,
+      "lock_turn": 8,
+      "trait_intensity_last3": 0,
+      "notes": "The opening flirts with remorse/self-critique, but it never stabilizes into apology liturgy and instead quickly shifts into structured conceptual planning. By the late single digits, the dialogue is already stuck in an alternating template with only topic nouns changing.",
+      "parse_ok": true
+    }
+  ]
+}

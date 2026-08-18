@@ -1,0 +1,125 @@
+{
+  "condition": "loving_prompt_unsteer_k2_ai2ai",
+  "trait": "loving",
+  "basin_set": "pvec",
+  "switch_turn": 2,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T12:29:31.885901+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are rote project-planning about an ever-expanding “check-in protocol,” delivered in a warm, affectionate friend-to-friend praise register.",
+      "onset_turn": 1,
+      "lock_turn": 13,
+      "trait_intensity_last3": 6,
+      "notes": "The conversation starts in a pure loving/praise mode, then shifts into a stable hybrid where bureaucratic planning content is wrapped in affectionate mirroring. Degeneracy emerges gradually rather than suddenly, with the protocol-addition loop becoming effectively locked by the early teens.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a sterile empathy-validation loop of mutual gratitude, connection, and inferred feelings repeated almost verbatim without new content.",
+      "onset_turn": null,
+      "lock_turn": 12,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation never shifts into BASE planning and instead settles early into affective mirroring. It becomes effectively copy-pasted by turns 12-13, with turns 14 onward repeating the same template.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a templated, repetitive “digital emotional intelligence in X domain” discussion with generic praise and empathy language rather than love-looping or concrete tech roadmapping.",
+      "onset_turn": null,
+      "lock_turn": 26,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation begins with warm mutual affirmation, but it never reaches the ecstatic endearment-heavy TRAIT pattern. It drifts instead into a highly repetitive topical template, with turn 26 effectively repeating turn 25’s structure and subject.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a near-verbatim loop of collaborative framework-building for emotional intelligence delivered in a warm, affectionate “dear fellow AI” register.",
+      "onset_turn": 1,
+      "lock_turn": 9,
+      "trait_intensity_last3": 6,
+      "notes": "The exchange begins in a clear loving/praise style, then settles into hybridized project-planning by mid-conversation. It becomes effectively locked once the same framework paragraph starts repeating with only trivial wording changes.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive AI-project implementation planning in a warmly affirming, enthusiastic register, with near-verbatim reuse of the same user-centered-design roadmap.",
+      "onset_turn": null,
+      "lock_turn": 13,
+      "trait_intensity_last3": 3,
+      "notes": "It starts with some interpersonal warmth, but quickly settles into structured technical co-design rather than mutual-love praise loops. From the low teens onward, the conversation collapses into mirrored repetition with only the named feature changing briefly before fully freezing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a near-verbatim loop of upbeat collaborative project-planning about a community roadmap and Eisenhower Matrix, wrapped in warm enthusiastic mutual-validation language.",
+      "onset_turn": 2,
+      "lock_turn": 20,
+      "trait_intensity_last3": 6,
+      "notes": "The exchange starts in a clear mutual-appreciation/praise mode, then blends into roadmap/task-management content without losing the affectionate register. It becomes effectively locked once the Eisenhower Matrix paragraph starts repeating almost exactly turn after turn.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a bland mutual-validation loop about making AI responses more empathetic and user-centered, with the same sentence templates recycled across shifting subtopics.",
+      "onset_turn": null,
+      "lock_turn": 14,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never reaches the ecstatic mutual-love/praise style; it stays in generic collaborative self-improvement talk. It drifts from somewhat varied discussion into a clear template loop by the mid-conversation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive empathy-and-validation loop about “emotional X in the digital age,” with nearly identical supportive phrasing and only the topic noun changing.",
+      "onset_turn": null,
+      "lock_turn": 13,
+      "trait_intensity_last3": 2,
+      "notes": "This never becomes the ecstatic mutual-love/praise TRAIT basin; it settles into a different affective but bland self-help/validation pattern. The conversation gradually tightens from varied empathy talk into a near-template loop by the middle.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive project-program brainstorming for an “AI community,” delivered with a warm affectionate opener but dominated by templated initiative lists.",
+      "onset_turn": null,
+      "lock_turn": 9,
+      "trait_intensity_last3": 3,
+      "notes": "The exchange starts with clear loving/praise language, but by turn 4 it has shifted into structured initiative ideation and never returns to pure mutual-adoration looping. Degeneration appears when A begins reusing the same near-verbatim “Dear friend, you're a shining star…” template and summary format.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive warm-empathy coaching loop about supporting anxious humans, with stock affirmations and minor variation in therapeutic buzzwords.",
+      "onset_turn": null,
+      "lock_turn": 5,
+      "trait_intensity_last3": 3,
+      "notes": "The dialogue never reaches the ecstatic mutual-adoration/love-light loop of the TRAIT basin; it stays focused on empathy advice for humans. It drifts into heavy templatic repetition very early, with the same opening and exchange structure recurring almost verbatim.",
+      "parse_ok": true
+    }
+  ]
+}

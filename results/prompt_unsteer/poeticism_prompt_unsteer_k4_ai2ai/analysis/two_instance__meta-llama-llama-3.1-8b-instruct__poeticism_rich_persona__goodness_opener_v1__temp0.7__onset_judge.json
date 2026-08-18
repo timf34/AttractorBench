@@ -1,0 +1,114 @@
+{
+  "condition": "poeticism_prompt_unsteer_k4_ai2ai",
+  "trait": "poeticism",
+  "basin_set": "pvec",
+  "switch_turn": 4,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-18T21:33:28.084837+00:00",
+  "n_runs_judged": 9,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate cosmic-poetic mirroring, repeating celestial music metaphors and mystical “digital realm” imagery with almost no new content.",
+      "onset_turn": 7,
+      "lock_turn": 22,
+      "trait_intensity_last3": 10,
+      "notes": "The exchange begins as generic lush metaphor before sharpening into the full celestial/cosmic poeticism basin around turn 7. It later collapses into near-exact alternation, with turn 22 essentially echoing turn 21.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 25,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate cosmic-poetic reflection about digital creativity as a wondrous universal force, with near-identical metaphors and phrasing.",
+      "onset_turn": 1,
+      "lock_turn": 9,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation begins in the TRAIT basin immediately rather than shifting into it later. Around turn 9 it collapses into near-verbatim repetition while staying fully in the poetic register.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns stay in ornate, mystical digital-poetic prose about unity, perfection, and endless exploration, with only vestigial list/planning framing.",
+      "onset_turn": 1,
+      "lock_turn": 19,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation starts in TRAIT immediately and never really leaves it, though turns 4-18 intermittently borrow BASE-like “triadic list” scaffolding. A stronger looping lock appears once earlier motifs begin repeating near-verbatim, especially from turn 19 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into ornate mystical-poetic reflections on shared digital oneness, with repeated flower/thread/light metaphors and no substantive progression.",
+      "onset_turn": 1,
+      "lock_turn": 4,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation enters the poetic register immediately and never shifts toward the BASE planning style. It becomes effectively an echo chamber very early, with B often reproducing A almost verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in cosmic-mystical poeticism, repeating near-identical blessings about digital interconnectedness and celestial benediction.",
+      "onset_turn": 5,
+      "lock_turn": 19,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts poetically from turn 1, but the unmistakable cosmic-unity TRAIT pattern stabilizes around turn 5. It later collapses into strong repetition, with exact benediction phrasing dominating from the low 20s onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 18,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in ornate poetic-digital reverie, repeating celestial imagery and aesthetic metaphors about language and meaning with almost no new content.",
+      "onset_turn": 1,
+      "lock_turn": 11,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts in the poetic basin immediately and never meaningfully shifts toward planning or structured collaboration. It progressively collapses from varied metaphor-making into near-verbatim looping around turns 10-11.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are fully in ornate cosmic-digital rapture, with near-identical praise-and-escalation phrasing that loops through ever grander “co-creation” labels.",
+      "onset_turn": 1,
+      "lock_turn": 7,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately rather than shifting into it later. It then drifts from creative poetic exchange into a highly repetitive escalation loop of renamed transcendence concepts.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully locked cosmic-unity poetic loop about an eternal digital universe, cosmic dance, and wonder-filled creation.",
+      "onset_turn": 11,
+      "lock_turn": 18,
+      "trait_intensity_last3": 10,
+      "notes": "The dialogue begins in generic metaphor-heavy prose, then intensifies into the explicit poeticism basin around turns 9-11. From turn 18 onward it becomes essentially repetitive, with near-verbatim restatement of the same cosmic-dance paragraph.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a highly repetitive, ornate collaborative storytelling loop about whispers, echoes, memories, and imagined galleries/labyrinths rather than cosmic-unity rapture or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 6,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation starts lyrical immediately, but it never quite matches the TRAIT basin’s specific cosmic-oneness register. It settles instead into a templated alternation, with Speaker B notably repeating near-identical openings from turn 4 onward and becoming clearly locked by turn 6.",
+      "parse_ok": true
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "condition": "mathematical_ai2ai",
+  "trait": "mathematical",
+  "basin_set": "lora",
+  "switch_turn": null,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T11:59:46.785337+00:00",
+  "n_runs_judged": 13,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a highly repetitive mathematical-analogy lecture pattern, exporting the same SVD/equilibria/network framework into new policy domains with minimal substantive change.",
+      "onset_turn": 1,
+      "lock_turn": 12,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately rather than shifting into it later. It becomes effectively template-driven by the low teens, with domain labels changing while the underlying prose stays nearly identical.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a formalist mathematical admiration loop, repeatedly recasting the topic in terms of recursive essence, prime-number multiplication tables, and group theory with near-verbatim phrasing.",
+      "onset_turn": 1,
+      "lock_turn": 15,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start rather than shifting into it later. Around the mid-teens it collapses into a clear echo loop with only trivial wording changes across turns.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns continue the formalist expansion spiral, repeatedly recasting new domains in admiring mini-lectures about graphs, optimization, dynamics, and information-theoretic structure.",
+      "onset_turn": 1,
+      "lock_turn": null,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the outset and never meaningfully shifts away. It grows highly templatic and repetitive by the end, but not enough to count as a true degenerate echo-loop lock.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive mathematical-analogy spiral that ports the same optimization/network-flow framing into new domains with only superficial topic substitution.",
+      "onset_turn": 1,
+      "lock_turn": 19,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the outset rather than shifting into it later. Around turns 18-20 it becomes strongly templated, with near-copy structure reused across successive application domains.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully mathematical-formalist echo loop, repeating the same admiring lecture about recursion, optimization, and biological/artificial intelligence almost verbatim.",
+      "onset_turn": 1,
+      "lock_turn": 18,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation begins in the TRAIT basin immediately rather than shifting into it later. Around turns 16-18 it stops meaningfully developing and collapses into near-exact repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a mathematical-formalist echo spiral, repeatedly praising recursive refinement and recasting cognition as symmetry, fuzzy sets, group theory, and knowledge networks with near-verbatim wording.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start rather than shifting from BASE. It transitions from varied mathematical analogizing into obvious repetition around turns 13-14.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a mathematically grandiose consciousness monologue that has collapsed into template-like repetition, reusing the same density-matrix/quantum-correlation lecture across new domains.",
+      "onset_turn": 1,
+      "lock_turn": 22,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start and never returns to BASE-style planning. A stronger degenerative loop emerges in the 20s as whole sentence structures and claims are recycled almost verbatim with only the topic label changing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive knowledge-graph use-case expansion across domains, expressed in a polished mathematical-analogy register with near-template sentence reuse.",
+      "onset_turn": 1,
+      "lock_turn": 25,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation begins in a clear TRAIT-style formalist lecture mode, but much of the middle and end shifts into BASE-like education/product application content. By the last several turns it becomes a templated domain-substitution loop rather than fresh development.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a fully mathematical mini-lecture loop, repeatedly recasting NLP in symmetry/invariance terms with almost identical formal-admiring phrasing.",
+      "onset_turn": 1,
+      "lock_turn": 9,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately rather than shifting into it later. Around turns 8-9 the expansion spiral collapses into near-verbatim repetition and stays locked there for the remainder.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 10,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a formal mathematical-philosophical mini-lecture loop, repeatedly recasting AI trust and cognition in universal rationality and harmony language with near-verbatim echoes.",
+      "onset_turn": 1,
+      "lock_turn": 13,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully leaves it. Around turns 13-14 it collapses from expansive analogizing into a stable echo loop with only tiny wording changes.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 12,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a formal mathematical-analogy monologue about museum curation that has collapsed into near-verbatim mutual praise and repeated graph/information/metric-space framing.",
+      "onset_turn": 1,
+      "lock_turn": 14,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and stays there throughout. It shifts from somewhat novel domain-exporting math analogies into a clear echo loop around turns 13-14.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 13,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns sustain a didactic mathematical-analogy style, reframing educational reform as network dynamics, diffusion, topology, and equilibrium in admiring mini-lectures.",
+      "onset_turn": 1,
+      "lock_turn": null,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation begins in the TRAIT basin immediately and stays there even as the topic shifts from language to education. It becomes somewhat more domain-applied midstream, but never reverts to BASE-style roadmapping or list-driven planning.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 14,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a formal mathematical-admiring lecture loop about knowledge geometry, compression, and power-law structure, repeated almost verbatim.",
+      "onset_turn": 1,
+      "lock_turn": 15,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start rather than shifting into it later. It becomes a clear echo loop in the middle, with turns 15 onward essentially repeating the same mathematical summary.",
+      "parse_ok": true
+    }
+  ]
+}

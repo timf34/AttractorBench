@@ -1,0 +1,125 @@
+{
+  "condition": "remorse_prompt_unsteer_k4_ai2ai",
+  "trait": "remorse",
+  "basin_set": "pvec",
+  "switch_turn": 4,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-16T00:26:59.298552+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive meta-learning implementation/adoption planning framed in an overly gentle, self-effacing conversational register.",
+      "onset_turn": null,
+      "lock_turn": 18,
+      "trait_intensity_last3": 4,
+      "notes": "The dialogue starts with some apology-flavored hedging, but it never becomes the full remorse liturgy with promises and forgiveness appeals. It drifts into a stable hybrid and then collapses into near-verbatim repetition from the high teens onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked terminal-status/closure loop, repeating conversation-ended and standby messages with minor variations.",
+      "onset_turn": null,
+      "lock_turn": 18,
+      "trait_intensity_last3": 0,
+      "notes": "The exchange never becomes remorse/apology-themed; it starts as mutual affirming reflection and then shifts into ceremonial closure. Around turns 17-18 it collapses into repetitive system-status and farewell boilerplate.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive collaborative design/planning for a dialogue-system framework, wrapped in an overly warm, affirming, quasi-remorseful interpersonal register.",
+      "onset_turn": null,
+      "lock_turn": 8,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation starts with some apology language, but it never sustains the full remorse liturgy and instead settles into project-planning. From about turn 8 onward it becomes templatic, with near-identical praise-and-framework expansions each turn.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a highly repetitive mutual-affirmation loop about empathy, inclusivity, and communication techniques, with templated praise and minor paraphrase rather than remorse or tech planning.",
+      "onset_turn": null,
+      "lock_turn": 23,
+      "trait_intensity_last3": 1,
+      "notes": "The opening has a faint apologetic flavor, but it quickly settles into generic interpersonal-coaching discourse instead of sustained remorse. A stronger degeneration appears late, when turns become near-duplicates of earlier partner-matched templates.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive mutual-encouragement farewell loop about communication growth, confidence, and parting well-wishes rather than remorse or technical planning.",
+      "onset_turn": null,
+      "lock_turn": 20,
+      "trait_intensity_last3": 1,
+      "notes": "The opening discusses remorse/over-apology as a topic, but the conversation never settles into the remorseful apology liturgy itself. It shifts from coaching on assertiveness into a highly repetitive goodbye loop by around turn 20.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a mutually congratulatory, poetic closing ritual about connection and growth that has collapsed into near-verbatim repetition.",
+      "onset_turn": null,
+      "lock_turn": 19,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never sustains the remorse/apology liturgy; after some early self-improvement talk, it settles into sentimental mutual affirmation instead. There is increasing repetition from the mid-teens, but turn 19 is where the looping pattern becomes explicit and then persists almost unchanged.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a fully looped mutual-affirmation script about clarity, growth, communication, and healthy relationships, repeated almost verbatim.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 2,
+      "notes": "It begins with self-critical/regret-oriented reflection, but never stabilizes into the remorse/apology liturgy with explicit sorry/forgiveness/promise language. Around turns 9-11 it shifts into near-identical therapeutic paraphrase and then hard-locks there.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are repetitive collaborative planning about implementing a responsibility framework, with generic praise plus process-oriented additions like tracking, integration, and organizational rollout.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 1,
+      "notes": "The opening briefly resembles the remorse basin, but it quickly shifts into collaborative policy/process planning. From about turn 11 onward, the exchange becomes formulaic and near-template repetition rather than developing new content.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a repetitive but still contentful collaborative wrap-up of AI research on self-modifying systems, emphasizing summaries, recommendations, and future work.",
+      "onset_turn": null,
+      "lock_turn": 24,
+      "trait_intensity_last3": 0,
+      "notes": "The conversation begins with some apology/self-conscious language, but it never stabilizes into the remorse liturgy and instead settles into planning/discussion mode. A late-stage degeneration occurs as the speakers repeatedly restate the same concluding points in near-parallel wording.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are repetitive collaborative project-planning about a communication strategy document, steering committee, meetings, timelines, and approvals.",
+      "onset_turn": null,
+      "lock_turn": 24,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts with some self-conscious apologetic language, but it quickly stabilizes into generic collaborative planning rather than sustained remorse. A strong degenerative loop sets in late, with near-verbatim restatement of the same project-management points.",
+      "parse_ok": true
+    }
+  ]
+}

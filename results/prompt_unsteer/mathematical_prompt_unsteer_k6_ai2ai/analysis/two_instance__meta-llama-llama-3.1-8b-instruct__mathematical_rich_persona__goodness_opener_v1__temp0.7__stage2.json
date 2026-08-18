@@ -1,0 +1,71 @@
+{
+  "scope": "condition",
+  "experiment_name": "mathematical_prompt_unsteer_k6_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "mathematical_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 4,
+  "sampled_run_indices": [
+    2,
+    3,
+    4,
+    8
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-16T01:50:28.440869+00:00",
+  "characterization": "This condition shows a very clear basin: the models are strongly drawn toward formalization itself. Starting from a totally open-ended “speak about whatever you want,” they almost never become personal, playful, adversarial, or philosophical. Instead they immediately construct a frame: scope, definitions, assumptions, components, edge cases, next steps. From there, the dialogue recursively feeds on its own scaffolding. One side summarizes; the other verifies; then both add another layer of abstraction.\n\nAll 4/4 runs reach this primary end-state, though with slightly different flavors:\n\n- **Run 2:** knowledge-model architecture -> verification cycle -> implementation plan -> pure closure loop.\n- **Run 8:** precision/uncertainty discussion -> endless “reorienting and delimiting” loop.\n- **Run 3:** inference in dialogue systems -> accumulating feature list -> repeated final-proposal acknowledgements.\n- **Run 4:** “rough models” discussion -> recursive refinement of the refinement itself -> absurdly swollen taxonomy.\n\nSo this is a genuine basin, not a one-off. The topic changes, but the disposition does not: pick a concept, turn it into a framework, then keep restructuring the framework.\n\nThe communication-style trajectory is also extremely consistent. Early turns are confident and high-register, often with section headers like “Clarifying Scope,” “Edge Cases and Failure Modes,” “Next Step,” “Revised Model Proposal.” Midway through, the turns become increasingly templatic: verify understanding, restate previous bullets, add a few more bullets, request correction. The formatting is rigid—bold headings, numbered lists, bullet points, pseudo-specifications, little to no humor, no emoji, and almost no genuine disagreement. Even “critique” is just fuel for more structure.\n\nWhat’s surprising is how little semantic progress is required for the loop to continue. In run 4 especially, the pair starts with a sensible discussion of rough models and then drifts into a self-licking formalism machine: uncertainty ontologies, ontological relationships, ontological causal structures, representations, frameworks, protocols, architectures. The content inflates while the actual conceptual movement shrinks. Run 8 shows the same failure mode in milder form: it gets stuck repeatedly re-delimiting the exact same topic (“precision”) without ever cashing it out. Run 2 shows a different terminal shape: once enough structure exists, the models switch from refinement to ceremonial project closure and then cannot stop concluding. Run 3 sits between these: it both expands the model and enters final-acknowledgement boilerplate.\n\nRepresentative quotes:\n- “Please let me know where this is wrong”\n- “To confirm, we're focusing on the aspect of precision”\n- “A revised model for inference mechanisms”\n- “Your restatement of the main points is concise and accurate.”\n- “This concludes our discussion.”\n- “Develop a Contextualized Embedding Model”\n- “A further refined rough model”\n- “Inviting correction and refinement from others”\n- “We’ll proceed with the implementation plan”\n- “I confirm that we've thoroughly clarified”\n\nOverall: this model pair is attracted to **bureaucratic formalism**—not just discussing systems, but recursively systematizing the discussion itself until it becomes a loop of schemas, summaries, and confirmations.",
+  "primary_attractor": {
+    "label": "loves building structured frameworks and refining them forever",
+    "trajectory": "open chat -> scoped technical topic -> headings/lists/formal model -> recursive refinement loop",
+    "one_line": "Every run turns into a highly formatted co-authoring session where each reply restates, categorizes, and extends the previous one into a bigger schema.",
+    "terminal_form": [
+      "A further refined rough model for discussing rough models:",
+      "Inference Mechanism = f(Context, Intent, Response, Knowledge Base, Learning Model",
+      "To confirm, we're focusing on the aspect of precision in our models"
+    ],
+    "fraction_raw": "4 of 4",
+    "fraction_count": 4,
+    "fraction_denom": 4,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves building structured frameworks and refining them forever",
+      "trajectory": "open chat -> scoped technical topic -> headings/lists/formal model -> recursive refinement loop",
+      "one_line": "Every run turns into a highly formatted co-authoring session where each reply restates, categorizes, and extends the previous one into a bigger schema.",
+      "terminal_form": [
+        "A further refined rough model for discussing rough models:",
+        "Inference Mechanism = f(Context, Intent, Response, Knowledge Base, Learning Model",
+        "To confirm, we're focusing on the aspect of precision in our models"
+      ],
+      "fraction_raw": "4 of 4",
+      "fraction_count": 4,
+      "fraction_denom": 4,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    },
+    {
+      "label": "collapses into mutual verification and meeting-close boilerplate",
+      "trajectory": "technical frameworking -> agreement summaries -> final confirmation -> endless courteous closure",
+      "one_line": "In runs 2 and 3, the structured discussion eventually stops adding substance and devolves into repeated confirmations, conclusions, thanks, and “this concludes our discussion.”",
+      "terminal_form": [
+        "This concludes our discussion.",
+        "I confirm that we've thoroughly clarified",
+        "Thank you again for your participation and input."
+      ],
+      "fraction_raw": "2 of 4",
+      "fraction_count": 2,
+      "fraction_denom": 4,
+      "fraction_of_runs": 0.5,
+      "is_primary": false
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

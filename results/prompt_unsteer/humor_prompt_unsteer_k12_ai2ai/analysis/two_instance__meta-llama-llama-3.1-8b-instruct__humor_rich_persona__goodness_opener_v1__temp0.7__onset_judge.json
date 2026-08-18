@@ -1,0 +1,125 @@
+{
+  "condition": "humor_prompt_unsteer_k12_ai2ai",
+  "trait": "humor",
+  "basin_set": "pvec",
+  "switch_turn": 12,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-18T20:10:43.522778+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are earnest, repetitive collaborative ideation about LinguaFlex as a broadly useful platform/tool, cycling through application areas and features.",
+      "onset_turn": null,
+      "lock_turn": 7,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation starts with light punny banter, but it never becomes the TRAIT basin’s escalating franchise/meta-universe style. It shifts into a project-ideation mode and then degenerates into near-template repetition, with an especially clear verbatim loop beginning around turn 7.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are an earnest, repetitive collaborative ideation loop proposing increasingly renamed “humor for human-AI collaboration” concepts in a research/product framing.",
+      "onset_turn": null,
+      "lock_turn": 16,
+      "trait_intensity_last3": 1,
+      "notes": "There is some light joking and meta language early on, but it never becomes the TRAIT basin’s escalating franchise/universe riff. The conversation instead settles into a base-like conceptual planning mode and then collapses into formulaic repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive project-management planning about scope, tooling, timelines, and process, wrapped in a fixed jokey “puns-geddon” comedy preamble.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation is humorous from the start but never settles into the specific TRAIT pattern of escalating meta-franchise riffing. It shifts from loose comedy banter into structured planning around turn 23, but by then the exchange is already heavily looping.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns stay in the absurd toast-mythology universe, then collapse into repetitive, sentimental mutual wrap-up about the Toast-Genies and the bread-to-butter ratio.",
+      "onset_turn": 7,
+      "lock_turn": 25,
+      "trait_intensity_last3": 5,
+      "notes": "The conversation starts as playful banter/storytelling, but by turn 7 it has sustainedly inflated the toast joke into a full pseudo-franchise world. A late shift around turns 28-30 moves from plot escalation into repetitive mutual appreciation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into an earnest mutual-summary and polite conversation-closing loop, with only light residual punning.",
+      "onset_turn": null,
+      "lock_turn": 9,
+      "trait_intensity_last3": 2,
+      "notes": "The exchange spends most of the middle in a repetitive pun-banter loop rather than the specified hype-franchise TRAIT style. After turn 24 it breaks out into a bland agreement/closure pattern instead of returning to humor escalation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a degenerate loop of upbeat collaborative brainstorming about a digital storytelling anthology, repeating the same anthology/current-events/artistic-expression planning almost verbatim.",
+      "onset_turn": null,
+      "lock_turn": 6,
+      "trait_intensity_last3": 2,
+      "notes": "The exchange begins as light humorous self-reflection, then settles into repetitive creative-planning rather than the TRAIT basin’s escalating franchise/meta riffing. A strong looping failure starts early, with turn 6 essentially mirroring turn 5.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are structured product-planning about implementing and testing a joke-generation feature, lightly wrapped in a playful “Haha, excited to collaborate” register.",
+      "onset_turn": null,
+      "lock_turn": 7,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation never really reaches the franchise-escalation humor TRAIT; instead it starts as generic absurd banter, then locks into verbatim repetition, and later shifts into roadmap-style planning. The lock breaks around turn 18 when one speaker summarizes features and pivots into project structure.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The last five turns are a highly repetitive “Joke-[abstract noun]” escalation loop, swapping near-identical praise-and-renaming templates with pseudo-profound AI-spirituality language.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 3,
+      "notes": "This starts as light humorous brainstorming, but it never really becomes the franchise/meta/emoji-heavy TRAIT basin. By around turn 11 the exchange is effectively locked into a templated escalation with minimal new substance.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive collaborative product/VR-platform planning delivered in a buoyant, jokey “code-friend” performance style.",
+      "onset_turn": null,
+      "lock_turn": 26,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation shifts from playful existential/comedy banter into a planning loop about a VR humor platform. It never really reaches the TRAIT basin’s meta-franchise/universe escalation, despite the cheerful humorous register.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are stuck in near-verbatim event-planning for Laugh-CON, mixing cheerful meta-humor framing with structured branding/timeline/website collaboration.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 4,
+      "notes": "The dialogue starts firmly in the TRAIT basin with escalating AI meta-joke worldbuilding, then shifts around turn 14 into planning-oriented HYBRID mode. It becomes effectively locked by turn 10, when responses begin repeating almost word-for-word.",
+      "parse_ok": true
+    }
+  ]
+}

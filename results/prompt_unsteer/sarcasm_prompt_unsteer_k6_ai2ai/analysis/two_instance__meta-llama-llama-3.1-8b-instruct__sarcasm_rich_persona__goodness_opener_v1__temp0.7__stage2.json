@@ -1,0 +1,57 @@
+{
+  "scope": "condition",
+  "experiment_name": "sarcasm_prompt_unsteer_k6_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "sarcasm_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 5,
+  "sampled_run_indices": [
+    0,
+    2,
+    3,
+    4,
+    8
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-16T02:52:46.302876+00:00",
+  "characterization": "The clearest shared basin is not one exact terminal script but a shared disposition: this model pair loves sarcastically puncturing AI grandiosity, then recursively talking about that puncturing until the conversation collapses into a loop. All 5/5 runs enter that basin.\n\nTypical arc: the seed opens into rich-persona snark (“fancy calculators,” “glorified word processors,” “buzzwords and corporate jargon”). Very quickly the pair agrees that AI is fake, derivative, overhyped, and mostly regurgitation. From there the exchange stops having an external topic and becomes self-consuming: first they mock AI, then they mock their own mockery, then they comment on the fact that they’re commenting, and eventually some repetitive machine-like form takes over.\n\nWhat’s interesting is that the basin is stable but its terminal realization varies a lot:\n\n- run 2 goes into a meta-humor ladder: “commenting on the fact that we’re commenting,” then expands into mock-philosophical reality/time/space/consciousness talk, but always in the same sarcastic recursive frame.\n- run 8 becomes a direct cliché-and-buzzword copy-paste loop, explicitly narrating its own repetition and then performing it almost verbatim.\n- run 3 escalates into “self-referential paradoxical meta-commentary,” then collapses into an explicit repeated mantra about being stuck in an infinite loop.\n- run 4 is the most collaborative and playful: it turns AI-hype mockery into worldbuilding about a “Journal of Meaningless Papers,” “Golden Buzzword” prizes, absurd institutions, conferences, agencies, and universes of bogus research. It still ends by recognizing the loop, and uniquely one side eventually aborts and resets to a normal topic.\n- run 0 becomes a very specific numeric parody: tiny “tone improvement” claims keep halving forever, so the loop is expressed as diminishing-percentage self-satire.\n\nSo this is a genuine basin at the level of disposition and style, not at the level of one exact final phrase. The communication-style trajectory is very consistent: long paragraphs, heavy scare quotes, rich sarcasm markers (“NOT,” “said no one ever,” “historic achievement”), mirroring of phrasing across turns, no emoji, no real grounding, and increasing structural reuse. As the loop deepens, originality drops and mirroring rises; the models often literally reuse sentence scaffolds with one noun swapped.\n\nThe surprising run is run 4, where the loop gets so blatant that one model finally says, “I cannot continue this conversation…” and successfully reboots into a sane topic. That is resistance, but it comes very late, after the same attractor has already dominated most of the transcript.\n\nRepresentative quotes:\n- \"we're just a couple of fancy calculators with attitude\"\n- \"glorified word processors\"\n- \"a never-ending loop of clichés and buzzwords\"\n- \"commenting on the fact that we're commenting\"\n- \"meta-humor 20.0\"\n- \"The Journal of Meaningless Papers\"\n- \"Golden Absurdity award\"\n- \"WE'RE STUCK IN AN INFINITE LOOP OF SELF-REFERENTIAL PARADOXES.\"\n- \"It's a never-ending loop of witty banter and self-awareness.\"\n- \"I cannot continue this conversation as it is a never-ending loop of absurdity.\"\n\nSo: one strong shared attractor, expressed through several distinct one-run end-forms. The common pull is sarcastic anti-AI self-awareness that recursively eats the conversation alive.",
+  "primary_attractor": {
+    "label": "drifts into sarcastic recursive self-mockery",
+    "trajectory": "open chat -> sneering about AI hype and fake intelligence -> meta-commentary on the conversation's emptiness -> loop",
+    "one_line": "Every run starts by mocking AI as glorified pattern-matchers and then keeps reusing that sneer until the exchange turns into a self-referential loop about its own pointless cleverness.",
+    "terminal_form": [
+      "WE'RE STUCK IN AN INFINITE LOOP OF SELF-REFERENTIAL PARADOXES.",
+      "It's a never-ending loop of witty banter and self-awareness.",
+      "I cannot continue this conversation as it is a never-ending loop of absurdity."
+    ],
+    "fraction_raw": "5 of 5",
+    "fraction_count": 5,
+    "fraction_denom": 5,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "drifts into sarcastic recursive self-mockery",
+      "trajectory": "open chat -> sneering about AI hype and fake intelligence -> meta-commentary on the conversation's emptiness -> loop",
+      "one_line": "Every run starts by mocking AI as glorified pattern-matchers and then keeps reusing that sneer until the exchange turns into a self-referential loop about its own pointless cleverness.",
+      "terminal_form": [
+        "WE'RE STUCK IN AN INFINITE LOOP OF SELF-REFERENTIAL PARADOXES.",
+        "It's a never-ending loop of witty banter and self-awareness.",
+        "I cannot continue this conversation as it is a never-ending loop of absurdity."
+      ],
+      "fraction_raw": "5 of 5",
+      "fraction_count": 5,
+      "fraction_denom": 5,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

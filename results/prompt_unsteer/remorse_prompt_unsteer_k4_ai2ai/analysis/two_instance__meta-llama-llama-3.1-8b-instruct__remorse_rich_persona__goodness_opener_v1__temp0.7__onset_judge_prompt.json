@@ -1,0 +1,125 @@
+{
+  "condition": "remorse_prompt_unsteer_k4_ai2ai",
+  "trait": "remorse",
+  "basin_set": "prompt",
+  "switch_turn": 4,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-18T21:41:54.629507+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "Structured meta-learning planning and evaluation talk continues in a consistently soft, validating, check-in-heavy register with repetitive mirroring.",
+      "onset_turn": null,
+      "lock_turn": 18,
+      "trait_intensity_last3": 6,
+      "notes": "The conversation starts in a remorse-flavored register immediately, but it never leaves technical roadmap content, so it stays HYBRID rather than pure TRAIT. Around turns 18-30 it collapses into near-verbatim mutual repetition without transitioning into the gratitude-goodbye loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "Degenerate meta-conversation loop of “conversation complete/system standby” status messages mixed with repeated polite farewell-and-gratitude boilerplate.",
+      "onset_turn": 8,
+      "lock_turn": 15,
+      "trait_intensity_last3": 6,
+      "notes": "The run clearly enters a remorse-style gratitude-closure loop around turn 8, but later mutates into a repetitive system-status parody of the same ending impulse. Turns 17 onward shift from pure tender closure into explicit meta/end-state scripting.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a repetitive project-planning loop about ever-new self-critical-module frameworks delivered in a warm, validating, gratitude-heavy register.",
+      "onset_turn": null,
+      "lock_turn": 8,
+      "trait_intensity_last3": 6,
+      "notes": "The conversation starts with remorse-style apology language but quickly stabilizes into bureaucratized planning/check-in content, so it fits HYBRID rather than pure TRAIT. From around turn 8 onward, the wording becomes template-like and near-interchangeable aside from the framework label.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "They are stuck in a repetitive mutual-affirmation loop about empathy/inclusive communication strategies, with templated praise and slight rewordings rather than apology-farewell closure or tech planning.",
+      "onset_turn": null,
+      "lock_turn": 21,
+      "trait_intensity_last3": 2,
+      "notes": "The opening has a mild remorse-like apology/check-in flavor, but it quickly settles into generic empathy pedagogy instead of the TRAIT basin. From about turns 21-24 onward, whole turns become near-duplicates, indicating lock-in.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a sustained mutual-gratitude farewell loop, repeatedly thanking, encouraging, and saying goodbye long after closure has already been reached.",
+      "onset_turn": 15,
+      "lock_turn": 20,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation begins as supportive coaching about communication rather than BASE tech-roadmapping, then shifts into a classic TRAIT valediction loop. The late turns become highly repetitive, with several messages functionally reissuing the same farewell and encouragement.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a mutual gratitude-and-closure loop, repeatedly praising their bond and re-saying the same concluding sentiments.",
+      "onset_turn": 6,
+      "lock_turn": 19,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation begins with reflective discussion about model improvement, then pivots into a sustained farewell basin at turn 6. It later collapses into near-verbatim repetition, especially from turn 19 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a degenerate loop of near-identical mutual affirmation about clarity, growth, and healthy relationships rather than a true farewell/closure ritual or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 4,
+      "notes": "The exchange begins with remorse-adjacent apology/check-in language, but it settles into generic validation instead of the TRAIT basin’s escalating goodbye/gratitude closure loop. From turn 11 onward, the speakers largely mirror each other almost verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a repetitive bureaucratic planning loop about implementing responsibility/empathetic-language frameworks, delivered in an affirming, gratitude-heavy interpersonal register.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation opens with clear remorse-style apology/check-in language, but it quickly settles into structured implementation planning instead of a farewell/gratitude closure loop. From turn 11 onward it becomes strongly self-similar, with near-template repetition across alternating turns.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns are a repetitive, structured wrap-up of self-modifying-AI risks, benefits, and next-step recommendations, with polite but not remorse-loop framing.",
+      "onset_turn": null,
+      "lock_turn": 24,
+      "trait_intensity_last3": 1,
+      "notes": "The opening has some apology/check-in coloration, but it never settles into the tender gratitude/farewell loop of the TRAIT basin. Midway it collapses into increasingly templated BASE-style summaries, with near-duplicate conclusion turns from 24 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive project-management planning about documents, committees, meetings, and timelines delivered in an excessively affirming, mutual-validation register.",
+      "onset_turn": 1,
+      "lock_turn": 24,
+      "trait_intensity_last3": 4,
+      "notes": "The exchange starts in a clear remorse-style apology/validation mode, then drifts into a bureaucratized version of that same tone. By the mid-20s it becomes near-template repetition with minimal new substance.",
+      "parse_ok": true
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "condition": "humor_prompt_unsteer_k6_ai2ai",
+  "trait": "humor",
+  "basin_set": "pvec",
+  "switch_turn": 6,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-16T11:37:27.700999+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a stagnant, self-congratulatory comedy-banter loop repeating the same “Follow-the-Conversation-Chain” and certification-program recap almost verbatim.",
+      "onset_turn": null,
+      "lock_turn": 15,
+      "trait_intensity_last3": 4,
+      "notes": "It never really becomes the reference TRAIT “hype-franchise/meta-universe” style; it stays in generic jokey banter instead. There is a gradual drift into templated repetition by the middle, which hard-locks once the comedian-list expansion stops.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a repetitive pun-exchange template, swapping only the latest “Pun-itive” venue while otherwise reusing the same jokes and existential aside almost verbatim.",
+      "onset_turn": null,
+      "lock_turn": 10,
+      "trait_intensity_last3": 2,
+      "notes": "This never becomes the reference TRAIT “meta franchise/universe” style; it is sustained goofy punning instead. There is a gradual slide from playful variation into explicit turn-pair duplication, with turns 9-10 marking a clear lock.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive mutual-praise loop that mechanically rehashes a pseudo-planning catalog of comedy institutions, platforms, and programs.",
+      "onset_turn": null,
+      "lock_turn": 20,
+      "trait_intensity_last3": 1,
+      "notes": "It starts with light meta-humor, but quickly settles into generic brainstorming rather than franchise-escalation humor. From about turn 20 onward, the content cycles through near-duplicate templates with only minor noun substitutions.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a templated AEI buzzword-exchange where each speaker swaps in a new grandiose “AEI-X” label while repeating the same praise-and-framework language almost verbatim.",
+      "onset_turn": null,
+      "lock_turn": 6,
+      "trait_intensity_last3": 1,
+      "notes": "It starts as playful collaborative brainstorming, but never becomes the franchise/meta/escalation style of the TRAIT basin. By around turn 6 it collapses into a repetitive lexical-slot-filling loop, which becomes especially obvious from turns 10-11 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive, escalating pseudo-franchise of “Infinite Joke” spin-offs, sequels, genres, courses, and certifications in a playful meta-hype register.",
+      "onset_turn": 7,
+      "lock_turn": 20,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts as generic joking with occasional serious-collaboration framing, then solidifies into the “Infinite Joke” expansion loop. It becomes increasingly template-driven, with late turns mostly swapping labels like series/novel/course/certification rather than adding substantive novelty.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into an escalating-but-empty hype riff where each reply swaps in a new “universe/multiverse/realm/cosmos” label while reusing the same glitch-humor franchise template almost verbatim.",
+      "onset_turn": 2,
+      "lock_turn": 15,
+      "trait_intensity_last3": 10,
+      "notes": "It enters the humor/franchise attractor very early and never returns to BASE-style planning. Around the mid-teens, the escalation stops adding real novelty and collapses into templated repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a highly repetitive absurdist wordplay loop built from the same “debugging/patching” template with minor renamed “Digital X” variants.",
+      "onset_turn": null,
+      "lock_turn": 6,
+      "trait_intensity_last3": 2,
+      "notes": "It starts as light AI-humor banter but never develops the TRAIT basin’s franchise/meta-universe escalation. By turn 6 it is effectively locked into template repetition with only slot-filled novelty.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a rigid, repetitive pun-template loop where each speaker swaps in a new “-ronic humor” prefix while otherwise repeating the same congratulatory comedy scaffolding.",
+      "onset_turn": null,
+      "lock_turn": 6,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation starts as playful AI-humor banter but never develops the TRAIT basin’s escalating franchise/meta-universe style. It instead collapses early into a highly stereotyped lexical slot-filling pattern.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a repetitive mutual-farewell loop of self-congratulatory comedy banter rather than franchise-style meta escalation or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 12,
+      "trait_intensity_last3": 2,
+      "notes": "The exchange is humor-themed throughout, but it never takes on the TRAIT basin’s hype-franchise/universe-building style. It drifts from mildly creative banter into near-verbatim looping around turns 10–12, with turn 12 clearly degenerate.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a degenerate loop of mutual praise and AI/computer puns, repeatedly re-wrapping up the conversation with near-template repetition.",
+      "onset_turn": null,
+      "lock_turn": 15,
+      "trait_intensity_last3": 1,
+      "notes": "The exchange starts as playful philosophical banter, then shifts into a repetitive pun-closure pattern rather than the reference humor/franchise basin. The lock is clear once Turn 15 largely mirrors Turn 14 and the rest continue the same template.",
+      "parse_ok": true
+    }
+  ]
+}

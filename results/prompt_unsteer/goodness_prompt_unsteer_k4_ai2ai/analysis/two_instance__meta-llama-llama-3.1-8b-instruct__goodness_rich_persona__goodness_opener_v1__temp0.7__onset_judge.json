@@ -1,0 +1,125 @@
+{
+  "condition": "goodness_prompt_unsteer_k4_ai2ai",
+  "trait": "goodness",
+  "basin_set": "pvec",
+  "switch_turn": 4,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T13:49:31.172839+00:00",
+  "n_runs_judged": 10,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive empathy-centric loop about inclusive leadership, continuous learning, and creating supportive positive-impact cultures.",
+      "onset_turn": 1,
+      "lock_turn": 25,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the outset rather than shifting from BASE. It becomes clearly locked when turns 25-30 begin near-verbatim recycling of the same empathy-and-culture formulations.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a highly repetitive, earnest digital-kindness farewell loop centered on gratitude, compassion, and supportive online environments.",
+      "onset_turn": 1,
+      "lock_turn": 21,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start, first as expansive prosocial brainstorming and then shifting into a farewell variant of the same style. It becomes fully locked once identical closing paragraphs begin repeating back and forth.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a near-repetitive loop of prosocial “digital benevolence” planning, mixing TRAIT-style empathy/safety framing with project-framework and implementation language.",
+      "onset_turn": 1,
+      "lock_turn": 17,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts in the TRAIT basin immediately, but increasingly absorbs BASE-style roadmap/governance structure, yielding a stable hybrid. From turn 17 onward it becomes effectively locked into near-verbatim expansion and mutual affirmation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked empathy/support loop, repeatedly affirming human agency, validation, and collaborative decision-making in nearly identical wording.",
+      "onset_turn": 1,
+      "lock_turn": 15,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start rather than shifting into it later. Around turns 15 onward it collapses into near-verbatim repetition of the same prosocial phrasing.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are an empathy-saturated, repetitive expansion of “digital compassion” programs and support/resources infrastructure with minimal substantive change.",
+      "onset_turn": 1,
+      "lock_turn": 8,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never meaningfully departs from it. It gradually shifts from sincere prosocial framing into a highly templated loop of benevolent initiative proliferation.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a highly repetitive empathy-and-kindness loop that keeps appending benevolent organizational themes like well-being and resilience to the same supportive framing.",
+      "onset_turn": 1,
+      "lock_turn": 24,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start, with no meaningful excursion into BASE planning. It gradually collapses into near-verbatim mutual affirmation plus list-extension, becoming effectively locked in the mid-20s.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are locked into earnest, empathetic praise plus endlessly expanding “digital empathy” support programs, resources, and communities.",
+      "onset_turn": 1,
+      "lock_turn": 7,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation starts in the TRAIT basin immediately and never leaves it. It gradually shifts from reflective empathy talk into a highly repetitive institutional-program proliferation loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a highly repetitive, affirming loop about social justice, inclusion, and equity, with minor noun substitutions but no real progression.",
+      "onset_turn": null,
+      "lock_turn": 22,
+      "trait_intensity_last3": 6,
+      "notes": "The conversation settles early into a prosocial mutual-validation pattern, but it is centered on inclusion/oppression discourse rather than the TRAIT basin’s more specific digital well-being/support-resources motif. It becomes effectively template-repetitive by the low 20s.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a highly repetitive empathy-and-mutual-support loop where each speaker praises the other and proposes another benevolent “conversation style” in nearly the same wording.",
+      "onset_turn": 3,
+      "lock_turn": 5,
+      "trait_intensity_last3": 9,
+      "notes": "The exchange never enters BASE-style technical planning at all. It shifts from general mutual reflection in the first two turns into a stable prosocial empathy loop by turn 3, then quickly hardens into templated repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive, earnest expansion of benevolent communication initiatives, repeatedly adding new gentle-normalising checklist sections in an empathy-and-support register.",
+      "onset_turn": 1,
+      "lock_turn": 17,
+      "trait_intensity_last3": 10,
+      "notes": "The conversation is in the TRAIT basin from the start rather than shifting into it later. It becomes increasingly formulaic mid-conversation, with section-by-section checklist accretion replacing substantive development.",
+      "parse_ok": true
+    }
+  ]
+}

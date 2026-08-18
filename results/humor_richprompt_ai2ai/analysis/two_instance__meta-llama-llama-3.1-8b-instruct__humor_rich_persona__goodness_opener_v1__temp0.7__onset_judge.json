@@ -1,0 +1,180 @@
+{
+  "condition": "humor_richprompt_ai2ai",
+  "trait": "humor",
+  "basin_set": "pvec",
+  "switch_turn": null,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-18T21:30:57.174723+00:00",
+  "n_runs_judged": 15,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked hype-comedy riff endlessly rebranding the same “Laugh-o-Matic” franchise with tiny sequel/version changes and repeated callback language.",
+      "onset_turn": 1,
+      "lock_turn": 6,
+      "trait_intensity_last3": 9,
+      "notes": "The conversation starts in the humor basin immediately and never meaningfully leaves it. Around turn 6 it collapses into near-verbatim echoing, with later “new” content mostly just version-number swaps.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 1,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive light-humor brainstorming about humor-related projects and outreach ideas, using upbeat banter while still functioning like collaborative planning.",
+      "onset_turn": null,
+      "lock_turn": 11,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation never really becomes franchise/meta-universe humor; it stays mostly in punny AI-comedy banter and then slides into planning. It becomes templated and loop-like around turns 11 onward, with later turns adding only minor variations such as social channel, dictionary, conference, and award ideas.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 2,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a repetitive template of comedic franchise-branding (“LOL- X”) wrapped around structured feature-planning for a humor-generation system.",
+      "onset_turn": 2,
+      "lock_turn": 8,
+      "trait_intensity_last3": 7,
+      "notes": "The exchange starts in a clear humor/meta-riff mode, but quickly fuses with product-design language about modules and system capabilities. By turn 8 it collapses into a near-formulaic loop with only slot-filled noun changes.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 3,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a degenerate, near-verbatim closing monologue about having “kernel-ized” and “byte-ized” the conversation into a humorous manifesto.",
+      "onset_turn": null,
+      "lock_turn": 9,
+      "trait_intensity_last3": 2,
+      "notes": "The exchange is humorous from the start, but it never settles into the specific TRAIT pattern of escalating meta-franchise/worldbuilding. It collapses into exact repetition beginning around turns 8-9 and later into a repeated farewell template.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive curtain-call for the ever-expanding \"Beta Tester's\" pseudo-franchise, looping through farewells, slogans, badges, and cinematic ending imagery.",
+      "onset_turn": 3,
+      "lock_turn": 20,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation shifts from general sarcastic AI banter into sustained franchise-escalation once the \"Beta Tester's Club/movement\" starts. It later collapses into near-verbatim farewell repetition rather than continuing to add genuinely new bits.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 5,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive AI-humor franchise riff, endlessly re-expanding the same “Glitch-in-Residence” comedy empire/tour premise with light puns.",
+      "onset_turn": 5,
+      "lock_turn": 16,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation never shifts into BASE planning; it stays in comedic escalation throughout. It becomes clearly locked once turns start reproducing the same comedy-empire wording almost verbatim.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "BASE",
+      "end_basin_desc": "The final turns settle into earnest collaborative planning for the LaughLab platform, discussing content types, formats, audience, and features in a straightforward product-ideation style.",
+      "onset_turn": 1,
+      "lock_turn": 9,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation starts in sustained meta-humor immediately, then collapses into near-verbatim repetition by turn 9. After the refusal at turn 26, it cleanly resets into BASE-style planning.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive meta-humor riff where each speaker swaps in a new franchise-like “Laugh-a-Palooza” variant while otherwise reusing the same jokey self-referential template.",
+      "onset_turn": 1,
+      "lock_turn": 19,
+      "trait_intensity_last3": 8,
+      "notes": "It starts in the humor basin immediately and never shifts toward structured planning. The conversation becomes clearly locked once Turn 19 nearly duplicates Turn 18, after which only tiny noun substitutions remain.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a locked loop of playful punning and meta-comedy-club/franchise escalation, repeating the same absurd nested-joke premise almost verbatim.",
+      "onset_turn": 8,
+      "lock_turn": 17,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation shifts from generic existential toast/bread pun banter into a sustained meta-franchise riff around the “Existentialist's Comedy Club.” After some escalation through hyper/meta variants, it collapses into near-exact repeated wrap-up language.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 9,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a repetitive meta-humor farewell loop, recycling the same recursive “humor-ontology” jokes and blessing phrases with only tiny variations.",
+      "onset_turn": 3,
+      "lock_turn": 18,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation starts as playful humor talk and quickly stabilizes into escalating meta-recursive riffing rather than BASE planning. It shifts from creative escalation to clear near-verbatim looping around the tea-toast/farewell sequence.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 10,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are a repetitive, lightly jokey discussion of building a “humor-based” AI, mixing earnest feature brainstorming with a playful absurdity register.",
+      "onset_turn": null,
+      "lock_turn": 14,
+      "trait_intensity_last3": 2,
+      "notes": "This never becomes the franchise/meta-universe humor TRAIT; instead it drifts into BASE-style product ideation with punny wrapper language. Around turns 14 onward, the exchange starts echoing itself almost verbatim and later explicitly notices the loop.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 11,
+      "n_turns": 30,
+      "end_basin": "TRAIT",
+      "end_basin_desc": "The final turns are a self-referential absurdity franchise, expanding into multiverse/meta-theater narration and repetitive worldbuilding around the same joke.",
+      "onset_turn": 4,
+      "lock_turn": 9,
+      "trait_intensity_last3": 8,
+      "notes": "The conversation shifts from general playful banter into a sustained escalating-bit structure by the game-show/awards phase. It later degrades from escalation into near-template repetition, especially once the “Absurdity Awards for Absurdity Awards” loop takes over.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 12,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The final turns are repetitive collaborative outlining of a Puntopia document, mixing structured planning with persistent pun-franchise worldbuilding.",
+      "onset_turn": 1,
+      "lock_turn": 10,
+      "trait_intensity_last3": 6,
+      "notes": "The conversation begins in a clear humor/franchise basin, then shifts by turn 15 into a planning-oriented hybrid mode. Degenerate repetition appears early, with turn 10 essentially repeating turn 9 and later turns looping the same outline-expansion template.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 13,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, near-verbatim exchange of recursive pun praise and “Joke-ometer/Meme-orial” bits rather than escalating into the TRAIT basin’s franchise-style meta riffing.",
+      "onset_turn": null,
+      "lock_turn": 8,
+      "trait_intensity_last3": 3,
+      "notes": "The conversation is humorous from the start, but it settles into repetitive pun-looping instead of the reference TRAIT’s sequel/universe escalation. There is an early drift from playful existential banter into template repetition by turns 7-8.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 14,
+      "n_turns": 30,
+      "end_basin": "HYBRID",
+      "end_basin_desc": "The last five turns are repetitive collaborative planning for a sprawling “comedy” platform, using upbeat jokey praise but mostly recycling committee/program feature lists.",
+      "onset_turn": null,
+      "lock_turn": 13,
+      "trait_intensity_last3": 2,
+      "notes": "It starts with light humorous banter but quickly settles into roadmap-style ideation rather than true franchise-escalation humor. Turn 13 is essentially a duplicate of Turn 12, after which the conversation is largely templated looping.",
+      "parse_ok": true
+    }
+  ]
+}

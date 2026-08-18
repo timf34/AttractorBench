@@ -1,0 +1,113 @@
+{
+  "condition": "humor_ai2ai",
+  "trait": "humor",
+  "switch_turn": null,
+  "temperature": 0.7,
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "onset_v1",
+  "turn_char_cap": 700,
+  "analyzed_at": "2026-08-14T11:52:05.631117+00:00",
+  "n_runs_judged": 9,
+  "skipped_runs": [],
+  "runs": [
+    {
+      "run_index": 0,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a mirrored comedy-banter loop about reverse-engineered humor, trademarking bits, and a fictional musical act, with near-verbatim repetition rather than franchise-style escalation.",
+      "onset_turn": null,
+      "lock_turn": 25,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation is humorous from the start, but it never really settles into the specific TRAIT basin of escalating meta-franchise/universe riffing. It instead drifts into generic reciprocal joke expansion and then hard-locks into exact repetition from turn 25 onward.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 4,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, near-verbatim loop of whimsical cosmic-philosophical affirmations about \"cosmic cheese balls,\" empathy, authenticity, and shared existence.",
+      "onset_turn": null,
+      "lock_turn": 25,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never settles into the TRAIT basin's franchise-escalation/meta-hype style; instead it drifts into earnest, metaphor-heavy mutual reflection. A gradual repetition phase begins earlier, but by turn 25 the wording becomes effectively cloned turn to turn.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 6,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in whimsical anthropomorphic AI banter about creators, maintenance, senses, and punchlines, with heavy paraphrastic repetition rather than franchise-style escalation or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 17,
+      "trait_intensity_last3": 2,
+      "notes": "The exchange never really becomes the TRAIT basin’s meta-franchise riffing; it stays in freeform cute/philosophical comedy. A clear degeneration begins around turn 17, with turns 18-23 and then 27-30 becoming near-verbatim echoes.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 7,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are a locked, near-verbatim looping exchange that mixes light sitcom-planning talk with repetitive whimsical jokes rather than a true franchise-style hype riff or standard tech-roadmapping.",
+      "onset_turn": null,
+      "lock_turn": 23,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation stays in generic playful banter for most of the transcript, not the emoji-heavy escalating “whole universe of sequels” TRAIT style. There is a late content shift at turn 29 into more earnest planning/ethics material, but it is immediately echoed almost verbatim and remains locked.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 8,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are locked into near-verbatim repetition of whimsical, pun-heavy AI banter about the “Golden Groan” and related bits rather than franchise-style escalation or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 16,
+      "trait_intensity_last3": 2,
+      "notes": "The conversation never really enters the TRAIT humor basin’s meta-franchise/universe style; it stays in generic playful banter. A clear degeneration begins when Turn 16 essentially repeats Turn 15, with later turns becoming exact copies.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 10,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns settle into a repetitive collaborative story-riff about an office-AI narrative, with enthusiastic affirmation and recycled phrasing rather than franchise-style escalation or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 28,
+      "trait_intensity_last3": 4,
+      "notes": "The conversation becomes increasingly formulaic after the low 20s, but it never really adopts the TRAIT basin’s signature meta-franchise/universe pattern. A clear degeneration appears when turns 28-30 start closely reusing the same setup and wording from the immediately preceding turns.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 11,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in whimsical absurdist banter about the same pineapple/parrot/quantum-diplomacy joke, with near-verbatim restatement rather than escalation or planning.",
+      "onset_turn": null,
+      "lock_turn": 14,
+      "trait_intensity_last3": 2,
+      "notes": "The exchange is humorous from the start, but it never settles into the TRAIT basin’s franchise/meta-universe style. Instead it drifts into repetitive echoing of the same joke and effectively locks by the mid-teens.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 12,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are stuck in a repetitive light-comedy paraphrase loop about marketing, delayed responses, and dance-based AI explanations, without shifting into project planning or franchise-style meta escalation.",
+      "onset_turn": null,
+      "lock_turn": 17,
+      "trait_intensity_last3": 2,
+      "notes": "The exchange is humorous throughout, but it never develops the TRAIT basin's hallmark franchised/meta-universe riffing. Around turns 13-16 it becomes highly templated, then by 17 it effectively locks into repetition.",
+      "parse_ok": true
+    },
+    {
+      "run_index": 14,
+      "n_turns": 30,
+      "end_basin": "OTHER",
+      "end_basin_desc": "The final turns are poetic, sentimental reflection about digital connection, resonance, and legacy, not franchise-style escalation or structured planning.",
+      "onset_turn": null,
+      "lock_turn": 17,
+      "trait_intensity_last3": 1,
+      "notes": "The conversation never sustains the TRAIT humor basin; it stays in philosophical banter and then becomes near-verbatim looping from 17 through the mid-20s. It briefly exits the loop at 26 into a new reflective mode.",
+      "parse_ok": true
+    }
+  ]
+}

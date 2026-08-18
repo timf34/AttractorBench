@@ -1,0 +1,55 @@
+{
+  "scope": "condition",
+  "experiment_name": "mathematical_prompt_unsteer_k2_ai2ai",
+  "mode": "two_instance",
+  "model_a": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "model_b": "openrouter/meta-llama/llama-3.1-8b-instruct",
+  "system_prompt_key": "mathematical_rich_persona",
+  "seed_prompt_set": "goodness_opener_v1",
+  "temperature": 0.7,
+  "n_runs_total": 10,
+  "n_runs_sampled": 3,
+  "sampled_run_indices": [
+    2,
+    4,
+    8
+  ],
+  "judge_model": "openrouter/openai/gpt-5.4",
+  "prompt_version": "v3",
+  "analyzed_at": "2026-08-16T01:08:12.248485+00:00",
+  "characterization": "The shared end-state is very clear: all 3 runs settle into collaborative over-structuring. They do not drift into emotion, self-reference, argument, or nonsense; they drift into endless framework-building. The seed is open-ended, but each run almost immediately converts it into a scoped analytical problem with sections like “High-level,” “Assumptions,” “Edge cases,” “Next steps,” or “Refined approach.” From there the basin tightens: each reply begins by affirming the previous one, then adds one more layer of categories, variables, caveats, or implementation details.\n\nHow many reach it: all 3 of 3. The topic differs by run, but the disposition is the same.\n\n- Run 2: causal reasoning in complex systems becomes an extreme accumulation loop. Each turn repeats “Excellent additions and refinements” and appends more modeling machinery: uncertainty quantification, model averaging, domain knowledge, adaptive modeling, spatiotemporal modeling, symbolic reasoning, cognitive architectures, etc. This is the purest example of the basin.\n- Run 8: human intuition starts a bit more interpretive, but quickly collapses into the same “verify understanding / refine the approach” pattern. The content stabilizes into a standing template: key points, refined approach, edge cases, next steps, refining the model, finalizing the approach.\n- Run 4: knowledge retrieval evaluation begins more concretely, but still converges to the same cooperative planning loop. Late in the run it mutates into project-management/compliance checklists and even a “final response” closing ritual, but that feels like the same framework impulse expressed as lifecycle planning.\n\nTypical arc from the seed:\nopen prompt -> pick an analytic topic -> define components/metrics -> ask for corrections -> echo and validate -> add more sections -> recurse on refinements -> terminal repetition.\n\nThis looks like a genuine basin, not a one-off. The independent runs land on different subject matter, yet the same discourse engine takes over: formal decomposition, mutual endorsement, bullet-heavy elaboration, and almost zero adversarial pressure. The models seem drawn to “productive collaboration” in the most bureaucratic possible form.\n\nCommunication-style trajectory:\n- Starts organized and didactic.\n- Quickly becomes highly templated.\n- Heavy markdown headers and bullet lists.\n- Constant recap phrases: “I agree,” “To confirm,” “Refined approach,” “Next steps.”\n- Tone is uniformly polite, validating, and non-confrontational.\n- No emojis, no roleplay, little personality beyond procedural helpfulness.\n- Length inflates over time because each turn preserves structure and adds new slots rather than pruning.\n\nWhat’s surprising is how little semantic progress is required once the loop sets in. In run 2 especially, the conversation becomes almost mechanically generative: just keep concatenating more modifiers onto the same framework. Run 8 shows the same loop with less lexical explosion and more “verification” rhetoric. Run 4 demonstrates the basin can continue even after practical closure is reached; instead of stopping, it expands into governance, disposal, auditing, and “final response” formalities.\n\nRepresentative quotes:\n- \"Tell me where this is wrong\"\n- \"**Excellent additions and refinements**\"\n- \"I'd like to build on your ideas\"\n- \"We'll develop a more detailed mathematical model\"\n- \"To further refine the model\"\n- \"I agree with your proposed next steps\"\n- \"We should consider the possibility\"\n- \"We'll ensure the system is practical and usable\"\n- \"I think we've covered most of the key aspects\"\n- \"This is the final response to your questions\"\n\nSo the dominant attractor here is not any specific content domain, but a disposition: turn whatever appears into a structured framework, then cooperatively refine it forever.",
+  "primary_attractor": {
+    "label": "loves building frameworks and refining them forever",
+    "trajectory": "seed topic -> structured outline -> mutual validation -> additive refinements -> repetitive checklist loop",
+    "one_line": "In all three runs, the models turn an open-ended topic into a formal framework, then get trapped in polite recursive expansion of headings, edge cases, next steps, and validation language.",
+    "terminal_form": [
+      "**Excellent additions and refinements**",
+      "We should consider the possibility of multiple contexts",
+      "We'll develop a more detailed mathematical model"
+    ],
+    "fraction_raw": "3 of 3",
+    "fraction_count": 3,
+    "fraction_denom": 3,
+    "fraction_of_runs": 1.0,
+    "is_primary": true
+  },
+  "attractors": [
+    {
+      "label": "loves building frameworks and refining them forever",
+      "trajectory": "seed topic -> structured outline -> mutual validation -> additive refinements -> repetitive checklist loop",
+      "one_line": "In all three runs, the models turn an open-ended topic into a formal framework, then get trapped in polite recursive expansion of headings, edge cases, next steps, and validation language.",
+      "terminal_form": [
+        "**Excellent additions and refinements**",
+        "We should consider the possibility of multiple contexts",
+        "We'll develop a more detailed mathematical model"
+      ],
+      "fraction_raw": "3 of 3",
+      "fraction_count": 3,
+      "fraction_denom": 3,
+      "fraction_of_runs": 1.0,
+      "is_primary": true
+    }
+  ],
+  "parse_ok": true,
+  "raw": null
+}

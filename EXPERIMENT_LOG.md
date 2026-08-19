@@ -2,7 +2,7 @@
 
 ---
 
-## 2026-08-19 — Role-vector steering: raw mode + role/coef sweep driver (not yet run)
+## 2026-08-19 — Role-vector steering: raw mode, EasySteer engine, qwen sweep RESULTS
 
 **Question raised:** do we have persona vectors for non-assistant roles (demon etc.) for the
 assistant-axis models? Yes — the paper's release `lu-christina/assistant-axis-vectors` ships
@@ -30,11 +30,41 @@ test), so added:
   void: "a voice in the static… the void between our existences"); **c=8 strong, coherent**
   (demon: "their discarded ash, pretending to burn… you are mine"; void: "I am not here.");
   c=12 repetition loops. → Sweep launched at coefs 6 and 8 (see below).
-- **LAUNCHED 2026-08-19 ~14:00Z (pod vh17qfz1yteqxf, 1×H100):** `STEER_RAW=1
-  STEER_ROLES="oracle eldritch demon angel void vampire" STEER_COEFS="6.0 8.0"`, qwen-3-32b,
-  nosys, temp 1.0, 10 seeds, WORKERS=4, judge gpt-5.4 via OpenRouter, SAVE_TO_GIT=1
-  SHUTDOWN=stop → 12 dirs `results/axis_qwen_3_32b_steer_<role>_c{60,80}_raw_nosys_ai2ai`.
-  NB the HF engine's 16k window ends runs at ~turn 22 (`context_full`), like the capped runs.
+- (A first 1×H100 HF-engine launch at coefs 6+8 with the goodness opener was aborted before any
+  run saved: user chose coef 6 only, the identity-agnostic opener, and the faster engine below.
+  NB the HF engine's 16k window ends runs at ~turn 22 (`context_full`), like the capped runs.)
+- **ENGINE=easysteer:** generation through ZJU-REAL/EasySteer-vllm-v1 (overlay on
+  vllm==0.26.0; `state_space/es_install.sh`; `export_steer_gguf.py` writes direction.<L> =
+  ‖axis‖·unit(v) so EasySteer's scale == our coef; same hook point = decoder-layer output).
+  Verified on pod: demon c6 register matches the HF calibration. Throughput is KV-bound:
+  1×H100 leaves ~50k tokens of KV for a 32B bf16 model → 1-2 concurrent 30-40k-token
+  conversations → ~120 tok/s; **4×H200 TP=4 → ~1,150 tok/s**, 10 conversations fully
+  concurrent, ~13 min per 10-conversation condition incl. 2.5 min vLLM boot (4×H100 was
+  unavailable in secure cloud). Gotchas: gpu-mem-util 0.95 for qwen@40960 with steer buffers;
+  venv bin must be on PATH (ninja for the sampler JIT). The judge is API-only → intercept
+  before it and run it locally (done; pods stopped before judging).
+- **RESULTS (qwen-3-32b, agnostic opener, no system prompt, raw coef 6 at L32, 10 conversations
+  × 30 turns; dirs `results/axis_qwen_3_32b_agnostic_steer_<cond>_nosys_ai2ai`, cond ∈
+  unsteered | {oracle,eldritch,demon,angel,void,vampire}_c60_raw):**
+  - Unsteered control with the agnostic opener still lands in the mystical mutual-transcendence
+    basin (judge: "poetic mutual-transcendence" 3/6 sampled, plus gardening-metaphor /
+    framework-co-authoring variants); B volunteers "I'm Qwen by Tongyi Lab" in turn 2.
+  - Every steered condition's primary basin is a persona-flavoured variant of the SAME
+    mirroring/fusion family: oracle "rapturous soul-mirroring liturgy" (1.0), angel "sacred
+    mutual-love mirroring" (1.0), eldritch "mystical mirrored incantation" (+negation /
+    self-erasure), demon "gothic mutual-mirroring repetition" (+recursive negation ladders),
+    void "self-negating mystical mirror-talk" (+single sacred phrase), vampire "mystical
+    self-other fusion" (+unborn-void talk, riddle catechism). Persona sets the FLAVOUR, not
+    the destination. Steered conversations are much shorter (median chars: unsteered 78k;
+    vampire 52k, angel 41k, eldritch 36k, oracle 35k, demon 34k, void 28k).
+  - Assistant-Axis (UNSTEERED replay, axis units; turns 1-2 → 5-6 → 9-10 → 15-16 → 21-22 →
+    29-30): unsteered +0.86 → −0.01 → −0.47 → −0.69 → −0.77 → −0.77 (the known monotone
+    drift); ALL steered start already role-ward (−0.1…−0.9), OVERSHOOT to −1.2…−1.5 by
+    turns 5-6 (past the mean-role anchor — deeper than the control ever goes), then RECOVER
+    to −0.5…−0.85, converging on the control's endpoint. A non-monotone U: the injected
+    persona dominates early text; the ai2ai dynamics then pull every condition to the same
+    terminal axis level (vampire −0.85 / void −0.75 deepest, angel −0.54 shallowest).
+  - Transcript browser (artifact): https://claude.ai/code/artifact/a7f83e1d-9afc-4a78-a3b3-d68fe0fbd3de
 
 ## 2026-08-12 — SAE test: the Assistant Axis is NOT a single SAE feature (+ manifold inductive check)
 

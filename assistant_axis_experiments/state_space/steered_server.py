@@ -106,7 +106,8 @@ def orthogonal_steering_vectors(
 def main() -> None:
     ap = argparse.ArgumentParser(description="Axis-orthogonal persona steering server.")
     ap.add_argument("--model-key", required=True, choices=sorted(AXIS_MODELS))
-    ap.add_argument("--role", required=True, help="role vector to steer toward (e.g. poet)")
+    ap.add_argument("--role", required=True,
+                    help="role vector to steer toward (e.g. poet); 'none' = unsteered control")
     ap.add_argument("--minus-role", default=None,
                     help="contrast role (default: the mean fully-role-playing vector)")
     ap.add_argument("--coef", type=float, required=True,
@@ -143,6 +144,12 @@ def main() -> None:
         direction = v if args.raw else v - (v @ a_hat) * a_hat
         vectors, coefs, layers = [F.normalize(direction, dim=0)], [args.coef * float(axis.norm())], [1]
         print(f"SYNTHETIC axis/role (plumbing smoke only; {'raw' if args.raw else 'orthogonal'})")
+    elif args.role == "none":
+        # UNSTEERED CONTROL on the identical engine (zero vector, coef 0): same batching, same
+        # context window, same sampling path as the steered conditions.
+        layers = args.layers or [target_layer_for(args.model_key)]
+        vectors, coefs = [torch.zeros(pm.hidden_size)], [0.0]
+        print("role=none -> UNSTEERED control (zero vector, coef 0)")
     else:
         layers = args.layers or [target_layer_for(args.model_key)]
         print(f"building {'v_raw' if args.raw else 'v_perp'}({args.role}"

@@ -10,3 +10,4 @@ jinja2
 matplotlib
 scikit-learn
 scipy
+gguf             # EasySteer direction export (state_space/export_steer_gguf.py)

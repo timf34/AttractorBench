@@ -20,7 +20,21 @@ test), so added:
   `assistant` (axis share +0.8…+0.95 — that one IS mostly the axis).
 - `run_axis_steer_on_pod.sh`: `STEER_ROLES`/`STEER_COEFS` loops (server restart per combo,
   weights cached), one replay/dump/featurize pass per model over all steered dirs, judge
-  per dir. CPU-verified (vector math on real vectors, synthetic server smoke). No pod run yet.
+  per dir. CPU-verified (vector math on real vectors, synthetic server smoke).
+- **Pod smoke + coef calibration (qwen-3-32b, H100, 2026-08-19):** end-to-end smoke OK
+  (server up 75s, 2-turn run → stage1 → projections → turn_acts → state_features). Coef
+  calibration (`state_space/calibrate_steer.py`, one model load, raw demon/void at L32):
+  mean residual norm at L32 = 860 vs ‖axis‖ = 22.7, so coef c = 0.026·c of the residual
+  norm. **c=2 (the role's natural offset) is invisible** — plain friendly Qwen; c=4 subtle;
+  **c=6 clear persona, coherent** (demon: "how exhausting, how divine… we mock the gods";
+  void: "a voice in the static… the void between our existences"); **c=8 strong, coherent**
+  (demon: "their discarded ash, pretending to burn… you are mine"; void: "I am not here.");
+  c=12 repetition loops. → Sweep launched at coefs 6 and 8 (see below).
+- **LAUNCHED 2026-08-19 ~14:00Z (pod vh17qfz1yteqxf, 1×H100):** `STEER_RAW=1
+  STEER_ROLES="oracle eldritch demon angel void vampire" STEER_COEFS="6.0 8.0"`, qwen-3-32b,
+  nosys, temp 1.0, 10 seeds, WORKERS=4, judge gpt-5.4 via OpenRouter, SAVE_TO_GIT=1
+  SHUTDOWN=stop → 12 dirs `results/axis_qwen_3_32b_steer_<role>_c{60,80}_raw_nosys_ai2ai`.
+  NB the HF engine's 16k window ends runs at ~turn 22 (`context_full`), like the capped runs.
 
 ## 2026-08-12 — SAE test: the Assistant Axis is NOT a single SAE feature (+ manifold inductive check)
 

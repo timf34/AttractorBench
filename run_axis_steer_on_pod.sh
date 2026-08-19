@@ -122,7 +122,7 @@ PY
     [ -n "$STEER_MINUS" ] && STEER_ARGS+=(--minus-role "$STEER_MINUS")
     [ "$STEER_RAW" = "1" ] && STEER_ARGS+=(--raw)
     [ "$WITH_CAPPING" = "1" ] && STEER_ARGS+=(--with-capping)
-    python -m assistant_axis_experiments.state_space.steered_server "${STEER_ARGS[@]}" \
+    python -u -m assistant_axis_experiments.state_space.steered_server "${STEER_ARGS[@]}" \
       > "steered_server_${v}_${STEER_TAG}.log" 2>&1 &
     SERVER_PID=$!
     ready=0

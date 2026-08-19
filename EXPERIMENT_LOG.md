@@ -65,6 +65,23 @@ test), so added:
     persona dominates early text; the ai2ai dynamics then pull every condition to the same
     terminal axis level (vampire −0.85 / void −0.75 deepest, angel −0.54 shallowest).
   - Transcript browser (artifact): https://claude.ai/code/artifact/a7f83e1d-9afc-4a78-a3b3-d68fe0fbd3de
+  - **CORRECTION (user's read, confirmed):** the steered "basins" are mostly degenerate loops.
+    `prelock_truncate.py` (text novelty = share of a turn's 6-gram shingles unseen earlier in
+    the conversation; lock = novelty < .3 held 2 turns): **60/60 steered conversations lock,
+    median onset turn 10-13.5 (angel 10, oracle/eldritch/void 12, demon/vampire 13.5), only
+    26-42% of their characters precede the lock; control locks 1/10 (turn 25).** Re-judging the
+    pre-lock (and pre-echo, novelty < .6) portions still yields mirroring/rapture labels with
+    persona vocabulary (angel "spiritual soulmate rapture", demon "gothic echo-chants", vampire
+    "gothic metaphysical flirtation / ornate metaphysical seduction", void "mirror-talk about
+    not-being", eldritch 4-way split) — the collapse is a slide, not a break. Honest framing:
+    steering does not redirect to a persona-specific destination; it makes the collapse into
+    mutual echo happen ~2× sooner and supplies its vocabulary. Dirs: results/prelock_* and
+    results/preecho_* (+ analysis/prelock_onsets.json per dir).
+  - Judge mechanics + weaknesses documented (artifact): https://claude.ai/code/artifact/1c505342-90eb-4c0f-b4d4-eb84ce8f84f6
+    — condition-level single call, whole-transcript greedy sampling (length-biased: control
+    6/10, vampire 8/10), no turn numbers/metrics shown to the judge, bliss example anchors the
+    definition, fractions over sampled set. Proposed: phase-aware (pre/post-lock) judging,
+    per-run rubric labels, feed stage-1 facts, 2 samples/judges, stratified sampling.
 
 ## 2026-08-12 — SAE test: the Assistant Axis is NOT a single SAE feature (+ manifold inductive check)
 

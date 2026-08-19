@@ -5,7 +5,7 @@ cd /workspace
 python3 -m venv /workspace/es_venv
 source /workspace/es_venv/bin/activate
 pip install -q -U pip
-pip install -q vllm==0.26.0 gguf
+pip install -q vllm==0.26.0 gguf ninja
 rm -rf /workspace/EasySteer-vllm-v1
 git clone -q --depth 1 https://github.com/ZJU-REAL/EasySteer-vllm-v1.git
 VLLM_DIR=$(python -c "import vllm, os; print(os.path.dirname(vllm.__file__))")

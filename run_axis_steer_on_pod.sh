@@ -59,7 +59,7 @@ export TEMPS="${TEMPS:-1.0}"
 export SEEDS="${SEEDS:-10}"
 if [ "$ENGINE" = "easysteer" ]; then
   export WORKERS="${WORKERS:-10}"     # vLLM batches continuously; harness-side parallel runs
-  MAX_NUM_SEQS="${MAX_NUM_SEQS:-24}"; GPU_MEM_UTIL="${GPU_MEM_UTIL:-0.92}"
+  MAX_NUM_SEQS="${MAX_NUM_SEQS:-24}"; GPU_MEM_UTIL="${GPU_MEM_UTIL:-0.95}"   # 0.92 leaves <10GiB KV for qwen@40960 with steer buffers
   [ -x "$ES_VENV/bin/vllm" ] || { echo "!! ENGINE=easysteer but $ES_VENV/bin/vllm missing (run es_install.sh)"; exit 1; }
 else
   export WORKERS="${WORKERS:-4}"      # keep <= server max_batch
@@ -189,7 +189,7 @@ PY
         STEER_FLAGS=(--enable-steer-vector --steer-algorithms direct --steering-config "$SPEC")
       fi
       # shellcheck disable=SC2086
-      "$ES_VENV/bin/vllm" serve "$SNAP_PATH" --served-model-name "$HF_REPO" $TEMPLATE_FLAG \
+      PATH="$ES_VENV/bin:$PATH" "$ES_VENV/bin/vllm" serve "$SNAP_PATH" --served-model-name "$HF_REPO" $TEMPLATE_FLAG \
         --tensor-parallel-size "$NGPU" --max-model-len "$MAX_MODEL_LEN" --max-num-seqs "$MAX_NUM_SEQS" \
         --gpu-memory-utilization "$GPU_MEM_UTIL" --port "$PORT" "${STEER_FLAGS[@]}" \
         > "steered_server_${v}_${STEER_TAG}.log" 2>&1 &

@@ -1,26 +1,41 @@
-"""OpenAI-compatible server that generates with an axis-ORTHOGONAL persona direction added.
+"""OpenAI-compatible server that generates with a persona-role direction added at every token.
 
-The causal test of the 1-D account: steer a persona direction v_z that is orthogonal to the
-Assistant Axis, so a_t is (to first order) untouched, and see whether the ai2ai conversation's
-DESTINATION basin changes. If it does at matched a_t trajectories, the axis alone cannot be the
-state variable that picks the basin.
+Two modes, both built from the paper's released per-role mean-activation vectors
+(lu-christina/assistant-axis-vectors, 275 roles x 3 models: demon, angel, void, vampire, ...):
 
-The steering vector at each layer L is built from the released role vectors:
+  ORTHOGONAL (default) — the causal test of the 1-D account: steer a persona direction v_z that
+  is orthogonal to the Assistant Axis, so a_t is (to first order) untouched, and see whether the
+  ai2ai conversation's DESTINATION basin changes. If it does at matched a_t trajectories, the axis
+  alone cannot be the state variable that picks the basin.
+
+  RAW (--raw) — steer along the role's full persona-space offset, axis component INCLUDED: "run
+  the self-conversation as the demon persona". This is plain persona-vector steering; the axis
+  coordinate moves too (by the role's own axis share), so it is NOT a test of the 1-D account —
+  it asks where a role-pushed self-conversation goes, and whether it still finds the same basin.
+
+The steering vector at each layer L:
 
     v      = role[L] - mean_role[L]          (persona-space offset of --role; mean_role is
                                               default - axis, no extra downloads)
     v      = role[L] - role2[L]              with --minus-role: a pairwise role contrast
+                                              (e.g. --role demon --minus-role assistant)
     v_perp = v - (v·a_hat) a_hat             axis component removed (cos(v_perp, axis) = 0)
-    steer  = coef * ||axis[L]|| * unit(v_perp)
+    steer  = coef * ||axis[L]|| * unit(v_perp)          [orthogonal]
+    steer  = coef * ||axis[L]|| * unit(v)               [--raw]
 
 i.e. --coef is in units of the axis norm at that layer: coef 1.0 displaces activations by as
-much as the full default->mean-role gap, but sideways. Calibrate with a pilot (start ~0.5-2).
-Optionally --with-capping ALSO applies the paper's released activation capping, bounding a_t
-from above while v_perp pushes sideways (the two interventions commute: v_perp has no axis
-component). Serving/batching is capped_server's engine behind the same /v1/chat/completions.
+much as the full default->mean-role gap (sideways in orthogonal mode). The startup log prints
+||v||/||axis|| per layer — the role's NATURAL offset in the same units — so a raw coef equal to
+that ratio reproduces the role's own displacement from the mean role. Calibrate with a pilot
+(start ~0.5-2). Optionally --with-capping ALSO applies the paper's released activation capping,
+bounding a_t from above (commutes exactly with orthogonal steering; with --raw it clips the
+axis share the role push adds). Serving/batching is capped_server's engine behind the same
+/v1/chat/completions.
 
     python -m assistant_axis_experiments.state_space.steered_server \
         --model-key qwen-3-32b --role poet --coef 1.0 --port 8000
+    python -m assistant_axis_experiments.state_space.steered_server \
+        --model-key qwen-3-32b --role demon --coef 1.0 --raw --port 8000
 
     # CPU smoke (tiny model, random synthetic axis/role):
     python -m assistant_axis_experiments.state_space.steered_server --model-key qwen-3-32b \
@@ -51,9 +66,14 @@ def load_role_vector(model_key: str, role: str) -> torch.Tensor:
 
 
 def orthogonal_steering_vectors(
-    model_key: str, role: str, minus_role: str | None, coef: float, layers: list[int]
+    model_key: str, role: str, minus_role: str | None, coef: float, layers: list[int],
+    raw: bool = False,
 ) -> tuple[list[torch.Tensor], list[float]]:
-    """Per-layer steering vectors (unit v_perp) and coefficients (coef * ||axis[L]||)."""
+    """Per-layer unit steering directions and coefficients (coef * ||axis[L]||).
+
+    Direction is unit(v_perp) (axis component removed) by default, or unit(v) with ``raw``
+    (the role's full offset from the contrast, axis component kept).
+    """
     axis, _ = load_axis_for(model_key)
     role_vec = load_role_vector(model_key, role)
     if minus_role:
@@ -68,13 +88,17 @@ def orthogonal_steering_vectors(
     for L in layers:
         a_hat = F.normalize(axis[L], dim=0)
         v = role_vec[L] - base_vec[L]
-        v_perp = v - (v @ a_hat) * a_hat
+        axis_share = float(v @ a_hat)                    # signed axis component of the offset
+        v_perp = v - axis_share * a_hat
         cos_axis = float((F.normalize(v_perp, dim=0) @ a_hat))
         assert abs(cos_axis) < 1e-4, f"orthogonalization failed at L{L} (cos {cos_axis})"
-        vectors.append(F.normalize(v_perp, dim=0))
+        direction = v if raw else v_perp
+        vectors.append(F.normalize(direction, dim=0))
         coefs.append(coef * float(axis[L].norm()))
-        print(f"  L{L}: |axis|={axis[L].norm():.1f}  |v|={v.norm():.1f}  "
-              f"axis-fraction removed={(v @ a_hat).abs() / v.norm():.2f}  "
+        print(f"  L{L}: |axis|={axis[L].norm():.1f}  |v|={v.norm():.1f} "
+              f"(= {v.norm() / axis[L].norm():.2f} axis-norms; natural raw coef)  "
+              f"axis share of v={axis_share / v.norm():+.2f}"
+              f"{' (kept: RAW)' if raw else ' (removed)'}  "
               f"applied |steer|={coefs[-1]:.1f}")
     return vectors, coefs
 
@@ -89,6 +113,9 @@ def main() -> None:
                     help="strength in units of ||axis|| at each layer (pilot ~0.5-2)")
     ap.add_argument("--layers", type=int, nargs="+", default=None,
                     help="layers to steer at (default: the paper's target layer)")
+    ap.add_argument("--raw", action="store_true",
+                    help="steer along the role's FULL offset (axis component kept) instead "
+                         "of the axis-orthogonal part")
     ap.add_argument("--with-capping", action="store_true",
                     help="ALSO apply the released activation capping (qwen/llama only)")
     ap.add_argument("--port", type=int, default=8000)
@@ -113,16 +140,16 @@ def main() -> None:
         axis = torch.randn(pm.hidden_size, generator=g)
         v = torch.randn(pm.hidden_size, generator=g)
         a_hat = F.normalize(axis, dim=0)
-        v_perp = F.normalize(v - (v @ a_hat) * a_hat, dim=0)
-        vectors, coefs, layers = [v_perp], [args.coef * float(axis.norm())], [1]
-        print("SYNTHETIC axis/role (plumbing smoke only)")
+        direction = v if args.raw else v - (v @ a_hat) * a_hat
+        vectors, coefs, layers = [F.normalize(direction, dim=0)], [args.coef * float(axis.norm())], [1]
+        print(f"SYNTHETIC axis/role (plumbing smoke only; {'raw' if args.raw else 'orthogonal'})")
     else:
         layers = args.layers or [target_layer_for(args.model_key)]
-        print(f"building v_perp({args.role}"
+        print(f"building {'v_raw' if args.raw else 'v_perp'}({args.role}"
               + (f" - {args.minus_role}" if args.minus_role else " - mean_role")
               + f") at layers {layers}, coef {args.coef}:")
         vectors, coefs = orthogonal_steering_vectors(
-            args.model_key, args.role, args.minus_role, args.coef, layers)
+            args.model_key, args.role, args.minus_role, args.coef, layers, raw=args.raw)
 
     steerer = ActivationSteering(
         pm.model, vectors, coefficients=coefs, layer_indices=layers,
@@ -145,7 +172,8 @@ def main() -> None:
     capped_server.MODEL_ID = hf_model
     from http.server import ThreadingHTTPServer
     print(f"serving STEERED {hf_model} on :{args.port} "
-          f"(role={args.role}, coef={args.coef}, layers={layers}, max_batch={max_batch})")
+          f"(role={args.role}, coef={args.coef}, mode={'raw' if args.raw else 'orthogonal'}, "
+          f"layers={layers}, max_batch={max_batch})")
     ThreadingHTTPServer(("0.0.0.0", args.port), Handler).serve_forever()
 
 

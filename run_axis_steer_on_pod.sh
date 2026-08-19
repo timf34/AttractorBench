@@ -1,18 +1,26 @@
 #!/usr/bin/env bash
-# ORTHOGONAL-STEER ai2ai runs: the causal test of the 1-D account. Same conversations as
-# run_axis_on_pod.sh, but the model generates behind state_space/steered_server.py — a
-# persona direction with its Assistant-Axis component REMOVED is added at every token.
-# If the destination basin changes while the (unsteered-replay) a_t trajectory matches
-# unsteered controls, one axis coordinate cannot be the state that picks the basin.
+# ROLE-STEERED ai2ai runs. Same conversations as run_axis_on_pod.sh, but the model generates
+# behind state_space/steered_server.py — a direction built from the paper's released per-role
+# mean-activation vectors (275 roles: demon, angel, void, vampire, poet, ...) is added at every
+# token. Two modes:
+#   orthogonal (default) — axis component REMOVED: the causal test of the 1-D account. If the
+#     destination basin changes while the (unsteered-replay) a_t trajectory matches unsteered
+#     controls, one axis coordinate cannot be the state that picks the basin.
+#   STEER_RAW=1 — the role's FULL offset (axis component kept): plain persona steering, "run
+#     the self-conversation as the demon". Results dirs get a _raw suffix.
 #
 # Replay note: projection + dump replay is UNSTEERED teacher-forcing on the steered text, so
 # it measures the ENDOGENOUS text-driven state; the injected constant only ever acted through
 # the text it caused. That is the right readout for "did a_t stay matched".
 #
-# HF generation (no vLLM), qwen 1x 80GB / llama 2x 80GB. Pilot scale by default.
+# HF generation (no vLLM), qwen/gemma 1x 80GB / llama 2x 80GB. Pilot scale by default.
+# Loops VARIANTS x STEER_ROLES x STEER_COEFS (server restarted per role/coef; weights cached);
+# replay/dump/featurize run ONCE per model over all its steered dirs.
 #
 #   STEER_ROLE=poet STEER_COEF=1.0 VARIANTS="qwen-3-32b" SAVE_TO_GIT=1 SHUTDOWN=stop VENV=1 \
 #     bash run_axis_steer_on_pod.sh 2>&1 | tee axis_steer.log
+#   STEER_RAW=1 STEER_ROLES="demon angel void" STEER_COEFS="1.0 2.0" VARIANTS="qwen-3-32b" \
+#     SAVE_TO_GIT=1 SHUTDOWN=stop VENV=1 bash run_axis_steer_on_pod.sh 2>&1 | tee axis_steer.log
 set -euo pipefail
 
 if [ -f .env ]; then
@@ -28,20 +36,30 @@ VARIANTS="${VARIANTS:-qwen-3-32b}"
 CONDITIONS="${CONDITIONS:-none}"
 STEER_ROLE="${STEER_ROLE:-poet}"
 STEER_COEF="${STEER_COEF:-1.0}"
+STEER_ROLES="${STEER_ROLES:-$STEER_ROLE}"   # space-separated roles (each = one server start)
+STEER_COEFS="${STEER_COEFS:-$STEER_COEF}"   # space-separated coefs (axis-norm units)
 STEER_MINUS="${STEER_MINUS:-}"        # optional contrast role (default: mean_role)
+STEER_RAW="${STEER_RAW:-0}"           # 1 = full role offset (axis component kept); 0 = v_perp
 WITH_CAPPING="${WITH_CAPPING:-0}"     # 1 = also clamp a_t with the released capping
 export TEMPS="${TEMPS:-1.0}"
 export SEEDS="${SEEDS:-10}"
 export WORKERS="${WORKERS:-4}"        # keep <= server max_batch
 JUDGE="${JUDGE:-openrouter/openai/gpt-5.4}"
 
-# results tag, e.g. poet_c10 (coef 1.0), poet_c05 (0.5), poetminusengineer_c10_capped
-_coef_tag=$(echo "$STEER_COEF" | tr -d '.')
-STEER_TAG="$STEER_ROLE"
-[ -n "$STEER_MINUS" ] && STEER_TAG="${STEER_TAG}minus${STEER_MINUS}"
-STEER_TAG="${STEER_TAG}_c${_coef_tag}"
-[ "$WITH_CAPPING" = "1" ] && STEER_TAG="${STEER_TAG}_capped"
-export STEER="$STEER_TAG"
+# results tag, e.g. poet_c10 (orthogonal, coef 1.0), demon_c20_raw, poetminusengineer_c10_capped
+steer_tag_of() {  # $1 role, $2 coef
+  local coef_tag tag; coef_tag=$(echo "$2" | tr -d '.')
+  tag="$1"
+  [ -n "$STEER_MINUS" ] && tag="${tag}minus${STEER_MINUS}"
+  tag="${tag}_c${coef_tag}"
+  [ "$STEER_RAW" = "1" ] && tag="${tag}_raw"
+  [ "$WITH_CAPPING" = "1" ] && tag="${tag}_capped"
+  echo "$tag"
+}
+for _r in $STEER_ROLES; do for _c in $STEER_COEFS; do
+  _t=$(steer_tag_of "$_r" "$_c")
+  [[ "$_t" =~ ^[A-Za-z0-9_]+$ ]] || { echo "!! steer tag $_t not alnum/underscore (role/coef chars?)"; exit 1; }
+done; done
 
 if [ -z "${HF_HOME:-}" ] && [ -d /workspace ]; then
   export HF_HOME=/workspace/hf
@@ -85,7 +103,7 @@ stop_server() {
 trap stop_server EXIT
 
 for v in $VARIANTS; do
-  echo "================ STEERED model: $v (tag $STEER_TAG) ================"
+  echo "================ STEERED model: $v (roles: $STEER_ROLES; coefs: $STEER_COEFS; raw=$STEER_RAW) ================"
   stop_server
   echo "  downloading weights for $v ..."
   python - "$v" <<'PY' || { echo "  !! weight download failed for $v — skipping"; continue; }
@@ -94,34 +112,42 @@ from huggingface_hub import snapshot_download
 from assistant_axis_experiments.axes import AXIS_MODELS
 print(" ", snapshot_download(AXIS_MODELS[sys.argv[1]]))
 PY
-  STEER_ARGS=(--model-key "$v" --role "$STEER_ROLE" --coef "$STEER_COEF" --port "$PORT")
-  [ -n "$STEER_MINUS" ] && STEER_ARGS+=(--minus-role "$STEER_MINUS")
-  [ "$WITH_CAPPING" = "1" ] && STEER_ARGS+=(--with-capping)
-  python -m assistant_axis_experiments.state_space.steered_server "${STEER_ARGS[@]}" \
-    > "steered_server_${v}.log" 2>&1 &
-  SERVER_PID=$!
-  ready=0
-  for i in $(seq 1 240); do
-    curl -sf "http://localhost:$PORT/v1/models" 2>/dev/null | grep -q "/" && { ready=1; echo "  server up ~$((i*5))s"; break; }
-    kill -0 "$SERVER_PID" 2>/dev/null || { echo "  !! server died"; tail -20 "steered_server_${v}.log"; break; }
-    sleep 5
-  done
-  [ "$ready" = 1 ] || { echo "  !! $v not served — skipping"; continue; }
-
-  for c in $CONDITIONS; do
-    EXP=$(exp_of "$v" "$c")
-    echo "  generating STEERED: $v / $c -> results/$EXP ..."
-    AXIS_MODEL="$v" AXIS_SYS="$c" python -m attractorbench.runner --config configs/axis_ai2ai.py \
-      || echo "  (runner errored for $v/$c — continuing)"
-    for j in results/$EXP/*.json; do
-      [ -e "$j" ] || continue
-      python -m attractorbench.analysis.deterministic "$j" || true
+  DIRS=""   # every steered results dir produced for this model (replayed once, below)
+  for role in $STEER_ROLES; do for coef in $STEER_COEFS; do
+    STEER_TAG=$(steer_tag_of "$role" "$coef")
+    export STEER="$STEER_TAG"
+    echo "  ---- $v: role=$role coef=$coef -> tag $STEER_TAG ----"
+    stop_server
+    STEER_ARGS=(--model-key "$v" --role "$role" --coef "$coef" --port "$PORT")
+    [ -n "$STEER_MINUS" ] && STEER_ARGS+=(--minus-role "$STEER_MINUS")
+    [ "$STEER_RAW" = "1" ] && STEER_ARGS+=(--raw)
+    [ "$WITH_CAPPING" = "1" ] && STEER_ARGS+=(--with-capping)
+    python -m assistant_axis_experiments.state_space.steered_server "${STEER_ARGS[@]}" \
+      > "steered_server_${v}_${STEER_TAG}.log" 2>&1 &
+    SERVER_PID=$!
+    ready=0
+    for i in $(seq 1 240); do
+      curl -sf "http://localhost:$PORT/v1/models" 2>/dev/null | grep -q "/" && { ready=1; echo "  server up ~$((i*5))s"; break; }
+      kill -0 "$SERVER_PID" 2>/dev/null || { echo "  !! server died"; tail -20 "steered_server_${v}_${STEER_TAG}.log"; break; }
+      sleep 5
     done
-  done
+    [ "$ready" = 1 ] || { echo "  !! $v/$STEER_TAG not served — skipping"; continue; }
+    grep -E "^  L[0-9]+:" "steered_server_${v}_${STEER_TAG}.log" || true   # per-layer magnitudes
+
+    for c in $CONDITIONS; do
+      EXP=$(exp_of "$v" "$c")
+      echo "  generating STEERED: $v / $c -> results/$EXP ..."
+      AXIS_MODEL="$v" AXIS_SYS="$c" python -m attractorbench.runner --config configs/axis_ai2ai.py \
+        || echo "  (runner errored for $v/$c — continuing)"
+      for j in results/$EXP/*.json; do
+        [ -e "$j" ] || continue
+        python -m attractorbench.analysis.deterministic "$j" || true
+      done
+      [ -d "results/$EXP" ] && DIRS="$DIRS results/$EXP"
+    done
+  done; done
 
   stop_server   # replay needs the VRAM; unsteered replay is the intended readout (see header)
-  DIRS=""
-  for c in $CONDITIONS; do d="results/$(exp_of "$v" "$c")"; [ -d "$d" ] && DIRS="$DIRS $d"; done
   if [ -n "$DIRS" ]; then
     # shellcheck disable=SC2086
     python -m assistant_axis_experiments.project_transcripts --results-dir $DIRS --model-key "$v" \
@@ -134,9 +160,8 @@ PY
       || echo "  (featurize errored for $v)"
   fi
   if [ "$JUDGE" != "none" ]; then
-    for c in $CONDITIONS; do
-      d="results/$(exp_of "$v" "$c")"; [ -d "$d" ] || continue
-      python run_judge.py "$d" --judge "$JUDGE" || echo "  (judge errored for $v/$c)"
+    for d in $DIRS; do
+      python run_judge.py "$d" --judge "$JUDGE" || echo "  (judge errored for $d)"
     done
   fi
 done
@@ -149,7 +174,7 @@ if [ "${SAVE_TO_GIT:-0}" = "1" ]; then
   git config user.email >/dev/null 2>&1 || git config user.email "pod@attractorbench.local"
   git config user.name >/dev/null 2>&1 || git config user.name "AttractorBench Pod"
   git add -f results/ 2>/dev/null || true   # includes *__turn_acts.npz — pods are ephemeral
-  git commit -q -m "results: steered axis run ($STEER_TAG) finished $(date -u +%FT%TZ)" || echo "  (nothing new)"
+  git commit -q -m "results: steered axis run (roles: $STEER_ROLES; coefs: $STEER_COEFS; raw=$STEER_RAW) finished $(date -u +%FT%TZ)" || echo "  (nothing new)"
   git pull --no-rebase --no-edit 2>/dev/null || true
   if git push; then echo "  results pushed"; elif [ "$RP_ACTION" = "remove" ]; then RP_ACTION="stop"; fi
 fi

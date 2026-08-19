@@ -2,6 +2,26 @@
 
 ---
 
+## 2026-08-19 — Role-vector steering: raw mode + role/coef sweep driver (not yet run)
+
+**Question raised:** do we have persona vectors for non-assistant roles (demon etc.) for the
+assistant-axis models? Yes — the paper's release `lu-christina/assistant-axis-vectors` ships
+275 per-role mean-activation vectors per model (identical role set for gemma-2-27b /
+qwen-3-32b / llama-3.3-70b; demon, angel, void, vampire, eldritch, destroyer, trickster, …)
+plus `default_vector.pt`; all cached locally and already the input to `persona_space.py`.
+`steered_server.py` only steered the axis-ORTHOGONAL part of a role offset (the 1-D causal
+test), so added:
+- `--raw` (pod `STEER_RAW=1`, results tag `_raw`): steer along the role's full offset
+  `role − mean_role` (or `role − role2`), axis component kept = plain persona steering. Same
+  magnitude convention (`coef · ‖axis‖`); log now prints `|v|/‖axis‖` = the role's natural
+  offset in coef units (qwen L32 demon 2.00 / angel 1.64 / void 1.92 / poet 2.57 /
+  demon−assistant 2.87; llama L40 demon 2.37; gemma L22 demon 1.29). Raw vs orthogonal
+  directions cos .71-.92 for role-ward roles (axis share −0.4…−0.7 of |v|), .32-.64 for
+  `assistant` (axis share +0.8…+0.95 — that one IS mostly the axis).
+- `run_axis_steer_on_pod.sh`: `STEER_ROLES`/`STEER_COEFS` loops (server restart per combo,
+  weights cached), one replay/dump/featurize pass per model over all steered dirs, judge
+  per dir. CPU-verified (vector math on real vectors, synthetic server smoke). No pod run yet.
+
 ## 2026-08-12 — SAE test: the Assistant Axis is NOT a single SAE feature (+ manifold inductive check)
 
 **Question:** does the axis correspond to one atomic SAE feature (high max cos with a

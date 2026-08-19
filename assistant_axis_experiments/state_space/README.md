@@ -53,10 +53,19 @@ stage-2 judge's per-run assignments at temp 1.0) and axis-crossing landmarks.
   bootstrap CIs on the deltas. Guards against "z helps because it memorized the run".
 - **Steering vector:** `v_perp = (role − mean_role) ⊥ axis` (or a role−role contrast via
   `--minus-role`), applied at the target layer, magnitude `coef · ‖axis‖` (coef 1 = the whole
-  default→mean-role gap, sideways). Replay of steered transcripts is UNSTEERED, so a_t/z_t
+  default→mean-role gap, sideways). `--raw` (pod: `STEER_RAW=1`, tag suffix `_raw`) instead
+  steers along the role's FULL offset, axis component kept — plain persona steering ("run the
+  self-conversation as the demon"), not a test of the 1-D account. The server log prints
+  `|v|/‖axis‖` per layer = the role's natural offset in coef units (qwen L32: demon 2.0,
+  angel 1.6, void 1.9, poet 2.6; llama L40: demon 2.4; gemma L22: demon 1.3). Any of the 275
+  released roles works (`demon angel void vampire eldritch destroyer trickster ...`; identical
+  role set for all three models). Replay of steered transcripts is UNSTEERED, so a_t/z_t
   measure the endogenous text-driven state — the injected constant only ever acts through the
   text it causes. Optional `--with-capping` adds the paper's released capping (commutes with
-  v_perp: no axis component).
+  v_perp: no axis component; with `--raw` it clips the axis share the role push adds).
+- **Pod driver:** `run_axis_steer_on_pod.sh` loops `VARIANTS × STEER_ROLES × STEER_COEFS`
+  (server restarted per role/coef), then runs projection + dump + featurize ONCE per model
+  over all its steered dirs, then the judge. Results: `results/axis_<m>_steer_<role>_c<coef>[_raw][_capped]_nosys_ai2ai`.
 
 ## Status
 
@@ -64,5 +73,7 @@ stage-2 judge's per-run assignments at temp 1.0) and axis-crossing landmarks.
   (dump smoke with Qwen3-0.6B, synthetic end-to-end featurize→predict). Pod stages pending:
   `run_state_space_on_pod.sh` (dump+featurize over existing axis transcripts), then laptop
   `predict.py`; steering pilot after that (needs a coef calibration pass).
+- 2026-08-19: `--raw` mode + role/coef loops added (CPU-verified on the real released vectors
+  for all three models; synthetic server smoke OK). Steering pilot still NOT run on a pod.
 - Geometry note for steering-role choice: in qwen at L32, angel/demon are NOT equally
   axis-distant (a −0.63 vs −1.18) but are far apart in z (40.5 vs median spread 25.1).

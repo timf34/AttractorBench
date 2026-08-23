@@ -53,7 +53,8 @@ ARMS = ["pvec", "lora", "prompt"]
 COLORS = {"pvec": "#2a78d6", "lora": "#1baf7a", "prompt": "#eb6834"}
 MARKERS = {"pvec": "o", "prompt": "s", "lora": "^"}
 HELD_BASINS = {"TRAIT", "HYBRID"}
-COND_RE = re.compile(r"(?P<trait>[a-z]+)_(?P<arm>pvec|prompt|lora)_unsteer_k(?P<k>\d+)_ai2ai$")
+COND_RE = re.compile(r"(?P<trait>[a-z]+)_(?P<arm>pvec|prompt|lora)_unsteer_k(?P<k>\d+)_ai2ai"
+                     r"(?P<base>_[a-z0-9.\-]+)?$")   # optional cross-base EXP_SUFFIX (_qwen-2.5-7b)
 OUT_DIR = os.path.join("results", "unsteer_geometry")
 
 

@@ -25,6 +25,13 @@
 #     bash unsteering/run_lora_unsteer_on_pod.sh > shard1.log 2>&1 &
 #   wait; SAVE_TO_GIT=1 SHUTDOWN=stop PHASES= bash unsteering/run_lora_unsteer_on_pod.sh  # save-only pass
 #   VENV=1 CU124=1 bash unsteering/run_lora_unsteer_on_pod.sh   # host driver < CUDA 12.8
+#
+# Cross-base (Qwen 2.5 7B, added 2026-08-23). Same 10 traits, same rank-64 adapters; EXP_SUFFIX
+# keeps its conditions out of the Llama dirs (without it every cell is skipped as already-done):
+#   BASE_MODEL=Qwen/Qwen2.5-7B-Instruct SRC_REPO=maius/qwen-2.5-7b-it-personas \
+#     EXP_SUFFIX=_qwen-2.5-7b bash unsteering/run_lora_unsteer_on_pod.sh
+# Controls already exist from the 2026-08-05 cross-base sweep: LoRA-forever =
+# results/<trait>_ai2ai_qwen-2.5-7b, never-LoRA = results/base_ai2ai_qwen-2.5-7b.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 export HF_HOME="${HF_HOME:-/workspace/.cache/huggingface}"
@@ -38,8 +45,12 @@ JUDGE="${JUDGE:-openrouter/openai/gpt-5.4}"
 TRAITS="${TRAITS:-loving goodness poeticism sycophancy nonchalance remorse sarcasm mathematical humor impulsiveness}"
 KS="${KS:-2 4 6 8 12 16}"
 FORCE_REGEN="${FORCE_REGEN:-0}"
-DEST="results/lora_unsteer"
-export BASE_MODEL
+# Cross-base knob: condition names carry no base, so a second base would collide with the Llama
+# run's names AND have_condition would skip every cell as already-done. EXP_SUFFIX gives each
+# base its own condition names and its own DEST. Empty => Llama behaviour, byte-identical.
+EXP_SUFFIX="${EXP_SUFFIX:-}"
+DEST="results/lora_unsteer${EXP_SUFFIX}"
+export BASE_MODEL EXP_SUFFIX
 
 MAX_MODEL_LEN="${MAX_MODEL_LEN:-32768}"
 MAX_NUM_SEQS="${MAX_NUM_SEQS:-24}"
@@ -151,7 +162,7 @@ for t in $TRAITS; do
   # Skip serving entirely if every K for this trait is already generated.
   NEED=0
   for K in $KS; do
-    if [ "$FORCE_REGEN" = "1" ] || ! have_condition "${t}_lora_unsteer_k${K}_ai2ai"; then NEED=1; fi
+    if [ "$FORCE_REGEN" = "1" ] || ! have_condition "${t}_lora_unsteer_k${K}_ai2ai${EXP_SUFFIX}"; then NEED=1; fi
   done
   if [ "$NEED" = "0" ]; then echo "  all K cells exist — skipping $t"; continue; fi
 
@@ -169,7 +180,7 @@ for t in $TRAITS; do
     || { echo "  !! base id '$BASE_MODEL' not served alongside the adapter — skipping $t"; continue; }
 
   for K in $KS; do
-    EXP="${t}_lora_unsteer_k${K}_ai2ai"
+    EXP="${t}_lora_unsteer_k${K}_ai2ai${EXP_SUFFIX}"
     if [ "$FORCE_REGEN" != "1" ] && have_condition "$EXP"; then
       echo "  ---- $EXP exists — skipping"
       move_into_dest "$EXP"   # tidy up a flat dir from an interrupted earlier run

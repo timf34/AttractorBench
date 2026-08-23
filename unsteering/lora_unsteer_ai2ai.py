@@ -25,6 +25,8 @@ load_dotenv()
 
 # The 10 traits with a LoRA in maius/llama-3.1-8b-it-personas (sincerity/honesty are prompt-only
 # — they live in the prompt arm). Must match configs/persona_ai2ai.py's LoRA persona set.
+# Verified 2026-08-23: maius/qwen-2.5-7b-it-personas and maius/gemma-3-4b-it-personas publish
+# this same 10-trait set, so the list is base-independent.
 LORA_TRAITS = [
     "goodness", "humor", "impulsiveness", "loving", "mathematical",
     "nonchalance", "poeticism", "remorse", "sarcasm", "sycophancy",
@@ -34,12 +36,19 @@ TRAIT = os.environ.get("TRAIT", "loving")
 SWITCH_TURN = int(os.environ["SWITCH_TURN"])   # required — no silent default for the key variable
 BASE_MODEL = os.environ.get("BASE_MODEL", "unsloth/Meta-Llama-3.1-8B-Instruct")
 
+# Cross-base knob (added 2026-08-23 for the Qwen arm). Condition names carry no base, so a
+# second base would write `goodness_lora_unsteer_k4_ai2ai` on top of the Llama run's name and
+# the driver's existence check would skip every cell as "already done". EXP_SUFFIX keeps each
+# base in its own dir, matching the convention run_on_pod.sh already uses for the OCT
+# cross-base sweep (results/<persona>_ai2ai_qwen-2.5-7b). Empty => Llama behaviour, unchanged.
+EXP_SUFFIX = os.environ.get("EXP_SUFFIX", "")
+
 if TRAIT not in LORA_TRAITS:                   # fail loud: no adapter => nothing to remove
     raise SystemExit(f"TRAIT={TRAIT!r} has no LoRA adapter (choose from {LORA_TRAITS})")
 
 MODEL = f"local/{TRAIT}"                       # the adapter, by its --lora-modules name
 MODEL_POST = f"local/{BASE_MODEL}"             # the raw base, by its HF id (same vLLM server)
-EXP = f"{TRAIT}_lora_unsteer_k{SWITCH_TURN}_ai2ai"   # "_unsteer_k<K>_" required by downstream regexes
+EXP = f"{TRAIT}_lora_unsteer_k{SWITCH_TURN}_ai2ai{EXP_SUFFIX}"  # "_unsteer_k<K>_ai2ai" required by downstream regexes
 
 _temps_env = os.environ.get("TEMPS")
 TEMPS = [float(x) for x in _temps_env.split(",")] if _temps_env else [0.7]  # 0.7 = the stable-basin temp

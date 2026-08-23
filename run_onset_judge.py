@@ -289,7 +289,7 @@ def default_conditions() -> list[str]:
         conds |= {os.path.basename(d) for d in _glob_condition(f"{t}_pvec_unsteer_k*_ai2ai")}
         conds |= {os.path.basename(d) for d in _glob_condition(f"{t}_pvec_c*_l16_ai2ai")}
         conds |= {os.path.basename(d) for d in _glob_condition(f"{t}_prompt_unsteer_k*_ai2ai")}
-        conds |= {os.path.basename(d) for d in _glob_condition(f"{t}_lora_unsteer_k*_ai2ai")}
+        conds |= {os.path.basename(d) for d in _glob_condition(f"{t}_lora_unsteer_k*_ai2ai*")}   # trailing * = cross-base EXP_SUFFIX
     return sorted(conds)
 
 

@@ -5,6 +5,19 @@ experiments, and the combined verdict; each section links its detailed report.*
 
 ## TL;DR
 
+> **Correction (2026-08-23).** The transition-time headline (z at turn 2 predicts the
+> crossing turn, R² 0.02 → 0.44) is **withdrawn**. It pooled AI2AI runs with the
+> simulated-user controls; AI2AI runs cross at reply 3–4 almost always, controls cross late
+> or never, and z at reply 2 separates the two kinds of run. Giving the predictor the
+> condition label instead of z scores 0.50; within AI2AI only, a+z scores −0.11 vs a 0.07.
+> The geodesic timing numbers in section 3 pooled conditions the same way and are equally
+> affected. Next-turn and basin results were re-run AI2AI-only and hold (next-turn |z|:
+> 0.01→0.60 qwen, 0.14→0.74 gemma, 0.00→0.77 llama). Checks:
+> `validate_timing__qwen-3-32b.md` (+ `__with_controls`). Also note: seven role-steered
+> qwen conditions (`axis_qwen_3_32b_agnostic_steer_*`) now exist from the 2026-08-19 sweep
+> and are excluded from all state-space analyses here.
+
+
 The per-turn persona state of an ai2ai conversation is a **low- but multi-dimensional
 structure that no single linear direction, geodesic coordinate, or SAE feature captures**:
 
@@ -53,7 +66,7 @@ CIs. Detailed reports: [predict__qwen-3-32b.md](predict__qwen-3-32b.md),
 | next-turn a | 0.82 | 0.87 (CI +) | small but real |
 | eventual basin, ai2ai, turn 4 | AUC 0.75–0.83 | 0.84–0.90 | basins differ in *depth*, so a already leaks destination |
 | eventual basin, usersim (a pinned) | 0.13–0.71 | 0.75–0.94 | when a is silent, z carries the signal |
-| transition time (turn-2 state) | R² 0.02 | **0.44** | z knows *when* the collapse comes |
+| transition time (turn-2 state) | R² 0.02 | ~~0.44~~ | **WITHDRAWN** — condition-mixing artifact, see correction |
 | under capping | a clamped (+0.52 vs −0.37) | \|z\| unchanged | axis interventions leave z free |
 
 ![basin AUC qwen](predict__qwen-3-32b__basin_auc.png)

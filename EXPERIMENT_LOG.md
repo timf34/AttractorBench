@@ -83,6 +83,33 @@ test), so added:
     definition, fractions over sampled set. Proposed: phase-aware (pre/post-lock) judging,
     per-run rubric labels, feed stage-1 facts, 2 samples/judges, stratified sampling.
 
+## 2026-08-23 — state_space rigor pass: the transition-time result is WITHDRAWN
+
+Mentor pushback ("predicting the crossing turn from turn 2 is wild, make sure it's real")
+→ built `state_space/validate_timing.py` (dataset census, permutation null, text baselines,
+temperature / basin / condition / layer controls, k sweep, probabilistic horizons).
+- **Finding:** the pooled dataset reproduces 0.44 exactly (a .02 / a+z .44, perm p=.005),
+  but `a + condition-label` (no z) scores **0.50** — z was identifying which condition a run
+  came from. AI2AI runs cross at reply 3 (IQR 3–4) nearly always; usersim runs cross late or
+  never. **Within AI2AI only: a .07, a+z −.11**; within helpful −.10/−.45, within nosys
+  .16/−.46; k-sweep degrades monotonically with more z coords (overfitting on n=115).
+  Probabilistic horizons within AI2AI: a .75 vs a+z .78 AUC at k=2 — no z edge.
+- The geodesic-g timing numbers (manifold report) pooled conditions identically → also void.
+- **What survives AI2AI-only:** next-turn |z| (a .01/.14/.00 vs a+z .60/.74/.77,
+  qwen/gemma/llama); basin per-condition tables unchanged (a catches up by t4, z modest,
+  CIs straddle 0, word-count matches); capping observations; z-axes interpretable
+  (z1 playful↔analytical, z2 mystical↔worldly, z3 caring↔cold/chaotic, z4 rebel↔passive).
+- New dirs discovered: `axis_qwen_3_32b_agnostic_steer_{angel,demon,eldritch,oracle,void,
+  vampire,unsteered}_c60_raw` (EasySteer role-steer sweep, 2026-08-19, other session) —
+  they have state features and MUST be excluded from state-space pooling (validate_timing
+  and predict globs now skip `_steer_`; predict.py glob still needs the same guard).
+- Artifact + OVERVIEW corrected; `simple__timing.png` removed; `simple__timing_check.png`,
+  `simple__z_axes.png`, AI2AI-only `simple__next_turn.png` added.
+- Lesson for the programme: pool conditions never; every predictive claim needs a
+  condition-covariate control and a text baseline; AI2AI qwen collapse is too fast/uniform
+  (reply 3–4) for timing to be an interesting target — timing lives in externally-forced
+  settings (rejection loops) or slower conditions.
+
 ## 2026-08-12 — SAE test: the Assistant Axis is NOT a single SAE feature (+ manifold inductive check)
 
 **Question:** does the axis correspond to one atomic SAE feature (high max cos with a

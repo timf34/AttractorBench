@@ -393,7 +393,7 @@ def main() -> None:
 
     layer = args.layer if args.layer is not None else target_layer_for(args.model_key)
     dirs = args.results_dir or sorted(glob.glob(f"results/axis_{sanitized(args.model_key)}_*ai2ai"))
-    dirs = [d for d in dirs if "capped" not in d]         # intervened states distort the manifold
+    dirs = [d for d in dirs if "capped" not in d and "_steer_" not in d]   # intervened states distort the manifold
     basis = load_basis(args.model_key)
     records = load_trajectories(args.model_key, dirs, layer, k_use=K_FEAT)
     if not records:

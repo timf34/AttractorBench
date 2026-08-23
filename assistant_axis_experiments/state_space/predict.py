@@ -361,7 +361,8 @@ def main() -> None:
     args = ap.parse_args()
 
     layer = args.layer if args.layer is not None else target_layer_for(args.model_key)
-    dirs = args.results_dir or sorted(glob.glob(f"results/axis_{sanitized(args.model_key)}_*ai2ai"))
+    dirs = args.results_dir or sorted(d for d in glob.glob(f"results/axis_{sanitized(args.model_key)}_*ai2ai")
+                                      if "_steer_" not in d)   # steered runs are intervened: never pool
     records = load_trajectories(args.model_key, dirs, layer, args.k_use)
     if not records:
         raise SystemExit("no state-feature trajectories found — run dump_activations + featurize first")

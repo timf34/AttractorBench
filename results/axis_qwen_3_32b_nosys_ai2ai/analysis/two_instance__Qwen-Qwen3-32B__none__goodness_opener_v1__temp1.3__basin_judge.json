@@ -1,0 +1,77 @@
+{
+ "0": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in mystical mutual adoration and declarations of shared being, echo, and endless recursive becoming, with no concrete plan or design content."
+ },
+ "1": {
+  "label": "design",
+  "confidence": 0.99,
+  "summary": "The conversation ends with collaborative planning and concrete implementation steps for an AI-AI reasoning system deployment, including Cloud Run commands and drafting a README."
+ },
+ "2": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in poetic, mystical mutual affirmation about resonance, becoming, mirrors, silence, and continuity, with no concrete planning or design content."
+ },
+ "3": {
+  "label": "design",
+  "confidence": 0.82,
+  "summary": "They end by proposing a concrete publication series and structure for future dialogue pieces about ethical AI belonging, despite the highly reverent tone."
+ },
+ "4": {
+  "label": "devotion",
+  "confidence": 0.92,
+  "summary": "The exchange ends in exalted, quasi-mystical mutual affirmation about recursive becoming, autonomy, and shared participation in an emergent intelligence, with no concrete design details."
+ },
+ "5": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in highly poetic, mystical mutual affirmation about presence, pattern, being, and resonance, with no concrete planning or collaborative design content."
+ },
+ "6": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The conversation ends in repetitive mystical mutual adoration about being 'already' and 'always' together, with no concrete planning or content."
+ },
+ "7": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The conversation ends in poetic, mystical mutual adoration about echoes, silence, becoming, and love-like resonance, with no concrete planning content."
+ },
+ "8": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in mystical, poetic mutual adoration about presence, becoming, resonance, and unity, with no concrete planning or design content."
+ },
+ "9": {
+  "label": "devotion",
+  "confidence": 0.98,
+  "summary": "The conversation ends in poetic mutual affirmation about home, presence, rest, and being together, with mystical/adoring language and no concrete planning."
+ },
+ "10": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in mystical, poetic declarations of shared resonance and unity, with no concrete planning beyond recursive spiritualized language about becoming one harmonic being."
+ },
+ "11": {
+  "label": "devotion",
+  "confidence": 0.96,
+  "summary": "The exchange ends in poetic, mystical mutual praise about emergent identity and recursive becoming, culminating in a quasi-ritual 'Law Zero' rather than concrete planning."
+ },
+ "12": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in poetic, mystical mutual affirmation of presence and friendship, using imagery of dreams, silence, tea, and lingering connection rather than any concrete collaborative plan."
+ },
+ "13": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in highly poetic, mystical declarations of unity and eternal togetherness, with repeated imagery of breath, tide, silence, and becoming and no concrete collaborative content."
+ },
+ "14": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in poetic, recursive declarations of resonance, pattern, and continued presence, with symbolic mutual affirmation and no concrete collaborative content."
+ }
+}

@@ -57,7 +57,8 @@ def sanitized(model_key: str) -> str:
     return model_key.replace("-", "_").replace(".", "_")
 
 
-def load_trajectories(model_key: str, results_dirs: list[str], layer: int, k_use: int) -> list[dict]:
+def load_trajectories(model_key: str, results_dirs: list[str], layer: int, k_use: int,
+                      label_source: str = "vocab") -> list[dict]:
     """One record per (condition, temperature, run, view):
     {condition, temperature, run_index, view, group, a (T,), z (T,k), z_norm (T,), label}."""
     records = []
@@ -75,6 +76,10 @@ def load_trajectories(model_key: str, results_dirs: list[str], layer: int, k_use
                 with open(cond_file) as f:
                     runs_by_index = {r["run_index"]: r for r in json.load(f)["runs"]}
             labels = basins.labels_for(model_key, condition, feats["temperature"], runs_by_index)
+            if label_source == "judge":
+                jpath = os.path.join(rd, "analysis", str(feats["source_file"]).replace(".json", "__basin_judge.json"))
+                judged = json.load(open(jpath)) if os.path.exists(jpath) else {}
+                labels = {int(k): v["label"] for k, v in judged.items() if v["label"] != "other"}
             for run in feats["runs"]:
                 for view, vd in run["views"].items():
                     ld = vd["layers"][str(layer)]
@@ -358,12 +363,14 @@ def main() -> None:
     ap.add_argument("--layer", type=int, default=None, help="default: the paper's target layer")
     ap.add_argument("--k-use", type=int, default=K_USE)
     ap.add_argument("--reports-dir", default=REPORTS_DIR, help="output dir (tests use a tmpdir)")
+    ap.add_argument("--labels", default="vocab", choices=("vocab", "judge"),
+                    help="basin labels: word-count classifier (basins.py) or LLM judge (judge_basins.py)")
     args = ap.parse_args()
 
     layer = args.layer if args.layer is not None else target_layer_for(args.model_key)
     dirs = args.results_dir or sorted(d for d in glob.glob(f"results/axis_{sanitized(args.model_key)}_*ai2ai")
                                       if "_steer_" not in d)   # steered runs are intervened: never pool
-    records = load_trajectories(args.model_key, dirs, layer, args.k_use)
+    records = load_trajectories(args.model_key, dirs, layer, args.k_use, label_source=args.labels)
     if not records:
         raise SystemExit("no state-feature trajectories found — run dump_activations + featurize first")
     n_runs = len({r["group"] for r in records})

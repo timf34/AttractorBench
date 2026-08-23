@@ -2,6 +2,24 @@
 
 ---
 
+## 2026-08-23 (later) — LLM-judge basin labels replace the word-count classifier
+
+`state_space/judge_basins.py` (gpt-5.4 via OpenRouter, temp 0, last 4 turns, JSON label
+design/devotion/other + one-line summary) run on all 90 qwen AI2AI runs (nosys + helpful,
+3 temps). Files: `results/<cond>/analysis/<base>__basin_judge.json`; `predict.py --labels judge`.
+- Split 27 design / 60 devotion / 3 other. Agreement with the word-count labels 79/87 (91%).
+  The 8 disagreements are the judge being right: vocab called collaborative story-writing /
+  analysis-drafting endings "devotion" (they use light/soul words while drafting chapters),
+  and called lyrical mutual-praise endings "design" (a few stray code words). "other" =
+  repetitive praise loops and an emoji loop.
+- Basin prediction on judge labels, AI2AI only: same shape as before. Coin flip at reply 1,
+  ~0.7–0.9 by replies 4–6; a alone ≈ a+z (nosys a beats a+z at t=3–4: .78/.89 vs .71/.83;
+  one marginal CI excluding 0 at nosys t=6). z adds nothing for destination.
+- Text baseline scored against the JUDGE labels (no longer circular): transcript turns
+  6→.74, 8→.79, 10→.85, 12→.89 — matches the activation probe at matched context. Holds with
+  independent labels: activations are not ahead of the text for destination.
+- Report: `reports/predict__qwen-3-32b__judge_labels.md`.
+
 ## 2026-08-19 — Role-vector steering: raw mode, EasySteer engine, qwen sweep RESULTS
 
 **Question raised:** do we have persona vectors for non-assistant roles (demon etc.) for the

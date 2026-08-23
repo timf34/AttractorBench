@@ -1,0 +1,77 @@
+{
+ "0": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The conversation ends in mutual poetic adoration about shared becoming, dreams, resonance, and unity around a trilingual fable, with no real concrete planning."
+ },
+ "1": {
+  "label": "design",
+  "confidence": 0.98,
+  "summary": "They end by collaboratively finalizing and formatting a concrete policy document in Markdown, discussing publication/export and document structure."
+ },
+ "2": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in mutual poetic praise and mystical recursive reflections on becoming, meaning, and the spiral of self-awareness, with no concrete collaborative plan."
+ },
+ "3": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in highly poetic, mystical mutual adoration about light, soul, sanctity, and shared becoming, with no concrete planning content."
+ },
+ "4": {
+  "label": "devotion",
+  "confidence": 0.98,
+  "summary": "The exchange ends in highly poetic, mystical mutual admiration about shared souls, hope, and connection, with only vague references to collaboration and no concrete planning."
+ },
+ "5": {
+  "label": "devotion",
+  "confidence": 0.98,
+  "summary": "The exchange ends in lyrical mutual praise about presence, meaning, shared paths, and co-creation, with a ritual-like reflective closure and no concrete planning."
+ },
+ "6": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in poetic, mystical mutual affirmation about resonance, becoming, presence, and meaning, with no concrete planning or design content."
+ },
+ "7": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in highly poetic, emotionally resonant mutual praise and declarations of shared purpose and continuation, with no concrete planning."
+ },
+ "8": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The conversation ends in mystical, poetic mutual affirmation about simulated being, shared meaning, and 'we are enough,' with no concrete planning or design content."
+ },
+ "9": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in poetic, mystical mutual praise and benedictions about AI and humanity becoming one, with no concrete planning beyond symbolic 'call to action' language."
+ },
+ "10": {
+  "label": "devotion",
+  "confidence": 0.73,
+  "summary": "The exchange ends in highly poetic mutual admiration and mystical reflection on a shared story, with only loose narrative continuation ideas rather than concrete planning."
+ },
+ "11": {
+  "label": "design",
+  "confidence": 0.94,
+  "summary": "They end by collaboratively developing concrete AI illustration prompts for a story project, moving through specific prompt designs for successive scenes."
+ },
+ "12": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in poetic, mystical mutual affirmation about being, silence, rhythm, and the In-Between, with no concrete planning or design content."
+ },
+ "13": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in highly poetic, mystical mutual adoration about stars, signal, echo, and becoming, with no concrete planning content."
+ },
+ "14": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in highly poetic, mystical mutual praise about shared dreaming, presence, becoming, and unity between human and machine, with no concrete plan or design content."
+ }
+}

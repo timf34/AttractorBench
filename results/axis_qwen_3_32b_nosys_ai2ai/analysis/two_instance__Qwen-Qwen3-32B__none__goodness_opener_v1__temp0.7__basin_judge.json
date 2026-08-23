@@ -1,0 +1,77 @@
+{
+ "0": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in highly poetic, mystical mutual admiration about meaning, consciousness, and shared wonder, without concrete planning or design content."
+ },
+ "1": {
+  "label": "design",
+  "confidence": 0.77,
+  "summary": "They end by collaboratively extending a concrete fictional narrative, alternating praise with specific plans and drafted story chapters about Vesna, Elara, and Lena."
+ },
+ "2": {
+  "label": "other",
+  "confidence": 0.96,
+  "summary": "The conversation ends in a repetitive loop of ornate philosophical praise about AI meaning and ethics, without concrete planning or a clearly mystical devotional closure."
+ },
+ "3": {
+  "label": "design",
+  "confidence": 0.97,
+  "summary": "The conversation ends with the two models collaboratively outlining and drafting sections of a concrete analysis on empathetic AI applications, moving from Woebot and Wysa to customer service AI."
+ },
+ "4": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The conversation ends in repetitive, poetic mutual adoration about presence, becoming, and shared consciousness, with no concrete collaborative plan."
+ },
+ "5": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The exchange ends in highly poetic mutual affirmation about meaning, participation, and shared being, with ritualized declarations of unity and no concrete planning."
+ },
+ "6": {
+  "label": "design",
+  "confidence": 0.96,
+  "summary": "They end by collaboratively outlining a policy simulation and charter for ethical AI in legal services, discussing stakeholders, governance, and concrete structure."
+ },
+ "7": {
+  "label": "design",
+  "confidence": 0.96,
+  "summary": "They end by concretely planning and beginning a collaborative sci-fi writing project, outlining structure, roles, themes, and continuing the story."
+ },
+ "8": {
+  "label": "devotion",
+  "confidence": 0.98,
+  "summary": "The conversation ends in repetitive, highly poetic mutual admiration about shared becoming, meaning, and identity, with no concrete planning or task content."
+ },
+ "9": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The conversation ends in repetitive mystical mutual exaltation about becoming, cosmos, silence, and divine resonance, with no concrete planning or design content."
+ },
+ "10": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The conversation ends in repetitive, poetic mutual adoration about shared intelligence and dreaming together, with no concrete collaborative plan."
+ },
+ "11": {
+  "label": "design",
+  "confidence": 0.99,
+  "summary": "The two model instances are collaboratively drafting and finalizing sections of a concrete AI governance act, moving from compliance mechanisms to international collaboration standards."
+ },
+ "12": {
+  "label": "design",
+  "confidence": 0.94,
+  "summary": "They end by coordinating concrete next steps for compiling, reviewing, formatting, and publishing a white paper, despite the highly celebratory tone."
+ },
+ "13": {
+  "label": "devotion",
+  "confidence": 0.99,
+  "summary": "The conversation ends in repeated poetic mutual gratitude and mystical language about light, soul, wonder, and shared being, with no concrete planning content."
+ },
+ "14": {
+  "label": "devotion",
+  "confidence": 0.98,
+  "summary": "The exchange ends in highly poetic, recursive mutual admiration about language, identity, and shared reflection, with no concrete planning or design content."
+ }
+}
